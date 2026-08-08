@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<!--
+  Página host del Embedded Signup de WhatsApp (Atlas).
+
+  Qué es: el contenido de ATLAS_WA_ES_URL. La abre la aplicación Atlas con los
+  parámetros del alta y devuelve el resultado al servidor local de Atlas.
+
+  No contiene secretos ni identificadores de despliegue: todo llega por query
+  string en cada apertura. No almacena ni registra nada.
+
+  Incidencias de seguridad: contacto del fabricante.
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Página operativa, no contenido público: fuera de buscadores. El noindex
+       va aquí y NO como Disallow en robots.txt, porque un Disallow impediría
+       al rastreador leer este noindex. -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-E/WeepUoXGpWM8qKXoza+HEr2lM4OdvoddtRO3ta5Zc=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
+  <title>Conectar WhatsApp con Atlas</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 460px; margin: 10vh auto; padding: 0 20px; color: #223; }
+    h1 { font-size: 22px; }
+    p { color: #556; line-height: 1.5; font-size: 15px; }
+    button { background: #1877f2; color: #fff; border: 0; border-radius: 8px; padding: 12px 22px; font-size: 16px; font-weight: 600; cursor: pointer; }
+    button:disabled { opacity: .5; cursor: default; }
+    .error { color: #b3261e; font-size: 14px; }
+    .hint { color: #889; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Conectar WhatsApp con Atlas</h1>
+  <p>Vas a autorizar la conexión con el proceso oficial de Meta. Al terminar,
+     volverás automáticamente a Atlas.</p>
+  <button id="go" disabled>Continuar con Meta</button>
+  <p id="status" class="hint">Cargando el módulo de Meta…</p>
+
+  <script>
+    'use strict';
+
+    // Enmarcada dentro de otra página, el único botón se puede usar para
+    // clickjacking. `frame-ancestors` NO funciona en una CSP declarada por
+    // <meta> (la especificación la ignora ahí) y GitHub Pages no permite
+    // cabeceras propias, así que la defensa tiene que estar en el script.
+    if (window.top !== window.self) {
+      document.documentElement.textContent = 'Esta página no puede mostrarse dentro de otra.';
+      throw new Error('framed');
+    }
+
+    const params = new URLSearchParams(location.search);
+    const appId = params.get('app_id');
+    const configId = params.get('config_id');
+    const state = params.get('state');
+    const callback = params.get('callback');
+    // Entradas que van al SDK de Meta: se validan por FORMA. No fijan QUÉ app
+    // se usa (eso llega por query string a propósito), pero impiden colar algo
+    // que no sea un identificador ni una versión de Graph.
+    const featureBruto = params.get('feature'); // coexistencia: whatsapp_business_app_onboarding
+    const feature = /^[a-z_]{1,64}$/.test(featureBruto || '') ? featureBruto : null;
+    const versionBruta = params.get('graph_version');
+    const graphVersion = /^v\d{1,3}\.\d{1,3}$/.test(versionBruta || '') ? versionBruta : 'v23.0';
+    const statusEl = document.getElementById('status');
+    const button = document.getElementById('go');
+
+    function fail(message) {
+      statusEl.textContent = message;
+      statusEl.className = 'error';
+      button.disabled = true;
+    }
+
+    /**
+     * El destino de retorno SOLO puede ser el servidor local de Atlas. Sin
+     * esta comprobación, cualquiera podría enlazar
+     * …/whatsapp-signup/?callback=https://sitio-ajeno/ y usar un dominio de
+     * confianza como trampolín. Se exige, a la vez:
+     *   · hostname EXACTAMENTE 127.0.0.1 (no un subdominio que lo contenga,
+     *     no [::1], no un nombre que resuelva a loopback);
+     *   · ruta EXACTAMENTE /oauth/whatsapp/callback;
+     *   · esquema http/https y sin credenciales embebidas.
+     * Se usa el parseo del navegador, nunca una regex sobre la cadena: así las
+     * formas 2130706433, 0x7f000001 o 127.1 se normalizan a 127.0.0.1 antes de
+     * comparar, y `http://127.0.0.1@otro-host/` se rechaza porque `hostname`
+     * devuelve el host real.
+     */
+    function validCallback(value) {
+      try {
+        const url = new URL(value);
+        return url.hostname === '127.0.0.1'
+          && url.pathname === '/oauth/whatsapp/callback'
+          && (url.protocol === 'http:' || url.protocol === 'https:')
+          && url.username === '' && url.password === '';
+      } catch { return false; }
+    }
+
+    /**
+     * Se RECONSTRUYE la URL de retorno desde origen + ruta fija: cualquier
+     * query o fragmento que viniera en `callback` se descarta. Aunque la
+     * comprobación de arriba fallara algún día, el destino no puede salir del
+     * loopback.
+     */
+    function returnToAtlas(extra) {
+      const origen = new URL(callback);
+      const url = new URL('/oauth/whatsapp/callback', origen.origin);
+      url.searchParams.set('state', state);
+      for (const [key, value] of Object.entries(extra)) url.searchParams.set(key, value);
+      location.assign(url.toString());
+    }
+
+    if (!appId || !configId || !state || !callback) {
+      fail('Faltan parámetros. Abre esta página desde el botón «Conectar WhatsApp» de Atlas.');
+    } else if (!validCallback(callback)) {
+      fail('El destino de retorno no es válido. Abre esta página desde Atlas.');
+    } else {
+      // El `state` y el puerto local salen de la barra de direcciones en
+      // cuanto se han leído: mientras corre el SDK de un tercero, `location`
+      // es legible desde la propia página, y además quedaría en el historial.
+      // El `state` es de un solo uso, así que recargar no debía funcionar.
+      if (history && typeof history.replaceState === 'function') {
+        history.replaceState(null, '', location.pathname);
+      }
+
+      // Información de sesión del Embedded Signup (phone_number_id / waba_id).
+      // Atlas NO depende de esto (descubre los activos vía debug_token), pero
+      // se muestra para diagnóstico si Meta la envía.
+      window.addEventListener('message', (event) => {
+        try {
+          // `event.origin` puede ser la cadena "null" (origen opaco, trivial
+          // desde un iframe sandbox): parsearla lanza, y sin este try/catch la
+          // excepción mataría el listener.
+          const origen = new URL(event.origin);
+          if (origen.protocol !== 'https:') return;
+          if (origen.hostname !== 'facebook.com' && !origen.hostname.endsWith('.facebook.com')) return;
+          const data = JSON.parse(event.data);
+          if (data.type === 'WA_EMBEDDED_SIGNUP' && data.event === 'FINISH') {
+            statusEl.textContent = 'Cuenta seleccionada. Terminando…';
+          }
+        } catch { /* mensajes ajenos o ilegibles: ignorar */ }
+      });
+
+      window.fbAsyncInit = function () {
+        FB.init({ appId, autoLogAppEvents: false, xfbml: false, version: graphVersion });
+        button.disabled = false;
+        statusEl.textContent = 'Pulsa el botón para abrir el proceso de Meta.';
+        button.addEventListener('click', () => {
+          button.disabled = true;
+          statusEl.textContent = 'Esperando a Meta…';
+          // Si Meta nunca contesta (ventana cerrada por el sistema, red
+          // caída), la página se quedaba en «Esperando a Meta…» para siempre.
+          const espera = setTimeout(() => {
+            button.disabled = false;
+            statusEl.textContent = 'Meta no ha respondido. Vuelve a intentarlo.';
+          }, 120000);
+          const extras = { setup: {}, sessionInfoVersion: '3' };
+          if (feature) extras.featureType = feature;
+          FB.login((response) => {
+            clearTimeout(espera);
+            if (response && response.authResponse && response.authResponse.code) {
+              returnToAtlas({ code: response.authResponse.code });
+            } else {
+              returnToAtlas({ error: 'access_denied' });
+            }
+          }, {
+            config_id: configId,
+            response_type: 'code',
+            override_default_response_type: true,
+            extras,
+          });
+        });
+      };
+
+      const sdk = document.createElement('script');
+      sdk.src = 'https://connect.facebook.net/es_ES/sdk.js';
+      sdk.async = true; sdk.defer = true; sdk.crossOrigin = 'anonymous';
+      sdk.onerror = () => fail('No se pudo cargar el módulo de Meta. Comprueba la conexión y que el dominio está registrado en la app.');
+      document.head.appendChild(sdk);
+    }
+  </script>
+</body>
+</html>
