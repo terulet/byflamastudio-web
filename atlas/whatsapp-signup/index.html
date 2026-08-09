@@ -6,8 +6,13 @@
   Qué es: el contenido de ATLAS_WA_ES_URL. La abre la aplicación Atlas con los
   parámetros del alta y devuelve el resultado al servidor local de Atlas.
 
-  No contiene secretos ni identificadores de despliegue: todo llega por query
-  string en cada apertura. No almacena ni registra nada.
+  Qué lleva dentro: la pareja PÚBLICA de identificadores de Meta que esta
+  página admite (App ID y config_id). Están fijados a propósito, para que nadie
+  pueda enlazarla con otra aplicación y mostrar un consentimiento ajeno bajo
+  este dominio. No hay ningún secreto: ni App Secret, ni tokens, ni claves.
+
+  El `state` y el `callback` llegan por query string en cada apertura y no se
+  almacenan ni se registran en ninguna parte.
 
   Incidencias de seguridad: contacto del fabricante.
 -->
@@ -19,7 +24,7 @@
        al rastreador leer este noindex. -->
   <meta name="robots" content="noindex, nofollow" />
   <meta name="referrer" content="no-referrer" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-YXOoq9yrGcDV67LlskeOv2d9iWOTybcrgVc3mvkFAMg=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-3W/TxUWL2PfIKYL/n2zTPF3pGkrv/rT5tyExqZGsMBI=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
   <title>Conectar WhatsApp con Atlas</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 460px; margin: 10vh auto; padding: 0 20px; color: #223; }
@@ -73,9 +78,9 @@
     const configId = params.get('config_id');
     const state = params.get('state');
     const callback = params.get('callback');
-    // Entradas que van al SDK de Meta: se validan por FORMA. No fijan QUÉ app
-    // se usa (eso llega por query string a propósito), pero impiden colar algo
-    // que no sea un identificador ni una versión de Graph.
+    // Entradas que van al SDK de Meta: se validan por FORMA. No eligen la
+    // aplicación —esa la fija la pareja de arriba—, pero impiden colar algo que
+    // no sea un identificador de característica ni una versión de Graph.
     const featureBruto = params.get('feature'); // coexistencia: whatsapp_business_app_onboarding
     const feature = /^[a-z_]{1,64}$/.test(featureBruto || '') ? featureBruto : null;
     const versionBruta = params.get('graph_version');
