@@ -11,6 +11,11 @@
   pueda enlazarla con otra aplicación y mostrar un consentimiento ajeno bajo
   este dominio. No hay ningún secreto: ni App Secret, ni tokens, ni claves.
 
+  Qué NO hace: canjear el `code`. Esta página lo devuelve a Atlas y ahí acaba
+  su trabajo. En modo gateway —el de la distribución— Atlas lo reenvía al
+  gateway central, que lo canjea con `POST /v1/onboarding/exchange` usando el
+  App Secret que vive en Secret Manager. Ninguna instalación tiene ese secreto.
+
   El `state` y el `callback` llegan por query string en cada apertura y no se
   almacenan ni se registran en ninguna parte.
 
