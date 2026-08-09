@@ -19,7 +19,7 @@
        al rastreador leer este noindex. -->
   <meta name="robots" content="noindex, nofollow" />
   <meta name="referrer" content="no-referrer" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-E/WeepUoXGpWM8qKXoza+HEr2lM4OdvoddtRO3ta5Zc=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-YXOoq9yrGcDV67LlskeOv2d9iWOTybcrgVc3mvkFAMg=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
   <title>Conectar WhatsApp con Atlas</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 460px; margin: 10vh auto; padding: 0 20px; color: #223; }
@@ -49,6 +49,24 @@
       document.documentElement.textContent = 'Esta página no puede mostrarse dentro de otra.';
       throw new Error('framed');
     }
+
+    /**
+     * Pareja PERMITIDA. Son identificadores PÚBLICOS de Meta —viajan en la URL
+     * de cualquier diálogo OAuth, no son secretos— y se fijan aquí por un
+     * motivo concreto: sin esto, cualquiera podía enlazar esta página con SU
+     * aplicación de Meta y presentar un diálogo de consentimiento ajeno bajo
+     * un dominio de confianza. El `code` no se filtraba (va al loopback de la
+     * víctima), pero los permisos se concedían a la app del atacante.
+     *
+     * Los dos parámetros SIGUEN llegando por query string y se comparan contra
+     * estos valores: si no coinciden se RECHAZA con un mensaje explícito.
+     * Nunca se sustituye en silencio un valor incorrecto por el correcto.
+     *
+     * Si algún día se crea una Configuration de COEXISTENCIA, su config_id
+     * tiene que añadirse aquí explícitamente y pasar la misma revisión.
+     */
+    const APP_ID_PERMITIDO = '1538119581128850';
+    const CONFIG_ID_PERMITIDO = '1431463065493437';
 
     const params = new URLSearchParams(location.search);
     const appId = params.get('app_id');
@@ -111,6 +129,15 @@
 
     if (!appId || !configId || !state || !callback) {
       fail('Faltan parámetros. Abre esta página desde el botón «Conectar WhatsApp» de Atlas.');
+    } else if (appId !== APP_ID_PERMITIDO || configId !== CONFIG_ID_PERMITIDO) {
+      // Rechazo EXPLÍCITO, nunca sustitución silenciosa: se dice cuál de los
+      // dos no cuadra para que un fallo de configuración de Atlas se
+      // diagnostique de un vistazo, sin repetir en la página el valor
+      // recibido (que lo controla quien abre el enlace).
+      const cuales = appId !== APP_ID_PERMITIDO
+        ? (configId !== CONFIG_ID_PERMITIDO ? 'la aplicación y la configuración no coinciden' : 'la aplicación no coincide')
+        : 'la configuración no coincide';
+      fail(`Esta página solo funciona con la aplicación de Atlas: ${cuales}. Ábrela desde Atlas.`);
     } else if (!validCallback(callback)) {
       fail('El destino de retorno no es válido. Abre esta página desde Atlas.');
     } else {
