@@ -29,8 +29,8 @@ const BASE = 'https://byflamastudio.com/atlas/whatsapp-signup/';
 const CALLBACK_OK = 'http://127.0.0.1:53127/oauth/whatsapp/callback';
 // Pareja PERMITIDA: identificadores públicos de Meta, fijados en la página
 // para que no pueda usarse como lanzador de consentimiento de una app ajena.
-const APP_ID = '1538119581128850';
-const CONFIG_ID = '1431463065493437';
+const APP_ID = '1558374839123463';
+const CONFIG_ID = '1075072988792533';
 /** Query con la pareja correcta y lo que se le añada o sustituya. */
 const q = (extra = {}) => '?' + new URLSearchParams({
   app_id: APP_ID, config_id: CONFIG_ID, state: 'abc', callback: CALLBACK_OK, ...extra,
