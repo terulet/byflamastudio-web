@@ -29,8 +29,8 @@ const BASE = 'https://byflamastudio.com/atlas/whatsapp-signup/';
 const CALLBACK_OK = 'http://127.0.0.1:53127/oauth/whatsapp/callback';
 // Pareja PERMITIDA: identificadores públicos de Meta, fijados en la página
 // para que no pueda usarse como lanzador de consentimiento de una app ajena.
-const APP_ID = '1558374839123463';
-const CONFIG_ID = '1075072988792533';
+const APP_ID = '2028110217821893';
+const CONFIG_ID = '2137703466787056';
 /** Query con la pareja correcta y lo que se le añada o sustituya. */
 const q = (extra = {}) => '?' + new URLSearchParams({
   app_id: APP_ID, config_id: CONFIG_ID, state: 'abc', callback: CALLBACK_OK, ...extra,
@@ -447,6 +447,40 @@ test('pareja MEZCLADA: app buena con configuración ajena, y al revés', () => {
     assert.match(p.status.textContent, patron, JSON.stringify(extra));
     assert.equal(p.scriptsCargados.length, 0);
     assert.deepEqual(p.navegaciones, []);
+  }
+});
+
+// ── 9. Identificadores RETIRADOS (por su nombre, no por el valor) ──────────
+// La fuente única (docs/whatsapp-cloud/meta-identificadores.json) vive en el
+// monorepo, no aquí: se listan a mano las dos parejas que hoy están retiradas
+// allí. Si la lista cambia, `apps/desktop/test/identificadores-retirados.test.mjs`
+// del monorepo es quien lo detecta primero.
+const RETIRADOS = [
+  { nombre: 'Atlas Inbox Test', appId: '1538119581128850', configId: '1431463065493437' },
+  { nombre: 'Pareja descartada (F4-B, ninguna app accesible)', appId: '1558374839123463', configId: '1075072988792533' },
+];
+
+test('cualquier pareja RETIRADA (app real jubilada o identificador descartado) se rechaza igual que una ajena cualquiera', () => {
+  // Hoy hay dos: la app de prueba real original (sustituida) y una pareja
+  // declarada por error en una tarea anterior que nunca correspondió a
+  // ninguna app accesible del propietario. La página no las distingue: las dos
+  // están en `retirados` y las dos se rechazan por el mismo camino.
+  assert.ok(RETIRADOS.length >= 2, 'esta prueba espera al menos la app de prueba y un descarte');
+  for (const viejo of RETIRADOS) {
+    const soloAppId = abrirPagina(q({ app_id: viejo.appId }));
+    assert.equal(soloAppId.status.className, 'error', `${viejo.nombre}: App ID retirado`);
+    assert.match(soloAppId.status.textContent, /la aplicación no coincide/, viejo.nombre);
+    assert.equal(soloAppId.scriptsCargados.length, 0, `${viejo.nombre}: no debe cargar el SDK`);
+
+    const soloConfigId = abrirPagina(q({ config_id: viejo.configId }));
+    assert.equal(soloConfigId.status.className, 'error', `${viejo.nombre}: config_id retirado`);
+    assert.match(soloConfigId.status.textContent, /la configuración no coincide/, viejo.nombre);
+
+    // Combinación MEZCLADA: la pareja retirada COMPLETA (no la vigente).
+    const parejaCompleta = abrirPagina(q({ app_id: viejo.appId, config_id: viejo.configId }));
+    assert.equal(parejaCompleta.status.className, 'error', `${viejo.nombre}: pareja retirada completa`);
+    assert.equal(parejaCompleta.scriptsCargados.length, 0);
+    assert.deepEqual(parejaCompleta.navegaciones, []);
   }
 });
 

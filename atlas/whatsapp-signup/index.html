@@ -29,7 +29,7 @@
        al rastreador leer este noindex. -->
   <meta name="robots" content="noindex, nofollow" />
   <meta name="referrer" content="no-referrer" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-msm4EqLCNbcQoM3/gZBZXNgm3fly0schOzh4hERHfXI=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-OXdQ15Ttdz0EwSKVbfemx9lYN3Ap2peItoGxxyQ/zN0=' https://connect.facebook.net; style-src 'unsafe-inline'; connect-src https://facebook.com https://*.facebook.com https://connect.facebook.net; frame-src https://facebook.com https://*.facebook.com https://connect.facebook.net; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net; form-action 'none'; base-uri 'none'; object-src 'none'" />
   <title>Conectar WhatsApp con Atlas</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 460px; margin: 10vh auto; padding: 0 20px; color: #223; }
@@ -75,8 +75,8 @@
      * Si algún día se crea una Configuration de COEXISTENCIA, su config_id
      * tiene que añadirse aquí explícitamente y pasar la misma revisión.
      */
-    const APP_ID_PERMITIDO = '1558374839123463';
-    const CONFIG_ID_PERMITIDO = '1075072988792533';
+    const APP_ID_PERMITIDO = '2028110217821893';
+    const CONFIG_ID_PERMITIDO = '2137703466787056';
 
     const params = new URLSearchParams(location.search);
     const appId = params.get('app_id');
@@ -160,8 +160,17 @@
       }
 
       // Información de sesión del Embedded Signup (phone_number_id / waba_id).
-      // Atlas NO depende de esto (descubre los activos vía debug_token), pero
-      // se muestra para diagnóstico si Meta la envía.
+      // Esto SÍ importa: es lo único que dice qué cuenta y qué número eligió el
+      // usuario en el asistente. Antes se descartaba («Atlas los descubre vía
+      // debug_token») y por eso, con dos cuentas concedidas o dos números en la
+      // WABA, no había forma de saber cuál era el bueno: el alta quedaba
+      // bloqueada por ambigüedad sin salida posible.
+      //
+      // Se reenvían al loopback como pista para DESEMPATAR, nunca como
+      // autorización: el gateway solo los honra si están entre los activos que
+      // el token concede de verdad, así que un valor manipulado aquí no
+      // reclama nada ajeno — como mucho, hace fallar su propia alta.
+      var seleccion = {};
       window.addEventListener('message', (event) => {
         try {
           // `event.origin` puede ser la cadena "null" (origen opaco, trivial
@@ -173,6 +182,11 @@
           const data = JSON.parse(event.data);
           if (data.type === 'WA_EMBEDDED_SIGNUP' && data.event === 'FINISH') {
             statusEl.textContent = 'Cuenta seleccionada. Terminando…';
+            const d = data.data || {};
+            // Solo dígitos: lo que llegue por `postMessage` no entra en la URL
+            // sin pasar por esta forma.
+            if (/^[0-9]{1,25}$/.test(String(d.waba_id || ''))) seleccion.waba_id = String(d.waba_id);
+            if (/^[0-9]{1,25}$/.test(String(d.phone_number_id || ''))) seleccion.phone_number_id = String(d.phone_number_id);
           }
         } catch { /* mensajes ajenos o ilegibles: ignorar */ }
       });
@@ -195,7 +209,7 @@
           FB.login((response) => {
             clearTimeout(espera);
             if (response && response.authResponse && response.authResponse.code) {
-              returnToAtlas({ code: response.authResponse.code });
+              returnToAtlas(Object.assign({ code: response.authResponse.code }, seleccion));
             } else {
               returnToAtlas({ error: 'access_denied' });
             }
