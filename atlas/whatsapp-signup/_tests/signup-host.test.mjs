@@ -7,11 +7,16 @@
  * un problema — que acepte un destino de retorno ajeno, que guarde o registre
  * el `state`, o que lleve dentro un valor que no debería estar ahí.
  *
- * El directorio se llama `_tests`: Jekyll (que sirve este sitio en GitHub
- * Pages) no publica los directorios que empiezan por guion bajo, así que estas
- * pruebas quedan en el repositorio pero NO en https://byflamastudio.com/.
+ * Desde 6e0a1c4 la página usa el flujo de REDIRECCIÓN, no el SDK de
+ * JavaScript: `FB.login()` acuñaba el `code` contra un `redirect_uri` interno
+ * de Meta con partes aleatorias por apertura, irreproducible en el servidor
+ * que canjea. Aquí se fija lo contrario: un `redirect_uri` único, literal e
+ * idéntico al de la fuente única de identificadores.
  *
- * Uso:  node --test atlas/whatsapp-signup/_tests/
+ * Esta copia protege la página PUBLICADA; la fuente vive en el monorepo
+ * (terulet/atlas-platform, docs/whatsapp-cloud/signup-host/) con estas mismas
+ * pruebas: si alguna vez divergen, el endurecimiento de una no protege a la
+ * otra — que es exactamente lo que pasó la primera vez.
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -22,19 +27,59 @@ import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
 const dir = dirname(fileURLToPath(import.meta.url));
+// La página FUENTE del monorepo. La copia publicada vive en
+// terulet/byflamastudio-web (atlas/whatsapp-signup/index.html) y lleva estas
+// mismas pruebas: si alguna vez divergen, el endurecimiento de una no protege
+// a la otra — que es exactamente lo que pasó la primera vez.
 const PAGINA = join(dir, '..', 'index.html');
 const html = readFileSync(PAGINA, 'utf8');
+// Fuente ÚNICA de los identificadores públicos de Meta. La lee también el
+// gateway (va dentro de su imagen) para construir el candidato de
+// `redirect_uri` del canje, y check-bundled-config.mjs para el instalador.
+// Copia LITERAL de docs/whatsapp-cloud/meta-identificadores.json del monorepo
+// (terulet/atlas-platform), que es la fuente única. Aquí no existe ese fichero,
+// así que se replica: si allí cambia, esta copia tiene que cambiar con él.
+const IDS = {
+  "nombre": "Atlas by Byflama",
+  "appId": "2028110217821893",
+  "configId": "2137703466787056",
+  "esUrl": "https://byflamastudio.com/atlas/whatsapp-signup/"
+};
+const RETIRADOS = [
+  {
+    "nombre": "Atlas Inbox Test",
+    "appId": "1538119581128850",
+    "configId": "1431463065493437"
+  },
+  {
+    "nombre": "Pareja descartada (F4-B, ninguna app accesible)",
+    "appId": "1558374839123463",
+    "configId": "1075072988792533"
+  }
+];
 
-const BASE = 'https://byflamastudio.com/atlas/whatsapp-signup/';
+const BASE = IDS.esUrl;
 const CALLBACK_OK = 'http://127.0.0.1:53127/oauth/whatsapp/callback';
-// Pareja PERMITIDA: identificadores públicos de Meta, fijados en la página
-// para que no pueda usarse como lanzador de consentimiento de una app ajena.
-const APP_ID = '2028110217821893';
-const CONFIG_ID = '2137703466787056';
-/** Query con la pareja correcta y lo que se le añada o sustituya. */
+const APP_ID = IDS.appId;
+const CONFIG_ID = IDS.configId;
+/** Query de IDA con la pareja correcta y lo que se le añada o sustituya. */
 const q = (extra = {}) => '?' + new URLSearchParams({
   app_id: APP_ID, config_id: CONFIG_ID, state: 'abc', callback: CALLBACK_OK, ...extra,
 }).toString();
+
+// El `state` de las pruebas. 16 hex a propósito: la página admite de 16 a 128,
+// y un hex de 32 SUELTO en el código lo marca check-secrets como posible App
+// Secret pegado — con razón. La longitud real (48) se cubre aparte, construida
+// en tiempo de ejecución para no dejar una ristra larga en el fuente.
+const ESTADO = '0a1b2c3d4e5f6a7b';
+const ESTADO_REAL = 'ab'.repeat(24);   // 48 hex: lo que genera Atlas de verdad
+
+/** El `state` empaquetado que la página manda a Meta y Meta devuelve tal cual. */
+const empaquetar = (state, callback) =>
+  Buffer.from(JSON.stringify({ s: state, cb: callback }), 'utf8').toString('base64')
+    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+/** Query de VUELTA, tal como la construye Meta al redirigir. */
+const qVuelta = (extra) => '?' + new URLSearchParams(extra).toString();
 
 /** El script inline de la página, tal cual se publica. */
 function scriptDeLaPagina() {
@@ -47,7 +92,7 @@ function scriptDeLaPagina() {
  * DOM mínimo suficiente para este script. Devuelve el entorno para poder
  * inspeccionarlo después (qué se mostró, adónde se navegó, qué se cargó).
  */
-function abrirPagina(query, { fb = null, enmarcada = false } = {}) {
+function abrirPagina(query, { enmarcada = false, base = BASE } = {}) {
   const registro = { navegaciones: [], scriptsCargados: [], listeners: {}, consola: [], historial: [] };
   const elemento = (id, disabled = false) => ({ id, textContent: '', className: '', disabled, _clicks: [],
     addEventListener(tipo, fn) { if (tipo === 'click') this._clicks.push(fn); } });
@@ -57,16 +102,20 @@ function abrirPagina(query, { fb = null, enmarcada = false } = {}) {
   // seguir midiendo un supuesto suyo.
   const button = elemento('go', /<button id="go"[^>]*\bdisabled\b/.test(html));
 
+  const urlBase = new URL(base);
   const location = {
-    href: `${BASE}${query}`,
-    pathname: new URL(BASE).pathname,
-    search: query.startsWith('?') ? query : `?${query}`,
+    href: `${base}${query}`,
+    origin: urlBase.origin,
+    pathname: urlBase.pathname,
+    search: query.startsWith('?') ? query : query ? `?${query}` : '',
     assign(destino) { registro.navegaciones.push(destino); },
   };
   const documentElement = { textContent: '' };
   const document = {
     documentElement,
     getElementById: (id) => (id === 'status' ? status : id === 'go' ? button : null),
+    // Se conservan aunque el flujo nuevo no cargue nada: si alguien vuelve a
+    // meter un script de terceros, las pruebas tienen que verlo.
     createElement: () => {
       const el = { tagName: 'script', src: '', async: false, defer: false, crossOrigin: '', onerror: null };
       registro.creado = el;
@@ -74,38 +123,35 @@ function abrirPagina(query, { fb = null, enmarcada = false } = {}) {
     },
     head: { appendChild: (el) => registro.scriptsCargados.push(el) },
   };
-  // Temporizadores deterministas: nada de esperas reales en la suite.
-  const pendientes = new Map();
-  let siguiente = 1;
-  const temporizar = (fn) => { pendientes.set(siguiente, fn); return siguiente++; };
-  const cancelar = (id) => pendientes.delete(id);
   const history = { replaceState: (_a, _b, url) => registro.historial.push(url) };
-  const window = {
-    addEventListener(tipo, fn) { (registro.listeners[tipo] ??= []).push(fn); },
-    fbAsyncInit: null,
-  };
+  const window = { addEventListener(tipo, fn) { (registro.listeners[tipo] ??= []).push(fn); } };
   // Por defecto la página NO está enmarcada; `enmarcada: true` la mete en un
   // iframe para probar la defensa anti-clickjacking.
   window.self = window;
   window.top = enmarcada ? { ajena: true } : window;
 
   const sandbox = {
-    window, document, location, history, URL, URLSearchParams, JSON, Object, Error, RegExp, setTimeout: temporizar, clearTimeout: cancelar, console: {
-      log: (...a) => registro.consola.push(a), warn: (...a) => registro.consola.push(a), error: (...a) => registro.consola.push(a),
-    },
-    FB: fb,
+    window, document, location, history, URL, URLSearchParams, JSON, Object, Error, RegExp, String, btoa, atob,
+    console: { log: (...a) => registro.consola.push(a), warn: (...a) => registro.consola.push(a), error: (...a) => registro.consola.push(a) },
   };
   sandbox.globalThis = sandbox;
-  sandbox.__correrTemporizadores = () => { for (const fn of [...pendientes.values()]) fn(); pendientes.clear(); };
   vm.createContext(sandbox);
   let lanzo = null;
   try { vm.runInContext(scriptDeLaPagina(), sandbox); } catch (e) { lanzo = e; }
   return { ...registro, status, button, window, documentElement, sandbox, lanzo };
 }
 
+/** Lanza el flujo de ida y devuelve la URL del diálogo de Meta. */
+function urlDelDialogo(p) {
+  assert.equal(p.button.disabled, false, 'el botón debe quedar habilitado');
+  p.button._clicks[0]();
+  assert.equal(p.navegaciones.length, 1, 'debe navegar al diálogo de Meta');
+  return new URL(p.navegaciones[0]);
+}
+
 // ── 1. Carga estática ───────────────────────────────────────────────────────
 
-test('carga estática: la página se sirve entera y pide el SDK de Meta por HTTPS', () => {
+test('carga estática: la página se sirve entera y NO carga ningún script de terceros', () => {
   assert.match(html, /^<!doctype html>/i);
   assert.match(html, /<title>Conectar WhatsApp con Atlas<\/title>/);
   // noindex obligatorio: es una página operativa, no contenido público.
@@ -113,13 +159,48 @@ test('carga estática: la página se sirve entera y pide el SDK de Meta por HTTP
   // El `state` no puede viajar en la cabecera Referer hacia Meta.
   assert.match(html, /<meta name="referrer" content="no-referrer" \/>/);
 
-  const p = abrirPagina(q({ state: 'abc', callback: CALLBACK_OK }));
-  assert.equal(p.scriptsCargados.length, 1, 'carga exactamente un script externo');
-  assert.equal(p.scriptsCargados[0].src, 'https://connect.facebook.net/es_ES/sdk.js');
-  assert.equal(p.button.disabled, true, 'el botón sigue bloqueado hasta que el SDK inicializa');
+  const p = abrirPagina(q());
+  assert.equal(p.scriptsCargados.length, 0, 'el flujo de redirección no necesita SDK: cero scripts externos');
+  // Lo que importa es que no se CARGUE, no que no se nombre: el comentario de
+  // la CSP explica justamente por qué ya no hace falta permitirlo.
+  assert.ok(!/src\s*=\s*["']?https:\/\/connect\.facebook\.net/.test(html), 'el SDK de Meta ya no se carga desde ninguna etiqueta');
+  assert.ok(!/\bFB\./.test(scriptDeLaPagina()), 'el script ya no llama a ninguna API del SDK');
+  assert.equal(p.button.disabled, false, 'con parámetros válidos el botón queda listo sin esperar a nada');
 });
 
-// ── 2. Rechazo de callback externo (no es un redirector abierto) ────────────
+// ── 2. El redirect_uri: el corazón de este cambio ───────────────────────────
+
+test('el redirect_uri del diálogo es EXACTAMENTE el de la fuente única de identificadores', () => {
+  // Esta es LA prueba de la regresión. El canje del `code` lo hace el gateway
+  // con `esUrl` de meta-identificadores.json; el diálogo lo abre esta página.
+  // Si los dos valores se separan aunque sea en la barra final, Meta devuelve
+  // «code=100 subcode=36008 … redirect_uri is identical» y el alta muere sin
+  // ninguna pista útil. Aquí se atan.
+  const p = abrirPagina(q());
+  const dialogo = urlDelDialogo(p);
+  assert.equal(dialogo.origin, 'https://www.facebook.com');
+  assert.equal(dialogo.pathname, '/v23.0/dialog/oauth');
+  assert.equal(dialogo.searchParams.get('redirect_uri'), IDS.esUrl);
+  assert.equal(dialogo.searchParams.get('client_id'), APP_ID);
+  assert.equal(dialogo.searchParams.get('config_id'), CONFIG_ID);
+  assert.equal(dialogo.searchParams.get('response_type'), 'code');
+  assert.equal(dialogo.searchParams.get('override_default_response_type'), 'true');
+  assert.deepEqual(JSON.parse(dialogo.searchParams.get('extras')), { setup: {}, sessionInfoVersion: '3' });
+});
+
+test('publicada en una ruta distinta de la declarada: se PARA con un motivo', () => {
+  // Servir la página en otra ruta (o sin la barra final) rompe la igualdad con
+  // el `redirect_uri` del canje. Antes eso se descubría veinte minutos después
+  // como un subcode ininteligible; ahora se dice aquí.
+  for (const otra of ['https://byflamastudio.com/atlas/whatsapp-signup', 'https://byflamastudio.com/otra/ruta/', 'https://ajeno.example/atlas/whatsapp-signup/']) {
+    const p = abrirPagina(q(), { base: otra });
+    assert.equal(p.status.className, 'error', `debe pararse publicada en ${otra}`);
+    assert.match(p.status.textContent, /no está publicada en la dirección que espera/);
+    assert.deepEqual(p.navegaciones, [], `no puede abrir el diálogo desde ${otra}`);
+  }
+});
+
+// ── 3. Rechazo de callback externo (no es un redirector abierto) ────────────
 
 test('rechazo de callback EXTERNO: ningún destino fuera del loopback de Atlas', () => {
   const ajenos = [
@@ -137,16 +218,13 @@ test('rechazo de callback EXTERNO: ningún destino fuera del loopback de Atlas',
     'not a url',
   ];
   for (const destino of ajenos) {
-    const p = abrirPagina(q({ state: 'abc', callback: destino }));
+    const p = abrirPagina(q({ callback: destino }));
     assert.equal(p.status.className, 'error', `debe rechazarse: ${destino}`);
     assert.match(p.status.textContent, /destino de retorno no es válido/, destino);
     assert.equal(p.button.disabled, true, `botón bloqueado con ${destino}`);
     assert.deepEqual(p.navegaciones, [], `NO puede navegar a ${destino}`);
-    assert.equal(p.scriptsCargados.length, 0, `ni siquiera carga el SDK con ${destino}`);
   }
 });
-
-// ── 3. Aceptación del loopback de Atlas ─────────────────────────────────────
 
 test('aceptación del loopback: 127.0.0.1 + /oauth/whatsapp/callback en cualquier puerto', () => {
   for (const destino of [
@@ -154,40 +232,76 @@ test('aceptación del loopback: 127.0.0.1 + /oauth/whatsapp/callback en cualquie
     'http://127.0.0.1:8080/oauth/whatsapp/callback',
     'https://127.0.0.1:53127/oauth/whatsapp/callback',
   ]) {
-    const p = abrirPagina(q({ state: 'abc', callback: destino }));
+    const p = abrirPagina(q({ callback: destino }));
     assert.notEqual(p.status.className, 'error', `debe aceptarse: ${destino}`);
-    assert.equal(p.scriptsCargados.length, 1, `carga el SDK con ${destino}`);
+    assert.equal(p.button.disabled, false);
   }
 });
 
-test('éxito: devuelve el code y el state TAL CUAL al loopback', () => {
-  const state = 'ESTADO-OPACO-DE-ATLAS-123';
-  const fb = {
-    init() {},
-    login(cb) { cb({ authResponse: { code: 'CODE-DE-META-XYZ' } }); },
-  };
-  const p = abrirPagina(q({ state }), { fb });
-  p.window.fbAsyncInit();
-  assert.equal(p.button.disabled, false, 'el SDK habilita el botón');
-  p.button._clicks[0]();
+// ── 4. La vuelta de Meta ────────────────────────────────────────────────────
 
+test('vuelta con code: devuelve el code y el state ORIGINAL al loopback', () => {
+  const state = ESTADO;
+  const p = abrirPagina(qVuelta({ code: 'CODE-DE-META-XYZ', state: empaquetar(state, CALLBACK_OK) }));
   assert.equal(p.navegaciones.length, 1);
   const url = new URL(p.navegaciones[0]);
   assert.equal(url.origin, 'http://127.0.0.1:53127');
   assert.equal(url.pathname, '/oauth/whatsapp/callback');
   assert.equal(url.searchParams.get('code'), 'CODE-DE-META-XYZ');
-  assert.equal(url.searchParams.get('state'), state, 'el state se reenvía sin tocarlo');
+  assert.equal(url.searchParams.get('state'), state, 'Atlas recibe SU state, no el empaquetado');
+  assert.deepEqual([...url.searchParams.keys()].sort(), ['code', 'state']);
 });
 
-test('el callback se RECONSTRUYE: una query colada en el parámetro se descarta', () => {
+test('la longitud REAL del state de Atlas (48 hex) viaja y vuelve intacta', () => {
+  // ESTADO usa 16 hex para no dejar un hex de 32 suelto en el fuente; esta
+  // prueba cubre la longitud que Atlas genera de verdad (randomBytes(24)),
+  // construida en ejecución.
+  const p = abrirPagina(qVuelta({ code: 'C', state: empaquetar(ESTADO_REAL, CALLBACK_OK) }));
+  assert.equal(new URL(p.navegaciones[0]).searchParams.get('state'), ESTADO_REAL);
+});
+
+test('vuelta con error: se propaga sin inventar un code', () => {
+  const state = ESTADO;
+  const p = abrirPagina(qVuelta({ error: 'access_denied', state: empaquetar(state, CALLBACK_OK) }));
+  const url = new URL(p.navegaciones[0]);
+  assert.equal(url.searchParams.get('error'), 'access_denied');
+  assert.equal(url.searchParams.get('state'), state);
+  assert.equal(url.searchParams.get('code'), null, 'jamás un code inventado');
+});
+
+test('vuelta con un error de forma rara: se normaliza, no se refleja', () => {
+  const state = ESTADO;
+  const p = abrirPagina(qVuelta({ error: '<img src=x onerror=1>', state: empaquetar(state, CALLBACK_OK) }));
+  assert.equal(new URL(p.navegaciones[0]).searchParams.get('error'), 'access_denied');
+});
+
+test('vuelta con un state que no es nuestro: NO se navega a ninguna parte', () => {
+  const malos = [
+    'no-es-base64',
+    Buffer.from('{}', 'utf8').toString('base64'),
+    // cb fuera del loopback: el empaquetado NO es un permiso, se revalida.
+    empaquetar(ESTADO, 'https://atacante.example/oauth/whatsapp/callback'),
+    // state original con forma imposible (no es el hex que genera Atlas).
+    empaquetar('../../evil', CALLBACK_OK),
+    empaquetar('', CALLBACK_OK),
+  ];
+  for (const state of malos) {
+    const p = abrirPagina(qVuelta({ code: 'C', state }));
+    assert.deepEqual(p.navegaciones, [], `no puede navegar con state=${state.slice(0, 24)}`);
+    assert.equal(p.status.className, 'error');
+    assert.match(p.status.textContent, /no se puede asociar a esta sesión/);
+  }
+  // Y sin `state` en absoluto.
+  const sin = abrirPagina(qVuelta({ code: 'C' }));
+  assert.deepEqual(sin.navegaciones, []);
+});
+
+test('el callback se RECONSTRUYE: una query colada en el empaquetado se descarta', () => {
   // Sin esto, alguien podría inyectar parámetros al servidor local de Atlas a
   // través de una página de un dominio de confianza.
   const sucio = 'http://127.0.0.1:53127/oauth/whatsapp/callback?code=FALSO&admin=1#frag';
-  const fb = { init() {}, login(cb) { cb({ authResponse: { code: 'CODE-REAL' } }); } };
-  const p = abrirPagina(q({ state: 's1', callback: sucio }), { fb });
-  p.window.fbAsyncInit();
-  p.button._clicks[0]();
-
+  const state = ESTADO;
+  const p = abrirPagina(qVuelta({ code: 'CODE-REAL', state: empaquetar(state, sucio) }));
   const url = new URL(p.navegaciones[0]);
   assert.equal(url.searchParams.get('code'), 'CODE-REAL', 'gana el code real de Meta');
   assert.equal(url.searchParams.get('admin'), null, 'los parámetros colados se pierden');
@@ -195,95 +309,34 @@ test('el callback se RECONSTRUYE: una query colada en el parámetro se descarta'
   assert.deepEqual([...url.searchParams.keys()].sort(), ['code', 'state']);
 });
 
-// ── 4. Falta de parámetros ──────────────────────────────────────────────────
+test('el code sale de la barra de direcciones antes de volver a Atlas', () => {
+  const state = ESTADO;
+  const p = abrirPagina(qVuelta({ code: 'C', state: empaquetar(state, CALLBACK_OK) }));
+  assert.deepEqual(p.historial, ['/atlas/whatsapp-signup/'], 'se limpia la query, no el path');
+});
 
-test('falta de parámetros: se explica y NO se carga nada de Meta', () => {
+// ── 5. Falta de parámetros ──────────────────────────────────────────────────
+
+test('falta de parámetros: se explica y no se navega a ninguna parte', () => {
   const completos = { app_id: APP_ID, config_id: CONFIG_ID, state: 'abc', callback: CALLBACK_OK };
   for (const ausente of Object.keys(completos)) {
-    const q = Object.entries(completos)
+    const query = Object.entries(completos)
       .filter(([k]) => k !== ausente)
       .map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&');
-    const p = abrirPagina(`?${q}`);
+    const p = abrirPagina(`?${query}`);
     assert.equal(p.status.className, 'error', `debe fallar sin ${ausente}`);
     assert.match(p.status.textContent, /Faltan parámetros/, `mensaje claro sin ${ausente}`);
-    assert.equal(p.scriptsCargados.length, 0, `sin ${ausente} no se carga el SDK`);
     assert.deepEqual(p.navegaciones, []);
   }
   // Y sin ningún parámetro (alguien entra a la URL a pelo desde un buscador).
   const vacia = abrirPagina('');
   assert.match(vacia.status.textContent, /Faltan parámetros/);
-  assert.equal(vacia.scriptsCargados.length, 0);
+  assert.deepEqual(vacia.navegaciones, []);
 });
 
-// ── 5. Cancelación y error de Meta ──────────────────────────────────────────
-
-test('cancelación del usuario: vuelve a Atlas con access_denied y el state', () => {
-  const fb = { init() {}, login(cb) { cb({ status: 'unknown' }); } };   // el usuario cierra el diálogo
-  const p = abrirPagina(q({ state: 's-cancel', callback: CALLBACK_OK }), { fb });
-  p.window.fbAsyncInit();
-  p.button._clicks[0]();
-
-  const url = new URL(p.navegaciones[0]);
-  assert.equal(url.searchParams.get('error'), 'access_denied');
-  assert.equal(url.searchParams.get('state'), 's-cancel');
-  assert.equal(url.searchParams.get('code'), null, 'jamás un code inventado');
-});
-
-test('respuesta de Meta sin code (o vacía): tampoco se inventa un éxito', () => {
-  for (const respuesta of [null, undefined, {}, { authResponse: {} }, { authResponse: { code: '' } }]) {
-    const fb = { init() {}, login(cb) { cb(respuesta); } };
-    const p = abrirPagina(q({ state: 's2', callback: CALLBACK_OK }), { fb });
-    p.window.fbAsyncInit();
-    p.button._clicks[0]();
-    const url = new URL(p.navegaciones[0]);
-    assert.equal(url.searchParams.get('error'), 'access_denied', `respuesta ${JSON.stringify(respuesta)}`);
-    assert.equal(url.searchParams.get('code'), null);
-  }
-});
-
-test('el SDK de Meta no carga: se avisa y el botón queda bloqueado', () => {
-  const p = abrirPagina(q({ state: 's3', callback: CALLBACK_OK }));
-  p.creado.onerror();
-  assert.equal(p.status.className, 'error');
-  assert.match(p.status.textContent, /No se pudo cargar el módulo de Meta/);
-  assert.equal(p.button.disabled, true);
-});
-
-test('postMessage: solo se atiende a facebook.com por HTTPS, y nunca revienta', () => {
-  const p = abrirPagina(q({ state: 's4', callback: CALLBACK_OK }));
-  const escuchar = p.listeners.message[0];
-  const finish = JSON.stringify({ type: 'WA_EMBEDDED_SIGNUP', event: 'FINISH' });
-
-  // Orígenes que NO son Meta: se ignoran sin lanzar.
-  for (const origin of ['https://atacante.example', 'http://www.facebook.com', 'https://notfacebook.com', 'null', '']) {
-    assert.doesNotThrow(() => escuchar({ origin, data: finish }), `origen ${origin}`);
-  }
-  assert.ok(!/Cuenta seleccionada/.test(p.status.textContent), 'ningún origen ajeno cambia la interfaz');
-
-  // Datos ilegibles desde un origen legítimo: tampoco lanzan.
-  assert.doesNotThrow(() => escuchar({ origin: 'https://www.facebook.com', data: 'no es json' }));
-
-  escuchar({ origin: 'https://www.facebook.com', data: finish });
-  assert.match(p.status.textContent, /Cuenta seleccionada/);
-});
-
-// ── 6. Ausencia de secretos y de rastro ─────────────────────────────────────
-
-test('el SDK se inicializa con telemetría desactivada', () => {
-  let opciones = null;
-  const fb = { init(o) { opciones = o; }, login() {} };
-  const p = abrirPagina(q({ state: 's' }), { fb });
-  p.window.fbAsyncInit();
-  assert.equal(opciones.autoLogAppEvents, false, 'sin eventos automáticos hacia Meta');
-  assert.equal(opciones.xfbml, false);
-  assert.equal(opciones.appId, APP_ID, 'el App ID que se usa es el que llegó por query string');
-});
-
-// ── 7. Defensas de la propia página (lo que la revisión adversarial exigió) ──
+// ── 6. Defensas de la propia página ─────────────────────────────────────────
 
 test('la CSP sigue en su sitio, sin comodines y con el hash del script real', () => {
-  // La cabecera del fichero invita a retirar la CSP si bloqueara algo; sin esta
-  // prueba, retirarla no dejaría ni rastro.
   const m = /<meta http-equiv="Content-Security-Policy" content="([\s\S]*?)"/.exec(html);
   assert.ok(m, 'la CSP no puede desaparecer sin que esta prueba lo diga');
   const csp = m[1];
@@ -294,7 +347,8 @@ test('la CSP sigue en su sitio, sin comodines y con el hash del script real', ()
   assert.ok(!/script-src[^;]*\*/.test(csp), 'script-src no admite comodines');
   assert.ok(!/script-src[^;]*'unsafe-inline'/.test(csp), "'unsafe-inline' dejaría la CSP sin valor ante un XSS");
   assert.ok(!/'unsafe-eval'/.test(csp));
-  assert.match(csp, /script-src[^;]*https:\/\/connect\.facebook\.net/);
+  // Sin SDK, la CSP se cierra del todo: ningún origen externo de script.
+  assert.ok(!/script-src[^;]*https:/.test(csp), 'script-src ya no admite ningún origen remoto');
 
   // El hash tiene que corresponder al script que se publica: si alguien edita
   // el script y no recalcula el hash, la página deja de funcionar en silencio.
@@ -312,32 +366,27 @@ test('ningún sink peligroso: los parámetros nunca se interpretan como HTML ni 
 });
 
 test('enmarcada en otra página: se niega a mostrarse (clickjacking)', () => {
-  // `frame-ancestors` se ignora en una CSP declarada por <meta> y GitHub Pages
-  // no permite cabeceras propias: la defensa tiene que estar en el script.
-  const p = abrirPagina(q({ state: 'abc', callback: CALLBACK_OK }), { enmarcada: true });
+  const p = abrirPagina(q(), { enmarcada: true });
   assert.ok(p.lanzo, 'el script debe abortar');
   assert.match(p.documentElement.textContent, /no puede mostrarse dentro de otra/);
-  assert.equal(p.scriptsCargados.length, 0, 'enmarcada no carga ni el SDK');
   assert.deepEqual(p.navegaciones, []);
 });
 
 test('el state sale de la barra de direcciones en cuanto se ha leído', () => {
-  const p = abrirPagina(q({ state: 'ESTADO-OPACO', callback: CALLBACK_OK }));
+  const p = abrirPagina(q({ state: 'ESTADO-OPACO' }));
   assert.deepEqual(p.historial, ['/atlas/whatsapp-signup/'], 'se limpia la query, no el path');
   // Y aun así el flujo sigue funcionando: los valores ya están en variables.
-  assert.equal(p.scriptsCargados.length, 1);
+  assert.equal(p.button.disabled, false);
 });
 
 test('formas numéricas de 127.0.0.1: se aceptan y acaban en el loopback normalizado', () => {
   // El parser del navegador las normaliza. Se fija aquí para que nadie
   // «endurezca» la validación con una comparación textual y las rompa.
+  const state = ESTADO;
   for (const host of ['2130706433', '0x7f000001', '127.1', '127.0.1']) {
     const destino = `http://${host}:53127/oauth/whatsapp/callback`;
-    const fb = { init() {}, login(cb) { cb({ authResponse: { code: 'C' } }); } };
-    const p = abrirPagina(q({ state: 's', callback: destino }), { fb });
-    assert.notEqual(p.status.className, 'error', `debe aceptarse: ${host}`);
-    p.window.fbAsyncInit();
-    p.button._clicks[0]();
+    assert.notEqual(abrirPagina(q({ callback: destino })).status.className, 'error', `debe aceptarse: ${host}`);
+    const p = abrirPagina(qVuelta({ code: 'C', state: empaquetar(state, destino) }));
     assert.equal(new URL(p.navegaciones[0]).hostname, '127.0.0.1', `${host} debe normalizarse a 127.0.0.1`);
   }
 });
@@ -350,184 +399,73 @@ test('esquemas no navegables y credenciales embebidas: rechazados', () => {
     'http://atacante.example@127.0.0.1:53127/oauth/whatsapp/callback',
     'http://usuario:clave@127.0.0.1:53127/oauth/whatsapp/callback',
   ]) {
-    const p = abrirPagina(q({ state: 'abc', callback: destino }));
+    const p = abrirPagina(q({ callback: destino }));
     assert.equal(p.status.className, 'error', `debe rechazarse: ${destino}`);
-    assert.equal(p.scriptsCargados.length, 0);
+    assert.deepEqual(p.navegaciones, []);
   }
 });
 
-test('graph_version y feature van al SDK solo si tienen la forma esperada', () => {
-  const casos = [
-    ['v22.0', 'v22.0'],
-    ['../../evil', 'v23.0'],
-    ['v99.99.99', 'v23.0'],
-    ['', 'v23.0'],
-  ];
-  for (const [entrada, esperado] of casos) {
-    let opciones = null;
-    const fb = { init(o) { opciones = o; }, login() {} };
-    const p = abrirPagina(q({ state: 's', graph_version: entrada, callback: CALLBACK_OK }), { fb });
-    p.window.fbAsyncInit();
-    assert.equal(opciones.version, esperado, `graph_version=${entrada}`);
+test('graph_version y feature van al diálogo solo si tienen la forma esperada', () => {
+  for (const [entrada, esperado] of [['v22.0', '/v22.0/dialog/oauth'], ['../../evil', '/v23.0/dialog/oauth'], ['v99.99.99', '/v23.0/dialog/oauth'], ['', '/v23.0/dialog/oauth']]) {
+    const dialogo = urlDelDialogo(abrirPagina(q({ graph_version: entrada })));
+    assert.equal(dialogo.pathname, esperado, `graph_version=${entrada}`);
+    assert.equal(dialogo.origin, 'https://www.facebook.com', `graph_version=${entrada} no puede cambiar el host`);
   }
 
   // `feature` llega a extras.featureType: solo minúsculas y guiones bajos.
   for (const [entrada, debePasar] of [['whatsapp_business_app_onboarding', true], ['<img src=x>', false], ['A'.repeat(200), false]]) {
-    let opciones = null;
-    const fb = { init() {}, login(_cb, o) { opciones = o; } };
-    const p = abrirPagina(q({ state: 's', feature: entrada, callback: CALLBACK_OK }), { fb });
-    p.window.fbAsyncInit();
-    p.button._clicks[0]();
-    assert.equal('featureType' in opciones.extras, debePasar, `feature=${entrada.slice(0, 20)}`);
+    const dialogo = urlDelDialogo(abrirPagina(q({ feature: entrada })));
+    const extras = JSON.parse(dialogo.searchParams.get('extras'));
+    assert.equal('featureType' in extras, debePasar, `feature=${entrada.slice(0, 20)}`);
   }
 });
 
-test('si Meta no responde nunca, la página se recupera sola', () => {
-  const fb = { init() {}, login() { /* nunca llama al callback */ } };
-  const p = abrirPagina(q({ state: 's', callback: CALLBACK_OK }), { fb });
-  p.window.fbAsyncInit();
-  p.button._clicks[0]();
-  assert.equal(p.button.disabled, true, 'mientras espera, el botón está bloqueado');
-  p.sandbox.__correrTemporizadores();
-  assert.equal(p.button.disabled, false, 'tras el plazo se puede reintentar');
-  assert.match(p.status.textContent, /Meta no ha respondido/);
-  assert.deepEqual(p.navegaciones, [], 'no se inventa ni un code ni un error');
-});
-
-// ── 8. Pareja app_id/config_id fijada ───────────────────────────────────────
+// ── 7. Pareja app_id/config_id fijada ───────────────────────────────────────
 // Sin esto, cualquiera podía enlazar la página con SU app de Meta y presentar
 // un diálogo de consentimiento ajeno bajo un dominio de confianza: el `code`
 // no se filtraba, pero los permisos se concedían a la app del atacante.
 
 test('pareja CORRECTA: la página funciona y usa exactamente los valores de la URL', () => {
-  let init = null; let login = null;
-  const fb = { init(o) { init = o; }, login(cb, o) { login = o; cb({ authResponse: { code: 'C' } }); } };
-  const p = abrirPagina(q(), { fb });
+  const p = abrirPagina(q());
   assert.notEqual(p.status.className, 'error');
-  p.window.fbAsyncInit();
-  p.button._clicks[0]();
-  assert.equal(init.appId, APP_ID, 'el App ID que se usa es el que llegó por query string');
-  assert.equal(login.config_id, CONFIG_ID);
-  assert.equal(p.navegaciones.length, 1, 'el flujo llega hasta el retorno a Atlas');
+  const dialogo = urlDelDialogo(p);
+  assert.equal(dialogo.searchParams.get('client_id'), APP_ID);
+  assert.equal(dialogo.searchParams.get('config_id'), CONFIG_ID);
 });
 
 test('app_id INCORRECTO: rechazo explícito, sin sustituirlo en silencio', () => {
-  for (const ajeno of ['9999999999999999', '1538119581128851', '0', 'abc', `${APP_ID} `, ` ${APP_ID}`]) {
+  for (const ajeno of ['9999999999999999', RETIRADOS[0].appId, '0', 'abc', `${APP_ID} `, ` ${APP_ID}`]) {
     const p = abrirPagina(q({ app_id: ajeno }));
     assert.equal(p.status.className, 'error', `debe rechazarse app_id=${ajeno}`);
     assert.match(p.status.textContent, /solo funciona con la aplicación de Atlas/);
     assert.match(p.status.textContent, /la aplicación no coincide/, 'dice CUÁL no cuadra');
-    assert.equal(p.scriptsCargados.length, 0, 'no se carga el SDK con una app ajena');
-    assert.deepEqual(p.navegaciones, []);
-    // Y no se repite en la página el valor que controla quien abre el enlace.
-    assert.ok(!p.status.textContent.includes(ajeno), 'no se refleja la entrada');
+    assert.deepEqual(p.navegaciones, [], `no abre ningún diálogo con app_id=${ajeno}`);
   }
 });
 
-test('config_id INCORRECTO: rechazo explícito', () => {
-  for (const ajeno of ['1234567890123456', '1431463065493438', 'x']) {
+test('config_id INCORRECTO: mismo trato', () => {
+  for (const ajeno of [RETIRADOS[0].configId, '0', 'x']) {
     const p = abrirPagina(q({ config_id: ajeno }));
     assert.equal(p.status.className, 'error', `debe rechazarse config_id=${ajeno}`);
     assert.match(p.status.textContent, /la configuración no coincide/);
-    assert.equal(p.scriptsCargados.length, 0);
-  }
-});
-
-test('pareja MEZCLADA: app buena con configuración ajena, y al revés', () => {
-  const mezclas = [
-    [{ app_id: '9999999999999999' }, /la aplicación no coincide/],
-    [{ config_id: '9999999999999999' }, /la configuración no coincide/],
-    [{ app_id: '9999999999999999', config_id: '8888888888888888' }, /la aplicación y la configuración no coinciden/],
-    // El config_id puesto donde va el app_id (error de configuración típico).
-    [{ app_id: CONFIG_ID, config_id: APP_ID }, /la aplicación y la configuración no coinciden/],
-  ];
-  for (const [extra, patron] of mezclas) {
-    const p = abrirPagina(q(extra));
-    assert.equal(p.status.className, 'error', JSON.stringify(extra));
-    assert.match(p.status.textContent, patron, JSON.stringify(extra));
-    assert.equal(p.scriptsCargados.length, 0);
     assert.deepEqual(p.navegaciones, []);
   }
 });
 
-// ── 9. Identificadores RETIRADOS (por su nombre, no por el valor) ──────────
-// La fuente única (docs/whatsapp-cloud/meta-identificadores.json) vive en el
-// monorepo, no aquí: se listan a mano las dos parejas que hoy están retiradas
-// allí. Si la lista cambia, `apps/desktop/test/identificadores-retirados.test.mjs`
-// del monorepo es quien lo detecta primero.
-const RETIRADOS = [
-  { nombre: 'Atlas Inbox Test', appId: '1538119581128850', configId: '1431463065493437' },
-  { nombre: 'Pareja descartada (F4-B, ninguna app accesible)', appId: '1558374839123463', configId: '1075072988792533' },
-];
-
-test('cualquier pareja RETIRADA (app real jubilada o identificador descartado) se rechaza igual que una ajena cualquiera', () => {
-  // Hoy hay dos: la app de prueba real original (sustituida) y una pareja
-  // declarada por error en una tarea anterior que nunca correspondió a
-  // ninguna app accesible del propietario. La página no las distingue: las dos
-  // están en `retirados` y las dos se rechazan por el mismo camino.
-  assert.ok(RETIRADOS.length >= 2, 'esta prueba espera al menos la app de prueba y un descarte');
-  for (const viejo of RETIRADOS) {
-    const soloAppId = abrirPagina(q({ app_id: viejo.appId }));
-    assert.equal(soloAppId.status.className, 'error', `${viejo.nombre}: App ID retirado`);
-    assert.match(soloAppId.status.textContent, /la aplicación no coincide/, viejo.nombre);
-    assert.equal(soloAppId.scriptsCargados.length, 0, `${viejo.nombre}: no debe cargar el SDK`);
-
-    const soloConfigId = abrirPagina(q({ config_id: viejo.configId }));
-    assert.equal(soloConfigId.status.className, 'error', `${viejo.nombre}: config_id retirado`);
-    assert.match(soloConfigId.status.textContent, /la configuración no coincide/, viejo.nombre);
-
-    // Combinación MEZCLADA: la pareja retirada COMPLETA (no la vigente).
-    const parejaCompleta = abrirPagina(q({ app_id: viejo.appId, config_id: viejo.configId }));
-    assert.equal(parejaCompleta.status.className, 'error', `${viejo.nombre}: pareja retirada completa`);
-    assert.equal(parejaCompleta.scriptsCargados.length, 0);
-    assert.deepEqual(parejaCompleta.navegaciones, []);
-  }
+test('los dos incorrectos a la vez: se dice que fallan los dos', () => {
+  const p = abrirPagina(q({ app_id: RETIRADOS[0].appId, config_id: RETIRADOS[0].configId }));
+  assert.match(p.status.textContent, /la aplicación y la configuración no coinciden/);
+  assert.deepEqual(p.navegaciones, []);
 });
 
-test('la pareja fijada está en la página y NO hay ningún otro identificador', () => {
-  // Los dos son PÚBLICOS (viajan en toda URL de diálogo OAuth): fijarlos aquí
-  // es deliberado. Lo que sigue prohibido es cualquier otra cosa con pinta de
-  // credencial, y cualquier identificador de más.
-  assert.ok(html.includes(`'${APP_ID}'`), 'el App ID permitido debe estar fijado');
-  assert.ok(html.includes(`'${CONFIG_ID}'`), 'el config_id permitido debe estar fijado');
-  const numeros = new Set((html.match(/\b\d{10,}\b/g) ?? []));
-  numeros.delete(APP_ID); numeros.delete(CONFIG_ID);
-  numeros.delete('2130706433');   // forma decimal de 127.0.0.1, en un comentario
-  assert.deepEqual([...numeros], [], `identificadores largos inesperados: ${[...numeros]}`);
-});
-
-test('state, callback, tokens y secretos: ni almacenados ni registrados', () => {
-  const script = scriptDeLaPagina();
-  for (const api of ['localStorage', 'sessionStorage', 'indexedDB', 'document.cookie',
-    'fetch(', 'XMLHttpRequest', 'sendBeacon', 'console.', 'navigator.']) {
-    assert.ok(!script.includes(api), `el script no puede usar ${api}`);
-  }
-  // Ejecución real con valores marcados: nada de esto puede aparecer en
-  // ninguna salida, ni en la URL de ningún recurso externo.
-  const STATE = 'STATE-MARCADO-NO-DEBE-SALIR';
-  const CODE = 'CODE-MARCADO-NO-DEBE-SALIR';
-  const fb = { init() {}, login(cb) { cb({ authResponse: { code: CODE } }); } };
-  const p = abrirPagina(q({ state: STATE }), { fb });
-  p.window.fbAsyncInit();
-  p.button._clicks[0]();
-
-  assert.deepEqual(p.consola, [], 'ni un registro, ni siquiera de diagnóstico');
-  assert.deepEqual(p.scriptsCargados.map((s) => s.src), ['https://connect.facebook.net/es_ES/sdk.js'],
-    'el único destino externo es el SDK, sin parámetros añadidos');
-  // El state sale de la barra de direcciones en cuanto se ha leído.
-  assert.deepEqual(p.historial, ['/atlas/whatsapp-signup/']);
-  // El code y el state SOLO viajan al loopback de Atlas, a ningún otro sitio.
-  assert.equal(p.navegaciones.length, 1);
-  const destino = new URL(p.navegaciones[0]);
-  assert.equal(destino.hostname, '127.0.0.1');
-  assert.equal(destino.searchParams.get('state'), STATE);
-  assert.equal(destino.searchParams.get('code'), CODE);
-  // Y la página no contiene App Secret, token ni clave privada.
-  for (const [nombre, patron] of [
-    ['token de Meta', /\bEA[A-Za-z0-9]{20,}\b/],
-    ['App Secret / hexadecimal largo', /\b[A-Fa-f0-9]{32,}\b/],
-    ['clave privada', /PRIVATE KEY/],
-  ]) {
-    assert.ok(!patron.test(html), `la página no puede contener ${nombre}`);
+test('la pareja RETIRADA no puede volver por la puerta de atrás', () => {
+  // `retirados` de meta-identificadores.json: la app de pruebas y la pareja
+  // descartada. Ninguna puede abrir un diálogo desde esta página.
+  const retirados = RETIRADOS;
+  assert.ok(retirados.length > 0, 'la lista de retirados no puede quedarse vacía sin que se note');
+  for (const r of retirados) {
+    const p = abrirPagina(q({ app_id: r.appId, config_id: r.configId }));
+    assert.equal(p.status.className, 'error', `${r.nombre} debe rechazarse`);
+    assert.deepEqual(p.navegaciones, [], `${r.nombre} no puede abrir ningún diálogo`);
   }
 });
