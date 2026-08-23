@@ -5,7 +5,7 @@ import { useActiveQuestions, useDashboard, useToday } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
 import { dict } from '../i18n/index.ts'
 import { ScreenHeader } from '../components/ui.tsx'
-import { MODE_SIZE, selectSession } from '../engines/selection.ts'
+import { MODE_SIZE, selectSession, type SessionFilters } from '../engines/selection.ts'
 import type { BlockId, StudyMode } from '../domain/types.ts'
 
 const MODES: StudyMode[] = [
@@ -35,6 +35,25 @@ export function Train(): ReactNode {
   const [selectedTopics, setSelectedTopics] = useState<string[]>([])
   const [block, setBlock] = useState<BlockId | 'all'>('all')
   const [difficulty, setDifficulty] = useState<'facil' | 'mitjana' | 'dificil' | 'all'>('all')
+  const [origin, setOrigin] = useState<'authored' | 'official' | 'all'>('all')
+  const [state, setState] = useState<'new' | 'failed' | 'due' | 'all'>('all')
+
+  /** Els filtres triats, en la forma que espera el motor de selecció. */
+  const filters = useMemo<SessionFilters>(
+    () => ({
+      ...(difficulty === 'all' ? {} : { difficulty }),
+      ...(origin === 'all' ? {} : { origin }),
+      ...(origin === 'official' ? { onlyOfficialExam: true } : {}),
+      ...(state === 'all' ? {} : { state }),
+    }),
+    [difficulty, origin, state],
+  )
+
+  /** Hi ha alguna pregunta d'examen oficial importada al banc? */
+  const hasOfficialQuestions = useMemo(
+    () => active.some((q) => q.origin === 'official'),
+    [active],
+  )
 
   const topicsInBlock = useMemo(
     () =>
@@ -66,9 +85,9 @@ export function Train(): ReactNode {
       topicIds: selectedTopics,
       size: 999,
       seed: 'preview',
-      ...(difficulty === 'all' ? {} : { filters: { difficulty } }),
+      filters,
     }).length
-  }, [active, reviews, today, selectedTopics, difficulty])
+  }, [active, reviews, today, selectedTopics, filters])
 
   const toggleTopic = (topicId: string): void => {
     setSelectedTopics((current) =>
@@ -162,6 +181,61 @@ export function Train(): ReactNode {
           </div>
 
           <div className="field">
+            <span className="field__label">{t.train.filterOrigin}</span>
+            <div className="choice-group">
+              <button
+                type="button"
+                className="choice"
+                aria-pressed={origin === 'all'}
+                onClick={() => setOrigin('all')}
+              >
+                {t.common.all}
+              </button>
+              {(['authored', 'official'] as const).map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  className="choice"
+                  aria-pressed={origin === value}
+                  onClick={() => setOrigin(value)}
+                  data-testid={`filter-origin-${value}`}
+                >
+                  {t.train.origin[value]}
+                </button>
+              ))}
+            </div>
+            {origin === 'official' && !hasOfficialQuestions ? (
+              <p className="notice notice--warn">{t.train.officialUnavailable}</p>
+            ) : null}
+          </div>
+
+          <div className="field">
+            <span className="field__label">{t.train.filterState}</span>
+            <div className="choice-group">
+              <button
+                type="button"
+                className="choice"
+                aria-pressed={state === 'all'}
+                onClick={() => setState('all')}
+              >
+                {t.common.all}
+              </button>
+              {(['new', 'failed', 'due'] as const).map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  className="choice"
+                  aria-pressed={state === value}
+                  onClick={() => setState(value)}
+                  data-testid={`filter-state-${value}`}
+                >
+                  {t.train.state[value]}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="field">
             <span className="field__label">
               {t.train.selectTopics} · {selectedTopics.length} {t.train.selected}
             </span>
@@ -204,7 +278,20 @@ export function Train(): ReactNode {
             className="btn btn--primary btn--lg btn--block"
             disabled={selectedTopics.length === 0 || topicPool === 0}
             onClick={() =>
-              navigate({ name: 'study', mode: 'per-tema', topicIds: selectedTopics })
+              navigate({
+                name: 'study',
+                mode: 'per-tema',
+                topicIds: selectedTopics,
+                ...(difficulty === 'all' && origin === 'all' && state === 'all'
+                  ? {}
+                  : {
+                      filters: {
+                        ...(difficulty === 'all' ? {} : { difficulty }),
+                        ...(origin === 'all' ? {} : { origin }),
+                        ...(state === 'all' ? {} : { state }),
+                      },
+                    }),
+              })
             }
             data-testid="start-topic-session"
           >

@@ -119,8 +119,12 @@ const ca = {
     filterBlock: 'Bloc',
     filterDifficulty: 'Dificultat',
     filterOrigin: 'Origen',
+    filterState: 'Estat',
     difficulty: { facil: 'Fàcil', mitjana: 'Mitjana', dificil: 'Difícil' },
     origin: { authored: 'Pròpies', official: 'D’examen oficial' },
+    state: { new: 'Noves', failed: 'Fallades', due: 'Per repassar' },
+    officialUnavailable:
+      'Encara no hi ha cap pregunta d’examen oficial importada: el filtre quedarà buit.',
     selectTopics: 'Selecciona temes',
     selected: 'seleccionats',
     available: 'disponibles',
@@ -144,7 +148,11 @@ const ca = {
     finishSession: 'Acabar la sessió',
     sessionDone: 'Sessió completada',
     correctCount: 'Encerts',
+    correctCountOne: 'encert',
+    correctCountMany: 'encerts',
     wrongCount: 'Errors',
+    wrongCountOne: 'error',
+    wrongCountMany: 'errors',
     unknownCount: 'No ho sé',
     xpEarned: 'XP guanyats',
     backHome: 'Tornar a l’inici',
@@ -179,6 +187,12 @@ const ca = {
     inProgress: 'En curs',
     timeUp: 'S’ha acabat el temps',
     confirmFinish: 'Finalitzar el simulacre?',
+    confirmNextSection: 'Tancar aquesta prova i passar a la següent?',
+    nextSection: 'Passar a la prova següent',
+    noReturnWarning: 'Un cop tancada aquesta prova ja no hi podràs tornar, com el dia de l’examen.',
+    sectionOf: 'Prova {current} de {total}',
+    sectionResults: 'Resultat per proves',
+    completeVerdictNote: 'Al simulacre complet cal aprovar les dues proves per separat; no es fa mitjana.',
     blanksWarning: 'Encara tens {n} preguntes en blanc. Les preguntes en blanc no resten punts.',
     finishAnyway: 'Finalitzar igualment',
     keepGoing: 'Continuar responent',
@@ -216,6 +230,9 @@ const ca = {
     answered: 'Preguntes contestades',
     studyTime: 'Temps estudiat',
     byTopic: 'Semàfor per temes',
+    examMarker: 'Resultat en simulacre',
+    examMarkerNote:
+      'El punt blau mostra els encerts d’aquest tema als simulacres acabats. Va a part del domini: el domini mesura l’estudi acumulat i el simulacre, el rendiment sota pressió i amb penalització.',
     bands: { 'sense-dades': 'Sense dades', baix: 'Baix', mitja: 'Mitjà', alt: 'Alt' },
     recurringErrors: 'Errors recurrents',
     noErrors: 'Cap error recurrent. Bon senyal.',
@@ -414,8 +431,12 @@ const es: Dict = {
     filterBlock: 'Bloque',
     filterDifficulty: 'Dificultad',
     filterOrigin: 'Origen',
+    filterState: 'Estado',
     difficulty: { facil: 'Fácil', mitjana: 'Media', dificil: 'Difícil' },
     origin: { authored: 'Propias', official: 'De examen oficial' },
+    state: { new: 'Nuevas', failed: 'Falladas', due: 'Para repasar' },
+    officialUnavailable:
+      'Todavía no hay ninguna pregunta de examen oficial importada: el filtro quedará vacío.',
     selectTopics: 'Selecciona temas',
     selected: 'seleccionados',
     available: 'disponibles',
@@ -439,7 +460,11 @@ const es: Dict = {
     finishSession: 'Terminar la sesión',
     sessionDone: 'Sesión completada',
     correctCount: 'Aciertos',
+    correctCountOne: 'acierto',
+    correctCountMany: 'aciertos',
     wrongCount: 'Errores',
+    wrongCountOne: 'error',
+    wrongCountMany: 'errores',
     unknownCount: 'No lo sé',
     xpEarned: 'XP ganados',
     backHome: 'Volver al inicio',
@@ -474,6 +499,12 @@ const es: Dict = {
     inProgress: 'En curso',
     timeUp: 'Se ha acabado el tiempo',
     confirmFinish: '¿Finalizar el simulacro?',
+    confirmNextSection: '¿Cerrar esta prueba y pasar a la siguiente?',
+    nextSection: 'Pasar a la prueba siguiente',
+    noReturnWarning: 'Una vez cerrada esta prueba ya no podrás volver, como el día del examen.',
+    sectionOf: 'Prueba {current} de {total}',
+    sectionResults: 'Resultado por pruebas',
+    completeVerdictNote: 'En el simulacro completo hay que aprobar las dos pruebas por separado; no se hace media.',
     blanksWarning: 'Todavía tienes {n} preguntas en blanco. Las preguntas en blanco no restan puntos.',
     finishAnyway: 'Finalizar igualmente',
     keepGoing: 'Seguir respondiendo',
@@ -511,6 +542,9 @@ const es: Dict = {
     answered: 'Preguntas contestadas',
     studyTime: 'Tiempo estudiado',
     byTopic: 'Semáforo por temas',
+    examMarker: 'Resultado en simulacro',
+    examMarkerNote:
+      'El punto azul muestra los aciertos de este tema en los simulacros terminados. Va aparte del dominio: el dominio mide el estudio acumulado y el simulacro, el rendimiento bajo presión y con penalización.',
     bands: { 'sense-dades': 'Sin datos', baix: 'Bajo', mitja: 'Medio', alt: 'Alto' },
     recurringErrors: 'Errores recurrentes',
     noErrors: 'Ningún error recurrente. Buena señal.',
@@ -598,6 +632,16 @@ const DICTS: Record<Lang, Dict> = { ca, es }
 
 export function dict(lang: Lang): Dict {
   return DICTS[lang]
+}
+
+/**
+ * Tria la forma singular o plural.
+ *
+ * Català i castellà comparteixen la regla que necessitem aquí: singular per a
+ * 1 i plural per a la resta, inclòs el zero.
+ */
+export function plural(n: number, one: string, many: string): string {
+  return n === 1 ? one : many
 }
 
 /** Substitueix marcadors {clau} d'una cadena traduïda. */

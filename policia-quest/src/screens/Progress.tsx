@@ -5,6 +5,7 @@ import {
   useActivityCalendar,
   useConfidenceStats,
   useDashboard,
+  useExamResultsByTopic,
   useRecurringErrors,
 } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
@@ -21,6 +22,7 @@ export function Progress(): ReactNode {
   const errors = useRecurringErrors()
   const confidence = useConfidenceStats()
   const calendar = useActivityCalendar()
+  const examByTopic = useExamResultsByTopic()
   const level = levelFor(progress.xp)
 
   // Amb poques respostes, l'exactitud no és informativa: es mostra un guió.
@@ -76,6 +78,7 @@ export function Progress(): ReactNode {
               .map((topic) => {
                 const mastery = dash.masteryByTopic.get(topic.topicId)
                 const band = mastery?.band ?? 'sense-dades'
+                const examResult = examByTopic.get(topic.topicId)
                 return (
                   <button
                     key={topic.topicId}
@@ -108,6 +111,31 @@ export function Progress(): ReactNode {
                     <span style={{ flex: 1, minWidth: 0, fontSize: 'var(--text-sm)' }}>
                       {topic.number}. {pick(topic.title, lang)}
                     </span>
+
+                    {/*
+                      El blau del simulacre va a part del semàfor de domini:
+                      són dues mesures diferents i barrejar-les amagaria els
+                      temes que van bé estudiant i malament sota pressió.
+                    */}
+                    {examResult ? (
+                      <span
+                        className="pill pill--info"
+                        title={`${t.progress.examMarker}: ${examResult.correct}/${examResult.total}`}
+                        data-testid={`exam-marker-${topic.number}`}
+                      >
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            width: 6,
+                            height: 6,
+                            borderRadius: '50%',
+                            background: 'var(--info)',
+                          }}
+                        />
+                        {examResult.correct}/{examResult.total}
+                      </span>
+                    ) : null}
+
                     <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-faint)' }}>
                       {mastery?.mastery === null || mastery === undefined
                         ? t.progress.bands['sense-dades']
@@ -121,6 +149,9 @@ export function Progress(): ReactNode {
             {`${t.progress.bands['sense-dades']}: menys de ${MIN_ANSWERS_FOR_MASTERY} respostes al tema. `}
             {`L’exactitud recent apareix a partir de ${MIN_ANSWERS_FOR_ACCURACY} respostes.`}
           </p>
+          {examByTopic.size > 0 ? (
+            <p className="screen__subtitle">{t.progress.examMarkerNote}</p>
+          ) : null}
         </section>
 
         {/* Confiança i precisió */}

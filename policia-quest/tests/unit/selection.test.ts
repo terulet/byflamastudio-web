@@ -182,6 +182,52 @@ describe('filtres', () => {
   })
 })
 
+describe('filtre per estat de repàs', () => {
+  const pool = [q('n1'), q('n2'), q('f1'), q('d1'), q('m1')]
+  const reviews = reviewMap([
+    ['f1', { reps: 3, dueDay: TODAY + 5, lapses: 2 }],
+    ['d1', { reps: 3, dueDay: TODAY - 1, lapses: 0 }],
+    ['m1', { reps: 3, dueDay: TODAY + 9, lapses: 0, flagged: false }],
+  ])
+
+  it('"noves" només retorna preguntes mai vistes', () => {
+    const picked = selectSession({
+      mode: 'patrulla', pool, reviews, today: TODAY, seed: 's', filters: { state: 'new' },
+    })
+    expect(picked.map((p) => p.questionId).sort()).toEqual(['n1', 'n2'])
+  })
+
+  it('"fallades" retorna les que tenen errors o marca manual', () => {
+    const withFlag = reviewMap([
+      ['f1', { reps: 3, dueDay: TODAY + 5, lapses: 2 }],
+      ['m1', { reps: 3, dueDay: TODAY + 9, lapses: 0, flagged: true }],
+    ])
+    const picked = selectSession({
+      mode: 'patrulla', pool, reviews: withFlag, today: TODAY, seed: 's', filters: { state: 'failed' },
+    })
+    expect(picked.map((p) => p.questionId).sort()).toEqual(['f1', 'm1'])
+  })
+
+  it('"per repassar" només retorna les vençudes', () => {
+    const picked = selectSession({
+      mode: 'patrulla', pool, reviews, today: TODAY, seed: 's', filters: { state: 'due' },
+    })
+    expect(picked.map((p) => p.questionId)).toEqual(['d1'])
+  })
+
+  it('els filtres s’acumulen', () => {
+    const mixed = [
+      q('x1', 'roses-t01', { difficulty: 'facil' }),
+      q('x2', 'roses-t01', { difficulty: 'dificil' }),
+    ]
+    const picked = selectSession({
+      mode: 'patrulla', pool: mixed, reviews: new Map(), today: TODAY, seed: 's',
+      filters: { state: 'new', difficulty: 'dificil' },
+    })
+    expect(picked.map((p) => p.questionId)).toEqual(['x2'])
+  })
+})
+
 describe('comptadors de la pantalla d’inici', () => {
   const pool = [q('q1'), q('q2'), q('q3'), q('q4', 'roses-t01', { status: 'draft' })]
 
@@ -220,6 +266,21 @@ describe('muntatge de simulacres', () => {
     const c = buildExamPaper({ pool, track: 'coneixements-professionals', count: 40, seed: 'e2' })
     expect(a.map((x) => x.questionId)).toEqual(b.map((x) => x.questionId))
     expect(a.map((x) => x.questionId)).not.toEqual(c.map((x) => x.questionId))
+  })
+
+  it('exclou les preguntes ja usades en una altra prova del mateix quadernet', () => {
+    const first = buildExamPaper({ pool, track: 'coneixements-professionals', count: 40, seed: 'e1' })
+    const second = buildExamPaper({
+      pool,
+      track: 'coneixements-professionals',
+      count: 40,
+      seed: 'e1',
+      exclude: first.map((q) => q.questionId),
+    })
+    const firstIds = new Set(first.map((q) => q.questionId))
+    for (const q of second) {
+      expect(firstIds.has(q.questionId), `${q.questionId} es repeteix entre proves`).toBe(false)
+    }
   })
 
   it('no inventa preguntes si el banc és més petit que el quadernet', () => {

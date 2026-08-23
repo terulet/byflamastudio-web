@@ -28,12 +28,22 @@ export interface SelectionInput {
   /** Llavor per fer la barreja reproduïble. */
   seed?: string
   /** Filtres addicionals de la pantalla Entrenar. */
-  filters?: {
-    track?: 'cultura-general' | 'coneixements-professionals'
-    difficulty?: 'facil' | 'mitjana' | 'dificil'
-    origin?: 'authored' | 'official'
-    onlyOfficialExam?: boolean
-  }
+  filters?: SessionFilters
+}
+
+/** Filtres de la pantalla Entrenar. Tots són opcionals i acumulatius. */
+export interface SessionFilters {
+  track?: 'cultura-general' | 'coneixements-professionals'
+  difficulty?: 'facil' | 'mitjana' | 'dificil'
+  origin?: 'authored' | 'official'
+  onlyOfficialExam?: boolean
+  /**
+   * Estat de la pregunta per a qui estudia:
+   *  - `new`    : mai vista.
+   *  - `failed` : amb errors acumulats o marcada per repassar.
+   *  - `due`    : vençuda per repassar.
+   */
+  state?: 'new' | 'failed' | 'due'
 }
 
 /** Mida per defecte de cada mode. */
@@ -104,7 +114,7 @@ function bucket(
 }
 
 function applyFilters(input: SelectionInput): Question[] {
-  const { pool, topicIds, filters } = input
+  const { pool, topicIds, filters, reviews, today } = input
   const topicSet = topicIds && topicIds.length > 0 ? new Set(topicIds) : null
   return pool.filter((q) => {
     if (q.status !== 'active') return false
@@ -113,6 +123,15 @@ function applyFilters(input: SelectionInput): Question[] {
     if (filters?.difficulty && q.difficulty !== filters.difficulty) return false
     if (filters?.origin && q.origin !== filters.origin) return false
     if (filters?.onlyOfficialExam && !q.officialExam) return false
+
+    if (filters?.state) {
+      const state = reviews.get(q.questionId)
+      const seen = state !== undefined && state.reps > 0
+      if (filters.state === 'new' && seen) return false
+      if (filters.state === 'failed' && (!state || (state.lapses === 0 && !state.flagged))) return false
+      if (filters.state === 'due' && !(state && isDue(state, today))) return false
+    }
+
     return true
   })
 }
@@ -237,9 +256,12 @@ export function buildExamPaper(opts: {
   track: 'cultura-general' | 'coneixements-professionals'
   count: number
   seed: string
+  /** Preguntes ja usades en una altra secció del mateix quadernet. */
+  exclude?: readonly string[]
 }): Question[] {
+  const excluded = opts.exclude && opts.exclude.length > 0 ? new Set(opts.exclude) : null
   const candidates = opts.pool.filter(
-    (q) => q.status === 'active' && q.track === opts.track,
+    (q) => q.status === 'active' && q.track === opts.track && !excluded?.has(q.questionId),
   )
   const rng = makeRng(seedFromString(opts.seed))
 

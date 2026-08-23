@@ -10,7 +10,7 @@ import type { ContentVersion, MunicipalityPack, Source, Syllabus } from '../../s
 import syllabusJson from './syllabus.json' with { type: 'json' }
 import manifestJson from '../../../sources/source-manifest.json' with { type: 'json' }
 import { ROSES_QUESTIONS } from './questions/index.ts'
-import { ROSES_EXAMS, ROSES_BLUEPRINTS } from './exams.ts'
+import { ROSES_EXAMS, ROSES_BLUEPRINTS, ROSES_COMPOSITIONS } from './exams.ts'
 import { ROSES_CURRENT_AFFAIRS } from './current-affairs/index.ts'
 
 export const ROSES_VERSION: ContentVersion = {
@@ -37,8 +37,9 @@ export const ROSES_PACK_CORE: PackCore = {
   questions: ROSES_QUESTIONS,
   exams: ROSES_EXAMS,
   blueprints: ROSES_BLUEPRINTS,
+  compositions: ROSES_COMPOSITIONS,
   currentAffairs: ROSES_CURRENT_AFFAIRS,
   sources: ROSES_SOURCES,
 }
 
-export { ROSES_QUESTIONS, ROSES_EXAMS, ROSES_BLUEPRINTS, ROSES_CURRENT_AFFAIRS }
+export { ROSES_QUESTIONS, ROSES_EXAMS, ROSES_BLUEPRINTS, ROSES_COMPOSITIONS, ROSES_CURRENT_AFFAIRS }

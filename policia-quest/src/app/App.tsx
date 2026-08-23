@@ -88,9 +88,10 @@ function renderRoute(route: Route): ReactNode {
     case 'study':
       return (
         <StudyRunner
-          key={`${route.mode}-${(route.topicIds ?? []).join(',')}`}
+          key={`${route.mode}-${(route.topicIds ?? []).join(',')}-${JSON.stringify(route.filters ?? {})}`}
           mode={route.mode}
           {...(route.topicIds ? { topicIds: route.topicIds } : {})}
+          {...(route.filters ? { filters: route.filters } : {})}
         />
       )
     case 'exam': return <ExamRunner key={route.blueprintId} blueprintId={route.blueprintId} />

@@ -349,6 +349,21 @@ export const ExamBlueprint = z.object({
 export type ExamBlueprint = z.infer<typeof ExamBlueprint>
 
 /**
+ * Composició de proves que es fan seguides, com el simulacre complet de Roses:
+ * primer cultura general i després coneixements professionals, cadascuna amb
+ * el seu temps i les seves regles, i un veredicte que exigeix aprovar totes dues.
+ */
+export const ExamComposition = z.object({
+  compositionId: Slug,
+  title: Bilingual,
+  subtitle: Bilingual,
+  /** Plànols que es fan en aquest ordre. */
+  blueprintIds: z.array(Slug).min(2),
+  sourceId: Slug,
+})
+export type ExamComposition = z.infer<typeof ExamComposition>
+
+/**
  * Un examen oficial concret. `importStatus` diu si el quadernet s'ha pogut
  * transcriure; mai s'inventa el contingut d'un examen no accessible.
  */
@@ -411,6 +426,7 @@ export const MunicipalityPack = z.object({
   questions: z.array(Question),
   exams: z.array(OfficialExam),
   blueprints: z.array(ExamBlueprint).min(1),
+  compositions: z.array(ExamComposition).default([]),
   currentAffairs: z.array(CurrentAffairsPack),
   sources: z.array(Source),
 })
@@ -477,6 +493,24 @@ export const StudySession = z.object({
 })
 export type StudySession = z.infer<typeof StudySession>
 
+/**
+ * Una secció d'un intent. Un simulacre simple en té una; el complet, dues.
+ * Cada secció porta el seu temps propi perquè, com a l'examen real, el
+ * temporitzador de coneixements professionals no comença fins que acaba el de
+ * cultura general.
+ */
+export const ExamSection = z.object({
+  blueprintId: Slug,
+  /** Nombre de preguntes de la secció, consecutives dins `questionIds`. */
+  count: z.number().int().positive(),
+  durationMs: z.number().int().positive(),
+  /** Ms consumits en aquesta secció abans de l'última pausa. */
+  elapsedMs: z.number().int().nonnegative().default(0),
+  /** La secció ja s'ha tancat i no s'hi pot tornar. */
+  finished: z.boolean().default(false),
+})
+export type ExamSection = z.infer<typeof ExamSection>
+
 export const ExamAttempt = z.object({
   attemptId: z.string().min(1),
   blueprintIds: z.array(Slug).min(1),
@@ -489,12 +523,23 @@ export const ExamAttempt = z.object({
   startedAt: z.number().int(),
   /** Temps límit en ms des de `startedAt`. */
   durationMs: z.number().int().positive(),
-  /** Ms consumits abans de l'última pausa (per reprendre). */
+  /** Ms consumits abans de l'última pausa (total, per a l'historial). */
   elapsedMsAtPause: z.number().int().nonnegative().default(0),
+  /**
+   * Seccions de l'intent. És la font de veritat de la composició i del temps.
+   * Els intents antics no en tenen; la migració els en deriva una de sola.
+   */
+  sections: z.array(ExamSection).default([]),
+  /** Índex de la secció en curs. */
+  currentSection: z.number().int().nonnegative().default(0),
+  /** Composició d'origen, si l'intent ve d'un simulacre complet. */
+  compositionId: Slug.optional(),
   status: z.enum(['in-progress', 'finished', 'abandoned']),
   finishedAt: z.number().int().optional(),
-  /** Resultat en mil·lipunts, calculat en finalitzar. */
+  /** Resultat en mil·lipunts, calculat en finalitzar. Suma de les seccions. */
   scoreMilli: z.number().int().optional(),
+  /** Resultat de cada secció, en el mateix ordre que `sections`. */
+  sectionScoresMilli: z.array(z.number().int()).default([]),
   currentIndex: z.number().int().nonnegative().default(0),
 })
 export type ExamAttempt = z.infer<typeof ExamAttempt>

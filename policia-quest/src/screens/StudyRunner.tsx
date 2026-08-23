@@ -8,7 +8,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { pack, useActions, useApp, XP_BY_OUTCOME } from '../app/store.tsx'
 import { useActiveQuestions, useToday } from '../app/selectors.ts'
-import { navigate } from '../app/router.ts'
+import { navigate, type StudyRouteFilters } from '../app/router.ts'
 import { dict, fill, pick } from '../i18n/index.ts'
 import { Meter } from '../components/ui.tsx'
 import { selectSession } from '../engines/selection.ts'
@@ -32,7 +32,15 @@ interface Tally {
   xp: number
 }
 
-export function StudyRunner({ mode, topicIds }: { mode: string; topicIds?: string[] }): ReactNode {
+export function StudyRunner({
+  mode,
+  topicIds,
+  filters,
+}: {
+  mode: string
+  topicIds?: string[]
+  filters?: StudyRouteFilters
+}): ReactNode {
   const { settings, reviews } = useApp()
   const { recordAnswer, toggleFlag, saveSession } = useActions()
   const lang = settings.explanationLang
@@ -53,6 +61,7 @@ export function StudyRunner({ mode, topicIds }: { mode: string; topicIds?: strin
         reviews,
         today,
         ...(topicIds && topicIds.length > 0 ? { topicIds } : {}),
+        ...(filters ? { filters } : {}),
         seed: sessionId.current,
       }),
     // eslint-disable-next-line react-hooks/exhaustive-deps -- congelat a propòsit

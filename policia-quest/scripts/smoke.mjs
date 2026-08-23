@@ -94,6 +94,26 @@ await page.click('[data-testid="confirm-finish-yes"]')
 await page.waitForSelector('[data-testid="exam-result"]')
 await shoot(page, '09-resultat-simulacre')
 
+// Simulacre complet: dues proves encadenades
+await page.goto(`${BASE}/#/exams`)
+await page.click('[data-testid="start-exam-roses-simulacre-complet"]')
+await page.waitForSelector('[data-testid="exam-runner"]')
+await shoot(page, '18-simulacre-complet-prova-1', false)
+for (let i = 0; i < 20; i++) {
+  await page.click('[data-testid="exam-option-a"]')
+  const next = page.locator('[data-testid="exam-next"]')
+  if (await next.isVisible()) await next.click()
+}
+await page.click('[data-testid="exam-finish"]')
+await page.waitForTimeout(300)
+await shoot(page, '19-simulacre-complet-prova-2', false)
+await page.click('[data-testid="exam-option-b"]')
+await page.click('[data-testid="exam-finish-early"]')
+await page.waitForSelector('[data-testid="confirm-finish"]')
+await page.click('[data-testid="confirm-finish-yes"]')
+await page.waitForSelector('[data-testid="exam-result"]')
+await shoot(page, '20-simulacre-complet-resultat', false)
+
 await page.click('[data-testid="nav-progress"]')
 await page.waitForSelector('[data-testid="progress"]')
 await shoot(page, '10-progres')

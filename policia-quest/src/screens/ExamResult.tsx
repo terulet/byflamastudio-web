@@ -2,9 +2,10 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import { pack, useActions, useApp } from '../app/store.tsx'
 import { navigate } from '../app/router.ts'
-import { dict, fill, pick } from '../i18n/index.ts'
+import { dict, fill, pick, plural } from '../i18n/index.ts'
 import { Stat } from '../components/ui.tsx'
-import { formatMilli, scoreExam, type ScoredItem } from '../engines/scoring.ts'
+import { formatMilli, scoreExam, type ScoreBreakdown, type ScoredItem } from '../engines/scoring.ts'
+import { sectionOffsets } from './ExamRunner.tsx'
 import { formatDuration } from '../util/date.ts'
 import type { Question } from '../domain/types.ts'
 
@@ -17,22 +18,63 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const attempt = attempts.find((a) => a.attemptId === attemptId)
-  const blueprint = pack.blueprints.find((b) => b.blueprintId === attempt?.blueprintIds[0])
+  const composition = pack.compositions.find((c) => c.compositionId === attempt?.compositionId)
 
   const questionsById = useMemo(() => new Map(pack.questions.map((q) => [q.questionId, q])), [])
 
   const analysis = useMemo(() => {
-    if (!attempt || !blueprint) return null
+    if (!attempt || attempt.sections.length === 0) return null
+
     const rows = attempt.questionIds.map((id, i) => {
       const question = questionsById.get(id)
       const chosen = attempt.responses[i] ?? null
       return { question, chosen, index: i }
     })
-    const items: ScoredItem[] = rows.map((row) => ({
-      chosen: row.chosen,
-      correct: row.question?.correct ?? 'a',
-    }))
-    const breakdown = scoreExam(items, blueprint.scoring)
+
+    // Cada prova es puntua amb les seves pròpies regles i es reporta a part.
+    const offsets = sectionOffsets(attempt.sections)
+    const sections = attempt.sections.map((section, i) => {
+      const bp = pack.blueprints.find((b) => b.blueprintId === section.blueprintId)
+      const from = offsets[i] ?? 0
+      const items: ScoredItem[] = rows.slice(from, from + section.count).map((row) => ({
+        chosen: row.chosen,
+        correct: row.question?.correct ?? 'a',
+      }))
+      return {
+        section,
+        blueprint: bp,
+        from,
+        breakdown: bp ? scoreExam(items, bp.scoring) : null,
+      }
+    })
+
+    // El veredicte global exigeix aprovar totes les proves, no fer-ne mitjana.
+    const breakdown: ScoreBreakdown = sections.reduce<ScoreBreakdown>(
+      (acc, part) => {
+        const b = part.breakdown
+        if (!b) return acc
+        return {
+          counted: acc.counted + b.counted,
+          correct: acc.correct + b.correct,
+          wrong: acc.wrong + b.wrong,
+          blank: acc.blank + b.blank,
+          reserved: acc.reserved + b.reserved,
+          annulled: acc.annulled + b.annulled,
+          rawMilli: acc.rawMilli + b.rawMilli,
+          penaltyMilli: acc.penaltyMilli + b.penaltyMilli,
+          scoreMilli: acc.scoreMilli + b.scoreMilli,
+          displayMilli: acc.displayMilli + b.displayMilli,
+          maxScoreMilli: acc.maxScoreMilli + b.maxScoreMilli,
+          passMarkMilli: acc.passMarkMilli + b.passMarkMilli,
+          passed: acc.passed && b.passed,
+        }
+      },
+      {
+        counted: 0, correct: 0, wrong: 0, blank: 0, reserved: 0, annulled: 0,
+        rawMilli: 0, penaltyMilli: 0, scoreMilli: 0, displayMilli: 0,
+        maxScoreMilli: 0, passMarkMilli: 0, passed: true,
+      },
+    )
 
     const byTopic = new Map<string, { correct: number; total: number }>()
     for (const row of rows) {
@@ -47,10 +89,10 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
       .filter((row) => row.question && row.chosen !== null && row.chosen !== row.question.correct)
       .map((row) => row.question!.questionId)
 
-    return { rows, breakdown, byTopic, wrongIds }
-  }, [attempt, blueprint, questionsById])
+    return { rows, breakdown, byTopic, wrongIds, sections }
+  }, [attempt, questionsById])
 
-  if (!attempt || !blueprint || !analysis) {
+  if (!attempt || !analysis) {
     return (
       <main className="screen">
         <p className="empty">{t.common.loading}</p>
@@ -58,7 +100,13 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
     )
   }
 
-  const { breakdown, rows, byTopic, wrongIds } = analysis
+  const { breakdown, rows, byTopic, wrongIds, sections } = analysis
+  const isMultiSection = sections.length > 1
+  const title = composition
+    ? pick(composition.title, lang)
+    : sections[0]?.blueprint
+      ? pick(sections[0]!.blueprint!.title, lang)
+      : t.exams.title
 
   return (
     <main className="screen" data-testid="exam-result">
@@ -72,21 +120,58 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
       </button>
 
       <div className="stack stack--loose">
+        {/*
+          Amb dues proves no es mostra cap suma: sumar 20 + 20 convidaria a
+          llegir-ho com una mitjana, i a l'examen real cada prova s'aprova per
+          separat. Es mostren les dues notes i el veredicte.
+        */}
         <section className="score">
-          <div className="card__label">{pick(blueprint.title, lang)}</div>
-          <div
-            className={`score__value ${breakdown.passed ? 'score__value--pass' : 'score__value--fail'}`}
-            style={{ marginTop: 'var(--sp-3)' }}
-            data-testid="exam-score"
-          >
-            {formatMilli(breakdown.displayMilli, lang)}
-            <span className="score__max"> / {formatMilli(breakdown.maxScoreMilli, lang)}</span>
-          </div>
+          <div className="card__label">{title}</div>
+
+          {isMultiSection ? (
+            <div
+              className="row"
+              style={{ justifyContent: 'center', gap: 'var(--sp-5)', marginTop: 'var(--sp-4)' }}
+              data-testid="exam-score"
+            >
+              {sections.map((part, i) => (
+                <div key={i}>
+                  <div
+                    className={`score__value ${part.breakdown?.passed ? 'score__value--pass' : 'score__value--fail'}`}
+                    style={{ fontSize: '2.25rem' }}
+                  >
+                    {formatMilli(part.breakdown?.displayMilli ?? 0, lang)}
+                    <span className="score__max" style={{ fontSize: 'var(--text-md)' }}>
+                      {' '}/ 20
+                    </span>
+                  </div>
+                  <div className="stat__label">
+                    {part.blueprint?.track === 'cultura-general' ? t.exams.cultura : t.exams.professional}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div
+              className={`score__value ${breakdown.passed ? 'score__value--pass' : 'score__value--fail'}`}
+              style={{ marginTop: 'var(--sp-3)' }}
+              data-testid="exam-score"
+            >
+              {formatMilli(breakdown.displayMilli, lang)}
+              <span className="score__max"> / {formatMilli(breakdown.maxScoreMilli, lang)}</span>
+            </div>
+          )}
+
           <p style={{ marginTop: 'var(--sp-3)' }}>
             <span className={breakdown.passed ? 'pill pill--ok' : 'pill pill--danger'} data-testid="exam-verdict">
               {breakdown.passed ? t.result.passed : t.result.failed}
             </span>
           </p>
+          {isMultiSection ? (
+            <p className="screen__subtitle" style={{ marginTop: 'var(--sp-2)' }}>
+              {t.exams.completeVerdictNote}
+            </p>
+          ) : null}
         </section>
 
         <section className="stats">
@@ -98,6 +183,35 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
             label={t.result.time}
           />
         </section>
+
+        {isMultiSection ? (
+          <section className="stack" data-testid="section-results">
+            <h2 className="section-title">{t.exams.sectionResults}</h2>
+            {sections.map((part, i) => (
+              <article key={i} className="card card--flat">
+                <div className="row row--between">
+                  <span style={{ flex: 1, minWidth: 0, fontWeight: 600, fontSize: 'var(--text-sm)' }}>
+                    {part.blueprint ? pick(part.blueprint.title, lang) : part.section.blueprintId}
+                  </span>
+                  <span
+                    className={part.breakdown?.passed ? 'pill pill--ok' : 'pill pill--danger'}
+                    data-testid={`section-score-${i}`}
+                  >
+                    {formatMilli(part.breakdown?.displayMilli ?? 0, lang)} / 20
+                  </span>
+                </div>
+                <div className="card__body">
+                  {part.breakdown?.correct ?? 0}{' '}
+                  {plural(part.breakdown?.correct ?? 0, t.study.correctCountOne, t.study.correctCountMany)} ·{' '}
+                  {part.breakdown?.wrong ?? 0}{' '}
+                  {plural(part.breakdown?.wrong ?? 0, t.study.wrongCountOne, t.study.wrongCountMany)} ·{' '}
+                  {part.breakdown?.blank ?? 0} {t.exams.blank} ·{' '}
+                  {formatDuration(part.section.elapsedMs, lang)}
+                </div>
+              </article>
+            ))}
+          </section>
+        ) : null}
 
         <section className="card">
           <h2 className="section-title">{t.exams.rules}</h2>

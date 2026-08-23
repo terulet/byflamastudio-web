@@ -6,7 +6,7 @@
  * resultat) i sempre afegeixen camps amb valors per defecte, mai els eliminen
  * sense una migració explícita.
  */
-import type { ReviewState, Settings, UserProgress } from '../domain/types.ts'
+import type { ExamAttempt, ReviewState, Settings, UserProgress } from '../domain/types.ts'
 
 /** Versió actual de l'esquema de progrés persistit. */
 export const PROGRESS_VERSION = 2
@@ -126,6 +126,83 @@ export function migrateReviewState(input: unknown): ReviewState | null {
     ...(typeof raw.lastAnsweredDay === 'number' ? { lastAnsweredDay: raw.lastAnsweredDay } : {}),
     ...(isOutcome(raw.lastOutcome) ? { lastOutcome: raw.lastOutcome } : {}),
     flagged: typeof raw.flagged === 'boolean' ? raw.flagged : false,
+  }
+}
+
+/**
+ * Migra un intent de simulacre.
+ *
+ * Els intents anteriors a la introducció del simulacre complet no tenien
+ * seccions: se'n deriva una de sola a partir del plànol i de la durada, de
+ * manera que un simulacre a mitges d'abans es pot reprendre igualment.
+ */
+export function migrateExamAttempt(input: unknown): ExamAttempt | null {
+  if (typeof input !== 'object' || input === null) return null
+  const raw = input as UnknownRecord
+  if (typeof raw.attemptId !== 'string') return null
+  if (!Array.isArray(raw.blueprintIds) || raw.blueprintIds.length === 0) return null
+  if (!Array.isArray(raw.questionIds)) return null
+
+  const questionIds = raw.questionIds.filter((x): x is string => typeof x === 'string')
+  const durationMs = Math.max(1, numberOr(raw.durationMs, 60_000))
+  const elapsedMsAtPause = Math.max(0, numberOr(raw.elapsedMsAtPause, 0))
+
+  const storedSections = Array.isArray(raw.sections) ? raw.sections : []
+  const sections: ExamAttempt['sections'] =
+    storedSections.length > 0
+      ? storedSections.flatMap((entry) => {
+          if (typeof entry !== 'object' || entry === null) return []
+          const section = entry as UnknownRecord
+          if (typeof section.blueprintId !== 'string') return []
+          const count = Math.max(1, numberOr(section.count, questionIds.length))
+          return [{
+            blueprintId: section.blueprintId,
+            count,
+            durationMs: Math.max(1, numberOr(section.durationMs, durationMs)),
+            elapsedMs: Math.max(0, numberOr(section.elapsedMs, 0)),
+            finished: typeof section.finished === 'boolean' ? section.finished : false,
+          }]
+        })
+      : [{
+          blueprintId: String(raw.blueprintIds[0]),
+          count: Math.max(1, questionIds.length),
+          durationMs,
+          elapsedMs: elapsedMsAtPause,
+          finished: raw.status === 'finished',
+        }]
+
+  const status = raw.status
+  return {
+    attemptId: raw.attemptId,
+    blueprintIds: raw.blueprintIds.filter((x): x is string => typeof x === 'string'),
+    ...(typeof raw.officialExamId === 'string' ? { officialExamId: raw.officialExamId } : {}),
+    ...(typeof raw.compositionId === 'string' ? { compositionId: raw.compositionId } : {}),
+    questionIds,
+    responses: questionIds.map((_, i) => {
+      const value = Array.isArray(raw.responses) ? raw.responses[i] : null
+      return value === 'a' || value === 'b' || value === 'c' || value === 'd' ? value : null
+    }),
+    flagged: questionIds.map((_, i) =>
+      Array.isArray(raw.flagged) ? raw.flagged[i] === true : false,
+    ),
+    startedAt: numberOr(raw.startedAt, 0),
+    durationMs,
+    elapsedMsAtPause,
+    sections,
+    currentSection: Math.min(
+      Math.max(0, numberOr(raw.currentSection, 0)),
+      Math.max(0, sections.length - 1),
+    ),
+    status:
+      status === 'in-progress' || status === 'finished' || status === 'abandoned'
+        ? status
+        : 'abandoned',
+    ...(typeof raw.finishedAt === 'number' ? { finishedAt: raw.finishedAt } : {}),
+    ...(typeof raw.scoreMilli === 'number' ? { scoreMilli: raw.scoreMilli } : {}),
+    sectionScoresMilli: Array.isArray(raw.sectionScoresMilli)
+      ? raw.sectionScoresMilli.filter((x): x is number => typeof x === 'number')
+      : [],
+    currentIndex: Math.max(0, numberOr(raw.currentIndex, 0)),
   }
 }
 

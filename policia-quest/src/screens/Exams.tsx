@@ -98,6 +98,45 @@ export function Exams(): ReactNode {
           })}
         </section>
 
+        {/* Simulacre complet: les dues proves seguides */}
+        {pack.compositions.map((composition) => {
+          const parts = composition.blueprintIds
+            .map((id) => pack.blueprints.find((b) => b.blueprintId === id))
+            .filter((b): b is NonNullable<typeof b> => b !== undefined)
+          const totalQuestions = parts.reduce((sum, b) => sum + b.questionCount, 0)
+          const totalMinutes = parts.reduce((sum, b) => sum + b.durationMinutes, 0)
+          const canRun = parts.every(
+            (b) => active.filter((q) => q.track === b.track).length >= b.questionCount,
+          )
+          return (
+            <article key={composition.compositionId} className="card card--accent">
+              <div className="row row--between">
+                <div>
+                  <div className="card__label">
+                    {totalQuestions} {t.common.questions} · {totalMinutes} min
+                  </div>
+                  <div className="card__title">{pick(composition.title, lang)}</div>
+                </div>
+                <span className="pill pill--accent">2 × /20</span>
+              </div>
+
+              <p className="card__body">{pick(composition.subtitle, lang)}</p>
+              <p className="card__body">{t.exams.completeVerdictNote}</p>
+
+              <button
+                type="button"
+                className="btn btn--primary btn--block"
+                style={{ marginTop: 'var(--sp-4)' }}
+                disabled={!canRun}
+                onClick={() => navigate({ name: 'exam', blueprintId: composition.compositionId })}
+                data-testid={`start-exam-${composition.compositionId}`}
+              >
+                {t.exams.startExam}
+              </button>
+            </article>
+          )
+        })}
+
         {/* Exàmens oficials històrics */}
         <section className="stack">
           <h2 className="section-title">{t.exams.historical}</h2>
@@ -142,8 +181,20 @@ export function Exams(): ReactNode {
           ) : (
             <div className="stack stack--tight">
               {finished.map((attempt) => {
+                const attemptComposition = pack.compositions.find(
+                  (c) => c.compositionId === attempt.compositionId,
+                )
                 const bp = pack.blueprints.find((b) => b.blueprintId === attempt.blueprintIds[0])
-                const passed = (attempt.scoreMilli ?? 0) >= (bp?.scoring.passMarkMilli ?? 10_000)
+                // Amb dues proves, cal aprovar-les totes dues per separat.
+                const passed =
+                  attempt.sectionScoresMilli.length > 0
+                    ? attempt.sectionScoresMilli.every((score, i) => {
+                        const partBp = pack.blueprints.find(
+                          (b) => b.blueprintId === attempt.sections[i]?.blueprintId,
+                        )
+                        return score >= (partBp?.scoring.passMarkMilli ?? 10_000)
+                      })
+                    : (attempt.scoreMilli ?? 0) >= (bp?.scoring.passMarkMilli ?? 10_000)
                 return (
                   <button
                     key={attempt.attemptId}
@@ -152,7 +203,13 @@ export function Exams(): ReactNode {
                     onClick={() => navigate({ name: 'result', attemptId: attempt.attemptId })}
                   >
                     <span className="topic__main">
-                      <span className="topic__title">{bp ? pick(bp.title, lang) : t.exams.title}</span>
+                      <span className="topic__title">
+                        {attemptComposition
+                          ? pick(attemptComposition.title, lang)
+                          : bp
+                            ? pick(bp.title, lang)
+                            : t.exams.title}
+                      </span>
                       <span className="topic__meta">
                         {new Date(attempt.startedAt).toLocaleDateString(lang === 'es' ? 'es-ES' : 'ca-ES')} ·{' '}
                         {formatDuration(attempt.elapsedMsAtPause, lang)}

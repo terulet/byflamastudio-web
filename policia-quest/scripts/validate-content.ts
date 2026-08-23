@@ -16,10 +16,12 @@
  *   9. Els plànols de simulacre no respecten les regles de puntuació de Roses.
  *  10. Hi ha enunciats duplicats segons el hash normalitzat.
  *  11. Falta la microlliçó d'algun tema.
+ *  12. Una composició d'examen apunta a un plànol inexistent o repeteix prova.
  */
 import {
   CurrentAffairsPack,
   ExamBlueprint,
+  ExamComposition,
   Lesson,
   OfficialExam,
   Question,
@@ -85,6 +87,13 @@ for (const blueprint of ROSES_PACK.blueprints) {
   }
 }
 
+for (const composition of ROSES_PACK.compositions) {
+  const parsed = ExamComposition.safeParse(composition)
+  if (!parsed.success) {
+    fail(`composició ${composition.compositionId}: ${parsed.error.issues[0]?.message ?? 'invàlida'}`)
+  }
+}
+
 for (const pack of ROSES_PACK.currentAffairs) {
   const parsed = CurrentAffairsPack.safeParse(pack)
   if (!parsed.success) {
@@ -128,6 +137,7 @@ assertUnique('preguntes', ROSES_PACK.questions.map((q) => q.questionId))
 assertUnique('exàmens', ROSES_PACK.exams.map((e) => e.examId))
 assertUnique('fonts', ROSES_PACK.sources.map((s) => s.sourceId))
 assertUnique('plànols', ROSES_PACK.blueprints.map((b) => b.blueprintId))
+assertUnique('composicions', ROSES_PACK.compositions.map((c) => c.compositionId))
 
 /* ---------------- 3, 4, 7, 8. Preguntes ---------------- */
 
@@ -295,6 +305,31 @@ for (const bp of ROSES_PACK.blueprints) {
   }
 }
 
+// Les composicions han d'apuntar a plànols que existeixen i el banc ha de
+// poder omplir-les senceres sense repetir cap pregunta entre proves.
+const blueprintIds = new Set(ROSES_PACK.blueprints.map((b) => b.blueprintId))
+for (const composition of ROSES_PACK.compositions) {
+  if (!sourceIds.has(composition.sourceId)) {
+    fail(`composició ${composition.compositionId}: font inexistent "${composition.sourceId}"`)
+  }
+  if (blueprintIds.has(composition.compositionId)) {
+    fail(`composició ${composition.compositionId}: l’identificador xoca amb un plànol`)
+  }
+  for (const id of composition.blueprintIds) {
+    if (!blueprintIds.has(id)) {
+      fail(`composició ${composition.compositionId}: plànol inexistent "${id}"`)
+    }
+  }
+  // Les proves d'una composició han de ser de tipus diferents; si no, el banc
+  // s'hauria de repartir entre elles i el quadernet quedaria curt.
+  const tracks = composition.blueprintIds.map(
+    (id) => ROSES_PACK.blueprints.find((b) => b.blueprintId === id)?.track,
+  )
+  if (new Set(tracks).size !== tracks.length) {
+    fail(`composició ${composition.compositionId}: dues proves del mateix tipus de prova`)
+  }
+}
+
 /* ---------------- 10. Deduplicació ---------------- */
 
 const byHash = new Map<string, string>()
@@ -364,7 +399,8 @@ console.log(`Microlliçons     ${ROSES_PACK.lessons.length}`)
 console.log(`Preguntes        ${ROSES_PACK.questions.length} (${totalActive} actives)`)
 console.log(`Exàmens          ${ROSES_PACK.exams.length}`)
 console.log(`Fonts            ${ROSES_PACK.sources.length}`)
-console.log(`Plànols          ${ROSES_PACK.blueprints.length}\n`)
+console.log(`Plànols          ${ROSES_PACK.blueprints.length}`)
+console.log(`Composicions     ${ROSES_PACK.compositions.length}\n`)
 
 if (warnings.length > 0) {
   console.log(`Avisos (${warnings.length}):`)

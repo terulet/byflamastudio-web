@@ -90,6 +90,30 @@ Regles de la convocatòria de Roses, codificades a `content/.../exams.ts`:
 | Apte | `≥ 10000` | `≥ 10000` |
 | Reserva | 1 | 2 |
 
+### Simulacre complet
+
+El simulacre complet no és un plànol nou sinó una **composició** dels dos que ja
+hi ha (`ExamComposition` a `content/.../exams.ts`). Un intent es modela amb
+**seccions**: cada secció porta el seu plànol, el seu nombre de preguntes, la
+seva durada i el temps consumit propi.
+
+Conseqüències, totes buscades:
+
+- El temporitzador de coneixements professionals no comença fins que acaba el
+  de cultura general.
+- Tancar la primera prova és irreversible, com el dia de l'examen; la
+  interfície ho avisa abans.
+- Cada prova es puntua amb les seves regles i el veredicte exigeix **aprovar
+  totes dues per separat**: no es fa mitjana.
+- El resultat no mostra cap suma sobre 40. Sumar 20 + 20 convidaria a llegir-ho
+  com una nota mitjana, que és exactament el que no és.
+- Cap pregunta pot sortir a les dues proves del mateix quadernet
+  (`buildExamPaper` accepta exclusions).
+
+Els intents anteriors a aquesta funció no tenien seccions: `migrateExamAttempt`
+els en deriva una de sola, de manera que un simulacre a mitges d'abans es pot
+reprendre igualment.
+
 Les preguntes de **reserva** i les **anul·lades** pel tribunal es compten a part
 i no entren al càlcul. El resultat net pot ser negatiu; es mostra amb terra a 0
 però l'aprovat es mesura sobre el net real.
@@ -146,6 +170,10 @@ step ≥ 4 en qualsevol altre cas             → review
 ## 6. Selecció de sessions
 
 Fitxer: `src/engines/selection.ts`.
+
+Els filtres de la pantalla Entrenar (bloc, tema, dificultat, origen i estat de
+repàs) viatgen **a la URL**, de manera que una sessió filtrada es pot recrear,
+compartir o recarregar sense perdre'n la configuració.
 
 Les preguntes es reparteixen en quatre grups: vençudes, fallades no vençudes,
 noves i febles. Per a les sessions mixtes (missió del dia, patrulla, exprés, per

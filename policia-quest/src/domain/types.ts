@@ -17,6 +17,8 @@ export type {
   OfficialExamMeta,
   OfficialExam,
   ExamBlueprint,
+  ExamComposition,
+  ExamSection,
   ScoringRules,
   CurrentAffairsPack,
   ContentVersion,

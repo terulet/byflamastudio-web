@@ -141,6 +141,43 @@ export function useConfidenceStats(): ConfidenceStats {
   }, [answers])
 }
 
+/**
+ * Encerts per tema **en simulacres acabats**.
+ *
+ * Es reporta a part del domini: el domini mesura l'estudi acumulat, mentre que
+ * un simulacre és una fotografia sota pressió i amb penalització. Barrejar-los
+ * amagaria justament el senyal que interessa: els temes que van bé estudiant i
+ * malament a l'examen.
+ */
+export interface TopicExamResult {
+  correct: number
+  total: number
+  /** Proporció d'encerts, entre 0 i 1. */
+  ratio: number
+}
+
+export function useExamResultsByTopic(): Map<string, TopicExamResult> {
+  const { attempts } = useApp()
+  const byId = useQuestionsById()
+
+  return useMemo(() => {
+    const map = new Map<string, TopicExamResult>()
+    for (const attempt of attempts) {
+      if (attempt.status !== 'finished') continue
+      for (const [i, questionId] of attempt.questionIds.entries()) {
+        const question = byId.get(questionId)
+        if (!question) continue
+        const bucket = map.get(question.topicId) ?? { correct: 0, total: 0, ratio: 0 }
+        bucket.total++
+        if (attempt.responses[i] === question.correct) bucket.correct++
+        bucket.ratio = bucket.correct / bucket.total
+        map.set(question.topicId, bucket)
+      }
+    }
+    return map
+  }, [attempts, byId])
+}
+
 /** Activitat diària dels últims `days` dies, per al calendari. */
 export function useActivityCalendar(days = 35): Array<{ day: number; count: number }> {
   const { progress } = useApp()

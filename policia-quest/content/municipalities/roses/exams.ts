@@ -9,7 +9,7 @@
  * el document existeix i està identificat, però que no s'ha pogut baixar per
  * transcriure'l. Mai s'inventa el contingut d'un examen.
  */
-import type { ExamBlueprint, OfficialExam } from '../../schemas/index.ts'
+import type { ExamBlueprint, ExamComposition, OfficialExam } from '../../schemas/index.ts'
 import { CONEIXEMENTS_SCORING, CULTURA_GENERAL_SCORING } from '../../../src/engines/scoring.ts'
 
 const PENDING_NOTE =
@@ -46,6 +46,26 @@ export const ROSES_BLUEPRINTS: ExamBlueprint[] = [
     durationMinutes: 60,
     reserveCount: 2,
     scoring: CONEIXEMENTS_SCORING,
+    sourceId: 'roses-bases-2026-interins',
+  },
+]
+
+/**
+ * Simulacre complet: les dues proves seguides, com el dia de l'examen.
+ *
+ * No és un plànol nou sinó la composició dels dos que ja hi ha. Cada prova
+ * conserva el seu temps i les seves regles, i el veredicte final exigeix
+ * aprovar-les totes dues, no que la mitjana doni 10.
+ */
+export const ROSES_COMPOSITIONS: ExamComposition[] = [
+  {
+    compositionId: 'roses-simulacre-complet',
+    title: { ca: 'Simulacre complet', es: 'Simulacro completo' },
+    subtitle: {
+      ca: 'Cultura general seguida de coneixements professionals',
+      es: 'Cultura general seguida de conocimientos profesionales',
+    },
+    blueprintIds: ['roses-cultura-general', 'roses-coneixements-professionals'],
     sourceId: 'roses-bases-2026-interins',
   },
 ]

@@ -189,6 +189,67 @@ test('el simulacre es pot pausar i reprendre amb el temps consumit', async ({ pa
   await expect(page.getByTestId('exam-clock')).not.toHaveText('20:00')
 })
 
+test('el simulacre complet encadena les dues proves amb temps propi', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-simulacre-complet').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  // Primera prova: cultura general, 20 preguntes i 20 minuts.
+  await expect(page.getByTestId('section-label')).toContainText('Prova 1 de 2')
+  await expect(page.getByTestId('section-label')).toContainText('cultura general')
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
+  await expect(page.getByTestId('exam-clock')).toHaveText(/^(19:5\d|20:00)$/)
+
+  for (let i = 0; i < 20; i++) {
+    await page.getByTestId('exam-option-a').click()
+    const next = page.getByTestId('exam-next')
+    if (await next.isVisible()) await next.click()
+  }
+  await page.getByTestId('exam-finish').click()
+
+  // Segona prova: professionals, 40 preguntes i un temporitzador que arrenca de nou.
+  await expect(page.getByTestId('section-label')).toContainText('Prova 2 de 2')
+  await expect(page.getByTestId('section-label')).toContainText('coneixements professionals')
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/40')
+  await expect(page.getByTestId('exam-clock')).toHaveText(/^(59:5\d|60:00)$/)
+
+  await page.getByTestId('exam-option-b').click()
+  await page.getByTestId('exam-finish-early').click()
+  await expect(page.getByTestId('confirm-finish')).toBeVisible()
+  await page.getByTestId('confirm-finish-yes').click()
+
+  // El resultat reporta cada prova per separat, sense sumar-les.
+  await expect(page.getByTestId('exam-result')).toBeVisible()
+  await expect(page.getByTestId('section-score-0')).toContainText('/ 20')
+  await expect(page.getByTestId('section-score-1')).toContainText('/ 20')
+  await expect(page.getByTestId('exam-verdict')).toHaveText('NO APTE')
+  await expect(page.getByText(/aprovar les dues proves per separat/)).toBeVisible()
+})
+
+test('el simulacre complet no repeteix cap pregunta entre les dues proves', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-simulacre-complet').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  const stored = await page.evaluate(
+    () =>
+      new Promise<string[]>((resolve) => {
+        const request = indexedDB.open('policia-quest')
+        request.onsuccess = () => {
+          const tx = request.result.transaction('attempts', 'readonly')
+          const all = tx.objectStore('attempts').getAll()
+          tx.oncomplete = () => resolve(all.result[0]?.questionIds ?? [])
+          tx.onerror = () => resolve([])
+        }
+        request.onerror = () => resolve([])
+      }),
+  )
+  expect(stored).toHaveLength(60)
+  expect(new Set(stored).size).toBe(60)
+})
+
 test('els errors del simulacre es poden enviar a la cua de repàs', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
@@ -207,6 +268,52 @@ test('els errors del simulacre es poden enviar a la cua de repàs', async ({ pag
   await expect(send).toBeVisible()
   await send.click()
   await expect(send).toContainText('afegides a la cua de repàs')
+})
+
+test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/train')
+  await expect(page.getByTestId('train')).toBeVisible()
+
+  // Sense haver estudiat res, "noves" ha de tenir totes les preguntes del tema.
+  await page.getByTestId('select-topic-35').click()
+  await page.getByTestId('filter-state-new').click()
+  await expect(page.getByTestId('start-topic-session')).toContainText('5')
+
+  // I "fallades" cap, perquè encara no s'ha fallat res.
+  await page.getByTestId('filter-state-failed').click()
+  await expect(page.getByTestId('start-topic-session')).toBeDisabled()
+  await expect(page.getByText(/No hi ha preguntes que compleixin/)).toBeVisible()
+
+  // El filtre d'origen avisa que encara no hi ha preguntes d'examen oficial.
+  await page.getByTestId('filter-state-new').click()
+  await page.getByTestId('filter-origin-official').click()
+  await expect(page.getByText(/cap pregunta d’examen oficial importada/)).toBeVisible()
+
+  // Els filtres viatgen a la URL i la sessió els aplica.
+  await page.getByTestId('filter-origin-authored').click()
+  await page.getByTestId('start-topic-session').click()
+  await expect(page).toHaveURL(/origin=authored/)
+  await expect(page).toHaveURL(/state=new/)
+  await expect(page.getByTestId('study')).toBeVisible()
+  await expect(page.getByTestId('study-progress')).toContainText('de 5')
+})
+
+test('el semàfor de progrés marca en blau els resultats de simulacre', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+  await page.getByTestId('exam-option-a').click()
+  await page.getByTestId('exam-finish-early').click()
+  await page.getByTestId('confirm-finish-yes').click()
+  await expect(page.getByTestId('exam-result')).toBeVisible()
+
+  await page.goto('/#/progress')
+  await expect(page.getByTestId('progress')).toBeVisible()
+  // El simulacre professional toca els 40 temes: hi ha d'haver marques blaves.
+  await expect(page.locator('[data-testid^="exam-marker-"]').first()).toBeVisible()
+  await expect(page.getByText(/El punt blau mostra els encerts/)).toBeVisible()
 })
 
 test('el progrés sobreviu a una recàrrega', async ({ page }) => {

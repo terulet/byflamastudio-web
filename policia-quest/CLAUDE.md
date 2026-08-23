@@ -82,7 +82,8 @@ Aquestes regles no són preferències d'estil: trencar-ne una fa mal al producte
 
 4. **No enganyis amb els números.** Un domini amb menys de 3 respostes no
    mostra percentatge. Una exactitud sobre quatre preguntes no és una
-   exactitud. Si la dada no és fiable, digues-ho.
+   exactitud. El simulacre complet no mostra cap nota sumada sobre 40, perquè
+   no és una mitjana. Si la dada no és fiable, digues-ho.
 
 5. **La correcció ensenya.** No n'hi ha prou amb "correcte/incorrecte": cal dir
    per què la bona és bona, per què fallen les altres i on ho pot comprovar qui

@@ -15,9 +15,32 @@ export type Route =
   | { name: 'progress' }
   | { name: 'settings' }
   | { name: 'topic'; topicId: string }
-  | { name: 'study'; mode: string; topicIds?: string[] }
+  | { name: 'study'; mode: string; topicIds?: string[]; filters?: StudyRouteFilters }
   | { name: 'exam'; blueprintId: string }
   | { name: 'result'; attemptId: string }
+
+/** Filtres que viatgen a la URL perquè una sessió es pugui recrear i compartir. */
+export interface StudyRouteFilters {
+  difficulty?: 'facil' | 'mitjana' | 'dificil'
+  origin?: 'authored' | 'official'
+  state?: 'new' | 'failed' | 'due'
+}
+
+const DIFFICULTIES = ['facil', 'mitjana', 'dificil'] as const
+const ORIGINS = ['authored', 'official'] as const
+const STATES = ['new', 'failed', 'due'] as const
+
+function readFilters(params: URLSearchParams): StudyRouteFilters | undefined {
+  const difficulty = params.get('difficulty')
+  const origin = params.get('origin')
+  const state = params.get('state')
+  const filters: StudyRouteFilters = {
+    ...(DIFFICULTIES.includes(difficulty as never) ? { difficulty: difficulty as 'facil' } : {}),
+    ...(ORIGINS.includes(origin as never) ? { origin: origin as 'authored' } : {}),
+    ...(STATES.includes(state as never) ? { state: state as 'new' } : {}),
+  }
+  return Object.keys(filters).length > 0 ? filters : undefined
+}
 
 const DEFAULT: Route = { name: 'home' }
 
@@ -44,10 +67,12 @@ export function parseHash(hash: string): Route {
     case 'study': {
       if (!parts[1]) return DEFAULT
       const topics = params.get('topics')
+      const filters = readFilters(params)
       return {
         name: 'study',
         mode: parts[1],
         ...(topics ? { topicIds: topics.split(',').filter(Boolean) } : {}),
+        ...(filters ? { filters } : {}),
       }
     }
     case 'exam':
@@ -63,10 +88,15 @@ export function toHash(route: Route): string {
   switch (route.name) {
     case 'home': return '#/'
     case 'topic': return `#/topic/${route.topicId}`
-    case 'study':
-      return route.topicIds && route.topicIds.length > 0
-        ? `#/study/${route.mode}?topics=${route.topicIds.join(',')}`
-        : `#/study/${route.mode}`
+    case 'study': {
+      const params = new URLSearchParams()
+      if (route.topicIds && route.topicIds.length > 0) params.set('topics', route.topicIds.join(','))
+      if (route.filters?.difficulty) params.set('difficulty', route.filters.difficulty)
+      if (route.filters?.origin) params.set('origin', route.filters.origin)
+      if (route.filters?.state) params.set('state', route.filters.state)
+      const query = params.toString()
+      return query ? `#/study/${route.mode}?${query}` : `#/study/${route.mode}`
+    }
     case 'exam': return `#/exam/${route.blueprintId}`
     case 'result': return `#/result/${route.attemptId}`
     default: return `#/${route.name}`

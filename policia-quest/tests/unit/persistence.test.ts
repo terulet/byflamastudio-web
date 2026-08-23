@@ -11,6 +11,7 @@ import {
   DEFAULT_SETTINGS,
   PROGRESS_VERSION,
   defaultProgress,
+  migrateExamAttempt,
   migrateProgress,
   migrateReviewState,
   migrateSettings,
@@ -116,6 +117,115 @@ describe('migració d’estats de repàs', () => {
     expect(s!.phase).toBe('new')
     expect(s!.lastOutcome).toBeUndefined()
     expect(s!.reps).toBe(2)
+  })
+})
+
+describe('migració d’intents de simulacre', () => {
+  it('rebutja registres sense identificador o sense plànol', () => {
+    expect(migrateExamAttempt({ blueprintIds: ['x'], questionIds: [] })).toBeNull()
+    expect(migrateExamAttempt({ attemptId: 'a1', questionIds: [] })).toBeNull()
+    expect(migrateExamAttempt(null)).toBeNull()
+  })
+
+  it('deriva una secció única per als intents anteriors al simulacre complet', () => {
+    // Format antic: sense sections, sense currentSection i sense puntuacions
+    // per prova. Un simulacre a mitges d'abans s'ha de poder reprendre igual.
+    const legacy = {
+      attemptId: 'a1',
+      blueprintIds: ['roses-cultura-general'],
+      questionIds: ['q1', 'q2', 'q3'],
+      responses: ['a', null, 'c'],
+      flagged: [false, true, false],
+      startedAt: 1_700_000_000_000,
+      durationMs: 1_200_000,
+      elapsedMsAtPause: 300_000,
+      status: 'in-progress',
+      currentIndex: 1,
+    }
+    const migrated = migrateExamAttempt(legacy)
+    expect(migrated).not.toBeNull()
+    expect(migrated!.sections).toHaveLength(1)
+    expect(migrated!.sections[0]).toMatchObject({
+      blueprintId: 'roses-cultura-general',
+      count: 3,
+      durationMs: 1_200_000,
+      elapsedMs: 300_000,
+      finished: false,
+    })
+    expect(migrated!.currentSection).toBe(0)
+    expect(migrated!.responses).toEqual(['a', null, 'c'])
+    expect(migrated!.currentIndex).toBe(1)
+  })
+
+  it('conserva les seccions d’un intent de simulacre complet', () => {
+    const attempt = {
+      attemptId: 'a2',
+      blueprintIds: ['roses-cultura-general', 'roses-coneixements-professionals'],
+      compositionId: 'roses-simulacre-complet',
+      questionIds: ['q1', 'q2'],
+      responses: [null, 'b'],
+      flagged: [false, false],
+      startedAt: 1,
+      durationMs: 4_800_000,
+      elapsedMsAtPause: 60_000,
+      sections: [
+        { blueprintId: 'roses-cultura-general', count: 1, durationMs: 1_200_000, elapsedMs: 60_000, finished: true },
+        { blueprintId: 'roses-coneixements-professionals', count: 1, durationMs: 3_600_000, elapsedMs: 0, finished: false },
+      ],
+      currentSection: 1,
+      status: 'in-progress',
+      sectionScoresMilli: [],
+      currentIndex: 1,
+    }
+    const migrated = migrateExamAttempt(attempt)
+    expect(migrated!.sections).toHaveLength(2)
+    expect(migrated!.currentSection).toBe(1)
+    expect(migrated!.compositionId).toBe('roses-simulacre-complet')
+    expect(migrated!.sections[0]!.finished).toBe(true)
+  })
+
+  it('normalitza respostes i marques al nombre de preguntes', () => {
+    const migrated = migrateExamAttempt({
+      attemptId: 'a3',
+      blueprintIds: ['roses-cultura-general'],
+      questionIds: ['q1', 'q2', 'q3'],
+      responses: ['z', 'b'],
+      flagged: [true],
+      startedAt: 1,
+      durationMs: 1_000,
+      status: 'in-progress',
+    })
+    expect(migrated!.responses).toEqual([null, 'b', null])
+    expect(migrated!.flagged).toEqual([true, false, false])
+  })
+
+  it('és idempotent', () => {
+    const once = migrateExamAttempt({
+      attemptId: 'a4',
+      blueprintIds: ['roses-cultura-general'],
+      questionIds: ['q1'],
+      responses: ['a'],
+      flagged: [false],
+      startedAt: 5,
+      durationMs: 1_000,
+      status: 'finished',
+      scoreMilli: 1_000,
+    })
+    expect(migrateExamAttempt(once)).toEqual(once)
+  })
+
+  it('la secció d’un intent acabat queda tancada', () => {
+    const migrated = migrateExamAttempt({
+      attemptId: 'a5',
+      blueprintIds: ['roses-cultura-general'],
+      questionIds: ['q1'],
+      responses: ['a'],
+      flagged: [false],
+      startedAt: 5,
+      durationMs: 1_000,
+      status: 'finished',
+    })
+    expect(migrated!.sections[0]!.finished).toBe(true)
   })
 })
 

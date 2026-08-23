@@ -24,6 +24,7 @@ sense connexió després de la primera càrrega.
 | Microlliçons | 40 |
 | Preguntes actives | 223 (201 professionals + 22 de cultura general) |
 | Preguntes per tema | mínim 5 |
+| Simulacres | cultura general, professional i **complet** (les dues seguides) |
 | Fonts registrades | 51 |
 | Exàmens oficials importats | **0** (vegeu la limitació més avall) |
 

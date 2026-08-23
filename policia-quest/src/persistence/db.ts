@@ -21,6 +21,7 @@ import type {
 import {
   DEFAULT_SETTINGS,
   defaultProgress,
+  migrateExamAttempt,
   migrateProgress,
   migrateReviewState,
   migrateSettings,
@@ -182,7 +183,12 @@ export async function saveAttempt(attempt: ExamAttempt): Promise<void> {
 export async function loadAttempts(): Promise<ExamAttempt[]> {
   const db = await getDb()
   const all = await db.getAll('attempts')
-  return all.sort((a, b) => b.startedAt - a.startedAt)
+  const migrated: ExamAttempt[] = []
+  for (const raw of all) {
+    const attempt = migrateExamAttempt(raw)
+    if (attempt) migrated.push(attempt)
+  }
+  return migrated.sort((a, b) => b.startedAt - a.startedAt)
 }
 
 /** Recupera el simulacre interromput, si n'hi ha cap. */
