@@ -1,0 +1,20 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Còpies i text extret: es regeneren amb els scripts de fonts.
+sources/cache/
+sources/extracted/
+
+# Sortides de test i captures de treball.
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+
+# Cachés d'eines.
+.vite/
+*.tsbuildinfo
+
+.DS_Store
