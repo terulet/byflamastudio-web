@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-top-manta-2026-07-31
+publisher: Ajuntament de Roses
+published_at: 2026-07-31 12:45
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/comissats-mes-de-1-200-articles-abans-que-es-posessin-a-la-venda-en-el-top-manta-de-roses
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Comissats més de 1.200 articles abans que es posessin a la venda en el top manta de Roses
+
+RELEVANT OFFICIAL TEXT
+«ha donat com a resultat la confiscació d’un total de 1.207 articles»
+

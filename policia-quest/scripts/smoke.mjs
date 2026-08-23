@@ -94,15 +94,43 @@ await page.click('[data-testid="confirm-finish-yes"]')
 await page.waitForSelector('[data-testid="exam-result"]')
 await shoot(page, '09-resultat-simulacre')
 
-// El simulacre complet està bloquejat mentre el paquet d'actualitat sigui buit
-// (les bases exigeixen 10 de les 20 preguntes de cultura general d'actualitat).
-// En comptes de recórrer-lo, es captura el bloqueig: és el que veu qui obre
-// l'app avui, i ha d'explicar-se sol.
+// El simulacre de cultura general, que ara sí que es pot muntar: 10 preguntes
+// permanents i 10 d'actualitat vigent, com fixen les bases.
 await page.goto(`${BASE}/#/exams`)
-await page.waitForSelector('[data-testid="blocked-roses-cultura-general"]')
-await shoot(page, '18-simulacre-bloquejat', false)
+await page.click('[data-testid="start-exam-roses-cultura-general"]')
+await page.waitForSelector('[data-testid="exam-runner"]')
+await shoot(page, '18-simulacre-cultura-general', false)
+
+// I una pregunta d'actualitat corregida: l'explicació ha de portar la font i la
+// data de publicació, que és el que permet a qui estudia anar-ho a comprovar.
+await page.goto(`${BASE}/#/train`)
+await page.waitForSelector('[data-testid="train"]')
+await page.click('[data-testid="select-topic-31"]')
+await page.click('[data-testid="start-topic-session"]')
+await page.waitForSelector('[data-testid="study"]')
+
+let seenActualitat = false
+for (let i = 0; i < 12; i++) {
+  const id = await page.getAttribute('[data-testid="study-question"]', 'data-question-id')
+  await page.click('[data-testid="dont-know"]')
+  await page.waitForSelector('[data-testid="correction"]')
+  if (id?.startsWith('actualitat-')) {
+    await shoot(page, '21-actualitat-corregida')
+    seenActualitat = true
+    break
+  }
+  const next = await page.$('[data-testid="next-question"]')
+  if (!next) break
+  await next.click()
+  await page.waitForSelector('[data-testid="study-question"]')
+}
+if (!seenActualitat) {
+  problems.push('[mobil] no ha sortit cap pregunta d’actualitat en dotze intents')
+}
 
 // La reserva sí que es pot veure: la porta el simulacre professional.
+await page.goto(`${BASE}/#/exams`)
+await page.waitForSelector('[data-testid="exams"]')
 await page.click('[data-testid="start-exam-roses-coneixements-professionals"]')
 await page.waitForSelector('[data-testid="exam-runner"]')
 // Les 40 del cos; després queda la primera de reserva a la pantalla.

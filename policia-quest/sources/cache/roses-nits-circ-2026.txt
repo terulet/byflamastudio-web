@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-nits-circ-2026
+publisher: Ajuntament de Roses
+published_at: 2026-08-04 13:15
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/nits-de-circ-arriba-a-la-sisena-edicio-amb-un-espectacle-que-portara-a-roses-els-millors-trapezistes-volants-del-mon
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Nits de Circ arriba a la sisena edició
+
+RELEVANT OFFICIAL TEXT
+«se celebraran sis funcions, des de dimarts 18 d’agost fins al diumenge 23 d’agost»
+

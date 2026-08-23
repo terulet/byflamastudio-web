@@ -9,7 +9,7 @@
       "publishedAt": "2025-10-28",
       "title": "Aprovat el pressupost municipal de Roses per a 2026, que pujarà a 48,4 M€",
       "url": "https://www.roses.cat/noticies/aprovat-el-pressupost-municipal-de-roses-per-a-2026-que-pujara-a-48-4-meur",
-      "facts": ["Pressupost consolidat: 48.400.660 euros.", "Inversions previstes: 2,4 milions d'euros."]
+      "facts": ["Pressupost específic de l'Ajuntament: 44.649.900 euros.", "Pressupost consolidat: 48.400.660 euros.", "Inversions previstes: 2,4 milions d'euros."]
     },
     {
       "id": "roses-prego-festa-major-2026",
@@ -17,7 +17,7 @@
       "publishedAt": "2026-08-06",
       "title": "Roses obrirà demà la seva Festa Major amb un pregó innovador a càrrec del Grup de Teatre de Roses",
       "url": "https://www.roses.cat/noticies/roses-obrira-dema-la-seva-festa-major-amb-un-prego-innovador-a-carrec-del-grup-de-teatre-de-roses",
-      "facts": ["El pregó teatralitzat de la Festa Major 2026 va anar a càrrec del Grup de Teatre de Roses."]
+      "facts": ["El pregó teatralitzat de la Festa Major 2026 va començar a les 21.30 h."]
     },
     {
       "id": "roses-nits-circ-2026",
@@ -81,7 +81,7 @@
       "publishedAt": "2024-10-29",
       "title": "Catalunya presidirà l'Aliança de Regions Europees de Semiconductors el 2026",
       "url": "https://govern.cat/gov/notes-premsa/651582/catalunya-presidira-l-alianca-de-regions-europees-de-semiconductors-el-2026",
-      "facts": ["Catalunya presideix l'ESRA el 2026.", "L'ecosistema català de semiconductors constava de 260 agents."]
+      "facts": ["La nota descriu una aliança de 31 regions europees.", "L'ecosistema català de semiconductors constava de 260 agents."]
     },
     {
       "id": "cat-previsions-2026",
@@ -89,7 +89,7 @@
       "publishedAt": "2025-05-15",
       "title": "Previsió de creixement de l'economia catalana per al 2026",
       "url": "https://govern.cat/gov/notes-premsa/707782/govern-situa-previsio-creixement-economia-catalana-26-percent-2025-2-percent-2026",
-      "facts": ["La previsió de creixement del PIB per al 2026 era del 2,0%.", "La taxa d'atur prevista per al 2026 era del 8,4%."]
+      "facts": ["El consum de les llars previst per al 2026 creixia un 2,3%.", "La previsió de creixement del PIB per al 2026 era del 2,0%.", "La taxa d'atur prevista per al 2026 era del 8,4%."]
     },
     {
       "id": "es-bono-cultural-2026",
@@ -121,7 +121,7 @@
       "publishedAt": "2026-06-08",
       "title": "El president del Govern manté una trobada amb el papa Lleó XIV",
       "url": "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/080626-sanchez-encuentro-papa-leon-xiv.aspx",
-      "facts": ["Pedro Sánchez es va reunir amb el papa Lleó XIV a Madrid el 8 de juny de 2026."]
+      "facts": ["Pedro Sánchez es va reunir amb el papa Lleó XIV a la Nunciatura Apostòlica de Madrid el 8 de juny de 2026."]
     },
     {
       "id": "eu-presidencia-irlanda-2026",
@@ -129,7 +129,7 @@
       "publishedAt": "2026-07-01",
       "title": "Introducing the Irish EU Presidency Programme",
       "url": "https://irish-presidency.consilium.europa.eu/en/news/ni-neart-go-cur-le-cheile-introducing-the-irish-eu-presidency-programme/",
-      "facts": ["Irlanda exerceix la presidència del Consell de la UE de l'1 de juliol al 31 de desembre de 2026.", "Els tres eixos són competitivitat, valors i seguretat."]
+      "facts": ["La de 2026 era la vuitena presidència irlandesa del Consell de la UE.", "Irlanda exerceix la presidència de l'1 de juliol al 31 de desembre de 2026.", "Els tres eixos són competitivitat, valors i seguretat."]
     },
     {
       "id": "goya-2026",
@@ -137,7 +137,7 @@
       "publishedAt": "2026-03-01",
       "title": "Los Domingos triunfa en el 40 aniversario de los Goya",
       "url": "https://www.academiadecine.com/2026/03/01/los-domingos-triunfa-en-el-40-aniversario-de-los-goya-y-de-la-academia/",
-      "facts": ["«Los Domingos» va guanyar el Goya a millor pel·lícula.", "«Sirat» va obtenir sis Goya tècnics."]
+      "facts": ["«Los Domingos» va obtenir cinc premis Goya.", "«Sirat» va obtenir sis Goya tècnics."]
     },
     {
       "id": "eurovision-2026",

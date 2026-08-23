@@ -22,34 +22,34 @@ sense connexió després de la primera càrrega.
 | --- | --- |
 | Temes del temari | 40 de 40 |
 | Microlliçons | 40 |
-| Preguntes actives | 223 (201 professionals + 22 de cultura general) |
+| Preguntes actives | 439 (329 professionals, 85 de cultura general, 25 d'actualitat) |
+| D'aquestes, d'examen oficial | 189, transcrites del quadernet i auditades una a una |
 | Preguntes per tema | mínim 5 |
 | Simulacres | cultura general, professional i **complet** (les dues seguides) |
-| Fonts registrades | 51 |
-| Exàmens oficials importats | **0** (vegeu la limitació més avall) |
+| Fonts registrades | 98, de les quals 55 amb còpia local verificada pel seu SHA-256 |
+| Exàmens oficials importats | 6 de 30 (els sis de 2025 i 2026) |
 
-### Limitació important i coneguda
+### Limitacions importants i conegudes
 
-L'entorn on es va construir aquesta versió tenia la sortida de xarxa
-restringida: la política d'egress només permetia registres de paquets i
-`github.com`, i va denegar amb `CONNECT 403` l'accés a `www.roses.cat`,
-`ssl4.ddgi.cat`, `www.boe.es`, `portaljuridic.gencat.cat`, `interior.gencat.cat`,
-`eur-lex.europa.eu` i `www.un.org`.
+L'entorn on es va construir aquesta versió no té sortida a cap font: la política
+d'egress denega amb `CONNECT 403` `www.roses.cat`, `www.boe.es`,
+`portaljuridic.gencat.cat`, `ssl4.ddgi.cat` i la resta de dominis oficials. Tot
+el que hi ha de real ha entrat en **paquets de documents amb hash** preparats per
+qui té accés, i s'ha verificat fitxer a fitxer abans d'adoptar-lo.
 
 Conseqüències, dites sense embuts:
 
-1. **Cap dels 30 exàmens oficials registrats està importat.** El contingut d'un
-   examen oficial només es pot transcriure del document oficial; inventar-lo
-   seria fabricar una font. El registre conserva la URL real, el nombre de
-   preguntes esperat i el motiu, i la importació es completa amb
-   `npm run sources:download && npm run sources:extract && npm run exams:import`
-   des d'una xarxa amb accés.
-2. **Cap font s'ha pogut baixar ni verificar automàticament.** Les referències
-   del contingut apunten a normes reals i concretes (article per article) però
-   tenen l'estat `pending-source-verification` fins que una execució amb xarxa
-   les contrasti contra el text consolidat. L'aplicació ho diu a cada correcció.
-3. **El paquet d'actualitat és buit a propòsit.** La prova de cultura general
-   reserva 10 de 20 preguntes a l'actualitat i no hi havia cap font verificable.
+1. **24 dels 30 exàmens oficials registrats continuen sense transcriure.** El
+   contingut d'un examen només es pot transcriure del document; inventar-lo seria
+   fabricar una font. El registre en conserva la URL real, el nombre de preguntes
+   esperat i el motiu.
+2. **43 de les 98 fonts no tenen còpia verificada.** Són les normes generals (BOE,
+   Portal Jurídic). Les referències que hi apunten segueixen en
+   `pending-source-verification`, i l'aplicació ho diu a cada correcció.
+3. **L'actualitat caduca, i està previst que caduqui.** Les 25 preguntes del
+   paquet vigent porten data de revisió pròpia. El 2027-03-01 en quedaran menys
+   de deu i el simulacre de cultura general es tornarà a bloquejar sol fins que
+   algú el renovi: no és una avaria, és el disseny.
 
 `npm run content:report` genera l'informe complet a
 `artifacts/coverage-report.md`.

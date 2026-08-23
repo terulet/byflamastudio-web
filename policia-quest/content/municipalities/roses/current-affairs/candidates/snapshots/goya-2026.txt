@@ -1,0 +1,15 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: goya-2026
+publisher: Academia de las Artes y las Ciencias Cinematográficas de España
+published_at: 2026-03-01
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.academiadecine.com/2026/03/01/los-domingos-triunfa-en-el-40-aniversario-de-los-goya-y-de-la-academia/
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Los Domingos triunfa en el 40 aniversario de los Goya y de la Academia
+
+RELEVANT OFFICIAL TEXT
+«Los Domingos [...] logró [...] Mejor Película»
+«logró cinco de los 13 premios a los que optaba»
+«Sirat, con seis Goyas técnicos»

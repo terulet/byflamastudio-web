@@ -8,12 +8,12 @@ Generat el 2026-08-23 · versió de contingut 1
 | --- | --- |
 | Temes del temari | 40 |
 | Microlliçons | 40 |
-| Preguntes totals | 414 |
-| Preguntes actives | 414 |
+| Preguntes totals | 439 |
+| Preguntes actives | 439 |
 | — de coneixements professionals | 329 |
-| — de cultura general | 85 |
+| — de cultura general | 110 |
 | Preguntes d’examen oficial importades | 189 |
-| Fonts registrades | 79 |
+| Fonts registrades | 98 |
 | Exàmens registrats | 30 |
 
 ## Cobertura per tema
@@ -50,7 +50,7 @@ Generat el 2026-08-23 · versió de contingut 1
 | 28 | Jurisdicció penal | seguretat-i-penal | ✓ | 5 | 2 |
 | 29 | Codi penal: garanties, aplicació de la llei i seguretat viària | seguretat-i-penal | ✓ | 5 | 1 |
 | 30 | Llei orgànica 1/2015, modificadora del Codi penal | seguretat-i-penal | ✓ | 5 | 2 |
-| 31 | Coneixements generals de Roses | roses-transit-convivencia | ✓ | 14 | 1 |
+| 31 | Coneixements generals de Roses | roses-transit-convivencia | ✓ | 39 | 1 |
 | 32 | Permisos i llicències de conducció | roses-transit-convivencia | ✓ | 5 | 3 |
 | 33 | Conducció sota els efectes d’alcohol o drogues | roses-transit-convivencia | ✓ | 5 | 3 |
 | 34 | Animals domèstics i de companyia | roses-transit-convivencia | ✓ | 5 | 3 |
@@ -63,7 +63,7 @@ Generat el 2026-08-23 · versió de contingut 1
 
 ## Estat de les fonts
 
-- Descarregades i verificades per SHA-256: **36**
+- Descarregades i verificades per SHA-256: **55**
 - Pendents de descàrrega: **43**
 
 ### Fonts pendents
@@ -121,7 +121,7 @@ Generat el 2026-08-23 · versió de contingut 1
 | Estat | Referències |
 | --- | --- |
 | pending-source-verification | 313 |
-| verified | 212 |
+| verified | 237 |
 
 `pending-source-verification` vol dir que la referència apunta a una norma real i concreta, però que encara no s’ha contrastat automàticament contra la còpia local del text consolidat. Passarà a `verified` quan `npm run sources:download` i la validació s’executin amb accés a la xarxa.
 
@@ -162,8 +162,8 @@ Generat el 2026-08-23 · versió de contingut 1
 
 ## Actualitat
 
-- `roses-actualitat-2026-08` · active · cobreix 2026-01-01 → 2026-08-23 · caduca 2026-11-30 · **0 preguntes**
-  - Paquet creat buit a propòsit. Cap font d’actualitat era accessible des de l’entorn de construcció (CONNECT 403 a roses.cat, boe.es, ddgi.cat i portaljuridic.gencat.cat el 2026-08-23) i no s’inventen fets. La infraestructura és completa i provada: vegeu la capçalera d’aquest fitxer per al procediment i tests/unit/actualitat.test.ts per al camí de desbloqueig.
+- `roses-actualitat-2026-08` · active · cobreix 2024-10-29 → 2026-08-21 · caduca 2027-06-08 · **25 preguntes**
+  - Adoptat el 2026-08-24 des d’instantànies textuals segellades amb SHA-256, no des de la xarxa: cap de les 19 fonts era abastable des de l’entorn de construcció. Cada instantània es conserva a sources/cache/ amb el seu hash i el mètode de captura. El detall pregunta per pregunta és a artifacts/actualitat-decisio-2026-08-24.md.
 
 ## Capacitat dels simulacres
 
@@ -172,19 +172,14 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 | Simulacre | Quota | Necessàries | Vigents al banc | Estat |
 | --- | --- | --- | --- | --- |
 | Simulacre de cultura general | Cultura general | 10 | 22 | ✓ |
-| Simulacre de cultura general | Actualitat social, cultural i política | 10 | 0 | ✗ en falten 10 |
-| Simulacre de cultura general | Reserva | 1 | 0 | ⚠ sense reserva |
+| Simulacre de cultura general | Actualitat social, cultural i política | 10 | 25 | ✓ |
+| Simulacre de cultura general | Reserva | 1 | 1 | ✓ |
 | Simulacre de coneixements professionals | (sense composició fixada) | 40 | 329 | ✓ |
 | Simulacre de coneixements professionals | Reserva | 2 | 2 | ✓ |
-
-**Simulacre de cultura general: bloquejat.** El paquet d’actualitat és buit: cap font periodística ni institucional era accessible des de l’entorn de construcció (2026-08-23). Sense 10 preguntes d’actualitat vigents no es pot muntar la prova que descriuen les bases, i muntar-ne 20 de cultura general seria ensenyar un format fals. Per desbloquejar-lo: omplir content/municipalities/roses/current-affairs/ amb preguntes etiquetades `actualitat`, amb dynamic: true i reviewBy, i treure aquest marcador.
-
-**Simulacre complet: bloquejat**, perquè inclou Simulacre de cultura general.
 
 ## Què necessita revisió humana
 
 1. Descarregar les 43 fonts pendents i tornar a validar el contingut per passar les referències a `verified`.
 2. Localitzar la URL directa dels 24 quadernets de prioritat P1 a l’arxiu municipal i importar-los.
-3. Omplir el paquet d’actualitat amb fets verificats contra fonts oficials o periodístiques fiables. La prova de cultura general reserva 10 de 20 preguntes a l’actualitat i ara mateix el banc no en té cap.
-4. Contrastar contra el text vigent les 12 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
+3. Contrastar contra el text vigent les 12 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
 

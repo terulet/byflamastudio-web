@@ -136,9 +136,11 @@ defecte visible, corregeix-lo abans de tancar.
 
 ## 6. Estat conegut d'aquesta versió
 
-El 23 d'agost de 2026 es va rebre un paquet de rescat amb 36 documents oficials
-(2 bases, 30 quadernets d'examen i 4 textos d'ordenances), tots verificats pel
-seu SHA-256. Això va desbloquejar bona part del contingut:
+Aquesta versió es va muntar amb dos paquets de documents que va portar qui la
+demana, perquè l'entorn de construcció no arriba a cap font: el 23 d'agost de
+2026, 36 documents oficials (2 bases, 30 quadernets d'examen i 4 textos
+d'ordenances); el 24, 19 instantànies textuals de pàgines d'actualitat. Tots dos
+verificats pel seu SHA-256, document a document.
 
 - **Els sis exàmens de 2025 i 2026 estan importats**: 189 preguntes amb la
   resposta que hi va marcar el tribunal, mai deduïda, i **auditades visualment
@@ -156,33 +158,39 @@ seu SHA-256. Això va desbloquejar bona part del contingut:
 - **43 de les 79 fonts continuen pendents**: són les normes generals (BOE,
   Portal Jurídic) que aquest paquet no incloïa. Les seves referències segueixen
   en `pending-source-verification`.
-- **La porta de l'actualitat està tancada amb clau i provada.** El validador
+- **El paquet d'actualitat té 25 preguntes vigents**, adoptades el 24 d'agost de
+  2026 des de 19 instantànies textuals segellades amb SHA-256 que va portar el
+  paquet de candidats. Cap ve de la xarxa: l'entorn continua sense arribar a cap
+  font. Cada resposta té escrit, a
+  `content/.../current-affairs/adoption-2026-08.json`, quin fitxer de
+  `sources/cache/` la sosté i quin fragment literal d'aquell fitxer la demostra;
+  un test ho torna a comprovar hash a hash. Onze porten l'enunciat o
+  l'explicació **retallats** respecte del candidat original, perquè afirmaven
+  coses que la instantània no diu; el detall és a
+  `artifacts/actualitat-decisio-2026-08-24.md`.
+- **Per això el simulacre de cultura general i el complet estan oberts**, i el
+  quadernet surt 10+10 com fixen les bases. No s'ha tocat cap motor per obrir-lo:
+  el validador els bloquejava perquè el banc no podia cobrir la quota d'actualitat
+  i els va deixar passar sol quan la va poder cobrir. Amb el calendari de
+  caducitats d'aquest paquet, el 2027-03-01 en quedaran nou i es tornaran a
+  bloquejar sols; hi ha tests i una captura (`artifacts/actualitat/caducat-*.png`)
+  que ho comproven avançant només el rellotge.
+- **La porta de l'actualitat continua tancada amb clau i provada.** El validador
   refusa qualsevol pregunta etiquetada `actualitat` que no caduqui amb data, no
   visqui dins un paquet, no citi una font `verified` amb data de publicació, o
-  vingui d'un examen antic. El camí de desbloqueig està provat amb fixtures a
-  `tests/unit/actualitat.test.ts`: amb deu preguntes vigents el simulacre s'obre
-  sol i el quadernet surt 10+10, i el dia que caduquen es torna a bloquejar sol.
-- **El paquet de candidats d'actualitat de 2026-08-24 està al repositori i no
-  s'ha importat**: cap de les 19 fonts és abastable des d'aquest entorn (CONNECT
-  403 als vuit dominis, pels dos camins de sortida). Les 25 preguntes queden
-  rebutjades per font no verificable; el detall és a
-  `artifacts/actualitat-decisio-2026-08-24.md` i l'importador que les adoptarà
-  quan hi hagi xarxa és `scripts/transcription/import_current_affairs.py`.
-- **El paquet d'actualitat continua buit**, i per això el simulacre de cultura
-  general i el complet segueixen **bloquejats**. Les preguntes d'actualitat dels
-  exàmens antics **no** el desbloquegen: són material històric i s'importen amb
-  `reviewBy` a la data de l'examen perquè `isCurrent()` les deixi fora.
+  vingui d'un examen antic. Les preguntes d'actualitat dels exàmens antics **no**
+  compten: són material històric i s'importen amb `reviewBy` a la data de
+  l'examen perquè `isCurrent()` les deixi fora.
 
 La feina que queda, en aquest ordre:
 
-1. Omplir el paquet d'actualitat amb fets verificats contra fonts oficials
-   vigents, amb data de publicació, `reviewBy` i revisió humana de la clau. El
-   procediment és a la capçalera de `content/.../current-affairs/index.ts`. Cal
-   accés a les fonts: des d'aquest entorn, `roses.cat`, `boe.es`, `ddgi.cat` i
-   `portaljuridic.gencat.cat` responen CONNECT 403, i escriure actualitat de
-   memòria és inventar-la. És l'únic que desbloqueja el simulacre de cultura
-   general i el complet. En treure el marcador `contentStatus: 'blocked-missing-content'` cal recuperar
-   els tests d'extrem a extrem del simulacre complet i les seves captures.
+1. Renovar el paquet d'actualitat abans que caduqui. El 2027-03-01 el banc
+   baixa de deu preguntes vigents i el simulacre de cultura general es tanca
+   sol; no és una avaria, però tampoc s'arregla sol. El procediment és a la
+   capçalera de `content/.../current-affairs/index.ts`, i el camí offline
+   —instantànies amb hash— és el que ja s'ha fet servir dues vegades. No
+   s'allarga cap `reviewBy` per guanyar temps: una data allargada és una
+   afirmació que ningú ha comprovat.
 2. Aconseguir les 43 fonts generals pendents (`npm run sources:adopt -- --list`
    les llista amb la seva URL oficial) i contrastar-hi les referències que
    segueixen sense verificar.

@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: olimpics-hivern-2026
+publisher: International Olympic Committee
+published_at: 2025-02-06
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://newsroom.olympics.com/record/1645
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+One Year to Go: Milano Cortina 2026
+
+RELEVANT OFFICIAL TEXT
+«Milano Cortina 2026, set to take place from 6 to 22 February 2026»
+

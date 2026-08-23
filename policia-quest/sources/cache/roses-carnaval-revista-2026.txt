@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-carnaval-revista-2026
+publisher: Ajuntament de Roses
+published_at: 2026-01-30 13:41
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/el-carnaval-de-roses-no-s2019explica-es-reviu-ja-es-aqui-la-revista-amb-250-fotografies-del-2025
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+El Carnaval de Roses no s’explica, es reviu
+
+RELEVANT OFFICIAL TEXT
+«el programa del Carnaval 2026, que se celebrarà del 12 al 16 de febrer»
+

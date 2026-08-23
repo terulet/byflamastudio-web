@@ -1,0 +1,289 @@
+{
+  "_note": [
+    "Generat per scripts/transcription/import_current_affairs.py --offline.",
+    "Per a cada pregunta adoptada: quin fitxer de sources/cache/ la sosté, amb quin",
+    "SHA-256, i quin fragment literal d’aquell fitxer demostra la resposta.",
+    "provenBy: «literal» si l’opció correcta hi surt tal qual; «pont» si la font és",
+    "en una altra llengua i el fragment equivalent s’ha declarat a mà.",
+    "tests/unit/actualitat.test.ts ho comprova fitxer a fitxer."
+  ],
+  "packId": "roses-actualitat-2026-08",
+  "adoptedAt": "2026-08-24",
+  "questions": [
+    {
+      "questionId": "actualitat-2026-roses-001",
+      "sourceId": "roses-budget-2026",
+      "snapshotSha256": "5057c2b2be561a95c0956caeff69259e49c0ffb001965a8ed96f6dcccbbc14e8",
+      "cacheFile": "roses-budget-2026.txt",
+      "provenBy": "literal",
+      "quote": "44.649.900",
+      "answer": "44.649.900 €",
+      "bridgeReason": null,
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-roses-002",
+      "sourceId": "roses-budget-2026",
+      "snapshotSha256": "5057c2b2be561a95c0956caeff69259e49c0ffb001965a8ed96f6dcccbbc14e8",
+      "cacheFile": "roses-budget-2026.txt",
+      "provenBy": "pont",
+      "quote": "2,4MEUR",
+      "answer": "2,4 milions d'euros",
+      "bridgeReason": "la nota escriu la xifra abreujada; «2,4» sol no demostraria res",
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-roses-003",
+      "sourceId": "roses-prego-festa-major-2026",
+      "snapshotSha256": "3d41c03a121c0b9b3ac0048dd10a89f7112ef6e352cc40841d1a1e79e460a304",
+      "cacheFile": "roses-prego-festa-major-2026.txt",
+      "provenBy": "literal",
+      "quote": "21.30 h",
+      "answer": "21.30 h",
+      "bridgeReason": null,
+      "trimmed": "la instantània és l’anunci del dia abans: demostra l’hora programada, no que l’acte comencés; a més situava un acte musical a les 21.15 h que el text no recull"
+    },
+    {
+      "questionId": "actualitat-2026-roses-004",
+      "sourceId": "roses-nits-circ-2026",
+      "snapshotSha256": "43cb4dbf3f05d364579cdd91cd982229332037e91c34d20365b93879062ea99c",
+      "cacheFile": "roses-nits-circ-2026.txt",
+      "provenBy": "literal",
+      "quote": "sis",
+      "answer": "Sis",
+      "bridgeReason": null,
+      "trimmed": "l’explicació original les situava a la Ciutadella de Roses i el text preservat no diu on se celebren"
+    },
+    {
+      "questionId": "actualitat-2026-roses-005",
+      "sourceId": "roses-catala-nouvinguts-2026",
+      "snapshotSha256": "1a16a6420096e670ceb8983c7d68f62541714da8427558834c864f29b04e5859",
+      "cacheFile": "roses-catala-nouvinguts-2026.txt",
+      "provenBy": "pont",
+      "quote": "entre 11 i 16 anys",
+      "answer": "D'11 a 16 anys",
+      "bridgeReason": "la franja s’ha de demostrar sencera: un «11» solt no la sosté",
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-roses-006",
+      "sourceId": "roses-top-manta-2026-07-31",
+      "snapshotSha256": "d665501fa29951e0569f7954ef6e939721be8e1057452bb60d14c3af9ae82c17",
+      "cacheFile": "roses-top-manta-2026-07-31.txt",
+      "provenBy": "literal",
+      "quote": "1.207",
+      "answer": "1.207",
+      "bridgeReason": null,
+      "trimmed": "l’original el qualificava d’«operatiu conjunt» i situava el decomís al passeig Marítim; cap de les dues coses consta al text preservat"
+    },
+    {
+      "questionId": "actualitat-2026-roses-007",
+      "sourceId": "roses-carnaval-revista-2026",
+      "snapshotSha256": "e43b57a1bfccf718841808818d0db607adf5e03aecf82e78e5dfb2edb064f05a",
+      "cacheFile": "roses-carnaval-revista-2026.txt",
+      "provenBy": "literal",
+      "quote": "del 12 al 16 de febrer",
+      "answer": "Del 12 al 16 de febrer",
+      "bridgeReason": null,
+      "trimmed": "la instantània és la presentació del programa: demostra les dates previstes, no que se celebrés"
+    },
+    {
+      "questionId": "actualitat-2026-roses-008",
+      "sourceId": "roses-cartell-carnaval-2026",
+      "snapshotSha256": "f82686d4074a75499fc928f528451428c83bb32fc58d49d746f69fbb27e0baa0",
+      "cacheFile": "roses-cartell-carnaval-2026.txt",
+      "provenBy": "literal",
+      "quote": "Alma Martín Guillén",
+      "answer": "Alma Martín Guillén",
+      "bridgeReason": null,
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-cat-009",
+      "sourceId": "cat-carboni-2026-2030",
+      "snapshotSha256": "79393505e09116d079838674b958f738dd273aff1a215303bf049ce9aabf11fb",
+      "cacheFile": "cat-carboni-2026-2030.txt",
+      "provenBy": "literal",
+      "quote": "2026-2030",
+      "answer": "2026-2030",
+      "bridgeReason": null,
+      "trimmed": "l’enunciat original la qualificava de «primera» proposta rebuda i la instantània no ho estableix"
+    },
+    {
+      "questionId": "actualitat-2026-cat-010",
+      "sourceId": "cat-preus-universitaris-2025-2026",
+      "snapshotSha256": "d72558879a99d142740f3f37990629e853883f04f6af84f23294a637aef42989",
+      "cacheFile": "cat-preus-universitaris-2025-2026.txt",
+      "provenBy": "literal",
+      "quote": "17,69",
+      "answer": "17,69 €",
+      "bridgeReason": null,
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-cat-011",
+      "sourceId": "cat-esra-2026",
+      "snapshotSha256": "99472e2c1d521facd75bbdd41d741d69b49a35c4df7951c0ce7a56f41735592b",
+      "cacheFile": "cat-esra-2026.txt",
+      "provenBy": "literal",
+      "quote": "31",
+      "answer": "31",
+      "bridgeReason": null,
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-cat-012",
+      "sourceId": "cat-esra-2026",
+      "snapshotSha256": "99472e2c1d521facd75bbdd41d741d69b49a35c4df7951c0ce7a56f41735592b",
+      "cacheFile": "cat-esra-2026.txt",
+      "provenBy": "literal",
+      "quote": "260",
+      "answer": "260",
+      "bridgeReason": null,
+      "trimmed": "l’explicació original en desglossava la composició —empreses, entitats i centres de coneixement— i el text preservat no la dona"
+    },
+    {
+      "questionId": "actualitat-2026-cat-013",
+      "sourceId": "cat-previsions-2026",
+      "snapshotSha256": "2a1fdbebd6ca7af9b7670f857b3c5f229fd0fa453e72f032a14b9a6b718af99a",
+      "cacheFile": "cat-previsions-2026.txt",
+      "provenBy": "literal",
+      "quote": "2,3",
+      "answer": "2,3%",
+      "bridgeReason": null,
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-cat-014",
+      "sourceId": "cat-previsions-2026",
+      "snapshotSha256": "2a1fdbebd6ca7af9b7670f857b3c5f229fd0fa453e72f032a14b9a6b718af99a",
+      "cacheFile": "cat-previsions-2026.txt",
+      "provenBy": "literal",
+      "quote": "8,4",
+      "answer": "8,4%",
+      "bridgeReason": null,
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-es-015",
+      "sourceId": "es-bono-cultural-2026",
+      "snapshotSha256": "30e0cccaf29542e9b8d78df880c7d4c0f23f0c8bbbb35f34f720e1b4257af9d3",
+      "cacheFile": "es-bono-cultural-2026.txt",
+      "provenBy": "literal",
+      "quote": "400",
+      "answer": "400 €",
+      "bridgeReason": null,
+      "trimmed": "l’original deia que l’import es «manté», continuïtat que la instantània d’un sol any no demostra"
+    },
+    {
+      "questionId": "actualitat-2026-es-016",
+      "sourceId": "es-bono-cultural-2026",
+      "snapshotSha256": "30e0cccaf29542e9b8d78df880c7d4c0f23f0c8bbbb35f34f720e1b4257af9d3",
+      "cacheFile": "es-bono-cultural-2026.txt",
+      "provenBy": "pont",
+      "quote": "instrumentos musicales",
+      "answer": "Instruments musicals",
+      "bridgeReason": "font en castellà: «instrumentos musicales» és «instruments musicals»",
+      "trimmed": "l’enunciat original deia que l’ús s’havia «incorporat» el 2026 i l’explicació que la regulació el va «afegir»; la instantània només demostra que hi és"
+    },
+    {
+      "questionId": "actualitat-2026-es-017",
+      "sourceId": "es-icaa-2026",
+      "snapshotSha256": "97b53cab5b2fe3d96c935240bc546b56ee91195f8612f156972185ae15dab4ad",
+      "cacheFile": "es-icaa-2026.txt",
+      "provenBy": "pont",
+      "quote": "62 millones de euros",
+      "answer": "62 milions d'euros",
+      "bridgeReason": "font en castellà, i la xifra només val amb la unitat al costat",
+      "trimmed": "l’enunciat original els acotava als llargmetratges «sobre projecte» i el text preservat no fa aquesta distinció"
+    },
+    {
+      "questionId": "actualitat-2026-es-018",
+      "sourceId": "es-estatut-practiques-2026",
+      "snapshotSha256": "9bc8020c6d7534ccd77b516433c6b9c01d0308d7baf0a631a34fbb2b75a4c1b6",
+      "cacheFile": "es-estatut-practiques-2026.txt",
+      "provenBy": "literal",
+      "quote": "56",
+      "answer": "56%",
+      "bridgeReason": null,
+      "trimmed": "l’enunciat original deia que havien «cotitzat per pràctiques formatives no remunerades des de 2024» i el text preservat no ho recull"
+    },
+    {
+      "questionId": "actualitat-2026-es-019",
+      "sourceId": "es-visita-lleo-xiv-2026",
+      "snapshotSha256": "639a00fe8f83c2c19345ede6b14a0fb28e55b83a386ae889efec4db1840598e4",
+      "cacheFile": "es-visita-lleo-xiv-2026.txt",
+      "provenBy": "pont",
+      "quote": "Nunciatura Apostólica, Madrid",
+      "answer": "A la Nunciatura Apostòlica",
+      "bridgeReason": "font en castellà: «Nunciatura Apostólica» és «Nunciatura Apostòlica»",
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-eu-020",
+      "sourceId": "eu-presidencia-irlanda-2026",
+      "snapshotSha256": "cef77c9c4761dfb700fa861618528eabca980f3bc8e030cdd0686517a0e2ccbb",
+      "cacheFile": "eu-presidencia-irlanda-2026.txt",
+      "provenBy": "pont",
+      "quote": "for the eighth time",
+      "answer": "Vuitena",
+      "bridgeReason": "font en anglès: «for the eighth time» és «Vuitena»",
+      "trimmed": "l’original la donava per acabada («va ser») quan el text preservat la situa començant"
+    },
+    {
+      "questionId": "actualitat-2026-eu-021",
+      "sourceId": "eu-presidencia-irlanda-2026",
+      "snapshotSha256": "cef77c9c4761dfb700fa861618528eabca980f3bc8e030cdd0686517a0e2ccbb",
+      "cacheFile": "eu-presidencia-irlanda-2026.txt",
+      "provenBy": "pont",
+      "quote": "competitiveness, values and security",
+      "answer": "Competitivitat, valors i seguretat",
+      "bridgeReason": "font en anglès: «competitiveness, values and security» és «Competitivitat, valors i seguretat»",
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-cultura-022",
+      "sourceId": "goya-2026",
+      "snapshotSha256": "1e711912ea7a08d8892b1721235ccb867af63ce6b4e900d9318401f6070bd5b1",
+      "cacheFile": "goya-2026.txt",
+      "provenBy": "pont",
+      "quote": "logró cinco de los 13 premios",
+      "answer": "Cinc",
+      "bridgeReason": "font en castellà: «cinco» és «cinc». Sense límit de paraula, «Cinc» s’hi donaria per trobat per dins",
+      "trimmed": "l’explicació original hi afegia direcció i guió original, que la instantània no recull"
+    },
+    {
+      "questionId": "actualitat-2026-cultura-023",
+      "sourceId": "goya-2026",
+      "snapshotSha256": "1e711912ea7a08d8892b1721235ccb867af63ce6b4e900d9318401f6070bd5b1",
+      "cacheFile": "goya-2026.txt",
+      "provenBy": "pont",
+      "quote": "con seis Goyas técnicos",
+      "answer": "Sis",
+      "bridgeReason": "font en castellà: «seis» és «sis», i el comparador de xifres no llegeix els números escrits amb lletres",
+      "trimmed": null
+    },
+    {
+      "questionId": "actualitat-2026-cultura-024",
+      "sourceId": "eurovision-2026",
+      "snapshotSha256": "46138c9fbbb6d87e0fcbeb94b5f8a8fc749b94b9cf1f7b23896c3dcbe81485b7",
+      "cacheFile": "eurovision-2026.txt",
+      "provenBy": "pont",
+      "quote": "Saturday 16 May",
+      "answer": "16 de maig",
+      "bridgeReason": "font en anglès, i un «16» solt no demostra la data",
+      "trimmed": "la instantània és l’anunci de ciutat amfitriona d’agost de 2025, en futur: demostra la data prevista, no que se celebrés"
+    },
+    {
+      "questionId": "actualitat-2026-esport-025",
+      "sourceId": "olimpics-hivern-2026",
+      "snapshotSha256": "2b654cad1205c3cd1df3c39fc046b2c3388732e2a8cb597bacc3e3d996896c1f",
+      "cacheFile": "olimpics-hivern-2026.txt",
+      "provenBy": "pont",
+      "quote": "from 6 to 22 February 2026",
+      "answer": "Del 6 al 22 de febrer",
+      "bridgeReason": "font en anglès, i un «6» solt no demostra res",
+      "trimmed": "la instantània és la nota d’un any abans, en futur: demostra les dates previstes, no que se celebressin"
+    }
+  ]
+}

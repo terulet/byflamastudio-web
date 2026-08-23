@@ -452,15 +452,19 @@ describe('plànols de simulacre', () => {
     }
   })
 
-  it('avui el simulacre de cultura general està bloquejat per manca d’actualitat', () => {
-    // Aquesta versió no té cap pregunta d'actualitat: cap font periodística era
-    // accessible. El test documenta l'estat real i cau quan s'arregli, que és
-    // exactament quan cal revisar-lo.
+  it('avui el simulacre de cultura general es pot muntar quota per quota', () => {
+    // El paquet d'actualitat de 2026-08 el va desbloquejar. La comprovació no
+    // és que hi hagi 20 preguntes: és que cada quota que fixen les bases —10 de
+    // cultura general i 10 d'actualitat vigent— es pugui cobrir per separat.
     const cg = blueprints.find((b) => b.blueprintId === 'roses-cultura-general')!
     const status = examAvailability(questions, cg, TODAY)
-    expect(status.ok).toBe(false)
-    expect(status.quotas.find((q) => q.tag === 'actualitat')?.available).toBe(0)
-    expect(cg.contentNote).toMatch(/actualitat/i)
+    expect(status.ok).toBe(true)
+    expect(status.missingBody).toBe(0)
+    for (const quota of status.quotas) {
+      expect(quota.available, quota.tag).toBeGreaterThanOrEqual(quota.needed)
+    }
+    expect(cg.contentStatus).toBe('ready')
+    expect(cg.contentNote).toBeUndefined()
   })
 })
 

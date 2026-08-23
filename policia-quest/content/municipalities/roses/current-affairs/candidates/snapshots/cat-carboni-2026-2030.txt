@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: cat-carboni-2026-2030
+publisher: Parlament de Catalunya
+published_at: 2025-09-09
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.parlament.cat/web/actualitat/noticies/index.html%3Fp_id%3D300613926
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+La Mesa tramita el Projecte de llei de drets culturals de Catalunya i altres iniciatives
+
+RELEVANT OFFICIAL TEXT
+«la proposta del Govern de pressupostos de carboni per al període 2026-2030»
+

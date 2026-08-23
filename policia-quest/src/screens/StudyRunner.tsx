@@ -298,7 +298,12 @@ function QuestionView({
   const t = dict(settings.explanationLang)
 
   return (
-    <section className="stack fade-up" key={question.questionId}>
+    <section
+      className="stack fade-up"
+      key={question.questionId}
+      data-testid="study-question"
+      data-question-id={question.questionId}
+    >
       {/* L'enunciat sempre en català: és la llengua de l'examen. */}
       {/*
        * Una pregunta d'examen oficial es llegeix amb la seva data al davant.
@@ -360,9 +365,6 @@ function QuestionView({
         })}
       </fieldset>
 
-      {revealed && dontKnow ? (
-        <p className="notice notice--warn">{t.study.unknown}</p>
-      ) : null}
     </section>
   )
 }

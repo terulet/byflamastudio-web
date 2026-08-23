@@ -8,10 +8,14 @@
  *  1. Que una pregunta d'actualitat sense les garanties no pot comptar.
  *  2. Que quan un paquet legítim existeix, el simulacre de cultura general es
  *     desbloqueja sol, sense tocar el motor ni el validador.
+ *  3. Que el paquet real que hi ha ara compleix, i que **es tornarà a bloquejar
+ *     sol** el dia que caduquin prou preguntes.
  *
- * El segon punt es prova amb **fixtures**, no amb contingut real: mentre no hi
- * hagi fonts vigents contrastades, el banc real ha de continuar buit. Provar el
- * camí de desbloqueig no és el mateix que desbloquejar-lo.
+ * El punt 2 es prova amb fixtures, perquè ha de valdre per a qualsevol paquet
+ * futur. El punt 3 es prova contra el banc de debò i contra les còpies
+ * segellades de `sources/cache/`: cada resposta ha de tenir, literalment, el
+ * fragment que la sosté dins el fitxer que el manifest diu, amb el hash que el
+ * manifest diu.
  */
 import { describe, expect, it } from 'vitest'
 import { examAvailability, isCurrent } from '../../src/engines/availability.ts'
@@ -21,6 +25,10 @@ import { isoToEpochDay } from '../../src/util/date.ts'
 import type { ExamBlueprint, Question } from '../../src/domain/types.ts'
 import { CULTURA_GENERAL_SCORING } from '../../src/engines/scoring.ts'
 import { ROSES_PACK } from '../../content/municipalities/roses/index.ts'
+import { createHash } from 'node:crypto'
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import adoption from '../../content/municipalities/roses/current-affairs/adoption-2026-08.json' with { type: 'json' }
 
 const TODAY = '2026-08-23'
 
@@ -70,18 +78,150 @@ function question(id: string, tags: string[], extra: Partial<Question> = {}): Qu
 const actualitat = (i: number, reviewBy = '2026-11-30'): Question =>
   question(`act-${i}`, ['actualitat'], { dynamic: true, reviewBy, topicId: 'roses-t31' })
 
+const CACHE = fileURLToPath(new URL('../../sources/cache/', import.meta.url))
+const REAL_CG = ROSES_PACK.blueprints.find((b) => b.blueprintId === 'roses-cultura-general')!
+const REAL_ACTUALITAT = ROSES_PACK.questions.filter(
+  (q) => q.tags.includes('actualitat') && q.status === 'active',
+)
+
+/**
+ * L'últim dia amb deu preguntes vigents, calculat des del banc.
+ *
+ * No s'escriu a mà cap data: si demà s'adopta un paquet nou, aquests tests
+ * segueixen provant el que han de provar sense que ningú els retoqui.
+ */
+const HORIZONS = [...REAL_ACTUALITAT].map((q) => q.reviewBy!).sort((a, b) => (a < b ? 1 : -1))
+const LAST_VALID_DAY = HORIZONS[9]!
+const nextDay = (iso: string): string => {
+  const d = new Date(`${iso}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() + 1)
+  return d.toISOString().slice(0, 10)
+}
+
 describe('estat real del banc', () => {
-  it('avui no hi ha cap pregunta d’actualitat vigent', () => {
-    const current = ROSES_PACK.questions.filter(
-      (q) => q.tags.includes('actualitat') && q.status === 'active' && isCurrent(q, TODAY),
-    )
-    expect(current).toHaveLength(0)
+  it('avui hi ha prou preguntes d’actualitat vigents per muntar la quota', () => {
+    const current = REAL_ACTUALITAT.filter((q) => isCurrent(q, TODAY))
+    expect(current.length).toBeGreaterThanOrEqual(10)
+    expect(current).toHaveLength(REAL_ACTUALITAT.length)
   })
 
-  it('i per això el simulacre de cultura general està bloquejat i ho declara', () => {
-    const cg = ROSES_PACK.blueprints.find((b) => b.blueprintId === 'roses-cultura-general')!
-    expect(examAvailability(ROSES_PACK.questions, cg, TODAY).ok).toBe(false)
-    expect(cg.contentStatus).toBe('blocked-missing-content')
+  it('i per això el simulacre de cultura general està obert i ho declara', () => {
+    expect(examAvailability(ROSES_PACK.questions, REAL_CG, TODAY).ok).toBe(true)
+    expect(REAL_CG.contentStatus).toBe('ready')
+    expect(REAL_CG.contentNote).toBeUndefined()
+  })
+
+  it('el quadernet real surt 10 de cultura general i 10 d’actualitat, més la reserva', () => {
+    const paper = buildExamPaper({
+      pool: ROSES_PACK.questions,
+      track: 'cultura-general',
+      count: REAL_CG.questionCount,
+      reserveCount: REAL_CG.reserveCount,
+      composition: REAL_CG.composition,
+      todayIso: TODAY,
+      seed: 'seed-real',
+    })
+    expect(paper).toHaveLength(REAL_CG.questionCount + REAL_CG.reserveCount)
+    const body = paper.slice(0, REAL_CG.questionCount)
+    expect(body.filter((q) => q.tags.includes('actualitat'))).toHaveLength(10)
+    expect(body.filter((q) => q.tags.includes('cultura-general'))).toHaveLength(10)
+    // La reserva va a la cua i també ha de ser vigent.
+    for (const q of paper.slice(REAL_CG.questionCount)) {
+      expect(isCurrent(q, TODAY), q.questionId).toBe(true)
+    }
+  })
+
+  it('l’últim dia amb deu vigents encara s’obre, i l’endemà es bloqueja sol', () => {
+    // Ningú toca res: només passa el temps. Amb el paquet actual, el dia és el
+    // reviewBy de la desena pregunta més duradora.
+    expect(examAvailability(ROSES_PACK.questions, REAL_CG, LAST_VALID_DAY).ok).toBe(true)
+
+    const after = nextDay(LAST_VALID_DAY)
+    const status = examAvailability(ROSES_PACK.questions, REAL_CG, after)
+    expect(status.ok).toBe(false)
+    const quota = status.quotas.find((q) => q.tag === 'actualitat')!
+    expect(quota.available).toBeLessThan(10)
+  })
+
+  it('cada pregunta d’actualitat del banc passa la porta del validador', () => {
+    const packed = new Set(ROSES_PACK.currentAffairs.flatMap((p) => p.questionIds))
+    for (const q of REAL_ACTUALITAT) {
+      expect(
+        currentAffairsIssues(q, { packedQuestionIds: packed, sources: ROSES_PACK.sources }),
+        q.questionId,
+      ).toEqual([])
+    }
+  })
+
+  it('el paquet real és coherent amb les preguntes que diu que conté', () => {
+    for (const p of ROSES_PACK.currentAffairs) {
+      expect(packIssues(p, ROSES_PACK.questions), p.packId).toEqual([])
+      expect(p.questionIds.length).toBe(REAL_ACTUALITAT.length)
+    }
+  })
+
+  it('cada resposta té, literalment, el fragment que la sosté a la còpia segellada', () => {
+    // Això és el que separa «verified» de la paraula «verified»: la còpia local
+    // s'obre, se'n comprova el hash i s'hi busca el text. Si algú l'edita —o si
+    // algú allarga una resposta més enllà del que deia el document— cau aquí.
+    expect(adoption.questions).toHaveLength(REAL_ACTUALITAT.length)
+    for (const row of adoption.questions) {
+      const raw = readFileSync(`${CACHE}${row.cacheFile}`)
+      expect(createHash('sha256').update(raw).digest('hex'), row.cacheFile).toBe(
+        row.snapshotSha256,
+      )
+      const text = raw.toString('utf-8')
+      expect(text.includes(row.quote), `${row.questionId}: «${row.quote}»`).toBe(true)
+
+      const question = REAL_ACTUALITAT.find((q) => q.questionId === row.questionId)!
+      expect(question.references).toHaveLength(1)
+      expect(question.references[0]!.sourceId).toBe(row.sourceId)
+      expect(question.references[0]!.reviewStatus).toBe('verified')
+      expect(row.answer).toBe(question.options.find((o) => o.optionId === question.correct)!.text)
+      if (row.provenBy === 'pont') {
+        // Un pont adopta un fet en una altra llengua. Ha de dir per què, o
+        // ningú podrà revisar-lo.
+        expect(row.bridgeReason, row.questionId).toBeTruthy()
+      }
+    }
+  })
+
+  it('el paquet de candidats del qual surt tot continua íntegre', () => {
+    // Les instantànies són la font d'aquestes 25 preguntes. Si algú n'edita una
+    // per «arreglar» una resposta, el hash del paquet original ho diu.
+    const dir = fileURLToPath(
+      new URL('../../content/municipalities/roses/current-affairs/candidates/', import.meta.url),
+    )
+    const declared = readFileSync(`${dir}snapshots/SHA256SUMS.txt`, 'utf-8')
+      .split('\n')
+      .filter(Boolean)
+      .map((line) => line.trim().split(/\s+/))
+    expect(declared.length).toBe(19)
+    for (const [hash, name] of declared) {
+      const raw = readFileSync(`${dir}snapshots/${name!.replace(/^\*/, '')}`)
+      expect(createHash('sha256').update(raw).digest('hex'), name).toBe(hash)
+    }
+  })
+
+  it('la còpia de sources/cache és byte a byte la instantània segellada', () => {
+    const dir = fileURLToPath(
+      new URL('../../content/municipalities/roses/current-affairs/candidates/', import.meta.url),
+    )
+    for (const row of adoption.questions) {
+      const original = readFileSync(`${dir}snapshots/${row.sourceId}.txt`)
+      const cached = readFileSync(`${CACHE}${row.cacheFile}`)
+      expect(cached.equals(original), row.sourceId).toBe(true)
+    }
+  })
+
+  it('el manifest apunta a la mateixa còpia i al mateix hash que l’auditoria', () => {
+    for (const row of adoption.questions) {
+      const source = ROSES_PACK.sources.find((s) => s.sourceId === row.sourceId)!
+      expect(source.cacheFile, row.sourceId).toBe(row.cacheFile)
+      expect(source.sha256, row.sourceId).toBe(row.snapshotSha256)
+      expect(source.publishedAt, row.sourceId).toBeDefined()
+      expect(source.fetchStatus, row.sourceId).toBe('downloaded')
+    }
   })
 
   it('les preguntes d’actualitat dels exàmens antics no compten com a vigents', () => {

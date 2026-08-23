@@ -140,8 +140,9 @@ Tres propietats que no són accidentals:
 - **El dèficit no es pot amagar ni quedar enganxat.** El plànol declara el seu
   estat amb `contentStatus`, i la validació ho comprova en tots dos sentits: un
   plànol que no es pot muntar sense declarar-ho trenca el build, i un plànol
-  declarat bloquejat que ja es podria muntar també. Quan algú ompli el paquet
-  d'actualitat, el build li dirà que tregui el marcador.
+  declarat bloquejat que ja es podria muntar també. Va passar: el dia que es va
+  adoptar el paquet d'actualitat, el build va fallar demanant que es tragués el
+  marcador de bloqueig del simulacre de cultura general.
 
 Quan un plànol es bloqueja, es bloqueja a tot arreu: el botó de la llista, el
 simulacre complet que el conté i l'enllaç directe a `#/exam/<id>`. La pantalla

@@ -4,7 +4,13 @@ dist-ssr/
 *.local
 
 # Còpies i text extret: es regeneren amb els scripts de fonts.
-sources/cache/
+#
+# Excepció: les instantànies de text (.txt) sí que hi van. Són l'evidència de
+# les preguntes d'actualitat —el manifest en declara el SHA-256 i un test el
+# torna a comprovar— i pesen kilobytes, no megabytes com els PDF.
+sources/cache/*
+!sources/cache/.gitkeep
+!sources/cache/*.txt
 sources/extracted/
 
 # Sortides de test i captures de treball.

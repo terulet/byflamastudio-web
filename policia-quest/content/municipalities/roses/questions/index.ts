@@ -10,6 +10,7 @@ import { QUESTIONS_31_36 } from './topics-31-36.ts'
 import { QUESTIONS_37_40 } from './topics-37-40.ts'
 import { QUESTIONS_CULTURA_GENERAL } from './cultura-general.ts'
 import { OFFICIAL_EXAM_QUESTIONS } from './official-exams.ts'
+import { CURRENT_AFFAIRS_QUESTIONS } from '../current-affairs/questions-2026-08.ts'
 
 export const ROSES_QUESTIONS: Question[] = [
   ...QUESTIONS_01_05,
@@ -22,4 +23,5 @@ export const ROSES_QUESTIONS: Question[] = [
   ...QUESTIONS_37_40,
   ...QUESTIONS_CULTURA_GENERAL,
   ...OFFICIAL_EXAM_QUESTIONS,
+  ...CURRENT_AFFAIRS_QUESTIONS,
 ]

@@ -452,7 +452,12 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
       ) : null}
 
       {question ? (
-        <section className="stack" key={question.questionId}>
+        <section
+          className="stack"
+          key={question.questionId}
+          data-testid="exam-question"
+          data-question-id={question.questionId}
+        >
           {isReserve ? (
             <p className="notice notice--warn" data-testid="reserve-notice">
               <strong>{t.exams.reserveBadge}</strong> · {t.exams.reserveNote}

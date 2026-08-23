@@ -4,7 +4,7 @@
 > mitjançant `npm run content:report`. Per afegir o corregir una font, editeu el
 > manifest.
 
-Generat el 2026-08-23 · 79 fonts registrades.
+Generat el 2026-08-23 · 98 fonts registrades.
 
 ## Roses
 
@@ -479,6 +479,90 @@ Generat el 2026-08-23 · 79 fonts registrades.
 - **Còpia local**: downloaded (SHA-256 `8b4a8a75da3d72c8fa20d60ed7e006b197472ae7062127ac0d248550e163f7cd`)
 - **Notes**: Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.
 
+### `roses-budget-2026`
+
+- **Títol**: Aprovat el pressupost municipal de Roses per a 2026, que pujarà a 48,4 M€
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/aprovat-el-pressupost-municipal-de-roses-per-a-2026-que-pujara-a-48-4-meur
+- **Publicació**: 2025-10-28
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `5057c2b2be561a95c0956caeff69259e49c0ffb001965a8ed96f6dcccbbc14e8`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `roses-carnaval-revista-2026`
+
+- **Títol**: El Carnaval de Roses no s’explica, es reviu: ja és aquí la revista amb 250 fotografies del 2025
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/el-carnaval-de-roses-no-s2019explica-es-reviu-ja-es-aqui-la-revista-amb-250-fotografies-del-2025
+- **Publicació**: 2026-01-30
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `e43b57a1bfccf718841808818d0db607adf5e03aecf82e78e5dfb2edb064f05a`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `roses-cartell-carnaval-2026`
+
+- **Títol**: Roses presenta el cartell del Carnaval 2026
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/roses-presenta-el-cartell-del-carnaval-2026-coincidint-amb-la-inauguracio-de-les-barraques-de-la-festa-major
+- **Publicació**: 2025-08-14
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `f82686d4074a75499fc928f528451428c83bb32fc58d49d746f69fbb27e0baa0`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `roses-catala-nouvinguts-2026`
+
+- **Títol**: Roses ofereix classes de català durant l’agost per facilitar l’acollida lingüística dels alumnes nouvinguts
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/roses-ofereix-classes-de-catala-durant-l2019agost-per-facilitar-l2019acollida-linguistica-dels-alumnes-nouvinguts
+- **Publicació**: 2026-08-21
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `1a16a6420096e670ceb8983c7d68f62541714da8427558834c864f29b04e5859`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `roses-nits-circ-2026`
+
+- **Títol**: Nits de Circ arriba a la sisena edició
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/nits-de-circ-arriba-a-la-sisena-edicio-amb-un-espectacle-que-portara-a-roses-els-millors-trapezistes-volants-del-mon
+- **Publicació**: 2026-08-04
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `43cb4dbf3f05d364579cdd91cd982229332037e91c34d20365b93879062ea99c`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `roses-prego-festa-major-2026`
+
+- **Títol**: Roses obrirà demà la seva Festa Major amb un pregó innovador a càrrec del Grup de Teatre de Roses
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/roses-obrira-dema-la-seva-festa-major-amb-un-prego-innovador-a-carrec-del-grup-de-teatre-de-roses
+- **Publicació**: 2026-08-06
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `3d41c03a121c0b9b3ac0048dd10a89f7112ef6e352cc40841d1a1e79e460a304`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `roses-top-manta-2026-07-31`
+
+- **Títol**: Comissats més de 1.200 articles abans que es posessin a la venda en el top manta de Roses
+- **Organisme**: Ajuntament de Roses
+- **Tipus**: pagina-institucional
+- **URL**: https://www.roses.cat/noticies/comissats-mes-de-1-200-articles-abans-que-es-posessin-a-la-venda-en-el-top-manta-de-roses
+- **Publicació**: 2026-07-31
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `d665501fa29951e0569f7954ef6e939721be8e1057452bb60d14c3af9ae82c17`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
 ## Catalunya
 
 ### `llei-16-1991-policies-locals`
@@ -589,6 +673,54 @@ Generat el 2026-08-23 · 79 fonts registrades.
 - **Còpia local**: pending-download
 - **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
 - **Notes**: La llista catalana de races difereix de l'estatal: cal comparar-les.
+
+### `cat-carboni-2026-2030`
+
+- **Títol**: La Mesa rep la proposta de pressupostos de carboni
+- **Organisme**: Parlament de Catalunya
+- **Tipus**: pagina-institucional
+- **URL**: https://www.parlament.cat/web/actualitat/noticies/index.html%3Fp_id%3D300613926
+- **Publicació**: 2025-09-09
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `79393505e09116d079838674b958f738dd273aff1a215303bf049ce9aabf11fb`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `cat-esra-2026`
+
+- **Títol**: Catalunya presidirà l'Aliança de Regions Europees de Semiconductors el 2026
+- **Organisme**: Generalitat de Catalunya
+- **Tipus**: pagina-institucional
+- **URL**: https://govern.cat/gov/notes-premsa/651582/catalunya-presidira-l-alianca-de-regions-europees-de-semiconductors-el-2026
+- **Publicació**: 2024-10-29
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `99472e2c1d521facd75bbdd41d741d69b49a35c4df7951c0ce7a56f41735592b`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `cat-preus-universitaris-2025-2026`
+
+- **Títol**: Un únic preu per a tots els graus i màsters habilitants
+- **Organisme**: Generalitat de Catalunya
+- **Tipus**: pagina-institucional
+- **URL**: https://govern.cat/salapremsa/notes-premsa/717964/govern-culmina-reduccio-progressiva-dels-preus-universitaris-unic-preu-tots-graus-masters-habilitants
+- **Publicació**: 2025-06-17
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `d72558879a99d142740f3f37990629e853883f04f6af84f23294a637aef42989`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `cat-previsions-2026`
+
+- **Títol**: Previsió de creixement de l'economia catalana per al 2026
+- **Organisme**: Generalitat de Catalunya
+- **Tipus**: pagina-institucional
+- **URL**: https://govern.cat/gov/notes-premsa/707782/govern-situa-previsio-creixement-economia-catalana-26-percent-2025-2-percent-2026
+- **Publicació**: 2025-05-15
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `2a1fdbebd6ca7af9b7670f857b3c5f229fd0fa453e72f032a14b9a6b718af99a`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
 
 ## Estat
 
@@ -918,6 +1050,66 @@ Generat el 2026-08-23 · 79 fonts registrades.
 - **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
 - **Notes**: Norma estatal posterior que afecta el règim de tinença d'animals de companyia. Cal contrastar-la amb la Llei 50/1999 i amb la normativa catalana.
 
+### `es-bono-cultural-2026`
+
+- **Títol**: Bono Cultural Joven 2026
+- **Organisme**: La Moncloa, Govern d'Espanya
+- **Tipus**: pagina-institucional
+- **URL**: https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/Paginas/2026/220626-bono-cultural-joven-2026.aspx
+- **Publicació**: 2026-06-22
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `30e0cccaf29542e9b8d78df880c7d4c0f23f0c8bbbb35f34f720e1b4257af9d3`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `es-estatut-practiques-2026`
+
+- **Títol**: Projecte de l'Estatut de les persones en formació pràctica no laboral
+- **Organisme**: La Moncloa, Govern d'Espanya
+- **Tipus**: pagina-institucional
+- **URL**: https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/030326-rueda-prensa-ministros.aspx
+- **Publicació**: 2026-03-03
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `9bc8020c6d7534ccd77b516433c6b9c01d0308d7baf0a631a34fbb2b75a4c1b6`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `es-icaa-2026`
+
+- **Títol**: Ajuts generals de l'ICAA per a llargmetratges
+- **Organisme**: La Moncloa, Govern d'Espanya
+- **Tipus**: pagina-institucional
+- **URL**: https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260505-referencia-rueda-de-prensa-ministros.aspx
+- **Publicació**: 2026-05-05
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `97b53cab5b2fe3d96c935240bc546b56ee91195f8612f156972185ae15dab4ad`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `es-visita-lleo-xiv-2026`
+
+- **Títol**: El president del Govern manté una trobada amb el papa Lleó XIV
+- **Organisme**: La Moncloa, Govern d'Espanya
+- **Tipus**: pagina-institucional
+- **URL**: https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/080626-sanchez-encuentro-papa-leon-xiv.aspx
+- **Publicació**: 2026-06-08
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `639a00fe8f83c2c19345ede6b14a0fb28e55b83a386ae889efec4db1840598e4`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `goya-2026`
+
+- **Títol**: Los Domingos triunfa en el 40 aniversario de los Goya
+- **Organisme**: Academia de las Artes y las Ciencias Cinematográficas de España
+- **Tipus**: pagina-institucional
+- **URL**: https://www.academiadecine.com/2026/03/01/los-domingos-triunfa-en-el-40-aniversario-de-los-goya-y-de-la-academia/
+- **Publicació**: 2026-03-01
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `1e711912ea7a08d8892b1721235ccb867af63ce6b4e900d9318401f6070bd5b1`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
 ## Unió Europea
 
 ### `carta-drets-ue`
@@ -944,6 +1136,18 @@ Generat el 2026-08-23 · 79 fonts registrades.
 - **Còpia local**: pending-download
 - **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
 
+### `eu-presidencia-irlanda-2026`
+
+- **Títol**: Introducing the Irish EU Presidency Programme
+- **Organisme**: Consell de la Unió Europea, Presidència irlandesa
+- **Tipus**: pagina-institucional
+- **URL**: https://irish-presidency.consilium.europa.eu/en/news/ni-neart-go-cur-le-cheile-introducing-the-irish-eu-presidency-programme/
+- **Publicació**: 2026-07-01
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `cef77c9c4761dfb700fa861618528eabca980f3bc8e030cdd0686517a0e2ccbb`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
 ## Internacional
 
 ### `ddhh-1948`
@@ -957,3 +1161,27 @@ Generat el 2026-08-23 · 79 fonts registrades.
 - **Vigència**: vigent
 - **Còpia local**: pending-download
 - **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+
+### `eurovision-2026`
+
+- **Títol**: Vienna revealed as Host City for 70th Eurovision Song Contest in 2026
+- **Organisme**: European Broadcasting Union, Eurovision Song Contest
+- **Tipus**: pagina-institucional
+- **URL**: https://eurovision.tv/mediacentre/release/vienna-host-city-70th-eurovision
+- **Publicació**: 2025-08-20
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `46138c9fbbb6d87e0fcbeb94b5f8a8fc749b94b9cf1f7b23896c3dcbe81485b7`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `olimpics-hivern-2026`
+
+- **Títol**: One Year to Go: Milano Cortina 2026
+- **Organisme**: Comitè Olímpic Internacional
+- **Tipus**: pagina-institucional
+- **URL**: https://newsroom.olympics.com/record/1645
+- **Publicació**: 2025-02-06
+- **Consulta**: 2026-08-24
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `2b654cad1205c3cd1df3c39fc046b2c3388732e2a8cb597bacc3e3d996896c1f`)
+- **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.

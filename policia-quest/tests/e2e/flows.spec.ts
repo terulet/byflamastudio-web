@@ -191,17 +191,110 @@ test('el simulacre es pot pausar i reprendre amb el temps consumit', async ({ pa
 })
 
 /*
- * El simulacre de cultura general i, per tant, el complet, estan bloquejats en
- * aquesta versió: el paquet d'actualitat és buit i les bases exigeixen 10 de
- * les 20 preguntes d'actualitat.
+ * El simulacre de cultura general depèn del paquet d'actualitat, que caduca.
  *
- * Els tests que recorrien les dues proves encadenades no es poden executar
- * mentre això duri —no es pot recórrer una prova que no existeix— i s'han
- * substituït pels que comproven que el bloqueig funciona i s'explica. La
- * mecànica multisecció queda coberta per `tests/unit/exam-sections.test.ts`.
- * Quan s'ompli el paquet d'actualitat, cal recuperar el recorregut complet.
+ * Amb el paquet de 2026-08 les dues proves es poden recórrer senceres, i és el
+ * que comproven els dos primers tests. Els que vénen després comproven el camí
+ * contrari **sense buidar el banc**: avancen el rellotge del navegador més
+ * enllà de l'última caducitat i miren que l'app es torni a bloquejar sola, amb
+ * la mateixa explicació i el mateix tancament de ruta que tenia quan el paquet
+ * era buit.
  */
-test('el simulacre de cultura general està bloquejat i diu exactament per què', async ({ page }) => {
+test('el simulacre complet encadena les dues proves amb temps propi', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-simulacre-complet').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  // Primera prova: cultura general, 20 preguntes i 20 minuts.
+  await expect(page.getByTestId('section-label')).toContainText('Prova 1 de 2')
+  await expect(page.getByTestId('section-label')).toContainText('cultura general')
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
+  await expect(page.getByTestId('exam-clock')).toHaveText(/^(19:5\d|20:00)$/)
+
+  // 20 del cos i 1 de reserva: es contesten totes, com el dia de l'examen.
+  for (let i = 0; i < 21; i++) {
+    await page.getByTestId('exam-option-a').click()
+    const next = page.getByTestId('exam-next')
+    if (await next.isVisible()) await next.click()
+  }
+  await page.getByTestId('exam-finish').click()
+
+  // Segona prova: professionals, 40 preguntes i un temporitzador que arrenca de nou.
+  await expect(page.getByTestId('section-label')).toContainText('Prova 2 de 2')
+  await expect(page.getByTestId('section-label')).toContainText('coneixements professionals')
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/40')
+  await expect(page.getByTestId('exam-clock')).toHaveText(/^(59:5\d|60:00)$/)
+
+  await page.getByTestId('exam-option-b').click()
+  await page.getByTestId('exam-finish-early').click()
+  await expect(page.getByTestId('confirm-finish')).toBeVisible()
+  await page.getByTestId('confirm-finish-yes').click()
+
+  // El resultat reporta cada prova per separat, sense sumar-les.
+  await expect(page.getByTestId('exam-result')).toBeVisible()
+  await expect(page.getByTestId('section-score-0')).toContainText('/ 20')
+  await expect(page.getByTestId('section-score-1')).toContainText('/ 20')
+  await expect(page.getByTestId('exam-verdict')).toHaveText('NO APTE')
+  await expect(page.getByText(/aprovar les dues proves per separat/)).toBeVisible()
+})
+
+test('el simulacre complet no repeteix cap pregunta entre les dues proves', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-simulacre-complet').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  const stored = await page.evaluate(
+    () =>
+      new Promise<string[]>((resolve) => {
+        const request = indexedDB.open('policia-quest')
+        request.onsuccess = () => {
+          const tx = request.result.transaction('attempts', 'readonly')
+          const all = tx.objectStore('attempts').getAll()
+          tx.oncomplete = () => resolve(all.result[0]?.questionIds ?? [])
+          tx.onerror = () => resolve([])
+        }
+        request.onerror = () => resolve([])
+      }),
+  )
+  // 20 + 1 de reserva, i 40 + 2 de reserva.
+  expect(stored).toHaveLength(63)
+  expect(new Set(stored).size).toBe(63)
+})
+
+test('el quadernet de cultura general surt 10 i 10, com fixen les bases', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
+
+  // Les d'actualitat porten la font i la data de publicació a l'explicació, i
+  // es reconeixen pel seu identificador. Es recorre el quadernet sencer.
+  const ids: string[] = []
+  for (let i = 0; i < 20; i++) {
+    ids.push((await page.getByTestId('exam-question').getAttribute('data-question-id')) ?? '')
+    await page.getByTestId('exam-option-a').click()
+    const next = page.getByTestId('exam-next')
+    if (await next.isVisible()) await next.click()
+  }
+  expect(ids.filter((id) => id.startsWith('actualitat-'))).toHaveLength(10)
+  expect(new Set(ids).size).toBe(20)
+})
+
+/**
+ * El dia que caduca prou actualitat, sense que ningú toqui res.
+ *
+ * `EXPIRED_DAY` és posterior a l'últim `reviewBy` del paquet: aquell dia queden
+ * zero preguntes d'actualitat vigents i el bloqueig ha de tornar sol.
+ */
+const EXPIRED_DAY = new Date('2027-07-01T09:00:00Z')
+
+test('quan caduca l’actualitat, el simulacre de cultura general es bloqueja sol', async ({
+  page,
+}) => {
+  await page.clock.setFixedTime(EXPIRED_DAY)
   await skipOnboarding(page)
   await page.goto('/#/exams')
   await expect(page.getByTestId('exams')).toBeVisible()
@@ -213,7 +306,8 @@ test('el simulacre de cultura general està bloquejat i diu exactament per què'
   await expect(page.getByTestId('start-exam-roses-cultura-general')).toBeDisabled()
 })
 
-test('el simulacre complet es bloqueja perquè inclou el de cultura general', async ({ page }) => {
+test('i el complet es bloqueja amb ell, perquè l’inclou', async ({ page }) => {
+  await page.clock.setFixedTime(EXPIRED_DAY)
   await skipOnboarding(page)
   await page.goto('/#/exams')
   const blocked = page.getByTestId('blocked-roses-simulacre-complet')
@@ -223,6 +317,7 @@ test('el simulacre complet es bloqueja perquè inclou el de cultura general', as
 })
 
 test('un enllaç directe no pot saltar-se el bloqueig', async ({ page }) => {
+  await page.clock.setFixedTime(EXPIRED_DAY)
   await skipOnboarding(page)
   // Una adreça guardada als preferits o compartida no ha d'obrir una prova
   // retallada: ha de topar amb la mateixa explicació.

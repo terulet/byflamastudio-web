@@ -1,0 +1,15 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: cat-esra-2026
+publisher: Generalitat de Catalunya
+published_at: 2024-10-29 15:15
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://govern.cat/gov/notes-premsa/651582/catalunya-presidira-l-alianca-de-regions-europees-de-semiconductors-el-2026
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Catalunya presidirà l'Aliança de Regions Europees de Semiconductors el 2026
+
+RELEVANT OFFICIAL TEXT
+«una entitat que agrupa 31 regions europees»
+«ja són 260 els agents que formen part d’aquest ecosistema»
+

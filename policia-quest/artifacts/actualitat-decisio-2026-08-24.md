@@ -1,111 +1,80 @@
-# Decisió sobre el paquet d'actualitat 2026-08-24
+# Actualitat: decisió del paquet de candidats de 2026-08-24
 
-**Resultat: 0 preguntes adoptades de 25. La porta continua tancada.**
+**Generat** per `scripts/transcription/import_current_affairs.py --offline`. No
+s'edita a mà: si canvia el que s'adopta, canvia aquest document.
 
-## Per què
+## Com s'ha verificat
 
-L'encàrrec exigeix obrir cada URL oficial i comprovar-hi el fet abans d'adoptar
-la pregunta, i és explícit sobre què fer si no es pot: *«Una URL inaccessible, un
-contingut que no demostra exactament la resposta o una dada ambigua implica
-excloure la pregunta. No substitueixis l'evidència per memòria, premsa,
-fragments del cercador ni inferències.»*
+L'entorn de construcció no arriba a cap de les 19 fonts (CONNECT 403 a tots
+els dominis, pels dos camins de sortida). El paquet, però, porta 19
+**instantànies textuals** de les pàgines oficials, cadascuna amb el seu SHA-256.
+Aquest és el camí que s'ha seguit:
 
-Des d'aquest entorn les **19 URL són inabastables**. La política de sortida de
-xarxa respon 403 al CONNECT per als vuit dominis implicats:
+1. Hashes d'arrel del paquet: 6/6 correctes.
+2. Hashes de les instantànies: 19/19 correctes.
+3. De cada instantània s'ha comprovat que el `source_id` de dins és el del
+   fitxer, i que la URL canònica i la data de publicació coincideixen amb la
+   fitxa de la font.
+4. De cada pregunta s'ha buscat l'opció correcta dins del text preservat,
+   **per paraules senceres**. Una coincidència numèrica de menys de
+   4 caràcters no compta per si sola.
+5. Quan la font és en una altra llengua, el fragment que demostra la resposta
+   s'ha declarat a mà a `EVIDENCE_BRIDGE`, i l'script comprova que hi és,
+   literalment, abans d'adoptar res.
 
-| Domini | Fonts | Resultat |
-| --- | ---: | --- |
-| `www.roses.cat` | 7 | CONNECT 403 |
-| `www.lamoncloa.gob.es` | 4 | CONNECT 403 |
-| `govern.cat` | 3 | CONNECT 403 |
-| `www.parlament.cat` | 1 | CONNECT 403 |
-| `irish-presidency.consilium.europa.eu` | 1 | CONNECT 403 |
-| `www.academiadecine.com` | 1 | CONNECT 403 |
-| `eurovision.tv` | 1 | CONNECT 403 |
-| `newsroom.olympics.com` | 1 | CONNECT 403 |
+El que una instantània **no** demostra és que sigui fidel a la pàgina viva:
+això depèn de qui la va prendre. El manifest en desa el mètode de captura i la
+data, i el dia que hi hagi xarxa es pot tornar a comprovar.
 
-Es van provar els dos camins de sortida disponibles —el proxy del contenidor amb
-`curl` i l'eina de fetch, que enruta per una altra banda— i tots dos els
-refusen. El diagnòstic del proxy ho diu literalment: `connect_rejected`,
-*«gateway answered 403 to CONNECT (policy denial)»*.
+## Decisió, candidata per candidata
 
-`sources.evidence.json` **no és una còpia de la font**, i el mateix paquet ho
-adverteix: és un índex del que cal tornar a comprovar. Adoptar les preguntes a
-partir d'aquest índex seria confiar en la fitxa en comptes del document, que és
-precisament el que la regla prohibeix.
+| Pregunta | Decisió | Fragment que la sosté | Com |
+| --- | --- | --- | --- |
+| `actualitat-2026-roses-001` | ✓ adoptada | «44.649.900» | l’opció correcta hi surt tal qual. Retall: — |
+| `actualitat-2026-roses-002` | ✓ adoptada | «2,4MEUR» | pont d’evidència declarat: la nota escriu la xifra abreujada; «2,4» sol no demostraria res. Retall: — |
+| `actualitat-2026-roses-003` | ✓ adoptada | «21.30 h» | l’opció correcta hi surt tal qual. Retall: la instantània és l’anunci del dia abans: demostra l’hora programada, no que l’acte comencés; a més situava un acte musical a les 21.15 h que el text no recull |
+| `actualitat-2026-roses-004` | ✓ adoptada | «sis» | l’opció correcta hi surt tal qual. Retall: l’explicació original les situava a la Ciutadella de Roses i el text preservat no diu on se celebren |
+| `actualitat-2026-roses-005` | ✓ adoptada | «entre 11 i 16 anys» | pont d’evidència declarat: la franja s’ha de demostrar sencera: un «11» solt no la sosté. Retall: — |
+| `actualitat-2026-roses-006` | ✓ adoptada | «1.207» | l’opció correcta hi surt tal qual. Retall: l’original el qualificava d’«operatiu conjunt» i situava el decomís al passeig Marítim; cap de les dues coses consta al text preservat |
+| `actualitat-2026-roses-007` | ✓ adoptada | «del 12 al 16 de febrer» | l’opció correcta hi surt tal qual. Retall: la instantània és la presentació del programa: demostra les dates previstes, no que se celebrés |
+| `actualitat-2026-roses-008` | ✓ adoptada | «Alma Martín Guillén» | l’opció correcta hi surt tal qual. Retall: — |
+| `actualitat-2026-cat-009` | ✓ adoptada | «2026-2030» | l’opció correcta hi surt tal qual. Retall: l’enunciat original la qualificava de «primera» proposta rebuda i la instantània no ho estableix |
+| `actualitat-2026-cat-010` | ✓ adoptada | «17,69» | l’opció correcta hi surt tal qual. Retall: — |
+| `actualitat-2026-cat-011` | ✓ adoptada | «31» | l’opció correcta hi surt tal qual. Retall: — |
+| `actualitat-2026-cat-012` | ✓ adoptada | «260» | l’opció correcta hi surt tal qual. Retall: l’explicació original en desglossava la composició —empreses, entitats i centres de coneixement— i el text preservat no la dona |
+| `actualitat-2026-cat-013` | ✓ adoptada | «2,3» | l’opció correcta hi surt tal qual. Retall: — |
+| `actualitat-2026-cat-014` | ✓ adoptada | «8,4» | l’opció correcta hi surt tal qual. Retall: — |
+| `actualitat-2026-es-015` | ✓ adoptada | «400» | l’opció correcta hi surt tal qual. Retall: l’original deia que l’import es «manté», continuïtat que la instantània d’un sol any no demostra |
+| `actualitat-2026-es-016` | ✓ adoptada | «instrumentos musicales» | pont d’evidència declarat: font en castellà: «instrumentos musicales» és «instruments musicals». Retall: l’enunciat original deia que l’ús s’havia «incorporat» el 2026 i l’explicació que la regulació el va «afegir»; la instantània només demostra que hi és |
+| `actualitat-2026-es-017` | ✓ adoptada | «62 millones de euros» | pont d’evidència declarat: font en castellà, i la xifra només val amb la unitat al costat. Retall: l’enunciat original els acotava als llargmetratges «sobre projecte» i el text preservat no fa aquesta distinció |
+| `actualitat-2026-es-018` | ✓ adoptada | «56» | l’opció correcta hi surt tal qual. Retall: l’enunciat original deia que havien «cotitzat per pràctiques formatives no remunerades des de 2024» i el text preservat no ho recull |
+| `actualitat-2026-es-019` | ✓ adoptada | «Nunciatura Apostólica, Madrid» | pont d’evidència declarat: font en castellà: «Nunciatura Apostólica» és «Nunciatura Apostòlica». Retall: — |
+| `actualitat-2026-eu-020` | ✓ adoptada | «for the eighth time» | pont d’evidència declarat: font en anglès: «for the eighth time» és «Vuitena». Retall: l’original la donava per acabada («va ser») quan el text preservat la situa començant |
+| `actualitat-2026-eu-021` | ✓ adoptada | «competitiveness, values and security» | pont d’evidència declarat: font en anglès: «competitiveness, values and security» és «Competitivitat, valors i seguretat». Retall: — |
+| `actualitat-2026-cultura-022` | ✓ adoptada | «logró cinco de los 13 premios» | pont d’evidència declarat: font en castellà: «cinco» és «cinc». Sense límit de paraula, «Cinc» s’hi donaria per trobat per dins. Retall: l’explicació original hi afegia direcció i guió original, que la instantània no recull |
+| `actualitat-2026-cultura-023` | ✓ adoptada | «con seis Goyas técnicos» | pont d’evidència declarat: font en castellà: «seis» és «sis», i el comparador de xifres no llegeix els números escrits amb lletres. Retall: — |
+| `actualitat-2026-cultura-024` | ✓ adoptada | «Saturday 16 May» | pont d’evidència declarat: font en anglès, i un «16» solt no demostra la data. Retall: la instantània és l’anunci de ciutat amfitriona d’agost de 2025, en futur: demostra la data prevista, no que se celebrés |
+| `actualitat-2026-esport-025` | ✓ adoptada | «from 6 to 22 February 2026» | pont d’evidència declarat: font en anglès, i un «6» solt no demostra res. Retall: la instantània és la nota d’un any abans, en futur: demostra les dates previstes, no que se celebressin |
 
-## Integritat i estructura del paquet
+## Retalls
 
-- `sha256sum -c SHA256SUMS.txt`: **4/4 correctes**.
-- Estructura: **25/25 sense cap problema**. Identificadors únics, índex de
-  resposta dins de rang, quatre opcions diferents per pregunta, els 19
-  `sourceId` existeixen, dates ISO vàlides i tots els `reviewBy` posteriors al
-  2026-08-24.
+Les preguntes marcades amb un retall afirmaven, al paquet original, alguna cosa
+que la instantània no diu: un acte donat per celebrat quan el document és
+l'anunci previ, un lloc que no hi consta, una continuïtat que una nota d'un sol
+any no estableix. En aquests casos no s'ha buscat una altra font: s'ha retallat
+el text fins al que el document sí que demostra.
 
-## Taula de decisió, 25/25
+## Caducitat
 
-| Pregunta | Àmbit | Decisió | Motiu | Observació pedagògica |
-| --- | --- | --- | --- | --- |
-| `actualitat-2026-roses-001` | roses | rebutjada | font inabastable: `roses-budget-2026` (CONNECT 403) | sèrie numèrica desordenada (48,4 / 44,6 / 46,8 / 50,2) |
-| `actualitat-2026-roses-002` | roses | rebutjada | font inabastable: `roses-budget-2026` (CONNECT 403) | — |
-| `actualitat-2026-roses-003` | roses | rebutjada | font inabastable: `roses-prego-festa-major-2026` (CONNECT 403) | l’opció correcta repeteix el titular de la font («Grup de Teatre de Roses») |
-| `actualitat-2026-roses-004` | roses | rebutjada | font inabastable: `roses-nits-circ-2026` (CONNECT 403) | ordinals desordenats (Quatre, Cinc, Vuit, Sis) |
-| `actualitat-2026-roses-005` | roses | rebutjada | font inabastable: `roses-catala-nouvinguts-2026` (CONNECT 403) | — |
-| `actualitat-2026-roses-006` | roses | rebutjada | font inabastable: `roses-top-manta-2026-07-31` (CONNECT 403) | — |
-| `actualitat-2026-roses-007` | roses | rebutjada | font inabastable: `roses-carnaval-revista-2026` (CONNECT 403) | — |
-| `actualitat-2026-roses-008` | roses | rebutjada | font inabastable: `roses-cartell-carnaval-2026` (CONNECT 403) | — |
-| `actualitat-2026-cat-009` | catalunya | rebutjada | font inabastable: `cat-carboni-2026-2030` (CONNECT 403) | enunciat sense referència temporal |
-| `actualitat-2026-cat-010` | catalunya | rebutjada | font inabastable: `cat-preus-universitaris-2025-2026` (CONNECT 403) | reviewBy molt curt (2026-09-30, cinc setmanes) |
-| `actualitat-2026-cat-011` | catalunya | rebutjada | font inabastable: `cat-esra-2026` (CONNECT 403) | l’opció correcta repeteix el titular de la font |
-| `actualitat-2026-cat-012` | catalunya | rebutjada | font inabastable: `cat-esra-2026` (CONNECT 403) | sèrie numèrica desordenada; enunciat sense referència temporal |
-| `actualitat-2026-cat-013` | catalunya | rebutjada | font inabastable: `cat-previsions-2026` (CONNECT 403) | sèrie numèrica desordenada (2,0 / 1,2 / 1,8 / 2,6) |
-| `actualitat-2026-cat-014` | catalunya | rebutjada | font inabastable: `cat-previsions-2026` (CONNECT 403) | — |
-| `actualitat-2026-es-015` | espanya | rebutjada | font inabastable: `es-bono-cultural-2026` (CONNECT 403) | — |
-| `actualitat-2026-es-016` | espanya | rebutjada | font inabastable: `es-bono-cultural-2026` (CONNECT 403) | — |
-| `actualitat-2026-es-017` | espanya | rebutjada | font inabastable: `es-icaa-2026` (CONNECT 403) | sèrie numèrica desordenada (62 / 42 / 52 / 72) |
-| `actualitat-2026-es-018` | espanya | rebutjada | font inabastable: `es-estatut-practiques-2026` (CONNECT 403) | sèrie numèrica desordenada (46 / 56 / 51 / 61) |
-| `actualitat-2026-es-019` | espanya | rebutjada | font inabastable: `es-visita-lleo-xiv-2026` (CONNECT 403) | — |
-| `actualitat-2026-eu-020` | unio_europea | rebutjada | font inabastable: `eu-presidencia-irlanda-2026` (CONNECT 403) | — |
-| `actualitat-2026-eu-021` | unio_europea | rebutjada | font inabastable: `eu-presidencia-irlanda-2026` (CONNECT 403) | — |
-| `actualitat-2026-cultura-022` | cultura | rebutjada | font inabastable: `goya-2026` (CONNECT 403) | — |
-| `actualitat-2026-cultura-023` | cultura | rebutjada | font inabastable: `goya-2026` (CONNECT 403) | — |
-| `actualitat-2026-cultura-024` | cultura | rebutjada | font inabastable: `eurovision-2026` (CONNECT 403) | — |
-| `actualitat-2026-esport-025` | esport | rebutjada | font inabastable: `olimpics-hivern-2026` (CONNECT 403) | — |
+Cada pregunta porta el seu `reviewBy` i el paquet caduca amb la més llarga.
+Ningú ha d'anar a bloquejar res: quan passen les dates, `isCurrent()` les deixa
+fora de la quota tot sol.
 
-## Observacions per a qui pugui verificar
-
-La revisió pedagògica sí que s'ha pogut fer, perquè no depèn de la xarxa. Deu
-preguntes tenen defectes de forma que convé arreglar **abans** d'importar-les,
-encara que el fet resulti correcte:
-
-- **Cinc sèries numèriques desordenades.** Quan les quatre opcions són xifres,
-  presentar-les fora d'ordre és una pista d'atenció i no de coneixement.
-- **Dues opcions correctes que repeteixen el titular de la font.** Qui reconegui
-  el titular encerta sense saber el fet.
-- **Un conjunt d'ordinals desordenat** (Quatre, Cinc, Vuit, Sis).
-- **Dos enunciats sense referència temporal**, que l'encàrrec demana evitar
-  expressament perquè una pregunta d'actualitat sense data envelleix malament.
-- **Un `reviewBy` de cinc setmanes** (`cat-010`), que obliga a revisar el paquet
-  gairebé de seguida.
-
-També cal traduir tres àmbits que no existeixen a `CurrentAffairsPack.scope`:
-`unio_europea` → `ue`, i `cultura` i `esport`, que no hi tenen equivalent
-directe. L'importador els mapa, però val la pena decidir-ho conscientment.
-
-Una nota de camí: l'encàrrec situa el contingut a `src/content/current-affairs/`
-i al projecte real viu a `content/municipalities/roses/current-affairs/`.
-
-## Com continuar
-
-Des d'una xarxa amb accés als vuit dominis:
-
-```bash
-python3 scripts/transcription/import_current_affairs.py --check   # informe, sense escriure
-python3 scripts/transcription/import_current_affairs.py           # importa el que es demostri
-npm run content:validate
-```
-
-L'importador obre cada URL, hi busca el fet, desa una instantània a
-`sources/cache/` amb el seu SHA-256, actualitza el manifest i només llavors
-marca la referència com a `verified`. Si no arriba a deu preguntes demostrades,
-no toca `contentStatus` i el simulacre continua bloquejat.
+| Data | En caduquen | En queden | Simulacre de cultura general |
+| --- | --- | --- | --- |
+| 2026-12-31 | 6 | 19 | obert |
+| 2027-01-31 | 3 | 16 | obert |
+| 2027-02-28 | 7 | 9 | bloquejat |
+| 2027-03-31 | 7 | 2 | bloquejat |
+| 2027-05-16 | 1 | 1 | bloquejat |
+| 2027-06-08 | 1 | 0 | bloquejat |

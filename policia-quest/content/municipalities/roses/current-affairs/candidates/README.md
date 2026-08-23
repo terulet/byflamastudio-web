@@ -1,35 +1,35 @@
-# Candidats d'actualitat — paquet 2026-08-24
+# Paquet offline d'actualitat 2026-08-24 — Policia Quest Roses
 
-Aquesta carpeta conserva **la proposta tal com va arribar**, sense modificar-la:
+Segona versió del paquet, preparada després que el contenidor de Claude rebés `CONNECT 403` en les 19 fonts. Permet contrastar el contingut sense xarxa i sense rebaixar les garanties del projecte.
 
-- `questions.candidates.json` — 25 preguntes candidates.
-- `sources.evidence.json` — fitxes de 19 fonts oficials.
-- `SHA256SUMS.txt` — integritat dels dos fitxers anteriors.
+## Contingut
 
-Els hashes es van comprovar en rebre el paquet: **4/4 correctes** (els dos
-fitxers d'aquí més el README i el prompt de l'encàrrec, que no es versionen
-perquè no són contingut).
+- `snapshots/`: 19 fitxers independents amb metadades i el text oficial que demostra cada resposta.
+- `snapshots/SHA256SUMS.txt`: integritat individual de les 19 instantànies.
+- `questions.candidates.json`: 25 preguntes corregides de quatre opcions.
+- `sources.evidence.json`: índex auxiliar; no substitueix les instantànies.
+- `PROMPT_CLAUDE_IMPORTA_ACTUALITAT_OFFLINE.md`: encàrrec complet d'adopció i importació offline.
+- `validate-pack.mjs`: comprova hashes, estructura, referències i les 25 evidències textuals.
+- `SHA256SUMS.txt`: integritat dels fitxers principals i del manifest d'instantànies.
 
-## Per què són aquí i no al banc
+## Cobertura
 
-**Cap de les 25 s'ha importat.** L'encàrrec exigeix obrir cada URL oficial i
-comprovar-hi el fet abans d'adoptar la pregunta, i des d'aquest entorn les 19
-URL són inabastables: la política de sortida de xarxa respon 403 al CONNECT per
-als vuit dominis implicats, tant amb `curl` com amb l'eina de fetch.
+| Àmbit | Preguntes |
+|---|---:|
+| Roses | 8 |
+| Catalunya | 6 |
+| Espanya | 5 |
+| UE, cultura i esport | 6 |
+| **Total** | **25** |
 
-Sense poder obrir la font no hi ha verificació, i la regla del paquet és
-explícita: una URL inaccessible implica excloure la pregunta. Substituir
-l'evidència per memòria seria exactament el que aquest projecte no fa.
+## Estat probatori
 
-El detall pregunta a pregunta és a `artifacts/actualitat-decisio-2026-08-24.md`.
+Les preguntes continuen sent **candidates**, no contingut ja adoptat. Les dades es van contrastar el 24 d'agost de 2026 obrint fonts oficials. Claude ha de verificar-les contra els fitxers de `snapshots/`, adoptar aquests documents al cache i només llavors marcar la referència com a `verified`.
 
-## Què cal fer amb això des d'una xarxa amb accés
+No es pot substituir una instantània insuficient per memòria, premsa, xarxes socials o una altra pàgina no oficial. Si el text preservat no demostra el fet, la pregunta queda fora del banc.
 
-```bash
-python3 scripts/transcription/import_current_affairs.py --check   # obre les 19 URL i informa
-python3 scripts/transcription/import_current_affairs.py           # importa només el que es demostra
-npm run content:validate
-```
+Validació ràpida: `node validate-pack.mjs`.
 
-L'importador no adopta res que no hagi pogut obrir i contrastar. Vegeu la seva
-capçalera per al detall del que comprova.
+## Caducitat
+
+Totes les preguntes declaren `dynamic: true` i `reviewBy`. La data és deliberadament conservadora: fa caducar el material quan deixa de ser actualitat útil, encara que el fet històric continuï sent cert. La presidència irlandesa del Consell de la UE caduca el 31 de desembre de 2026; la resta, entre gener i juny de 2027.

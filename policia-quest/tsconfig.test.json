@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    /*
+     * Els tests sí que poden tocar disc.
+     *
+     * `tsconfig.app.json` no porta els tipus de Node a propòsit: els motors han
+     * de continuar purs i, si algú hi escriu un `readFileSync`, ha de petar. Els
+     * tests, en canvi, han de poder obrir les còpies de `sources/cache/` i
+     * comprovar-ne el hash, que és el que separa «verified» de la paraula.
+     */
+    "types": ["node", "vitest/globals"],
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.test.tsbuildinfo",
+    "resolveJsonModule": true,
+    "noEmit": true
+  },
+  "include": ["tests/unit", "tests/content"]
+}

@@ -1,0 +1,15 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-budget-2026
+publisher: Ajuntament de Roses
+published_at: 2025-10-28 10:32
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/aprovat-el-pressupost-municipal-de-roses-per-a-2026-que-pujara-a-48-4-meur
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Aprovat el pressupost municipal de Roses per a 2026, que pujarà a 48,4 MEUR
+
+RELEVANT OFFICIAL TEXT
+«pujarà l’any 2026 a un total de 48.400.660€»
+«Les inversions ascendeixen a 2,4MEUR»
+«El pressupost específic de l’Ajuntament pujarà a 44.649.900 €»
