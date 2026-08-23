@@ -1,0 +1,753 @@
+{
+  "municipality": "roses",
+  "callId": "roses-2026-interins",
+  "callTitle": {
+    "ca": "Convocatòria de 7 places d’agent interí de la Policia Local de Roses i borsa de treball (2026)",
+    "es": "Convocatoria de 7 plazas de agente interino de la Policía Local de Roses y bolsa de trabajo (2026)"
+  },
+  "callSourceId": "roses-bases-2026-interins",
+  "contrastSourceId": "roses-bases-2025-propietat",
+  "topics": [
+    {
+      "topicId": "roses-t01",
+      "number": 1,
+      "number2025": 1,
+      "block": "institucions",
+      "title": {
+        "ca": "La Constitució de 1978. Principis generals",
+        "es": "La Constitución de 1978. Principios generales"
+      },
+      "scope": {
+        "ca": "Estructura de la Constitució, valors superiors, principis constitucionals, model territorial i reforma constitucional.",
+        "es": "Estructura de la Constitución, valores superiores, principios constitucionales, modelo territorial y reforma constitucional."
+      },
+      "primarySourceIds": [
+        "ce-1978"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t02",
+      "number": 2,
+      "number2025": 2,
+      "block": "institucions",
+      "title": {
+        "ca": "Els drets fonamentals a la Constitució de 1978",
+        "es": "Los derechos fundamentales en la Constitución de 1978"
+      },
+      "scope": {
+        "ca": "Títol I: drets i deures, garanties, suspensió de drets i el paper del Defensor del Poble i del Tribunal Constitucional.",
+        "es": "Título I: derechos y deberes, garantías, suspensión de derechos y el papel del Defensor del Pueblo y del Tribunal Constitucional."
+      },
+      "primarySourceIds": [
+        "ce-1978"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t03",
+      "number": 3,
+      "number2025": 3,
+      "block": "institucions",
+      "title": {
+        "ca": "L’Estatut d’Autonomia de Catalunya de 2006",
+        "es": "El Estatuto de Autonomía de Cataluña de 2006"
+      },
+      "scope": {
+        "ca": "Drets i deures de l’àmbit civil i social, drets en l’àmbit polític i de l’Administració, drets i deures lingüístics i govern local.",
+        "es": "Derechos y deberes del ámbito civil y social, derechos en el ámbito político y de la Administración, derechos y deberes lingüísticos y gobierno local."
+      },
+      "primarySourceIds": [
+        "lo-6-2006-eac"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t04",
+      "number": 4,
+      "number2025": 4,
+      "block": "institucions",
+      "title": {
+        "ca": "La Generalitat de Catalunya, el Parlament i el Consell Executiu",
+        "es": "La Generalitat de Cataluña, el Parlamento y el Consejo Ejecutivo"
+      },
+      "scope": {
+        "ca": "Organització institucional de la Generalitat i competències en matèria de seguretat pública.",
+        "es": "Organización institucional de la Generalitat y competencias en materia de seguridad pública."
+      },
+      "primarySourceIds": [
+        "lo-6-2006-eac",
+        "llei-4-2003-seguretat-publica"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t05",
+      "number": 5,
+      "number2025": 5,
+      "block": "institucions",
+      "title": {
+        "ca": "El municipi: concepte, elements, potestats i competències",
+        "es": "El municipio: concepto, elementos, potestades y competencias"
+      },
+      "scope": {
+        "ca": "Territori, població i organització; potestats administratives i competències municipals pròpies i delegades.",
+        "es": "Territorio, población y organización; potestades administrativas y competencias municipales propias y delegadas."
+      },
+      "primarySourceIds": [
+        "llei-7-1985-lrbrl"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t06",
+      "number": 6,
+      "number2025": 6,
+      "block": "institucions",
+      "title": {
+        "ca": "Les ordenances i els bans",
+        "es": "Las ordenanzas y los bandos"
+      },
+      "scope": {
+        "ca": "Concepte, procediment d’aprovació, destinataris, publicació i control del compliment.",
+        "es": "Concepto, procedimiento de aprobación, destinatarios, publicación y control del cumplimiento."
+      },
+      "primarySourceIds": [
+        "llei-7-1985-lrbrl",
+        "roses-ordenances-index"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t07",
+      "number": 7,
+      "number2025": 7,
+      "block": "institucions",
+      "title": {
+        "ca": "Els òrgans jurisdiccionals: poder judicial i Tribunal Constitucional",
+        "es": "Los órganos jurisdiccionales: poder judicial y Tribunal Constitucional"
+      },
+      "scope": {
+        "ca": "Estructura del poder judicial, principis, CGPJ i funcions del Tribunal Constitucional.",
+        "es": "Estructura del poder judicial, principios, CGPJ y funciones del Tribunal Constitucional."
+      },
+      "primarySourceIds": [
+        "ce-1978"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t08",
+      "number": 8,
+      "number2025": 8,
+      "block": "institucions",
+      "title": {
+        "ca": "Drets i deures dels funcionaris públics. Codi de conducta",
+        "es": "Derechos y deberes de los funcionarios públicos. Código de conducta"
+      },
+      "scope": {
+        "ca": "Drets individuals i col·lectius, deures, principis ètics i principis de conducta de l’EBEP.",
+        "es": "Derechos individuales y colectivos, deberes, principios éticos y principios de conducta del EBEP."
+      },
+      "primarySourceIds": [
+        "rdleg-5-2015-trebep"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t09",
+      "number": 9,
+      "number2025": 9,
+      "block": "institucions",
+      "title": {
+        "ca": "Règim d’incompatibilitats del personal al servei de les administracions públiques",
+        "es": "Régimen de incompatibilidades del personal al servicio de las administraciones públicas"
+      },
+      "scope": {
+        "ca": "Principi general, activitats públiques i privades, excepcions i autoritzacions de compatibilitat.",
+        "es": "Principio general, actividades públicas y privadas, excepciones y autorizaciones de compatibilidad."
+      },
+      "primarySourceIds": [
+        "llei-53-1984-incompat"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t10",
+      "number": 10,
+      "number2025": 11,
+      "block": "institucions",
+      "title": {
+        "ca": "Pressupostos i hisendes locals",
+        "es": "Presupuestos y haciendas locales"
+      },
+      "scope": {
+        "ca": "Recursos de les hisendes locals, principis pressupostaris, elaboració, aprovació, execució i liquidació del pressupost.",
+        "es": "Recursos de las haciendas locales, principios presupuestarios, elaboración, aprobación, ejecución y liquidación del presupuesto."
+      },
+      "primarySourceIds": [
+        "rdleg-2-2004-trlrhl"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t11",
+      "number": 11,
+      "number2025": 10,
+      "block": "institucions",
+      "title": {
+        "ca": "Règim disciplinari dels funcionaris d’un cos de Policia Local",
+        "es": "Régimen disciplinario de los funcionarios de un cuerpo de Policía Local"
+      },
+      "scope": {
+        "ca": "Faltes molt greus, greus i lleus; sancions; prescripció i procediment disciplinari.",
+        "es": "Faltas muy graves, graves y leves; sanciones; prescripción y procedimiento disciplinario."
+      },
+      "primarySourceIds": [
+        "llei-16-1991-policies-locals",
+        "decret-179-2015-disciplinari"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t12",
+      "number": 12,
+      "number2025": 12,
+      "block": "institucions",
+      "title": {
+        "ca": "El procediment administratiu com a garantia d’una actuació correcta",
+        "es": "El procedimiento administrativo como garantía de una actuación correcta"
+      },
+      "scope": {
+        "ca": "Concepte, finalitat i principis generals del procediment administratiu comú.",
+        "es": "Concepto, finalidad y principios generales del procedimiento administrativo común."
+      },
+      "primarySourceIds": [
+        "llei-39-2015-pac"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t13",
+      "number": 13,
+      "number2025": 13,
+      "block": "institucions",
+      "title": {
+        "ca": "L’acte administratiu",
+        "es": "El acto administrativo"
+      },
+      "scope": {
+        "ca": "Concepte, elements, requisits, motivació, notificació, eficàcia, nul·litat i anul·labilitat.",
+        "es": "Concepto, elementos, requisitos, motivación, notificación, eficacia, nulidad y anulabilidad."
+      },
+      "primarySourceIds": [
+        "llei-39-2015-pac"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t14",
+      "number": 14,
+      "number2025": 14,
+      "block": "institucions",
+      "title": {
+        "ca": "Les persones en el procediment administratiu",
+        "es": "Las personas en el procedimiento administrativo"
+      },
+      "scope": {
+        "ca": "Capacitat d’obrar, condició d’interessat, representació, drets de les persones i registre electrònic.",
+        "es": "Capacidad de obrar, condición de interesado, representación, derechos de las personas y registro electrónico."
+      },
+      "primarySourceIds": [
+        "llei-39-2015-pac"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t15",
+      "number": 15,
+      "number2025": 15,
+      "block": "institucions",
+      "title": {
+        "ca": "Aspectes generals de l’activitat administrativa",
+        "es": "Aspectos generales de la actividad administrativa"
+      },
+      "scope": {
+        "ca": "Termes i terminis, còmput, obligació de resoldre, silenci administratiu i abstenció i recusació.",
+        "es": "Términos y plazos, cómputo, obligación de resolver, silencio administrativo y abstención y recusación."
+      },
+      "primarySourceIds": [
+        "llei-39-2015-pac",
+        "llei-40-2015-rjsp"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t16",
+      "number": 16,
+      "number2025": 16,
+      "block": "institucions",
+      "title": {
+        "ca": "La regulació del procediment administratiu",
+        "es": "La regulación del procedimiento administrativo"
+      },
+      "scope": {
+        "ca": "Iniciació, ordenació, instrucció i finalització del procediment; mesures provisionals.",
+        "es": "Iniciación, ordenación, instrucción y finalización del procedimiento; medidas provisionales."
+      },
+      "primarySourceIds": [
+        "llei-39-2015-pac"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t17",
+      "number": 17,
+      "number2025": 17,
+      "block": "institucions",
+      "title": {
+        "ca": "Execució i revisió de l’acte administratiu",
+        "es": "Ejecución y revisión del acto administrativo"
+      },
+      "scope": {
+        "ca": "Executivitat, execució forçosa, revisió d’ofici i recursos administratius.",
+        "es": "Ejecutividad, ejecución forzosa, revisión de oficio y recursos administrativos."
+      },
+      "primarySourceIds": [
+        "llei-39-2015-pac"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t18",
+      "number": 18,
+      "number2025": 18,
+      "block": "institucions",
+      "title": {
+        "ca": "Transparència i informació pública",
+        "es": "Transparencia e información pública"
+      },
+      "scope": {
+        "ca": "Publicitat activa, dret d’accés a la informació pública, límits i bon govern.",
+        "es": "Publicidad activa, derecho de acceso a la información pública, límites y buen gobierno."
+      },
+      "primarySourceIds": [
+        "llei-19-2013-transp",
+        "llei-19-2014-transp-cat"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t19",
+      "number": 19,
+      "number2025": 19,
+      "block": "institucions",
+      "title": {
+        "ca": "Ciberseguretat",
+        "es": "Ciberseguridad"
+      },
+      "scope": {
+        "ca": "Reptes i amenaces, estratègies de seguretat, mesures d’autoprotecció i Agència de Ciberseguretat de Catalunya.",
+        "es": "Retos y amenazas, estrategias de seguridad, medidas de autoprotección y Agencia de Ciberseguridad de Cataluña."
+      },
+      "primarySourceIds": [
+        "agencia-ciberseguretat-catalunya"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t20",
+      "number": 20,
+      "number2025": 20,
+      "block": "institucions",
+      "title": {
+        "ca": "Protecció de dades com a dret fonamental",
+        "es": "Protección de datos como derecho fundamental"
+      },
+      "scope": {
+        "ca": "Principis del tractament, bases de legitimació, drets de les persones i tractament amb finalitats policials.",
+        "es": "Principios del tratamiento, bases de legitimación, derechos de las personas y tratamiento con fines policiales."
+      },
+      "primarySourceIds": [
+        "rgpd-2016-679",
+        "lo-3-2018-lopdgdd",
+        "ce-1978"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t21",
+      "number": 21,
+      "number2025": 21,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Llei orgànica 2/1986, de forces i cossos de seguretat",
+        "es": "Ley orgánica 2/1986, de fuerzas y cuerpos de seguridad"
+      },
+      "scope": {
+        "ca": "Concepte, missió, objectius, principis bàsics d’actuació i cossos policials existents.",
+        "es": "Concepto, misión, objetivos, principios básicos de actuación y cuerpos policiales existentes."
+      },
+      "primarySourceIds": [
+        "lo-2-1986-fcs"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t22",
+      "number": 22,
+      "number2025": 22,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Llei 4/2003, del sistema de seguretat pública de Catalunya",
+        "es": "Ley 4/2003, del sistema de seguridad pública de Cataluña"
+      },
+      "scope": {
+        "ca": "Coordinació, col·laboració, competències i òrgans del sistema de seguretat pública.",
+        "es": "Coordinación, colaboración, competencias y órganos del sistema de seguridad pública."
+      },
+      "primarySourceIds": [
+        "llei-4-2003-seguretat-publica"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t23",
+      "number": 23,
+      "number2025": 23,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Les juntes locals de seguretat",
+        "es": "Las juntas locales de seguridad"
+      },
+      "scope": {
+        "ca": "Naturalesa, composició, funcions i funcionament segons la Llei 4/2003 i el Decret 151/1998.",
+        "es": "Naturaleza, composición, funciones y funcionamiento según la Ley 4/2003 y el Decreto 151/1998."
+      },
+      "primarySourceIds": [
+        "llei-4-2003-seguretat-publica",
+        "decret-151-1998-juntes"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t24",
+      "number": 24,
+      "number2025": 24,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Llei 16/1991, de les policies locals",
+        "es": "Ley 16/1991, de las policías locales"
+      },
+      "scope": {
+        "ca": "Estructura, organització, funcions, escales i categories i principis bàsics d’actuació.",
+        "es": "Estructura, organización, funciones, escalas y categorías y principios básicos de actuación."
+      },
+      "primarySourceIds": [
+        "llei-16-1991-policies-locals"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t25",
+      "number": 25,
+      "number2025": 25,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Ètica i deontologia professional",
+        "es": "Ética y deontología profesional"
+      },
+      "scope": {
+        "ca": "Declaració Universal dels Drets Humans, Carta de Drets Fonamentals de la UE i Codi d’ètica de la Policia de Catalunya.",
+        "es": "Declaración Universal de los Derechos Humanos, Carta de Derechos Fundamentales de la UE y Código de ética de la Policía de Cataluña."
+      },
+      "primarySourceIds": [
+        "ddhh-1948",
+        "carta-drets-ue",
+        "codi-etic-policia-catalunya"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t26",
+      "number": 26,
+      "number2025": 26,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Llei orgànica 4/2015, de protecció de la seguretat ciutadana",
+        "es": "Ley orgánica 4/2015, de protección de la seguridad ciudadana"
+      },
+      "scope": {
+        "ca": "Reunions i manifestacions, potestats d’actuació, armes i explosius i règim sancionador.",
+        "es": "Reuniones y manifestaciones, potestades de actuación, armas y explosivos y régimen sancionador."
+      },
+      "primarySourceIds": [
+        "lo-4-2015-psc"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t27",
+      "number": 27,
+      "number2025": 27,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Furts i robatoris",
+        "es": "Hurtos y robos"
+      },
+      "scope": {
+        "ca": "Tipus bàsics i agreujats de furt i robatori, robatori amb força i amb violència o intimidació.",
+        "es": "Tipos básicos y agravados de hurto y robo, robo con fuerza y con violencia o intimidación."
+      },
+      "primarySourceIds": [
+        "lo-10-1995-cp"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t28",
+      "number": 28,
+      "number2025": 28,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Jurisdicció penal",
+        "es": "Jurisdicción penal"
+      },
+      "scope": {
+        "ca": "Òrgans de l’ordre jurisdiccional penal, competències i parts del procediment.",
+        "es": "Órganos del orden jurisdiccional penal, competencias y partes del procedimiento."
+      },
+      "primarySourceIds": [
+        "lecrim-1882",
+        "ce-1978"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t29",
+      "number": 29,
+      "number2025": 29,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Codi penal: garanties, aplicació de la llei i seguretat viària",
+        "es": "Código penal: garantías, aplicación de la ley y seguridad vial"
+      },
+      "scope": {
+        "ca": "Principi de legalitat, àmbit d’aplicació de la llei penal i delictes contra la seguretat viària.",
+        "es": "Principio de legalidad, ámbito de aplicación de la ley penal y delitos contra la seguridad vial."
+      },
+      "primarySourceIds": [
+        "lo-10-1995-cp"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t30",
+      "number": 30,
+      "number2025": 30,
+      "block": "seguretat-i-penal",
+      "title": {
+        "ca": "Llei orgànica 1/2015, modificadora del Codi penal",
+        "es": "Ley orgánica 1/2015, modificadora del Código penal"
+      },
+      "scope": {
+        "ca": "Supressió de les faltes, delictes lleus, presó permanent revisable i principals novetats.",
+        "es": "Supresión de las faltas, delitos leves, prisión permanente revisable y principales novedades."
+      },
+      "primarySourceIds": [
+        "lo-1-2015-reforma-cp",
+        "lo-10-1995-cp"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t31",
+      "number": 31,
+      "number2025": 31,
+      "block": "roses-transit-convivencia",
+      "title": {
+        "ca": "Coneixements generals de Roses",
+        "es": "Conocimientos generales de Roses"
+      },
+      "scope": {
+        "ca": "Estructura urbana, carrers, barris, nuclis urbans i rurals, serveis, comunicacions, característiques socials i culturals i equipaments públics.",
+        "es": "Estructura urbana, calles, barrios, núcleos urbanos y rurales, servicios, comunicaciones, características sociales y culturales y equipamientos públicos."
+      },
+      "primarySourceIds": [
+        "roses-web-municipi"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t32",
+      "number": 32,
+      "number2025": 32,
+      "block": "roses-transit-convivencia",
+      "title": {
+        "ca": "Permisos i llicències de conducció",
+        "es": "Permisos y licencias de conducción"
+      },
+      "scope": {
+        "ca": "Classes de permisos, condicions dels vehicles, immobilització i retirada de vehicles.",
+        "es": "Clases de permisos, condiciones de los vehículos, inmovilización y retirada de vehículos."
+      },
+      "primarySourceIds": [
+        "rd-818-2009-rgcond",
+        "rd-2822-1998-rgv",
+        "rdleg-6-2015-ltsv"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t33",
+      "number": 33,
+      "number2025": 33,
+      "block": "roses-transit-convivencia",
+      "title": {
+        "ca": "Conducció sota els efectes d’alcohol o drogues",
+        "es": "Conducción bajo los efectos de alcohol o drogas"
+      },
+      "scope": {
+        "ca": "Taxes, obligació de sotmetre’s a les proves, procediment de control i conseqüències administratives i penals.",
+        "es": "Tasas, obligación de someterse a las pruebas, procedimiento de control y consecuencias administrativas y penales."
+      },
+      "primarySourceIds": [
+        "rdleg-6-2015-ltsv",
+        "rd-1428-2003-rgc",
+        "lo-10-1995-cp"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t34",
+      "number": 34,
+      "number2025": 34,
+      "block": "roses-transit-convivencia",
+      "title": {
+        "ca": "Animals domèstics i de companyia",
+        "es": "Animales domésticos y de compañía"
+      },
+      "scope": {
+        "ca": "Responsabilitats de les persones propietàries, identificació, registre i règim dels gossos potencialment perillosos.",
+        "es": "Responsabilidades de las personas propietarias, identificación, registro y régimen de los perros potencialmente peligrosos."
+      },
+      "primarySourceIds": [
+        "llei-50-1999-app",
+        "rd-287-2002-app",
+        "roses-ordenanca-convivencia"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t35",
+      "number": 35,
+      "number2025": 35,
+      "block": "roses-transit-convivencia",
+      "title": {
+        "ca": "Ordenança municipal de circulació de Roses",
+        "es": "Ordenanza municipal de circulación de Roses"
+      },
+      "scope": {
+        "ca": "Objecte, àmbit d’aplicació i ordenació del trànsit al terme municipal de Roses.",
+        "es": "Objeto, ámbito de aplicación y ordenación del tráfico en el término municipal de Roses."
+      },
+      "primarySourceIds": [
+        "roses-ordenanca-circulacio"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t36",
+      "number": 36,
+      "number2025": 36,
+      "block": "roses-transit-convivencia",
+      "title": {
+        "ca": "Ordenança municipal de convivència ciutadana de Roses",
+        "es": "Ordenanza municipal de convivencia ciudadana de Roses"
+      },
+      "scope": {
+        "ca": "Mesures per fomentar i garantir la convivència, conductes prohibides i règim sancionador municipal.",
+        "es": "Medidas para fomentar y garantizar la convivencia, conductas prohibidas y régimen sancionador municipal."
+      },
+      "primarySourceIds": [
+        "roses-ordenanca-convivencia"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t37",
+      "number": 37,
+      "number2025": 37,
+      "block": "actuacio-i-proteccio",
+      "title": {
+        "ca": "Policia judicial i persona detinguda",
+        "es": "Policía judicial y persona detenida"
+      },
+      "scope": {
+        "ca": "Funcions de policia judicial, drets i garanties de la persona detinguda, detenció i procediment d’habeas corpus.",
+        "es": "Funciones de policía judicial, derechos y garantías de la persona detenida, detención y procedimiento de habeas corpus."
+      },
+      "primarySourceIds": [
+        "lecrim-1882",
+        "lo-6-1984-habeas",
+        "ce-1978"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t38",
+      "number": 38,
+      "number2025": 38,
+      "block": "actuacio-i-proteccio",
+      "title": {
+        "ca": "Llei 27/2003: ordre de protecció de les víctimes de violència domèstica",
+        "es": "Ley 27/2003: orden de protección de las víctimas de violencia doméstica"
+      },
+      "scope": {
+        "ca": "Pressupòsits, procediment, contingut de l’ordre i actuació policial.",
+        "es": "Presupuestos, procedimiento, contenido de la orden y actuación policial."
+      },
+      "primarySourceIds": [
+        "llei-27-2003-ordre-proteccio",
+        "lecrim-1882"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t39",
+      "number": 39,
+      "number2025": 39,
+      "block": "actuacio-i-proteccio",
+      "title": {
+        "ca": "Llei orgànica 3/2007: igualtat efectiva entre dones i homes",
+        "es": "Ley orgánica 3/2007: igualdad efectiva entre mujeres y hombres"
+      },
+      "scope": {
+        "ca": "Principi d’igualtat, discriminació directa i indirecta, assetjament i polítiques públiques d’igualtat.",
+        "es": "Principio de igualdad, discriminación directa e indirecta, acoso y políticas públicas de igualdad."
+      },
+      "primarySourceIds": [
+        "lo-3-2007-igualtat"
+      ],
+      "examTrack": "coneixements-professionals"
+    },
+    {
+      "topicId": "roses-t40",
+      "number": 40,
+      "number2025": 40,
+      "block": "actuacio-i-proteccio",
+      "title": {
+        "ca": "Llei orgànica 5/2000: responsabilitat penal i detenció de menors",
+        "es": "Ley orgánica 5/2000: responsabilidad penal y detención de menores"
+      },
+      "scope": {
+        "ca": "Àmbit d’aplicació, mesures aplicables i especialitats de la detenció de persones menors d’edat.",
+        "es": "Ámbito de aplicación, medidas aplicables y especialidades de la detención de personas menores de edad."
+      },
+      "primarySourceIds": [
+        "lo-5-2000-menors"
+      ],
+      "examTrack": "coneixements-professionals"
+    }
+  ]
+}
