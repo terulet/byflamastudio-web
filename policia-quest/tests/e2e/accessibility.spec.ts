@@ -97,7 +97,7 @@ for (const theme of ['dark', 'light'] as const) {
     test('simulacre i resultat no tenen incompliments WCAG A/AA', async ({ page }) => {
       await seed(page, theme)
       await page.goto('/#/exams')
-      await page.click('[data-testid="start-exam-roses-cultura-general"]')
+      await page.click('[data-testid="start-exam-roses-coneixements-professionals"]')
       await page.waitForSelector('[data-testid="exam-runner"]')
       await audit(page, `simulacre (${theme})`)
 

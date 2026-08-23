@@ -168,7 +168,7 @@ test('el simulacre professional aplica el format i la penalització reals', asyn
 test('el simulacre es pot pausar i reprendre amb el temps consumit', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
   await expect(page.getByTestId('exam-runner')).toBeVisible()
 
   await page.getByTestId('exam-option-c').click()
@@ -187,52 +187,55 @@ test('el simulacre es pot pausar i reprendre amb el temps consumit', async ({ pa
   await expect(page.getByTestId('exam-runner')).toBeVisible()
   // La resposta s'ha conservat i el rellotge no s'ha reiniciat.
   await expect(page.getByTestId('exam-option-c')).toHaveAttribute('aria-pressed', 'true')
-  await expect(page.getByTestId('exam-clock')).not.toHaveText('20:00')
+  await expect(page.getByTestId('exam-clock')).not.toHaveText('60:00')
 })
 
-test('el simulacre complet encadena les dues proves amb temps propi', async ({ page }) => {
+/*
+ * El simulacre de cultura general i, per tant, el complet, estan bloquejats en
+ * aquesta versió: el paquet d'actualitat és buit i les bases exigeixen 10 de
+ * les 20 preguntes d'actualitat.
+ *
+ * Els tests que recorrien les dues proves encadenades no es poden executar
+ * mentre això duri —no es pot recórrer una prova que no existeix— i s'han
+ * substituït pels que comproven que el bloqueig funciona i s'explica. La
+ * mecànica multisecció queda coberta per `tests/unit/exam-sections.test.ts`.
+ * Quan s'ompli el paquet d'actualitat, cal recuperar el recorregut complet.
+ */
+test('el simulacre de cultura general està bloquejat i diu exactament per què', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-simulacre-complet').click()
-  await expect(page.getByTestId('exam-runner')).toBeVisible()
+  await expect(page.getByTestId('exams')).toBeVisible()
 
-  // Primera prova: cultura general, 20 preguntes i 20 minuts.
-  await expect(page.getByTestId('section-label')).toContainText('Prova 1 de 2')
-  await expect(page.getByTestId('section-label')).toContainText('cultura general')
-  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
-  await expect(page.getByTestId('exam-clock')).toHaveText(/^(19:5\d|20:00)$/)
-
-  // 20 del cos i 1 de reserva: es contesten totes, com el dia de l'examen.
-  for (let i = 0; i < 21; i++) {
-    await page.getByTestId('exam-option-a').click()
-    const next = page.getByTestId('exam-next')
-    if (await next.isVisible()) await next.click()
-  }
-  await page.getByTestId('exam-finish').click()
-
-  // Segona prova: professionals, 40 preguntes i un temporitzador que arrenca de nou.
-  await expect(page.getByTestId('section-label')).toContainText('Prova 2 de 2')
-  await expect(page.getByTestId('section-label')).toContainText('coneixements professionals')
-  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/40')
-  await expect(page.getByTestId('exam-clock')).toHaveText(/^(59:5\d|60:00)$/)
-
-  await page.getByTestId('exam-option-b').click()
-  await page.getByTestId('exam-finish-early').click()
-  await expect(page.getByTestId('confirm-finish')).toBeVisible()
-  await page.getByTestId('confirm-finish-yes').click()
-
-  // El resultat reporta cada prova per separat, sense sumar-les.
-  await expect(page.getByTestId('exam-result')).toBeVisible()
-  await expect(page.getByTestId('section-score-0')).toContainText('/ 20')
-  await expect(page.getByTestId('section-score-1')).toContainText('/ 20')
-  await expect(page.getByTestId('exam-verdict')).toHaveText('NO APTE')
-  await expect(page.getByText(/aprovar les dues proves per separat/)).toBeVisible()
+  const blocked = page.getByTestId('blocked-roses-cultura-general')
+  await expect(blocked).toBeVisible()
+  await expect(blocked).toContainText('Actualitat')
+  await expect(blocked).toContainText('0 de 10')
+  await expect(page.getByTestId('start-exam-roses-cultura-general')).toBeDisabled()
 })
 
-test('el simulacre complet no repeteix cap pregunta entre les dues proves', async ({ page }) => {
+test('el simulacre complet es bloqueja perquè inclou el de cultura general', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-simulacre-complet').click()
+  const blocked = page.getByTestId('blocked-roses-simulacre-complet')
+  await expect(blocked).toBeVisible()
+  await expect(blocked).toContainText('cultura general')
+  await expect(page.getByTestId('start-exam-roses-simulacre-complet')).toBeDisabled()
+})
+
+test('un enllaç directe no pot saltar-se el bloqueig', async ({ page }) => {
+  await skipOnboarding(page)
+  // Una adreça guardada als preferits o compartida no ha d'obrir una prova
+  // retallada: ha de topar amb la mateixa explicació.
+  await page.goto('/#/exam/roses-cultura-general')
+  await expect(page.getByTestId('exam-unavailable')).toBeVisible()
+  await expect(page.getByTestId('exam-runner')).toHaveCount(0)
+})
+
+test('el simulacre professional sí que es pot muntar sencer', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await expect(page.getByTestId('blocked-roses-coneixements-professionals')).toHaveCount(0)
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
   await expect(page.getByTestId('exam-runner')).toBeVisible()
 
   const stored = await page.evaluate(
@@ -248,51 +251,54 @@ test('el simulacre complet no repeteix cap pregunta entre les dues proves', asyn
         request.onerror = () => resolve([])
       }),
   )
-  // 20 + 1 de reserva, i 40 + 2 de reserva.
-  expect(stored).toHaveLength(63)
-  expect(new Set(stored).size).toBe(63)
+  // 40 del cos + 2 de reserva, sense repetir-ne cap.
+  expect(stored).toHaveLength(42)
+  expect(new Set(stored).size).toBe(42)
 })
 
 test('les preguntes de reserva es contesten però no compten per a la nota', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
   await expect(page.getByTestId('exam-runner')).toBeVisible()
 
-  // El cos són 20 preguntes; la reserva va al final i s'anuncia com a tal.
-  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
+  // El cos són 40 preguntes; les reserves van al final i s'anuncien com a tals.
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/40')
   await expect(page.getByTestId('reserve-notice')).toHaveCount(0)
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 40; i++) {
     await page.getByTestId('exam-option-a').click()
     const next = page.getByTestId('exam-next')
     if (await next.isVisible()) await next.click()
   }
 
-  // Pregunta 21: de reserva, amb avís i comptador propi.
+  // Pregunta 41: la primera de reserva, amb avís i comptador propi.
   await expect(page.getByTestId('reserve-notice')).toBeVisible()
-  await expect(page.getByTestId('toggle-navigator')).toHaveText('R1/1')
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('R1/2')
+  await page.getByTestId('exam-option-a').click()
+  await page.getByTestId('exam-next').click()
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('R2/2')
   await page.getByTestId('exam-option-a').click()
   await page.getByTestId('exam-finish').click()
 
-  // La nota es calcula sobre 20, no sobre 21, i el resultat ho diu.
+  // La nota es calcula sobre 40, no sobre 42, i el resultat ho diu.
   await expect(page.getByTestId('exam-result')).toBeVisible()
   await expect(page.getByTestId('reserve-excluded')).toContainText('fora de la nota')
   const stats = page.locator('.stats')
   const correct = Number(await stats.locator('.stat__value').first().innerText())
   const wrong = Number(await stats.locator('.stat__value').nth(1).innerText())
   const blank = Number(await stats.locator('.stat__value').nth(2).innerText())
-  expect(correct + wrong + blank).toBe(20)
+  expect(correct + wrong + blank).toBe(40)
 })
 
 test('contestar l’última pregunta i finalitzar de seguida no demana confirmació', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
   await expect(page.getByTestId('exam-runner')).toBeVisible()
 
-  // 20 del cos + 1 de reserva.
-  for (let i = 0; i < 21; i++) {
+  // 40 del cos + 2 de reserva.
+  for (let i = 0; i < 42; i++) {
     await page.getByTestId('exam-option-a').click()
     const next = page.getByTestId('exam-next')
     if (await next.isVisible()) await next.click()
@@ -306,11 +312,11 @@ test('contestar l’última pregunta i finalitzar de seguida no demana confirmac
 test('l’avís de preguntes en blanc es tanca sol quan ja no en queda cap', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
   await expect(page.getByTestId('exam-runner')).toBeVisible()
 
   // Es deixa l'última en blanc i es demana finalitzar: surt l'avís.
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 41; i++) {
     await page.getByTestId('exam-option-a').click()
     const next = page.getByTestId('exam-next')
     if (await next.isVisible()) await next.click()
@@ -327,11 +333,11 @@ test('l’avís de preguntes en blanc es tanca sol quan ja no en queda cap', asy
 test('els errors del simulacre es poden enviar a la cua de repàs', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')
-  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await page.getByTestId('start-exam-roses-coneixements-professionals').click()
 
   // Es contesten totes amb la mateixa lletra per garantir errors.
-  // 20 del cos i 1 de reserva: es contesten totes, com el dia de l'examen.
-  for (let i = 0; i < 21; i++) {
+  // 40 del cos i 2 de reserva: es contesten totes, com el dia de l'examen.
+  for (let i = 0; i < 42; i++) {
     await page.getByTestId('exam-option-a').click()
     const next = page.getByTestId('exam-next')
     if (await next.isVisible()) await next.click()

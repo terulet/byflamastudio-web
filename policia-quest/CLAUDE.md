@@ -34,7 +34,13 @@ Aquestes regles no són preferències d'estil: trencar-ne una fa mal al producte
 7. **Els enunciats van en català.** És la llengua de l'examen. Les explicacions
    i la interfície es tradueixen; els enunciats no.
 
-8. **Si quantitat i rigor xoquen, guanya el rigor.** Deixa el dèficit visible a
+8. **Un simulacre reprodueix la prova o no s'ofereix.** Si les bases fixen una
+   composició, el banc l'ha de poder cobrir quota per quota. Vint preguntes de
+   cultura general no són la prova de cultura general de Roses, que en són 10 i
+   10 d'actualitat. Si no es pot muntar, es bloqueja i es diu què falta; mai
+   s'omple una quota amb preguntes d'una altra.
+
+9. **Si quantitat i rigor xoquen, guanya el rigor.** Deixa el dèficit visible a
    l'informe de cobertura i explica'n la causa. No omplis el banc amb preguntes
    dubtoses per arribar a una xifra.
 
@@ -135,14 +141,24 @@ baixar cap font oficial. Això vol dir que:
 
 - Els 30 exàmens registrats estan **pendents d'importar**.
 - Totes les referències són **`pending-source-verification`**.
-- El paquet d'actualitat és **buit a propòsit**.
+- El paquet d'actualitat és **buit a propòsit**, i per això el simulacre de
+  cultura general i el complet estan **bloquejats**: sense 10 preguntes
+  d'actualitat vigents no es pot muntar la prova que descriuen les bases.
 
 La primera feina de qui continuï, en aquest ordre:
 
-1. `npm run sources:download` des d'una xarxa amb accés a `roses.cat`,
-   `ssl4.ddgi.cat`, `boe.es` i `portaljuridic.gencat.cat`.
+1. Aconseguir les còpies locals, per qualsevol dels dos camins:
+   - `npm run sources:download` des d'una xarxa amb accés a `roses.cat`,
+     `ssl4.ddgi.cat`, `boe.es` i `portaljuridic.gencat.cat`; o
+   - `npm run sources:adopt -- --list`, deixar els documents a `sources/inbox/`
+     amb el nom del `sourceId` i executar `npm run sources:adopt`. Aquest camí
+     no necessita xarxa i és el previst quan qui prepara el contingut hi té
+     accés i l'entorn de construcció no.
 2. Contrastar les referències i passar-les a `verified`.
 3. Importar i revisar els quatre exàmens P0.
 4. Llegir les ordenances de Roses i completar els temes 35 i 36 amb l'articulat
    real.
-5. Omplir el paquet d'actualitat.
+5. Omplir el paquet d'actualitat. En treure el marcador
+   `contentStatus: 'blocked-missing-content'` del plànol de cultura general,
+   cal recuperar els tests d'extrem a extrem del simulacre complet i les seves
+   captures, que ara estan substituïts pels del bloqueig.

@@ -114,6 +114,40 @@ Els intents anteriors a aquesta funció no tenien seccions: `migrateExamAttempt`
 els en deriva una de sola, de manera que un simulacre a mitges d'abans es pot
 reprendre igualment.
 
+### Un simulacre és vàlid quan reprodueix la prova, no quan hi caben les preguntes
+
+Fitxer: `src/engines/availability.ts`.
+
+Les bases fixen la composició de la prova de cultura general: 10 preguntes de
+cultura general i 10 d'actualitat social, cultural i política. Un banc amb 22
+preguntes de cultura general i cap d'actualitat **no pot muntar aquesta prova**,
+per molt que 22 sigui més gran que 20. Muntar-ne vint de cultura general seria
+ensenyar un format fals i donar una nota que no prediu res.
+
+`examAvailability(pool, blueprint, today)` és l'única resposta a «es pot muntar
+aquesta prova, avui?», i la fan servir tres llocs que han de coincidir sempre:
+la validació de contingut, l'informe de cobertura i la pantalla de simulacres.
+
+Tres propietats que no són accidentals:
+
+- **Cada quota es compta a part.** Sobrar-ne d'una no compensa que en falti
+  d'una altra: el tribunal no les intercanvia.
+- **Es mesura contra el dia d'avui.** El contingut dinàmic porta `reviewBy` i
+  deixa de comptar quan caduca. Una prova que avui es pot muntar pot deixar de
+  poder-se muntar d'aquí a tres mesos sense que ningú toqui una línia. Això vol
+  dir que el build falla quan el paquet d'actualitat caduca, que és exactament
+  la pressió que ha de rebre el contingut que caduca.
+- **El dèficit no es pot amagar ni quedar enganxat.** El plànol declara el seu
+  estat amb `contentStatus`, i la validació ho comprova en tots dos sentits: un
+  plànol que no es pot muntar sense declarar-ho trenca el build, i un plànol
+  declarat bloquejat que ja es podria muntar també. Quan algú ompli el paquet
+  d'actualitat, el build li dirà que tregui el marcador.
+
+Quan un plànol es bloqueja, es bloqueja a tot arreu: el botó de la llista, el
+simulacre complet que el conté i l'enllaç directe a `#/exam/<id>`. La pantalla
+diu quina quota falta i quantes preguntes hi ha, i ofereix el mode d'entrenament
+perquè les preguntes que sí que hi ha segueixin sent útils.
+
 ### Preguntes de reserva
 
 El quadernet real porta preguntes de reserva al final —una a cultura general,

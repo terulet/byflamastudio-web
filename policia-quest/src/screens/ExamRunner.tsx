@@ -18,8 +18,9 @@ import { useActiveQuestions } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
 import { dict, fill, pick, plural } from '../i18n/index.ts'
 import { buildExamPaper } from '../engines/selection.ts'
+import { examAvailability } from '../engines/availability.ts'
 import { scoreExam, type ScoredItem } from '../engines/scoring.ts'
-import { formatClock } from '../util/date.ts'
+import { epochDayToIso, formatClock, toEpochDay } from '../util/date.ts'
 import type { ExamAttempt, ExamBlueprint, OptionId, Question } from '../domain/types.ts'
 
 /** Índex de la primera pregunta de cada secció dins `questionIds`. */
@@ -67,6 +68,12 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
     if (resumable) return resumable
     if (blueprints.length === 0) return null
 
+    // Un enllaç directe no pot saltar-se el bloqueig de la pantalla de
+    // simulacres: si el banc no pot muntar la prova que descriuen les bases,
+    // aquí tampoc se'n munta una de retallada.
+    const today = epochDayToIso(toEpochDay(Date.now()))
+    if (blueprints.some((b) => !examAvailability(active, b, today).ok)) return null
+
     const questionIds: string[] = []
     const sections: ExamAttempt['sections'] = []
     const seed = `${blueprintId}-${Date.now()}`
@@ -77,6 +84,9 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
         track: blueprint.track,
         count: blueprint.questionCount,
         reserveCount: blueprint.reserveCount,
+        // La composició que fixen les bases: cada quota es cobreix a part.
+        ...(blueprint.composition ? { composition: blueprint.composition } : {}),
+        todayIso: epochDayToIso(toEpochDay(Date.now())),
         seed: `${seed}-${blueprint.blueprintId}`,
         // Cap pregunta pot sortir dues vegades al mateix quadernet complet.
         exclude: questionIds,
@@ -298,10 +308,24 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
   }, [remainingMs, attempt?.status, section, closeSection])
 
   if (blueprints.length === 0 || !attempt || !section) {
+    const today = epochDayToIso(toEpochDay(Date.now()))
+    const blocked = blueprints.filter((b) => !examAvailability(active, b, today).ok)
     return (
-      <main className="screen screen--full">
-        <p className="empty">{t.common.loading}</p>
-        <button type="button" className="btn btn--block" onClick={() => navigate({ name: 'exams' })}>
+      <main className="screen screen--full" data-testid="exam-unavailable">
+        {blocked.length > 0 ? (
+          <div className="notice notice--warn">
+            <strong>{t.exams.blockedTitle}</strong>
+            <p style={{ margin: 'var(--sp-2) 0 0' }}>{t.exams.blockedWhy}</p>
+          </div>
+        ) : (
+          <p className="empty">{t.common.loading}</p>
+        )}
+        <button
+          type="button"
+          className="btn btn--block"
+          style={{ marginTop: 'var(--sp-4)' }}
+          onClick={() => navigate({ name: 'exams' })}
+        >
           {t.common.back}
         </button>
       </main>

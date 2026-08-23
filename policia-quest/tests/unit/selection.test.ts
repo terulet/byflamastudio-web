@@ -315,6 +315,85 @@ describe('muntatge de simulacres', () => {
     expect(withReserve.slice(0, 40).map((x) => x.questionId)).toEqual(base.map((x) => x.questionId))
   })
 
+  it('cobreix cada quota de la composició per separat', () => {
+    const cg = Array.from({ length: 30 }, (_, i) =>
+      q(`cg${String(i).padStart(3, '0')}`, `roses-t${String((i % 10) + 1).padStart(2, '0')}`, {
+        track: 'cultura-general',
+        tags: ['cultura-general'],
+      }),
+    )
+    const act = Array.from({ length: 30 }, (_, i) =>
+      q(`ac${String(i).padStart(3, '0')}`, `roses-t${String((i % 10) + 1).padStart(2, '0')}`, {
+        track: 'cultura-general',
+        tags: ['actualitat'],
+      }),
+    )
+    const paper = buildExamPaper({
+      pool: [...cg, ...act],
+      track: 'cultura-general',
+      count: 20,
+      composition: [
+        { tag: 'cultura-general', count: 10 },
+        { tag: 'actualitat', count: 10 },
+      ],
+      seed: 'e1',
+    })
+    expect(paper).toHaveLength(20)
+    expect(paper.filter((p) => p.tags.includes('cultura-general'))).toHaveLength(10)
+    expect(paper.filter((p) => p.tags.includes('actualitat'))).toHaveLength(10)
+  })
+
+  it('no tapa una quota buida amb preguntes d’una altra', () => {
+    // Trenta de cultura general i cap d'actualitat: el quadernet ha de sortir
+    // curt, no completat amb preguntes que no toquen.
+    const cg = Array.from({ length: 30 }, (_, i) =>
+      q(`cg${String(i).padStart(3, '0')}`, `roses-t${String((i % 10) + 1).padStart(2, '0')}`, {
+        track: 'cultura-general',
+        tags: ['cultura-general'],
+      }),
+    )
+    const paper = buildExamPaper({
+      pool: cg,
+      track: 'cultura-general',
+      count: 20,
+      composition: [
+        { tag: 'cultura-general', count: 10 },
+        { tag: 'actualitat', count: 10 },
+      ],
+      seed: 'e1',
+    })
+    expect(paper).toHaveLength(10)
+    expect(paper.every((p) => p.tags.includes('cultura-general'))).toBe(true)
+  })
+
+  it('descarta el contingut dinàmic caducat', () => {
+    const fresh = Array.from({ length: 20 }, (_, i) =>
+      q(`ac${i}`, 'roses-t01', {
+        track: 'cultura-general',
+        tags: ['actualitat'],
+        dynamic: true,
+        reviewBy: '2026-12-31',
+      }),
+    )
+    const stale = Array.from({ length: 20 }, (_, i) =>
+      q(`old${i}`, 'roses-t02', {
+        track: 'cultura-general',
+        tags: ['actualitat'],
+        dynamic: true,
+        reviewBy: '2026-01-01',
+      }),
+    )
+    const paper = buildExamPaper({
+      pool: [...fresh, ...stale],
+      track: 'cultura-general',
+      count: 20,
+      todayIso: '2026-08-23',
+      seed: 'e1',
+    })
+    expect(paper).toHaveLength(20)
+    expect(paper.every((p) => p.questionId.startsWith('ac'))).toBe(true)
+  })
+
   it('sacrifica les reserves abans que el cos si el banc no dona per a tot', () => {
     const small = pool.slice(0, 41)
     const paper = buildExamPaper({

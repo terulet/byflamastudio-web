@@ -5,6 +5,7 @@
  * artifacts/coverage-report.md i el mostra per consola.
  */
 import { mkdirSync, writeFileSync } from 'node:fs'
+import { examAvailability } from '../src/engines/availability.ts'
 import { ROSES_PACK } from '../content/municipalities/roses/index.ts'
 
 const lines: string[] = []
@@ -13,6 +14,9 @@ const out = (text = ''): void => {
 }
 
 const { syllabus, questions, lessons, exams, sources, currentAffairs, blueprints } = ROSES_PACK
+
+/** El contingut dinàmic caduca: la capacitat es mesura contra el dia d'avui. */
+const TODAY = new Date().toISOString().slice(0, 10)
 const active = questions.filter((q) => q.status === 'active')
 const today = new Date().toISOString().slice(0, 10)
 
@@ -143,21 +147,55 @@ out()
 
 out('## Capacitat dels simulacres')
 out()
-out('| Simulacre | Preguntes requerides (amb reserva) | Disponibles al banc | Estat |')
-out('| --- | --- | --- | --- |')
+out(
+  'Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè pot muntar ' +
+  '**la prova que descriuen les bases**. Cada quota es compta a part: que en sobrin d’una ' +
+  'no compensa que en faltin d’una altra.',
+)
+out()
+out('| Simulacre | Quota | Necessàries | Vigents al banc | Estat |')
+out('| --- | --- | --- | --- | --- |')
 for (const bp of blueprints) {
-  const available = active.filter((q) => q.track === bp.track).length
-  const needed = bp.questionCount + bp.reserveCount
-  const ok = available >= needed
-  const enoughBody = available >= bp.questionCount
-  const verdict = ok
-    ? '✓ es pot muntar'
-    : enoughBody
-      ? '⚠ sense reserva'
-      : '✗ banc insuficient'
-  out(`| ${bp.title.ca} | ${needed} | ${available} | ${verdict} |`)
+  const status = examAvailability(questions, bp, TODAY)
+  if (status.quotas.length > 0) {
+    for (const quota of status.quotas) {
+      const label = bp.composition?.find((c) => c.tag === quota.tag)?.label.ca ?? quota.tag
+      out(
+        `| ${bp.title.ca} | ${label} | ${quota.needed} | ${quota.available} | ` +
+          `${quota.missing === 0 ? '✓' : `✗ en falten ${quota.missing}`} |`,
+      )
+    }
+  } else {
+    out(
+      `| ${bp.title.ca} | (sense composició fixada) | ${bp.questionCount} | ${status.poolSize} | ` +
+        `${status.missingBody === 0 ? '✓' : `✗ en falten ${status.missingBody}`} |`,
+    )
+  }
+  out(
+    `| ${bp.title.ca} | Reserva | ${bp.reserveCount} | ${bp.reserveCount - status.missingReserve} | ` +
+      `${status.missingReserve === 0 ? '✓' : '⚠ sense reserva'} |`,
+  )
 }
 out()
+
+for (const bp of blueprints) {
+  const status = examAvailability(questions, bp, TODAY)
+  if (status.ok) continue
+  out(`**${bp.title.ca}: bloquejat.** ${bp.contentNote ?? 'Sense motiu declarat.'}`)
+  out()
+}
+
+for (const composition of ROSES_PACK.compositions) {
+  const blocked = composition.blueprintIds
+    .map((id) => blueprints.find((b) => b.blueprintId === id))
+    .filter((b) => b !== undefined)
+    .filter((b) => !examAvailability(questions, b, TODAY).ok)
+  if (blocked.length === 0) continue
+  out(
+    `**${composition.title.ca}: bloquejat**, perquè inclou ${blocked.map((b) => b.title.ca).join(' i ')}.`,
+  )
+  out()
+}
 
 /* ---------------- Què necessita revisió humana ---------------- */
 

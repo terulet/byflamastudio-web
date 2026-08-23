@@ -3,16 +3,39 @@ import type { ReactNode } from 'react'
 import { pack, useApp } from '../app/store.tsx'
 import { useActiveQuestions } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
-import { dict, pick } from '../i18n/index.ts'
+import { dict, fill, pick } from '../i18n/index.ts'
 import { ScreenHeader } from '../components/ui.tsx'
 import { formatMilli } from '../engines/scoring.ts'
-import { formatDuration } from '../util/date.ts'
+import { examAvailability } from '../engines/availability.ts'
+import { epochDayToIso, formatDuration, toEpochDay } from '../util/date.ts'
+
+/** Etiqueta llegible d'una quota, tal com la declara el plànol. */
+function labelForTag(
+  bp: { composition?: readonly { label: { ca: string; es?: string }; tag: string }[] },
+  tag: string,
+  lang: 'ca' | 'es',
+): string {
+  const slot = bp.composition?.find((c) => c.tag === tag)
+  return slot ? pick(slot.label, lang) : tag
+}
 
 export function Exams(): ReactNode {
   const { settings, attempts } = useApp()
   const lang = settings.explanationLang
   const t = dict(lang)
   const active = useActiveQuestions()
+
+  /*
+   * Un simulacre no s'ofereix perquè hi hagi prou preguntes, sinó perquè es pot
+   * muntar **la prova que descriuen les bases**. La de cultura general són 10
+   * de cultura general i 10 d'actualitat: si el banc no té les d'actualitat
+   * vigents, oferir-ne vint de cultura general seria ensenyar un format fals i
+   * donar una nota que no vol dir res. Es bloqueja i es diu per què.
+   */
+  const todayIso = epochDayToIso(toEpochDay(Date.now()))
+  const availability = new Map(
+    pack.blueprints.map((bp) => [bp.blueprintId, examAvailability(active, bp, todayIso)]),
+  )
 
   const importedExams = pack.exams.filter((e) => e.importStatus === 'imported')
   const pendingExams = pack.exams.filter((e) => e.importStatus !== 'imported')
@@ -25,8 +48,8 @@ export function Exams(): ReactNode {
       <div className="stack stack--loose">
         <section className="stack">
           {pack.blueprints.map((bp) => {
-            const available = active.filter((q) => q.track === bp.track).length
-            const canRun = available >= bp.questionCount
+            const status = availability.get(bp.blueprintId)
+            const canRun = status?.ok ?? false
             return (
               <article key={bp.blueprintId} className="card card--accent">
                 <div className="row row--between">
@@ -88,10 +111,49 @@ export function Exams(): ReactNode {
                   {t.exams.startExam}
                 </button>
 
-                {!canRun ? (
-                  <p className="notice notice--warn" style={{ marginTop: 'var(--sp-3)' }}>
-                    {available} / {bp.questionCount} {t.train.available}
-                  </p>
+                {!canRun && status ? (
+                  <div
+                    className="notice notice--warn"
+                    style={{ marginTop: 'var(--sp-3)' }}
+                    data-testid={`blocked-${bp.blueprintId}`}
+                  >
+                    <strong>{t.exams.blockedTitle}</strong>
+                    <p style={{ margin: 'var(--sp-2) 0 0' }}>{t.exams.blockedWhy}</p>
+                    <ul style={{ margin: 'var(--sp-2) 0 0', paddingLeft: '1.1em' }}>
+                      {status.quotas.length > 0 ? (
+                        status.quotas
+                          .filter((quota) => quota.missing > 0)
+                          .map((quota) => (
+                            <li key={quota.tag}>
+                              {fill(t.exams.blockedQuota, {
+                                label: labelForTag(bp, quota.tag, lang),
+                                available: quota.available,
+                                needed: quota.needed,
+                              })}
+                            </li>
+                          ))
+                      ) : (
+                        <li>
+                          {fill(t.exams.blockedQuota, {
+                            label: pick(bp.title, lang),
+                            available: status.poolSize,
+                            needed: bp.questionCount,
+                          })}
+                        </li>
+                      )}
+                    </ul>
+                    {/* Un bloqueig no pot ser un carreró sense sortida: les
+                        preguntes que sí que hi ha segueixen sent útils. */}
+                    <button
+                      type="button"
+                      className="btn btn--sm btn--block"
+                      style={{ marginTop: 'var(--sp-3)' }}
+                      onClick={() => navigate({ name: 'train' })}
+                      data-testid={`blocked-fallback-${bp.blueprintId}`}
+                    >
+                      {t.exams.blockedFallback}
+                    </button>
+                  </div>
                 ) : null}
               </article>
             )
@@ -105,9 +167,10 @@ export function Exams(): ReactNode {
             .filter((b): b is NonNullable<typeof b> => b !== undefined)
           const totalQuestions = parts.reduce((sum, b) => sum + b.questionCount, 0)
           const totalMinutes = parts.reduce((sum, b) => sum + b.durationMinutes, 0)
-          const canRun = parts.every(
-            (b) => active.filter((q) => q.track === b.track).length >= b.questionCount,
-          )
+          // El complet encadena les dues proves: si una es bloqueja, es bloqueja
+          // el conjunt. No té sentit fer-ne mitja.
+          const blockedParts = parts.filter((b) => !availability.get(b.blueprintId)?.ok)
+          const canRun = blockedParts.length === 0
           return (
             <article key={composition.compositionId} className="card card--accent">
               <div className="row row--between">
@@ -133,6 +196,17 @@ export function Exams(): ReactNode {
               >
                 {t.exams.startExam}
               </button>
+
+              {blockedParts.length > 0 ? (
+                <p
+                  className="notice notice--warn"
+                  style={{ marginTop: 'var(--sp-3)' }}
+                  data-testid={`blocked-${composition.compositionId}`}
+                >
+                  {t.exams.blockedComplete}{' '}
+                  {blockedParts.map((b) => pick(b.title, lang)).join(' · ')}
+                </p>
+              ) : null}
             </article>
           )
         })}

@@ -31,6 +31,7 @@ import {
 import { ROSES_PACK } from '../content/municipalities/roses/index.ts'
 import manifestJson from '../sources/source-manifest.json' with { type: 'json' }
 import { CONEIXEMENTS_SCORING, CULTURA_GENERAL_SCORING } from '../src/engines/scoring.ts'
+import { examAvailability } from '../src/engines/availability.ts'
 import { normalizeStem, dedupeHash } from './lib/dedupe.ts'
 
 const errors: string[] = []
@@ -293,22 +294,78 @@ if (!cp) {
   }
 }
 
-// El banc ha de poder omplir cada simulacre.
+/*
+ * El banc ha de poder muntar **la prova que descriuen les bases**, no un
+ * nombre de preguntes.
+ *
+ * La de cultura general són 10 de cultura general i 10 d'actualitat. Tenir-ne
+ * 22 de cultura general no la fa possible: en falten 10 d'actualitat i cap
+ * quota en pot substituir una altra. Aquesta comprovació es fa contra el dia
+ * d'avui, perquè el contingut dinàmic caduca i una prova que avui es pot
+ * muntar pot deixar de poder-se muntar sense que ningú toqui res.
+ *
+ * Es comprova en tots dos sentits:
+ *  - un plànol que no es pot muntar i no ho declara → error,
+ *  - un plànol declarat bloquejat que ja es podria muntar → error també.
+ * Així el dèficit no es pot amagar ni quedar-se enganxat quan algú l'arregla.
+ */
+const TODAY = new Date().toISOString().slice(0, 10)
+
 for (const bp of ROSES_PACK.blueprints) {
-  const available = ROSES_PACK.questions.filter(
-    (q) => q.status === 'active' && q.track === bp.track,
-  ).length
-  // El quadernet complet inclou les reserves: si no hi caben, la prova es
-  // munta igualment però sense reserva, i això s'ha de veure.
-  if (available < bp.questionCount + bp.reserveCount && available >= bp.questionCount) {
-    warn(
-      `plànol ${bp.blueprintId}: hi ha ${available} preguntes actives de tipus ${bp.track}, ` +
-        `prou per a les ${bp.questionCount} de la prova però no per a les ${bp.reserveCount} de reserva`,
+  // La composició declarada ha de sumar exactament la prova.
+  if (bp.composition && bp.composition.length > 0) {
+    const declared = bp.composition.reduce((sum, slot) => sum + slot.count, 0)
+    if (declared !== bp.questionCount) {
+      fail(
+        `plànol ${bp.blueprintId}: la composició suma ${declared} preguntes i la prova en té ${bp.questionCount}`,
+      )
+    }
+  }
+
+  const status = examAvailability(ROSES_PACK.questions, bp, TODAY)
+  const declaredBlocked = bp.contentStatus === 'blocked-missing-content'
+
+  if (declaredBlocked && !bp.contentNote) {
+    fail(`plànol ${bp.blueprintId}: està declarat bloquejat però no diu per què (contentNote)`)
+  }
+
+  if (!status.ok && !declaredBlocked) {
+    const detail =
+      status.quotas.length > 0
+        ? status.quotas
+            .filter((q) => q.missing > 0)
+            .map((q) => `${q.tag}: ${q.available}/${q.needed}`)
+            .join(', ')
+        : `${status.poolSize}/${bp.questionCount}`
+    fail(
+      `plànol ${bp.blueprintId}: el banc no pot muntar la prova que descriuen les bases (${detail}). ` +
+        `O s’omple el banc, o el plànol ho ha de declarar amb contentStatus: 'blocked-missing-content'.`,
     )
   }
-  if (available < bp.questionCount) {
+
+  if (status.ok && declaredBlocked) {
     fail(
-      `plànol ${bp.blueprintId}: calen ${bp.questionCount} preguntes actives de tipus ${bp.track} i només n’hi ha ${available}`,
+      `plànol ${bp.blueprintId}: està declarat bloquejat però el banc ja pot muntar la prova. ` +
+        `Treu contentStatus: 'blocked-missing-content' i contentNote.`,
+    )
+  }
+
+  if (!status.ok && declaredBlocked) {
+    const detail = status.quotas
+      .filter((q) => q.missing > 0)
+      .map((q) => `${q.tag} (${q.available}/${q.needed})`)
+      .join(', ')
+    warn(
+      `plànol ${bp.blueprintId}: bloquejat a propòsit, falta contingut${detail ? ` — ${detail}` : ''}`,
+    )
+  }
+
+  // El quadernet real inclou les reserves. Que no hi càpiguen no bloqueja la
+  // prova —la reserva ni tan sols compta per a la nota— però s'ha de veure.
+  if (status.ok && status.missingReserve > 0) {
+    warn(
+      `plànol ${bp.blueprintId}: la prova es pot muntar però hi falten ${status.missingReserve} ` +
+        `de les ${bp.reserveCount} preguntes de reserva`,
     )
   }
 }

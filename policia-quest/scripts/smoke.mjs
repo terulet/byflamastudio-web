@@ -94,28 +94,30 @@ await page.click('[data-testid="confirm-finish-yes"]')
 await page.waitForSelector('[data-testid="exam-result"]')
 await shoot(page, '09-resultat-simulacre')
 
-// Simulacre complet: dues proves encadenades
+// El simulacre complet està bloquejat mentre el paquet d'actualitat sigui buit
+// (les bases exigeixen 10 de les 20 preguntes de cultura general d'actualitat).
+// En comptes de recórrer-lo, es captura el bloqueig: és el que veu qui obre
+// l'app avui, i ha d'explicar-se sol.
 await page.goto(`${BASE}/#/exams`)
-await page.click('[data-testid="start-exam-roses-simulacre-complet"]')
+await page.waitForSelector('[data-testid="blocked-roses-cultura-general"]')
+await shoot(page, '18-simulacre-bloquejat', false)
+
+// La reserva sí que es pot veure: la porta el simulacre professional.
+await page.click('[data-testid="start-exam-roses-coneixements-professionals"]')
 await page.waitForSelector('[data-testid="exam-runner"]')
-await shoot(page, '18-simulacre-complet-prova-1', false)
-// 20 del cos + 1 de reserva: es contesten totes i la prova es tanca sense avís.
-for (let i = 0; i < 21; i++) {
+// Les 40 del cos; després queda la primera de reserva a la pantalla.
+for (let i = 0; i < 40; i++) {
   await page.click('[data-testid="exam-option-a"]')
-  // L'última de la prova és la de reserva: val la pena veure com s'anuncia.
-  if (i === 20) await shoot(page, '21-pregunta-de-reserva', false)
-  const next = page.locator('[data-testid="exam-next"]')
-  if (await next.isVisible()) await next.click()
+  await page.click('[data-testid="exam-next"]')
 }
+await page.waitForSelector('[data-testid="reserve-notice"]')
+await shoot(page, '19-pregunta-de-reserva', false)
+await page.click('[data-testid="exam-option-a"]')
+await page.click('[data-testid="exam-next"]')
+await page.click('[data-testid="exam-option-a"]')
 await page.click('[data-testid="exam-finish"]')
-await page.waitForTimeout(300)
-await shoot(page, '19-simulacre-complet-prova-2', false)
-await page.click('[data-testid="exam-option-b"]')
-await page.click('[data-testid="exam-finish-early"]')
-await page.waitForSelector('[data-testid="confirm-finish"]')
-await page.click('[data-testid="confirm-finish-yes"]')
 await page.waitForSelector('[data-testid="exam-result"]')
-await shoot(page, '20-simulacre-complet-resultat', false)
+await shoot(page, '20-resultat-amb-reserva', false)
 
 await page.click('[data-testid="nav-progress"]')
 await page.waitForSelector('[data-testid="progress"]')

@@ -18,3 +18,8 @@ blob-report/
 *.tsbuildinfo
 
 .DS_Store
+
+# Documents entregats a mà per adoptar: no es versionen (poden ser grans i el
+# manifest ja en guarda el SHA-256 un cop adoptats).
+sources/inbox/*
+!sources/inbox/.gitkeep

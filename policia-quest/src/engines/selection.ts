@@ -14,6 +14,7 @@
 import { isDue, reviewPriority } from './srs.ts'
 import { makeRng, seedFromString, shuffle } from '../util/rng.ts'
 import type { Question, ReviewState, StudyMode } from '../domain/types.ts'
+import { isCurrent } from './availability.ts'
 
 export interface SelectionInput {
   mode: StudyMode
@@ -248,8 +249,17 @@ export function countFailed(
 }
 
 /**
- * Munta un simulacre a partir d'un plànol d'examen. Reparteix les preguntes
- * entre els temes disponibles per no concentrar-les en un sol bloc.
+ * Munta un simulacre a partir d'un plànol d'examen.
+ *
+ * Si el plànol fixa una composició —la de cultura general de Roses són 10
+ * preguntes de cultura general i 10 d'actualitat— cada quota es cobreix **per
+ * separat**. Que en sobrin d'una no pot tapar que en faltin d'una altra: el
+ * tribunal no les intercanvia i el simulacre tampoc.
+ *
+ * Quan una quota no es pot cobrir, aquesta funció no la substitueix per
+ * preguntes d'una altra. Munta el que pugui i deixa el buit; qui decideix si
+ * la prova s'ofereix o es bloqueja és `examAvailability`, i la pantalla de
+ * simulacres no arriba a demanar un quadernet que no es pot muntar.
  */
 export function buildExamPaper(opts: {
   pool: readonly Question[]
@@ -264,50 +274,73 @@ export function buildExamPaper(opts: {
    * puntuació pot tallar per índex sense haver de marcar cada pregunta.
    */
   reserveCount?: number
+  /** Quotes per etiqueta que fixa la convocatòria, si en fixa cap. */
+  composition?: readonly { tag: string; count: number }[]
+  /** Dia ISO, per descartar el contingut dinàmic que ja ha caducat. */
+  todayIso?: string
   seed: string
   /** Preguntes ja usades en una altra secció del mateix quadernet. */
   exclude?: readonly string[]
 }): Question[] {
   const excluded = opts.exclude && opts.exclude.length > 0 ? new Set(opts.exclude) : null
+  const today = opts.todayIso
   const candidates = opts.pool.filter(
-    (q) => q.status === 'active' && q.track === opts.track && !excluded?.has(q.questionId),
+    (q) =>
+      q.status === 'active' &&
+      q.track === opts.track &&
+      !excluded?.has(q.questionId) &&
+      (today === undefined || isCurrent(q, today)),
   )
   const rng = makeRng(seedFromString(opts.seed))
-
-  // Agrupem per tema i anem prenent en ronda per repartir la cobertura.
-  const byTopic = new Map<string, Question[]>()
-  for (const q of shuffle(candidates, rng)) {
-    const list = byTopic.get(q.topicId)
-    if (list) list.push(q)
-    else byTopic.set(q.topicId, [q])
-  }
-  const topics = shuffle([...byTopic.keys()], rng)
-
   const reserveCount = opts.reserveCount ?? 0
-  const wanted = opts.count + reserveCount
 
-  const out: Question[] = []
-  let round = 0
-  while (out.length < wanted) {
-    let addedThisRound = 0
-    for (const topicId of topics) {
-      if (out.length >= wanted) break
-      const list = byTopic.get(topicId)
-      const q = list?.[round]
-      if (q) {
-        out.push(q)
-        addedThisRound++
-      }
+  const taken = new Set<string>()
+  /** Pren `n` preguntes repartint-les entre temes, sense repetir-ne cap. */
+  const draw = (from: readonly Question[], n: number): Question[] => {
+    if (n <= 0) return []
+    const byTopic = new Map<string, Question[]>()
+    for (const q of shuffle(from.filter((q) => !taken.has(q.questionId)), rng)) {
+      const list = byTopic.get(q.topicId)
+      if (list) list.push(q)
+      else byTopic.set(q.topicId, [q])
     }
-    if (addedThisRound === 0) break // s'ha exhaurit el banc
-    round++
+    const topics = shuffle([...byTopic.keys()], rng)
+
+    const out: Question[] = []
+    let round = 0
+    while (out.length < n) {
+      let addedThisRound = 0
+      for (const topicId of topics) {
+        if (out.length >= n) break
+        const q = byTopic.get(topicId)?.[round]
+        if (q) {
+          out.push(q)
+          taken.add(q.questionId)
+          addedThisRound++
+        }
+      }
+      if (addedThisRound === 0) break // s'ha exhaurit el banc
+      round++
+    }
+    return out
   }
+
+  const body: Question[] =
+    opts.composition && opts.composition.length > 0
+      ? opts.composition.flatMap((slot) =>
+          draw(candidates.filter((q) => q.tags.includes(slot.tag)), slot.count),
+        )
+      : draw(candidates, opts.count)
+
+  // El cos es barreja abans de treure la reserva perquè demanar reserva no
+  // pugui reordenar la prova: amb la mateixa llavor, les preguntes del cos
+  // surten en el mateix ordre hi hagi reserva o no.
+  const bodyShuffled = shuffle(body, rng)
 
   // Si el banc no dona per a tot, les reserves són el primer que se sacrifica:
   // el cos principal de la prova té prioritat sobre unes preguntes que, per
   // defecte, ni tan sols compten.
-  const bodySize = Math.min(out.length, opts.count)
-  const body = shuffle(out.slice(0, bodySize), rng)
-  const reserve = shuffle(out.slice(bodySize), rng)
-  return [...body, ...reserve]
+  const reserve = body.length < opts.count ? [] : draw(candidates, reserveCount)
+
+  return [...bodyShuffled, ...shuffle(reserve, rng)]
 }

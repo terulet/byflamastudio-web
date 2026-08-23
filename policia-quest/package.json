@@ -16,6 +16,7 @@
     "content:validate": "tsx scripts/validate-content.ts",
     "content:report": "tsx scripts/report-coverage.ts",
     "sources:download": "tsx scripts/download-sources.ts",
+    "sources:adopt": "tsx scripts/adopt-sources.ts",
     "sources:extract": "tsx scripts/extract-sources.ts",
     "exams:import": "tsx scripts/import-roses-exams.ts",
     "check": "npm run typecheck && npm run content:validate && npm run test && npm run build"

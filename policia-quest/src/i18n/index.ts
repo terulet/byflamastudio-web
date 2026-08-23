@@ -179,6 +179,13 @@ const ca = {
     reserve: 'preguntes de reserva',
     reserveOne: 'pregunta de reserva',
     reserveShort: 'R',
+    blockedTitle: 'Simulacre no disponible',
+    blockedWhy:
+      'Les bases fixen la composició d’aquesta prova i el banc encara no la pot cobrir. Oferir-la amb una altra barreja seria ensenyar-te un format que no és el de l’examen.',
+    blockedQuota: '{label}: {available} de {needed} disponibles',
+    blockedComplete:
+      'El simulacre complet inclou aquesta prova, de manera que tampoc es pot muntar.',
+    blockedFallback: 'Mentrestant, practica les preguntes que sí que hi ha',
     reserveBadge: 'Pregunta de reserva',
     reserveNote:
       'Es contesta igual que les altres, però no compta per a la nota mentre el tribunal no anul·li cap pregunta.',
@@ -497,6 +504,13 @@ const es: Dict = {
     reserve: 'preguntas de reserva',
     reserveOne: 'pregunta de reserva',
     reserveShort: 'R',
+    blockedTitle: 'Simulacro no disponible',
+    blockedWhy:
+      'Las bases fijan la composición de esta prueba y el banco todavía no puede cubrirla. Ofrecerla con otra mezcla sería enseñarte un formato que no es el del examen.',
+    blockedQuota: '{label}: {available} de {needed} disponibles',
+    blockedComplete:
+      'El simulacro completo incluye esta prueba, así que tampoco se puede montar.',
+    blockedFallback: 'Mientras tanto, practica las preguntas que sí hay',
     reserveBadge: 'Pregunta de reserva',
     reserveNote:
       'Se contesta igual que las demás, pero no cuenta para la nota mientras el tribunal no anule ninguna pregunta.',

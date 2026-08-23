@@ -340,10 +340,31 @@ export const ExamBlueprint = z.object({
   durationMinutes: z.number().int().positive(),
   reserveCount: z.number().int().nonnegative(),
   scoring: ScoringRules,
-  /** Composició per categoria, si la convocatòria la fixa. */
+  /**
+   * Composició per categoria, si la convocatòria la fixa.
+   *
+   * No és decoració: `buildExamPaper` cobreix cada quota per separat i
+   * `examAvailability` bloqueja la prova si el banc no pot cobrir-ne alguna.
+   * Els comptadors han de sumar exactament `questionCount`.
+   */
   composition: z
     .array(z.object({ label: Bilingual, tag: Slug, count: z.number().int().positive() }))
     .optional(),
+  /**
+   * Estat de contingut declarat del plànol.
+   *
+   *  - `ready`: el banc pot muntar la prova tal com la descriuen les bases.
+   *  - `blocked-missing-content`: no pot, i és una limitació **coneguda i
+   *    declarada**, amb el motiu a `contentNote`.
+   *
+   * La validació ho comprova en tots dos sentits: un plànol que no es pot
+   * muntar sense declarar-ho trenca el build, i un plànol declarat bloquejat
+   * que ja es podria muntar també. Així el dèficit no es pot amagar ni quedar
+   * enganxat quan algú l'arregla.
+   */
+  contentStatus: z.enum(['ready', 'blocked-missing-content']).default('ready'),
+  /** Obligatori si `contentStatus` és `blocked-missing-content`. */
+  contentNote: z.string().optional(),
   sourceId: Slug,
 })
 export type ExamBlueprint = z.infer<typeof ExamBlueprint>

@@ -11,12 +11,16 @@ import { ROSES_PACK } from '../../content/municipalities/roses/index.ts'
 import { Lesson, Question, SourceManifest, Syllabus } from '../../content/schemas/index.ts'
 import manifestJson from '../../sources/source-manifest.json' with { type: 'json' }
 import { dedupeHash } from '../../scripts/lib/dedupe.ts'
+import { examAvailability } from '../../src/engines/availability.ts'
 import { CONEIXEMENTS_SCORING, CULTURA_GENERAL_SCORING } from '../../src/engines/scoring.ts'
 
 const { syllabus, questions, lessons, exams, sources, blueprints, currentAffairs } = ROSES_PACK
 const active = questions.filter((q) => q.status === 'active')
 const sourceIds = new Set(sources.map((s) => s.sourceId))
 const topicIds = new Set(syllabus.topics.map((t) => t.topicId))
+
+/** El contingut dinàmic caduca: la capacitat es mesura contra el dia d'avui. */
+const TODAY = new Date().toISOString().slice(0, 10)
 
 describe('temari', () => {
   it('té exactament 40 temes', () => {
@@ -302,17 +306,65 @@ describe('plànols de simulacre', () => {
     expect((cp?.questionCount ?? 0) * (cp?.scoring.correctMilli ?? 0)).toBe(cp?.scoring.maxScoreMilli)
   })
 
-  it('el banc pot omplir tots els simulacres', () => {
+  it('la composició declarada suma exactament la prova', () => {
     for (const bp of blueprints) {
-      const available = active.filter((q) => q.track === bp.track).length
-      // Amb reserva inclosa: el quadernet real en porta i el simulacre també.
-      expect(
-        available,
-        `${bp.blueprintId} necessita ${bp.questionCount} + ${bp.reserveCount} de reserva`,
-      ).toBeGreaterThanOrEqual(
-        bp.questionCount + bp.reserveCount,
+      if (!bp.composition || bp.composition.length === 0) continue
+      const declared = bp.composition.reduce((sum, slot) => sum + slot.count, 0)
+      expect(declared, `${bp.blueprintId}: la composició ha de sumar la prova`).toBe(
+        bp.questionCount,
       )
     }
+  })
+
+  /*
+   * La regla que impedeix que això torni a passar desapercebut.
+   *
+   * Un plànol només es pot oferir si el banc pot muntar la prova que descriuen
+   * les bases. Si no pot, el plànol ho ha de declarar amb el motiu. I si ja pot
+   * i encara ho declara, el marcador s'ha quedat enganxat: també falla. Els dos
+   * sentits, perquè amagar el dèficit i oblidar-se de treure'l quan s'arregla
+   * són el mateix error.
+   */
+  it('cap plànol pot amagar que el banc no el pot muntar', () => {
+    for (const bp of blueprints) {
+      const status = examAvailability(questions, bp, TODAY)
+      const declaredBlocked = bp.contentStatus === 'blocked-missing-content'
+
+      if (!status.ok) {
+        expect(
+          declaredBlocked,
+          `${bp.blueprintId} no es pot muntar i no ho declara: ${JSON.stringify(status.quotas)}`,
+        ).toBe(true)
+        expect(bp.contentNote, `${bp.blueprintId} ha de dir per què està bloquejat`).toBeTruthy()
+      } else {
+        expect(
+          declaredBlocked,
+          `${bp.blueprintId} ja es pot muntar: treu el marcador de bloqueig`,
+        ).toBe(false)
+      }
+    }
+  })
+
+  it('el banc pot omplir els simulacres que no estan bloquejats', () => {
+    for (const bp of blueprints) {
+      const status = examAvailability(questions, bp, TODAY)
+      if (!status.ok) continue
+      expect(
+        status.missingBody,
+        `${bp.blueprintId} necessita ${bp.questionCount} preguntes`,
+      ).toBe(0)
+    }
+  })
+
+  it('avui el simulacre de cultura general està bloquejat per manca d’actualitat', () => {
+    // Aquesta versió no té cap pregunta d'actualitat: cap font periodística era
+    // accessible. El test documenta l'estat real i cau quan s'arregli, que és
+    // exactament quan cal revisar-lo.
+    const cg = blueprints.find((b) => b.blueprintId === 'roses-cultura-general')!
+    const status = examAvailability(questions, cg, TODAY)
+    expect(status.ok).toBe(false)
+    expect(status.quotas.find((q) => q.tag === 'actualitat')?.available).toBe(0)
+    expect(cg.contentNote).toMatch(/actualitat/i)
   })
 })
 

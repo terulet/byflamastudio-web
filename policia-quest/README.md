@@ -83,13 +83,39 @@ Obre la URL que imprimeix Vite (per defecte `http://localhost:5173`).
 | `npm run test:a11y` | Només l'auditoria d'accessibilitat (axe-core, WCAG A/AA) |
 | `npm run content:validate` | Valida el contingut i falla si trenca cap invariant |
 | `npm run content:report` | Genera `artifacts/coverage-report.md` i `SOURCES.md` |
-| `npm run sources:download` | Baixa les fonts oficials a `sources/cache/` |
+| `npm run sources:download` | Baixa les fonts oficials a `sources/cache/` (necessita xarxa) |
+| `npm run sources:adopt` | Adopta fonts deixades a mà a `sources/inbox/` (sense xarxa) |
 | `npm run sources:extract` | Converteix les còpies en text a `sources/extracted/` |
 | `npm run exams:import` | Genera esborranys de transcripció dels exàmens oficials |
 | **`npm run check`** | **Tipus + contingut + tests + build. La comanda de porta** |
 
 `npm run test:e2e` necessita el build fet i aixeca el servidor de previsualització
 per si mateix.
+
+### Rescat de fonts sense xarxa
+
+`sources:download` necessita accés a `roses.cat`, `ssl4.ddgi.cat`, `boe.es` i
+`portaljuridic.gencat.cat`. Quan l'entorn no en té —el cas d'aquesta primera
+versió— el camí és entregar les còpies a mà:
+
+```bash
+npm run sources:adopt -- --list     # què falta, amb la URL oficial de cadascuna
+# deseu cada document a sources/inbox/<sourceId>.pdf
+npm run sources:adopt -- --dry-run  # comprova sense tocar res
+npm run sources:adopt               # copia, calcula el SHA-256 i actualitza el manifest
+npm run sources:extract             # converteix les còpies en text cercable
+npm run exams:import                # esborranys de transcripció dels quadernets
+```
+
+El nom del fitxer, sense extensió, ha de ser el `sourceId` del manifest.
+L'script no endevina a quina font pertany un document: un nom que no
+correspon a cap identificador es reporta i no s'adopta. També rebutja el
+parany habitual —un PDF que en realitat és una pàgina d'error o de sessió
+caducada— comprovant que comenci per `%PDF`.
+
+Adoptar una font vol dir que ja n'hi ha una còpia local verificable pel seu
+hash. **No** passa cap referència a `verified`: contrastar les cites contra el
+text consolidat segueix sent una decisió de qui les comprova.
 
 ### Accessibilitat
 

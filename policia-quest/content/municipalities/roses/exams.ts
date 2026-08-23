@@ -33,6 +33,13 @@ export const ROSES_BLUEPRINTS: ExamBlueprint[] = [
       { label: { ca: 'Cultura general', es: 'Cultura general' }, tag: 'cultura-general', count: 10 },
       { label: { ca: 'Actualitat social, cultural i política', es: 'Actualidad social, cultural y política' }, tag: 'actualitat', count: 10 },
     ],
+    contentStatus: 'blocked-missing-content',
+    contentNote:
+      'El paquet d’actualitat és buit: cap font periodística ni institucional era accessible des de ' +
+      'l’entorn de construcció (2026-08-23). Sense 10 preguntes d’actualitat vigents no es pot muntar ' +
+      'la prova que descriuen les bases, i muntar-ne 20 de cultura general seria ensenyar un format ' +
+      'fals. Per desbloquejar-lo: omplir content/municipalities/roses/current-affairs/ amb preguntes ' +
+      'etiquetades `actualitat`, amb dynamic: true i reviewBy, i treure aquest marcador.',
     sourceId: 'roses-bases-2026-interins',
   },
   {
@@ -46,6 +53,7 @@ export const ROSES_BLUEPRINTS: ExamBlueprint[] = [
     durationMinutes: 60,
     reserveCount: 2,
     scoring: CONEIXEMENTS_SCORING,
+    contentStatus: 'ready',
     sourceId: 'roses-bases-2026-interins',
   },
 ]

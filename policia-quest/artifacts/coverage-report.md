@@ -178,10 +178,19 @@ Generat el 2026-08-23 · versió de contingut 1
 
 ## Capacitat dels simulacres
 
-| Simulacre | Preguntes requerides (amb reserva) | Disponibles al banc | Estat |
-| --- | --- | --- | --- |
-| Simulacre de cultura general | 21 | 22 | ✓ es pot muntar |
-| Simulacre de coneixements professionals | 42 | 201 | ✓ es pot muntar |
+Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè pot muntar **la prova que descriuen les bases**. Cada quota es compta a part: que en sobrin d’una no compensa que en faltin d’una altra.
+
+| Simulacre | Quota | Necessàries | Vigents al banc | Estat |
+| --- | --- | --- | --- | --- |
+| Simulacre de cultura general | Cultura general | 10 | 22 | ✓ |
+| Simulacre de cultura general | Actualitat social, cultural i política | 10 | 0 | ✗ en falten 10 |
+| Simulacre de cultura general | Reserva | 1 | 0 | ⚠ sense reserva |
+| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 201 | ✓ |
+| Simulacre de coneixements professionals | Reserva | 2 | 2 | ✓ |
+
+**Simulacre de cultura general: bloquejat.** El paquet d’actualitat és buit: cap font periodística ni institucional era accessible des de l’entorn de construcció (2026-08-23). Sense 10 preguntes d’actualitat vigents no es pot muntar la prova que descriuen les bases, i muntar-ne 20 de cultura general seria ensenyar un format fals. Per desbloquejar-lo: omplir content/municipalities/roses/current-affairs/ amb preguntes etiquetades `actualitat`, amb dynamic: true i reviewBy, i treure aquest marcador.
+
+**Simulacre complet: bloquejat**, perquè inclou Simulacre de cultura general.
 
 ## Què necessita revisió humana
 
