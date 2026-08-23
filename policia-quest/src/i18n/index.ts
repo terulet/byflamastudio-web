@@ -183,8 +183,7 @@ const ca = {
     blockedWhy:
       'Les bases fixen la composició d’aquesta prova i el banc encara no la pot cobrir. Oferir-la amb una altra barreja seria ensenyar-te un format que no és el de l’examen.',
     blockedQuota: '{label}: {available} de {needed} disponibles',
-    blockedComplete:
-      'El simulacre complet inclou aquesta prova, de manera que tampoc es pot muntar.',
+    blockedComplete: 'El simulacre complet tampoc es pot muntar, perquè inclou:',
     blockedFallback: 'Mentrestant, practica les preguntes que sí que hi ha',
     reserveBadge: 'Pregunta de reserva',
     reserveNote:
@@ -508,8 +507,7 @@ const es: Dict = {
     blockedWhy:
       'Las bases fijan la composición de esta prueba y el banco todavía no puede cubrirla. Ofrecerla con otra mezcla sería enseñarte un formato que no es el del examen.',
     blockedQuota: '{label}: {available} de {needed} disponibles',
-    blockedComplete:
-      'El simulacro completo incluye esta prueba, así que tampoco se puede montar.',
+    blockedComplete: 'El simulacro completo tampoco se puede montar, porque incluye:',
     blockedFallback: 'Mientras tanto, practica las preguntas que sí hay',
     reserveBadge: 'Pregunta de reserva',
     reserveNote:

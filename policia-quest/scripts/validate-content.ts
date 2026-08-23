@@ -143,7 +143,17 @@ assertUnique('composicions', ROSES_PACK.compositions.map((c) => c.compositionId)
 /* ---------------- 3, 4, 7, 8. Preguntes ---------------- */
 
 const sourceIds = new Set(ROSES_PACK.sources.map((s) => s.sourceId))
-const topicIds = new Set(topics.map((t) => t.topicId))
+/*
+ * Contenidor de les preguntes d'examen oficial.
+ *
+ * El tribunal no etiqueta les preguntes per tema. Assignar-los-ne un seria
+ * afirmar el que el quadernet no diu, així que van a un contenidor propi que
+ * no forma part del temari: no surt a la ruta dels 40 temes ni compta per al
+ * domini per tema.
+ */
+const OFFICIAL_CONTAINER_TOPIC = 'roses-examen-oficial'
+
+const topicIds = new Set([...topics.map((t) => t.topicId), OFFICIAL_CONTAINER_TOPIC])
 
 for (const q of ROSES_PACK.questions) {
   if (!topicIds.has(q.topicId)) {
@@ -397,14 +407,31 @@ for (const composition of ROSES_PACK.compositions) {
 
 /* ---------------- 10. Deduplicació ---------------- */
 
-const byHash = new Map<string, string>()
+/*
+ * Dos enunciats idèntics són un error quan els hem escrit nosaltres: vol dir
+ * que hem duplicat feina i que l'estudiant veurà la mateixa pregunta dues
+ * vegades com si fossin diferents.
+ *
+ * Entre **exàmens oficials** no ho és. Que el tribunal repetís una pregunta el
+ * 2025 i el 2026 és un fet del document, i cadascuna és un registre històric
+ * propi amb la seva data i la seva convocatòria. Esborrar-ne una seria perdre
+ * informació que a més és útil: aquesta pregunta ha caigut dues vegades.
+ */
+const byHash = new Map<string, { id: string; official: boolean }>()
 for (const q of ROSES_PACK.questions) {
   const hash = dedupeHash(q.stem)
   const previous = byHash.get(hash)
+  const official = q.origin === 'official'
   if (previous) {
-    fail(`preguntes ${previous} i ${q.questionId} tenen el mateix enunciat normalitzat`)
+    if (previous.official && official) {
+      warn(
+        `${previous.id} i ${q.questionId}: el tribunal va repetir aquesta pregunta en dues convocatòries`,
+      )
+    } else {
+      fail(`preguntes ${previous.id} i ${q.questionId} tenen el mateix enunciat normalitzat`)
+    }
   }
-  byHash.set(hash, q.questionId)
+  byHash.set(hash, { id: q.questionId, official })
 }
 
 // Similitud alta entre enunciats del mateix tema (avís, no error).

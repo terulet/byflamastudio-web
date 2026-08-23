@@ -10,10 +10,6 @@
   ],
   "sources": [
     {
-      "consultedAt": "2026-08-23",
-      "status": "vigent",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
       "sourceId": "roses-bases-2026-interins",
       "title": "Bases del procés selectiu de 7 places d’agent interí de la Policia Local de Roses i borsa de treball 2026 (exp. 2025/010339)",
       "issuer": "Ajuntament de Roses — BOP de Girona núm. 5, edicte 12181",
@@ -21,13 +17,14 @@
       "kind": "bases-convocatoria",
       "scope": "roses",
       "publishedAt": "2026-01-09",
-      "notes": "Font canònica del temari de 40 temes i del format de les proves emprat per Policia Quest."
-    },
-    {
       "consultedAt": "2026-08-23",
       "status": "vigent",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "notes": "Font canònica del temari de 40 temes i del format de les proves emprat per Policia Quest.",
+      "sha256": "2395501364c9a82d072a5293ab541aa245d9083226f22b2a033e1224bc86bab2",
+      "cacheFile": "roses-bases-2026-interins.pdf"
+    },
+    {
       "sourceId": "roses-bases-2025-propietat",
       "title": "Bases del procés selectiu d’accés en propietat a places d’agent de la Policia Local de Roses (exp. 2025/005279)",
       "issuer": "Ajuntament de Roses — BOP de Girona núm. 136, edicte 6395",
@@ -35,453 +32,461 @@
       "kind": "bases-convocatoria",
       "scope": "roses",
       "publishedAt": "2025-07-17",
-      "notes": "Font de contrast. El temari és pràcticament idèntic al de 2026; canvia l’ordre dels temes de règim disciplinari i pressupostos."
-    },
-    {
       "consultedAt": "2026-08-23",
       "status": "vigent",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "notes": "Font de contrast. El temari és pràcticament idèntic al de 2026; canvia l’ordre dels temes de règim disciplinari i pressupostos.",
+      "sha256": "888b1f83215e5a3b4ca779e82dc17277b2b065f0474a0668e977380291877b3f",
+      "cacheFile": "roses-bases-2025-propietat.pdf"
+    },
+    {
       "sourceId": "roses-arxiu-examens",
       "title": "Arxiu d’exàmens de proves d’oposició de l’Ajuntament de Roses",
       "issuer": "Ajuntament de Roses",
       "url": "https://www.roses.cat/ajuntament/informacio-administrativa/oferta-publica-docupacio/examens-1",
       "kind": "pagina-institucional",
       "scope": "roses",
+      "consultedAt": "2026-08-23",
+      "status": "vigent",
+      "fetchStatus": "pending-download",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
       "notes": "Índex on es publiquen els quadernets i les respostes oficials de cada convocatòria."
     },
     {
-      "consultedAt": "2026-08-23",
-      "status": "historica",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
       "sourceId": "roses-examen-2025-propietat-cg",
       "title": "Agents Policia Local en propietat 2025 — prova C1 de cultura general (amb respostes)",
       "issuer": "Ajuntament de Roses — tribunal qualificador",
       "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-en-propietat-2025_c1_prova-cultura-general_03122025-1",
       "kind": "examen-oficial",
       "scope": "roses",
-      "publishedAt": "2025-12-03"
-    },
-    {
+      "publishedAt": "2025-12-03",
       "consultedAt": "2026-08-23",
       "status": "historica",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "sha256": "e2942172687d6b164e4cff935e56bae63388447822c1f764d71356f3b1ef9928",
+      "cacheFile": "roses-examen-2025-propietat-cg.pdf"
+    },
+    {
       "sourceId": "roses-examen-2025-propietat-cp",
       "title": "Agents Policia Local en propietat 2025 — prova C1 de coneixements professionals (amb respostes)",
       "issuer": "Ajuntament de Roses — tribunal qualificador",
       "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-en-propietat-2025_c1_prova-coneixements-professionals_03122025",
       "kind": "examen-oficial",
       "scope": "roses",
-      "publishedAt": "2025-12-03"
-    },
-    {
+      "publishedAt": "2025-12-03",
       "consultedAt": "2026-08-23",
       "status": "historica",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "sha256": "3414c10937642281b9c9b1081665ce559759de6020e2ec7d743f082f9f968013",
+      "cacheFile": "roses-examen-2025-propietat-cp.pdf"
+    },
+    {
       "sourceId": "roses-examen-2026-interins-cg",
       "title": "Agents Policia Local interins 2026 — prova C1 de cultura general (amb respostes)",
       "issuer": "Ajuntament de Roses — tribunal qualificador",
       "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-interina-2026_c1_prova-cultura-general_15042026",
       "kind": "examen-oficial",
       "scope": "roses",
-      "publishedAt": "2026-04-15"
-    },
-    {
+      "publishedAt": "2026-04-15",
       "consultedAt": "2026-08-23",
       "status": "historica",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "sha256": "439b74ab789028429c5ce0331b3d9f61a8466d49b54e7c5608e93a71030ca348",
+      "cacheFile": "roses-examen-2026-interins-cg.pdf"
+    },
+    {
       "sourceId": "roses-examen-2026-interins-cp",
       "title": "Agents Policia Local interins 2026 — prova C1 de coneixements professionals (amb respostes)",
       "issuer": "Ajuntament de Roses — tribunal qualificador",
       "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-interins-2026_c1_prova-coneixements-professionals_15042026",
       "kind": "examen-oficial",
       "scope": "roses",
-      "publishedAt": "2026-04-15"
+      "publishedAt": "2026-04-15",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "sha256": "051e798206e0bb66e9f42ca98c9ac6c09b33fef2aa3232858c9dd074daf5f11e",
+      "cacheFile": "roses-examen-2026-interins-cp.pdf"
     },
     {
-      "consultedAt": "2026-08-23",
-      "status": "vigent",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
       "sourceId": "roses-ordenanca-circulacio",
       "title": "Ordenança municipal de circulació de Roses",
       "issuer": "Ajuntament de Roses",
-      "url": "https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/331",
+      "url": "https://www.roses.cat/la-vila/seguretat-ciutadana/fitxers/pdfs/12OrdenanadecirculacideRoses.pdf",
       "kind": "ordenanca",
       "scope": "roses",
-      "notes": "Cal comprovar si hi ha text refós o modificacions posteriors publicades al BOP."
-    },
-    {
       "consultedAt": "2026-08-23",
       "status": "vigent",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "notes": "Cal comprovar si hi ha text refós o modificacions posteriors publicades al BOP. URL d’índex anterior: https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/331. Aprovada el 27-09-2010; publicada al BOP de Girona núm. 236 el 13-12-2010. Cal llegir-la amb la modificació de 2021 (roses-ordenanca-circulacio-mod-2021).",
+      "sha256": "de566d2eec2d5b145c3c1ccd44d5b9c3e0f72e44f2cc89ab71451d2d86396a29",
+      "cacheFile": "roses-ordenanca-circulacio.pdf"
+    },
+    {
       "sourceId": "roses-ordenanca-convivencia",
       "title": "Ordenança de mesures per fomentar i garantir la convivència ciutadana a Roses",
       "issuer": "Ajuntament de Roses",
-      "url": "https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/ordenanca-de-mesures-per-fomentar-i-garantir-la-convivencia-ciutadana",
+      "url": "https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/ordenanca-de-mesures-per-fomentar-i-garantir-la-convivencia-ciutadana/at_download/textedicte",
       "kind": "ordenanca",
-      "scope": "roses"
-    },
-    {
+      "scope": "roses",
       "consultedAt": "2026-08-23",
       "status": "vigent",
-      "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchStatus": "downloaded",
+      "sha256": "2edacdd89ff6874ba05fac8ff0d64e75937c0929c4b4576f5c13c1e4dbcefe01",
+      "cacheFile": "roses-ordenanca-convivencia.pdf",
+      "notes": "URL d’índex anterior: https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/ordenanca-de-mesures-per-fomentar-i-garantir-la-convivencia-ciutadana. Cal llegir-la amb la modificació de 2021 (roses-ordenanca-convivencia-mod-2021)."
+    },
+    {
       "sourceId": "roses-ordenances-index",
       "title": "Índex general d’ordenances i bans de Roses",
       "issuer": "Ajuntament de Roses",
       "url": "https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1",
       "kind": "pagina-institucional",
-      "scope": "roses"
-    },
-    {
+      "scope": "roses",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "roses-web-municipi",
       "title": "Web municipal de Roses — informació del municipi, barris, serveis i equipaments",
       "issuer": "Ajuntament de Roses",
       "url": "https://www.roses.cat/",
       "kind": "pagina-institucional",
       "scope": "roses",
-      "notes": "Font per al tema 31 (coneixements generals de Roses). Contingut canviant: revisar periòdicament."
-    },
-    {
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
       "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "notes": "Font per al tema 31 (coneixements generals de Roses). Contingut canviant: revisar periòdicament."
+    },
+    {
       "sourceId": "ce-1978",
       "title": "Constitución Española de 1978 (texto consolidado)",
       "issuer": "BOE",
       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
       "kind": "constitucio",
       "scope": "estatal",
-      "publishedAt": "1978-12-29"
-    },
-    {
+      "publishedAt": "1978-12-29",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-6-2006-eac",
       "title": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/2006/07/19/6/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "2006-07-20"
-    },
-    {
+      "publishedAt": "2006-07-20",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-7-1985-lrbrl",
       "title": "Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/1985/04/02/7/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "1985-04-03"
-    },
-    {
+      "publishedAt": "1985-04-03",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rdleg-5-2015-trebep",
       "title": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido del Estatuto Básico del Empleado Público",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rdlg/2015/10/30/5/con",
       "kind": "reial-decret-legislatiu",
       "scope": "estatal",
-      "publishedAt": "2015-10-31"
-    },
-    {
+      "publishedAt": "2015-10-31",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-53-1984-incompat",
       "title": "Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/1984/12/26/53/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "1985-01-04"
-    },
-    {
+      "publishedAt": "1985-01-04",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rdleg-2-2004-trlrhl",
       "title": "Real Decreto Legislativo 2/2004, de 5 de marzo, texto refundido de la Ley Reguladora de las Haciendas Locales",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rdlg/2004/03/05/2/con",
       "kind": "reial-decret-legislatiu",
       "scope": "estatal",
-      "publishedAt": "2004-03-09"
-    },
-    {
+      "publishedAt": "2004-03-09",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-39-2015-pac",
       "title": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/2015/10/01/39/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "2015-10-02"
-    },
-    {
+      "publishedAt": "2015-10-02",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-40-2015-rjsp",
       "title": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/2015/10/01/40/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "2015-10-02"
-    },
-    {
+      "publishedAt": "2015-10-02",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-19-2013-transp",
       "title": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/2013/12/09/19/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "2013-12-10"
-    },
-    {
+      "publishedAt": "2013-12-10",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-3-2018-lopdgdd",
       "title": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/2018/12/05/3/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "2018-12-06"
-    },
-    {
+      "publishedAt": "2018-12-06",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-2-1986-fcs",
       "title": "Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/1986/03/13/2/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "1986-03-14"
-    },
-    {
+      "publishedAt": "1986-03-14",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-4-2015-psc",
       "title": "Ley Orgánica 4/2015, de 30 de marzo, de protección de la seguridad ciudadana",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/2015/03/30/4/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "2015-03-31"
-    },
-    {
+      "publishedAt": "2015-03-31",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-10-1995-cp",
       "title": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal (texto consolidado)",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/1995/11/23/10/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "1995-11-24"
-    },
-    {
+      "publishedAt": "1995-11-24",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-1-2015-reforma-cp",
       "title": "Ley Orgánica 1/2015, de 30 de marzo, por la que se modifica la LO 10/1995 del Código Penal",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/2015/03/30/1/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "2015-03-31"
-    },
-    {
+      "publishedAt": "2015-03-31",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lecrim-1882",
       "title": "Real Decreto de 14 de septiembre de 1882, Ley de Enjuiciamiento Criminal (texto consolidado)",
       "issuer": "BOE",
       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "1882-09-17"
-    },
-    {
+      "publishedAt": "1882-09-17",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-6-1984-habeas",
       "title": "Ley Orgánica 6/1984, de 24 de mayo, reguladora del procedimiento de Habeas Corpus",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/1984/05/24/6/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "1984-05-26"
-    },
-    {
+      "publishedAt": "1984-05-26",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rdleg-6-2015-ltsv",
       "title": "Real Decreto Legislativo 6/2015, de 30 de octubre, texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rdlg/2015/10/30/6/con",
       "kind": "reial-decret-legislatiu",
       "scope": "estatal",
-      "publishedAt": "2015-10-31"
-    },
-    {
+      "publishedAt": "2015-10-31",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rd-1428-2003-rgc",
       "title": "Real Decreto 1428/2003, de 21 de noviembre, Reglamento General de Circulación",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rd/2003/11/21/1428/con",
       "kind": "reial-decret",
       "scope": "estatal",
-      "publishedAt": "2003-12-23"
-    },
-    {
+      "publishedAt": "2003-12-23",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rd-818-2009-rgcond",
       "title": "Real Decreto 818/2009, de 8 de mayo, Reglamento General de Conductores",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rd/2009/05/08/818/con",
       "kind": "reial-decret",
       "scope": "estatal",
-      "publishedAt": "2009-06-08"
-    },
-    {
+      "publishedAt": "2009-06-08",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rd-2822-1998-rgv",
       "title": "Real Decreto 2822/1998, de 23 de diciembre, Reglamento General de Vehículos",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rd/1998/12/23/2822/con",
       "kind": "reial-decret",
       "scope": "estatal",
-      "publishedAt": "1999-01-26"
-    },
-    {
+      "publishedAt": "1999-01-26",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-50-1999-app",
       "title": "Ley 50/1999, de 23 de diciembre, sobre el Régimen Jurídico de la Tenencia de Animales Potencialmente Peligrosos",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/1999/12/23/50/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "1999-12-24"
-    },
-    {
+      "publishedAt": "1999-12-24",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rd-287-2002-app",
       "title": "Real Decreto 287/2002, de 22 de marzo, que desarrolla la Ley 50/1999 sobre animales potencialmente peligrosos",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/rd/2002/03/22/287/con",
       "kind": "reial-decret",
       "scope": "estatal",
-      "publishedAt": "2002-03-27"
-    },
-    {
+      "publishedAt": "2002-03-27",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-27-2003-ordre-proteccio",
       "title": "Ley 27/2003, de 31 de julio, reguladora de la Orden de protección de las víctimas de la violencia doméstica",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/l/2003/07/31/27/con",
       "kind": "llei",
       "scope": "estatal",
-      "publishedAt": "2003-08-01"
-    },
-    {
+      "publishedAt": "2003-08-01",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-3-2007-igualtat",
       "title": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/2007/03/22/3/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "2007-03-23"
-    },
-    {
+      "publishedAt": "2007-03-23",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "lo-5-2000-menors",
       "title": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores",
       "issuer": "BOE",
       "url": "https://www.boe.es/eli/es/lo/2000/01/12/5/con",
       "kind": "llei-organica",
       "scope": "estatal",
-      "publishedAt": "2000-01-13"
-    },
-    {
+      "publishedAt": "2000-01-13",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-16-1991-policies-locals",
       "title": "Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya",
       "issuer": "Portal Jurídic de Catalunya",
@@ -489,136 +494,140 @@
       "kind": "llei",
       "scope": "catalunya",
       "publishedAt": "1991-07-19",
-      "notes": "Modificada, entre altres, per la Llei 3/2023. Cal treballar sempre sobre el text consolidat."
-    },
-    {
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
       "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "notes": "Modificada, entre altres, per la Llei 3/2023. Cal treballar sempre sobre el text consolidat."
+    },
+    {
       "sourceId": "llei-4-2003-seguretat-publica",
       "title": "Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Catalunya",
       "issuer": "Portal Jurídic de Catalunya",
       "url": "https://portaljuridic.gencat.cat/eli/es-ct/l/2003/04/07/4",
       "kind": "llei",
       "scope": "catalunya",
-      "publishedAt": "2003-04-24"
-    },
-    {
+      "publishedAt": "2003-04-24",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "decret-179-2015-disciplinari",
       "title": "Decret 179/2015, de 4 d’agost, del Reglament del procediment del règim disciplinari aplicable als cossos de policia local de Catalunya",
       "issuer": "Portal Jurídic de Catalunya",
       "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2015/08/04/179",
       "kind": "decret",
       "scope": "catalunya",
-      "publishedAt": "2015-08-06"
-    },
-    {
+      "publishedAt": "2015-08-06",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "decret-151-1998-juntes",
       "title": "Decret 151/1998, de 23 de juny, de regulació de les juntes locals de seguretat",
       "issuer": "Portal Jurídic de Catalunya",
       "url": "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=194957",
       "kind": "decret",
       "scope": "catalunya",
-      "publishedAt": "1998-06-30"
-    },
-    {
+      "publishedAt": "1998-06-30",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "llei-19-2014-transp-cat",
       "title": "Llei 19/2014, del 29 de desembre, de transparència, accés a la informació pública i bon govern",
       "issuer": "Portal Jurídic de Catalunya",
       "url": "https://portaljuridic.gencat.cat/eli/es-ct/l/2014/12/29/19",
       "kind": "llei",
       "scope": "catalunya",
-      "publishedAt": "2014-12-31"
-    },
-    {
+      "publishedAt": "2014-12-31",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "codi-etic-policia-catalunya",
       "title": "Codi d’ètica de la Policia de Catalunya (Acord GOV/25/2015, de 24 de febrer)",
       "issuer": "Departament d’Interior i Seguretat Pública",
       "url": "https://interior.gencat.cat/ca/arees_dactuacio/policia/comite-detica-de-la-policia-de-catalunya/codi-detica-de-la-policia-de-catalunya/",
       "kind": "codi-etic",
       "scope": "catalunya",
-      "publishedAt": "2015-02-26"
-    },
-    {
+      "publishedAt": "2015-02-26",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "codi-seguretat-catalunya",
       "title": "Codi de seguretat de Catalunya (recopilació normativa consolidada)",
       "issuer": "Portal Jurídic de Catalunya",
       "url": "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/",
       "kind": "pagina-institucional",
       "scope": "catalunya",
-      "notes": "Recull consolidat de tota la normativa de seguretat pública catalana. Punt d’entrada recomanat."
-    },
-    {
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
       "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "notes": "Recull consolidat de tota la normativa de seguretat pública catalana. Punt d’entrada recomanat."
+    },
+    {
       "sourceId": "agencia-ciberseguretat-catalunya",
       "title": "Agència de Ciberseguretat de Catalunya — web institucional",
       "issuer": "Generalitat de Catalunya",
       "url": "https://ciberseguretat.gencat.cat/",
       "kind": "pagina-institucional",
-      "scope": "catalunya"
-    },
-    {
+      "scope": "catalunya",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "carta-drets-ue",
       "title": "Carta de los Derechos Fundamentales de la Unión Europea (2012/C 326/02)",
       "issuer": "EUR-Lex",
       "url": "https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:12012P/TXT",
       "kind": "tractat",
       "scope": "ue",
-      "publishedAt": "2012-10-26"
-    },
-    {
+      "publishedAt": "2012-10-26",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "rgpd-2016-679",
       "title": "Reglament (UE) 2016/679, general de protecció de dades (RGPD)",
       "issuer": "EUR-Lex",
       "url": "https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:32016R0679",
       "kind": "llei",
       "scope": "ue",
-      "publishedAt": "2016-05-04"
-    },
-    {
+      "publishedAt": "2016-05-04",
       "consultedAt": "2026-08-23",
       "status": "vigent",
       "fetchStatus": "pending-download",
-      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
+    },
+    {
       "sourceId": "ddhh-1948",
       "title": "Declaració Universal dels Drets Humans (1948)",
       "issuer": "Nacions Unides",
       "url": "https://www.un.org/es/about-us/universal-declaration-of-human-rights",
       "kind": "tractat",
       "scope": "internacional",
-      "publishedAt": "1948-12-10"
+      "publishedAt": "1948-12-10",
+      "consultedAt": "2026-08-23",
+      "status": "vigent",
+      "fetchStatus": "pending-download",
+      "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés."
     },
     {
       "sourceId": "lo-7-2021-dades-policials",
@@ -674,6 +683,424 @@
       "fetchStatus": "pending-download",
       "fetchNote": "No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.",
       "notes": "Requisits municipals concrets de la llicència a Roses."
+    },
+    {
+      "sourceId": "roses-ordenanca-circulacio-mod-2021",
+      "title": "Modificació de l'Ordenança de circulació: PMR i VMP",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2021/42/20214201473.pdf",
+      "kind": "ordenanca",
+      "scope": "roses",
+      "consultedAt": "2026-08-23",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "notes": "Approved 2020-10-28; published BOP Girona 42 on 2021-03-03. Must be read together with the base ordinance.",
+      "sha256": "236beca3069706a6744f46e45ffc0775ef85b13d031d6554bccad598e44127e9",
+      "cacheFile": "roses-ordenanca-circulacio-mod-2021.pdf"
+    },
+    {
+      "sourceId": "roses-ordenanca-convivencia-mod-2021",
+      "title": "Modificació de l'Ordenança de convivència ciutadana",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2021/54/20215402049.pdf",
+      "kind": "ordenanca",
+      "scope": "roses",
+      "consultedAt": "2026-08-23",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "notes": "Approved definitively 2021-02-24; published BOP Girona 54 on 2021-03-19. Must be read together with the base ordinance.",
+      "sha256": "aa351ac82524e1bfc7c2e75004f7a54856c6e3becd6e443c734f5f6d2612724e",
+      "cacheFile": "roses-ordenanca-convivencia-mod-2021.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2025-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2025_C1_PROVA CULTURA GENERAL_16042025",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2025_c1_prova-cultura-general_16042025",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2025-04-16",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "P0: official corrected exam; import first. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "fd862f6f8b9162c67cfbc80cd30fd2411b1a4b7512671f5133b52330a3253e15",
+      "cacheFile": "roses-examen-2025-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2025-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2025_C1_PROVA CONEIXEMENTS PROFESSIONALS_16042025",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2025_c1_prova-coneixements-professionals_16042025",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2025-04-16",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "P0: official corrected exam; import first. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "9196974297976c8ca371c24103d7ec3ec57e05211e8ccb523fc96d3c5caeb8f1",
+      "cacheFile": "roses-examen-2025-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2024-propietat-cg",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2024_C1_PROVA CULTURA GENERAL_19062024",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2024_c1_prova-cultura-general_19062024",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2024-06-19",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "906bcf8c176ab94fa4997f2f118fc95441b269d1133348a295935e7fe4dffd7b",
+      "cacheFile": "roses-examen-2024-propietat-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2024-propietat-cp",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2024_C1_PROVA CONEIXEMENTS PROFESSIONALS_19062024",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2024_c1_prova-coneixements-professionals_19062024",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2024-06-19",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "c3fa9da9112f825536fb0ba672472e61c1d36783782c3b313c950b00335517f5",
+      "cacheFile": "roses-examen-2024-propietat-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2024-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2024_C1_PROVA CULTURA GENERAL_03042024",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2024_c1_prova-cultura-general_03042024",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2024-04-03",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "106adfc4a4c03f96739d9967305a8e5d4bd61b6bea83272dae6f08f0a93fc659",
+      "cacheFile": "roses-examen-2024-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2024-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2024_C1_PROVA CONEIXEMENTS PROFESSIONALS_03042024",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2024_c1_prova-coneixements-professionals_03042024",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2024-04-03",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "eed486e5f909cfc0cf317740b071276c6b8dea7e9dcfdf483ff6bad0eb97ffd9",
+      "cacheFile": "roses-examen-2024-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2023-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2023_C2_PROVA CULTURA GENERAL_27032023",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2023_c2_prova-cultura-general_27032023",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2023-03-27",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "4f3933072517474c3d005bc62beb70ea2392231f30a64af8bd5da79cba5a8f08",
+      "cacheFile": "roses-examen-2023-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2023-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2023_C2_ PROVA CONEIXEMENTS PROFESSIONALS_27032023",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2023_c2_-prova-coneixements-professionals_27032023",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2023-03-27",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "27fe60671f4894323fef2774068f5fa9b8c8b4cfd940a1e204a093881d516d02",
+      "cacheFile": "roses-examen-2023-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2022-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2022_C2_PROVA CULTURA GENERAL_19042022",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2022_c2_prova-cultura-general_19042022",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2022-04-19",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "3711c9eea880f8d7ea19bb0d30e8ba8142cfc04f3f24fff4834a2d48b8c77e2f",
+      "cacheFile": "roses-examen-2022-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2022-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2022_C2_PROVA CONEIXEMENTS PROFESSIONALS_19042022",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2022_c2_prova-coneixements-professionals_19042022",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2022-04-19",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "7ae700d69b6cc3d1baf4b3e74c3f093775c581b351a1452b3c1fa3ca0638d48b",
+      "cacheFile": "roses-examen-2022-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2021-propietat-cg",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2021_C2_PROVA CULTURA GENERAL_13042021",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2021_c2_prova-cultura-general_13042021",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2021-04-13",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "afc19c0b29dabfe598b7b539c6d24454416ee2155f99c30c506254f2a605bac3",
+      "cacheFile": "roses-examen-2021-propietat-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2021-propietat-cp",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2021_C2_PROVA CONEIXEMENTS PROFESSIONALS_13042021",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2021_c2_prova-coneixements-professionals_13042021",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2021-04-13",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "a3bf77c49f1deef484656bc18d354ff0598f25863a89ed506b677a0c05f09cb8",
+      "cacheFile": "roses-examen-2021-propietat-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2021-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2021_C2_PROVA CULTURA GENERAL_ 27042021",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2021_c2_prova-cultura-general_-27042021",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2021-04-27",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "e244cf366678cfe31cfefdce8b47c92e5824fb8de4b8738b32120745bb3ede40",
+      "cacheFile": "roses-examen-2021-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2021-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2021_C2_PROVA CONEIXEMENTS PROFESSIONALS_27042021",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2021_c2_prova-coneixements-professionals_27042021",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2021-04-27",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "935637aecf86b34ac0b5514501326916ead36b727095bc387d01f3032a867182",
+      "cacheFile": "roses-examen-2021-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2019-propietat-cg",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2019_C2_PROVA CULTURA GENERAL_25062019",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat_prova-teorica-de-cultura-general-25062019",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2019-06-25",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "6ea0888cfb8debd3ffa5e986c57103ea98061d6166584a255afd477d029acf67",
+      "cacheFile": "roses-examen-2019-propietat-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2019-propietat-cp",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2019_C2_PROVA CONEIXEMENTS PROFESSIONALS_25062019",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2019_c2_prova-coneixements-professionals_25062019",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2019-06-25",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "780bd976c7407ab6f8f7cb2c2e22f7c050f81c0da59b2881c42297650fee41b0",
+      "cacheFile": "roses-examen-2019-propietat-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2019-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2019_C2_PROVA CULTURA GENERAL_20052019",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins_prova-de-cultura-general-20052019",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2019-05-20",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "b4dfe580c8bdc963e165fddbc37d8fb877524866b6688911d44e4270e9251ba9",
+      "cacheFile": "roses-examen-2019-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2019-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2019_C2_PROVA CONEIXEMENTS PROFESSIONALS_ 20052019",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins_prova-teorica-20052019",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2019-05-20",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "0e174a07ceeaefbaaf547f9522248fd4359b9e2d219a61afb00f85ae322c6ed0",
+      "cacheFile": "roses-examen-2019-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2018-propietat-cg",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2018_C2_PROVA CULTURA GENERAL_31072018",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2018_c2_prova-cultura-general_31072018",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2018-07-31",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "609266e5fb12b40758f420d2c5e780762083b09f040605a88ae8f057b6f18272",
+      "cacheFile": "roses-examen-2018-propietat-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2018-propietat-cp",
+      "title": "AGENTS POLICIA LOCAL EN PROPIETAT 2018_C2_PROVA CONEIXEMENTS PROFESSIONALS_31072018",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2018_c2_prova-coneixements-professionals_31072018",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2018-07-31",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "8783cd953605f22adfee5126a6c905ff14400990ab973810f6d5ba5b7b09af3b",
+      "cacheFile": "roses-examen-2018-propietat-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2018-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2018_C2_PROVA CULTURA GENERAL_09052018",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2018_c2_prova-cultura-general_09052018",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2018-05-09",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "f39659028bf033a7c83f286f0b9962ca973b33034c9680cb65219cbac13254a9",
+      "cacheFile": "roses-examen-2018-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2018-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2018_C2_PROVA CONEIXEMENTS PROFESSIONALS_09052018",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2018_c2_prova-coneixements-professionals_09052018",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2018-05-09",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "000063e108a71087dc4e208425e3312dfd3f14cb8edbdac9e7489fd43943e123",
+      "cacheFile": "roses-examen-2018-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2017-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2017_C2_PROVA CULTURA GENERAL_22052017",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2017_c2_prova-cultura-general_22052017",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2017-05-22",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "5eadaf1e8397c255e1e85481f71566de773e2def74377de2bb7e8fea9bc6f425",
+      "cacheFile": "roses-examen-2017-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2017-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2017_C2_PROVA CONEIXEMENTS PROFESSIONALS_22052017",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2017_c2_prova-coneixements-professionals_22052017",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2017-05-22",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "91139c8c4082f3b8005846714fbf8fe7448335aa29ca9ee26d1072f8bfbfd739",
+      "cacheFile": "roses-examen-2017-interins-cp.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2016-interins-cg",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2016_C2_PROVA CULTURA GENERAL_15042016",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2016_c2_prova-cultura-general_15042016",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2016-04-15",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "d21a3520db18e4e0e4866a7b3dc0f265b1290b3b3306765b4fa6a8a2111a8b82",
+      "cacheFile": "roses-examen-2016-interins-cg.pdf"
+    },
+    {
+      "sourceId": "roses-examen-2016-interins-cp",
+      "title": "AGENTS POLICIA LOCAL INTERINS 2016_C2_PROVA CONEIXEMENTS PROFESSIONALS_15042016",
+      "issuer": "Ajuntament de Roses",
+      "url": "https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2016_c2_prova-coneixements-professionals_15042016",
+      "kind": "examen-oficial",
+      "scope": "roses",
+      "publishedAt": "2016-04-15",
+      "consultedAt": "2026-08-23",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "notes": "Historical official corrected exam. Current-affairs answers are historical and must never enter today's active pool.",
+      "sha256": "8b4a8a75da3d72c8fa20d60ed7e006b197472ae7062127ac0d248550e163f7cd",
+      "cacheFile": "roses-examen-2016-interins-cp.pdf"
     }
   ]
 }

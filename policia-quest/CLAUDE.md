@@ -136,29 +136,37 @@ defecte visible, corregeix-lo abans de tancar.
 
 ## 6. Estat conegut d'aquesta versió
 
-L'entorn de construcció tenia la sortida de xarxa restringida i no va poder
-baixar cap font oficial. Això vol dir que:
+El 23 d'agost de 2026 es va rebre un paquet de rescat amb 36 documents oficials
+(2 bases, 30 quadernets d'examen i 4 textos d'ordenances), tots verificats pel
+seu SHA-256. Això va desbloquejar bona part del contingut:
 
-- Els 30 exàmens registrats estan **pendents d'importar**.
-- Totes les referències són **`pending-source-verification`**.
-- El paquet d'actualitat és **buit a propòsit**, i per això el simulacre de
-  cultura general i el complet estan **bloquejats**: sense 10 preguntes
-  d'actualitat vigents no es pot muntar la prova que descriuen les bases.
+- **Els sis exàmens de 2025 i 2026 estan importats**: 189 preguntes amb la
+  resposta que hi va marcar el tribunal, mai deduïda.
+- **Els 24 exàmens històrics** (2016–2024) estan adoptats i registrats amb la
+  seva URL i data reals, però **pendents de transcriure**. La nota de cada un
+  diu si la marca de resposta és llegible al document; sis no en tenen cap de
+  clara al text i exigeixen revisió visual pregunta per pregunta.
+- **Els temes 35 i 36** estan escrits sobre l'articulat real de les ordenances
+  de circulació i de convivència, amb la modificació de 2021 consolidada i
+  referències amb article i pàgina del PDF.
+- **43 de les 79 fonts continuen pendents**: són les normes generals (BOE,
+  Portal Jurídic) que aquest paquet no incloïa. Les seves referències segueixen
+  en `pending-source-verification`.
+- **El paquet d'actualitat continua buit**, i per això el simulacre de cultura
+  general i el complet segueixen **bloquejats**. Les preguntes d'actualitat dels
+  exàmens antics **no** el desbloquegen: són material històric i s'importen amb
+  `reviewBy` a la data de l'examen perquè `isCurrent()` les deixi fora.
 
-La primera feina de qui continuï, en aquest ordre:
+La feina que queda, en aquest ordre:
 
-1. Aconseguir les còpies locals, per qualsevol dels dos camins:
-   - `npm run sources:download` des d'una xarxa amb accés a `roses.cat`,
-     `ssl4.ddgi.cat`, `boe.es` i `portaljuridic.gencat.cat`; o
-   - `npm run sources:adopt -- --list`, deixar els documents a `sources/inbox/`
-     amb el nom del `sourceId` i executar `npm run sources:adopt`. Aquest camí
-     no necessita xarxa i és el previst quan qui prepara el contingut hi té
-     accés i l'entorn de construcció no.
-2. Contrastar les referències i passar-les a `verified`.
-3. Importar i revisar els quatre exàmens P0.
-4. Llegir les ordenances de Roses i completar els temes 35 i 36 amb l'articulat
-   real.
-5. Omplir el paquet d'actualitat. En treure el marcador
-   `contentStatus: 'blocked-missing-content'` del plànol de cultura general,
-   cal recuperar els tests d'extrem a extrem del simulacre complet i les seves
-   captures, que ara estan substituïts pels del bloqueig.
+1. Omplir el paquet d'actualitat amb fets verificats contra fonts oficials
+   vigents, amb data de publicació, `reviewBy` i revisió humana de la clau. És
+   l'únic que desbloqueja el simulacre de cultura general i el complet. En
+   treure el marcador `contentStatus: 'blocked-missing-content'` cal recuperar
+   els tests d'extrem a extrem del simulacre complet i les seves captures.
+2. Aconseguir les 43 fonts generals pendents (`npm run sources:adopt -- --list`
+   les llista amb la seva URL oficial) i contrastar-hi les referències que
+   segueixen sense verificar.
+3. Transcriure els 24 exàmens històrics. Els sis sense marca llegible al text
+   exigeixen revisió visual; no se'n pot deduir cap resposta per densitat de
+   tinta, freqüència ni coneixement general.

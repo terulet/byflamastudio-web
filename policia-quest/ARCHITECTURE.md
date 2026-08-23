@@ -148,6 +148,40 @@ simulacre complet que el conté i l'enllaç directe a `#/exam/<id>`. La pantalla
 diu quina quota falta i quantes preguntes hi ha, i ofereix el mode d'entrenament
 perquè les preguntes que sí que hi ha segueixin sent útils.
 
+### Exàmens oficials importats
+
+Els quadernets de Roses no fan servir un sol conveni per marcar la resposta del
+tribunal, i descobrir-ho va ser la meitat de la feina:
+
+| Convocatòria | Com marca la resposta |
+| --- | --- |
+| La majoria (2016–2018, 2021–2026) | Asterisc al final de l'opció |
+| 2019 (interins i propietat) | L'opció **acolorida** en blau |
+| 2024 interins, professionals | **Negreta sintètica**: el mateix text dibuixat dues vegades, una d'omplerta i una de resseguida |
+
+Cap dels tres es dedueix: `scripts/transcription/extract_exam.py` llegeix el
+senyal real del PDF. El color només compta si és **cromàtic** i minoritari —els
+documents barregen negre pur amb grisos quasi negres que no marquen res— i el
+traç només compta si és **selectiu**: en un document on el 94 % del text va
+resseguit, resseguir no vol dir res.
+
+Una pregunta sense exactament una marca s'importa **sense clau**, mai amb una
+resposta inferida. La densitat de tinta discrimina prou bé la negreta però és
+una heurística, i per això es fa servir per decidir què cal mirar amb els ulls,
+mai per fixar una resposta.
+
+El tema `roses-examen-oficial` és un **contenidor**, no un tema del temari: el
+tribunal no etiqueta les preguntes per tema i assignar-los-en un seria afirmar
+el que el quadernet no diu. No surt a la ruta dels 40 temes ni compta per al
+domini per tema.
+
+Les preguntes de **cultura general** dels quadernets s'importen amb
+`dynamic: true` i `reviewBy` igual a la data de l'examen. Com que aquesta data
+ja ha passat, `isCurrent()` les deixa fora dels simulacres i de la quota
+d'actualitat: mig examen de cultura general són preguntes com «qui és l'actual
+ministre/a de Defensa?», certes el dia de la prova i falses avui. Segueixen
+consultables com a material històric, amb la seva data.
+
 ### Preguntes de reserva
 
 El quadernet real porta preguntes de reserva al final —una a cultura general,

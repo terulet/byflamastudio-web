@@ -357,19 +357,22 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page.getByTestId('train')).toBeVisible()
 
   // Sense haver estudiat res, "noves" ha de tenir totes les preguntes del tema.
+  // El tema 35 (ordenança de circulació) en té 6 des que es va reescriure amb
+  // l'articulat real de l'ordenança i la seva modificació de 2021.
   await page.getByTestId('select-topic-35').click()
   await page.getByTestId('filter-state-new').click()
-  await expect(page.getByTestId('start-topic-session')).toContainText('5')
+  await expect(page.getByTestId('start-topic-session')).toContainText('6')
 
   // I "fallades" cap, perquè encara no s'ha fallat res.
   await page.getByTestId('filter-state-failed').click()
   await expect(page.getByTestId('start-topic-session')).toBeDisabled()
   await expect(page.getByText(/No hi ha preguntes que compleixin/)).toBeVisible()
 
-  // El filtre d'origen avisa que encara no hi ha preguntes d'examen oficial.
+  // Amb els sis quadernets P0 importats, el filtre d'examen oficial ja no avisa
+  // que quedarà buit: hi ha preguntes de debò darrere.
   await page.getByTestId('filter-state-new').click()
   await page.getByTestId('filter-origin-official').click()
-  await expect(page.getByText(/cap pregunta d’examen oficial importada/)).toBeVisible()
+  await expect(page.getByText(/cap pregunta d’examen oficial importada/)).toHaveCount(0)
 
   // Els filtres viatgen a la URL i la sessió els aplica.
   await page.getByTestId('filter-origin-authored').click()
@@ -377,7 +380,7 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page).toHaveURL(/origin=authored/)
   await expect(page).toHaveURL(/state=new/)
   await expect(page.getByTestId('study')).toBeVisible()
-  await expect(page.getByTestId('study-progress')).toContainText('de 5')
+  await expect(page.getByTestId('study-progress')).toContainText('de 6')
 })
 
 test('el semàfor de progrés marca en blau els resultats de simulacre', async ({ page }) => {
@@ -435,7 +438,7 @@ test('es pot practicar només l’ordenança de circulació de Roses', async ({ 
 
   await expect(page.getByTestId('study')).toBeVisible()
   // Totes les preguntes de la sessió han de ser del tema 35.
-  await expect(page.getByTestId('study-progress')).toContainText('de 5')
+  await expect(page.getByTestId('study-progress')).toContainText('de 6')
 })
 
 test('exporta i importa la còpia de seguretat', async ({ page }) => {

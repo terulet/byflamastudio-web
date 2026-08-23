@@ -117,6 +117,22 @@ Adoptar una font vol dir que ja n'hi ha una còpia local verificable pel seu
 hash. **No** passa cap referència a `verified`: contrastar les cites contra el
 text consolidat segueix sent una decisió de qui les comprova.
 
+### Transcripció dels quadernets oficials
+
+```bash
+pip install pymupdf
+python3 scripts/transcription/generate_official_questions.py
+```
+
+Regenera `content/municipalities/roses/questions/official-exams.ts` a partir
+dels PDF adoptats. No és una dependència de l'aplicació ni s'executa a cada
+build: es passa una vegada per convocatòria i el resultat es revisa i es
+versiona com a contingut.
+
+La resposta de cada pregunta surt de la marca que porta el quadernet —asterisc,
+color o traç, segons l'any— i mai s'infereix. Una pregunta sense marca
+inequívoca s'importa sense clau i queda per a revisió visual.
+
 ### Accessibilitat
 
 `tests/e2e/accessibility.spec.ts` passa axe-core per cada pantalla en els dos

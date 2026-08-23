@@ -11,7 +11,7 @@ import { ROSES_PACK } from '../../content/municipalities/roses/index.ts'
 import { Lesson, Question, SourceManifest, Syllabus } from '../../content/schemas/index.ts'
 import manifestJson from '../../sources/source-manifest.json' with { type: 'json' }
 import { dedupeHash } from '../../scripts/lib/dedupe.ts'
-import { examAvailability } from '../../src/engines/availability.ts'
+import { examAvailability, isCurrent } from '../../src/engines/availability.ts'
 import { CONEIXEMENTS_SCORING, CULTURA_GENERAL_SCORING } from '../../src/engines/scoring.ts'
 
 const { syllabus, questions, lessons, exams, sources, blueprints, currentAffairs } = ROSES_PACK
@@ -137,8 +137,12 @@ describe('banc de preguntes', () => {
     expect(new Set(ids).size).toBe(ids.length)
   })
 
-  it('no hi ha enunciats duplicats', () => {
-    const hashes = questions.map((q) => dedupeHash(q.stem))
+  it('no hi ha enunciats duplicats entre les preguntes pròpies', () => {
+    // Que el tribunal repetís una pregunta el 2025 i el 2026 és un fet del
+    // document i cada instància és un registre històric propi. Duplicar-ne una
+    // de collita pròpia, en canvi, és feina repetida.
+    const own = questions.filter((q) => q.origin !== 'official')
+    const hashes = own.map((q) => dedupeHash(q.stem))
     expect(new Set(hashes).size).toBe(hashes.length)
   })
 
@@ -174,8 +178,15 @@ describe('banc de preguntes', () => {
   })
 
   it('cada pregunta apunta a un tema que existeix', () => {
+    // Les preguntes d'examen oficial van a un contenidor propi: el tribunal no
+    // les etiqueta per tema i assignar-los-en un seria afirmar el que el
+    // quadernet no diu.
+    const allowed = new Set([...topicIds, 'roses-examen-oficial'])
     for (const q of questions) {
-      expect(topicIds.has(q.topicId), `${q.questionId} → ${q.topicId}`).toBe(true)
+      expect(allowed.has(q.topicId), `${q.questionId} → ${q.topicId}`).toBe(true)
+    }
+    for (const q of questions.filter((x) => x.topicId === 'roses-examen-oficial')) {
+      expect(q.origin, `${q.questionId} no és oficial però és al contenidor`).toBe('official')
     }
   })
 
@@ -194,9 +205,37 @@ describe('banc de preguntes', () => {
     }
   })
 
-  it('les preguntes d’examen històric no entren al banc actiu', () => {
-    for (const q of active) {
-      expect(q.origin, `${q.questionId} és oficial i està activa`).toBe('authored')
+  /*
+   * La regla que protegeix l'estudiant de les preguntes d'actualitat antigues.
+   *
+   * Les proves de cultura general de Roses reserven la meitat de les preguntes
+   * a l'actualitat: «Qui és l'actual ministre/a de Defensa?». Eren certes el
+   * dia de l'examen. Presentar-les avui com a vigents seria afirmar com a cert
+   * l'estat del món d'una altra data.
+   *
+   * S'importen amb `dynamic: true` i `reviewBy` igual a la data de l'examen,
+   * que ja ha passat, de manera que `isCurrent()` les deixa fora dels
+   * quadernets i de la quota d'actualitat. Segueixen consultables com a
+   * material històric.
+   */
+  it('cap pregunta d’examen oficial no pot passar per actualitat vigent', () => {
+    const today = new Date().toISOString().slice(0, 10)
+    for (const q of questions.filter((x) => x.origin === 'official')) {
+      expect(q.tags, `${q.questionId} etiquetada com a actualitat`).not.toContain('actualitat')
+      if (q.track === 'cultura-general') {
+        expect(q.dynamic, `${q.questionId} de cultura general sense caducitat`).toBe(true)
+        expect(isCurrent(q, today), `${q.questionId} encara compta com a vigent`).toBe(false)
+      }
+    }
+  })
+
+  it('les preguntes d’examen oficial conserven la resposta del tribunal', () => {
+    for (const q of questions.filter((x) => x.origin === 'official')) {
+      const meta = q.officialExam!
+      if (meta.officialAnswer !== 'anullada') {
+        // Canviar en silenci una resposta oficial és la línia que no es creua.
+        expect(meta.officialAnswer, `${q.questionId} divergeix del tribunal`).toBe(q.correct)
+      }
     }
   })
 })
@@ -248,12 +287,34 @@ describe('fonts', () => {
 })
 
 describe('exàmens oficials', () => {
-  it('registra els quatre exàmens de prioritat P0', () => {
+  it('registra els sis exàmens de prioritat P0 i els importa sencers', () => {
+    // 2025 en propietat, 2025 interins i 2026 interins, cultura general i
+    // coneixements professionals de cadascun.
     const p0 = exams.filter((e) => e.priority === 'P0')
-    expect(p0).toHaveLength(4)
+    expect(p0).toHaveLength(6)
     for (const exam of p0) {
       expect(exam.expectedQuestionCount, exam.examId).toBeGreaterThan(0)
       expect(sourceIds.has(exam.sourceId), exam.examId).toBe(true)
+      expect(exam.importStatus, exam.examId).toBe('imported')
+      // 20 + 1 de reserva a cultura general; 40 + 2 a professionals.
+      expect(exam.questionIds.length, exam.examId).toBe(exam.expectedQuestionCount)
+    }
+  })
+
+  it('els 24 exàmens històrics estan registrats amb la seva font adoptada', () => {
+    const p1 = exams.filter((e) => e.priority === 'P1')
+    expect(p1).toHaveLength(24)
+    for (const exam of p1) {
+      expect(sourceIds.has(exam.sourceId), exam.examId).toBe(true)
+      expect(exam.heldOn, exam.examId).toBeTruthy()
+      expect(exam.url, exam.examId).toMatch(/^https:\/\//)
+    }
+  })
+
+  it('cada pregunta importada apareix al registre del seu examen', () => {
+    const registered = new Set(exams.flatMap((e) => e.questionIds))
+    for (const q of questions.filter((x) => x.origin === 'official')) {
+      expect(registered.has(q.questionId), `${q.questionId} no consta a cap examen`).toBe(true)
     }
   })
 

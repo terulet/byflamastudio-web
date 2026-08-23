@@ -1,0 +1,55 @@
+{
+  "_note": [
+    "Mapa explícit entre els identificadors del paquet de rescat de fonts",
+    "(policia-quest-roses-fonts-oficials-2026-08-23) i els sourceId d'aquest",
+    "projecte. Es fa a mà i es revisa a mà: relacionar documents oficials pel",
+    "nom del fitxer seria endevinar.",
+    "",
+    "Els documents que el projecte no tenia registrats s'han afegit al manifest",
+    "amb la seva URL oficial i el seu SHA-256, presos del manifest del paquet i",
+    "comprovats contra el fitxer real (`sha256sum -c`, 36/36 correctes)."
+  ],
+  "pack": "policia-quest-roses-fonts-oficials-2026-08-23",
+  "verifiedOn": "2026-08-23",
+  "map": {
+    "bases-roses-interins-2026": "roses-bases-2026-interins",
+    "bases-roses-propietat-2025": "roses-bases-2025-propietat",
+
+    "ordenanca-roses-circulacio-2010": "roses-ordenanca-circulacio",
+    "ordenanca-roses-circulacio-modificacio-2021": "roses-ordenanca-circulacio-mod-2021",
+    "ordenanca-roses-convivencia": "roses-ordenanca-convivencia",
+    "ordenanca-roses-convivencia-modificacio-2021": "roses-ordenanca-convivencia-mod-2021",
+
+    "examen-2026-interins-cultura-general-15042026": "roses-examen-2026-interins-cg",
+    "examen-2026-interins-coneixements-professionals-15042026": "roses-examen-2026-interins-cp",
+    "examen-2025-propietat-cultura-general-03122025": "roses-examen-2025-propietat-cg",
+    "examen-2025-propietat-coneixements-professionals-03122025": "roses-examen-2025-propietat-cp",
+    "examen-2025-interins-cultura-general-16042025": "roses-examen-2025-interins-cg",
+    "examen-2025-interins-coneixements-professionals-16042025": "roses-examen-2025-interins-cp",
+
+    "examen-2024-propietat-cultura-general-19062024": "roses-examen-2024-propietat-cg",
+    "examen-2024-propietat-coneixements-professionals-19062024": "roses-examen-2024-propietat-cp",
+    "examen-2024-interins-cultura-general-03042024": "roses-examen-2024-interins-cg",
+    "examen-2024-interins-coneixements-professionals-03042024": "roses-examen-2024-interins-cp",
+    "examen-2023-interins-cultura-general-27032023": "roses-examen-2023-interins-cg",
+    "examen-2023-interins-coneixements-professionals-27032023": "roses-examen-2023-interins-cp",
+    "examen-2022-interins-cultura-general-19042022": "roses-examen-2022-interins-cg",
+    "examen-2022-interins-coneixements-professionals-19042022": "roses-examen-2022-interins-cp",
+    "examen-2021-propietat-cultura-general-13042021": "roses-examen-2021-propietat-cg",
+    "examen-2021-propietat-coneixements-professionals-13042021": "roses-examen-2021-propietat-cp",
+    "examen-2021-interins-cultura-general-27042021": "roses-examen-2021-interins-cg",
+    "examen-2021-interins-coneixements-professionals-27042021": "roses-examen-2021-interins-cp",
+    "examen-2019-propietat-cultura-general-25062019": "roses-examen-2019-propietat-cg",
+    "examen-2019-propietat-coneixements-professionals-25062019": "roses-examen-2019-propietat-cp",
+    "examen-2019-interins-cultura-general-20052019": "roses-examen-2019-interins-cg",
+    "examen-2019-interins-coneixements-professionals-20052019": "roses-examen-2019-interins-cp",
+    "examen-2018-propietat-cultura-general-31072018": "roses-examen-2018-propietat-cg",
+    "examen-2018-propietat-coneixements-professionals-31072018": "roses-examen-2018-propietat-cp",
+    "examen-2018-interins-cultura-general-09052018": "roses-examen-2018-interins-cg",
+    "examen-2018-interins-coneixements-professionals-09052018": "roses-examen-2018-interins-cp",
+    "examen-2017-interins-cultura-general-22052017": "roses-examen-2017-interins-cg",
+    "examen-2017-interins-coneixements-professionals-22052017": "roses-examen-2017-interins-cp",
+    "examen-2016-interins-cultura-general-15042016": "roses-examen-2016-interins-cg",
+    "examen-2016-interins-coneixements-professionals-15042016": "roses-examen-2016-interins-cp"
+  }
+}

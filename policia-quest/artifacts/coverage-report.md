@@ -8,12 +8,12 @@ Generat el 2026-08-23 · versió de contingut 1
 | --- | --- |
 | Temes del temari | 40 |
 | Microlliçons | 40 |
-| Preguntes totals | 223 |
-| Preguntes actives | 223 |
-| — de coneixements professionals | 201 |
-| — de cultura general | 22 |
-| Preguntes d’examen oficial importades | 0 |
-| Fonts registrades | 51 |
+| Preguntes totals | 414 |
+| Preguntes actives | 414 |
+| — de coneixements professionals | 329 |
+| — de cultura general | 85 |
+| Preguntes d’examen oficial importades | 189 |
+| Fonts registrades | 79 |
 | Exàmens registrats | 30 |
 
 ## Cobertura per tema
@@ -54,8 +54,8 @@ Generat el 2026-08-23 · versió de contingut 1
 | 32 | Permisos i llicències de conducció | roses-transit-convivencia | ✓ | 5 | 3 |
 | 33 | Conducció sota els efectes d’alcohol o drogues | roses-transit-convivencia | ✓ | 5 | 3 |
 | 34 | Animals domèstics i de companyia | roses-transit-convivencia | ✓ | 5 | 3 |
-| 35 | Ordenança municipal de circulació de Roses | roses-transit-convivencia | ✓ | 5 | 1 |
-| 36 | Ordenança municipal de convivència ciutadana de Roses | roses-transit-convivencia | ✓ | 5 | 1 |
+| 35 | Ordenança municipal de circulació de Roses | roses-transit-convivencia | ✓ | 6 | 1 |
+| 36 | Ordenança municipal de convivència ciutadana de Roses | roses-transit-convivencia | ✓ | 6 | 1 |
 | 37 | Policia judicial i persona detinguda | actuacio-i-proteccio | ✓ | 5 | 3 |
 | 38 | Llei 27/2003: ordre de protecció de les víctimes de violència domèstica | actuacio-i-proteccio | ✓ | 5 | 2 |
 | 39 | Llei orgànica 3/2007: igualtat efectiva entre dones i homes | actuacio-i-proteccio | ✓ | 5 | 1 |
@@ -63,22 +63,14 @@ Generat el 2026-08-23 · versió de contingut 1
 
 ## Estat de les fonts
 
-- Descarregades i verificades per SHA-256: **0**
-- Pendents de descàrrega: **51**
+- Descarregades i verificades per SHA-256: **36**
+- Pendents de descàrrega: **43**
 
 ### Fonts pendents
 
 | Font | Àmbit | URL |
 | --- | --- | --- |
-| `roses-bases-2026-interins` | roses | https://ssl4.ddgi.cat/bopV1/pdf/2026/5/20265012181.pdf |
-| `roses-bases-2025-propietat` | roses | https://ssl4.ddgi.cat/bopV1/pdf/2025/136/202513606395.pdf |
 | `roses-arxiu-examens` | roses | https://www.roses.cat/ajuntament/informacio-administrativa/oferta-publica-docupacio/examens-1 |
-| `roses-examen-2025-propietat-cg` | roses | https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-en-propietat-2025_c1_prova-cultura-general_03122025-1 |
-| `roses-examen-2025-propietat-cp` | roses | https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-en-propietat-2025_c1_prova-coneixements-professionals_03122025 |
-| `roses-examen-2026-interins-cg` | roses | https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-interina-2026_c1_prova-cultura-general_15042026 |
-| `roses-examen-2026-interins-cp` | roses | https://www.roses.cat/fitxers/RRHH/proves-opos/agents-policia-local-interins-2026_c1_prova-coneixements-professionals_15042026 |
-| `roses-ordenanca-circulacio` | roses | https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/331 |
-| `roses-ordenanca-convivencia` | roses | https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1/ordenanca-de-mesures-per-fomentar-i-garantir-la-convivencia-ciutadana |
 | `roses-ordenances-index` | roses | https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1 |
 | `roses-web-municipi` | roses | https://www.roses.cat/ |
 | `ce-1978` | estatal | https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229 |
@@ -128,7 +120,8 @@ Generat el 2026-08-23 · versió de contingut 1
 
 | Estat | Referències |
 | --- | --- |
-| pending-source-verification | 329 |
+| pending-source-verification | 313 |
+| verified | 212 |
 
 `pending-source-verification` vol dir que la referència apunta a una norma real i concreta, però que encara no s’ha contrastat automàticament contra la còpia local del text consolidat. Passarà a `verified` quan `npm run sources:download` i la validació s’executin amb accés a la xarxa.
 
@@ -136,40 +129,36 @@ Generat el 2026-08-23 · versió de contingut 1
 
 | Examen | Prioritat | Estat | Preguntes | Font |
 | --- | --- | --- | --- | --- |
-| roses-2026-interins-cg | P0 | pending-source | 0 / 20 | `roses-examen-2026-interins-cg` |
-| roses-2026-interins-cp | P0 | pending-source | 0 / 40 | `roses-examen-2026-interins-cp` |
-| roses-2025-propietat-cg | P0 | pending-source | 0 / 20 | `roses-examen-2025-propietat-cg` |
-| roses-2025-propietat-cp | P0 | pending-source | 0 / 40 | `roses-examen-2025-propietat-cp` |
-| roses-2025-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2025-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2024-propietat-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2024-propietat-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2024-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2024-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2023-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2023-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2022-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2022-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2021-propietat-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2021-propietat-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2021-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2021-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2019-propietat-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2019-propietat-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2019-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2019-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2018-propietat-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2018-propietat-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2018-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2018-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2017-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2017-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2016-interina-cg | P1 | pending-source | 0 | `roses-arxiu-examens` |
-| roses-2016-interina-cp | P1 | pending-source | 0 | `roses-arxiu-examens` |
-
-> **4 dels 4 exàmens P0 no s’han pogut importar.** El seu contingut no s’inventa: 
-> el registre conserva la URL oficial i el nombre de preguntes esperat perquè la importació es
-> pugui completar en una execució amb accés a la xarxa.
+| roses-2026-interins-cp | P0 | imported | 42 / 42 | `roses-examen-2026-interins-cp` |
+| roses-2026-interins-cg | P0 | imported | 21 / 21 | `roses-examen-2026-interins-cg` |
+| roses-2025-interins-cp | P0 | imported | 42 / 42 | `roses-examen-2025-interins-cp` |
+| roses-2025-interins-cg | P0 | imported | 21 / 21 | `roses-examen-2025-interins-cg` |
+| roses-2025-propietat-cp | P0 | imported | 42 / 42 | `roses-examen-2025-propietat-cp` |
+| roses-2025-propietat-cg | P0 | imported | 21 / 21 | `roses-examen-2025-propietat-cg` |
+| roses-2024-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2024-interins-cp` |
+| roses-2024-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2024-interins-cg` |
+| roses-2024-propietat-cp | P1 | pending-source | 0 / 42 | `roses-examen-2024-propietat-cp` |
+| roses-2024-propietat-cg | P1 | pending-source | 0 / 21 | `roses-examen-2024-propietat-cg` |
+| roses-2023-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2023-interins-cp` |
+| roses-2023-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2023-interins-cg` |
+| roses-2022-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2022-interins-cp` |
+| roses-2022-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2022-interins-cg` |
+| roses-2021-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2021-interins-cp` |
+| roses-2021-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2021-interins-cg` |
+| roses-2021-propietat-cp | P1 | pending-source | 0 / 42 | `roses-examen-2021-propietat-cp` |
+| roses-2021-propietat-cg | P1 | pending-source | 0 / 21 | `roses-examen-2021-propietat-cg` |
+| roses-2019-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2019-interins-cp` |
+| roses-2019-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2019-interins-cg` |
+| roses-2019-propietat-cp | P1 | pending-source | 0 / 42 | `roses-examen-2019-propietat-cp` |
+| roses-2019-propietat-cg | P1 | pending-source | 0 / 21 | `roses-examen-2019-propietat-cg` |
+| roses-2018-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2018-interins-cp` |
+| roses-2018-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2018-interins-cg` |
+| roses-2018-propietat-cp | P1 | pending-source | 0 / 42 | `roses-examen-2018-propietat-cp` |
+| roses-2018-propietat-cg | P1 | pending-source | 0 / 21 | `roses-examen-2018-propietat-cg` |
+| roses-2017-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2017-interins-cp` |
+| roses-2017-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2017-interins-cg` |
+| roses-2016-interins-cp | P1 | pending-source | 0 / 42 | `roses-examen-2016-interins-cp` |
+| roses-2016-interins-cg | P1 | pending-source | 0 / 21 | `roses-examen-2016-interins-cg` |
 
 ## Actualitat
 
@@ -185,7 +174,7 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 | Simulacre de cultura general | Cultura general | 10 | 22 | ✓ |
 | Simulacre de cultura general | Actualitat social, cultural i política | 10 | 0 | ✗ en falten 10 |
 | Simulacre de cultura general | Reserva | 1 | 0 | ⚠ sense reserva |
-| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 201 | ✓ |
+| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 329 | ✓ |
 | Simulacre de coneixements professionals | Reserva | 2 | 2 | ✓ |
 
 **Simulacre de cultura general: bloquejat.** El paquet d’actualitat és buit: cap font periodística ni institucional era accessible des de l’entorn de construcció (2026-08-23). Sense 10 preguntes d’actualitat vigents no es pot muntar la prova que descriuen les bases, i muntar-ne 20 de cultura general seria ensenyar un format fals. Per desbloquejar-lo: omplir content/municipalities/roses/current-affairs/ amb preguntes etiquetades `actualitat`, amb dynamic: true i reviewBy, i treure aquest marcador.
@@ -194,9 +183,8 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 
 ## Què necessita revisió humana
 
-1. Descarregar les 51 fonts pendents i tornar a validar el contingut per passar les referències a `verified`.
-2. Importar els 4 exàmens oficials de prioritat P0 (2025 en propietat i 2026 interins, cultura general i coneixements professionals), amb les respostes publicades pel tribunal.
-3. Localitzar la URL directa dels 26 quadernets de prioritat P1 a l’arxiu municipal i importar-los.
-4. Omplir el paquet d’actualitat amb fets verificats contra fonts oficials o periodístiques fiables. La prova de cultura general reserva 10 de 20 preguntes a l’actualitat i ara mateix el banc no en té cap.
-5. Contrastar contra el text vigent les 4 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
+1. Descarregar les 43 fonts pendents i tornar a validar el contingut per passar les referències a `verified`.
+2. Localitzar la URL directa dels 24 quadernets de prioritat P1 a l’arxiu municipal i importar-los.
+3. Omplir el paquet d’actualitat amb fets verificats contra fonts oficials o periodístiques fiables. La prova de cultura general reserva 10 de 20 preguntes a l’actualitat i ara mateix el banc no en té cap.
+4. Contrastar contra el text vigent les 12 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
 

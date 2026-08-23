@@ -39,6 +39,27 @@ export function ref(sourceId: string, locator: string, note?: string): SourceRef
   }
 }
 
+/**
+ * Referència **verificada** contra la còpia local del document oficial.
+ *
+ * A diferència de `ref()`, aquesta afirma que algú ha obert el PDF adoptat a
+ * `sources/cache/`, ha trobat la proposició al lloc que diu el localitzador i
+ * ho ha comprovat. Només es fa servir on això ha passat de debò: incloure un
+ * document al projecte no verifica res per si sol.
+ *
+ * El localitzador porta l'article i la pàgina del PDF, perquè qui revisi pugui
+ * anar-hi directament.
+ */
+export function refv(sourceId: string, locator: string, validAt: string, note?: string): SourceReference {
+  return {
+    sourceId,
+    locator,
+    validAt,
+    reviewStatus: 'verified',
+    ...(note ? { note } : {}),
+  }
+}
+
 /* ---------------- Targetes de lliçó ---------------- */
 
 export const idea = (ca: string, es: string, titleCa = 'Idea clau', titleEs = 'Idea clave'): LessonCard => ({
