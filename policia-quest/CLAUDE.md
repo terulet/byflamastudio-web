@@ -162,6 +162,12 @@ seu SHA-256. Això va desbloquejar bona part del contingut:
   vingui d'un examen antic. El camí de desbloqueig està provat amb fixtures a
   `tests/unit/actualitat.test.ts`: amb deu preguntes vigents el simulacre s'obre
   sol i el quadernet surt 10+10, i el dia que caduquen es torna a bloquejar sol.
+- **El paquet de candidats d'actualitat de 2026-08-24 està al repositori i no
+  s'ha importat**: cap de les 19 fonts és abastable des d'aquest entorn (CONNECT
+  403 als vuit dominis, pels dos camins de sortida). Les 25 preguntes queden
+  rebutjades per font no verificable; el detall és a
+  `artifacts/actualitat-decisio-2026-08-24.md` i l'importador que les adoptarà
+  quan hi hagi xarxa és `scripts/transcription/import_current_affairs.py`.
 - **El paquet d'actualitat continua buit**, i per això el simulacre de cultura
   general i el complet segueixen **bloquejats**. Les preguntes d'actualitat dels
   exàmens antics **no** el desbloquegen: són material històric i s'importen amb

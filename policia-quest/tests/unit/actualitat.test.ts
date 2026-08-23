@@ -15,6 +15,7 @@
  */
 import { describe, expect, it } from 'vitest'
 import { examAvailability, isCurrent } from '../../src/engines/availability.ts'
+import { currentAffairsIssues, packIssues } from '../../src/engines/actualitat.ts'
 import { buildExamPaper, selectSession } from '../../src/engines/selection.ts'
 import { isoToEpochDay } from '../../src/util/date.ts'
 import type { ExamBlueprint, Question } from '../../src/domain/types.ts'
@@ -127,6 +128,80 @@ describe('el contingut caducat no s’escola a una sessió d’estudi', () => {
   })
 })
 
+describe('la porta refusa el que no està demostrat', () => {
+  const context = {
+    packedQuestionIds: new Set(['act-ok']),
+    sources: [
+      { sourceId: 'font-amb-data', title: 'Font', issuer: 'X', url: 'https://exemple.cat/a',
+        kind: 'pagina-institucional', scope: 'roses', publishedAt: '2026-08-01',
+        consultedAt: '2026-08-24', status: 'vigent', fetchStatus: 'downloaded' },
+      { sourceId: 'font-sense-data', title: 'Font', issuer: 'X', url: 'https://exemple.cat/b',
+        kind: 'pagina-institucional', scope: 'roses',
+        consultedAt: '2026-08-24', status: 'vigent', fetchStatus: 'downloaded' },
+    ] as never,
+  }
+
+  const base = (extra: Partial<Question> = {}): Question =>
+    question('act-ok', ['actualitat'], {
+      dynamic: true,
+      reviewBy: '2026-11-30',
+      references: [
+        { sourceId: 'font-amb-data', locator: 'titular', validAt: '2026-08-01', reviewStatus: 'verified' },
+      ],
+      ...extra,
+    })
+
+  it('una pregunta d’actualitat completa passa', () => {
+    expect(currentAffairsIssues(base(), context)).toEqual([])
+  })
+
+  it('refusa una referència que no està verificada', () => {
+    const q = base({
+      references: [
+        { sourceId: 'font-amb-data', locator: 'titular', validAt: '2026-08-01', reviewStatus: 'pending-source-verification' },
+      ],
+    })
+    expect(currentAffairsIssues(q, context).join(' ')).toMatch(/font contrastada/)
+  })
+
+  it('refusa una font sense data de publicació', () => {
+    const q = base({
+      references: [
+        { sourceId: 'font-sense-data', locator: 'titular', validAt: '2026-08-01', reviewStatus: 'verified' },
+      ],
+    })
+    expect(currentAffairsIssues(q, context).join(' ')).toMatch(/data de publicació/)
+  })
+
+  it('refusa una pregunta d’examen històric disfressada d’actualitat', () => {
+    const q = base({ origin: 'official' })
+    expect(currentAffairsIssues(q, context).join(' ')).toMatch(/material històric/)
+  })
+
+  it('refusa la que no caduca i la que està fora de cap paquet', () => {
+    expect(currentAffairsIssues(base({ dynamic: false }), context).join(' ')).toMatch(/dynamic/)
+    const solta = { ...base(), questionId: 'act-solta' }
+    expect(currentAffairsIssues(solta, context).join(' ')).toMatch(/fora de cap paquet/)
+  })
+
+  it('un paquet que caduca abans d’acabar el període que cobreix es refusa', () => {
+    const issues = packIssues(
+      { packId: 'p', coversFrom: '2026-01-01', coversTo: '2026-08-24', expiresAt: '2026-06-30', questionIds: [] },
+      [],
+    )
+    expect(issues.join(' ')).toMatch(/caduca abans/)
+  })
+
+  it('i un paquet amb una pregunta que es declara vigent més enllà, també', () => {
+    const q = base({ reviewBy: '2027-06-30' })
+    const issues = packIssues(
+      { packId: 'p', coversFrom: '2026-01-01', coversTo: '2026-08-24', expiresAt: '2026-11-30', questionIds: ['act-ok'] },
+      [q],
+    )
+    expect(issues.join(' ')).toMatch(/més enllà de la caducitat/)
+  })
+})
+
 describe('el camí de desbloqueig, provat amb fixtures', () => {
   const permanents = Array.from({ length: 12 }, (_, i) => question(`cg-${i}`, ['cultura-general']))
 
@@ -167,6 +242,53 @@ describe('el camí de desbloqueig, provat amb fixtures', () => {
       seed: 'fixture',
     })
     expect(paper.filter((q) => q.tags.includes('actualitat'))).toHaveLength(0)
+  })
+
+  /*
+   * El simulacre complet encadena les dues proves. La seva disponibilitat és la
+   * conjunció de les dues seccions: s'obre quan totes dues s'obren i es tanca
+   * quan una es tanca. Es prova amb fixtures perquè el banc real de cultura
+   * general continua sense actualitat.
+   */
+  const CP: ExamBlueprint = {
+    ...CG,
+    blueprintId: 'roses-coneixements-professionals',
+    title: { ca: 'Simulacre de coneixements professionals' },
+    track: 'coneixements-professionals',
+    questionCount: 40,
+    reserveCount: 2,
+    composition: undefined,
+  }
+  const professionals = Array.from({ length: 42 }, (_, i) =>
+    question(`cp-${i}`, ['professional'], { track: 'coneixements-professionals' }),
+  )
+
+  const completeAvailable = (pool: Question[], today: string): boolean =>
+    [CG, CP].every((bp) => examAvailability(pool, bp, today).ok)
+
+  it('el simulacre complet s’obre quan les dues proves s’obren', () => {
+    const pool = [
+      ...permanents,
+      ...Array.from({ length: 11 }, (_, i) => actualitat(i)),
+      ...professionals,
+    ]
+    expect(examAvailability(pool, CG, TODAY).ok).toBe(true)
+    expect(examAvailability(pool, CP, TODAY).ok).toBe(true)
+    expect(completeAvailable(pool, TODAY)).toBe(true)
+  })
+
+  it('i es torna a tancar quan caduca l’actualitat, encara que professionals segueixi bé', () => {
+    const pool = [
+      ...permanents,
+      ...Array.from({ length: 11 }, (_, i) => actualitat(i, '2026-11-30')),
+      ...professionals,
+    ]
+    expect(completeAvailable(pool, '2026-11-30')).toBe(true)
+    // L'endemà: professionals continua disponible, cultura general no, i per
+    // tant el complet tampoc.
+    expect(examAvailability(pool, CP, '2026-12-01').ok).toBe(true)
+    expect(examAvailability(pool, CG, '2026-12-01').ok).toBe(false)
+    expect(completeAvailable(pool, '2026-12-01')).toBe(false)
   })
 
   it('nou d’actualitat no són deu, per molt que en sobrin de permanents', () => {
