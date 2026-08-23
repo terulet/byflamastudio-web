@@ -45,7 +45,9 @@ type IconName = 'home' | 'route' | 'train' | 'exams' | 'progress'
 
 const ICON_PATHS: Record<IconName, string> = {
   home: 'M3 11.5 12 4l9 7.5M5.5 10v9.5h13V10',
-  route: 'M6 4v10a4 4 0 0 0 4 4h4a4 4 0 0 1 4 4M6 4a2 2 0 1 0 0-.001M18 22a2 2 0 1 0 0-.001',
+  // El punt final va a y=20, no a y=22: amb radi 2 i traç 1,8 el cercle sortiria
+  // del viewBox i es veuria tallat per sota.
+  route: 'M6 4v8a4 4 0 0 0 4 4h4a4 4 0 0 1 4 4M6 4a2 2 0 1 0 0-.001M18 20a2 2 0 1 0 0-.001',
   train: 'M12 3v18M4.5 7.5v9M19.5 7.5v9M8.25 5.5v13M15.75 5.5v13',
   exams: 'M6 3h9l4 4v14H6V3Zm9 0v4h4M9 12h7M9 16h7',
   progress: 'M4 20V10M10 20V4M16 20v-7M22 20H2',

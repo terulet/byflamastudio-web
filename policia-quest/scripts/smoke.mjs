@@ -99,8 +99,11 @@ await page.goto(`${BASE}/#/exams`)
 await page.click('[data-testid="start-exam-roses-simulacre-complet"]')
 await page.waitForSelector('[data-testid="exam-runner"]')
 await shoot(page, '18-simulacre-complet-prova-1', false)
-for (let i = 0; i < 20; i++) {
+// 20 del cos + 1 de reserva: es contesten totes i la prova es tanca sense avís.
+for (let i = 0; i < 21; i++) {
   await page.click('[data-testid="exam-option-a"]')
+  // L'última de la prova és la de reserva: val la pena veure com s'anuncia.
+  if (i === 20) await shoot(page, '21-pregunta-de-reserva', false)
   const next = page.locator('[data-testid="exam-next"]')
   if (await next.isVisible()) await next.click()
 }

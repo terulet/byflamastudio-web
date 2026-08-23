@@ -143,12 +143,19 @@ out()
 
 out('## Capacitat dels simulacres')
 out()
-out('| Simulacre | Preguntes requerides | Disponibles al banc | Estat |')
+out('| Simulacre | Preguntes requerides (amb reserva) | Disponibles al banc | Estat |')
 out('| --- | --- | --- | --- |')
 for (const bp of blueprints) {
   const available = active.filter((q) => q.track === bp.track).length
-  const ok = available >= bp.questionCount
-  out(`| ${bp.title.ca} | ${bp.questionCount} | ${available} | ${ok ? '✓ es pot muntar' : '✗ banc insuficient'} |`)
+  const needed = bp.questionCount + bp.reserveCount
+  const ok = available >= needed
+  const enoughBody = available >= bp.questionCount
+  const verdict = ok
+    ? '✓ es pot muntar'
+    : enoughBody
+      ? '⚠ sense reserva'
+      : '✗ banc insuficient'
+  out(`| ${bp.title.ca} | ${needed} | ${available} | ${verdict} |`)
 }
 out()
 

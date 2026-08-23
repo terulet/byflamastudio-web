@@ -210,8 +210,12 @@ export function Progress(): ReactNode {
             }}
           >
             {calendar.map(({ day, count }) => (
+              // Cada cel·la comunica un valor només amb color, així que per a
+              // qui no la veu és una imatge amb text alternatiu: `role="img"`.
+              // Sense rol, `aria-label` seria un atribut prohibit.
               <div
                 key={day}
+                role="img"
                 title={`${epochDayToIso(day)} · ${count}`}
                 aria-label={`${epochDayToIso(day)}: ${count} ${t.common.questions}`}
                 style={{

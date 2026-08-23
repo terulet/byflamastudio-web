@@ -298,6 +298,14 @@ for (const bp of ROSES_PACK.blueprints) {
   const available = ROSES_PACK.questions.filter(
     (q) => q.status === 'active' && q.track === bp.track,
   ).length
+  // El quadernet complet inclou les reserves: si no hi caben, la prova es
+  // munta igualment però sense reserva, i això s'ha de veure.
+  if (available < bp.questionCount + bp.reserveCount && available >= bp.questionCount) {
+    warn(
+      `plànol ${bp.blueprintId}: hi ha ${available} preguntes actives de tipus ${bp.track}, ` +
+        `prou per a les ${bp.questionCount} de la prova però no per a les ${bp.reserveCount} de reserva`,
+    )
+  }
   if (available < bp.questionCount) {
     fail(
       `plànol ${bp.blueprintId}: calen ${bp.questionCount} preguntes actives de tipus ${bp.track} i només n’hi ha ${available}`,

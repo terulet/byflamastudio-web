@@ -503,6 +503,14 @@ export const ExamSection = z.object({
   blueprintId: Slug,
   /** Nombre de preguntes de la secció, consecutives dins `questionIds`. */
   count: z.number().int().positive(),
+  /**
+   * Quantes de les últimes de `count` són de reserva.
+   *
+   * A l'examen real es contesten com les altres, però només compten si el
+   * tribunal anul·la alguna pregunta del cos principal. Aquí es presenten
+   * igual i es deixen fora de la nota, que és el comportament per defecte.
+   */
+  reserveCount: z.number().int().nonnegative().default(0),
   durationMs: z.number().int().positive(),
   /** Ms consumits en aquesta secció abans de l'última pausa. */
   elapsedMs: z.number().int().nonnegative().default(0),

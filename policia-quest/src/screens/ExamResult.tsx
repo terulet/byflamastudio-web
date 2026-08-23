@@ -36,9 +36,13 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
     const sections = attempt.sections.map((section, i) => {
       const bp = pack.blueprints.find((b) => b.blueprintId === section.blueprintId)
       const from = offsets[i] ?? 0
-      const items: ScoredItem[] = rows.slice(from, from + section.count).map((row) => ({
+      // Les últimes preguntes de cada prova són de reserva: es van contestar,
+      // però queden fora de la nota (vegeu `ExamSection.reserveCount`).
+      const bodySize = section.count - section.reserveCount
+      const items: ScoredItem[] = rows.slice(from, from + section.count).map((row, j) => ({
         chosen: row.chosen,
         correct: row.question?.correct ?? 'a',
+        ...(j >= bodySize ? { reserve: true } : {}),
       }))
       return {
         section,
@@ -183,6 +187,15 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
             label={t.result.time}
           />
         </section>
+
+        {/* Si els comptadors no sumen el total del quadernet, cal dir per què. */}
+        {breakdown.reserved > 0 ? (
+          <p className="screen__subtitle" data-testid="reserve-excluded">
+            {breakdown.reserved}{' '}
+            {plural(breakdown.reserved, t.exams.reserveOne, t.exams.reserve)} ·{' '}
+            {t.exams.reserveExcluded}
+          </p>
+        ) : null}
 
         {isMultiSection ? (
           <section className="stack" data-testid="section-results">

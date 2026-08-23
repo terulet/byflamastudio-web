@@ -158,6 +158,9 @@ export function migrateExamAttempt(input: unknown): ExamAttempt | null {
           return [{
             blueprintId: section.blueprintId,
             count,
+            // Els intents anteriors a les reserves no en tenien cap: zero, i el
+            // quadernet desat es continua puntuant sencer, com aleshores.
+            reserveCount: Math.min(count - 1, Math.max(0, numberOr(section.reserveCount, 0))),
             durationMs: Math.max(1, numberOr(section.durationMs, durationMs)),
             elapsedMs: Math.max(0, numberOr(section.elapsedMs, 0)),
             finished: typeof section.finished === 'boolean' ? section.finished : false,
@@ -166,6 +169,7 @@ export function migrateExamAttempt(input: unknown): ExamAttempt | null {
       : [{
           blueprintId: String(raw.blueprintIds[0]),
           count: Math.max(1, questionIds.length),
+          reserveCount: 0,
           durationMs,
           elapsedMs: elapsedMsAtPause,
           finished: raw.status === 'finished',

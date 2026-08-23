@@ -114,9 +114,27 @@ Els intents anteriors a aquesta funció no tenien seccions: `migrateExamAttempt`
 els en deriva una de sola, de manera que un simulacre a mitges d'abans es pot
 reprendre igualment.
 
-Les preguntes de **reserva** i les **anul·lades** pel tribunal es compten a part
-i no entren al càlcul. El resultat net pot ser negatiu; es mostra amb terra a 0
-però l'aprovat es mesura sobre el net real.
+### Preguntes de reserva
+
+El quadernet real porta preguntes de reserva al final —una a cultura general,
+dues a coneixements professionals— i el simulacre les reprodueix:
+
+- `buildExamPaper` munta `questionCount + reserveCount` preguntes i deixa les de
+  reserva **a la cua**, sense barrejar-les amb el cos. Així el motor de
+  puntuació pot tallar per índex sense marcar pregunta per pregunta.
+- Si el banc no dona per a tot, el primer que se sacrifica és la reserva: el cos
+  de la prova té prioritat sobre unes preguntes que ni tan sols compten.
+- La interfície les numera a part (`R1`, `R2`), les anuncia amb un avís i les
+  compta al seu propi comptador; el `1/40` de la barra superior es refereix
+  sempre al cos.
+- `ExamSection.reserveCount` diu quantes de les últimes de la secció ho són.
+  `scoreExam` les rep amb `reserve: true` i les deixa fora del càlcul.
+- Com que els comptadors d'encerts, errors i blancs deixen de sumar el total del
+  quadernet, el resultat ho diu explícitament en comptes de deixar-ho a l'aire.
+
+Les preguntes de reserva i les **anul·lades** pel tribunal es compten a part i no
+entren al càlcul. El resultat net pot ser negatiu; es mostra amb terra a 0 però
+l'aprovat es mesura sobre el net real.
 
 La validació de contingut comprova que `preguntes × punts_per_encert` doni
 exactament la nota màxima declarada, de manera que un plànol incoherent no pot
@@ -186,6 +204,9 @@ siguin fiables i que una sessió es pugui reconstruir.
 
 Els simulacres es munten amb `buildExamPaper`, que va prenent preguntes de cada
 tema en ronda per repartir la cobertura en comptes de concentrar-la en un bloc.
+Les de reserva surten de la mateixa ronda i s'afegeixen al final sense reordenar
+el cos: amb la mateixa llavor, les 40 primeres són idèntiques hi hagi reserva o
+no.
 
 ---
 
@@ -282,6 +303,30 @@ Sí que inclou tot el que governa què toca repassar i quina és la ratxa.
 - **Els enunciats sempre porten `lang="ca"`**, encara que la interfície estigui
   en castellà: és la llengua de l'examen i els lectors de pantalla ho han de
   saber.
+
+### Accessibilitat, comprovada i no declarada
+
+`tests/e2e/accessibility.spec.ts` passa axe-core per les set pantalles en els dos
+temes, més l'onboarding, la sessió d'estudi amb la seva correcció i el simulacre
+sencer fins al resultat: 23 auditories amb els conjunts de regles WCAG 2.0, 2.1 i
+2.2 en nivell A i AA. Falla si n'apareix cap incompliment.
+
+Dues coses van sortir d'aquí i no de la revisió a ull:
+
+- **El contrast de la paleta.** Els valors de `src/styles/tokens.css` estan
+  mesurats sobre la superfície més clara on pot aparèixer cada text, que és el
+  cas pitjor. Els fons de píndola (`*-dim`) són colors sòlids i no capes amb
+  alfa, perquè amb alfa el mateix component passava sobre una targeta i fallava
+  sobre una altra.
+- **`aria-label` només on el rol el permet.** Un `div` sense rol no en pot
+  portar. L'indicador de passos de l'onboarding és `role="progressbar"` i cada
+  cel·la del calendari d'activitat és `role="img"`, perquè comuniquen un valor
+  només amb la forma o el color.
+
+L'auditoria també comprova que es pot respondre una pregunta només amb el
+teclat, que el focus és visible en tabular i que cap control baixa de l'àrea
+tàctil mínima. Una eina automàtica no sap si un text alternatiu té sentit; sí
+que atrapa tot això.
 
 ### So
 

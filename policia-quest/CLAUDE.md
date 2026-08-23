@@ -107,6 +107,10 @@ Aquestes regles no són preferències d'estil: trencar-ne una fa mal al producte
 4. `prefers-reduced-motion` respectat, i a més amb interruptor propi.
 5. Els enunciats porten `lang="ca"` encara que la interfície estigui en castellà.
 6. Cap pantalla pot desbordar horitzontalment a 320 px d'amplada.
+7. **Contrast 4,5:1 sobre la superfície pitjor.** Els valors de `tokens.css`
+   estan mesurats. Si en canvies un, torna a passar `npm run test:a11y`.
+8. `aria-label` només on el rol el permet. Un `div` sense rol no pot portar-ne:
+   posa-hi el rol que descrigui de debò l'element (`img`, `progressbar`, `group`).
 
 ---
 
@@ -114,7 +118,7 @@ Aquestes regles no són preferències d'estil: trencar-ne una fa mal al producte
 
 ```bash
 npm run check              # tipus + contingut + tests + build
-npm run test:e2e           # fluxos complets sobre el build
+npm run test:e2e           # fluxos complets sobre el build, auditoria axe inclosa
 npm run content:report     # informe de cobertura i SOURCES.md
 node scripts/smoke.mjs     # captures reals i detecció d'errors de consola
 ```

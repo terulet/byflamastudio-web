@@ -16,7 +16,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { pack, useActions, useApp } from '../app/store.tsx'
 import { useActiveQuestions } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
-import { dict, fill, pick } from '../i18n/index.ts'
+import { dict, fill, pick, plural } from '../i18n/index.ts'
 import { buildExamPaper } from '../engines/selection.ts'
 import { scoreExam, type ScoredItem } from '../engines/scoring.ts'
 import { formatClock } from '../util/date.ts'
@@ -76,6 +76,7 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
         pool: active,
         track: blueprint.track,
         count: blueprint.questionCount,
+        reserveCount: blueprint.reserveCount,
         seed: `${seed}-${blueprint.blueprintId}`,
         // Cap pregunta pot sortir dues vegades al mateix quadernet complet.
         exclude: questionIds,
@@ -85,6 +86,8 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
       sections.push({
         blueprintId: blueprint.blueprintId,
         count: paper.length,
+        // Si el banc no ha donat per al cos sencer, no hi ha reserves.
+        reserveCount: Math.max(0, paper.length - blueprint.questionCount),
         durationMs: blueprint.durationMinutes * 60_000,
         elapsedMs: 0,
         finished: false,
@@ -173,9 +176,16 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
         const blueprint = pack.blueprints.find((b) => b.blueprintId === s.blueprintId)
         if (!blueprint) return 0
         const from = localOffsets[i] ?? 0
+        const bodySize = s.count - s.reserveCount
         const items: ScoredItem[] = current.questionIds.slice(from, from + s.count).map((id, j) => {
           const question = questionsById.get(id)
-          return { chosen: current.responses[from + j] ?? null, correct: question?.correct ?? 'a' }
+          return {
+            chosen: current.responses[from + j] ?? null,
+            correct: question?.correct ?? 'a',
+            // Les últimes de la secció són de reserva: es contesten, però no
+            // sumen ni resten mentre no s'anul·li cap pregunta del cos.
+            ...(j >= bodySize ? { reserve: true } : {}),
+          }
         })
         return scoreExam(items, blueprint.scoring).scoreMilli
       })
@@ -234,6 +244,19 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
    * enlloc i no es podria reprendre: el quadernet ja està muntat i el rellotge
    * ja corre, de manera que ha de ser recuperable des del primer segon.
    */
+  /*
+   * Mirall síncron de les respostes.
+   *
+   * `blankCount` surt del render, i el render va un tic per darrere de l'última
+   * resposta. Qui contesta la darrera pregunta i toca «Finalitzar» tot seguit
+   * veia un diàleg dient-li que encara li'n quedaven zero en blanc. El mirall
+   * s'actualitza dins del mateix gest, abans que React torni a pintar.
+   */
+  const responsesRef = useRef<(OptionId | null)[]>(attempt?.responses ?? [])
+  useEffect(() => {
+    if (attempt) responsesRef.current = attempt.responses
+  }, [attempt])
+
   const persistedOnce = useRef(false)
   useEffect(() => {
     if (!attempt || persistedOnce.current) return
@@ -255,6 +278,19 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
     window.addEventListener('pagehide', onHide)
     return () => window.removeEventListener('pagehide', onHide)
   }, [attempt?.status, index, persist])
+
+  /*
+   * L'avís de blancs es tanca sol quan ja no en queda cap.
+   *
+   * El diàleg viu al peu i no bloqueja la pregunta: es pot contestar l'última
+   * amb l'avís obert. Deixar-lo obert dient «encara tens 0 preguntes en blanc»
+   * seria absurd, i a més tapa el botó de finalitzar.
+   */
+  useEffect(() => {
+    if (!confirmFinish || !attempt) return
+    const blanks = attempt.responses.slice(sectionStart, sectionEnd).filter((r) => r === null).length
+    if (blanks === 0) setConfirmFinish(false)
+  }, [confirmFinish, attempt, sectionStart, sectionEnd])
 
   // En esgotar-se el temps d'una prova, es tanca sola i passa a la següent.
   useEffect(() => {
@@ -280,11 +316,24 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
   const flaggedCount = attempt.flagged.slice(sectionStart, sectionEnd).filter(Boolean).length
   const urgent = remainingMs < 120_000
   const positionInSection = index - sectionStart + 1
+  // Les reserves són sempre la cua de la secció.
+  const bodySize = section.count - section.reserveCount
+  const isReserve = positionInSection > bodySize
 
   const choose = (optionId: OptionId): void => {
     const responses = [...attempt.responses]
     responses[index] = responses[index] === optionId ? null : optionId
+    responsesRef.current = responses
     persist({ responses, currentIndex: index })
+  }
+
+  /** Blancs de la secció segons l'última resposta, no segons l'últim render. */
+  const requestClose = (): void => {
+    const blanks = responsesRef.current
+      .slice(sectionStart, sectionEnd)
+      .filter((r) => r === null).length
+    if (blanks > 0) setConfirmFinish(true)
+    else closeSection()
   }
 
   const toggleFlagged = (): void => {
@@ -324,7 +373,9 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
           aria-expanded={showNavigator}
           data-testid="toggle-navigator"
         >
-          {positionInSection}/{section.count}
+          {isReserve
+            ? `${t.exams.reserveShort}${positionInSection - bodySize}/${section.reserveCount}`
+            : `${positionInSection}/${bodySize}`}
         </button>
       </div>
 
@@ -362,9 +413,13 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
                     setIndex(absolute)
                     setShowNavigator(false)
                   }}
-                  aria-label={`${t.common.question} ${i + 1}`}
+                  aria-label={
+                    i + 1 > bodySize
+                      ? `${t.exams.reserveBadge} ${i + 1 - bodySize}`
+                      : `${t.common.question} ${i + 1}`
+                  }
                 >
-                  {i + 1}
+                  {i + 1 > bodySize ? `${t.exams.reserveShort}${i + 1 - bodySize}` : i + 1}
                 </button>
               )
             })}
@@ -374,6 +429,11 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
 
       {question ? (
         <section className="stack" key={question.questionId}>
+          {isReserve ? (
+            <p className="notice notice--warn" data-testid="reserve-notice">
+              <strong>{t.exams.reserveBadge}</strong> · {t.exams.reserveNote}
+            </p>
+          ) : null}
           <h2 className="question__stem" lang="ca">
             {question.stem}
           </h2>
@@ -435,7 +495,7 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
                 type="button"
                 className="btn btn--primary"
                 style={{ flex: 1 }}
-                onClick={() => (blankCount > 0 ? setConfirmFinish(true) : closeSection())}
+                onClick={requestClose}
                 data-testid="exam-finish"
               >
                 {isLastSection ? t.common.finish : t.exams.nextSection}
@@ -446,7 +506,7 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
           <button
             type="button"
             className="btn btn--ghost btn--block btn--sm"
-            onClick={() => (blankCount > 0 ? setConfirmFinish(true) : closeSection())}
+            onClick={requestClose}
             data-testid="exam-finish-early"
           >
             {isLastSection ? t.exams.confirmFinish : t.exams.confirmNextSection}
@@ -474,7 +534,11 @@ export function ExamRunner({ blueprintId }: { blueprintId: string }): ReactNode 
           <div className="card__title">
             {isLastSection ? t.exams.confirmFinish : t.exams.confirmNextSection}
           </div>
-          <p className="card__body">{fill(t.exams.blanksWarning, { n: blankCount })}</p>
+          <p className="card__body">
+            {fill(plural(blankCount, t.exams.blanksWarningOne, t.exams.blanksWarning), {
+              n: blankCount,
+            })}
+          </p>
           {!isLastSection ? (
             <p className="card__body">{t.exams.noReturnWarning}</p>
           ) : null}

@@ -27,7 +27,17 @@ export function Onboarding(): ReactNode {
           </div>
         </div>
 
-        <div className="row" aria-label={`${t.onboarding.step} ${step + 1} ${t.common.of} ${STEPS}`}>
+        {/* Un `div` sense rol no pot portar `aria-label` (axe: aria-prohibited-attr).
+            `progressbar` és el rol que descriu de debò què és aquesta barra i,
+            a més, deixa anunciar el pas actual amb valors, no només amb text. */}
+        <div
+          className="row"
+          role="progressbar"
+          aria-valuemin={1}
+          aria-valuemax={STEPS}
+          aria-valuenow={step + 1}
+          aria-label={`${t.onboarding.step} ${step + 1} ${t.common.of} ${STEPS}`}
+        >
           {Array.from({ length: STEPS }, (_, i) => (
             <span
               key={i}

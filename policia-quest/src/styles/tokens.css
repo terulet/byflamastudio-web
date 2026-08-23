@@ -5,6 +5,17 @@
  * accent cian. L'ambre marca atenció, el verd domini i el vermell queda
  * reservat als errors i al risc. El tema clar inverteix les superfícies
  * mantenint les mateixes funcions semàntiques.
+ *
+ * ─── Contrast ────────────────────────────────────────────────────────────
+ *
+ * Tots els parells de text i fons d'aquesta paleta arriben a 4,5:1 com a mínim
+ * sobre **la superfície més clara on poden aparèixer**, que és el cas pitjor.
+ * Els valors estan mesurats, no estimats: `tests/e2e/accessibility.spec.ts`
+ * audita cada pantalla amb axe-core en els dos temes i falla si algun baixa.
+ *
+ * Els fons de les píndoles (`*-dim`) són **colors sòlids**, no capes amb alfa.
+ * Amb alfa, el contrast depenia de la superfície de sota i el mateix component
+ * passava sobre una targeta i fallava sobre una altra.
  */
 
 :root {
@@ -21,23 +32,23 @@
 
   /* Text */
   --text: #e9f0f8;
-  --text-muted: #9db2ca;
-  --text-faint: #6b8199;
+  --text-muted: #b6c8de;
+  --text-faint: #8ea9c6;
 
   /* Accent i estats */
   --accent: #2ad4ee;
   --accent-strong: #0bb8d4;
-  --accent-dim: rgba(42, 212, 238, 0.14);
+  --accent-dim: #103745;
   --accent-contrast: #04202b;
 
   --warn: #f2b134;
-  --warn-dim: rgba(242, 177, 52, 0.15);
+  --warn-dim: #343024;
   --ok: #3ddc97;
-  --ok-dim: rgba(61, 220, 151, 0.15);
-  --danger: #ff7a7a;
-  --danger-dim: rgba(255, 122, 122, 0.15);
-  --info: #7aa2ff;
-  --info-dim: rgba(122, 162, 255, 0.15);
+  --ok-dim: #133835;
+  --danger: #ff8f8f;
+  --danger-dim: #362a34;
+  --info: #93b3ff;
+  --info-dim: #233148;
 
   /* Formes */
   --radius-sm: 8px;
@@ -95,22 +106,22 @@
   --border-strong: #b3c3d6;
 
   --text: #10202f;
-  --text-muted: #4f6379;
-  --text-faint: #7488a0;
+  --text-muted: #3d4d60;
+  --text-faint: #566475;
 
-  --accent: #0a7d94;
-  --accent-strong: #08657a;
-  --accent-dim: rgba(10, 125, 148, 0.12);
+  --accent: #085f70;
+  --accent-strong: #064a58;
+  --accent-dim: #e6eff1;
   --accent-contrast: #ffffff;
 
-  --warn: #a86a04;
-  --warn-dim: rgba(168, 106, 4, 0.12);
-  --ok: #12795a;
-  --ok-dim: rgba(18, 121, 90, 0.12);
-  --danger: #c0392f;
-  --danger-dim: rgba(192, 57, 47, 0.12);
+  --warn: #7b4d03;
+  --warn-dim: #f2ede4;
+  --ok: #0f634a;
+  --ok-dim: #e7efed;
+  --danger: #9e2f27;
+  --danger-dim: #f5eae9;
   --info: #2b52a8;
-  --info-dim: rgba(43, 82, 168, 0.12);
+  --info-dim: #eaedf7;
 
   --shadow-sm: 0 1px 2px rgba(16, 32, 47, 0.08);
   --shadow: 0 6px 20px rgba(16, 32, 47, 0.1);

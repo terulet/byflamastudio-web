@@ -305,8 +305,12 @@ describe('plànols de simulacre', () => {
   it('el banc pot omplir tots els simulacres', () => {
     for (const bp of blueprints) {
       const available = active.filter((q) => q.track === bp.track).length
-      expect(available, `${bp.blueprintId} necessita ${bp.questionCount}`).toBeGreaterThanOrEqual(
-        bp.questionCount,
+      // Amb reserva inclosa: el quadernet real en porta i el simulacre també.
+      expect(
+        available,
+        `${bp.blueprintId} necessita ${bp.questionCount} + ${bp.reserveCount} de reserva`,
+      ).toBeGreaterThanOrEqual(
+        bp.questionCount + bp.reserveCount,
       )
     }
   })

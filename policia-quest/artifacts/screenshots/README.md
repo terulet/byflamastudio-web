@@ -26,6 +26,7 @@ desbordaments horitzontals; l'última execució no en va detectar cap.
 | `18-simulacre-complet-prova-1.png` | Simulacre complet, prova 1 de 2 | 393 × 852 |
 | `19-simulacre-complet-prova-2.png` | Simulacre complet, prova 2 de 2 | 393 × 852 |
 | `20-simulacre-complet-resultat.png` | Resultat per proves, sense suma enganyosa | 393 × 852 |
+| `21-pregunta-de-reserva.png` | Pregunta de reserva, anunciada i comptada a part | 393 × 852 |
 
 Les captures es fan a escala 1 a propòsit: serveixen per revisar la interfície,
 no per publicar-les, i a escala 2 el conjunt superava els 9 MB.

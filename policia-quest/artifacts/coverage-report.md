@@ -178,10 +178,10 @@ Generat el 2026-08-23 · versió de contingut 1
 
 ## Capacitat dels simulacres
 
-| Simulacre | Preguntes requerides | Disponibles al banc | Estat |
+| Simulacre | Preguntes requerides (amb reserva) | Disponibles al banc | Estat |
 | --- | --- | --- | --- |
-| Simulacre de cultura general | 20 | 22 | ✓ es pot muntar |
-| Simulacre de coneixements professionals | 40 | 201 | ✓ es pot muntar |
+| Simulacre de cultura general | 21 | 22 | ✓ es pot muntar |
+| Simulacre de coneixements professionals | 42 | 201 | ✓ es pot muntar |
 
 ## Què necessita revisió humana
 

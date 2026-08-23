@@ -255,6 +255,15 @@ export function buildExamPaper(opts: {
   pool: readonly Question[]
   track: 'cultura-general' | 'coneixements-professionals'
   count: number
+  /**
+   * Preguntes de reserva, que van al final del quadernet.
+   *
+   * Es contesten igual que les altres —el dia de l'examen no se salten— però
+   * queden fora de la nota mentre el tribunal no anul·li res. Van a la cua i
+   * no barrejades: així és com surten al quadernet real, i així el motor de
+   * puntuació pot tallar per índex sense haver de marcar cada pregunta.
+   */
+  reserveCount?: number
   seed: string
   /** Preguntes ja usades en una altra secció del mateix quadernet. */
   exclude?: readonly string[]
@@ -274,12 +283,15 @@ export function buildExamPaper(opts: {
   }
   const topics = shuffle([...byTopic.keys()], rng)
 
+  const reserveCount = opts.reserveCount ?? 0
+  const wanted = opts.count + reserveCount
+
   const out: Question[] = []
   let round = 0
-  while (out.length < opts.count) {
+  while (out.length < wanted) {
     let addedThisRound = 0
     for (const topicId of topics) {
-      if (out.length >= opts.count) break
+      if (out.length >= wanted) break
       const list = byTopic.get(topicId)
       const q = list?.[round]
       if (q) {
@@ -290,5 +302,12 @@ export function buildExamPaper(opts: {
     if (addedThisRound === 0) break // s'ha exhaurit el banc
     round++
   }
-  return shuffle(out, rng)
+
+  // Si el banc no dona per a tot, les reserves són el primer que se sacrifica:
+  // el cos principal de la prova té prioritat sobre unes preguntes que, per
+  // defecte, ni tan sols compten.
+  const bodySize = Math.min(out.length, opts.count)
+  const body = shuffle(out.slice(0, bodySize), rng)
+  const reserve = shuffle(out.slice(bodySize), rng)
+  return [...body, ...reserve]
 }

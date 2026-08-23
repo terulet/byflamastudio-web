@@ -80,6 +80,7 @@ Obre la URL que imprimeix Vite (per defecte `http://localhost:5173`).
 | `npm run typecheck` | Comprovació de tipus de tot el projecte |
 | `npm test` | Tests unitaris i de contingut (Vitest) |
 | `npm run test:e2e` | Tests d'extrem a extrem sobre el build (Playwright) |
+| `npm run test:a11y` | Només l'auditoria d'accessibilitat (axe-core, WCAG A/AA) |
 | `npm run content:validate` | Valida el contingut i falla si trenca cap invariant |
 | `npm run content:report` | Genera `artifacts/coverage-report.md` i `SOURCES.md` |
 | `npm run sources:download` | Baixa les fonts oficials a `sources/cache/` |
@@ -89,6 +90,23 @@ Obre la URL que imprimeix Vite (per defecte `http://localhost:5173`).
 
 `npm run test:e2e` necessita el build fet i aixeca el servidor de previsualització
 per si mateix.
+
+### Accessibilitat
+
+`tests/e2e/accessibility.spec.ts` passa axe-core per cada pantalla en els dos
+temes i falla si hi ha cap incompliment de WCAG 2.0/2.1/2.2 en nivell A o AA.
+Comprova, a més, que es pot respondre una pregunta només amb el teclat, que el
+focus és visible i que els controls arriben a l'àrea tàctil mínima.
+
+```bash
+npm run build
+npm run test:a11y        # 23 auditories: 7 pantalles × 2 temes + fluxos
+```
+
+Una auditoria automàtica atrapa el que és mesurable —contrast, noms accessibles,
+ordre de capçaleres, etiquetes— però no substitueix la revisió humana. Si toques
+la paleta de `src/styles/tokens.css`, torna-la a passar: els valors de contrast
+d'aquell fitxer estan mesurats, no estimats.
 
 ### Captures i QA visual
 

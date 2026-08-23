@@ -288,4 +288,43 @@ describe('muntatge de simulacres', () => {
     const paper = buildExamPaper({ pool: small, track: 'coneixements-professionals', count: 40, seed: 'e1' })
     expect(paper).toHaveLength(12)
   })
+
+  it('afegeix les preguntes de reserva al final, sense repetir-ne cap', () => {
+    const paper = buildExamPaper({
+      pool,
+      track: 'coneixements-professionals',
+      count: 40,
+      reserveCount: 2,
+      seed: 'e1',
+    })
+    expect(paper).toHaveLength(42)
+    expect(new Set(paper.map((p) => p.questionId)).size).toBe(42)
+  })
+
+  it('el cos del quadernet no canvia perquè hi hagi reserves', () => {
+    const base = buildExamPaper({ pool, track: 'coneixements-professionals', count: 40, seed: 'e1' })
+    const withReserve = buildExamPaper({
+      pool,
+      track: 'coneixements-professionals',
+      count: 40,
+      reserveCount: 2,
+      seed: 'e1',
+    })
+    // Les 40 primeres són les mateixes i en el mateix ordre: la reserva
+    // s'afegeix, no reordena la prova.
+    expect(withReserve.slice(0, 40).map((x) => x.questionId)).toEqual(base.map((x) => x.questionId))
+  })
+
+  it('sacrifica les reserves abans que el cos si el banc no dona per a tot', () => {
+    const small = pool.slice(0, 41)
+    const paper = buildExamPaper({
+      pool: small,
+      track: 'coneixements-professionals',
+      count: 40,
+      reserveCount: 2,
+      seed: 'e1',
+    })
+    // Hi ha 41 preguntes per a 40 + 2: el cos es completa i queda una reserva.
+    expect(paper).toHaveLength(41)
+  })
 })

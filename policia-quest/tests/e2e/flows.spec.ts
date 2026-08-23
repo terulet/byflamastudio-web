@@ -143,7 +143,7 @@ test('el simulacre professional aplica el format i la penalització reals', asyn
   await page.getByTestId('start-exam-roses-coneixements-professionals').click()
   await expect(page.getByTestId('exam-runner')).toBeVisible()
 
-  // 40 preguntes i 60 minuts.
+  // 40 preguntes i 60 minuts. El comptador no inclou les reserves.
   await expect(page.getByTestId('toggle-navigator')).toHaveText('1/40')
   await expect(page.getByTestId('exam-clock')).toHaveText(/^(59:5\d|60:00)$/)
 
@@ -155,7 +155,8 @@ test('el simulacre professional aplica el format i la penalització reals', asyn
   // Finalitzar amb preguntes en blanc demana confirmació.
   await page.getByTestId('exam-finish-early').click()
   await expect(page.getByTestId('confirm-finish')).toBeVisible()
-  await expect(page.getByText(/39 preguntes en blanc/)).toBeVisible()
+  // 40 del cos + 2 de reserva = 42 preguntes, una de contestada.
+  await expect(page.getByText(/41 preguntes en blanc/)).toBeVisible()
   await page.getByTestId('confirm-finish-yes').click()
 
   await expect(page.getByTestId('exam-result')).toBeVisible()
@@ -201,7 +202,8 @@ test('el simulacre complet encadena les dues proves amb temps propi', async ({ p
   await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
   await expect(page.getByTestId('exam-clock')).toHaveText(/^(19:5\d|20:00)$/)
 
-  for (let i = 0; i < 20; i++) {
+  // 20 del cos i 1 de reserva: es contesten totes, com el dia de l'examen.
+  for (let i = 0; i < 21; i++) {
     await page.getByTestId('exam-option-a').click()
     const next = page.getByTestId('exam-next')
     if (await next.isVisible()) await next.click()
@@ -246,8 +248,80 @@ test('el simulacre complet no repeteix cap pregunta entre les dues proves', asyn
         request.onerror = () => resolve([])
       }),
   )
-  expect(stored).toHaveLength(60)
-  expect(new Set(stored).size).toBe(60)
+  // 20 + 1 de reserva, i 40 + 2 de reserva.
+  expect(stored).toHaveLength(63)
+  expect(new Set(stored).size).toBe(63)
+})
+
+test('les preguntes de reserva es contesten però no compten per a la nota', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  // El cos són 20 preguntes; la reserva va al final i s'anuncia com a tal.
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('1/20')
+  await expect(page.getByTestId('reserve-notice')).toHaveCount(0)
+
+  for (let i = 0; i < 20; i++) {
+    await page.getByTestId('exam-option-a').click()
+    const next = page.getByTestId('exam-next')
+    if (await next.isVisible()) await next.click()
+  }
+
+  // Pregunta 21: de reserva, amb avís i comptador propi.
+  await expect(page.getByTestId('reserve-notice')).toBeVisible()
+  await expect(page.getByTestId('toggle-navigator')).toHaveText('R1/1')
+  await page.getByTestId('exam-option-a').click()
+  await page.getByTestId('exam-finish').click()
+
+  // La nota es calcula sobre 20, no sobre 21, i el resultat ho diu.
+  await expect(page.getByTestId('exam-result')).toBeVisible()
+  await expect(page.getByTestId('reserve-excluded')).toContainText('fora de la nota')
+  const stats = page.locator('.stats')
+  const correct = Number(await stats.locator('.stat__value').first().innerText())
+  const wrong = Number(await stats.locator('.stat__value').nth(1).innerText())
+  const blank = Number(await stats.locator('.stat__value').nth(2).innerText())
+  expect(correct + wrong + blank).toBe(20)
+})
+
+test('contestar l’última pregunta i finalitzar de seguida no demana confirmació', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  // 20 del cos + 1 de reserva.
+  for (let i = 0; i < 21; i++) {
+    await page.getByTestId('exam-option-a').click()
+    const next = page.getByTestId('exam-next')
+    if (await next.isVisible()) await next.click()
+  }
+  // Sense esperar cap repintat: el diàleg no pot sortir amb zero en blanc.
+  await page.getByTestId('exam-finish').click()
+  await expect(page.getByTestId('confirm-finish')).toHaveCount(0)
+  await expect(page.getByTestId('exam-result')).toBeVisible()
+})
+
+test('l’avís de preguntes en blanc es tanca sol quan ja no en queda cap', async ({ page }) => {
+  await skipOnboarding(page)
+  await page.goto('/#/exams')
+  await page.getByTestId('start-exam-roses-cultura-general').click()
+  await expect(page.getByTestId('exam-runner')).toBeVisible()
+
+  // Es deixa l'última en blanc i es demana finalitzar: surt l'avís.
+  for (let i = 0; i < 20; i++) {
+    await page.getByTestId('exam-option-a').click()
+    const next = page.getByTestId('exam-next')
+    if (await next.isVisible()) await next.click()
+  }
+  await page.getByTestId('exam-finish').click()
+  await expect(page.getByTestId('confirm-finish')).toBeVisible()
+  await expect(page.getByText(/1 pregunta en blanc/)).toBeVisible()
+
+  // L'avís no bloqueja la pregunta: en contestar-la deixa de tenir sentit.
+  await page.getByTestId('exam-option-a').click()
+  await expect(page.getByTestId('confirm-finish')).toHaveCount(0)
 })
 
 test('els errors del simulacre es poden enviar a la cua de repàs', async ({ page }) => {
@@ -256,7 +330,8 @@ test('els errors del simulacre es poden enviar a la cua de repàs', async ({ pag
   await page.getByTestId('start-exam-roses-cultura-general').click()
 
   // Es contesten totes amb la mateixa lletra per garantir errors.
-  for (let i = 0; i < 20; i++) {
+  // 20 del cos i 1 de reserva: es contesten totes, com el dia de l'examen.
+  for (let i = 0; i < 21; i++) {
     await page.getByTestId('exam-option-a').click()
     const next = page.getByTestId('exam-next')
     if (await next.isVisible()) await next.click()

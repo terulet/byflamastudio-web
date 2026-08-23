@@ -3,7 +3,7 @@ import { useMemo, type ReactNode } from 'react'
 import { pack, levelFor, useApp } from '../app/store.tsx'
 import { useDashboard, useToday } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
-import { dict, pick } from '../i18n/index.ts'
+import { dict, pick, plural } from '../i18n/index.ts'
 import { BrandMark, Meter, Stat } from '../components/ui.tsx'
 import { formatMilli } from '../engines/scoring.ts'
 import { isoToEpochDay } from '../util/date.ts'
@@ -57,7 +57,10 @@ export function Home(): ReactNode {
             <div>
               <div className="card__label">{t.home.greeting}</div>
               <div className="card__title" style={{ fontSize: 'var(--text-lg)' }}>
-                {progress.streakDays} {t.home.days} · {t.home.streak}
+                {/* Etiqueta primer i xifra després: «0 dies · Ratxa» es llegia
+                    del revés. I «1 dies» no existeix: cal el singular. */}
+                {t.home.streak} · {progress.streakDays}{' '}
+                {plural(progress.streakDays, t.home.day, t.home.days)}
               </div>
             </div>
             <span className="pill pill--accent">
