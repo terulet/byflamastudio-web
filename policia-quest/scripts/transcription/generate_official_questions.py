@@ -36,6 +36,24 @@ EXAMS = [
     ('roses-examen-2025-interins-cp', 'roses-2025-interins-cp', 2025, 'interina', 'coneixements-professionals', '2025-04-16'),
 ]
 
+# Notes de revisió humana, per questionId.
+#
+# Aquí només hi entra el que s'ha comprovat mirant el document oficial i
+# contrastant-lo amb la norma vigent. Una resposta oficial **no es canvia mai**:
+# el que va publicar el tribunal es conserva. El que sí que es fa és avisar quan
+# ha quedat enrere, perquè qui estudia no aprengui una redacció derogada.
+#
+# Vegeu artifacts/auditoria-visual-p0.md.
+REVIEW_NOTES = {
+    'q-of-roses-2025-interins-cp-036': (
+        'La resposta del tribunal (greu, 750 €) és la qualificació del text de 2019. '
+        'La modificació de l’Ordenança de convivència aprovada el 24 de febrer de 2021 '
+        '(BOP de Girona núm. 54, de 19-03-2021, modificació cinquena) va rebaixar '
+        'l’article 11.2 a infracció lleu amb 500 €. La resposta oficial es conserva tal '
+        'com es va publicar; el dret vigent avui, però, és l’altre.'
+    ),
+}
+
 # Contenidor per a preguntes d'examen oficial. El tribunal no etiqueta les
 # preguntes per tema i inventar-ne un seria afirmar el que no consta.
 CONTAINER_TOPIC = 'roses-examen-oficial'
@@ -78,6 +96,7 @@ def main():
                      + ', '.join(marks) + ').' if answer else
                      'El quadernet no porta cap marca de resposta inequívoca, de manera que la '
                      'pregunta queda sense clau oficial.'))
+            note = REVIEW_NOTES.get(qid)
             es = (f'Pregunta {q.number} del cuadernillo oficial de {held}. '
                   + ('La respuesta es la que marcó el tribunal en el cuadernillo publicado.'
                      if answer else
@@ -116,7 +135,7 @@ def main():
       originalNumber: {q.number},
       officialAnswer: {ts(answer or 'anullada')},
       reserve: {'true' if q.reserve else 'false'},
-{f"      transcriptionNotes: {ts('Sense marca de resposta al quadernet: importada sense clau.')}," if not answer else ''}    }},
+{f"      transcriptionNotes: {ts(note)}," if note else (f"      transcriptionNotes: {ts('Sense marca de resposta al quadernet: importada sense clau.')}," if not answer else '')}    }},
     tags: [{ts('examen-oficial')}, {ts(f'examen-{year}')}],
   }},"""
             blocks.append(block)

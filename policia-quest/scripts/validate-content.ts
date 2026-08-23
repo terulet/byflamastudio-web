@@ -95,10 +95,85 @@ for (const composition of ROSES_PACK.compositions) {
   }
 }
 
+/*
+ * ---------------- Porta de l'actualitat ----------------
+ *
+ * L'actualitat és l'únic contingut d'aquesta app que **afirma com és el món
+ * ara mateix**: qui ocupa un càrrec, què va passar el mes passat. Si s'equivoca
+ * no ensenya una norma antiga, ensenya un fet fals.
+ *
+ * Per això una pregunta etiquetada `actualitat` ha de passar per una porta més
+ * estreta que la resta. Aquestes comprovacions no són opcionals ni s'han de
+ * relaxar per desbloquejar un simulacre: relaxar-les és exactament el mal que
+ * eviten.
+ */
 for (const pack of ROSES_PACK.currentAffairs) {
   const parsed = CurrentAffairsPack.safeParse(pack)
   if (!parsed.success) {
     fail(`paquet d’actualitat ${pack.packId}: ${parsed.error.issues[0]?.message ?? 'invàlid'}`)
+    continue
+  }
+  if (pack.coversTo < pack.coversFrom) {
+    fail(`paquet d’actualitat ${pack.packId}: el període cobert acaba abans de començar`)
+  }
+  if (pack.expiresAt <= pack.coversTo) {
+    fail(`paquet d’actualitat ${pack.packId}: caduca abans d’acabar el període que cobreix`)
+  }
+  for (const id of pack.questionIds) {
+    const question = ROSES_PACK.questions.find((q) => q.questionId === id)
+    if (!question) {
+      fail(`paquet d’actualitat ${pack.packId}: la pregunta ${id} no existeix`)
+      continue
+    }
+    if (!question.tags.includes('actualitat')) {
+      fail(`paquet d’actualitat ${pack.packId}: ${id} no està etiquetada com a actualitat`)
+    }
+    if (question.reviewBy && question.reviewBy > pack.expiresAt) {
+      fail(
+        `paquet d’actualitat ${pack.packId}: ${id} diu que és vigent (${question.reviewBy}) ` +
+          `més enllà de la caducitat del paquet (${pack.expiresAt})`,
+      )
+    }
+  }
+}
+
+const packedQuestionIds = new Set(ROSES_PACK.currentAffairs.flatMap((p) => p.questionIds))
+
+for (const question of ROSES_PACK.questions) {
+  if (!question.tags.includes('actualitat')) continue
+  const id = question.questionId
+
+  // 1. Caduca sempre, i amb data.
+  if (!question.dynamic) fail(`actualitat ${id}: ha de portar dynamic: true`)
+  if (!question.reviewBy) fail(`actualitat ${id}: ha de portar reviewBy`)
+
+  // 2. Viu dins d'un paquet versionat, mai solta pel banc.
+  if (question.status === 'active' && !packedQuestionIds.has(id)) {
+    fail(`actualitat ${id}: activa però fora de cap paquet d’actualitat`)
+  }
+
+  // 3. Cita una font oficial amb data de publicació, contrastada per una
+  //    persona. Una pregunta d'actualitat amb la referència pendent de
+  //    verificar afirmaria un fet que ningú ha comprovat.
+  if (question.references.length === 0) {
+    fail(`actualitat ${id}: sense cap referència`)
+  }
+  for (const reference of question.references) {
+    if (reference.reviewStatus !== 'verified') {
+      fail(
+        `actualitat ${id}: la referència a ${reference.sourceId} és ${reference.reviewStatus}. ` +
+          `L’actualitat només entra amb la font contrastada.`,
+      )
+    }
+    const source = ROSES_PACK.sources.find((x) => x.sourceId === reference.sourceId)
+    if (source && !source.publishedAt) {
+      fail(`actualitat ${id}: la font ${source.sourceId} no té data de publicació`)
+    }
+  }
+
+  // 4. No pot venir d'un examen antic: allò és material històric.
+  if (question.origin === 'official') {
+    fail(`actualitat ${id}: una pregunta d’examen oficial és material històric, no actualitat vigent`)
   }
 }
 

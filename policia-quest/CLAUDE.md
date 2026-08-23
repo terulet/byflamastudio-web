@@ -141,7 +141,11 @@ El 23 d'agost de 2026 es va rebre un paquet de rescat amb 36 documents oficials
 seu SHA-256. Això va desbloquejar bona part del contingut:
 
 - **Els sis exàmens de 2025 i 2026 estan importats**: 189 preguntes amb la
-  resposta que hi va marcar el tribunal, mai deduïda.
+  resposta que hi va marcar el tribunal, mai deduïda, i **auditades visualment
+  una a una** contra el PDF renderitzat (`artifacts/auditoria-visual-p0.md`):
+  189/189 coincideixen. L'auditoria va trobar una resposta oficial que ja no
+  reflecteix el dret vigent; es conserva tal com es va publicar i porta una nota
+  visible a l'app.
 - **Els 24 exàmens històrics** (2016–2024) estan adoptats i registrats amb la
   seva URL i data reals, però **pendents de transcriure**. La nota de cada un
   diu si la marca de resposta és llegible al document; sis no en tenen cap de
@@ -152,6 +156,12 @@ seu SHA-256. Això va desbloquejar bona part del contingut:
 - **43 de les 79 fonts continuen pendents**: són les normes generals (BOE,
   Portal Jurídic) que aquest paquet no incloïa. Les seves referències segueixen
   en `pending-source-verification`.
+- **La porta de l'actualitat està tancada amb clau i provada.** El validador
+  refusa qualsevol pregunta etiquetada `actualitat` que no caduqui amb data, no
+  visqui dins un paquet, no citi una font `verified` amb data de publicació, o
+  vingui d'un examen antic. El camí de desbloqueig està provat amb fixtures a
+  `tests/unit/actualitat.test.ts`: amb deu preguntes vigents el simulacre s'obre
+  sol i el quadernet surt 10+10, i el dia que caduquen es torna a bloquejar sol.
 - **El paquet d'actualitat continua buit**, i per això el simulacre de cultura
   general i el complet segueixen **bloquejats**. Les preguntes d'actualitat dels
   exàmens antics **no** el desbloquegen: són material històric i s'importen amb
@@ -160,9 +170,12 @@ seu SHA-256. Això va desbloquejar bona part del contingut:
 La feina que queda, en aquest ordre:
 
 1. Omplir el paquet d'actualitat amb fets verificats contra fonts oficials
-   vigents, amb data de publicació, `reviewBy` i revisió humana de la clau. És
-   l'únic que desbloqueja el simulacre de cultura general i el complet. En
-   treure el marcador `contentStatus: 'blocked-missing-content'` cal recuperar
+   vigents, amb data de publicació, `reviewBy` i revisió humana de la clau. El
+   procediment és a la capçalera de `content/.../current-affairs/index.ts`. Cal
+   accés a les fonts: des d'aquest entorn, `roses.cat`, `boe.es`, `ddgi.cat` i
+   `portaljuridic.gencat.cat` responen CONNECT 403, i escriure actualitat de
+   memòria és inventar-la. És l'únic que desbloqueja el simulacre de cultura
+   general i el complet. En treure el marcador `contentStatus: 'blocked-missing-content'` cal recuperar
    els tests d'extrem a extrem del simulacre complet i les seves captures.
 2. Aconseguir les 43 fonts generals pendents (`npm run sources:adopt -- --list`
    les llista amb la seva URL oficial) i contrastar-hi les referències que

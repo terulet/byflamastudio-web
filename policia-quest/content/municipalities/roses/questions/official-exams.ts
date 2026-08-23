@@ -231,7 +231,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'El 1944.' },
       { optionId: 'b', text: 'El 1939.' },
       { optionId: 'c', text: 'El 1942.' },
-      { optionId: 'd', text: 'El 1945. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Primer exercici: prova de cultura general Data: 15/04/2026' },
+      { optionId: 'd', text: 'El 1945.' },
     ],
     correct: 'd',
     explanation: {
@@ -426,7 +426,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Banyoles.' },
       { optionId: 'b', text: 'Porqueres.' },
       { optionId: 'c', text: 'Roses.' },
-      { optionId: 'd', text: 'Figueres. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Primer exercici: prova de cultura general Data: 15/04/2026' },
+      { optionId: 'd', text: 'Figueres.' },
     ],
     correct: 'b',
     explanation: {
@@ -660,7 +660,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Joan Plana Sagué.' },
       { optionId: 'b', text: 'Miguel Muñoz Sánchez.' },
       { optionId: 'c', text: 'Joana Pérez González.' },
-      { optionId: 'd', text: 'Ester Navas Hernández. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Primer exercici: prova de cultura general Data: 15/04/2026' },
+      { optionId: 'd', text: 'Ester Navas Hernández.' },
     ],
     correct: 'b',
     explanation: {
@@ -816,7 +816,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Yamena.' },
       { optionId: 'b', text: 'Yamusukro.' },
       { optionId: 'c', text: 'Dhaka.' },
-      { optionId: 'd', text: 'Luanda. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Primer exercici: prova de cultura general Data: 15/04/2026 El primer exercici és obligatori i eliminatori i el realitzen els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. La prova de cultura general versa sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política. Aquesta prova consisteix a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test, proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valora segons el següent barem: Per cada resposta correcta: 1 punt. Per cada resposta incorrecta: 0,25 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’ha previst 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
+      { optionId: 'd', text: 'Luanda. El primer exercici és obligatori i eliminatori i el realitzen els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. La prova de cultura general versa sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política. Aquesta prova consisteix a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test, proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valora segons el següent barem: Per cada resposta correcta: 1 punt. Per cada resposta incorrecta: 0,25 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’ha previst 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
     ],
     correct: 'b',
     explanation: {
@@ -972,7 +972,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Als governs locals.' },
       { optionId: 'b', text: 'Al Consell Comarcal.' },
       { optionId: 'c', text: 'A la Diputació.' },
-      { optionId: 'd', text: 'A la Generalitat de Catalunya. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'A la Generalitat de Catalunya.' },
     ],
     correct: 'd',
     explanation: {
@@ -1128,7 +1128,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Només als funcionaris públics.' },
       { optionId: 'b', text: 'Als empleats públics.' },
       { optionId: 'c', text: 'Als càrrecs electes.' },
-      { optionId: 'd', text: 'Als ciutadans. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Als ciutadans.' },
     ],
     correct: 'b',
     explanation: {
@@ -1284,7 +1284,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'A la Llei 39/2015, d\'1 d\'octubre, del procediment administratiu comú de les administracions públiques.' },
       { optionId: 'b', text: 'A la Llei 40/2015, d’1 d’octubre, del règim jurídic del sector públic.' },
       { optionId: 'c', text: 'A la Llei 26/2010, de 3 d\'agost, de règim jurídic i de procediment de les administracions públiques de Catalunya.' },
-      { optionId: 'd', text: 'A la Llei 26/2010, de 3 d\'agost, de règim jurídic i de procediment de les administracions públiques de les administracions públiques espanyoles. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'A la Llei 26/2010, de 3 d\'agost, de règim jurídic i de procediment de les administracions públiques de les administracions públiques espanyoles.' },
     ],
     correct: 'a',
     explanation: {
@@ -1440,7 +1440,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Comunicació.' },
       { optionId: 'b', text: 'Declaració responsable.' },
       { optionId: 'c', text: 'Instància.' },
-      { optionId: 'd', text: 'Resolució. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Resolució.' },
     ],
     correct: 'a',
     explanation: {
@@ -1596,7 +1596,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'L\'origen ètnic o racial.' },
       { optionId: 'b', text: 'L’adreça.' },
       { optionId: 'c', text: 'Dades biomètriques adreçades a identificar de manera unívoca la persona.' },
-      { optionId: 'd', text: 'Dades genètiques. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Dades genètiques.' },
     ],
     correct: 'b',
     explanation: {
@@ -1752,7 +1752,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Les infraccions molt greus amb multes de 30.001 a 300.000 euros.' },
       { optionId: 'b', text: 'Les infraccions greus amb multes de 601 a 3.000 euros.' },
       { optionId: 'c', text: 'Les infraccions menys greus amb multes de 601 a 30.000 euros.' },
-      { optionId: 'd', text: 'Les infraccions lleus amb multes de 100 a 600 euros. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Les infraccions lleus amb multes de 100 a 600 euros.' },
     ],
     correct: 'd',
     explanation: {
@@ -1869,7 +1869,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Les associacions i les entitats veïnals i ciutadanes del municipi, en el cas que puguin ser afectades pels assumptes a tractar.' },
       { optionId: 'b', text: 'Quan ho requereixin els assumptes a tractar, representants de la judicatura i de la fiscalia, si així ho acorda l’administració de l’Estat.' },
       { optionId: 'c', text: 'El delegat o delegada territorial del Govern, qui pot delegar la seva representació en el subdirector o subdirectora general.' },
-      { optionId: 'd', text: 'Les respostes a) i b) són correctes. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Les respostes a) i b) són correctes.' },
     ],
     correct: 'd',
     explanation: {
@@ -1986,7 +1986,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Un delicte contra la seguretat viària, tipificat a l’article 379.2 del Codi Penal.' },
       { optionId: 'b', text: 'Una sanció de mil euros i la pèrdua de sis punts.' },
       { optionId: 'c', text: 'Una sanció de cinc-cents euros i la pèrdua de sis punts.' },
-      { optionId: 'd', text: 'Una sanció de cinc-cents euros i la pèrdua de quatre punts. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Una sanció de cinc-cents euros i la pèrdua de quatre punts.' },
     ],
     correct: 'a',
     explanation: {
@@ -2142,7 +2142,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'No contractar l’assegurança de responsabilitat civil.' },
       { optionId: 'b', text: 'Fer activitats d’ensinistrament sense acreditació professional oficial.' },
       { optionId: 'c', text: 'No inscriure el gos al registre específic del municipi corresponent.' },
-      { optionId: 'd', text: 'Fer activitats d’ensinistrament d’atac no autoritzades. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: 'Fer activitats d’ensinistrament d’atac no autoritzades.' },
     ],
     correct: 'c',
     explanation: {
@@ -2259,7 +2259,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: '9 mesos.' },
       { optionId: 'b', text: '12 mesos.' },
       { optionId: 'c', text: '6 mesos.' },
-      { optionId: 'd', text: '3 mesos. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'd', text: '3 mesos.' },
     ],
     correct: 'c',
     explanation: {
@@ -2413,7 +2413,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     stem: 'D’acord amb la Constitució espanyola, els alcaldes són escollits:',
     options: [
       { optionId: 'a', text: 'Pels veïns que estiguin empadronats en el municipi corresponent.' },
-      { optionId: 'b', text: 'Pels regidors o pels veïns. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026' },
+      { optionId: 'b', text: 'Pels regidors o pels veïns.' },
       { optionId: 'c', text: 'Únicament pels regidors.' },
       { optionId: 'd', text: 'Pels veïns espanyols que estiguin en el cens electoral.' },
     ],
@@ -2454,7 +2454,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Només la venda del producte.' },
       { optionId: 'b', text: 'Només la vigilància per alertar de la presència policial.' },
       { optionId: 'c', text: 'Tant la venda, com la col·laboració i la compra o adquisició del producte.' },
-      { optionId: 'd', text: 'Cap de les anteriors, la venda ambulant és competència de l\'Estat. Exp.: 2025/010339 Procés selectiu: agents interins 2026 Segon exercici: prova de coneixements professionals Data: 15/04/2026 El segon exercici és obligatori i eliminatori i consisteix a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I d’aquestes bases. S’han previst 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva. Aquest exercici es valora segons el barem següent: Cada resposta correcta té una puntuació de 0,5 punts. Cada resposta incorrecta resta 0,125 punts. Es puntuarà entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent.' },
+      { optionId: 'd', text: 'Cap de les anteriors, la venda ambulant és competència de l\'Estat. El segon exercici és obligatori i eliminatori i consisteix a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I d’aquestes bases. S’han previst 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva. Aquest exercici es valora segons el barem següent: Cada resposta correcta té una puntuació de 0,5 punts. Cada resposta incorrecta resta 0,125 punts. Es puntuarà entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent.' },
     ],
     correct: 'c',
     explanation: {
@@ -2688,7 +2688,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Baix Empordà, Gironès, Pla de l’Estany i Garrotxa.' },
       { optionId: 'b', text: 'Baix Empordà, Gironès, El Berguedà i Garrotxa.' },
       { optionId: 'c', text: 'Baix Empordà, Ripollès, Pla de l’Estany i Garrotxa.' },
-      { optionId: 'd', text: 'Cerdanya, Gironès, Pla de l’Estany i Garrotxa. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Primer exercici: prova de cultura general Data: 03/12/2025' },
+      { optionId: 'd', text: 'Cerdanya, Gironès, Pla de l’Estany i Garrotxa.' },
     ],
     correct: 'a',
     explanation: {
@@ -2883,7 +2883,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Esther Giménez Salinas.' },
       { optionId: 'b', text: 'Pere Vila Fulcarà.' },
       { optionId: 'c', text: 'Miquel Noguer i Planas.' },
-      { optionId: 'd', text: 'Frederica Rahola Espona. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Primer exercici: prova de cultura general Data: 03/12/2025' },
+      { optionId: 'd', text: 'Frederica Rahola Espona.' },
     ],
     correct: 'c',
     explanation: {
@@ -3078,7 +3078,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'ERC.' },
       { optionId: 'b', text: 'Aliança Catalana.' },
       { optionId: 'c', text: 'VOX.' },
-      { optionId: 'd', text: 'PSC. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Primer exercici: prova de cultura general Data: 03/12/2025' },
+      { optionId: 'd', text: 'PSC.' },
     ],
     correct: 'b',
     explanation: {
@@ -3273,7 +3273,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Yamusukro.' },
       { optionId: 'b', text: 'Moroni.' },
       { optionId: 'c', text: 'Yaundé.' },
-      { optionId: 'd', text: 'Timbu. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Primer exercici: prova de cultura general Data: 03/12/2025 El primer exercici (prova de cultura general) és obligatori i eliminatori i el realitzen els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. Aquesta prova versa sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política i consisteix a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valora segons el següent barem: Cada resposta correcta té una puntuació d’1 punt. Cada resposta incorrecta resta 0,25 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’ha previst 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
+      { optionId: 'd', text: 'Timbu. El primer exercici (prova de cultura general) és obligatori i eliminatori i el realitzen els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. Aquesta prova versa sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política i consisteix a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valora segons el següent barem: Cada resposta correcta té una puntuació d’1 punt. Cada resposta incorrecta resta 0,25 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’ha previst 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
     ],
     correct: 'a',
     explanation: {
@@ -3429,7 +3429,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'La regulació de les condicions de seguretat en les activitats organitzades en espais públics i en locals de concurrència pública.' },
       { optionId: 'b', text: 'La coordinació mitjançant la Junta de Seguretat dels diversos cossos i forces presents al municipi.' },
       { optionId: 'c', text: 'La protecció civil i la prevenció d\'incendis.' },
-      { optionId: 'd', text: 'Totes les respostes anteriors són correctes. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'Totes les respostes anteriors són correctes.' },
     ],
     correct: 'd',
     explanation: {
@@ -3585,7 +3585,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: '6 dies.' },
       { optionId: 'b', text: '15 dies.' },
       { optionId: 'c', text: '20 dies.' },
-      { optionId: 'd', text: '1 mes. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: '1 mes.' },
     ],
     correct: 'b',
     explanation: {
@@ -3741,7 +3741,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Assumpció per part d\'un òrgan superior jeràrquic de l\'exercici de la competència atribuïda o delegada a un òrgan inferior, quan circumstàncies d\'índole tècnica, econòmica, social, jurídica o territorial ho facin convenient.' },
       { optionId: 'b', text: 'Transferència de l\'exercici de determinades competències administratives que l\'òrgan que en té atribuïda la titularitat du a terme en favor d\'altres òrgans i que pot revocar en qualsevol moment.' },
       { optionId: 'c', text: 'Exercici d’una activitat pròpia atribuïda per llei.' },
-      { optionId: 'd', text: 'Realització d’activitats de caràcter material o tècnic de la competència dels òrgans administratius encomanada per part d’una administració. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'Realització d’activitats de caràcter material o tècnic de la competència dels òrgans administratius encomanada per part d’una administració.' },
     ],
     correct: 'a',
     explanation: {
@@ -3897,7 +3897,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Iniciació.' },
       { optionId: 'b', text: 'Instrucció.' },
       { optionId: 'c', text: 'Ordenació.' },
-      { optionId: 'd', text: 'Resolució Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'Resolució' },
     ],
     correct: 'b',
     explanation: {
@@ -4053,7 +4053,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Adequació a l’ordenament jurídic.' },
       { optionId: 'b', text: 'Relacions amb la comunitat.' },
       { optionId: 'c', text: 'Tractament de detinguts.' },
-      { optionId: 'd', text: 'Totes les anteriors són correctes. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'Totes les anteriors són correctes.' },
     ],
     correct: 'b',
     explanation: {
@@ -4170,7 +4170,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'L’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat.' },
       { optionId: 'b', text: 'L’òrgan consultiu i executiu superior a Catalunya en matèria de seguretat.' },
       { optionId: 'c', text: 'L’òrgan consultiu inferior a Catalunya en matèria de seguretat.' },
-      { optionId: 'd', text: 'L’òrgan executiu superior a Catalunya en matèria de seguretat. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'L’òrgan executiu superior a Catalunya en matèria de seguretat.' },
     ],
     correct: 'a',
     explanation: {
@@ -4287,7 +4287,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'L’alcalde/ssa.' },
       { optionId: 'b', text: 'El membre de major graduació de la plantilla.' },
       { optionId: 'c', text: 'El/la regidor/a de Seguretat.' },
-      { optionId: 'd', text: 'El/la president/a de la Generalitat. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'El/la president/a de la Generalitat.' },
     ],
     correct: 'b',
     explanation: {
@@ -4404,7 +4404,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Les 10 del vespre fins a les 10 del matí cada dia.' },
       { optionId: 'b', text: 'Les 10 del vespre fins a les 8 del matí només els caps de setmana.' },
       { optionId: 'c', text: 'Les 10 del vespre fins a les 8 del matí cada dia de la setmana.' },
-      { optionId: 'd', text: 'És permès sempre. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'És permès sempre.' },
     ],
     correct: 'c',
     explanation: {
@@ -4560,7 +4560,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Tota actuació que signifiqui discriminació per raó de raça, sexe, orientació sexual, religió, llengua, opinió, lloc de naixement, veïnatge o qualsevol altra condició o circumstància personal o social.' },
       { optionId: 'b', text: 'Causar, per negligència o mala fe, danys greus en el patrimoni i els béns de la corporació.' },
       { optionId: 'c', text: 'La reincidència en la comissió de faltes lleus.' },
-      { optionId: 'd', text: 'La b) i la c) són correctes. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'La b) i la c) són correctes.' },
     ],
     correct: 'a',
     explanation: {
@@ -4716,7 +4716,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Aquell en què el valor de la defraudació superi els 50.000 euros o afecti un nombre elevat de persones.' },
       { optionId: 'b', text: 'Aquell en què el valor de la defraudació superi els 40.000 € i afecti únicament una persona.' },
       { optionId: 'c', text: 'Aquell en què l’estafa recau sobre béns de titularitat privada i d’un import no superior als 30.000 €.' },
-      { optionId: 'd', text: 'Aquell que recau sobre una segona residència. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'Aquell que recau sobre una segona residència.' },
     ],
     correct: 'a',
     explanation: {
@@ -4833,7 +4833,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'El detindrem i denunciarem penalment.' },
       { optionId: 'b', text: 'El denunciarem administrativament.' },
       { optionId: 'c', text: 'El denunciarem penalment sense detenció.' },
-      { optionId: 'd', text: 'El denunciarem penalment, el detindrem i li retirarem el permís de conduir. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025' },
+      { optionId: 'd', text: 'El denunciarem penalment, el detindrem i li retirarem el permís de conduir.' },
     ],
     correct: 'c',
     explanation: {
@@ -4911,7 +4911,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Les de policia de trànsit urbà.' },
       { optionId: 'b', text: 'Les d’intervenció en la resolució amistosa de conflictes privats, si hi són requerides.' },
       { optionId: 'c', text: 'Les de policia de seguretat ciutadana i l\'ordre públic.' },
-      { optionId: 'd', text: 'Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals. Exp.: 2025/005279 Procés selectiu: 4 agents en propietat 2025 Segon exercici: prova de coneixements professionals Data: 03/12/2025 El segon exercici (prova de coneixements professionals) és obligatori i eliminatori i consisteix a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I de les bases. Aquest exercici es valora segons el següent barem: Cada resposta correcta té una puntuació de 0,5 punts. Cada resposta incorrecta resta 0,125 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’han previst 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva.' },
+      { optionId: 'd', text: 'Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals. El segon exercici (prova de coneixements professionals) és obligatori i eliminatori i consisteix a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I de les bases. Aquest exercici es valora segons el següent barem: Cada resposta correcta té una puntuació de 0,5 punts. Cada resposta incorrecta resta 0,125 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’han previst 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva.' },
     ],
     correct: 'b',
     explanation: {
@@ -5145,7 +5145,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Vermell, blanc i blau.' },
       { optionId: 'b', text: 'Vermell, groc i vermell.' },
       { optionId: 'c', text: 'Verd, rosa i vermell.' },
-      { optionId: 'd', text: 'Negre, groc i lila. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Primer exercici: prova de cultura general Data: 16/04/2025' },
+      { optionId: 'd', text: 'Negre, groc i lila.' },
     ],
     correct: 'a',
     explanation: {
@@ -5340,7 +5340,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Madrid.' },
       { optionId: 'b', text: 'València.' },
       { optionId: 'c', text: 'Sevilla.' },
-      { optionId: 'd', text: 'Santander. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Primer exercici: prova de cultura general Data: 16/04/2025' },
+      { optionId: 'd', text: 'Santander.' },
     ],
     correct: 'd',
     explanation: {
@@ -5574,7 +5574,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Joan Plana Sagué.' },
       { optionId: 'b', text: 'Josep Maria Martínez Chinchilla.' },
       { optionId: 'c', text: 'Joana Pérez González.' },
-      { optionId: 'd', text: 'Olga Simarro Rojas. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Primer exercici: prova de cultura general Data: 16/04/2025' },
+      { optionId: 'd', text: 'Olga Simarro Rojas.' },
     ],
     correct: 'd',
     explanation: {
@@ -5730,7 +5730,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Yerevan.' },
       { optionId: 'b', text: 'Kabul.' },
       { optionId: 'c', text: 'Dhaka.' },
-      { optionId: 'd', text: 'Tirana. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Primer exercici: prova de cultura general Data: 16/04/2025 El primer exercici és obligatori i eliminatori i el realitzaran els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. La prova de cultura general versarà sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política. Aquesta prova consistirà a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test, que seran proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valorarà segons el següent barem: 1 punt per cada resposta correcta i –0,25 punts per cada resposta incorrecta. Es puntuarà entre 0 i 20 punts i caldrà obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. Es podrà preveure 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
+      { optionId: 'd', text: 'Tirana. El primer exercici és obligatori i eliminatori i el realitzaran els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. La prova de cultura general versarà sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política. Aquesta prova consistirà a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test, que seran proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valorarà segons el següent barem: 1 punt per cada resposta correcta i –0,25 punts per cada resposta incorrecta. Es puntuarà entre 0 i 20 punts i caldrà obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. Es podrà preveure 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
     ],
     correct: 'a',
     explanation: {
@@ -5808,7 +5808,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Tota persona té dret a la llibertat i a la seguretat.' },
       { optionId: 'b', text: 'Ningú no pot ser privat de la seva llibertat.' },
       { optionId: 'c', text: 'La detenció preventiva no pot durar més temps de l’estrictament necessari per a la realització de les investigacions tendents a l’esclariment dels fets.' },
-      { optionId: 'd', text: 'En tot cas, aquest termini ha de ser com a màxim 72 hores, transcorregut el qual ha de ser posat en llibertat o a disposició judicial. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'En tot cas, aquest termini ha de ser com a màxim 72 hores, transcorregut el qual ha de ser posat en llibertat o a disposició judicial.' },
     ],
     correct: 'b',
     explanation: {
@@ -5925,7 +5925,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'El municipi és l’entitat local bàsica de l’organització territorial de l’Estat.' },
       { optionId: 'b', text: 'No té personalitat jurídica i plena capacitat per al compliment dels seus fins.' },
       { optionId: 'c', text: 'Són elements del municipi el territori, la població i l’organització.' },
-      { optionId: 'd', text: 'Cada municipi formarà part d’una sola província. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Cada municipi formarà part d’una sola província.' },
     ],
     correct: 'b',
     explanation: {
@@ -6042,7 +6042,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: '3 anys.' },
       { optionId: 'b', text: '6 anys.' },
       { optionId: 'c', text: '9 anys.' },
-      { optionId: 'd', text: '12 anys. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: '12 anys.' },
     ],
     correct: 'c',
     explanation: {
@@ -6158,7 +6158,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     options: [
       { optionId: 'a', text: 'Lleu.' },
       { optionId: 'b', text: 'Greu.' },
-      { optionId: 'c', text: 'Molt greu. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'c', text: 'Molt greu.' },
       { optionId: 'd', text: 'No és una conducta tipificada a la Llei 6/1991, de 10 de juliol, de les policies locals.' },
     ],
     correct: 'c',
@@ -6276,7 +6276,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Els que limitin drets subjectius o interessos legítims.' },
       { optionId: 'b', text: 'Els que se separin del criteri seguit en actuacions precedents o del dictamen d’òrgans consultius.' },
       { optionId: 'c', text: 'Les propostes de resolució en els procediments de caràcter sancionador, així com els actes que resolguin procediments de caràcter sancionador o de responsabilitat patrimonial.' },
-      { optionId: 'd', text: 'Els actes d’atorgament d’una cessió d’ús temporal de la via pública. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Els actes d’atorgament d’una cessió d’ús temporal de la via pública.' },
     ],
     correct: 'd',
     explanation: {
@@ -6393,7 +6393,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Iniciació.' },
       { optionId: 'b', text: 'Instrucció.' },
       { optionId: 'c', text: 'Finalització.' },
-      { optionId: 'd', text: 'Seguiment. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Seguiment.' },
     ],
     correct: 'd',
     explanation: {
@@ -6510,7 +6510,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Garantir una societat de la informació segura per tots.' },
       { optionId: 'b', text: 'Garantir que tots els/les nens/es disposin d’un ordinador segur a casa seva.' },
       { optionId: 'c', text: 'Garantir una societat de la informació segura només per a grans empreses.' },
-      { optionId: 'd', text: 'Garantir que totes les empreses treballin amb seguretat. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Garantir que totes les empreses treballin amb seguretat.' },
     ],
     correct: 'a',
     explanation: {
@@ -6627,7 +6627,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Aprovar els plans de coordinació en matèria de seguretat i d\'infraestructura policial.' },
       { optionId: 'b', text: 'Informar de les plantilles dels cossos de policia de les comunitats autònomes i les seves modificacions.' },
       { optionId: 'c', text: 'Proposar programes de formació i perfeccionament de les policies.' },
-      { optionId: 'd', text: 'Aprovar directives i recomanacions de caràcter general. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Aprovar directives i recomanacions de caràcter general.' },
     ],
     correct: 'd',
     explanation: {
@@ -6744,7 +6744,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'En els municipis que tenen més de cent mil habitants.' },
       { optionId: 'b', text: 'En els municipis que tenen més de dos-cents mil habitants.' },
       { optionId: 'c', text: 'En els municipis de menys de cent mil habitants, si el nombre d\'agents excedeix de cent i les característiques especials del municipi ho aconsellen.' },
-      { optionId: 'd', text: 'En els municipis de menys de cent mil habitants, si el nombre d\'agents excedeix de cent cinquanta i les característiques especials del municipi ho aconsellen. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'En els municipis de menys de cent mil habitants, si el nombre d\'agents excedeix de cent cinquanta i les característiques especials del municipi ho aconsellen.' },
     ],
     correct: 'b',
     explanation: {
@@ -6861,7 +6861,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Jutjat de Primera Instància i Instrucció.' },
       { optionId: 'b', text: 'Jutjat de Violència sobre la Dona.' },
       { optionId: 'c', text: 'Audiència Provincial.' },
-      { optionId: 'd', text: 'Jutjat del Penal. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Jutjat del Penal.' },
     ],
     correct: 'c',
     explanation: {
@@ -6978,7 +6978,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Motocicletes amb una potència màxima de 35 kW i una relació potencia/pes màxim de 0,2 kW/kg i no derivades d\'un vehicle amb més del doble de la seva potència.' },
       { optionId: 'b', text: 'Automòbils distints dels que autoritza a conduir el permís de les classes D1 o D, la massa màxima autoritzada de la qual excedeixi de 3.500 kg i no sobrepassi els 7.500 kg, dissenyats i construïts per al transport de no més de vuit passatgers a més del conductor.' },
       { optionId: 'c', text: 'Amb una antiguitat superior a tres anys, les motocicletes la conducció de les quals autoritza el permís de la classe A1.' },
-      { optionId: 'd', text: 'Amb una antiguitat superior a dos anys, les motocicletes la conducció de les quals autoritza el permís de la classe A1. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Amb una antiguitat superior a dos anys, les motocicletes la conducció de les quals autoritza el permís de la classe A1.' },
     ],
     correct: 'c',
     explanation: {
@@ -7095,7 +7095,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Els cicles i les bicicletes.' },
       { optionId: 'b', text: 'Les bicicletes, únicament.' },
       { optionId: 'c', text: 'Els cicles, bicicletes i vehicles de mobilitat personal.' },
-      { optionId: 'd', text: 'Les bicicletes i els vehicles de mobilitat personal. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Les bicicletes i els vehicles de mobilitat personal.' },
     ],
     correct: 'c',
     explanation: {
@@ -7158,7 +7158,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       originalNumber: 36,
       officialAnswer: 'b',
       reserve: false,
-    },
+      transcriptionNotes: 'La resposta del tribunal (greu, 750 €) és la qualificació del text de 2019. La modificació de l’Ordenança de convivència aprovada el 24 de febrer de 2021 (BOP de Girona núm. 54, de 19-03-2021, modificació cinquena) va rebaixar l’article 11.2 a infracció lleu amb 500 €. La resposta oficial es conserva tal com es va publicar; el dret vigent avui, però, és l’altre.',    },
     tags: ['examen-oficial', 'examen-2025'],
   },
   {
@@ -7212,7 +7212,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'El privat de llibertat.' },
       { optionId: 'b', text: 'El Defensor del Poble.' },
       { optionId: 'c', text: 'El Ministeri Fiscal.' },
-      { optionId: 'd', text: 'Totes les respostes anteriors són correctes. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'Totes les respostes anteriors són correctes.' },
     ],
     correct: 'd',
     explanation: {
@@ -7290,7 +7290,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Les Forces i Cossos de Seguretat poden dissoldre la reunió o manifestació en qualsevol cas i sense previ avís.' },
       { optionId: 'b', text: 'Les Forces i Cossos de Seguretat poden dissoldre la reunió o manifestació en qualsevol cas i amb previ avís.' },
       { optionId: 'c', text: 'En cas que es produeixi una alteració de la seguretat ciutadana amb armes, artefactes explosius o objectes contundents o de qualsevol altre mode perillosos, les Forces i Cossos de Seguretat podran dissoldre la reunió o manifestació o retirar els vehicles i obstacles sense necessitat de previ avís.' },
-      { optionId: 'd', text: 'En cas que es produeixi una alteració de la seguretat ciutadana amb armes, artefactes explosius o objectes contundents o de qualsevol altre mode perillosos, les Forces i Cossos de Seguretat podran dissoldre la reunió o manifestació o retirar els vehicles i obstacles amb previ avís. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025' },
+      { optionId: 'd', text: 'En cas que es produeixi una alteració de la seguretat ciutadana amb armes, artefactes explosius o objectes contundents o de qualsevol altre mode perillosos, les Forces i Cossos de Seguretat podran dissoldre la reunió o manifestació o retirar els vehicles i obstacles amb previ avís.' },
     ],
     correct: 'c',
     explanation: {
@@ -7368,7 +7368,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Són delictes les accions doloses penades per la llei.' },
       { optionId: 'b', text: 'Són delictes les accions i omissions doloses o imprudents penades per la llei.' },
       { optionId: 'c', text: 'Són delictes les accions doloses o imprudents penades per la llei.' },
-      { optionId: 'd', text: 'Són delictes les accions imprudents penades per la llei. Exp.: 2024/009358 Procés selectiu: agents interins 2025 Segon exercici: prova de coneixements professionals Data: 16/04/2025 El segon exercici és obligatori i eliminatori i consistirà a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I de les bases. Es podran preveure 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva. Aquest exercici es valorarà segons el barem següent: cada resposta correcta tindrà una puntuació de 0,5 punts i cada resposta incorrecta restarà 0,125 punts. Es puntuarà entre 0 i 20 punts i caldrà obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent.' },
+      { optionId: 'd', text: 'Són delictes les accions imprudents penades per la llei. El segon exercici és obligatori i eliminatori i consistirà a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I de les bases. Es podran preveure 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva. Aquest exercici es valorarà segons el barem següent: cada resposta correcta tindrà una puntuació de 0,5 punts i cada resposta incorrecta restarà 0,125 punts. Es puntuarà entre 0 i 20 punts i caldrà obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent.' },
     ],
     correct: 'b',
     explanation: {

@@ -100,6 +100,23 @@ def visual_lines(doc):
         yield key[0], ''.join(p['text'] for p in parts).strip(), parts
 
 
+def repeated_lines(doc, min_share=0.5):
+    """Text de capçalera i peu, detectat perquè **es repeteix a les pàgines**.
+
+    Els quadernets porten a cada pàgina l'expedient, el procés selectiu, la
+    prova i l'adreça de l'Ajuntament. Sense treure'ls, l'última opció de cada
+    pàgina se'ls empassava: «d) El 1945. Exp.: 2025/010339 Procés selectiu…».
+    No es filtren per posició —els marges varien— sinó per repetició, que és el
+    que els defineix.
+    """
+    seen = {}
+    pages = doc.page_count
+    for pno in range(pages):
+        for line in {l.strip() for l in doc[pno].get_text().split('\n') if l.strip()}:
+            seen[line] = seen.get(line, 0) + 1
+    return {line for line, n in seen.items() if n >= max(2, pages * min_share)}
+
+
 def document_profile(doc):
     """Color i pes dominants del cos del document, per detectar què és marca."""
     colors, bolds = collections.Counter(), collections.Counter()
@@ -128,6 +145,17 @@ def document_profile(doc):
 def parse(path):
     doc = pymupdf.open(path)
     body_color, mark_colors, body_bold = document_profile(doc)
+    boilerplate = repeated_lines(doc)
+
+    def is_boilerplate(text):
+        t = text.strip()
+        if t in boilerplate:
+            return True
+        # El número de pàgina sol i les restes d'adreça que no es repeteixen
+        # literalment perquè hi canvia un espai.
+        if re.fullmatch(r'\d{1,3}', t):
+            return True
+        return any(t.startswith(b[:24]) for b in boilerplate if len(b) >= 24)
     strokes = stroked_boxes(doc)
     stroked_total = sum(len(v) for v in strokes.values())
     all_spans = sum(1 for _ in visual_lines(doc))
@@ -170,7 +198,7 @@ def parse(path):
         current_opt = opt
 
     for page, text, parts in visual_lines(doc):
-        if not text:
+        if not text or is_boilerplate(text):
             continue
 
         if reserve_re.match(text):

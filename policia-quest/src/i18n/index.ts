@@ -158,6 +158,8 @@ const ca = {
     backHome: 'Tornar a l’inici',
     scheduled: 'Programada per repassar d’aquí a {n} dies',
     scheduledOne: 'Programada per repassar demà',
+    officialNote: 'Nota de revisió sobre aquesta pregunta oficial',
+    officialFrom: 'Examen oficial del {date}',
     pendingVerification:
       'Referència pendent de contrast automàtic amb el text consolidat.',
   },
@@ -482,6 +484,8 @@ const es: Dict = {
     backHome: 'Volver al inicio',
     scheduled: 'Programada para repasar dentro de {n} días',
     scheduledOne: 'Programada para repasar mañana',
+    officialNote: 'Nota de revisión sobre esta pregunta oficial',
+    officialFrom: 'Examen oficial del {date}',
     pendingVerification:
       'Referencia pendiente de contraste automático con el texto consolidado.',
   },

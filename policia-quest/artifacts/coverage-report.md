@@ -163,7 +163,7 @@ Generat el 2026-08-23 · versió de contingut 1
 ## Actualitat
 
 - `roses-actualitat-2026-08` · active · cobreix 2026-01-01 → 2026-08-23 · caduca 2026-11-30 · **0 preguntes**
-  - Paquet creat buit a propòsit. Cap font d’actualitat era accessible des de l’entorn de construcció (2026-08-23), i no s’inventen fets. Per omplir-lo: verificar cada fet contra una font oficial o periodística fiable, marcar les preguntes amb dynamic: true i fixar-hi reviewBy, i afegir-ne els identificadors a questionIds.
+  - Paquet creat buit a propòsit. Cap font d’actualitat era accessible des de l’entorn de construcció (CONNECT 403 a roses.cat, boe.es, ddgi.cat i portaljuridic.gencat.cat el 2026-08-23) i no s’inventen fets. La infraestructura és completa i provada: vegeu la capçalera d’aquest fitxer per al procediment i tests/unit/actualitat.test.ts per al camí de desbloqueig.
 
 ## Capacitat dels simulacres
 

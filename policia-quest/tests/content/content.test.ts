@@ -229,6 +229,41 @@ describe('banc de preguntes', () => {
     }
   })
 
+  /*
+   * L'auditoria visual dels sis quadernets P0 (artifacts/auditoria-visual-p0.md)
+   * va trobar una resposta oficial que ja no reflecteix el dret vigent: el
+   * tribunal la va publicar amb la qualificació del text de 2019 i la norma es
+   * va modificar el 2021. La resposta es conserva; l'avís ha d'arribar a qui
+   * estudia.
+   */
+  it('avisa quan una resposta oficial ha quedat enrere respecte del dret vigent', () => {
+    const q = questions.find((x) => x.questionId === 'q-of-roses-2025-interins-cp-036')
+    expect(q, 'falta la pregunta auditada').toBeDefined()
+    expect(q!.correct, 'la resposta del tribunal no es toca').toBe('b')
+    expect(q!.officialExam?.officialAnswer).toBe('b')
+    expect(q!.officialExam?.transcriptionNotes, 'sense nota de revisió').toMatch(/2021/)
+  })
+
+  /*
+   * L'última opció de cada pàgina s'empassava la capçalera de la següent:
+   * «d) El 1945. Exp.: 2025/010339 Procés selectiu…». Cinquanta-una de les 189.
+   * L'auditoria visual no ho va veure perquè mirava la lletra marcada, no el
+   * text; ho va destapar obrir l'app i llegir una pregunta.
+   */
+  it('cap enunciat ni cap opció arrossega capçaleres del quadernet', () => {
+    const boilerplate =
+      /Exp\.:|Plaça de Catalunya|Procés selectiu|Primer exercici|Segon exercici|informacio@roses|www\.roses\.cat/
+    for (const q of questions) {
+      expect(boilerplate.test(q.stem), `${q.questionId}: enunciat amb capçalera`).toBe(false)
+      for (const option of q.options) {
+        expect(
+          boilerplate.test(option.text),
+          `${q.questionId} opció ${option.optionId}: «${option.text.slice(0, 70)}»`,
+        ).toBe(false)
+      }
+    }
+  })
+
   it('les preguntes d’examen oficial conserven la resposta del tribunal', () => {
     for (const q of questions.filter((x) => x.origin === 'official')) {
       const meta = q.officialExam!

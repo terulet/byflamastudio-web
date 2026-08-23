@@ -30,6 +30,13 @@ export interface SelectionInput {
   seed?: string
   /** Filtres addicionals de la pantalla Entrenar. */
   filters?: SessionFilters
+  /**
+   * Dia ISO, per deixar fora el contingut dinàmic caducat.
+   *
+   * Si no s'indica, no es filtra per vigència: els tests que no en parlen
+   * segueixen valent i el motor continua sent pur.
+   */
+  todayIso?: string
 }
 
 /** Filtres de la pantalla Entrenar. Tots són opcionals i acumulatius. */
@@ -117,8 +124,23 @@ function bucket(
 function applyFilters(input: SelectionInput): Question[] {
   const { pool, topicIds, filters, reviews, today } = input
   const topicSet = topicIds && topicIds.length > 0 ? new Set(topicIds) : null
+  /*
+   * El contingut caducat no entra a una sessió normal.
+   *
+   * Mig quadernet de cultura general són preguntes com «qui és l'actual
+   * ministre/a de Defensa?». Són certes el dia de l'examen. Servir-les després
+   * en una sessió d'estudi, sense data i barrejades amb dret vigent, és
+   * ensenyar un fet fals.
+   *
+   * L'excepció és quan algú demana **expressament** material d'examen oficial:
+   * aleshores està consultant història, i la interfície n'ensenya la data.
+   */
+  const wantsHistorical = filters?.origin === 'official' || filters?.onlyOfficialExam === true
+  const todayIso = input.todayIso
+
   return pool.filter((q) => {
     if (q.status !== 'active') return false
+    if (!wantsHistorical && todayIso !== undefined && !isCurrent(q, todayIso)) return false
     if (topicSet && !topicSet.has(q.topicId)) return false
     if (filters?.track && q.track !== filters.track) return false
     if (filters?.difficulty && q.difficulty !== filters.difficulty) return false

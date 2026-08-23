@@ -14,6 +14,7 @@ import { Meter } from '../components/ui.tsx'
 import { selectSession } from '../engines/selection.ts'
 import { applyOutcome, getOrInit, intervalDays, outcomeFor } from '../engines/srs.ts'
 import { playCorrect, playWrong, vibrate } from '../app/feedback.ts'
+import { epochDayToIso } from '../util/date.ts'
 import type { Confidence, OptionId, Outcome, Question, StudyMode } from '../domain/types.ts'
 
 const VALID_MODES: StudyMode[] = [
@@ -30,6 +31,20 @@ interface Tally {
   wrong: number
   dontKnow: number
   xp: number
+}
+
+/**
+ * Data del quadernet d'on surt una pregunta oficial, en format DD/MM/AAAA.
+ *
+ * Es pren del registre d'exàmens, que és on viu la data oficial; si no hi fos,
+ * de la referència, que porta el mateix dia com a `validAt`.
+ */
+function examDateOf(question: Question): string {
+  const examId = question.officialExam?.examId
+  const iso =
+    pack.exams.find((e) => e.examId === examId)?.heldOn ?? question.references[0]?.validAt ?? ''
+  const [y, m, d] = iso.split('-')
+  return y && m && d ? `${d}/${m}/${y}` : iso
 }
 
 export function StudyRunner({
@@ -56,6 +71,7 @@ export function StudyRunner({
   const questions = useMemo(
     () =>
       selectSession({
+        todayIso: epochDayToIso(today),
         mode: studyMode,
         pool: active,
         reviews,
@@ -284,6 +300,17 @@ function QuestionView({
   return (
     <section className="stack fade-up" key={question.questionId}>
       {/* L'enunciat sempre en català: és la llengua de l'examen. */}
+      {/*
+       * Una pregunta d'examen oficial es llegeix amb la seva data al davant.
+       * «Qui és l'actual regidor/a?» vol dir una cosa el dia de l'examen i una
+       * altra avui: sense la data, l'app estaria afirmant el present.
+       */}
+      {question.officialExam ? (
+        <p className="pill pill--accent" style={{ alignSelf: 'flex-start' }} data-testid="official-badge">
+          {fill(t.study.officialFrom, { date: examDateOf(question) })}
+        </p>
+      ) : null}
+
       <h2 className="question__stem" lang="ca">
         {question.stem}
       </h2>
@@ -379,6 +406,23 @@ function Correction({
         <div className="card__label">{t.study.why}</div>
         <p style={{ marginTop: 'var(--sp-2)', lineHeight: 1.6 }}>{pick(question.explanation, lang)}</p>
       </div>
+
+      {/*
+       * Avís de revisió d'una pregunta d'examen oficial.
+       *
+       * La resposta del tribunal es conserva sempre tal com es va publicar,
+       * però de vegades la norma ha canviat després de l'examen. Callar-ho
+       * seria ensenyar com a vigent una redacció derogada, que és pitjor que
+       * no oferir la pregunta.
+       */}
+      {question.officialExam?.transcriptionNotes ? (
+        <div className="notice notice--warn" data-testid="official-note">
+          <strong>{t.study.officialNote}</strong>
+          <p style={{ margin: 'var(--sp-2) 0 0', lineHeight: 1.6 }}>
+            {question.officialExam.transcriptionNotes}
+          </p>
+        </div>
+      ) : null}
 
       <div className="stack stack--tight">
         <div className="card__label">{t.study.source}</div>

@@ -23,3 +23,7 @@ blob-report/
 # manifest ja en guarda el SHA-256 un cop adoptats).
 sources/inbox/*
 !sources/inbox/.gitkeep
+
+# Cachés de Python dels scripts de transcripció.
+__pycache__/
+*.pyc

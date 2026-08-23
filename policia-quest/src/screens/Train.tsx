@@ -7,6 +7,7 @@ import { dict } from '../i18n/index.ts'
 import { ScreenHeader } from '../components/ui.tsx'
 import { MODE_SIZE, selectSession, type SessionFilters } from '../engines/selection.ts'
 import type { BlockId, StudyMode } from '../domain/types.ts'
+import { epochDayToIso } from '../util/date.ts'
 
 const MODES: StudyMode[] = [
   'no-tinc-ganes',
@@ -69,7 +70,7 @@ export function Train(): ReactNode {
     for (const mode of MODES) {
       map.set(
         mode,
-        selectSession({ mode, pool: active, reviews, today, seed: 'preview' }).length,
+        selectSession({ mode, pool: active, reviews, today, todayIso: epochDayToIso(today), seed: 'preview' }).length,
       )
     }
     return map
@@ -78,6 +79,7 @@ export function Train(): ReactNode {
   const topicPool = useMemo(() => {
     if (selectedTopics.length === 0) return 0
     return selectSession({
+      todayIso: epochDayToIso(today),
       mode: 'per-tema',
       pool: active,
       reviews,
