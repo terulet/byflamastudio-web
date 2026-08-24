@@ -76,20 +76,27 @@ export function Train(): ReactNode {
     return map
   }, [active, reviews, today])
 
+  /*
+   * Amb el filtre «D'examen oficial», la selecció de temes s'ignora: aquestes
+   * preguntes viuen al tema contenidor dels quadernets, que no és al selector,
+   * i exigir un tema faria que el botó digués «0 disponibles» per sempre. La
+   * nota sota el filtre ho explica.
+   */
+  const officialDrill = origin === 'official'
   const topicPool = useMemo(() => {
-    if (selectedTopics.length === 0) return 0
+    if (!officialDrill && selectedTopics.length === 0) return 0
     return selectSession({
       todayIso: epochDayToIso(today),
       mode: 'per-tema',
       pool: active,
       reviews,
       today,
-      topicIds: selectedTopics,
+      ...(officialDrill ? {} : { topicIds: selectedTopics }),
       size: 999,
       seed: 'preview',
       filters,
     }).length
-  }, [active, reviews, today, selectedTopics, filters])
+  }, [active, reviews, today, selectedTopics, filters, officialDrill])
 
   const toggleTopic = (topicId: string): void => {
     setSelectedTopics((current) =>
@@ -206,8 +213,10 @@ export function Train(): ReactNode {
                 </button>
               ))}
             </div>
-            {origin === 'official' && !hasOfficialQuestions ? (
-              <p className="notice notice--warn">{t.train.officialUnavailable}</p>
+            {origin === 'official' ? (
+              <p className={hasOfficialQuestions ? 'notice' : 'notice notice--warn'}>
+                {hasOfficialQuestions ? t.train.officialDrillNote : t.train.officialUnavailable}
+              </p>
             ) : null}
           </div>
 
@@ -278,12 +287,12 @@ export function Train(): ReactNode {
           <button
             type="button"
             className="btn btn--primary btn--lg btn--block"
-            disabled={selectedTopics.length === 0 || topicPool === 0}
+            disabled={(!officialDrill && selectedTopics.length === 0) || topicPool === 0}
             onClick={() =>
               navigate({
                 name: 'study',
                 mode: 'per-tema',
-                topicIds: selectedTopics,
+                ...(officialDrill ? {} : { topicIds: selectedTopics }),
                 ...(difficulty === 'all' && origin === 'all' && state === 'all'
                   ? {}
                   : {

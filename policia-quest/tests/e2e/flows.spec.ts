@@ -446,6 +446,62 @@ test('els errors del simulacre es poden enviar a la cua de repàs', async ({ pag
   await expect(send).toContainText('afegides a la cua de repàs')
 })
 
+test('la confiança només compta quan es declara, i «segur però incorrecte» existeix', async ({
+  page,
+}) => {
+  await skipOnboarding(page)
+
+  // Primera sessió: tema 29, totes les claus són «b». S'encerta tot sense
+  // tocar el selector de confiança: al panell no hi ha d'aparèixer res,
+  // perquè no declarar-se no és declarar-se segur.
+  await page.goto('/#/train')
+  await page.getByTestId('select-topic-29').click()
+  await page.getByTestId('start-topic-session').click()
+  await expect(page.getByTestId('study-question')).toBeVisible()
+  for (let i = 0; i < 5; i++) {
+    await page.getByTestId('option-b').click()
+    await page.getByTestId('check-answer').click()
+    await expect(page.getByTestId('correction')).toBeVisible()
+    const next = page.getByTestId('next-question')
+    if (await next.isVisible().catch(() => false)) await next.click()
+  }
+  await expect(page.getByTestId('session-summary')).toBeVisible()
+  // Tot encertat: cap nota de repàs ni botó d'errors.
+  await expect(page.getByTestId('summary-review-note')).toHaveCount(0)
+  await expect(page.getByTestId('summary-retry-errors')).toHaveCount(0)
+  await page.getByRole('button', { name: /Tornar a l’inici/ }).click()
+
+  await page.goto('/#/progress')
+  await expect(page.getByTestId('progress')).toBeVisible()
+  await expect(page.getByTestId('confidence-sure-correct')).toHaveCount(0)
+
+  // Segona sessió: tema 30, claus «c b c a d». Es contesta tot «a» declarant
+  // «Ho tinc clar»: 1 encert segur i 4 errades segures, deterministes.
+  await page.goto('/#/train')
+  await page.getByTestId('select-topic-30').click()
+  await page.getByTestId('start-topic-session').click()
+  await expect(page.getByTestId('study-question')).toBeVisible()
+  for (let i = 0; i < 5; i++) {
+    await page.getByTestId('confidence-sure').click()
+    await page.getByTestId('option-a').click()
+    await page.getByTestId('check-answer').click()
+    await expect(page.getByTestId('correction')).toBeVisible()
+    const next = page.getByTestId('next-question')
+    if (await next.isVisible().catch(() => false)) await next.click()
+  }
+  await expect(page.getByTestId('session-summary')).toBeVisible()
+  // El resum tanca el cercle: diu que els errors són a la cua i ofereix
+  // repassar-los ara mateix.
+  await expect(page.getByTestId('summary-review-note')).toBeVisible()
+  await page.getByTestId('summary-retry-errors').click()
+  await expect(page.getByTestId('study-question')).toBeVisible()
+  await page.goto('/#/progress')
+
+  await expect(page.getByTestId('confidence-sure-correct')).toHaveText('1')
+  await expect(page.getByTestId('confidence-sure-wrong')).toHaveText('4')
+  await expect(page.getByTestId('confidence-unsure-correct')).toHaveText('0')
+})
+
 test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/train')
@@ -463,11 +519,22 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page.getByTestId('start-topic-session')).toBeDisabled()
   await expect(page.getByText(/No hi ha preguntes que compleixin/)).toBeVisible()
 
-  // Amb els sis quadernets P0 importats, el filtre d'examen oficial ja no avisa
-  // que quedarà buit: hi ha preguntes de debò darrere.
+  // El filtre d'examen oficial no depèn de la selecció de temes: aquestes
+  // preguntes viuen al tema contenidor dels quadernets, que no és al selector.
+  // Ha d'explicar-ho i deixar començar la sessió igualment.
   await page.getByTestId('filter-state-new').click()
   await page.getByTestId('filter-origin-official').click()
   await expect(page.getByText(/cap pregunta d’examen oficial importada/)).toHaveCount(0)
+  await expect(page.getByText(/no estan classificades per tema/)).toBeVisible()
+  await expect(page.getByTestId('start-topic-session')).toBeEnabled()
+  await page.getByTestId('start-topic-session').click()
+  await expect(page.getByTestId('study-question')).toBeVisible()
+  // Cada pregunta oficial porta la data del seu examen a la vista.
+  await expect(page.getByTestId('official-badge')).toBeVisible()
+  await page.goBack()
+  await expect(page.getByTestId('train')).toBeVisible()
+  await page.getByTestId('select-topic-35').click()
+  await page.getByTestId('filter-state-new').click()
 
   // Els filtres viatgen a la URL i la sessió els aplica.
   await page.getByTestId('filter-origin-authored').click()

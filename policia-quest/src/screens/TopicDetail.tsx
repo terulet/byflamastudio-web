@@ -71,7 +71,7 @@ export function TopicDetail({ topicId }: { topicId: string }): ReactNode {
         {mastery ? (
           <section className="card">
             <div className="row row--between" style={{ marginBottom: 'var(--sp-2)' }}>
-              <span className="card__label">{t.progress.globalMastery}</span>
+              <span className="card__label">{t.progress.topicMastery}</span>
               <span style={{ fontWeight: 650 }}>
                 {mastery.mastery === null ? t.route.noData : `${mastery.mastery}%`}
               </span>

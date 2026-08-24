@@ -95,6 +95,8 @@ export interface AppActions {
     outcome: Outcome
     chosen: 'a' | 'b' | 'c' | 'd' | null
     msSpent: number
+    /** El que la persona va marcar al selector, o null si no el va tocar. */
+    confidence: 'sure' | 'unsure' | null
   }) => void
   toggleFlag: (questionId: string) => void
   sendToReview: (questionIds: readonly string[]) => void
@@ -256,7 +258,7 @@ export function AppProvider({ children }: { children: ReactNode }): ReactNode {
   }, [])
 
   const recordAnswer = useCallback<AppActions['recordAnswer']>(
-    ({ question, outcome, chosen, msSpent }) => {
+    ({ question, outcome, chosen, msSpent, confidence }) => {
       const now = Date.now()
       const today = toEpochDay(now)
       const isCorrect = outcome === 'correct-sure' || outcome === 'correct-unsure'
@@ -267,8 +269,12 @@ export function AppProvider({ children }: { children: ReactNode }): ReactNode {
         chosen,
         correct: isCorrect,
         dontKnow: outcome === 'dont-know',
-        confidence:
-          outcome === 'correct-sure' ? 'sure' : outcome === 'correct-unsure' ? 'unsure' : null,
+        // La confiança desada és la que la persona va marcar de debò, també
+        // quan falla. Abans es deduïa del resultat, i això tenia dues mentides
+        // dins: un encert sense tocar el selector comptava com a «segur», i un
+        // error mai duia confiança, de manera que «segur però incorrecte» —el
+        // senyal que el panell de progrés promet— no podia passar de zero.
+        confidence,
         msSpent,
         answeredAt: now,
       }

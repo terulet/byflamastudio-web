@@ -26,6 +26,14 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 CACHE = ROOT / 'sources/cache'
 OUT = ROOT / 'content/municipalities/roses/questions/official-exams.ts'
 
+# Noms de les marques d'extracció en castellà, per a la versió es del text.
+MARKS_ES = {
+    'asterisc': 'asterisco',
+    'color': 'color',
+    'negreta': 'negrita',
+    'ressaltat': 'resaltado',
+}
+
 # Quadernets a importar: sourceId → metadades de l'examen.
 EXAMS = [
     ('roses-examen-2026-interins-cg', 'roses-2026-interins-cg', 2026, 'interina', 'cultura-general', '2026-04-15'),
@@ -91,17 +99,30 @@ def main():
             else:
                 kept += 1
             marks = sorted({m for o in q.marked() for m in o.marks}) or ['cap']
-            ca = (f'Pregunta {q.number} del quadernet oficial de {held}. '
-                  + ('La resposta és la que va marcar el tribunal al quadernet publicat (marca: '
-                     + ', '.join(marks) + ').' if answer else
-                     'El quadernet no porta cap marca de resposta inequívoca, de manera que la '
-                     'pregunta queda sense clau oficial.'))
+            # El text sota «Per què» ha de dir la veritat sobre el que sap. El
+            # tribunal publica la clau, no el fonament, i aquesta app no
+            # redacta fonaments de memòria: en lloc de vestir la procedència
+            # d'explicació, es diu què hi ha (la clau del tribunal, amb la
+            # marca que la fa llegible al PDF) i què pot fer qui estudia amb
+            # el dubte (el tema del temari i el quadernet enllaçat a la font).
+            ca = ((f'El tribunal va marcar la {answer}) com a bona (al quadernet, amb '
+                   + ' i '.join(marks) + '). No en va publicar el fonament i aquesta app '
+                   'no l’inventa: si el perquè no et surt, busca’l al tema corresponent '
+                   'del temari i contrasta’l amb el quadernet enllaçat a la font.')
+                  if answer else
+                  (f'Pregunta {q.number} del quadernet oficial de {held}. El quadernet '
+                   'no porta cap marca de resposta inequívoca, de manera que la pregunta '
+                   'queda sense clau oficial.'))
             note = REVIEW_NOTES.get(qid)
-            es = (f'Pregunta {q.number} del cuadernillo oficial de {held}. '
-                  + ('La respuesta es la que marcó el tribunal en el cuadernillo publicado.'
-                     if answer else
-                     'El cuadernillo no lleva ninguna marca de respuesta inequívoca, por lo que la '
-                     'pregunta queda sin clave oficial.'))
+            es = ((f'El tribunal marcó la {answer}) como buena (en el cuadernillo, con '
+                   + ' y '.join(MARKS_ES.get(m, m) for m in marks) + '). No publicó el '
+                   'fundamento y esta app no lo inventa: si el porqué no te sale, '
+                   'búscalo en el tema correspondiente del temario y contrástalo con el '
+                   'cuadernillo enlazado en la fuente.')
+                  if answer else
+                  (f'Pregunta {q.number} del cuadernillo oficial de {held}. El cuadernillo '
+                   'no lleva ninguna marca de respuesta inequívoca, por lo que la pregunta '
+                   'queda sin clave oficial.'))
             block = f"""  {{
     questionId: {ts(qid)},
     topicId: {ts(CONTAINER_TOPIC)},

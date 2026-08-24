@@ -9,7 +9,7 @@ import {
   useRecurringErrors,
 } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
-import { dict, pick } from '../i18n/index.ts'
+import { dict, fill, pick } from '../i18n/index.ts'
 import { Meter, ScreenHeader, Stat } from '../components/ui.tsx'
 import { formatDuration, epochDayToIso } from '../util/date.ts'
 import { MIN_ANSWERS_FOR_ACCURACY, MIN_ANSWERS_FOR_MASTERY } from '../engines/mastery.ts'
@@ -45,6 +45,19 @@ export function Progress(): ReactNode {
               <div className="score__value" style={{ fontSize: '2.25rem', marginTop: 4 }} data-testid="global-mastery">
                 {dash.global === null ? '—' : `${dash.global}%`}
               </div>
+              {/*
+                * El «global» és la mitjana dels temes amb dades. Amb un tema
+                * practicat de quaranta, el número sol faria creure que se sap
+                * un terç del temari: el denominador ha d'estar a la vista.
+                */}
+              {dash.global !== null ? (
+                <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', marginTop: 4 }}>
+                  {fill(t.progress.masteryCoverage, {
+                    n: [...dash.masteryByTopic.values()].filter((m) => m.mastery !== null).length,
+                    total: dash.masteryByTopic.size,
+                  })}
+                </div>
+              ) : null}
             </div>
             <span className="pill pill--accent">
               {t.levels[level.id]}
@@ -162,9 +175,9 @@ export function Progress(): ReactNode {
           ) : (
             <>
               <div className="stats">
-                <Stat value={confidence.sureCorrect} label={t.progress.sureCorrect} />
-                <Stat value={confidence.sureWrong} label={t.progress.sureWrong} />
-                <Stat value={confidence.unsureCorrect} label={t.progress.unsureCorrect} />
+                <Stat value={confidence.sureCorrect} label={t.progress.sureCorrect} testId="confidence-sure-correct" />
+                <Stat value={confidence.sureWrong} label={t.progress.sureWrong} testId="confidence-sure-wrong" />
+                <Stat value={confidence.unsureCorrect} label={t.progress.unsureCorrect} testId="confidence-unsure-correct" />
               </div>
               <p className="screen__subtitle">{t.progress.confidenceNote}</p>
             </>

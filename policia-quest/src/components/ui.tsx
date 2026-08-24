@@ -113,10 +113,18 @@ export function BandPill({ band, children }: { band: MasteryBand; children: Reac
 
 /* ---------------- Estadística ---------------- */
 
-export function Stat({ value, label }: { value: ReactNode; label: string }): ReactNode {
+export function Stat({
+  value,
+  label,
+  testId,
+}: {
+  value: ReactNode
+  label: string
+  testId?: string
+}): ReactNode {
   return (
     <div className="stat">
-      <div className="stat__value">{value}</div>
+      <div className="stat__value" data-testid={testId}>{value}</div>
       <div className="stat__label">{label}</div>
     </div>
   )

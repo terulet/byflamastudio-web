@@ -125,6 +125,8 @@ const ca = {
     state: { new: 'Noves', failed: 'Fallades', due: 'Per repassar' },
     officialUnavailable:
       'Encara no hi ha cap pregunta d’examen oficial importada: el filtre quedarà buit.',
+    officialDrillNote:
+      'Les preguntes d’examen oficial encara no estan classificades per tema: s’entrenen totes juntes, amb la data del seu examen a la vista.',
     selectTopics: 'Selecciona temes',
     selected: 'seleccionats',
     available: 'disponibles',
@@ -156,6 +158,10 @@ const ca = {
     unknownCount: 'No ho sé',
     xpEarned: 'XP guanyats',
     backHome: 'Tornar a l’inici',
+    missedDueTomorrow:
+      'Les {n} preguntes fallades ja són a la cua de repàs. Demà te’n tornaran a sortir {m}.',
+    missedScheduled: 'Les {n} preguntes fallades ja són a la cua de repàs.',
+    retryErrorsNow: 'Repassar ara els errors',
     scheduled: 'Programada per repassar d’aquí a {n} dies',
     scheduledOne: 'Programada per repassar demà',
     officialNote: 'Nota de revisió sobre aquesta pregunta oficial',
@@ -240,6 +246,8 @@ const ca = {
   progress: {
     title: 'Progrés',
     globalMastery: 'Domini global',
+    masteryCoverage: '{n} de {total} temes amb dades; la resta encara no compta.',
+    topicMastery: 'Domini del tema',
     recentAccuracy: 'Exactitud recent',
     answered: 'Preguntes contestades',
     studyTime: 'Temps estudiat',
@@ -451,6 +459,8 @@ const es: Dict = {
     state: { new: 'Nuevas', failed: 'Falladas', due: 'Para repasar' },
     officialUnavailable:
       'Todavía no hay ninguna pregunta de examen oficial importada: el filtro quedará vacío.',
+    officialDrillNote:
+      'Las preguntas de examen oficial aún no están clasificadas por tema: se entrenan todas juntas, con la fecha de su examen a la vista.',
     selectTopics: 'Selecciona temas',
     selected: 'seleccionados',
     available: 'disponibles',
@@ -482,6 +492,10 @@ const es: Dict = {
     unknownCount: 'No lo sé',
     xpEarned: 'XP ganados',
     backHome: 'Volver al inicio',
+    missedDueTomorrow:
+      'Las {n} preguntas falladas ya están en la cola de repaso. Mañana te volverán a salir {m}.',
+    missedScheduled: 'Las {n} preguntas falladas ya están en la cola de repaso.',
+    retryErrorsNow: 'Repasar ahora los errores',
     scheduled: 'Programada para repasar dentro de {n} días',
     scheduledOne: 'Programada para repasar mañana',
     officialNote: 'Nota de revisión sobre esta pregunta oficial',
@@ -566,6 +580,8 @@ const es: Dict = {
   progress: {
     title: 'Progreso',
     globalMastery: 'Dominio global',
+    masteryCoverage: '{n} de {total} temas con datos; el resto aún no cuenta.',
+    topicMastery: 'Dominio del tema',
     recentAccuracy: 'Exactitud reciente',
     answered: 'Preguntas contestadas',
     studyTime: 'Tiempo estudiado',

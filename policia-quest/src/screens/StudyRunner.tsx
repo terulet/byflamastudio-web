@@ -93,6 +93,7 @@ export function StudyRunner({
   const [done, setDone] = useState(false)
   const startedAt = useRef(Date.now())
   const questionStart = useRef(Date.now())
+  const [missedIds, setMissedIds] = useState<string[]>([])
 
   const question = questions[index]
   const total = questions.length
@@ -104,8 +105,15 @@ export function StudyRunner({
       const outcome: Outcome = outcomeFor(isCorrect, unknown, confidence)
       const msSpent = Date.now() - questionStart.current
 
-      recordAnswer({ question, outcome, chosen: unknown ? null : answer, msSpent })
+      recordAnswer({
+        question,
+        outcome,
+        chosen: unknown ? null : answer,
+        msSpent,
+        confidence: unknown ? null : confidence,
+      })
       setRevealed(true)
+      if (!isCorrect) setMissedIds((current) => [...current, question.questionId])
       setTally((current) => ({
         correct: current.correct + (isCorrect ? 1 : 0),
         wrong: current.wrong + (!isCorrect && !unknown ? 1 : 0),
@@ -177,7 +185,18 @@ export function StudyRunner({
   }
 
   if (done) {
-    return <SessionSummary tally={tally} total={total} lang={lang} />
+    const dueTomorrow = missedIds.filter(
+      (id) => reviews.get(id)?.dueDay === today + 1,
+    ).length
+    return (
+      <SessionSummary
+        tally={tally}
+        total={total}
+        lang={lang}
+        missedCount={missedIds.length}
+        dueTomorrow={dueTomorrow}
+      />
+    )
   }
 
   if (!question) return null
@@ -485,10 +504,14 @@ function SessionSummary({
   tally,
   total,
   lang,
+  missedCount,
+  dueTomorrow,
 }: {
   tally: Tally
   total: number
   lang: 'ca' | 'es'
+  missedCount: number
+  dueTomorrow: number
 }): ReactNode {
   const t = dict(lang)
   return (
@@ -508,6 +531,30 @@ function SessionSummary({
           <Stat value={tally.dontKnow} label={t.study.unknownCount} />
           <Stat value={`+${tally.xp}`} label={t.study.xpEarned} />
         </div>
+
+        {/*
+          * El que un resum ha de dir a qui acaba de fallar: què passa ara amb
+          * allò que ha fallat. La resposta honesta és la de l'SRS: ja és a la
+          * cua, i si torna demà, aquí diu quantes l'esperen.
+          */}
+        {missedCount > 0 ? (
+          <p className="notice" data-testid="summary-review-note">
+            {dueTomorrow > 0
+              ? fill(t.study.missedDueTomorrow, { n: missedCount, m: dueTomorrow })
+              : fill(t.study.missedScheduled, { n: missedCount })}
+          </p>
+        ) : null}
+
+        {missedCount > 0 ? (
+          <button
+            type="button"
+            className="btn btn--lg btn--block"
+            onClick={() => navigate({ name: 'study', mode: 'errors' })}
+            data-testid="summary-retry-errors"
+          >
+            {t.study.retryErrorsNow}
+          </button>
+        ) : null}
 
         <button
           type="button"

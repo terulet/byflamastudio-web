@@ -40,8 +40,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 1 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 1 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -79,8 +79,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 2 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 2 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -118,8 +118,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 3 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 3 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -157,8 +157,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 4 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 4 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -196,8 +196,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 5 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 5 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -235,8 +235,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 6 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 6 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -274,8 +274,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 7 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 7 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -313,8 +313,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 8 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 8 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -352,8 +352,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 9 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 9 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -391,8 +391,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 10 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 10 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -430,8 +430,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 11 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 11 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -469,8 +469,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 12 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 12 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -508,8 +508,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 13 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 13 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -547,8 +547,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 14 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 14 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -586,8 +586,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 15 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 15 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -625,8 +625,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 16 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 16 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -664,8 +664,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 17 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 17 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -703,8 +703,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 18 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 18 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -742,8 +742,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 19 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 19 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -781,8 +781,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 20 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 20 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -820,8 +820,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 21 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 21 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -859,8 +859,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 1 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 1 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -898,8 +898,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 2 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 2 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -937,8 +937,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 3 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 3 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -976,8 +976,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 4 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 4 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1015,8 +1015,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 5 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 5 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1054,8 +1054,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 6 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 6 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1093,8 +1093,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 7 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 7 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1132,8 +1132,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 8 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 8 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1171,8 +1171,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 9 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 9 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1210,8 +1210,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 10 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 10 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1249,8 +1249,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 11 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 11 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1288,8 +1288,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 12 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 12 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1327,8 +1327,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 13 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 13 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1366,8 +1366,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 14 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 14 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1405,8 +1405,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 15 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 15 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1444,8 +1444,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 16 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 16 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1483,8 +1483,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 17 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 17 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1522,8 +1522,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 18 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 18 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1561,8 +1561,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 19 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 19 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1600,8 +1600,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 20 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 20 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1639,8 +1639,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 21 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 21 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1678,8 +1678,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 22 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 22 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1717,8 +1717,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 23 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 23 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1756,8 +1756,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 24 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 24 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1795,8 +1795,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 25 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 25 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1834,8 +1834,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 26 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 26 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1873,8 +1873,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 27 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 27 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1912,8 +1912,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 28 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 28 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1951,8 +1951,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 29 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 29 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -1990,8 +1990,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 30 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 30 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2029,8 +2029,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 31 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 31 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2068,8 +2068,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 32 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 32 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2107,8 +2107,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 33 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 33 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2146,8 +2146,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 34 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 34 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2185,8 +2185,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 35 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 35 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2224,8 +2224,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 36 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 36 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2263,8 +2263,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 37 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 37 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2302,8 +2302,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 38 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 38 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2341,8 +2341,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 39 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 39 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2380,8 +2380,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 40 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 40 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2419,8 +2419,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 41 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 41 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2458,8 +2458,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 42 del quadernet oficial de 2026-04-15. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 42 del cuadernillo oficial de 2026-04-15. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2497,8 +2497,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 1 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 1 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2536,8 +2536,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 2 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 2 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2575,8 +2575,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 3 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 3 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2614,8 +2614,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 4 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 4 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2653,8 +2653,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 5 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 5 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2692,8 +2692,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 6 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 6 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2731,8 +2731,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 7 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 7 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2770,8 +2770,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 8 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 8 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2809,8 +2809,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 9 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 9 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2848,8 +2848,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 10 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 10 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2887,8 +2887,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 11 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 11 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2926,8 +2926,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 12 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 12 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -2965,8 +2965,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 13 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 13 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3004,8 +3004,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 14 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 14 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3043,8 +3043,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 15 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 15 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3082,8 +3082,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 16 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 16 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3121,8 +3121,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 17 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 17 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3160,8 +3160,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 18 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 18 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3199,8 +3199,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 19 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 19 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3238,8 +3238,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 20 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 20 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3277,8 +3277,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 21 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 21 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3316,8 +3316,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 1 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 1 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3355,8 +3355,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 2 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 2 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3394,8 +3394,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 3 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 3 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3433,8 +3433,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 4 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 4 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3472,8 +3472,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 5 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 5 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3511,8 +3511,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 6 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 6 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3550,8 +3550,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 7 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 7 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3589,8 +3589,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 8 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 8 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3628,8 +3628,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 9 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 9 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3667,8 +3667,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 10 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 10 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3706,8 +3706,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 11 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 11 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3745,8 +3745,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 12 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 12 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3784,8 +3784,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 13 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 13 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3823,8 +3823,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 14 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 14 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3862,8 +3862,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 15 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 15 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3901,8 +3901,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 16 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 16 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3940,8 +3940,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 17 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 17 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -3979,8 +3979,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 18 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 18 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4018,8 +4018,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 19 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 19 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4057,8 +4057,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 20 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 20 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4096,8 +4096,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 21 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 21 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4135,8 +4135,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 22 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 22 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4174,8 +4174,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 23 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 23 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4213,8 +4213,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 24 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 24 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4252,8 +4252,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 25 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 25 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4291,8 +4291,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 26 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 26 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4330,8 +4330,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 27 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 27 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4369,8 +4369,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 28 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 28 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4408,8 +4408,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 29 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 29 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4447,8 +4447,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 30 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 30 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4486,8 +4486,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 31 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 31 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4525,8 +4525,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 32 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 32 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4564,8 +4564,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 33 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 33 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4603,8 +4603,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 34 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 34 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4642,8 +4642,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 35 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 35 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4681,8 +4681,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 36 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 36 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4720,8 +4720,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 37 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 37 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4759,8 +4759,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 38 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 38 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4798,8 +4798,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 39 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 39 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4837,8 +4837,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 40 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 40 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4876,8 +4876,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 41 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 41 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4915,8 +4915,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 42 del quadernet oficial de 2025-12-03. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 42 del cuadernillo oficial de 2025-12-03. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4954,8 +4954,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 1 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 1 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -4993,8 +4993,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 2 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 2 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5032,8 +5032,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 3 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 3 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5071,8 +5071,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 4 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 4 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5110,8 +5110,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 5 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 5 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5149,8 +5149,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 6 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 6 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5188,8 +5188,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 7 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 7 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5227,8 +5227,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 8 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 8 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5266,8 +5266,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 9 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 9 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5305,8 +5305,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 10 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 10 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5344,8 +5344,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 11 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 11 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5383,8 +5383,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 12 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 12 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5422,8 +5422,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 13 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 13 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5461,8 +5461,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 14 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 14 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5500,8 +5500,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 15 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 15 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5539,8 +5539,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 16 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 16 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5578,8 +5578,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 17 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 17 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5617,8 +5617,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 18 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 18 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5656,8 +5656,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 19 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 19 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5695,8 +5695,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 20 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 20 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5734,8 +5734,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 21 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 21 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5773,8 +5773,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 1 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 1 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5812,8 +5812,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 2 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 2 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5851,8 +5851,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 3 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 3 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5890,8 +5890,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 4 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 4 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5929,8 +5929,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 5 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 5 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -5968,8 +5968,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 6 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 6 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6007,8 +6007,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 7 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 7 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6046,8 +6046,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 8 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 8 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6085,8 +6085,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 9 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 9 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6124,8 +6124,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 10 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 10 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6163,8 +6163,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 11 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 11 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6202,8 +6202,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 12 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 12 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6241,8 +6241,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 13 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 13 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6280,8 +6280,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 14 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 14 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6319,8 +6319,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 15 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 15 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6358,8 +6358,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 16 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 16 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6397,8 +6397,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 17 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 17 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6436,8 +6436,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 18 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 18 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6475,8 +6475,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 19 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 19 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6514,8 +6514,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 20 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 20 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6553,8 +6553,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 21 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 21 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6592,8 +6592,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 22 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 22 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6631,8 +6631,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 23 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 23 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6670,8 +6670,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 24 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 24 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6709,8 +6709,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 25 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 25 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6748,8 +6748,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 26 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 26 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6787,8 +6787,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 27 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 27 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6826,8 +6826,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 28 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 28 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6865,8 +6865,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 29 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 29 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6904,8 +6904,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 30 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 30 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6943,8 +6943,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 31 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 31 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -6982,8 +6982,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 32 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 32 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7021,8 +7021,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 33 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 33 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7060,8 +7060,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 34 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 34 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7099,8 +7099,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 35 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 35 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7138,8 +7138,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 36 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 36 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7177,8 +7177,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'Pregunta 37 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 37 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7216,8 +7216,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Pregunta 38 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 38 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7255,8 +7255,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 39 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 39 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7294,8 +7294,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 40 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 40 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7333,8 +7333,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'Pregunta 41 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 41 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {
@@ -7372,8 +7372,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'Pregunta 42 del quadernet oficial de 2025-04-16. La resposta és la que va marcar el tribunal al quadernet publicat (marca: asterisc).',
-      es: 'Pregunta 42 del cuadernillo oficial de 2025-04-16. La respuesta es la que marcó el tribunal en el cuadernillo publicado.',
+      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
+      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
     },
     references: [
       {

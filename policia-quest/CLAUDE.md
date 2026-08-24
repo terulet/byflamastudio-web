@@ -181,6 +181,17 @@ verificats pel seu SHA-256, document a document.
   vingui d'un examen antic. Les preguntes d'actualitat dels exàmens antics **no**
   compten: són material històric i s'importen amb `reviewBy` a la data de
   l'examen perquè `isCurrent()` les deixi fora.
+- **L'experiència d'estudi està auditada de cap a cua**
+  (`artifacts/auditoria-experiencia-estudi.md`): el recorregut de dos dies
+  d'una estudiant real —lliçó, error, «no ho sé», repàs de l'endemà, simulacre,
+  progrés— es repeteix amb `node scripts/audit-experiencia.mjs` i deixa
+  captures a `artifacts/experiencia/`. L'auditoria va corregir cinc coses: la
+  confiança ara es desa tal com es declara (i «segur però incorrecte» ja pot
+  existir, amb un test determinista que ho fixa), el domini «global» ensenya el
+  denominador, el resum de sessió diu què passa amb els errors i ofereix
+  repassar-los, el filtre «D'examen oficial» entrena el banc oficial (abans no
+  podia servir mai res), i el «per què» de les 189 preguntes oficials diu la
+  veritat en lloc de vestir la procedència d'explicació.
 
 La feina que queda, en aquest ordre:
 
@@ -193,7 +204,11 @@ La feina que queda, en aquest ordre:
    afirmació que ningú ha comprovat.
 2. Aconseguir les 43 fonts generals pendents (`npm run sources:adopt -- --list`
    les llista amb la seva URL oficial) i contrastar-hi les referències que
-   segueixen sense verificar.
+   segueixen sense verificar. Quan hi siguin, el primer contingut a escriure
+   són les explicacions reals de les 189 preguntes oficials, contra l'article
+   concret de cada font: és on la correcció ensenya menys precisament on les
+   preguntes són més reals. La seva classificació per tema (avui viuen al tema
+   contenidor) és l'altra meitat d'aquella feina.
 3. Transcriure els 24 exàmens històrics. Els sis sense marca llegible al text
    exigeixen revisió visual; no se'n pot deduir cap resposta per densitat de
    tinta, freqüència ni coneixement general.
