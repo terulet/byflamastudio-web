@@ -1,7 +1,7 @@
 /** Pantalla d'inici: la missió del dia i tot el que és urgent, a dos tocs. */
 import { useMemo, type ReactNode } from 'react'
 import { pack, levelFor, useApp } from '../app/store.tsx'
-import { useDashboard, useToday } from '../app/selectors.ts'
+import { useDashboard, useDaysStudied, useToday } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
 import { dict, pick, plural } from '../i18n/index.ts'
 import { BrandMark, Meter, Stat } from '../components/ui.tsx'
@@ -16,6 +16,7 @@ export function Home(): ReactNode {
 
   const level = levelFor(progress.xp)
   const goalProgress = Math.min(dash.answeredToday, settings.dailyGoal)
+  const studiedDays = useDaysStudied()
   const resumable = attempts.find((a) => a.status === 'in-progress')
   const lastFinished = attempts.find((a) => a.status === 'finished')
 
@@ -53,20 +54,37 @@ export function Home(): ReactNode {
       <div className="stack">
         {/* Ratxa, objectiu i nivell */}
         <section className="card card--accent">
+          {/*
+            * La píndola de nivell va a la fila del rètol, no al costat del
+            * títol: «Ratxa d'objectius · 0 dies» és massa llarg per compartir
+            * amplada a 393 px i es partia en dues línies contra la píndola.
+            */}
           <div className="row row--between">
-            <div>
-              <div className="card__label">{t.home.greeting}</div>
-              <div className="card__title" style={{ fontSize: 'var(--text-lg)' }}>
-                {/* Etiqueta primer i xifra després: «0 dies · Ratxa» es llegia
-                    del revés. I «1 dies» no existeix: cal el singular. */}
-                {t.home.streak} · {progress.streakDays}{' '}
-                {plural(progress.streakDays, t.home.day, t.home.days)}
-              </div>
-            </div>
+            <div className="card__label">{t.home.greeting}</div>
             <span className="pill pill--accent">
               {t.levels[level.id]} · {progress.xp} {t.home.xp}
             </span>
           </div>
+          <div className="card__title" style={{ fontSize: 'var(--text-lg)', marginTop: 2 }}>
+            {/* Etiqueta primer i xifra després: «0 dies · Ratxa» es llegia
+                del revés. I «1 dies» no existeix: cal el singular. */}
+            {t.home.streak} · {progress.streakDays}{' '}
+            {plural(progress.streakDays, t.home.day, t.home.days)}
+          </div>
+          {/*
+            * Els dies estudiats van al costat de la ratxa, no en lloc seu. La
+            * ratxa demana l'objectiu sencer i es trenca; qui va estudiar mitja
+            * sessió veia «0 dies» i res més, com si aquell dia no hagués
+            * existit. Aquesta xifra no es trenca mai.
+            */}
+          {studiedDays > 0 ? (
+            <div
+              style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)', marginTop: 2 }}
+              data-testid="days-studied"
+            >
+              {studiedDays} {plural(studiedDays, t.home.dayStudied, t.home.daysStudied)}
+            </div>
+          ) : null}
 
           <div className="stack stack--tight" style={{ marginTop: 'var(--sp-4)' }}>
             <div className="row row--between">

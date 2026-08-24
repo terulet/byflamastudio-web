@@ -552,6 +552,36 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page.getByTestId('study-progress')).toContainText('de 6')
 })
 
+test('un dia d’estudi parcial no fa ratxa, però es veu que va existir', async ({ page }) => {
+  // El cas que va motivar separar les dues xifres: objectiu de 10, se’n
+  // contesten 5. La ratxa es queda a 0 —exigeix l’objectiu sencer— i abans
+  // això era tot el que l’app deia d’aquell dia.
+  await skipOnboarding(page, { dailyGoal: 10 })
+  await page.goto('/#/train')
+  await page.getByTestId('select-topic-29').click()
+  await page.getByTestId('filter-origin-authored').click()
+  await page.getByTestId('start-topic-session').click()
+  await expect(page.getByTestId('study-question')).toBeVisible()
+  for (let i = 0; i < 5; i++) {
+    await page.getByTestId('option-b').click()
+    await page.getByTestId('check-answer').click()
+    await expect(page.getByTestId('correction')).toBeVisible()
+    const next = page.getByTestId('next-question')
+    if (await next.isVisible().catch(() => false)) await next.click()
+  }
+
+  await page.goto('/#/')
+  await expect(page.getByTestId('home')).toBeVisible()
+  // L’etiqueta diu què mesura, i el dia consta.
+  await expect(page.getByText(/Ratxa d’objectius · 0 dies/)).toBeVisible()
+  await expect(page.getByTestId('days-studied')).toHaveText('1 dia estudiat')
+
+  await page.goto('/#/progress')
+  await expect(page.getByTestId('progress')).toBeVisible()
+  await expect(page.getByTestId('days-studied-stat')).toHaveText('1')
+  await expect(page.getByTestId('streak-note')).toContainText('no fa ratxa, però compta igual')
+})
+
 test('el semàfor de progrés marca en blau els resultats de simulacre', async ({ page }) => {
   await skipOnboarding(page)
   await page.goto('/#/exams')

@@ -89,11 +89,11 @@ de contingut sobre el banc sencer. Les captures de cada pas són a
    Una sessió per tema les esgota el primer dia i el repàs espaiat recicla
    sempre les mateixes. No s'omple amb volum dubtós (la regla de rigor mana);
    però és el límit real d'aprenentatge per tema a mitjà termini.
-4. **La ratxa compta dies amb l'objectiu complet, no dies estudiats.** Estudiar
-   5 preguntes d'un objectiu de 10 deixa «Ratxa · 0 dies» l'endemà. No bloqueja
-   res (la regla es compleix), però és fred amb qui sí que va estudiar. Decisió
-   de producte pendent, no un defecte: comptar «dies amb activitat» canviaria
-   el significat dels assoliments.
+4. ~~**La ratxa compta dies amb l'objectiu complet, no dies estudiats.**~~
+   **Resolt el 2026-08-24.** La ratxa segueix comptant dies amb l'objectiu
+   complet —és el que ha de fer— però ara es diu «Ratxa d'objectius» i al
+   costat hi ha «Dies estudiats», que no es trenca mai. Els assoliments no
+   canvien de significat. Vegeu `src/engines/activity.ts`.
 5. **Menors, vistos i deixats estar:** el «3/5» verd del resum usa l'estil
    «aprovat» d'un simulacre quan una sessió d'estudi no aprova ni suspèn; la
    quarta targeta d'estadística (XP) salta sola a una segona fila; el locator

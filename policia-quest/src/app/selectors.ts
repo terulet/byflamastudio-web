@@ -4,6 +4,7 @@ import { pack, useApp } from './store.tsx'
 import { computeTopicMastery, globalMastery, type TopicMastery } from '../engines/mastery.ts'
 import { countDue, countFailed } from '../engines/selection.ts'
 import { isCurrent } from '../engines/availability.ts'
+import { daysStudied } from '../engines/activity.ts'
 import { epochDayToIso, toEpochDay } from '../util/date.ts'
 import type { AnswerRecord, Question, SyllabusTopic } from '../domain/types.ts'
 
@@ -186,6 +187,17 @@ export function useExamResultsByTopic(): Map<string, TopicExamResult> {
     }
     return map
   }, [attempts, byId])
+}
+
+/**
+ * Dies amb alguna resposta, de tot l'històric.
+ *
+ * Va a part de la ratxa a propòsit: la ratxa exigeix l'objectiu diari complet i
+ * es trenca, i aquesta no. Vegeu `src/engines/activity.ts`.
+ */
+export function useDaysStudied(): number {
+  const { progress } = useApp()
+  return useMemo(() => daysStudied(progress.dailyCounts), [progress.dailyCounts])
 }
 
 /** Activitat diària dels últims `days` dies, per al calendari. */

@@ -206,6 +206,13 @@ verificats pel seu SHA-256, document a document.
   repassar-los, el filtre «D'examen oficial» entrena el banc oficial (abans no
   podia servir mai res), i el «per què» de les 189 preguntes oficials diu la
   veritat en lloc de vestir la procedència d'explicació.
+- **La constància es diu pel seu nom i no amaga cap dia.** La ratxa continua
+  exigint l'objectiu diari sencer, però ara es diu «Ratxa d'objectius», i al
+  costat hi ha «Dies estudiats», que compta dies amb alguna resposta i no es
+  trenca mai. Un dia d'estudi parcial no fa ratxa i abans no es veia enlloc.
+  La regla de no castigar es manté: cap de les dues bloqueja res, i els
+  assoliments no canvien. La distinció viu a `src/engines/activity.ts` i té
+  test unitari i d'extrem a extrem.
 
 La feina que queda, en aquest ordre:
 

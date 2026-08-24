@@ -57,9 +57,11 @@ const ca = {
 
   home: {
     greeting: 'A punt per a la missió',
-    streak: 'Ratxa',
+    streak: 'Ratxa d’objectius',
     days: 'dies',
     day: 'dia',
+    dayStudied: 'dia estudiat',
+    daysStudied: 'dies estudiats',
     goal: 'Objectiu d’avui',
     startMission: 'Començar la missió',
     dueReviews: 'Repassos vençuts',
@@ -248,6 +250,10 @@ const ca = {
     globalMastery: 'Domini global',
     masteryCoverage: '{n} de {total} temes amb dades; la resta encara no compta.',
     topicMastery: 'Domini del tema',
+    daysStudied: 'Dies estudiats',
+    longestStreak: 'Millor ratxa d’objectius',
+    streakNote:
+      'La ratxa compta dies seguits amb l’objectiu diari complet; els dies estudiats, dies amb alguna resposta. Un dia d’estudi parcial no fa ratxa, però compta igual.',
     recentAccuracy: 'Exactitud recent',
     answered: 'Preguntes contestades',
     studyTime: 'Temps estudiat',
@@ -391,9 +397,11 @@ const es: Dict = {
 
   home: {
     greeting: 'Listo para la misión',
-    streak: 'Racha',
+    streak: 'Racha de objetivos',
     days: 'días',
     day: 'día',
+    dayStudied: 'día estudiado',
+    daysStudied: 'días estudiados',
     goal: 'Objetivo de hoy',
     startMission: 'Empezar la misión',
     dueReviews: 'Repasos vencidos',
@@ -582,6 +590,10 @@ const es: Dict = {
     globalMastery: 'Dominio global',
     masteryCoverage: '{n} de {total} temas con datos; el resto aún no cuenta.',
     topicMastery: 'Dominio del tema',
+    daysStudied: 'Días estudiados',
+    longestStreak: 'Mejor racha de objetivos',
+    streakNote:
+      'La racha cuenta días seguidos con el objetivo diario completo; los días estudiados, días con alguna respuesta. Un día de estudio parcial no hace racha, pero cuenta igual.',
     recentAccuracy: 'Exactitud reciente',
     answered: 'Preguntas contestadas',
     studyTime: 'Tiempo estudiado',

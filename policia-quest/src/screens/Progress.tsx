@@ -5,6 +5,7 @@ import {
   useActivityCalendar,
   useConfidenceStats,
   useDashboard,
+  useDaysStudied,
   useExamResultsByTopic,
   useRecurringErrors,
 } from '../app/selectors.ts'
@@ -22,6 +23,7 @@ export function Progress(): ReactNode {
   const errors = useRecurringErrors()
   const confidence = useConfidenceStats()
   const calendar = useActivityCalendar()
+  const studiedDays = useDaysStudied()
   const examByTopic = useExamResultsByTopic()
   const level = levelFor(progress.xp)
 
@@ -79,8 +81,19 @@ export function Progress(): ReactNode {
           <Stat value={recentAccuracy === null ? '—' : `${recentAccuracy}%`} label={t.progress.recentAccuracy} />
           <Stat value={progress.totalAnswered} label={t.progress.answered} />
           <Stat value={formatDuration(progress.totalStudyMs, lang)} label={t.progress.studyTime} />
-          <Stat value={progress.longestStreak} label={t.home.streak} />
+          <Stat value={progress.longestStreak} label={t.progress.longestStreak} />
+          <Stat value={studiedDays} label={t.progress.daysStudied} testId="days-studied-stat" />
         </section>
+
+        {/*
+          * Les dues xifres de constància van juntes i amb el seu significat
+          * escrit: la ratxa exigeix l'objectiu diari sencer i es trenca; els
+          * dies estudiats no. Sense aquesta línia, un 0 de ratxa al costat
+          * d'un 12 de dies estudiats sembla una contradicció.
+          */}
+        <p className="screen__subtitle" data-testid="streak-note">
+          {t.progress.streakNote}
+        </p>
 
         {/* Semàfor per temes */}
         <section className="stack">
