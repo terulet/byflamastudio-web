@@ -216,8 +216,12 @@ La feina que queda, en aquest ordre:
    —instantànies amb hash— és el que ja s'ha fet servir dues vegades. No
    s'allarga cap `reviewBy` per guanyar temps: una data allargada és una
    afirmació que ningú ha comprovat.
-2. Aconseguir les 43 fonts generals pendents (`npm run sources:adopt -- --list`
-   les llista amb la seva URL oficial) i contrastar-hi les referències que
+2. Aconseguir les 43 fonts generals pendents. L'inventari complet és a
+   `artifacts/rescat-fonts-normatives.{json,md}` (`npm run sources:inventory`):
+   de cada font hi ha la norma exacta, els articles que el banc cita, què ha de
+   demostrar cada referència, qui la consumeix i la prioritat. El JSON porta
+   nom de fitxer, URL, MIME i comprovacions mínimes per muntar el paquet
+   offline, com els dos anteriors. Després, contrastar-hi les referències que
    segueixen sense verificar. Quan hi siguin, el primer contingut a escriure
    són les explicacions reals de les 189 preguntes oficials, contra l'article
    concret de cada font: és on la correcció ensenya menys precisament on les

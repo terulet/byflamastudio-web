@@ -46,7 +46,9 @@ Conseqüències, dites sense embuts:
    esperat i el motiu.
 2. **43 de les 98 fonts no tenen còpia verificada.** Són les normes generals (BOE,
    Portal Jurídic). Les referències que hi apunten segueixen en
-   `pending-source-verification`, i l'aplicació ho diu a cada correcció.
+   `pending-source-verification`, i l'aplicació ho diu a cada correcció. Què cal
+   baixar exactament, d'on i per demostrar què, és a
+   `artifacts/rescat-fonts-normatives.md`.
 3. **L'actualitat caduca, i està previst que caduqui.** Les 25 preguntes del
    paquet vigent porten data de revisió pròpia. El 2027-03-01 en quedaran menys
    de deu i el simulacre de cultura general es tornarà a bloquejar sol fins que
