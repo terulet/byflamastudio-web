@@ -28,6 +28,7 @@ sense connexió després de la primera càrrega.
 | Simulacres | cultura general, professional i **complet** (les dues seguides) |
 | Fonts registrades | 98, de les quals 55 amb còpia local verificada pel seu SHA-256 |
 | Exàmens oficials importats | 6 de 30 (els sis de 2025 i 2026) |
+| Classificació temàtica de les oficials | 189/189 revisades a mà: 132 en 36 temes, 57 al contenidor amb motiu |
 
 ### Limitacions importants i conegudes
 

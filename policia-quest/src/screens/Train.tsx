@@ -77,10 +77,11 @@ export function Train(): ReactNode {
   }, [active, reviews, today])
 
   /*
-   * Amb el filtre «D'examen oficial», la selecció de temes s'ignora: aquestes
-   * preguntes viuen al tema contenidor dels quadernets, que no és al selector,
-   * i exigir un tema faria que el botó digués «0 disponibles» per sempre. La
-   * nota sota el filtre ho explica.
+   * Amb el filtre «D'examen oficial», la selecció de temes és opcional: les
+   * preguntes oficials porten la classificació editorial per tema, així que
+   * seleccionar-ne acota el quadernet; sense cap tema seleccionat s'entrena el
+   * banc oficial sencer, incloses les de cultura general que cap tema del
+   * temari cobreix i que per això viuen al contenidor dels quadernets.
    */
   const officialDrill = origin === 'official'
   const topicPool = useMemo(() => {
@@ -91,7 +92,7 @@ export function Train(): ReactNode {
       pool: active,
       reviews,
       today,
-      ...(officialDrill ? {} : { topicIds: selectedTopics }),
+      ...(selectedTopics.length === 0 ? {} : { topicIds: selectedTopics }),
       size: 999,
       seed: 'preview',
       filters,
@@ -292,7 +293,7 @@ export function Train(): ReactNode {
               navigate({
                 name: 'study',
                 mode: 'per-tema',
-                ...(officialDrill ? {} : { topicIds: selectedTopics }),
+                ...(selectedTopics.length === 0 ? {} : { topicIds: selectedTopics }),
                 ...(difficulty === 'all' && origin === 'all' && state === 'all'
                   ? {}
                   : {

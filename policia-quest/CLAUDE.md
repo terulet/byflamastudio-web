@@ -181,6 +181,20 @@ verificats pel seu SHA-256, document a document.
   vingui d'un examen antic. Les preguntes d'actualitat dels exàmens antics **no**
   compten: són material històric i s'importen amb `reviewBy` a la data de
   l'examen perquè `isCurrent()` les deixi fora.
+- **Les 189 preguntes oficials estan classificades per tema, una a una.** La
+  classificació és **editorial** —el tribunal no etiqueta les preguntes— i viu a
+  `content/.../questions/official-topic-map.json`, amb el motiu de cada decisió,
+  revisada contra l'àmbit publicat de cada tema: 132 assignades a 36 temes i 57
+  al contenidor perquè cap tema les cobreix (cultura general, actualitat del dia
+  de l'examen, matèria fora de temari; el detall és a
+  `artifacts/classificacio-oficials.md`, generat del mateix mapa). El generador
+  falla si una pregunta es queda sense decisió, un test fixa la coherència
+  mapa ↔ banc, i el filtre «D'examen oficial» d'Entrenar ara respecta els temes.
+  El domini per tema només compta preguntes vigents: les de cultura general
+  caducades no el deprimeixen. De passada, la revisió va trobar que els sis
+  quadernets arrossegaven el text de bases posterior a l'última opció de la
+  darrera pregunta enganxat a l'opció d); s'ha corregit a l'extractor i les sis
+  opcions han quedat exactament com al PDF (claus i enunciats intactes).
 - **L'experiència d'estudi està auditada de cap a cua**
   (`artifacts/auditoria-experiencia-estudi.md`): el recorregut de dos dies
   d'una estudiant real —lliçó, error, «no ho sé», repàs de l'endemà, simulacre,
@@ -207,8 +221,8 @@ La feina que queda, en aquest ordre:
    segueixen sense verificar. Quan hi siguin, el primer contingut a escriure
    són les explicacions reals de les 189 preguntes oficials, contra l'article
    concret de cada font: és on la correcció ensenya menys precisament on les
-   preguntes són més reals. La seva classificació per tema (avui viuen al tema
-   contenidor) és l'altra meitat d'aquella feina.
+   preguntes són més reals, escrites tema a tema seguint la classificació
+   d'`official-topic-map.json`.
 3. Transcriure els 24 exàmens històrics. Els sis sense marca llegible al text
    exigeixen revisió visual; no se'n pot deduir cap resposta per densitat de
    tinta, freqüència ni coneixement general.

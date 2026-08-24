@@ -17,9 +17,12 @@
  * quadernets i de la quota d'actualitat. Segueixen sent consultables com a
  * material històric, amb la seva data.
  *
- * El tema `roses-examen-oficial` és un **contenidor**, no un tema del temari:
- * el tribunal no etiqueta les preguntes per tema i assignar-los-en un seria
- * afirmar el que el document no diu.
+ * El `topicId` de cada pregunta és una **classificació editorial**: el
+ * tribunal no etiqueta les preguntes per tema. L'assignació viu a
+ * `official-topic-map.json`, revisada pregunta a pregunta contra l'àmbit
+ * publicat de cada tema i amb el motiu de cada decisió. Les que cap tema del
+ * temari cobreix (cultura general, actualitat del dia de l'examen) queden al
+ * contenidor `roses-examen-oficial`.
  */
 import type { Question } from '../../../schemas/index.ts'
 
@@ -494,7 +497,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cg-013',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t04',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -650,7 +653,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cg-017',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t31',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -816,7 +819,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Yamena.' },
       { optionId: 'b', text: 'Yamusukro.' },
       { optionId: 'c', text: 'Dhaka.' },
-      { optionId: 'd', text: 'Luanda. El primer exercici és obligatori i eliminatori i el realitzen els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. La prova de cultura general versa sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política. Aquesta prova consisteix a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test, proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valora segons el següent barem: Per cada resposta correcta: 1 punt. Per cada resposta incorrecta: 0,25 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’ha previst 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
+      { optionId: 'd', text: 'Luanda.' },
     ],
     correct: 'b',
     explanation: {
@@ -845,7 +848,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-001',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t01',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -884,7 +887,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-002',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t02',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -923,7 +926,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-003',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t03',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -962,7 +965,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-004',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t03',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1001,7 +1004,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-005',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t05',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1040,7 +1043,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-006',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t06',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1079,7 +1082,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-007',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t07',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1118,7 +1121,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-008',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t08',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1157,7 +1160,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-009',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t09',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1196,7 +1199,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-010',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t10',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1235,7 +1238,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-011',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1274,7 +1277,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-012',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t12',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1313,7 +1316,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-013',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t13',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1352,7 +1355,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-014',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t14',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1391,7 +1394,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-015',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t15',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1430,7 +1433,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-016',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t16',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1469,7 +1472,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-017',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t16',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1508,7 +1511,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-018',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t17',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1547,7 +1550,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-019',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t18',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1586,7 +1589,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-020',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t20',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1625,7 +1628,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-021',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t29',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1664,7 +1667,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-022',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1703,7 +1706,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-023',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t21',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1742,7 +1745,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-024',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t26',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1781,7 +1784,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-025',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t21',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1820,7 +1823,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-026',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t22',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1859,7 +1862,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-027',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t23',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1898,7 +1901,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-028',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t27',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1937,7 +1940,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-029',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t28',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -1976,7 +1979,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-030',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t33',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2015,7 +2018,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-031',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t32',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2054,7 +2057,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-032',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t32',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2093,7 +2096,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-033',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t33',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2132,7 +2135,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-034',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t34',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2171,7 +2174,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-035',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t40',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2210,7 +2213,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-036',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t26',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2288,7 +2291,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-038',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t33',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2327,7 +2330,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-039',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t40',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2366,7 +2369,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-040',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t36',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2405,7 +2408,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-041',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t05',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2444,7 +2447,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2026-interins-cp-042',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t36',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -2454,7 +2457,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Només la venda del producte.' },
       { optionId: 'b', text: 'Només la vigilància per alertar de la presència policial.' },
       { optionId: 'c', text: 'Tant la venda, com la col·laboració i la compra o adquisició del producte.' },
-      { optionId: 'd', text: 'Cap de les anteriors, la venda ambulant és competència de l\'Estat. El segon exercici és obligatori i eliminatori i consisteix a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I d’aquestes bases. S’han previst 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva. Aquest exercici es valora segons el barem següent: Cada resposta correcta té una puntuació de 0,5 punts. Cada resposta incorrecta resta 0,125 punts. Es puntuarà entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent.' },
+      { optionId: 'd', text: 'Cap de les anteriors, la venda ambulant és competència de l\'Estat.' },
     ],
     correct: 'c',
     explanation: {
@@ -2639,7 +2642,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cg-005',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t01',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -2678,7 +2681,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cg-006',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t31',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -2951,7 +2954,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cg-013',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t04',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -3107,7 +3110,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cg-017',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t31',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -3273,7 +3276,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Yamusukro.' },
       { optionId: 'b', text: 'Moroni.' },
       { optionId: 'c', text: 'Yaundé.' },
-      { optionId: 'd', text: 'Timbu. El primer exercici (prova de cultura general) és obligatori i eliminatori i el realitzen els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. Aquesta prova versa sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política i consisteix a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valora segons el següent barem: Cada resposta correcta té una puntuació d’1 punt. Cada resposta incorrecta resta 0,25 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’ha previst 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
+      { optionId: 'd', text: 'Timbu.' },
     ],
     correct: 'a',
     explanation: {
@@ -3302,7 +3305,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-001',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t02',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3341,7 +3344,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-002',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t02',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3380,7 +3383,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-003',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t03',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3419,7 +3422,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-004',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t03',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3458,7 +3461,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-005',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t05',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3497,7 +3500,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-006',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t06',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3536,7 +3539,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-007',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t07',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3575,7 +3578,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-008',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t08',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3614,7 +3617,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-009',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t09',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3653,7 +3656,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-010',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3692,7 +3695,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-011',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t10',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3731,7 +3734,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-012',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t05',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3770,7 +3773,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-013',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t13',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3809,7 +3812,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-014',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t14',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3848,7 +3851,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-015',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t15',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3887,7 +3890,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-016',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t16',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3926,7 +3929,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-017',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t17',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -3965,7 +3968,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-018',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t18',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4004,7 +4007,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-019',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t19',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4043,7 +4046,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-020',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t21',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4082,7 +4085,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-021',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t21',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4121,7 +4124,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-022',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t22',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4160,7 +4163,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-023',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t22',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4199,7 +4202,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-024',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t24',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4238,7 +4241,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-025',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t24',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4277,7 +4280,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-026',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t24',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4316,7 +4319,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-027',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4355,7 +4358,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-028',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t35',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4394,7 +4397,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-029',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t35',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4433,7 +4436,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-030',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t40',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4472,7 +4475,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-031',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t02',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4511,7 +4514,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-032',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t29',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4550,7 +4553,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-033',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4589,7 +4592,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-034',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t24',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4628,7 +4631,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-035',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4667,7 +4670,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-036',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t26',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4745,7 +4748,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-038',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t28',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4784,7 +4787,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-039',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t21',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4823,7 +4826,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-040',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t33',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4862,7 +4865,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-041',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t15',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4901,7 +4904,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-propietat-cp-042',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t22',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -4911,7 +4914,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Les de policia de trànsit urbà.' },
       { optionId: 'b', text: 'Les d’intervenció en la resolució amistosa de conflictes privats, si hi són requerides.' },
       { optionId: 'c', text: 'Les de policia de seguretat ciutadana i l\'ordre públic.' },
-      { optionId: 'd', text: 'Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals. El segon exercici (prova de coneixements professionals) és obligatori i eliminatori i consisteix a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I de les bases. Aquest exercici es valora segons el següent barem: Cada resposta correcta té una puntuació de 0,5 punts. Cada resposta incorrecta resta 0,125 punts. Es puntua entre 0 i 20 punts i cal obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. S’han previst 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva.' },
+      { optionId: 'd', text: 'Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals.' },
     ],
     correct: 'b',
     explanation: {
@@ -5408,7 +5411,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cg-013',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t04',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -5564,7 +5567,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cg-017',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t31',
     track: 'cultura-general',
     origin: 'official',
     status: 'active',
@@ -5730,7 +5733,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Yerevan.' },
       { optionId: 'b', text: 'Kabul.' },
       { optionId: 'c', text: 'Dhaka.' },
-      { optionId: 'd', text: 'Tirana. El primer exercici és obligatori i eliminatori i el realitzaran els aspirants admesos que hagin superat l’exercici de la fase prèvia, que estiguin exempts de realitzar-la o que hagin acreditat el nivell exigit en el termini fixat. La prova de cultura general versarà sobre coneixements de cultura general a un nivell concordant amb el títol acadèmic requerit a la base segona i sobre coneixements de l’actualitat social, cultural i política. Aquesta prova consistirà a contestar per escrit, en un període màxim de 20 minuts, un qüestionari de 20 preguntes tipus test, que seran proposades pel tribunal, relacionades amb les matèries esmentades en l’apartat anterior en la proporció següent: un 50% de preguntes relatives a coneixements de cultura general i el 50% restant relatives a coneixements sobre l’actualitat social, cultural i política; és a dir, 10 preguntes sobre coneixements de cultura general i 10 preguntes sobre coneixements de l’actualitat social, cultural i política. Aquest exercici es valorarà segons el següent barem: 1 punt per cada resposta correcta i –0,25 punts per cada resposta incorrecta. Es puntuarà entre 0 i 20 punts i caldrà obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent. Es podrà preveure 1 pregunta addicional de reserva que serà valorada en el cas que s\'anul·li alguna de les 20 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclourà, als efectes del càlcul de la qualificació resultant, la pregunta reserva.' },
+      { optionId: 'd', text: 'Tirana.' },
     ],
     correct: 'a',
     explanation: {
@@ -5759,7 +5762,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-001',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t01',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -5798,7 +5801,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-002',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t02',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -5837,7 +5840,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-003',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t03',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -5876,7 +5879,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-004',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t04',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -5915,7 +5918,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-005',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t05',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -5954,7 +5957,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-006',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t06',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -5993,7 +5996,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-007',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t05',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6032,7 +6035,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-008',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t07',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6071,7 +6074,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-009',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t08',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6110,7 +6113,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-010',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t09',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6149,7 +6152,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-011',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t11',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6188,7 +6191,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-012',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t10',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6227,7 +6230,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-013',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t12',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6266,7 +6269,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-014',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t13',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6305,7 +6308,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-015',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t14',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6344,7 +6347,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-016',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t15',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6383,7 +6386,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-017',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t16',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6422,7 +6425,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-018',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t17',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6461,7 +6464,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-019',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t18',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6500,7 +6503,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-020',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t19',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6539,7 +6542,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-021',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t29',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6578,7 +6581,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-022',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t31',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6617,7 +6620,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-023',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t21',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6656,7 +6659,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-024',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t22',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6695,7 +6698,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-025',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t23',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6734,7 +6737,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-026',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t24',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6773,7 +6776,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-027',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t26',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6812,7 +6815,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-028',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t27',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6851,7 +6854,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-029',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t28',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6890,7 +6893,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-030',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t33',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6929,7 +6932,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-031',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t29',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -6968,7 +6971,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-032',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t32',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7007,7 +7010,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-033',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t29',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7046,7 +7049,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-034',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t34',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7085,7 +7088,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-035',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t35',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7124,7 +7127,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-036',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t36',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7163,7 +7166,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-037',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t40',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7202,7 +7205,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-038',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t37',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7241,7 +7244,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-039',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t22',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7280,7 +7283,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-040',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t26',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7319,7 +7322,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-041',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t23',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7358,7 +7361,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
   },
   {
     questionId: 'q-of-roses-2025-interins-cp-042',
-    topicId: 'roses-examen-oficial',
+    topicId: 'roses-t29',
     track: 'coneixements-professionals',
     origin: 'official',
     status: 'active',
@@ -7368,7 +7371,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       { optionId: 'a', text: 'Són delictes les accions doloses penades per la llei.' },
       { optionId: 'b', text: 'Són delictes les accions i omissions doloses o imprudents penades per la llei.' },
       { optionId: 'c', text: 'Són delictes les accions doloses o imprudents penades per la llei.' },
-      { optionId: 'd', text: 'Són delictes les accions imprudents penades per la llei. El segon exercici és obligatori i eliminatori i consistirà a contestar per escrit, en un període màxim de 60 minuts, un qüestionari en català de 40 preguntes tipus test sobre coneixements teòrics-professionals relacionats amb els temes que figuren a l\'Annex I de les bases. Es podran preveure 2 preguntes addicionals de reserva que seran valorades en el cas que s\'anul·li alguna de les 40 anteriors, per incorrecció en el seu plantejament, incorrecció de totes o d’alguna de les respostes plantejades o perquè hi hagués més d\'una resposta correcta. En aquests supòsits, s\'inclouran, als efectes del càlcul de la qualificació resultant, les preguntes reserva. Aquest exercici es valorarà segons el barem següent: cada resposta correcta tindrà una puntuació de 0,5 punts i cada resposta incorrecta restarà 0,125 punts. Es puntuarà entre 0 i 20 punts i caldrà obtenir una puntuació mínima de 10 punts en tot l’exercici per superar-lo i passar a realitzar el següent.' },
+      { optionId: 'd', text: 'Són delictes les accions imprudents penades per la llei.' },
     ],
     correct: 'b',
     explanation: {

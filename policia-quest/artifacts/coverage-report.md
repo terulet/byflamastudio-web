@@ -1,6 +1,6 @@
 # Informe de cobertura — Policia Quest · Roses
 
-Generat el 2026-08-23 · versió de contingut 1
+Generat el 2026-08-24 · versió de contingut 1
 
 ## Resum
 
@@ -20,46 +20,46 @@ Generat el 2026-08-23 · versió de contingut 1
 
 | # | Tema | Bloc | Lliçó | Preguntes actives | Fonts |
 | --- | --- | --- | --- | --- | --- |
-| 1 | La Constitució de 1978. Principis generals | institucions | ✓ | 8 | 1 |
-| 2 | Els drets fonamentals a la Constitució de 1978 | institucions | ✓ | 7 | 1 |
-| 3 | L’Estatut d’Autonomia de Catalunya de 2006 | institucions | ✓ | 7 | 1 |
-| 4 | La Generalitat de Catalunya, el Parlament i el Consell Executiu | institucions | ✓ | 7 | 2 |
-| 5 | El municipi: concepte, elements, potestats i competències | institucions | ✓ | 5 | 1 |
-| 6 | Les ordenances i els bans | institucions | ✓ | 5 | 2 |
-| 7 | Els òrgans jurisdiccionals: poder judicial i Tribunal Constitucional | institucions | ✓ | 7 | 1 |
-| 8 | Drets i deures dels funcionaris públics. Codi de conducta | institucions | ✓ | 5 | 1 |
-| 9 | Règim d’incompatibilitats del personal al servei de les administracions públiques | institucions | ✓ | 5 | 1 |
-| 10 | Pressupostos i hisendes locals | institucions | ✓ | 5 | 1 |
-| 11 | Règim disciplinari dels funcionaris d’un cos de Policia Local | institucions | ✓ | 5 | 2 |
-| 12 | El procediment administratiu com a garantia d’una actuació correcta | institucions | ✓ | 5 | 1 |
-| 13 | L’acte administratiu | institucions | ✓ | 5 | 1 |
-| 14 | Les persones en el procediment administratiu | institucions | ✓ | 5 | 1 |
-| 15 | Aspectes generals de l’activitat administrativa | institucions | ✓ | 5 | 2 |
-| 16 | La regulació del procediment administratiu | institucions | ✓ | 5 | 1 |
-| 17 | Execució i revisió de l’acte administratiu | institucions | ✓ | 5 | 1 |
-| 18 | Transparència i informació pública | institucions | ✓ | 5 | 2 |
-| 19 | Ciberseguretat | institucions | ✓ | 5 | 1 |
-| 20 | Protecció de dades com a dret fonamental | institucions | ✓ | 5 | 3 |
-| 21 | Llei orgànica 2/1986, de forces i cossos de seguretat | seguretat-i-penal | ✓ | 5 | 1 |
-| 22 | Llei 4/2003, del sistema de seguretat pública de Catalunya | seguretat-i-penal | ✓ | 5 | 1 |
-| 23 | Les juntes locals de seguretat | seguretat-i-penal | ✓ | 5 | 2 |
-| 24 | Llei 16/1991, de les policies locals | seguretat-i-penal | ✓ | 5 | 1 |
+| 1 | La Constitució de 1978. Principis generals | institucions | ✓ | 11 | 1 |
+| 2 | Els drets fonamentals a la Constitució de 1978 | institucions | ✓ | 12 | 1 |
+| 3 | L’Estatut d’Autonomia de Catalunya de 2006 | institucions | ✓ | 12 | 1 |
+| 4 | La Generalitat de Catalunya, el Parlament i el Consell Executiu | institucions | ✓ | 11 | 2 |
+| 5 | El municipi: concepte, elements, potestats i competències | institucions | ✓ | 11 | 1 |
+| 6 | Les ordenances i els bans | institucions | ✓ | 8 | 2 |
+| 7 | Els òrgans jurisdiccionals: poder judicial i Tribunal Constitucional | institucions | ✓ | 10 | 1 |
+| 8 | Drets i deures dels funcionaris públics. Codi de conducta | institucions | ✓ | 8 | 1 |
+| 9 | Règim d’incompatibilitats del personal al servei de les administracions públiques | institucions | ✓ | 8 | 1 |
+| 10 | Pressupostos i hisendes locals | institucions | ✓ | 8 | 1 |
+| 11 | Règim disciplinari dels funcionaris d’un cos de Policia Local | institucions | ✓ | 12 | 2 |
+| 12 | El procediment administratiu com a garantia d’una actuació correcta | institucions | ✓ | 7 | 1 |
+| 13 | L’acte administratiu | institucions | ✓ | 8 | 1 |
+| 14 | Les persones en el procediment administratiu | institucions | ✓ | 8 | 1 |
+| 15 | Aspectes generals de l’activitat administrativa | institucions | ✓ | 9 | 2 |
+| 16 | La regulació del procediment administratiu | institucions | ✓ | 9 | 1 |
+| 17 | Execució i revisió de l’acte administratiu | institucions | ✓ | 8 | 1 |
+| 18 | Transparència i informació pública | institucions | ✓ | 8 | 2 |
+| 19 | Ciberseguretat | institucions | ✓ | 7 | 1 |
+| 20 | Protecció de dades com a dret fonamental | institucions | ✓ | 6 | 3 |
+| 21 | Llei orgànica 2/1986, de forces i cossos de seguretat | seguretat-i-penal | ✓ | 11 | 1 |
+| 22 | Llei 4/2003, del sistema de seguretat pública de Catalunya | seguretat-i-penal | ✓ | 11 | 1 |
+| 23 | Les juntes locals de seguretat | seguretat-i-penal | ✓ | 8 | 2 |
+| 24 | Llei 16/1991, de les policies locals | seguretat-i-penal | ✓ | 10 | 1 |
 | 25 | Ètica i deontologia professional | seguretat-i-penal | ✓ | 8 | 3 |
-| 26 | Llei orgànica 4/2015, de protecció de la seguretat ciutadana | seguretat-i-penal | ✓ | 5 | 1 |
-| 27 | Furts i robatoris | seguretat-i-penal | ✓ | 5 | 1 |
-| 28 | Jurisdicció penal | seguretat-i-penal | ✓ | 5 | 2 |
-| 29 | Codi penal: garanties, aplicació de la llei i seguretat viària | seguretat-i-penal | ✓ | 5 | 1 |
+| 26 | Llei orgànica 4/2015, de protecció de la seguretat ciutadana | seguretat-i-penal | ✓ | 10 | 1 |
+| 27 | Furts i robatoris | seguretat-i-penal | ✓ | 7 | 1 |
+| 28 | Jurisdicció penal | seguretat-i-penal | ✓ | 8 | 2 |
+| 29 | Codi penal: garanties, aplicació de la llei i seguretat viària | seguretat-i-penal | ✓ | 11 | 1 |
 | 30 | Llei orgànica 1/2015, modificadora del Codi penal | seguretat-i-penal | ✓ | 5 | 2 |
-| 31 | Coneixements generals de Roses | roses-transit-convivencia | ✓ | 39 | 1 |
-| 32 | Permisos i llicències de conducció | roses-transit-convivencia | ✓ | 5 | 3 |
-| 33 | Conducció sota els efectes d’alcohol o drogues | roses-transit-convivencia | ✓ | 5 | 3 |
-| 34 | Animals domèstics i de companyia | roses-transit-convivencia | ✓ | 5 | 3 |
-| 35 | Ordenança municipal de circulació de Roses | roses-transit-convivencia | ✓ | 6 | 1 |
-| 36 | Ordenança municipal de convivència ciutadana de Roses | roses-transit-convivencia | ✓ | 6 | 1 |
-| 37 | Policia judicial i persona detinguda | actuacio-i-proteccio | ✓ | 5 | 3 |
+| 31 | Coneixements generals de Roses | roses-transit-convivencia | ✓ | 44 | 1 |
+| 32 | Permisos i llicències de conducció | roses-transit-convivencia | ✓ | 8 | 3 |
+| 33 | Conducció sota els efectes d’alcohol o drogues | roses-transit-convivencia | ✓ | 10 | 3 |
+| 34 | Animals domèstics i de companyia | roses-transit-convivencia | ✓ | 7 | 3 |
+| 35 | Ordenança municipal de circulació de Roses | roses-transit-convivencia | ✓ | 9 | 1 |
+| 36 | Ordenança municipal de convivència ciutadana de Roses | roses-transit-convivencia | ✓ | 9 | 1 |
+| 37 | Policia judicial i persona detinguda | actuacio-i-proteccio | ✓ | 6 | 3 |
 | 38 | Llei 27/2003: ordre de protecció de les víctimes de violència domèstica | actuacio-i-proteccio | ✓ | 5 | 2 |
 | 39 | Llei orgànica 3/2007: igualtat efectiva entre dones i homes | actuacio-i-proteccio | ✓ | 5 | 1 |
-| 40 | Llei orgànica 5/2000: responsabilitat penal i detenció de menors | actuacio-i-proteccio | ✓ | 5 | 1 |
+| 40 | Llei orgànica 5/2000: responsabilitat penal i detenció de menors | actuacio-i-proteccio | ✓ | 9 | 1 |
 
 ## Estat de les fonts
 

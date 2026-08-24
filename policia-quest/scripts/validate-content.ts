@@ -172,10 +172,11 @@ const sourceIds = new Set(ROSES_PACK.sources.map((s) => s.sourceId))
 /*
  * Contenidor de les preguntes d'examen oficial.
  *
- * El tribunal no etiqueta les preguntes per tema. Assignar-los-ne un seria
- * afirmar el que el quadernet no diu, així que van a un contenidor propi que
- * no forma part del temari: no surt a la ruta dels 40 temes ni compta per al
- * domini per tema.
+ * El tribunal no etiqueta les preguntes per tema: el `topicId` que porten és
+ * la classificació editorial d'`official-topic-map.json`, revisada pregunta a
+ * pregunta amb el motiu de cada decisió. El que aquell mapa no assigna es
+ * queda en un contenidor propi que no forma part del temari. La coherència
+ * mapa ↔ banc es comprova a tests/content/content.test.ts.
  */
 const OFFICIAL_CONTAINER_TOPIC = 'roses-examen-oficial'
 

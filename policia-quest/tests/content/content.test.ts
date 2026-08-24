@@ -7,6 +7,8 @@
  * posa vermell.
  */
 import { describe, expect, it } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import { ROSES_PACK } from '../../content/municipalities/roses/index.ts'
 import { Lesson, Question, SourceManifest, Syllabus } from '../../content/schemas/index.ts'
 import manifestJson from '../../sources/source-manifest.json' with { type: 'json' }
@@ -178,15 +180,52 @@ describe('banc de preguntes', () => {
   })
 
   it('cada pregunta apunta a un tema que existeix', () => {
-    // Les preguntes d'examen oficial van a un contenidor propi: el tribunal no
-    // les etiqueta per tema i assignar-los-en un seria afirmar el que el
-    // quadernet no diu.
+    // El topicId de les preguntes oficials és la classificació editorial del
+    // mapa revisat a mà; el que el mapa no assigna queda al contenidor dels
+    // quadernets, que no és al temari.
     const allowed = new Set([...topicIds, 'roses-examen-oficial'])
     for (const q of questions) {
       expect(allowed.has(q.topicId), `${q.questionId} → ${q.topicId}`).toBe(true)
     }
     for (const q of questions.filter((x) => x.topicId === 'roses-examen-oficial')) {
       expect(q.origin, `${q.questionId} no és oficial però és al contenidor`).toBe('official')
+    }
+  })
+
+  it('la classificació de les preguntes oficials coincideix amb el mapa revisat', () => {
+    // El mapa és l'única autoritat: cada pregunta oficial ha de tenir-hi una
+    // decisió amb motiu, i el topicId del banc ha de ser exactament el que el
+    // mapa diu. Si algú regenera el fitxer sense el mapa, o toca un topicId a
+    // mà, cau aquí.
+    const raw = readFileSync(
+      fileURLToPath(
+        new URL('../../content/municipalities/roses/questions/official-topic-map.json', import.meta.url),
+      ),
+      'utf-8',
+    )
+    const map = JSON.parse(raw) as {
+      container: string
+      exams: Record<string, Record<string, { topic: number | null; why: string }>>
+    }
+    const officials = questions.filter((q) => q.origin === 'official')
+    expect(officials.length).toBeGreaterThan(0)
+
+    let decisions = 0
+    for (const entries of Object.values(map.exams)) decisions += Object.keys(entries).length
+    expect(decisions).toBe(officials.length)
+
+    for (const q of officials) {
+      const parts = q.questionId.split('-') // q-of-roses-2026-interins-cp-001
+      const exam = parts.slice(2, 6).join('-')
+      const number = String(Number(parts[6]))
+      const entry = map.exams[exam]?.[number]
+      expect(entry, `${q.questionId}: sense decisió al mapa`).toBeDefined()
+      expect(entry!.why.length, `${q.questionId}: decisió sense motiu`).toBeGreaterThan(10)
+      const want =
+        entry!.topic === null
+          ? map.container
+          : `roses-t${String(entry!.topic).padStart(2, '0')}`
+      expect(q.topicId, q.questionId).toBe(want)
     }
   })
 

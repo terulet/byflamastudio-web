@@ -1,0 +1,789 @@
+{
+  "_note": [
+    "Classificació editorial de les preguntes d'examen oficial pels 40 temes",
+    "del temari, revisada pregunta a pregunta contra l'àmbit publicat de cada",
+    "tema (syllabus.json). El tribunal NO etiqueta les preguntes: aquesta",
+    "assignació és nostra, serveix per estudiar i diagnosticar, i per això és",
+    "en un fitxer a part, amb el motiu de cada decisió, i no es dedueix mai",
+    "automàticament per paraules clau.",
+    "",
+    "Regla seguida: una pregunta s'assigna a un tema només si cau dins del seu",
+    "àmbit publicat. Si cap tema la cobreix (cultura general, actualitat",
+    "històrica, matèria fora de temari), topic és null i la pregunta es queda",
+    "al tema contenidor dels quadernets, amb el motiu escrit.",
+    "",
+    "No es toca res més: ni enunciats, ni opcions, ni claus, ni explicacions."
+  ],
+  "reviewedOn": "2026-08-24",
+  "container": "roses-examen-oficial",
+  "exams": {
+    "roses-2026-interins-cp": {
+      "1": {
+        "topic": 1,
+        "why": "art. 2 CE: unitat de la nació i dret a l’autonomia (principis constitucionals)"
+      },
+      "2": {
+        "topic": 2,
+        "why": "art. 16 CE: llibertat ideològica i religiosa"
+      },
+      "3": {
+        "topic": 3,
+        "why": "art. 6 EAC: llengua pròpia i llengües oficials"
+      },
+      "4": {
+        "topic": 3,
+        "why": "competència exclusiva de protecció civil a l’EAC"
+      },
+      "5": {
+        "topic": 5,
+        "why": "art. 26 LBRL: competències municipals per trams de població"
+      },
+      "6": {
+        "topic": 6,
+        "why": "entrada en vigor de les ordenances un cop publicades"
+      },
+      "7": {
+        "topic": 7,
+        "why": "art. 159 CE: composició del Tribunal Constitucional"
+      },
+      "8": {
+        "topic": 8,
+        "why": "àmbit subjectiu del codi de conducta del TREBEP"
+      },
+      "9": {
+        "topic": 9,
+        "why": "definició del règim d’incompatibilitats"
+      },
+      "10": {
+        "topic": 10,
+        "why": "principis pressupostaris de les entitats locals"
+      },
+      "11": {
+        "topic": 11,
+        "why": "falta lleu del règim disciplinari policial (incorrecció, retard, negligència)"
+      },
+      "12": {
+        "topic": 12,
+        "why": "identificació de la norma reguladora del procediment comú (Llei 39/2015)"
+      },
+      "13": {
+        "topic": 13,
+        "why": "termini per cursar la notificació des que es dicta l’acte"
+      },
+      "14": {
+        "topic": 14,
+        "why": "qui té la condició de persona interessada"
+      },
+      "15": {
+        "topic": 15,
+        "why": "obligació de resoldre i notificar"
+      },
+      "16": {
+        "topic": 16,
+        "why": "la comunicació com a forma d’iniciar una activitat (art. 69 Llei 39/2015)"
+      },
+      "17": {
+        "topic": 16,
+        "why": "termini d’emissió d’informes dins la instrucció"
+      },
+      "18": {
+        "topic": 17,
+        "why": "execució subsidiària com a mitjà d’execució forçosa"
+      },
+      "19": {
+        "topic": 18,
+        "why": "termini de resolució del dret d’accés a la informació pública"
+      },
+      "20": {
+        "topic": 20,
+        "why": "categories especials de dades personals"
+      },
+      "21": {
+        "topic": 29,
+        "why": "infracció de trànsit constitutiva de delicte: obstacles a la via (art. 385 CP)"
+      },
+      "22": {
+        "topic": 11,
+        "why": "extinció de la responsabilitat disciplinària (Llei 16/1991)"
+      },
+      "23": {
+        "topic": 21,
+        "why": "repartiment competencial de la seguretat pública (LO 2/1986)"
+      },
+      "24": {
+        "topic": 26,
+        "why": "quadre sancionador de l’art. 39 LO 4/2015"
+      },
+      "25": {
+        "topic": 21,
+        "why": "funcions del Cos Nacional de Policia (art. 12 LO 2/1986)"
+      },
+      "26": {
+        "topic": 22,
+        "why": "funcions compartides entre PG-ME i policies locals (sistema de seguretat)"
+      },
+      "27": {
+        "topic": 23,
+        "why": "convidats a la junta local de seguretat (art. 9 Llei 4/2003)"
+      },
+      "28": {
+        "topic": 27,
+        "why": "robatori amb força (art. 237 CP)"
+      },
+      "29": {
+        "topic": 28,
+        "why": "competència penal de l’Audiència Nacional (art. 65 LOPJ)"
+      },
+      "30": {
+        "topic": 33,
+        "why": "conducció sota efectes: tipificació penal (art. 379.2 CP)"
+      },
+      "31": {
+        "topic": 32,
+        "why": "periodicitat de la ITV d’una motocicleta (condicions dels vehicles)"
+      },
+      "32": {
+        "topic": 32,
+        "why": "edat mínima per al permís D1"
+      },
+      "33": {
+        "topic": 33,
+        "why": "taxes d’alcohol dels ciclistes (art. 20 RGC)"
+      },
+      "34": {
+        "topic": 34,
+        "why": "infracció lleu de la Llei 10/1999 de gossos potencialment perillosos"
+      },
+      "35": {
+        "topic": 40,
+        "why": "durada màxima de la detenció d’una persona menor"
+      },
+      "36": {
+        "topic": 26,
+        "why": "termini màxim d’identificació (art. 16 LO 4/2015)"
+      },
+      "37": {
+        "topic": null,
+        "why": "prescripció de les infraccions de trànsit (LSV): cap tema del temari cobreix el règim sancionador general de trànsit"
+      },
+      "38": {
+        "topic": 33,
+        "why": "taxa d’alcoholèmia sancionable dels conductors novells"
+      },
+      "39": {
+        "topic": 40,
+        "why": "detenció d’un menor de catorze anys"
+      },
+      "40": {
+        "topic": 36,
+        "why": "destinació dels objectes comissats (ordenança de convivència)"
+      },
+      "41": {
+        "topic": 5,
+        "why": "elecció dels alcaldes (art. 140 CE; organització del municipi)"
+      },
+      "42": {
+        "topic": 36,
+        "why": "prohibicions sobre el comerç ambulant no autoritzat (art. 11 de l’ordenança de convivència)"
+      }
+    },
+    "roses-2025-propietat-cp": {
+      "1": {
+        "topic": 2,
+        "why": "titulars del dret de participació en assumptes públics (art. 23 i 13 CE)"
+      },
+      "2": {
+        "topic": 2,
+        "why": "catàleg de drets fonamentals: l’habitatge n’és fora (principi rector)"
+      },
+      "3": {
+        "topic": 3,
+        "why": "drets i deures lingüístics de l’EAC"
+      },
+      "4": {
+        "topic": 3,
+        "why": "competències pròpies dels governs locals a l’EAC (art. 84; el tema inclou el govern local)"
+      },
+      "5": {
+        "topic": 5,
+        "why": "coordinació de serveis en municipis de menys de 20.000 habitants (art. 26.2 LBRL)"
+      },
+      "6": {
+        "topic": 6,
+        "why": "informació pública en el procediment d’aprovació d’ordenances"
+      },
+      "7": {
+        "topic": 7,
+        "why": "mandat i renovació dels membres del TC"
+      },
+      "8": {
+        "topic": 8,
+        "why": "permisos dels empleats públics (TREBEP)"
+      },
+      "9": {
+        "topic": 9,
+        "why": "òrgan competent per reconèixer la compatibilitat"
+      },
+      "10": {
+        "topic": 11,
+        "why": "falta greu del règim disciplinari policial: desobediència"
+      },
+      "11": {
+        "topic": 10,
+        "why": "termini d’aprovació definitiva del pressupost general"
+      },
+      "12": {
+        "topic": 5,
+        "why": "avocació de competències municipals (potestats i competències)"
+      },
+      "13": {
+        "topic": 13,
+        "why": "actes que requereixen motivació"
+      },
+      "14": {
+        "topic": 14,
+        "why": "supòsits en què cal acreditar la representació"
+      },
+      "15": {
+        "topic": 15,
+        "why": "caducitat del procediment sancionador iniciat d’ofici"
+      },
+      "16": {
+        "topic": 16,
+        "why": "els informes preceptius pertanyen a la fase d’instrucció"
+      },
+      "17": {
+        "topic": 17,
+        "why": "qui pot promoure la revisió dels actes"
+      },
+      "18": {
+        "topic": 18,
+        "why": "requisits de la sol·licitud d’accés a la informació"
+      },
+      "19": {
+        "topic": 19,
+        "why": "funcions de l’Agència de Ciberseguretat de Catalunya"
+      },
+      "20": {
+        "topic": 21,
+        "why": "principis bàsics d’actuació: congruència, oportunitat i proporcionalitat (art. 5 LO 2/1986)"
+      },
+      "21": {
+        "topic": 21,
+        "why": "compliment de presó pels membres de les FCS (art. 8.2 LO 2/1986)"
+      },
+      "22": {
+        "topic": 22,
+        "why": "integrants del sistema de seguretat de Catalunya (art. 3.1 Llei 4/2003)"
+      },
+      "23": {
+        "topic": 22,
+        "why": "el Consell de Seguretat de Catalunya (art. 6 Llei 4/2003)"
+      },
+      "24": {
+        "topic": 24,
+        "why": "principis de les funcions de policia judicial (art. 12 Llei 16/1991)"
+      },
+      "25": {
+        "topic": 24,
+        "why": "categories segons població: intendent major (art. 25 Llei 16/1991)"
+      },
+      "26": {
+        "topic": 24,
+        "why": "el cap del cos de la policia local"
+      },
+      "27": {
+        "topic": 11,
+        "why": "faltes molt greus del règim disciplinari (Llei 16/1991)"
+      },
+      "28": {
+        "topic": 35,
+        "why": "estacionament de motocicletes a la vorera (art. 20.2 ordenança de circulació de Roses)"
+      },
+      "29": {
+        "topic": 35,
+        "why": "horari de càrrega i descàrrega (art. 41 ordenança de circulació de Roses)"
+      },
+      "30": {
+        "topic": 40,
+        "why": "durada màxima de la detenció d’una persona menor"
+      },
+      "31": {
+        "topic": 2,
+        "why": "inviolabilitat del domicili (art. 18.2 CE)"
+      },
+      "32": {
+        "topic": 29,
+        "why": "velocitat penalment rellevant en via urbana (art. 379.1 CP)"
+      },
+      "33": {
+        "topic": 11,
+        "why": "falta molt greu: discriminació (règim disciplinari policial)"
+      },
+      "34": {
+        "topic": 24,
+        "why": "escales i categories: inspector (art. 24 Llei 16/1991)"
+      },
+      "35": {
+        "topic": 11,
+        "why": "encobriment de faltes greus i molt greus (art. 51 Llei 16/1991)"
+      },
+      "36": {
+        "topic": 26,
+        "why": "identificació en dependències policials (art. 16 LO 4/2015)"
+      },
+      "37": {
+        "topic": null,
+        "why": "estafa agreujada (art. 250.1 CP): delicte patrimonial fora de furts i robatoris; cap tema del temari el cobreix"
+      },
+      "38": {
+        "topic": 28,
+        "why": "presó provisional en peça separada (art. 519 LECrim; procés penal)"
+      },
+      "39": {
+        "topic": 21,
+        "why": "la Guàrdia Civil com a força armada (LO 2/1986)"
+      },
+      "40": {
+        "topic": 33,
+        "why": "taxa penal amb símptomes: detenció i denúncia penal"
+      },
+      "41": {
+        "topic": 15,
+        "why": "còmput de terminis: presentació d’escrits en dia inhàbil"
+      },
+      "42": {
+        "topic": 22,
+        "why": "funcions compartides entre PG-ME i policies locals (sistema de seguretat)"
+      }
+    },
+    "roses-2025-interins-cp": {
+      "1": {
+        "topic": 1,
+        "why": "garanties de l’art. 9.3 CE (principis constitucionals)"
+      },
+      "2": {
+        "topic": 2,
+        "why": "art. 17 CE: llibertat i seguretat, detenció preventiva"
+      },
+      "3": {
+        "topic": 3,
+        "why": "drets lingüístics davant les administracions (EAC)"
+      },
+      "4": {
+        "topic": 4,
+        "why": "competències de la Generalitat en matèria de seguretat pública"
+      },
+      "5": {
+        "topic": 5,
+        "why": "el municipi: concepte, personalitat i elements"
+      },
+      "6": {
+        "topic": 6,
+        "why": "òrgan competent per aprovar una ordenança: el Ple"
+      },
+      "7": {
+        "topic": 5,
+        "why": "competència del Ple: aprovació de la relació de llocs de treball (organització municipal)"
+      },
+      "8": {
+        "topic": 7,
+        "why": "mandat dels membres del TC"
+      },
+      "9": {
+        "topic": 8,
+        "why": "norma que recull el codi de conducta (TREBEP)"
+      },
+      "10": {
+        "topic": 9,
+        "why": "règim d’incompatibilitats: afirmació incorrecta"
+      },
+      "11": {
+        "topic": 11,
+        "why": "falta molt greu: discriminació (règim disciplinari policial)"
+      },
+      "12": {
+        "topic": 10,
+        "why": "recursos de les hisendes locals"
+      },
+      "13": {
+        "topic": 12,
+        "why": "identificació de la llei estatal del procediment (Llei 39/2015)"
+      },
+      "14": {
+        "topic": 13,
+        "why": "actes que no s’han de motivar"
+      },
+      "15": {
+        "topic": 14,
+        "why": "representació: actes de mer tràmit"
+      },
+      "16": {
+        "topic": 15,
+        "why": "termini supletori per resoldre i notificar (tres mesos)"
+      },
+      "17": {
+        "topic": 16,
+        "why": "fases del procediment administratiu"
+      },
+      "18": {
+        "topic": 17,
+        "why": "mitjans d’execució forçosa"
+      },
+      "19": {
+        "topic": 18,
+        "why": "termini per notificar la resolució d’accés"
+      },
+      "20": {
+        "topic": 19,
+        "why": "objectiu de l’Agència de Ciberseguretat de Catalunya"
+      },
+      "21": {
+        "topic": 29,
+        "why": "conducció temerària amb perill concret (art. 380 CP)"
+      },
+      "22": {
+        "topic": 31,
+        "why": "ubicació de la Biblioteca de Roses (equipaments del municipi)"
+      },
+      "23": {
+        "topic": 21,
+        "why": "el Consell de Política de Seguretat (art. 48 LO 2/1986)"
+      },
+      "24": {
+        "topic": 22,
+        "why": "funcions de l’alcalde dins el sistema de seguretat (art. 4 Llei 4/2003)"
+      },
+      "25": {
+        "topic": 23,
+        "why": "convidats a la junta local de seguretat (art. 9 Llei 4/2003)"
+      },
+      "26": {
+        "topic": 24,
+        "why": "la categoria de superintendent (art. 25 Llei 16/1991)"
+      },
+      "27": {
+        "topic": 26,
+        "why": "armes prohibides: infracció greu (LO 4/2015)"
+      },
+      "28": {
+        "topic": 27,
+        "why": "furt agreujat (art. 235 CP)"
+      },
+      "29": {
+        "topic": 28,
+        "why": "òrgans col·legiats de l’ordre penal: l’Audiència Provincial"
+      },
+      "30": {
+        "topic": 33,
+        "why": "conducció sota efectes: tipificació penal (art. 379.2 CP)"
+      },
+      "31": {
+        "topic": 29,
+        "why": "classes de penes: pena lleu (art. 33 CP; part general del CP)"
+      },
+      "32": {
+        "topic": 32,
+        "why": "vehicles que habilita a conduir el permís B"
+      },
+      "33": {
+        "topic": 29,
+        "why": "catàleg de delictes contra la seguretat viària"
+      },
+      "34": {
+        "topic": 34,
+        "why": "conducció de gossos potencialment perillosos per menors (Llei 10/1999)"
+      },
+      "35": {
+        "topic": 35,
+        "why": "vehicles autoritzats al carril bici (modificació 2021 de l’ordenança de circulació)"
+      },
+      "36": {
+        "topic": 36,
+        "why": "col·laborar amb la venda ambulant no autoritzada: infracció greu (ordenança de convivència)"
+      },
+      "37": {
+        "topic": 40,
+        "why": "drets de la persona menor detinguda (LO 5/2000)"
+      },
+      "38": {
+        "topic": 37,
+        "why": "legitimats per instar l’habeas corpus"
+      },
+      "39": {
+        "topic": 22,
+        "why": "funcions compartides entre PG-ME i policies locals (sistema de seguretat)"
+      },
+      "40": {
+        "topic": 26,
+        "why": "dissolució de reunions i manifestacions (art. 23 LO 4/2015)"
+      },
+      "41": {
+        "topic": 23,
+        "why": "funcions de la junta local de seguretat"
+      },
+      "42": {
+        "topic": 29,
+        "why": "concepte de delicte (art. 10 CP; part general)"
+      }
+    },
+    "roses-2026-interins-cg": {
+      "1": {
+        "topic": null,
+        "why": "matemàtiques de cultura general; cap tema del temari (percentatges)"
+      },
+      "2": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (el Mulhacén)"
+      },
+      "3": {
+        "topic": null,
+        "why": "llengua de cultura general; cap tema del temari (accentuació)"
+      },
+      "4": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (comarques i capitals)"
+      },
+      "5": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (capitals d’Europa)"
+      },
+      "6": {
+        "topic": null,
+        "why": "història de cultura general; cap tema del temari (II Guerra Mundial)"
+      },
+      "7": {
+        "topic": null,
+        "why": "art i cultura generals; cap tema del temari (música clàssica)"
+      },
+      "8": {
+        "topic": null,
+        "why": "història de cultura general; cap tema del temari (bomba atòmica)"
+      },
+      "9": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (la Pica d’Estats)"
+      },
+      "10": {
+        "topic": null,
+        "why": "art i cultura generals; cap tema del temari (Dalí)"
+      },
+      "11": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (succés a la demarcació de Girona, març 2026)"
+      },
+      "12": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (premi Planeta 2025)"
+      },
+      "13": {
+        "topic": 4,
+        "why": "conseller/a d’Interior: organització institucional de la Generalitat en matèria de seguretat"
+      },
+      "14": {
+        "topic": null,
+        "why": "història de cultura general; cap tema del temari (fundació d’Amazon)"
+      },
+      "15": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (presidència de Veneçuela)"
+      },
+      "16": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (ministeri de Defensa)"
+      },
+      "17": {
+        "topic": 31,
+        "why": "regidoria d’Esports de l’Ajuntament de Roses (coneixement institucional local)"
+      },
+      "18": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (esport)"
+      },
+      "19": {
+        "topic": null,
+        "why": "història de cultura general; cap tema del temari (ETA)"
+      },
+      "20": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (Òscars 2026)"
+      },
+      "21": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (capital de Costa d’Ivori)"
+      }
+    },
+    "roses-2025-propietat-cg": {
+      "1": {
+        "topic": null,
+        "why": "matemàtiques de cultura general; cap tema del temari (potències)"
+      },
+      "2": {
+        "topic": null,
+        "why": "llengua de cultura general; cap tema del temari (antònims)"
+      },
+      "3": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (oceans)"
+      },
+      "4": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (presidència del BCE)"
+      },
+      "5": {
+        "topic": 1,
+        "why": "nombre de comunitats i ciutats autònomes (model territorial de la Constitució)"
+      },
+      "6": {
+        "topic": 31,
+        "why": "comarques limítrofes amb l’Alt Empordà (entorn territorial de Roses)"
+      },
+      "7": {
+        "topic": null,
+        "why": "art i cultura generals; cap tema del temari (Van Gogh)"
+      },
+      "8": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (capitals d’Europa)"
+      },
+      "9": {
+        "topic": null,
+        "why": "art i cultura generals; cap tema del temari (literatura catalana)"
+      },
+      "10": {
+        "topic": null,
+        "why": "matemàtiques de cultura general; cap tema del temari (temperatures)"
+      },
+      "11": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (presidència de la Diputació de Girona)"
+      },
+      "12": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (música)"
+      },
+      "13": {
+        "topic": 4,
+        "why": "conseller/a d’Interior i Seguretat Pública: organització institucional de la Generalitat"
+      },
+      "14": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (procés judicial a un expresident)"
+      },
+      "15": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (premis Goya 2025)"
+      },
+      "16": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (enquestes del CEO)"
+      },
+      "17": {
+        "topic": 31,
+        "why": "alcaldia de l’Ajuntament de Roses (coneixement institucional local)"
+      },
+      "18": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (fiscalia general de l’Estat)"
+      },
+      "19": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (Copa Davis 2025)"
+      },
+      "20": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (Òscars 2025)"
+      },
+      "21": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (capital de Costa d’Ivori)"
+      }
+    },
+    "roses-2025-interins-cg": {
+      "1": {
+        "topic": null,
+        "why": "matemàtiques de cultura general; cap tema del temari (percentatges)"
+      },
+      "2": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (llacs de Covadonga)"
+      },
+      "3": {
+        "topic": null,
+        "why": "llengua de cultura general; cap tema del temari (accentuació)"
+      },
+      "4": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (comarques i capitals)"
+      },
+      "5": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (capitals d’Europa)"
+      },
+      "6": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (bandera de Croàcia)"
+      },
+      "7": {
+        "topic": null,
+        "why": "art i cultura generals; cap tema del temari (música clàssica)"
+      },
+      "8": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (comunitats autònomes limítrofes)"
+      },
+      "9": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (el Kilimanjaro)"
+      },
+      "10": {
+        "topic": null,
+        "why": "art i cultura generals; cap tema del temari (Goya)"
+      },
+      "11": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (succés escolar)"
+      },
+      "12": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (premi Planeta 2024)"
+      },
+      "13": {
+        "topic": 4,
+        "why": "conseller/a d’Interior: organització institucional de la Generalitat en matèria de seguretat"
+      },
+      "14": {
+        "topic": null,
+        "why": "història de cultura general; cap tema del temari (fundació de Microsoft)"
+      },
+      "15": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (presidència de Rússia)"
+      },
+      "16": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (ministeri d’Hisenda)"
+      },
+      "17": {
+        "topic": 31,
+        "why": "regidoria de Seguretat Ciutadana de l’Ajuntament de Roses (coneixement institucional local)"
+      },
+      "18": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (xarxes socials)"
+      },
+      "19": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (Hezbol·là)"
+      },
+      "20": {
+        "topic": null,
+        "why": "actualitat del moment de l’examen; cap tema del temari (Òscars 2025)"
+      },
+      "21": {
+        "topic": null,
+        "why": "geografia de cultura general; cap tema del temari (capital d’Armènia)"
+      }
+    }
+  }
+}

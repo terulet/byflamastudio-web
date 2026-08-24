@@ -456,6 +456,7 @@ test('la confiança només compta quan es declara, i «segur però incorrecte» 
   // perquè no declarar-se no és declarar-se segur.
   await page.goto('/#/train')
   await page.getByTestId('select-topic-29').click()
+  await page.getByTestId('filter-origin-authored').click()
   await page.getByTestId('start-topic-session').click()
   await expect(page.getByTestId('study-question')).toBeVisible()
   for (let i = 0; i < 5; i++) {
@@ -479,6 +480,7 @@ test('la confiança només compta quan es declara, i «segur però incorrecte» 
   // «Ho tinc clar»: 1 encert segur i 4 errades segures, deterministes.
   await page.goto('/#/train')
   await page.getByTestId('select-topic-30').click()
+  await page.getByTestId('filter-origin-authored').click()
   await page.getByTestId('start-topic-session').click()
   await expect(page.getByTestId('study-question')).toBeVisible()
   for (let i = 0; i < 5; i++) {
@@ -508,24 +510,29 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page.getByTestId('train')).toBeVisible()
 
   // Sense haver estudiat res, "noves" ha de tenir totes les preguntes del tema.
-  // El tema 35 (ordenança de circulació) en té 6 des que es va reescriure amb
-  // l'articulat real de l'ordenança i la seva modificació de 2021.
+  // El tema 35 (ordenança de circulació) en té 6 de pròpies i 3 d'examen
+  // oficial que la classificació editorial hi assigna.
   await page.getByTestId('select-topic-35').click()
   await page.getByTestId('filter-state-new').click()
+  await expect(page.getByTestId('start-topic-session')).toContainText('9')
+  await page.getByTestId('filter-origin-authored').click()
   await expect(page.getByTestId('start-topic-session')).toContainText('6')
+  await page.getByTestId('filter-origin-authored').click()
 
   // I "fallades" cap, perquè encara no s'ha fallat res.
   await page.getByTestId('filter-state-failed').click()
   await expect(page.getByTestId('start-topic-session')).toBeDisabled()
   await expect(page.getByText(/No hi ha preguntes que compleixin/)).toBeVisible()
 
-  // El filtre d'examen oficial no depèn de la selecció de temes: aquestes
-  // preguntes viuen al tema contenidor dels quadernets, que no és al selector.
-  // Ha d'explicar-ho i deixar començar la sessió igualment.
+  // El filtre d'examen oficial respecta la classificació editorial per tema:
+  // amb el tema 35 seleccionat hi ha 3 preguntes oficials; sense cap tema
+  // seleccionat, s'entrena el banc oficial sencer.
   await page.getByTestId('filter-state-new').click()
   await page.getByTestId('filter-origin-official').click()
   await expect(page.getByText(/cap pregunta d’examen oficial importada/)).toHaveCount(0)
-  await expect(page.getByText(/no estan classificades per tema/)).toBeVisible()
+  await expect(page.getByText(/classificació pròpia, no del tribunal/)).toBeVisible()
+  await expect(page.getByTestId('start-topic-session')).toContainText('3')
+  await page.getByTestId('select-topic-35').click()
   await expect(page.getByTestId('start-topic-session')).toBeEnabled()
   await page.getByTestId('start-topic-session').click()
   await expect(page.getByTestId('study-question')).toBeVisible()
@@ -599,8 +606,9 @@ test('es pot practicar només l’ordenança de circulació de Roses', async ({ 
   await page.getByTestId('practice-topic').click()
 
   await expect(page.getByTestId('study')).toBeVisible()
-  // Totes les preguntes de la sessió han de ser del tema 35.
-  await expect(page.getByTestId('study-progress')).toContainText('de 6')
+  // Totes les preguntes de la sessió han de ser del tema 35: les 6 pròpies
+  // més les 3 d'examen oficial que la classificació editorial hi assigna.
+  await expect(page.getByTestId('study-progress')).toContainText('de 9')
 })
 
 test('exporta i importa la còpia de seguretat', async ({ page }) => {

@@ -4,7 +4,7 @@
 > mitjançant `npm run content:report`. Per afegir o corregir una font, editeu el
 > manifest.
 
-Generat el 2026-08-23 · 98 fonts registrades.
+Generat el 2026-08-24 · 98 fonts registrades.
 
 ## Roses
 

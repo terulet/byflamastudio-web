@@ -181,6 +181,11 @@ def parse(path):
     in_reserve = False
     reserve_re = re.compile(r'^\s*PREGUNT\w*\s+(DE\s+)?RESERVA', re.I)
     just_entered_reserve = False
+    # Després de l'última opció, els quadernets de cultura general reprodueixen
+    # el text de les bases («El primer exercici és obligatori i eliminatori…»).
+    # No es repeteix a cada pàgina, així que el filtre de repetició no el veu, i
+    # sense això s'enganxava sencer a l'opció d) de la pregunta de reserva.
+    trailer_re = re.compile(r'^(el|la)\s+\S+\s+exercici\b.*\bobligatori\b.*\beliminatori', re.I)
 
     def start_option(letter, body, parts):
         nonlocal current_opt
@@ -239,6 +244,12 @@ def parse(path):
                 questions.append(current)
                 current_opt = None
                 continue
+
+        # El text de bases posterior a una pregunta completa tanca l'opció: el
+        # que vingui després ja no és contingut de la pregunta.
+        if current is not None and len(current.options) == 4 and trailer_re.match(text):
+            current_opt = None
+            continue
 
         # Continuació d'una opció o de l'enunciat.
         if current_opt is not None and current.options and len(current.options) <= 4:

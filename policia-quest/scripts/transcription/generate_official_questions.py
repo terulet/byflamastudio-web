@@ -62,9 +62,33 @@ REVIEW_NOTES = {
     ),
 }
 
-# Contenidor per a preguntes d'examen oficial. El tribunal no etiqueta les
-# preguntes per tema i inventar-ne un seria afirmar el que no consta.
+# El tribunal no etiqueta les preguntes per tema. La classificació que porta
+# cada pregunta és **editorial**: viu a `official-topic-map.json`, revisada
+# pregunta a pregunta contra l'àmbit publicat de cada tema, amb el motiu de
+# cada decisió. El que aquell mapa no assigna es queda en aquest contenidor:
+# no s'endevina mai un tema per paraules clau.
 CONTAINER_TOPIC = 'roses-examen-oficial'
+CLASSIFICATION_REPORT = ROOT / 'artifacts/classificacio-oficials.md'
+TOPIC_MAP_PATH = ROOT / 'content/municipalities/roses/questions/official-topic-map.json'
+
+
+def load_topic_map():
+    """Mapa de classificació, amb validació estricta.
+
+    Cada quadernet importat ha de tenir una decisió per a **cada** pregunta:
+    una classificació incompleta fallaria en silenci deixant preguntes al
+    contenidor sense que ningú ho hagués decidit.
+    """
+    data = json.loads(TOPIC_MAP_PATH.read_text(encoding='utf-8'))
+    assert data['container'] == CONTAINER_TOPIC
+    for exam_id, entries in data['exams'].items():
+        for number, entry in entries.items():
+            topic = entry['topic']
+            if topic is not None and not (1 <= topic <= 40):
+                raise SystemExit(f'{exam_id} #{number}: tema fora de rang: {topic}')
+            if not entry.get('why'):
+                raise SystemExit(f'{exam_id} #{number}: decisió sense motiu')
+    return data['exams']
 
 
 def ts(s: str) -> str:
@@ -76,8 +100,61 @@ def clean(s: str) -> str:
     return s.rstrip('*').strip()
 
 
+
+def write_classification_report(topic_map, rows):
+    """Informe llegible de la classificació, generat del mateix mapa.
+
+    Un informe redactat a part acabaria dient una cosa diferent del banc; aquest
+    surt de les mateixes decisions que s'acaben d'aplicar.
+    """
+    import json as _json
+    syllabus = _json.loads(
+        (ROOT / 'content/municipalities/roses/syllabus.json').read_text(encoding='utf-8')
+    )
+    titles = {t['topicId']: f"{t['number']}. {t['title']['ca']}" for t in syllabus['topics']}
+    titles[CONTAINER_TOPIC] = 'Contenidor dels quadernets (fora del temari)'
+
+    by_topic = {}
+    for topic_id, qid, stem, why in rows:
+        by_topic.setdefault(topic_id, []).append((qid, stem, why))
+
+    classified = sum(len(v) for t, v in by_topic.items() if t != CONTAINER_TOPIC)
+    container = len(by_topic.get(CONTAINER_TOPIC, []))
+
+    def order_key(topic_id):
+        return (topic_id == CONTAINER_TOPIC, topic_id)
+
+    lines = [
+        '# Classificació temàtica de les preguntes d\'examen oficial',
+        '',
+        '**Generat** per `scripts/transcription/generate_official_questions.py` a partir',
+        'd\'`official-topic-map.json`, el mapa revisat pregunta a pregunta. No s\'edita a mà.',
+        '',
+        'El tribunal no etiqueta les preguntes per tema: aquesta classificació és',
+        '**editorial**, feta contra l\'àmbit publicat de cada tema del temari, i cada',
+        'decisió porta el seu motiu. Una pregunta s\'assigna només si cau dins d\'un',
+        'àmbit; el que cap tema cobreix (cultura general, actualitat del dia de',
+        'l\'examen, matèria fora de temari) queda al contenidor, també amb motiu.',
+        '',
+        f'**{classified + container} preguntes revisades: {classified} classificades '
+        f'en {sum(1 for t in by_topic if t != CONTAINER_TOPIC)} temes, {container} al contenidor.**',
+        '',
+    ]
+    for topic_id in sorted(by_topic, key=order_key):
+        entries = by_topic[topic_id]
+        lines.append(f'## {titles[topic_id]} — {len(entries)}')
+        lines.append('')
+        for qid, stem, why in entries:
+            short = stem if len(stem) <= 110 else stem[:107] + '…'
+            lines.append(f'- `{qid}` — {short}')
+            lines.append(f'  - *{why}*')
+        lines.append('')
+    CLASSIFICATION_REPORT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    print(f'Escrit {CLASSIFICATION_REPORT.relative_to(ROOT)}')
+
 def main():
-    blocks, stats = [], []
+    topic_map = load_topic_map()
+    blocks, stats, rows_for_report = [], [], []
     for source_id, exam_id, year, place, test, held in EXAMS:
         pdf = CACHE / f'{source_id}.pdf'
         questions, _ = E.parse(pdf)
@@ -123,9 +200,17 @@ def main():
                   (f'Pregunta {q.number} del cuadernillo oficial de {held}. El cuadernillo '
                    'no lleva ninguna marca de respuesta inequívoca, por lo que la pregunta '
                    'queda sin clave oficial.'))
+            entry = topic_map.get(exam_id, {}).get(str(q.number))
+            if entry is None:
+                raise SystemExit(
+                    f'{exam_id} #{q.number}: sense decisió a official-topic-map.json. '
+                    'La classificació es revisa a mà; no es deixa cap pregunta sense decidir.'
+                )
+            topic_id = CONTAINER_TOPIC if entry['topic'] is None else f"roses-t{entry['topic']:02d}"
+            rows_for_report.append((topic_id, qid, q.stem, entry['why']))
             block = f"""  {{
     questionId: {ts(qid)},
-    topicId: {ts(CONTAINER_TOPIC)},
+    topicId: {ts(topic_id)},
     track: {ts(test)},
     origin: 'official',
     status: {ts('active' if answer else 'draft')},
@@ -181,15 +266,19 @@ def main():
  * quadernets i de la quota d'actualitat. Segueixen sent consultables com a
  * material històric, amb la seva data.
  *
- * El tema `roses-examen-oficial` és un **contenidor**, no un tema del temari:
- * el tribunal no etiqueta les preguntes per tema i assignar-los-en un seria
- * afirmar el que el document no diu.
+ * El `topicId` de cada pregunta és una **classificació editorial**: el
+ * tribunal no etiqueta les preguntes per tema. L'assignació viu a
+ * `official-topic-map.json`, revisada pregunta a pregunta contra l'àmbit
+ * publicat de cada tema i amb el motiu de cada decisió. Les que cap tema del
+ * temari cobreix (cultura general, actualitat del dia de l'examen) queden al
+ * contenidor `roses-examen-oficial`.
  */
 import type { Question } from '../../../schemas/index.ts'
 
 export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
 '''
     OUT.write_text(header + '\n'.join(blocks) + '\n]\n', encoding='utf-8')
+    write_classification_report(topic_map, rows_for_report)
     print(f'Escrit {OUT.relative_to(ROOT)}')
     print(f"{'examen':28} {'preg':>5} {'amb clau':>9} {'sense clau':>11}")
     for e, n, k, b in stats:

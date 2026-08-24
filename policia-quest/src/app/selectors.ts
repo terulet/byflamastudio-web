@@ -3,7 +3,8 @@ import { useMemo } from 'react'
 import { pack, useApp } from './store.tsx'
 import { computeTopicMastery, globalMastery, type TopicMastery } from '../engines/mastery.ts'
 import { countDue, countFailed } from '../engines/selection.ts'
-import { toEpochDay } from '../util/date.ts'
+import { isCurrent } from '../engines/availability.ts'
+import { epochDayToIso, toEpochDay } from '../util/date.ts'
 import type { AnswerRecord, Question, SyllabusTopic } from '../domain/types.ts'
 
 export function useToday(): number {
@@ -46,8 +47,17 @@ export function useDashboard(): Dashboard {
       answersByTopic.set(a.topicId, list)
     }
 
+    /*
+     * El denominador del domini són les preguntes que avui es poden estudiar.
+     * Les preguntes dinàmiques caducades (l'actualitat dels quadernets de
+     * cultura general antics, classificades per tema com a material històric)
+     * no hi compten: baixarien el domini d'un tema amb material que cap sessió
+     * normal serveix.
+     */
+    const todayIso = epochDayToIso(today)
     const questionsByTopic = new Map<string, string[]>()
     for (const q of active) {
+      if (!isCurrent(q, todayIso)) continue
       const list = questionsByTopic.get(q.topicId) ?? []
       list.push(q.questionId)
       questionsByTopic.set(q.topicId, list)

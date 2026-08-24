@@ -126,7 +126,7 @@ const ca = {
     officialUnavailable:
       'Encara no hi ha cap pregunta d’examen oficial importada: el filtre quedarà buit.',
     officialDrillNote:
-      'Les preguntes d’examen oficial encara no estan classificades per tema: s’entrenen totes juntes, amb la data del seu examen a la vista.',
+      'Les preguntes d’examen oficial estan classificades per tema (classificació pròpia, no del tribunal): tria temes per acotar-les, o no en triïs cap per entrenar tots els quadernets, incloses les de cultura general que no pertanyen a cap tema del temari.',
     selectTopics: 'Selecciona temes',
     selected: 'seleccionats',
     available: 'disponibles',
@@ -460,7 +460,7 @@ const es: Dict = {
     officialUnavailable:
       'Todavía no hay ninguna pregunta de examen oficial importada: el filtro quedará vacío.',
     officialDrillNote:
-      'Las preguntas de examen oficial aún no están clasificadas por tema: se entrenan todas juntas, con la fecha de su examen a la vista.',
+      'Las preguntas de examen oficial están clasificadas por tema (clasificación propia, no del tribunal): elige temas para acotarlas, o no elijas ninguno para entrenar todos los cuadernillos, incluidas las de cultura general que no pertenecen a ningún tema del temario.',
     selectTopics: 'Selecciona temas',
     selected: 'seleccionados',
     available: 'disponibles',
