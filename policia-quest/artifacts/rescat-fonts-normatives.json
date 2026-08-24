@@ -128,6 +128,8 @@
         "domain": "www.roses.cat",
         "expectedMime": "text/html",
         "minBytes": 4000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "roses",
           "examen"
@@ -216,6 +218,8 @@
         "domain": "www.roses.cat",
         "expectedMime": "text/html",
         "minBytes": 4000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "ordenan"
         ]
@@ -430,6 +434,8 @@
         "domain": "www.roses.cat",
         "expectedMime": "text/html",
         "minBytes": 8000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Roses"
         ]
@@ -950,6 +956,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Constitución",
           "Artículo 1",
@@ -1227,6 +1235,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Estatuto",
           "Artículo 6"
@@ -1460,6 +1470,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 150000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Bases del Régimen Local",
           "Artículo 25",
@@ -1601,6 +1613,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 150000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "empleado público",
           "Artículo 52",
@@ -1732,6 +1746,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 60000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "incompatibilidades",
           "Artículo 14",
@@ -1863,6 +1879,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Haciendas Locales",
           "Artículo 169",
@@ -2324,6 +2342,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Procedimiento Administrativo Común",
           "Artículo 21",
@@ -2451,6 +2471,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Régimen Jurídico del Sector Público",
           "Artículo 23",
@@ -2572,6 +2594,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 100000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "transparencia",
           "Artículo 17",
@@ -2665,6 +2689,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 150000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Protección de Datos Personales",
           "Artículo 8"
@@ -2841,6 +2867,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 120000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Fuerzas y Cuerpos de Seguridad",
           "Artículo 5",
@@ -2986,6 +3014,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 120000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Seguridad Ciudadana",
           "Artículo 16",
@@ -3248,6 +3278,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 400000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Código Penal",
           "Artículo 379",
@@ -3370,6 +3402,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Código Penal",
           "preámbulo"
@@ -3572,6 +3606,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 500000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Enjuiciamiento Criminal",
           "Artículo 520",
@@ -3680,6 +3716,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 30000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Habeas Corpus",
           "Artículo 3",
@@ -3832,6 +3870,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 300000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Tráfico",
           "Seguridad Vial"
@@ -3852,8 +3892,8 @@
       "gazette": null,
       "publishedAt": "2003-12-23",
       "consolidation": "consolidat",
-      "consolidationNote": null,
-      "format": "both",
+      "consolidationNote": "Es baixa en HTML a propòsit: el PDF consolidat d’aquest reglament passa dels 250 MB perquè hi van tots els senyals de trànsit en imatge. L’HTML porta el mateix articulat.",
+      "format": "html",
       "lang": "es",
       "canonicalUrl": "https://www.boe.es/eli/es/rd/2003/11/21/1428/con",
       "domain": "www.boe.es",
@@ -3922,11 +3962,13 @@
         "totalConsumers": 3
       },
       "offlinePackage": {
-        "filename": "rd-1428-2003-rgc.pdf",
+        "filename": "rd-1428-2003-rgc.html",
         "downloadUrl": "https://www.boe.es/eli/es/rd/2003/11/21/1428/con",
         "domain": "www.boe.es",
-        "expectedMime": "application/pdf",
-        "minBytes": 400000,
+        "expectedMime": "text/html",
+        "minBytes": 200000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Reglamento General de Circulación",
           "Artículo 20"
@@ -4010,6 +4052,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 400000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Reglamento General de Conductores",
           "permiso"
@@ -4082,6 +4126,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 400000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Reglamento General de Vehículos"
         ]
@@ -4183,6 +4229,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 40000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "animales potencialmente peligrosos"
         ]
@@ -4274,6 +4322,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 40000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "potencialmente peligrosos",
           "Anexo"
@@ -4373,6 +4423,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 20000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "orden de protección"
         ]
@@ -4498,6 +4550,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 200000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "igualdad efectiva",
           "Artículo 7",
@@ -4629,6 +4683,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 150000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "responsabilidad penal de los menores",
           "Artículo 17",
@@ -4852,7 +4908,11 @@
         "downloadUrl": "https://portaljuridic.gencat.cat/eli/es-ct/l/1991/07/10/16",
         "domain": "portaljuridic.gencat.cat",
         "expectedMime": "application/pdf",
-        "minBytes": 100000,
+        "minBytes": 40000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [
+          "portaldogc.gencat.cat"
+        ],
         "mustContain": [
           "policies locals",
           "Article 25"
@@ -5022,7 +5082,11 @@
         "downloadUrl": "https://portaljuridic.gencat.cat/eli/es-ct/l/2003/04/07/4",
         "domain": "portaljuridic.gencat.cat",
         "expectedMime": "application/pdf",
-        "minBytes": 80000,
+        "minBytes": 15000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [
+          "portaldogc.gencat.cat"
+        ],
         "mustContain": [
           "seguretat pública",
           "Article 9",
@@ -5122,6 +5186,10 @@
         "domain": "portaljuridic.gencat.cat",
         "expectedMime": "application/pdf",
         "minBytes": 60000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [
+          "portaldogc.gencat.cat"
+        ],
         "mustContain": [
           "disciplinari"
         ]
@@ -5244,6 +5312,10 @@
         "domain": "portaljuridic.gencat.cat",
         "expectedMime": "application/pdf",
         "minBytes": 30000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [
+          "portaldogc.gencat.cat"
+        ],
         "mustContain": [
           "juntes locals de seguretat"
         ]
@@ -5326,6 +5398,8 @@
         "domain": "portaljuridic.gencat.cat",
         "expectedMime": "application/pdf",
         "minBytes": 100000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "transparència"
         ]
@@ -5414,6 +5488,8 @@
         "domain": "interior.gencat.cat",
         "expectedMime": "application/pdf",
         "minBytes": 30000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "ètica"
         ]
@@ -5434,7 +5510,7 @@
       "publishedAt": null,
       "consolidation": "recopilacio",
       "consolidationNote": "És un recull, no una norma: el seu valor és portar en un sol PDF la normativa catalana de seguretat ja consolidada.",
-      "format": "pdf",
+      "format": "html",
       "lang": "ca",
       "canonicalUrl": "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/",
       "domain": "portaljuridic.gencat.cat",
@@ -5459,11 +5535,13 @@
         "totalConsumers": 0
       },
       "offlinePackage": {
-        "filename": "codi-seguretat-catalunya.pdf",
+        "filename": "codi-seguretat-catalunya.html",
         "downloadUrl": "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/",
         "domain": "portaljuridic.gencat.cat",
-        "expectedMime": "application/pdf",
-        "minBytes": 500000,
+        "expectedMime": "text/html",
+        "minBytes": 10000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "seguretat"
         ]
@@ -5590,6 +5668,8 @@
         "domain": "ciberseguretat.gencat.cat",
         "expectedMime": "text/html",
         "minBytes": 5000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "ciberseguretat"
         ]
@@ -5688,6 +5768,8 @@
         "domain": "eur-lex.europa.eu",
         "expectedMime": "application/pdf",
         "minBytes": 100000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "drets fonamentals"
         ]
@@ -5793,6 +5875,8 @@
         "domain": "eur-lex.europa.eu",
         "expectedMime": "application/pdf",
         "minBytes": 300000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "2016/679",
           "Article 5",
@@ -5905,6 +5989,8 @@
         "domain": "www.un.org",
         "expectedMime": "text/html",
         "minBytes": 10000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "Derechos Humanos",
           "Artículo 1",
@@ -5984,6 +6070,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 100000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "infracciones penales",
           "Artículo 1"
@@ -6073,7 +6161,11 @@
         "downloadUrl": "https://portaljuridic.gencat.cat/eli/es-ct/l/1999/07/30/10",
         "domain": "portaljuridic.gencat.cat",
         "expectedMime": "application/pdf",
-        "minBytes": 30000,
+        "minBytes": 12000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [
+          "portaldogc.gencat.cat"
+        ],
         "mustContain": [
           "gossos",
           "perillosos"
@@ -6143,6 +6235,8 @@
         "domain": "www.boe.es",
         "expectedMime": "application/pdf",
         "minBytes": 150000,
+        "maxBytes": 60000000,
+        "resolvedHosts": [],
         "mustContain": [
           "bienestar de los animales"
         ]
@@ -6222,6 +6316,8 @@
         "domain": "www.roses.cat",
         "expectedMime": "text/html",
         "minBytes": 3000,
+        "maxBytes": 8000000,
+        "resolvedHosts": [],
         "mustContain": [
           "llic"
         ]

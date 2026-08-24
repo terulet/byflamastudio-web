@@ -61,7 +61,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 3, 9, 10, 14, 15, 17, 18, 21, 24, 53, 54, 55, 117, 122, 123, 125, 126, 127, 152, 159, 165, 166, 167, 169
 - **Consumidors:** 30 preguntes pròpies · 9 microlliçons · 9 temes · **39 en total**
 - **Preguntes oficials que podria explicar:** 29
-- **Paquet offline:** `ce-1978.pdf` · mínim 200.000 bytes · ha de contenir «Constitución», «Artículo 1», «Artículo 159», «Artículo 3»
+- **Paquet offline:** `ce-1978.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «Constitución», «Artículo 1», «Artículo 159», «Artículo 3»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t01-001` · *estructura general* — Que, en el punt citat, la resposta a «Quants articles té la Constitució espanyola de 1978?» és «169 articles».
@@ -80,7 +80,8 @@ norma respon de debò la pregunta.
 - **Què en cal:** Naturalesa i dependència municipal dels cossos, àmbit territorial, art. 12 (policia judicial), 24 (escales i categories), 25 (categories segons població) i tot el règim disciplinari (classificació de faltes, catàleg i graduació de sancions, art. 51 sobre encobriment).
 - **Consumidors:** 11 preguntes pròpies · 2 microlliçons · 4 temes · **13 en total**
 - **Preguntes oficials que podria explicar:** 22
-- **Paquet offline:** `llei-16-1991-policies-locals.pdf` · mínim 100.000 bytes · ha de contenir «policies locals», «Article 25»
+- **Paquet offline:** `llei-16-1991-policies-locals.pdf` · entre 40.000 i 60.000.000 bytes · ha de contenir «policies locals», «Article 25»
+- **També pot resoldre a:** portaldogc.gencat.cat — cal tenir-ho a la llista de hosts oficials.
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t04-003` · *dependència dels cossos de policia local* — Que, en el punt citat, la resposta a «La relació entre la Generalitat i les policies locals de Catalunya és de:» és «Coordinació, mantenint la dependència de l’alcalde o alcaldessa».
@@ -100,7 +101,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 3, 4, 5, 13, 15, 21, 25, 29, 30, 33, 34, 35, 40, 47, 52, 53, 54, 56, 71, 82, 94, 95, 98, 100, 106, 122, 123, 124, 126
 - **Consumidors:** 28 preguntes pròpies · 6 microlliçons · 6 temes · **34 en total**
 - **Preguntes oficials que podria explicar:** 19
-- **Paquet offline:** `llei-39-2015-pac.pdf` · mínim 200.000 bytes · ha de contenir «Procedimiento Administrativo Común», «Artículo 21», «Artículo 3», «Artículo 4»
+- **Paquet offline:** `llei-39-2015-pac.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «Procedimiento Administrativo Común», «Artículo 21», «Artículo 3», «Artículo 4»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t12-001` · *objecte i àmbit* — Que, en el punt citat, la resposta a «Quina llei regula el procediment administratiu comú de les administracions públiques?» és «La Llei 39/2015».
@@ -120,7 +121,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 4, 11, 15, 20, 21, 22, 25, 49, 65, 139, 141
 - **Consumidors:** 11 preguntes pròpies · 3 microlliçons · 4 temes · **14 en total**
 - **Preguntes oficials que podria explicar:** 17
-- **Paquet offline:** `llei-7-1985-lrbrl.pdf` · mínim 150.000 bytes · ha de contenir «Bases del Régimen Local», «Artículo 25», «Artículo 1», «Artículo 4»
+- **Paquet offline:** `llei-7-1985-lrbrl.pdf` · entre 150.000 i 60.000.000 bytes · ha de contenir «Bases del Régimen Local», «Artículo 25», «Artículo 1», «Artículo 4»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t03-005` · *art. 1 i 11* — Que, en el punt citat, la resposta a «Segons l’Estatut, quin és l’ens bàsic de l’organització territorial de Catalunya i del govern local?» és «El municipi».
@@ -140,7 +141,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 5, 9, 51, 53
 - **Consumidors:** 8 preguntes pròpies · 1 microlliçons · 4 temes · **9 en total**
 - **Preguntes oficials que podria explicar:** 17
-- **Paquet offline:** `lo-2-1986-fcs.pdf` · mínim 120.000 bytes · ha de contenir «Fuerzas y Cuerpos de Seguridad», «Artículo 5», «Artículo 1»
+- **Paquet offline:** `lo-2-1986-fcs.pdf` · entre 120.000 i 60.000.000 bytes · ha de contenir «Fuerzas y Cuerpos de Seguridad», «Artículo 5», «Artículo 1»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t08-003` · *art. 5.1* — Que, en el punt citat, la resposta a «El deure d’obediència d’un empleat públic cedeix quan la instrucció rebuda:» és «Constitueix una infracció manifesta, clara i terminant de l’ordenament jurídic».
@@ -159,7 +160,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Títol I (drets i deures), el capítol de drets i deures lingüístics, el títol de govern local, les institucions (Parlament, Presidència, Govern), el poder judicial a Catalunya i les competències en seguretat pública.
 - **Consumidors:** 15 preguntes pròpies · 4 microlliçons · 4 temes · **19 en total**
 - **Preguntes oficials que podria explicar:** 15
-- **Paquet offline:** `lo-6-2006-eac.pdf` · mínim 200.000 bytes · ha de contenir «Estatuto», «Artículo 6»
+- **Paquet offline:** `lo-6-2006-eac.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «Estatuto», «Artículo 6»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t03-001` · *norma aprovatòria* — Que, en el punt citat, la resposta a «L’Estatut d’autonomia de Catalunya vigent va ser aprovat per:» és «La Llei orgànica 6/2006, de 19 de juliol».
@@ -179,7 +180,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 2, 9, 234, 235, 238, 239, 242, 379, 383, 384, 385
 - **Consumidors:** 13 preguntes pròpies · 4 microlliçons · 4 temes · **17 en total**
 - **Preguntes oficials que podria explicar:** 13
-- **Paquet offline:** `lo-10-1995-cp.pdf` · mínim 400.000 bytes · ha de contenir «Código Penal», «Artículo 379», «Artículo 237», «Artículo 1», «Artículo 2»
+- **Paquet offline:** `lo-10-1995-cp.pdf` · entre 400.000 i 60.000.000 bytes · ha de contenir «Código Penal», «Artículo 379», «Artículo 237», «Artículo 1», «Artículo 2»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t27-001` · *art. 234 i 237* — Que, en el punt citat, la resposta a «Quina és la diferència essencial entre furt i robatori?» és «L’ús de força en les coses o de violència o intimidació en les persones».
@@ -199,7 +200,8 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 10
 - **Consumidors:** 6 preguntes pròpies · 3 microlliçons · 3 temes · **9 en total**
 - **Preguntes oficials que podria explicar:** 13
-- **Paquet offline:** `llei-4-2003-seguretat-publica.pdf` · mínim 80.000 bytes · ha de contenir «seguretat pública», «Article 9», «Article 1», «Article 10»
+- **Paquet offline:** `llei-4-2003-seguretat-publica.pdf` · entre 15.000 i 60.000.000 bytes · ha de contenir «seguretat pública», «Article 9», «Article 1», «Article 10»
+- **També pot resoldre a:** portaldogc.gencat.cat — cal tenir-ho a la llista de hosts oficials.
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t04-005` · *formació i coordinació policial* — Que, en el punt citat, la resposta a «La formació dels membres dels cossos de policia local de Catalunya correspon principalment a:» és «L’Institut de Seguretat Pública de Catalunya».
@@ -219,7 +221,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 23, 25, 31
 - **Consumidors:** 3 preguntes pròpies · 2 microlliçons · 3 temes · **5 en total**
 - **Preguntes oficials que podria explicar:** 9
-- **Paquet offline:** `llei-40-2015-rjsp.pdf` · mínim 200.000 bytes · ha de contenir «Régimen Jurídico del Sector Público», «Artículo 23», «Artículo 25»
+- **Paquet offline:** `llei-40-2015-rjsp.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «Régimen Jurídico del Sector Público», «Artículo 23», «Artículo 25»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t08-005` · *art. 23* — Que, en el punt citat, la resposta a «L’abstenció en els assumptes en què es tingui un interès personal és, segons l’Estatut bàsic:» és «Un principi ètic d’obligat compliment».
@@ -238,7 +240,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Immobilització i retirada de vehicles, tractament del vehicle residual o abandonat, obligació de sotmetre’s a les proves de detecció, presència de drogues i el règim sancionador (incloent-hi la prescripció de les infraccions).
 - **Consumidors:** 6 preguntes pròpies · 2 microlliçons · 2 temes · **8 en total**
 - **Preguntes oficials que podria explicar:** 8
-- **Paquet offline:** `rdleg-6-2015-ltsv.pdf` · mínim 300.000 bytes · ha de contenir «Tráfico», «Seguridad Vial»
+- **Paquet offline:** `rdleg-6-2015-ltsv.pdf` · entre 300.000 i 60.000.000 bytes · ha de contenir «Tráfico», «Seguridad Vial»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t32-001` · *immobilització i retirada de vehicles* — Que, en el punt citat, la resposta a «Quina diferència hi ha entre immobilització i retirada d’un vehicle?» és «La immobilització deixa el vehicle al lloc sense poder circular; la retirada el trasllada al dipòsit».
@@ -257,7 +259,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** La relació d’ordenances vigents amb la seva data. Serveix per confirmar que les dues ordenances ja adoptades són les vigents i per delimitar àmbits i zones del terme municipal.
 - **Consumidors:** 0 preguntes pròpies · 2 microlliçons · 2 temes · **2 en total**
 - **Preguntes oficials que podria explicar:** 8
-- **Paquet offline:** `roses-ordenances-index.html` · mínim 4.000 bytes · ha de contenir «ordenan»
+- **Paquet offline:** `roses-ordenances-index.html` · entre 4.000 i 8.000.000 bytes · ha de contenir «ordenan»
 
   Afirmacions que ha de demostrar (mostra):
   - `roses-t06-l1` · *ordenances vigents de Roses* — Que el punt citat sosté el contingut de la microlliçó «Ordenances i bans: les normes que aplica la policia local».
@@ -274,7 +276,8 @@ norma respon de debò la pregunta.
 - **Què en cal:** El reglament del procediment sencer i les mesures cautelars.
 - **Consumidors:** 2 preguntes pròpies · 1 microlliçons · 1 temes · **3 en total**
 - **Preguntes oficials que podria explicar:** 7
-- **Paquet offline:** `decret-179-2015-disciplinari.pdf` · mínim 60.000 bytes · ha de contenir «disciplinari»
+- **Paquet offline:** `decret-179-2015-disciplinari.pdf` · entre 60.000 i 60.000.000 bytes · ha de contenir «disciplinari»
+- **També pot resoldre a:** portaldogc.gencat.cat — cal tenir-ho a la llista de hosts oficials.
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t11-001` · *reglament del procediment* — Que, en el punt citat, la resposta a «El règim disciplinari dels cossos de policia local de Catalunya es regula principalment a:» és «La Llei 16/1991 i el Decret 179/2015».
@@ -292,7 +295,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Les seccions de geografia, nuclis i urbanitzacions, patrimoni (Ciutadella, Castell de la Trinitat, patrimoni megalític) i equipaments. És la font del tema 31, l’únic tema de coneixement local del temari.
 - **Consumidors:** 14 preguntes pròpies · 1 microlliçons · 1 temes · **15 en total**
 - **Preguntes oficials que podria explicar:** 5
-- **Paquet offline:** `roses-web-municipi.html` · mínim 8.000 bytes · ha de contenir «Roses»
+- **Paquet offline:** `roses-web-municipi.html` · entre 8.000 i 8.000.000 bytes · ha de contenir «Roses»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t31-001` · *situació geogràfica del municipi* — Que, en el punt citat, la resposta a «A quina comarca pertany el municipi de Roses?» és «L'Alt Empordà».
@@ -312,7 +315,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 4, 15, 16, 20, 23, 35, 39
 - **Consumidors:** 6 preguntes pròpies · 1 microlliçons · 2 temes · **7 en total**
 - **Preguntes oficials que podria explicar:** 5
-- **Paquet offline:** `lo-4-2015-psc.pdf` · mínim 120.000 bytes · ha de contenir «Seguridad Ciudadana», «Artículo 16», «Artículo 4», «Artículo 15»
+- **Paquet offline:** `lo-4-2015-psc.pdf` · entre 120.000 i 60.000.000 bytes · ha de contenir «Seguridad Ciudadana», «Artículo 16», «Artículo 4», «Artículo 15»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t26-001` · *art. 16* — Que, en el punt citat, la resposta a «El temps màxim de permanència en dependències policials per a una diligència d’identificació és de:» és «6 hores».
@@ -324,14 +327,14 @@ norma respon de debò la pregunta.
 
 - **Identificador legal:** Reial decret 1428/2003, de 21 de novembre
 - **Organisme:** BOE
-- **Publicació:** 2003-12-23 · **consolidació:** consolidat
+- **Publicació:** 2003-12-23 · **consolidació:** consolidat — Es baixa en HTML a propòsit: el PDF consolidat d’aquest reglament passa dels 250 MB perquè hi van tots els senyals de trànsit en imatge. L’HTML porta el mateix articulat.
 - **URL canònica:** https://www.boe.es/eli/es/rd/2003/11/21/1428/con
 - **Alternatives oficials:** https://www.boe.es/buscar/act.php?id=BOE-A-2003-23514 *(derivada, cal comprovar-la)*
-- **Format esperat:** both · MIME `application/pdf`
+- **Format esperat:** html · MIME `text/html`
 - **Què en cal:** Art. 20-28 (normes sobre begudes alcohòliques i estupefaents): taxes d’alcoholèmia, taxes especials de ciclistes i conductors novells, i pràctica de les proves de detecció.
 - **Consumidors:** 2 preguntes pròpies · 1 microlliçons · 1 temes · **3 en total**
 - **Preguntes oficials que podria explicar:** 5
-- **Paquet offline:** `rd-1428-2003-rgc.pdf` · mínim 400.000 bytes · ha de contenir «Reglamento General de Circulación», «Artículo 20»
+- **Paquet offline:** `rd-1428-2003-rgc.html` · entre 200.000 i 8.000.000 bytes · ha de contenir «Reglamento General de Circulación», «Artículo 20»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t33-002` · *taxes d’alcoholèmia* — Que, en el punt citat, la resposta a «Quina és la taxa màxima d’alcohol en aire espirat per a un conductor novell o professional?» és «0,15 mg/l».
@@ -350,7 +353,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 490, 520, 544
 - **Consumidors:** 10 preguntes pròpies · 3 microlliçons · 3 temes · **13 en total**
 - **Preguntes oficials que podria explicar:** 4
-- **Paquet offline:** `lecrim-1882.pdf` · mínim 500.000 bytes · ha de contenir «Enjuiciamiento Criminal», «Artículo 520», «Artículo 544 ter», «Artículo 490»
+- **Paquet offline:** `lecrim-1882.pdf` · entre 500.000 i 60.000.000 bytes · ha de contenir «Enjuiciamiento Criminal», «Artículo 520», «Artículo 544 ter», «Artículo 490»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t28-001` · *competència per a l’enjudiciament de delictes lleus* — Que, en el punt citat, la resposta a «Quin òrgan judicial enjudicia els delictes lleus?» és «El jutjat d’instrucció».
@@ -372,7 +375,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 7, 16, 17
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
 - **Preguntes oficials que podria explicar:** 4
-- **Paquet offline:** `lo-5-2000-menors.pdf` · mínim 150.000 bytes · ha de contenir «responsabilidad penal de los menores», «Artículo 17», «Artículo 1», «Artículo 7»
+- **Paquet offline:** `lo-5-2000-menors.pdf` · entre 150.000 i 60.000.000 bytes · ha de contenir «responsabilidad penal de los menores», «Artículo 17», «Artículo 1», «Artículo 7»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t40-001` · *art. 1 i 3* — Que, en el punt citat, la resposta a «A quines edats s’aplica la Llei orgànica 5/2000, reguladora de la responsabilitat penal dels menors?» és «A partir dels 14 i fins als 18 anys».
@@ -392,7 +395,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 8, 14, 52, 53, 54
 - **Consumidors:** 6 preguntes pròpies · 1 microlliçons · 2 temes · **7 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `rdleg-5-2015-trebep.pdf` · mínim 150.000 bytes · ha de contenir «empleado público», «Artículo 52», «Artículo 8», «Artículo 14»
+- **Paquet offline:** `rdleg-5-2015-trebep.pdf` · entre 150.000 i 60.000.000 bytes · ha de contenir «empleado público», «Artículo 52», «Artículo 8», «Artículo 14»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t08-001` · *art. 8* — Que, en el punt citat, la resposta a «Segons l’Estatut bàsic de l’empleat públic, quines són les classes d’empleats públics?» és «Funcionaris de carrera, funcionaris interins, personal laboral i personal eventual».
@@ -412,7 +415,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 3, 11, 14, 16
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `llei-53-1984-incompat.pdf` · mínim 60.000 bytes · ha de contenir «incompatibilidades», «Artículo 14», «Artículo 1», «Artículo 3»
+- **Paquet offline:** `llei-53-1984-incompat.pdf` · entre 60.000 i 60.000.000 bytes · ha de contenir «incompatibilidades», «Artículo 14», «Artículo 1», «Artículo 3»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t09-001` · *art. 1* — Que, en el punt citat, la resposta a «El principi general de la Llei 53/1984 d’incompatibilitats és que el personal al servei de les administracions públiques:» és «Només pot ocupar un lloc de treball al sector públic».
@@ -432,7 +435,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 2, 20, 59, 168, 169
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `rdleg-2-2004-trlrhl.pdf` · mínim 200.000 bytes · ha de contenir «Haciendas Locales», «Artículo 169», «Artículo 2», «Artículo 20»
+- **Paquet offline:** `rdleg-2-2004-trlrhl.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «Haciendas Locales», «Artículo 169», «Artículo 2», «Artículo 20»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t10-001` · *art. 59* — Que, en el punt citat, la resposta a «Quins impostos són d’exigència obligatòria per als ajuntaments?» és «IBI, IAE i IVTM».
@@ -451,7 +454,8 @@ norma respon de debò la pregunta.
 - **Què en cal:** Àmbit d’aplicació, composició i presidència, funcions, funcionament i coordinació de dispositius.
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `decret-151-1998-juntes.pdf` · mínim 30.000 bytes · ha de contenir «juntes locals de seguretat»
+- **Paquet offline:** `decret-151-1998-juntes.pdf` · entre 30.000 i 60.000.000 bytes · ha de contenir «juntes locals de seguretat»
+- **També pot resoldre a:** portaldogc.gencat.cat — cal tenir-ho a la llista de hosts oficials.
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t23-001` · *composició i presidència* — Que, en el punt citat, la resposta a «Qui presideix la junta local de seguretat?» és «L’alcalde o alcaldessa».
@@ -471,7 +475,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 5, 8, 14, 17, 20, 24
 - **Consumidors:** 4 preguntes pròpies · 1 microlliçons · 1 temes · **5 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `llei-19-2013-transp.pdf` · mínim 100.000 bytes · ha de contenir «transparencia», «Artículo 17», «Artículo 5», «Artículo 8»
+- **Paquet offline:** `llei-19-2013-transp.pdf` · entre 100.000 i 60.000.000 bytes · ha de contenir «transparencia», «Artículo 17», «Artículo 5», «Artículo 8»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t18-001` · *art. 17* — Que, en el punt citat, la resposta a «Per exercir el dret d’accés a la informació pública cal:» és «No cal motivar-la, tot i que es pot exposar el motiu».
@@ -490,7 +494,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Art. 4-7 i annex: classes de permisos i llicències, vehicles que autoritza cada classe i edats mínimes (inclòs el D1).
 - **Consumidors:** 1 preguntes pròpies · 1 microlliçons · 1 temes · **2 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `rd-818-2009-rgcond.pdf` · mínim 400.000 bytes · ha de contenir «Reglamento General de Conductores», «permiso»
+- **Paquet offline:** `rd-818-2009-rgcond.pdf` · entre 400.000 i 60.000.000 bytes · ha de contenir «Reglamento General de Conductores», «permiso»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t32-005` · *classes de permisos de conducció* — Que, en el punt citat, la resposta a «Quin permís habilita per conduir turismes?» és «El permís B».
@@ -507,7 +511,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** El dret d’accés i la Comissió de Garantia del Dret d’Accés a la Informació Pública (GAIP).
 - **Consumidors:** 1 preguntes pròpies · 1 microlliçons · 1 temes · **2 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `llei-19-2014-transp-cat.pdf` · mínim 100.000 bytes · ha de contenir «transparència»
+- **Paquet offline:** `llei-19-2014-transp-cat.pdf` · entre 100.000 i 60.000.000 bytes · ha de contenir «transparència»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t18-003` · *Comissió de Garantia del Dret d’Accés* — Que, en el punt citat, la resposta a «Quin òrgan resol les reclamacions en matèria d’accés a la informació pública a Catalunya?» és «La Comissió de Garantia del Dret d’Accés a la Informació Pública».
@@ -524,7 +528,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Funcions institucionals, tipologia d’amenaces i incidents, mesures d’autoprotecció i preservació de proves digitals.
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
 - **Preguntes oficials que podria explicar:** 2
-- **Paquet offline:** `agencia-ciberseguretat-catalunya.html` · mínim 5.000 bytes · ha de contenir «ciberseguretat»
+- **Paquet offline:** `agencia-ciberseguretat-catalunya.html` · entre 5.000 i 8.000.000 bytes · ha de contenir «ciberseguretat»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t19-001` · *recomanacions i tipologia d’incidents* — Que, en el punt citat, la resposta a «Quin és el vector d’entrada més freqüent dels incidents de ciberseguretat?» és «L’enginyeria social, especialment la pesca d’identitat per correu».
@@ -543,7 +547,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Art. 2 (concepte), 3 (llicència administrativa) i els requisits per obtenir-la.
 - **Consumidors:** 3 preguntes pròpies · 1 microlliçons · 1 temes · **4 en total**
 - **Preguntes oficials que podria explicar:** 2
-- **Paquet offline:** `llei-50-1999-app.pdf` · mínim 40.000 bytes · ha de contenir «animales potencialmente peligrosos»
+- **Paquet offline:** `llei-50-1999-app.pdf` · entre 40.000 i 60.000.000 bytes · ha de contenir «animales potencialmente peligrosos»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t34-001` · *concepte* — Que, en el punt citat, la resposta a «Quines vies hi ha perquè un gos sigui considerat potencialment perillós?» és «Per raça o encreuament, per episodis d’agressió previs i per ensinistrament per a l’atac i la defensa».
@@ -562,7 +566,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Llista estatal de races (annex I), requisits de la llicència (art. 3) i mesures de seguretat a la via pública: corretja i morrió (art. 8).
 - **Consumidors:** 2 preguntes pròpies · 1 microlliçons · 1 temes · **3 en total**
 - **Preguntes oficials que podria explicar:** 2
-- **Paquet offline:** `rd-287-2002-app.pdf` · mínim 40.000 bytes · ha de contenir «potencialmente peligrosos», «Anexo»
+- **Paquet offline:** `rd-287-2002-app.pdf` · entre 40.000 i 60.000.000 bytes · ha de contenir «potencialmente peligrosos», «Anexo»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t34-003` · *desenvolupament reglamentari* — Que, en el punt citat, la resposta a «Quin d’aquests NO és un requisit per obtenir la llicència de tinença d’un gos potencialment perillós?» és «Acreditar una formació prèvia com a ensinistrador caní».
@@ -580,7 +584,8 @@ norma respon de debò la pregunta.
 - **Què en cal:** Art. 1-2 (gossos considerats potencialment perillosos i llista catalana de races), identificació i registre censal, art. 7 (infraccions lleus) i el règim propi respecte de la llei estatal.
 - **Consumidors:** 2 preguntes pròpies · 1 microlliçons · 1 temes · **3 en total**
 - **Preguntes oficials que podria explicar:** 2
-- **Paquet offline:** `llei-10-1999-gossos-cat.pdf` · mínim 30.000 bytes · ha de contenir «gossos», «perillosos»
+- **Paquet offline:** `llei-10-1999-gossos-cat.pdf` · entre 12.000 i 60.000.000 bytes · ha de contenir «gossos», «perillosos»
+- **També pot resoldre a:** portaldogc.gencat.cat — cal tenir-ho a la llista de hosts oficials.
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t34-001` · *gossos considerats potencialment perillosos* — Que, en el punt citat, la resposta a «Quines vies hi ha perquè un gos sigui considerat potencialment perillós?» és «Per raça o encreuament, per episodis d’agressió previs i per ensinistrament per a l’atac i la defensa».
@@ -598,7 +603,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Els requisits municipals de la llicència: documentació, vigència i taxa.
 - **Consumidors:** 1 preguntes pròpies · 1 microlliçons · 1 temes · **2 en total**
 - **Preguntes oficials que podria explicar:** 2
-- **Paquet offline:** `roses-tramits-animals.html` · mínim 3.000 bytes · ha de contenir «llic»
+- **Paquet offline:** `roses-tramits-animals.html` · entre 3.000 i 8.000.000 bytes · ha de contenir «llic»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t34-002` · *tràmit municipal a Roses* — Que, en el punt citat, la resposta a «Qui atorga la llicència per a la tinença de gossos potencialment perillosos?» és «L’ajuntament del municipi de residència de la persona sol·licitant».
@@ -616,7 +621,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 1, 2, 3, 9
 - **Consumidors:** 3 preguntes pròpies · 1 microlliçons · 1 temes · **4 en total**
 - **Preguntes oficials que podria explicar:** 1
-- **Paquet offline:** `lo-6-1984-habeas.pdf` · mínim 30.000 bytes · ha de contenir «Habeas Corpus», «Artículo 3», «Artículo 1», «Artículo 2»
+- **Paquet offline:** `lo-6-1984-habeas.pdf` · entre 30.000 i 60.000.000 bytes · ha de contenir «Habeas Corpus», «Artículo 3», «Artículo 1», «Artículo 2»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t37-003` · *art. 3* — Que, en el punt citat, la resposta a «Qui NO està legitimat per instar un procediment d’habeas corpus?» és «Qualsevol veí del municipi sense relació amb la persona detinguda».
@@ -636,7 +641,7 @@ norma respon de debò la pregunta.
 - **Articles citats pel banc:** 5, 6, 15, 22
 - **Consumidors:** 3 preguntes pròpies · 1 microlliçons · 1 temes · **4 en total**
 - **Preguntes oficials que podria explicar:** 1
-- **Paquet offline:** `rgpd-2016-679.pdf` · mínim 300.000 bytes · ha de contenir «2016/679», «Article 5», «Article 6»
+- **Paquet offline:** `rgpd-2016-679.pdf` · entre 300.000 i 60.000.000 bytes · ha de contenir «2016/679», «Article 5», «Article 6»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t20-001` · *art. 5* — Que, en el punt citat, la resposta a «Quin d’aquests NO és un principi del tractament de dades del Reglament general de protecció de dades?» és «Gratuïtat del tractament».
@@ -655,7 +660,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Objecte i àmbit (art. 1-3), tractaments per obligació legal (art. 8) i drets (títol III).
 - **Consumidors:** 2 preguntes pròpies · 1 microlliçons · 1 temes · **3 en total**
 - **Preguntes oficials que podria explicar:** 1
-- **Paquet offline:** `lo-3-2018-lopdgdd.pdf` · mínim 150.000 bytes · ha de contenir «Protección de Datos Personales», «Artículo 8»
+- **Paquet offline:** `lo-3-2018-lopdgdd.pdf` · entre 150.000 i 60.000.000 bytes · ha de contenir «Protección de Datos Personales», «Artículo 8»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t20-002` · *tractaments per obligació legal* — Que, en el punt citat, la resposta a «Quina és la base de legitimació habitual del tractament de dades en l’actuació policial?» és «El compliment d’una obligació legal i l’exercici de poders públics».
@@ -673,7 +678,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Objecte i àmbit d’aplicació (art. 1-3) i finalitats del tractament (art. 5-6).
 - **Consumidors:** 2 preguntes pròpies · 0 microlliçons · 1 temes · **2 en total**
 - **Preguntes oficials que podria explicar:** 1
-- **Paquet offline:** `lo-7-2021-dades-policials.pdf` · mínim 100.000 bytes · ha de contenir «infracciones penales», «Artículo 1»
+- **Paquet offline:** `lo-7-2021-dades-policials.pdf` · entre 100.000 i 60.000.000 bytes · ha de contenir «infracciones penales», «Artículo 1»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t20-003` · *objecte i àmbit d’aplicació* — Que, en el punt citat, la resposta a «Els tractaments de dades amb finalitats de prevenció, investigació i enjudiciament d’infraccions penals es regeixen per:» és «La normativa específica que transposa la Directiva (UE) 2016/680».
@@ -689,7 +694,7 @@ norma respon de debò la pregunta.
 - **Format esperat:** both · MIME `application/pdf`
 - **Què en cal:** Preàmbul (justificació de la reforma), la disposició derogatòria del llibre III (faltes), la presó permanent revisable i la reforma dels delictes contra el patrimoni.
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
-- **Paquet offline:** `lo-1-2015-reforma-cp.pdf` · mínim 200.000 bytes · ha de contenir «Código Penal», «preámbulo»
+- **Paquet offline:** `lo-1-2015-reforma-cp.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «Código Penal», «preámbulo»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t30-001` · *supressió del llibre III* — Que, en el punt citat, la resposta a «Quin llibre del Codi penal va suprimir la Llei orgànica 1/2015?» és «El llibre III».
@@ -708,7 +713,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Art. 3 (principi d’igualtat), 6 (discriminació directa i indirecta), 7 (assetjament sexual i per raó de sexe), 8 (discriminació per embaràs), 9 (indemnitat) i 11 i 51 (accions positives).
 - **Articles citats pel banc:** 3, 6, 7, 8, 9, 11
 - **Consumidors:** 5 preguntes pròpies · 1 microlliçons · 1 temes · **6 en total**
-- **Paquet offline:** `lo-3-2007-igualtat.pdf` · mínim 200.000 bytes · ha de contenir «igualdad efectiva», «Artículo 7», «Artículo 3», «Artículo 6»
+- **Paquet offline:** `lo-3-2007-igualtat.pdf` · entre 200.000 i 60.000.000 bytes · ha de contenir «igualdad efectiva», «Artículo 7», «Artículo 3», «Artículo 6»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t39-001` · *art. 6* — Que, en el punt citat, la resposta a «Es produeix discriminació indirecta per raó de sexe quan:» és «Una disposició, criteri o pràctica aparentment neutres posen persones d’un sexe en desavantatge particular».
@@ -727,7 +732,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Preàmbul i els 30 articles; la seva naturalesa jurídica (resolució, no tractat) i la data de proclamació.
 - **Articles citats pel banc:** 1, 30
 - **Consumidors:** 4 preguntes pròpies · 1 microlliçons · 1 temes · **5 en total**
-- **Paquet offline:** `ddhh-1948.html` · mínim 10.000 bytes · ha de contenir «Derechos Humanos», «Artículo 1», «Artículo 30»
+- **Paquet offline:** `ddhh-1948.html` · entre 10.000 i 8.000.000 bytes · ha de contenir «Derechos Humanos», «Artículo 1», «Artículo 30»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t25-001` · *preàmbul i art. 1 a 30* — Que, en el punt citat, la resposta a «Quants articles té la Declaració Universal dels Drets Humans?» és «30 articles».
@@ -745,7 +750,7 @@ norma respon de debò la pregunta.
 - **Format esperat:** both · MIME `application/pdf`
 - **Què en cal:** Article únic i el procediment: competència judicial i presentació de la sol·licitud.
 - **Consumidors:** 3 preguntes pròpies · 1 microlliçons · 1 temes · **4 en total**
-- **Paquet offline:** `llei-27-2003-ordre-proteccio.pdf` · mínim 20.000 bytes · ha de contenir «orden de protección»
+- **Paquet offline:** `llei-27-2003-ordre-proteccio.pdf` · entre 20.000 i 60.000.000 bytes · ha de contenir «orden de protección»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t38-001` · *competència judicial* — Que, en el punt citat, la resposta a «Qui pot acordar una ordre de protecció d’una víctima de violència domèstica?» és «El jutge competent».
@@ -763,7 +768,7 @@ norma respon de debò la pregunta.
 - **Format esperat:** both · MIME `application/pdf`
 - **Què en cal:** Preàmbul, estructura en set títols i el valor jurídic que li dona l’art. 6 del TUE.
 - **Consumidors:** 3 preguntes pròpies · 1 microlliçons · 1 temes · **4 en total**
-- **Paquet offline:** `carta-drets-ue.pdf` · mínim 100.000 bytes · ha de contenir «drets fonamentals»
+- **Paquet offline:** `carta-drets-ue.pdf` · entre 100.000 i 60.000.000 bytes · ha de contenir «drets fonamentals»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t25-002` · *valor jurídic i proclamació* — Que, en el punt citat, la resposta a «La Carta de Drets Fonamentals de la Unió Europea té el mateix valor jurídic que els Tractats des de:» és «L’entrada en vigor del Tractat de Lisboa el 2009».
@@ -781,7 +786,7 @@ norma respon de debò la pregunta.
 - **Format esperat:** both · MIME `application/pdf`
 - **Què en cal:** El text de l’Acord GOV/25/2015: principis i pautes de conducta, amb integritat i imparcialitat.
 - **Consumidors:** 2 preguntes pròpies · 1 microlliçons · 1 temes · **3 en total**
-- **Paquet offline:** `codi-etic-policia-catalunya.pdf` · mínim 30.000 bytes · ha de contenir «ètica»
+- **Paquet offline:** `codi-etic-policia-catalunya.pdf` · entre 30.000 i 60.000.000 bytes · ha de contenir «ètica»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t25-003` · *Acord GOV/25/2015* — Que, en el punt citat, la resposta a «El Codi d’ètica de la Policia de Catalunya va ser aprovat per:» és «L’Acord GOV/25/2015, de 24 de febrer».
@@ -801,7 +806,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Condicions tècniques i documentació dels vehicles, i la periodicitat de la inspecció tècnica (ITV) per categoria de vehicle.
 - **Consumidors:** 0 preguntes pròpies · 1 microlliçons · 1 temes · **1 en total**
 - **Preguntes oficials que podria explicar:** 3
-- **Paquet offline:** `rd-2822-1998-rgv.pdf` · mínim 400.000 bytes · ha de contenir «Reglamento General de Vehículos»
+- **Paquet offline:** `rd-2822-1998-rgv.pdf` · entre 400.000 i 60.000.000 bytes · ha de contenir «Reglamento General de Vehículos»
 
   Afirmacions que ha de demostrar (mostra):
   - `roses-t32-l1` · *condicions tècniques i documentació dels vehicles* — Que el punt citat sosté el contingut de la microlliçó «Permisos, llicències i retirada de vehicles».
@@ -817,7 +822,7 @@ norma respon de debò la pregunta.
 - **Què en cal:** Obligacions generals de les persones titulars d’animals de companyia (títol II).
 - **Consumidors:** 1 preguntes pròpies · 0 microlliçons · 1 temes · **1 en total**
 - **Preguntes oficials que podria explicar:** 2
-- **Paquet offline:** `llei-7-2023-benestar-animal.pdf` · mínim 150.000 bytes · ha de contenir «bienestar de los animales»
+- **Paquet offline:** `llei-7-2023-benestar-animal.pdf` · entre 150.000 i 60.000.000 bytes · ha de contenir «bienestar de los animales»
 
   Afirmacions que ha de demostrar (mostra):
   - `q-roses-t34-005` · *obligacions generals de les persones titulars* — Que, en el punt citat, la resposta a «La identificació per microxip i la inscripció al registre censal municipal són obligatòries per a:» és «Tots els gossos».
@@ -832,7 +837,7 @@ norma respon de debò la pregunta.
 - **Format esperat:** html · MIME `text/html`
 - **Què en cal:** La llista completa d’enllaços als quadernets publicats. És el punt d’entrada per als 24 exàmens històrics que queden per transcriure; no sosté cap afirmació del banc.
 - **Consumidors:** 0 preguntes pròpies · 0 microlliçons · 0 temes · **0 en total**
-- **Paquet offline:** `roses-arxiu-examens.html` · mínim 4.000 bytes · ha de contenir «roses», «examen»
+- **Paquet offline:** `roses-arxiu-examens.html` · entre 4.000 i 8.000.000 bytes · ha de contenir «roses», «examen»
 
 ### `codi-seguretat-catalunya` — Codi de seguretat de Catalunya (recopilació normativa consolidada)
 
@@ -841,11 +846,11 @@ norma respon de debò la pregunta.
 - **Publicació:** sense data (pàgina viva) · **consolidació:** recopilacio — És un recull, no una norma: el seu valor és portar en un sol PDF la normativa catalana de seguretat ja consolidada.
 - **URL canònica:** https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/
 - **Alternatives oficials:** https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/
-- **Format esperat:** pdf · MIME `application/pdf`
+- **Format esperat:** html · MIME `text/html`
 - **Què en cal:** El PDF complet del codi. Cap referència del banc l’apunta directament: el seu interès és de logística, no de contingut.
 - **Consumidors:** 0 preguntes pròpies · 0 microlliçons · 0 temes · **0 en total**
 - **Duplicitat:** Candidat a paraigua: si el recull inclou aquestes quatre normes consolidades, una sola baixada les cobreix totes. **Cal comprovar-ne el contingut en baixar-lo**; els `sourceId` no es toquen ara, i cada norma conserva el seu perquè la referència ha d’apuntar a la norma, no al recull.
-- **Paquet offline:** `codi-seguretat-catalunya.pdf` · mínim 500.000 bytes · ha de contenir «seguretat»
+- **Paquet offline:** `codi-seguretat-catalunya.html` · entre 10.000 i 8.000.000 bytes · ha de contenir «seguretat»
 
 ## Duplicitats detectades
 

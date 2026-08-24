@@ -78,6 +78,19 @@ interface Enrichment {
   filename: string
   mime: string
   minBytes: number
+  /**
+   * Sostre de mida. Un mínim sol no detecta el fracàs silenciós: una descàrrega
+   * del Reglament general de circulació va tornar 258 MB i va passar per «OK»
+   * perquè superava el mínim. Un reglament consolidat no pesa això.
+   */
+  maxBytes?: number
+  /**
+   * Hosts oficials als quals la descàrrega pot acabar resolent legítimament.
+   * El Portal Jurídic serveix els documents des del portal del DOGC: una
+   * allowlist que només contingui el host de la URL canònica rebutja la
+   * descàrrega bona.
+   */
+  resolvedHosts?: string[]
   /** Cadenes que el fitxer ha de contenir per no ser una pàgina d'error. */
   mustContain: string[]
   /** Entrades que aquest mateix text podria cobrir, sense canviar-ne el sourceId. */
@@ -511,16 +524,18 @@ const ENRICHMENT: Record<string, Enrichment> = {
     document: 'Reglament general de circulació',
     legalId: 'Reial decret 1428/2003, de 21 de novembre',
     consolidation: 'consolidat',
-    format: 'both',
+    consolidationNote:
+      'Es baixa en HTML a propòsit: el PDF consolidat d’aquest reglament passa dels 250 MB perquè hi van tots els senyals de trànsit en imatge. L’HTML porta el mateix articulat.',
+    format: 'html',
     lang: 'es',
     alternatives: [
       { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2003-23514', kind: 'canonical', derived: true, note: 'Fitxa clàssica del BOE per identificador.' },
     ],
     needed:
       'Art. 20-28 (normes sobre begudes alcohòliques i estupefaents): taxes d’alcoholèmia, taxes especials de ciclistes i conductors novells, i pràctica de les proves de detecció.',
-    filename: 'rd-1428-2003-rgc.pdf',
-    mime: 'application/pdf',
-    minBytes: 400_000,
+    filename: 'rd-1428-2003-rgc.html',
+    mime: 'text/html',
+    minBytes: 200_000,
     mustContain: ['Reglamento General de Circulación', 'Artículo 20'],
   },
   'rd-818-2009-rgcond': {
@@ -604,6 +619,7 @@ const ENRICHMENT: Record<string, Enrichment> = {
 
   // ── Portal Jurídic de Catalunya i Generalitat ──────────────────────────
   'llei-16-1991-policies-locals': {
+    resolvedHosts: ['portaldogc.gencat.cat'],
     document: 'Llei de les policies locals de Catalunya (text consolidat)',
     legalId: 'Llei 16/1991, de 10 de juliol',
     consolidation: 'consolidat',
@@ -619,10 +635,11 @@ const ENRICHMENT: Record<string, Enrichment> = {
       'Naturalesa i dependència municipal dels cossos, àmbit territorial, art. 12 (policia judicial), 24 (escales i categories), 25 (categories segons població) i tot el règim disciplinari (classificació de faltes, catàleg i graduació de sancions, art. 51 sobre encobriment).',
     filename: 'llei-16-1991-policies-locals.pdf',
     mime: 'application/pdf',
-    minBytes: 100_000,
+    minBytes: 40_000,
     mustContain: ['policies locals', 'Article 25'],
   },
   'llei-4-2003-seguretat-publica': {
+    resolvedHosts: ['portaldogc.gencat.cat'],
     document: 'Llei d’ordenació del sistema de seguretat pública de Catalunya (text consolidat)',
     legalId: 'Llei 4/2003, de 7 d’abril',
     consolidation: 'consolidat',
@@ -635,10 +652,11 @@ const ENRICHMENT: Record<string, Enrichment> = {
       'Art. 1-10: objecte, integrants del sistema (art. 3.1), funcions de l’alcalde (art. 4), Consell de Seguretat de Catalunya (art. 6), juntes locals de seguretat (art. 9, amb els convidats amb veu i sense vot), planificació i coordinació de policies locals.',
     filename: 'llei-4-2003-seguretat-publica.pdf',
     mime: 'application/pdf',
-    minBytes: 80_000,
+    minBytes: 15_000,
     mustContain: ['seguretat pública', 'Article 9'],
   },
   'decret-179-2015-disciplinari': {
+    resolvedHosts: ['portaldogc.gencat.cat'],
     document: 'Decret pel qual s’aprova el Reglament del procediment disciplinari de les policies locals',
     legalId: 'Decret 179/2015, de 4 d’agost',
     consolidation: 'consolidat',
@@ -654,6 +672,7 @@ const ENRICHMENT: Record<string, Enrichment> = {
     mustContain: ['disciplinari'],
   },
   'decret-151-1998-juntes': {
+    resolvedHosts: ['portaldogc.gencat.cat'],
     document: 'Decret de regulació de les juntes locals de seguretat',
     legalId: 'Decret 151/1998, de 23 de juny',
     consolidation: 'consolidat',
@@ -684,6 +703,7 @@ const ENRICHMENT: Record<string, Enrichment> = {
     mustContain: ['transparència'],
   },
   'llei-10-1999-gossos-cat': {
+    resolvedHosts: ['portaldogc.gencat.cat'],
     document: 'Llei sobre la tinença de gossos considerats potencialment perillosos',
     legalId: 'Llei 10/1999, de 30 de juliol',
     consolidation: 'consolidat',
@@ -696,7 +716,7 @@ const ENRICHMENT: Record<string, Enrichment> = {
       'Art. 1-2 (gossos considerats potencialment perillosos i llista catalana de races), identificació i registre censal, art. 7 (infraccions lleus) i el règim propi respecte de la llei estatal.',
     filename: 'llei-10-1999-gossos-cat.pdf',
     mime: 'application/pdf',
-    minBytes: 30_000,
+    minBytes: 12_000,
     mustContain: ['gossos', 'perillosos'],
   },
   'codi-etic-policia-catalunya': {
@@ -720,16 +740,16 @@ const ENRICHMENT: Record<string, Enrichment> = {
     consolidation: 'recopilacio',
     consolidationNote:
       'És un recull, no una norma: el seu valor és portar en un sol PDF la normativa catalana de seguretat ja consolidada.',
-    format: 'pdf',
+    format: 'html',
     lang: 'ca',
     alternatives: [
       { url: 'https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/', kind: 'index', derived: false, note: 'Índex de codis de legislació del Portal Jurídic.' },
     ],
     needed:
       'El PDF complet del codi. Cap referència del banc l’apunta directament: el seu interès és de logística, no de contingut.',
-    filename: 'codi-seguretat-catalunya.pdf',
-    mime: 'application/pdf',
-    minBytes: 500_000,
+    filename: 'codi-seguretat-catalunya.html',
+    mime: 'text/html',
+    minBytes: 10_000,
     mustContain: ['seguretat'],
     covers: [
       'llei-16-1991-policies-locals',
@@ -924,6 +944,13 @@ const entries = pending.map((source) => {
   ]
 
   /*
+   * Sostre per tipus quan l'entrada no en fixa un. Els valors són generosos a
+   * posta —el Reglament general de vehicles fa 8 MB amb tots els annexos— però
+   * tallen l'ordre de magnitud que delata una descàrrega equivocada.
+   */
+  const maxBytes = enrichment.maxBytes ?? (enrichment.mime === 'application/pdf' ? 60_000_000 : 8_000_000)
+
+  /*
    * Un parell d'`issuer` del manifest porten el butlletí enganxat al nom de
    * l'organisme («Portal Jurídic de Catalunya — DOGC núm. 2948»). Aquí no es
    * toca el manifest: es normalitza per agrupar i se'n recupera el butlletí,
@@ -965,6 +992,8 @@ const entries = pending.map((source) => {
       domain: new URL(source.url).hostname,
       expectedMime: enrichment.mime,
       minBytes: enrichment.minBytes,
+      maxBytes,
+      resolvedHosts: enrichment.resolvedHosts ?? [],
       mustContain: [...new Set(mustContain)],
     },
     dedupe: {
@@ -1233,9 +1262,15 @@ for (const priority of ['P0', 'P1', 'P2'] as const) {
     }
     if (e.dedupe.note) md.push(`- **Duplicitat:** ${e.dedupe.note}`)
     md.push(
-      `- **Paquet offline:** \`${e.offlinePackage.filename}\` · mínim ${fmt(e.offlinePackage.minBytes)} bytes · ` +
+      `- **Paquet offline:** \`${e.offlinePackage.filename}\` · entre ${fmt(e.offlinePackage.minBytes)} i ` +
+        `${fmt(e.offlinePackage.maxBytes)} bytes · ` +
         `ha de contenir ${e.offlinePackage.mustContain.map((x) => `«${x}»`).join(', ')}`,
     )
+    if (e.offlinePackage.resolvedHosts.length > 0) {
+      md.push(
+        `- **També pot resoldre a:** ${e.offlinePackage.resolvedHosts.join(', ')} — cal tenir-ho a la llista de hosts oficials.`,
+      )
+    }
     const sample = e.claims.slice(0, 3)
     if (sample.length > 0) {
       md.push('')
