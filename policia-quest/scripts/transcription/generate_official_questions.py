@@ -71,6 +71,29 @@ CONTAINER_TOPIC = 'roses-examen-oficial'
 CLASSIFICATION_REPORT = ROOT / 'artifacts/classificacio-oficials.md'
 TOPIC_MAP_PATH = ROOT / 'content/municipalities/roses/questions/official-topic-map.json'
 
+# Matriu probatòria: què se sap de cada pregunta i amb quina cita. D'aquí surten
+# les explicacions reals i la referència a la norma que les sosté. El que no hi
+# tingui explicació es queda amb el text de procedència: dir «no ho sabem» és
+# millor que redactar un fonament de memòria.
+EVIDENCE_MAP_PATH = ROOT / 'content/municipalities/roses/questions/official-evidence-map.json'
+
+
+def load_evidence_map():
+    data = json.loads(EVIDENCE_MAP_PATH.read_text(encoding='utf-8'))
+    for qid, entry in data['decisions'].items():
+        explain = entry.get('explain')
+        if explain is None:
+            continue
+        if not entry.get('citations'):
+            raise SystemExit(
+                f'{qid}: té explicació però cap cita. Una explicació sense font és '
+                'exactament el que aquest projecte no escriu.'
+            )
+        for lang in ('ca', 'es'):
+            if len(explain.get(lang, '')) < 80:
+                raise SystemExit(f'{qid}: explicació {lang} massa curta per ensenyar res')
+    return data['decisions'], data['reviewedOn']
+
 
 def load_topic_map():
     """Mapa de classificació, amb validació estricta.
@@ -154,6 +177,7 @@ def write_classification_report(topic_map, rows):
 
 def main():
     topic_map = load_topic_map()
+    evidence_map, evidence_reviewed_on = load_evidence_map()
     blocks, stats, rows_for_report = [], [], []
     for source_id, exam_id, year, place, test, held in EXAMS:
         pdf = CACHE / f'{source_id}.pdf'
@@ -200,6 +224,14 @@ def main():
                   (f'Pregunta {q.number} del cuadernillo oficial de {held}. El cuadernillo '
                    'no lleva ninguna marca de respuesta inequívoca, por lo que la pregunta '
                    'queda sin clave oficial.'))
+            # Si la matriu probatòria porta una explicació escrita contra
+            # l'article, mana ella: és el que ensenya. El text de procedència
+            # només es queda on no hi ha res demostrat.
+            evidence = evidence_map.get(qid, {})
+            explain = evidence.get('explain')
+            if explain:
+                ca, es = explain['ca'], explain['es']
+
             entry = topic_map.get(exam_id, {}).get(str(q.number))
             if entry is None:
                 raise SystemExit(
@@ -207,6 +239,26 @@ def main():
                     'La classificació es revisa a mà; no es deixa cap pregunta sense decidir.'
                 )
             topic_id = CONTAINER_TOPIC if entry['topic'] is None else f"roses-t{entry['topic']:02d}"
+            # La norma citada entra com a referència pròpia: qui estudia ha de
+            # poder anar de l'explicació al text, i el quadernet sol no hi porta.
+            # `validAt` és el dia que es va contrastar la cita contra la còpia
+            # local, no la data de l'examen: és el que se sap de debò.
+            norm_refs = ''
+            if explain:
+                seen = []
+                for cit in evidence['citations']:
+                    key = (cit['sourceId'], cit['locator'])
+                    if key in seen:
+                        continue
+                    seen.append(key)
+                    norm_refs += (
+                        '\n      {\n'
+                        f'        sourceId: {ts(cit["sourceId"])},\n'
+                        f'        locator: {ts(cit["locator"])},\n'
+                        f'        validAt: {ts(evidence_reviewed_on)},\n'
+                        "        reviewStatus: 'verified',\n"
+                        '      },'
+                    )
             rows_for_report.append((topic_id, qid, q.stem, entry['why']))
             block = f"""  {{
     questionId: {ts(qid)},
@@ -230,7 +282,7 @@ def main():
         locator: {ts(f'pregunta {q.number}, pàgina {q.page} del PDF')},
         validAt: {ts(held)},
         reviewStatus: {ts('verified' if answer else 'pending-source-verification')},
-      }},
+      }},{norm_refs}
     ],
     dynamic: {'true' if is_cg else 'false'},
 {f"    reviewBy: {ts(held)}," if is_cg else ''}    officialExam: {{

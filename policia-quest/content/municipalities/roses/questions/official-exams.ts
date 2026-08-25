@@ -862,14 +862,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 2 de la Constitució posa unitat i autonomia en la mateixa frase: es fonamenta en la indissoluble unitat de la Nació espanyola i «reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran». Autonomia, doncs, no independència: el mateix article que garanteix la primera afirma la unitat que exclou la segona.',
+      es: 'El artículo 2 de la Constitución pone unidad y autonomía en la misma frase: se fundamenta en la indisoluble unidad de la Nación española y «reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran». Autonomía, pues, no independencia: el mismo artículo que garantiza la primera afirma la unidad que excluye la segunda.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -901,14 +907,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’opció certa és el text de l’article 16.2 de la Constitució: «Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias». Les altres tres les desmenteix el mateix article: l’apartat 1 sí que posa un límit a la manifestació d’aquestes llibertats —l’ordre públic protegit per la llei—, i l’apartat 3 diu que cap confessió tindrà caràcter estatal però que els poders públics tindran en compte les creences de la societat i mantindran relacions de cooperació.',
+      es: 'La opción cierta es el texto del artículo 16.2 de la Constitución: «Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias». Las otras tres las desmiente el mismo artículo: el apartado 1 sí pone un límite a la manifestación de esas libertades —el orden público protegido por la ley—, y el apartado 3 dice que ninguna confesión tendrá carácter estatal pero que los poderes públicos tendrán en cuenta las creencias de la sociedad y mantendrán relaciones de cooperación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 16.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -940,14 +952,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 6.1 de l’Estatut ho diu en quatre paraules: «La llengua pròpia de Catalunya és el català». La pregunta demana la que és pròpia **i** oficial: el castellà és oficial però no propi de Catalunya, i l’aranès és la llengua pròpia de l’Aran, no de tot el país.',
+      es: 'El artículo 6.1 del Estatuto lo dice en cuatro palabras: «La llengua pròpia de Catalunya és el català». La pregunta pide la que es propia **y** oficial: el castellano es oficial pero no propio de Cataluña, y el aranés es la lengua propia del Arán, no de todo el país.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -979,14 +997,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 132.1 de l’Estatut atribueix a la Generalitat «la competència exclusiva en matèria de protecció civil». Que sigui exclusiva no vol dir que els municipis no hi facin res —l’article 84.2.f els reconeix la protecció civil com a competència pròpia—, però la titularitat de la competència, que és el que pregunta l’enunciat, és de la Generalitat.',
+      es: 'El artículo 132.1 del Estatuto atribuye a la Generalitat «la competència exclusiva en matèria de protecció civil». Que sea exclusiva no significa que los municipios no hagan nada —el artículo 84.2.f les reconoce la protección civil como competencia propia—, pero la titularidad de la competencia, que es lo que pregunta el enunciado, es de la Generalitat.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 132.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1018,14 +1042,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 26.1 de la Llei de bases del règim local acumula serveis per trams de població, i el tram decideix la resposta. La protecció civil i la prevenció i extinció d’incendis apareixen a la lletra c), per damunt dels 20.000 habitants, i la pavimentació de les vies públiques ja ve del tram bàsic. El transport col·lectiu urbà de viatgers, en canvi, és de la lletra d): només a partir de 50.000 habitants.',
+      es: 'El artículo 26.1 de la Ley de bases del régimen local acumula servicios por tramos de población, y el tramo decide la respuesta. La protección civil y la prevención y extinción de incendios aparecen en la letra c), por encima de los 20.000 habitantes, y la pavimentación de las vías públicas ya viene del tramo básico. El transporte colectivo urbano de viajeros, en cambio, es de la letra d): solo a partir de 50.000 habitantes.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 26.1.c i 26.1.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1057,14 +1087,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La publicació no és l’últim pas: l’article 70.2 de la Llei de bases del règim local diu que les ordenances i els reglaments «no entrarán en vigor hasta que se haya publicado completamente su texto y haya transcurrido el plazo previsto en el artículo 65.2», i aquell termini és de quinze dies hàbils. Compte de no confondre’l amb els trenta dies mínims d’informació pública de l’aprovació inicial: són dos moments diferents del mateix procediment.',
+      es: 'La publicación no es el último paso: el artículo 70.2 de la Ley de bases del régimen local dice que las ordenanzas y reglamentos «no entrarán en vigor hasta que se haya publicado completamente su texto y haya transcurrido el plazo previsto en el artículo 65.2», y ese plazo es de quince días hábiles. Cuidado con no confundirlo con los treinta días mínimos de información pública de la aprobación inicial: son dos momentos distintos del mismo procedimiento.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 70.2 i 65.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1096,14 +1132,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 159.1 de la Constitució obre la regulació del Tribunal Constitucional amb la xifra: «El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Dotze magistrats, que encaixen amb la renovació per terços cada tres anys de l’apartat 3: quatre cada vegada.',
+      es: 'El artículo 159.1 de la Constitución abre la regulación del Tribunal Constitucional con la cifra: «El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Doce magistrados, que encajan con la renovación por tercios cada tres años del apartado 3: cuatro cada vez.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1135,14 +1177,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El títol de l’article 52 del text refós ja dona la resposta: «Deberes de los empleados públicos. Código de Conducta», i el text s’obre amb «Los empleados públicos deberán…». «Empleat públic» és el terme ampli de l’Estatut i inclou tant funcionaris com personal laboral: per això la a), que el redueix als funcionaris, es queda curta.',
+      es: 'El título del artículo 52 del texto refundido ya da la respuesta: «Deberes de los empleados públicos. Código de Conducta», y el texto se abre con «Los empleados públicos deberán…». «Empleado público» es el término amplio del Estatuto e incluye tanto a funcionarios como a personal laboral: por eso la a), que lo reduce a los funcionarios, se queda corta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 52',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1174,14 +1222,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El règim que descriu l’enunciat té nom propi i és el de la Llei 53/1984, «de Incompatibilidades del personal al servicio de las Administraciones Públicas». El seu article 1.1 és exactament el que resumeix la pregunta: el personal inclòs «no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público». Les altres tres opcions són noms inventats.',
+      es: 'El régimen que describe el enunciado tiene nombre propio y es el de la Ley 53/1984, «de Incompatibilidades del personal al servicio de las Administraciones Públicas». Su artículo 1.1 es exactamente lo que resume la pregunta: el personal incluido «no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público». Las otras tres opciones son nombres inventados.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-53-1984-incompat',
+        locator: 'títol i art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1213,14 +1267,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 165.4 del text refós de la Llei d’hisendes locals diu just el contrari de l’opció b): «Cada uno de los presupuestos que se integran en el presupuesto general deberá aprobarse sin déficit inicial». Un pressupost pot acabar l’any amb desviacions, però no pot **néixer** desquadrat. Les altres tres opcions són certes: l’exercici coincideix amb l’any natural, el forma el president de l’entitat i s’aprova definitivament abans del 31 de desembre anterior.',
+      es: 'El artículo 165.4 del texto refundido de la Ley de haciendas locales dice justo lo contrario de la opción b): «Cada uno de los presupuestos que se integran en el presupuesto general deberá aprobarse sin déficit inicial». Un presupuesto puede acabar el año con desviaciones, pero no puede **nacer** descuadrado. Las otras tres opciones son ciertas: el ejercicio coincide con el año natural, lo forma el presidente de la entidad y se aprueba definitivamente antes del 31 de diciembre anterior.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-2-2004-trlrhl',
+        locator: 'art. 165.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1252,14 +1312,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les dues conductes de l’enunciat són, per ordre, les lletres a) i b) de l’article 50 de la Llei 16/1991, que és el de les faltes **lleus**: la incorrecció envers superiors, companys, subordinats o ciutadans, i el retard, la negligència i el descuit en el compliment de les funcions o de les ordres rebudes. Convé no confondre-les amb la desobediència de l’article 49.a, que sí que és greu: aquí no hi ha refús d’una ordre, sinó compliment defectuós. I «supergreu» no existeix a la llei.',
+      es: 'Las dos conductas del enunciado son, por orden, las letras a) y b) del artículo 50 de la Ley 16/1991, que es el de las faltas **leves**: la incorrección hacia superiores, compañeros, subordinados o ciudadanos, y el retraso, la negligencia y el descuido en el cumplimiento de las funciones o de las órdenes recibidas. Conviene no confundirlas con la desobediencia del artículo 49.a, que sí es grave: aquí no hay rechazo de una orden, sino cumplimiento defectuoso. Y «supergrave» no existe en la ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.a i 50.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1291,14 +1357,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La norma que regula el procediment administratiu comú és la que porta aquest nom al títol: la Llei 39/2015, d’1 d’octubre, del procediment administratiu comú de les administracions públiques. La parella que va sortir el mateix dia, la Llei 40/2015, regula una altra cosa —el règim jurídic del sector públic, és a dir, com s’organitza l’administració per dins—. Les opcions c) i d) juguen amb la llei catalana 26/2010, que no és la norma estatal comuna.',
+      es: 'La norma que regula el procedimiento administrativo común es la que lleva ese nombre en el título: la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. La pareja que salió el mismo día, la Ley 40/2015, regula otra cosa —el régimen jurídico del sector público, es decir, cómo se organiza la administración por dentro—. Las opciones c) y d) juegan con la ley catalana 26/2010, que no es la norma estatal común.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'títol i art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1330,14 +1402,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 40.2 de la Llei 39/2015 posa un termini intern per no deixar dormir els actes: «Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado». Fixa’t que el que compta és **cursar** la notificació, no que arribi: el termini mira l’administració, no la persona destinatària.',
+      es: 'El artículo 40.2 de la Ley 39/2015 pone un plazo interno para no dejar dormir los actos: «Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado». Fíjate en que lo que cuenta es **cursar** la notificación, no que llegue: el plazo mira a la administración, no a la persona destinataria.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 40.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1369,14 +1447,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 4.1 de la Llei 39/2015 tanca en tres lletres qui és persona interessada, i són exactament les tres primeres opcions: qui promou el procediment, qui té drets que hi poden quedar afectats encara que no l’hagi iniciat, i qui té interessos legítims afectats i s’hi persona abans de la resolució definitiva. Denunciar no és cap d’aquestes tres coses: qui denuncia posa uns fets en coneixement de l’administració, i això sol no li dona la condició d’interessat.',
+      es: 'El artículo 4.1 de la Ley 39/2015 cierra en tres letras quién es persona interesada, y son exactamente las tres primeras opciones: quien promueve el procedimiento, quien tiene derechos que pueden resultar afectados aunque no lo haya iniciado, y quien tiene intereses legítimos afectados y se persona antes de la resolución definitiva. Denunciar no es ninguna de esas tres cosas: quien denuncia pone unos hechos en conocimiento de la administración, y eso solo no le da la condición de interesado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 4.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1408,14 +1492,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21.1 de la Llei 39/2015 imposa dues obligacions encadenades: «La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos cualquiera que sea su forma de iniciación». No n’hi ha prou de resoldre: la resolució ha d’arribar a qui l’espera. Publicar-la és un altre acte, i només substitueix la notificació en els casos que la llei preveu.',
+      es: 'El artículo 21.1 de la Ley 39/2015 impone dos obligaciones encadenadas: «La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos cualquiera que sea su forma de iniciación». No basta con resolver: la resolución debe llegar a quien la espera. Publicarla es otro acto, y solo sustituye a la notificación en los casos que la ley prevé.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 21.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1447,14 +1537,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 69.2 de la Llei 39/2015 defineix la comunicació com «aquel documento mediante el que los interesados ponen en conocimiento de la Administración Pública competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho»: paraula per paraula, l’enunciat. La declaració responsable, de l’apartat 1, és una cosa diferent i més forta: qui la signa **declara** que compleix els requisits i que en té la documentació.',
+      es: 'El artículo 69.2 de la Ley 39/2015 define la comunicación como «aquel documento mediante el que los interesados ponen en conocimiento de la Administración Pública competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho»: palabra por palabra, el enunciado. La declaración responsable, del apartado 1, es algo distinto y más fuerte: quien la firma **declara** que cumple los requisitos y que dispone de la documentación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 69.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1486,14 +1582,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 80.2 de la Llei 39/2015 fixa el termini general dels informes: «Los informes serán emitidos… en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor». Deu dies, doncs, com a regla general, i l’excepció final és el que fa que la pregunta digui «amb caràcter general».',
+      es: 'El artículo 80.2 de la Ley 39/2015 fija el plazo general de los informes: «Los informes serán emitidos… en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor». Diez días, pues, como regla general, y la excepción final es lo que hace que la pregunta diga «con carácter general».',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 17, pàgina 5 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 80.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1525,14 +1627,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20.1 de la Llei 19/2013 dona un mes: «la resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante y a los terceros afectados que así lo hayan solicitado en el plazo máximo de un mes desde la recepción de la solicitud». Compte amb dues coses: el termini inclou la notificació, no només la resolució, i corre des que la sol·licitud arriba a l’òrgan competent per resoldre.',
+      es: 'El artículo 20.1 de la Ley 19/2013 da un mes: «la resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante y a los terceros afectados que así lo hayan solicitado en el plazo máximo de un mes desde la recepción de la solicitud». Cuidado con dos cosas: el plazo incluye la notificación, no solo la resolución, y corre desde que la solicitud llega al órgano competente para resolver.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 18, pàgina 5 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 100.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1564,14 +1672,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Netejar un solar no és un acte personalíssim: el pot fer qualsevol, i per això la llei permet que l’administració el faci ella i passi el compte. És l’execució subsidiària, la lletra b) de la llista tancada de l’article 100.1 de la Llei 39/2015. El constrenyiment sobre el patrimoni serviria per cobrar una quantitat líquida, i la compulsió sobre les persones es reserva a obligacions personalíssimes de no fer o de suportar.',
+      es: 'Limpiar un solar no es un acto personalísimo: puede hacerlo cualquiera, y por eso la ley permite que la administración lo haga ella y pase la cuenta. Es la ejecución subsidiaria, la letra b) de la lista cerrada del artículo 100.1 de la Ley 39/2015. El apremio sobre el patrimonio serviría para cobrar una cantidad líquida, y la compulsión sobre las personas se reserva a obligaciones personalísimas de no hacer o de soportar.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 19, pàgina 5 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-19-2013-transp',
+        locator: 'art. 20.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1603,14 +1717,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 9.1 del RGPD tanca la llista de categories especials —origen ètnic o racial, opinions polítiques, conviccions religioses o filosòfiques, afiliació sindical, dades genètiques, dades biomètriques per identificar unívocament una persona, salut i vida o orientació sexual— i l’adreça no hi és. L’adreça és una dada personal com qualsevol altra i està protegida, però no rep el règim reforçat de l’article 9.',
+      es: 'El artículo 9.1 del RGPD cierra la lista de categorías especiales —origen étnico o racial, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, datos genéticos, datos biométricos para identificar unívocamente a una persona, salud y vida u orientación sexual— y la dirección no está. La dirección es un dato personal como cualquier otro y está protegida, pero no recibe el régimen reforzado del artículo 9.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 20, pàgina 5 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rgpd-2016-679',
+        locator: 'art. 9.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1642,14 +1762,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Col·locar obstacles a la via és una de les conductes de l’article 385 del Codi penal, que castiga qui origini un greu risc per a la circulació «colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables o mutando, sustrayendo o anulando la señalización». Les altres tres opcions —temps de conducció i descans, il·luminació defectuosa i circular sense assegurança— són infraccions administratives de trànsit: es multen, però no són delicte.',
+      es: 'Colocar obstáculos en la vía es una de las conductas del artículo 385 del Código penal, que castiga a quien origine un grave riesgo para la circulación «colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables o mutando, sustrayendo o anulando la señalización». Las otras tres opciones —tiempos de conducción y descanso, iluminación defectuosa y circular sin seguro— son infracciones administrativas de tráfico: se multan, pero no son delito.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 21, pàgina 6 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 385.1a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1681,14 +1807,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 58.1 de la Llei 16/1991 enumera cinc causes d’extinció de la responsabilitat disciplinària: «pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció». L’opció b) n’oblida dues —l’indult i l’amnistia— i la c) confon extingir la responsabilitat amb pagar una multa, que és només una de les formes de complir la sanció.',
+      es: 'El artículo 58.1 de la Ley 16/1991 enumera cinco causas de extinción de la responsabilidad disciplinaria: «pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció». La opción b) olvida dos —el indulto y la amnistía— y la c) confunde extinguir la responsabilidad con pagar una multa, que es solo una de las formas de cumplir la sanción.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 22, pàgina 6 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1720,14 +1852,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 1r de la LOFCS no diu una cosa o l’altra: diu les dues. L’apartat 1 declara que «la Seguridad Pública es competencia exclusiva del Estado», i els apartats 2 i 3 hi afegeixen que les comunitats autònomes i les corporacions locals hi participen segons els seus estatuts i la legislació de règim local. Titularitat exclusiva i participació no es contradiuen, i per això les opcions a) i c) són certes alhora.',
+      es: 'El artículo 1.º de la LOFCS no dice una cosa u otra: dice las dos. El apartado 1 declara que «la Seguridad Pública es competencia exclusiva del Estado», y los apartados 2 y 3 añaden que las comunidades autónomas y las corporaciones locales participan en ella según sus estatutos y la legislación de régimen local. Titularidad exclusiva y participación no se contradicen, y por eso las opciones a) y c) son ciertas a la vez.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 23, pàgina 6 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 1r',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1759,14 +1897,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 39.1 de la LO 4/2015 dona les tres forquilles d’un cop: molt greus de 30.001 a 600.000 euros, greus de 601 a 30.000 i lleus de 100 a 600. L’única opció que hi coincideix és la de les lleus. Les altres dues rebaixen el sostre —300.000 en comptes de 600.000, 3.000 en comptes de 30.000— i la c) inventa una categoria de «menys greus» que aquesta llei no té.',
+      es: 'El artículo 39.1 de la LO 4/2015 da las tres horquillas de una vez: muy graves de 30.001 a 600.000 euros, graves de 601 a 30.000 y leves de 100 a 600. La única opción que coincide es la de las leves. Las otras dos rebajan el techo —300.000 en vez de 600.000, 3.000 en vez de 30.000— y la c) inventa una categoría de «menos graves» que esta ley no tiene.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 24, pàgina 6 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 39.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1798,14 +1942,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 12 de la LOFCS reparteix les funcions en dues columnes: l’apartat A) per al Cos Nacional de Policia i el B) per a la Guàrdia Civil. La investigació i persecució dels delictes relacionats amb la droga és la lletra e) de la columna A. Les altres tres opcions són de la columna B: el resguard fiscal i el contraban, el trànsit interurbà i la custòdia de vies, costes, fronteres i aeroports.',
+      es: 'El artículo 12 de la LOFCS reparte las funciones en dos columnas: el apartado A) para el Cuerpo Nacional de Policía y el B) para la Guardia Civil. La investigación y persecución de los delitos relacionados con la droga es la letra e) de la columna A. Las otras tres opciones son de la columna B: el resguardo fiscal y el contrabando, el tráfico interurbano y la custodia de vías, costas, fronteras y aeropuertos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 25, pàgina 7 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 12.A.e i 12.B',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1837,14 +1987,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 28 de la Llei 4/2003 separa funcions pròpies dels mossos, pròpies de les policies locals i compartides. Les compartides són les tres de l’apartat 4, i entre elles hi ha «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides» —amb la condició final inclosa: cal que algú les requereixi—. Trànsit urbà i policia comunitària són pròpies de la local; seguretat ciutadana i ordre públic, dels mossos.',
+      es: 'El artículo 28 de la Ley 4/2003 separa funciones propias de los mossos, propias de las policías locales y compartidas. Las compartidas son las tres del apartado 4, y entre ellas está «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides» —con la condición final incluida: hace falta que alguien las requiera—. Tráfico urbano y policía comunitaria son propias de la local; seguridad ciudadana y orden público, de los mossos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 26, pàgina 7 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 28.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 28.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1876,14 +2038,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 9 de la Llei 4/2003 té dos apartats de gent que no és vocal permanent. L’apartat 3 fa assistir, amb veu i sense vot, representants de la judicatura i de la fiscalia quan els assumptes ho requereixin i així ho acordi l’Administració de l’Estat; l’apartat 4 permet convidar-hi les associacions i entitats veïnals si poden quedar afectades. Totes dues opcions són certes, i per això la resposta és la que les suma. El delegat territorial del Govern, en canvi, és vocal permanent de l’apartat 2: no cal convidar-lo.',
+      es: 'El artículo 9 de la Ley 4/2003 tiene dos apartados de gente que no es vocal permanente. El apartado 3 hace asistir, con voz y sin voto, a representantes de la judicatura y de la fiscalía cuando los asuntos lo requieran y así lo acuerde la Administración del Estado; el apartado 4 permite invitar a las asociaciones y entidades vecinales si pueden resultar afectadas. Ambas opciones son ciertas, y por eso la respuesta es la que las suma. El delegado territorial del Gobierno, en cambio, es vocal permanente del apartado 2: no hace falta invitarlo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 27, pàgina 7 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.3 i 9.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1915,14 +2083,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 237 del Codi penal defineix el robatori i hi posa dues modalitats: «con ánimo de lucro, se apoderaren de las cosas muebles ajenas empleando fuerza en las cosas para acceder o abandonar el lugar donde éstas se encuentran o violencia o intimidación en las personas». La força a les coses és, doncs, el que separa el robatori del furt, que és l’apoderament sense força ni violència. La receptació i l’apropiació indeguda no impliquen apoderament amb força.',
+      es: 'El artículo 237 del Código penal define el robo y le pone dos modalidades: «con ánimo de lucro, se apoderaren de las cosas muebles ajenas empleando fuerza en las cosas para acceder o abandonar el lugar donde éstas se encuentran o violencia o intimidación en las personas». La fuerza en las cosas es, pues, lo que separa el robo del hurto, que es el apoderamiento sin fuerza ni violencia. La receptación y la apropiación indebida no implican apoderamiento con fuerza.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 28, pàgina 8 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 237',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -1993,14 +2167,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Conduir sota la influència de drogues, substàncies psicotròpiques o begudes alcohòliques és delicte contra la seguretat viària: l’article 379.2 del Codi penal el castiga amb les mateixes penes que l’excés de velocitat de l’apartat 1. Les tres opcions restants proposen imports i punts d’un règim diferent, l’administratiu de trànsit. Que existeixi també una infracció administrativa no fa desaparèixer el delicte quan es dona la influència.',
+      es: 'Conducir bajo la influencia de drogas, sustancias psicotrópicas o bebidas alcohólicas es delito contra la seguridad vial: el artículo 379.2 del Código penal lo castiga con las mismas penas que el exceso de velocidad del apartado 1. Las tres opciones restantes proponen importes y puntos de un régimen distinto, el administrativo de tráfico. Que exista también una infracción administrativa no hace desaparecer el delito cuando se da la influencia.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 30, pàgina 8 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2071,14 +2251,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La taula de l’article 4.2 del Reglament general de conductors dona per al permís D1 una edat general i una excepció, i és l’excepció el que recull la resposta: «la edad mínima será 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria, si bien sólo podrán conducir estos vehículos dentro del territorio nacional hasta que el titular del permiso tenga 21 años cumplidos». Les altres opcions donen una xifra pelada, sense la condició del CAP ni la limitació territorial que l’acompanya.',
+      es: 'La tabla del artículo 4.2 del Reglamento general de conductores da para el permiso D1 una edad general y una excepción, y es la excepción lo que recoge la respuesta: «la edad mínima será 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria, si bien sólo podrán conducir estos vehículos dentro del territorio nacional hasta que el titular del permiso tenga 21 años cumplidos». Las otras opciones dan una cifra pelada, sin la condición del CAP ni la limitación territorial que la acompaña.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 32, pàgina 9 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2, fila D1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2110,14 +2296,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20 del Reglament general de circulació nomena expressament els conductors de bicicletes i els aplica la taxa general: no poden circular «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». No hi ha, doncs, tolerància zero per a la bicicleta (opció c), ni li correspon la taxa reduïda de 0,3 i 0,15, que el mateix article reserva als conductors novells i als professionals.',
+      es: 'El artículo 20 del Reglamento general de circulación nombra expresamente a los conductores de bicicletas y les aplica la tasa general: no pueden circular «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». No hay, pues, tolerancia cero para la bicicleta (opción c), ni le corresponde la tasa reducida de 0,3 y 0,15, que el mismo artículo reserva a los conductores noveles y a los profesionales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 33, pàgina 9 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 20',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2149,14 +2341,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 7 de la Llei 10/1999 gradua les infraccions en tres nivells i les quatre opcions hi són totes, però en calaixos diferents. L’única lleu és l’apartat 2.a: «No inscriure el gos al registre específic del municipi corresponent». No contractar l’assegurança de responsabilitat civil i ensinistrar sense acreditació professional són **greus** (apartat 3, lletres b i c), i l’ensinistrament d’atac no autoritzat és **molt greu** (apartat 4.a).',
+      es: 'El artículo 7 de la Ley 10/1999 gradúa las infracciones en tres niveles y las cuatro opciones están todas, pero en cajones distintos. La única leve es el apartado 2.a: «No inscriure el gos al registre específic del municipi corresponent». No contratar el seguro de responsabilidad civil y adiestrar sin acreditación profesional son **graves** (apartado 3, letras b y c), y el adiestramiento de ataque no autorizado es **muy grave** (apartado 4.a).',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 34, pàgina 9 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-10-1999-gossos-cat',
+        locator: 'art. 7.2, 7.3 i 7.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2188,14 +2386,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La falsa és la c) i el motiu és una sola paraula: «únicament». L’article 17.2 de la LO 5/2000 dona el dret a l’entrevista reservada amb l’advocat «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —abans **i** després—, o sigui que limitar-lo al moment previ retalla el dret. Les altres tres opcions són certes: el màxim de vint-i-quatre hores i la posada a disposició del fiscal (art. 17.4) i la notificació immediata als representants legals i al Ministeri Fiscal (art. 17.1).',
+      es: 'La falsa es la c) y el motivo es una sola palabra: «únicamente». El artículo 17.2 de la LO 5/2000 da el derecho a la entrevista reservada con el abogado «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —antes **y** después—, o sea que limitarlo al momento previo recorta el derecho. Las otras tres opciones son ciertas: el máximo de veinticuatro horas y la puesta a disposición del fiscal (art. 17.4) y la notificación inmediata a los representantes legales y al Ministerio Fiscal (art. 17.1).',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 35, pàgina 10 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2227,14 +2431,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 16.2 de la LO 4/2015 permet el trasllat a dependències per identificar algú només «por el tiempo estrictamente necesario, que en ningún caso podrá superar las seis horas». Són dues regles en una: el temps imprescindible mana sempre, i les sis hores són el sostre que no es pot travessar ni quan sembli que caldria més estona.',
+      es: 'El artículo 16.2 de la LO 4/2015 permite el traslado a dependencias para identificar a alguien solo «por el tiempo estrictamente necesario, que en ningún caso podrá superar las seis horas». Son dos reglas en una: el tiempo imprescindible manda siempre, y las seis horas son el techo que no puede traspasarse ni cuando parezca que haría falta más rato.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 36, pàgina 10 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 16.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2266,14 +2476,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 112.1 del text refós de la Llei de trànsit dona dos terminis: «tres meses para las infracciones leves y de seis meses para las infracciones graves y muy graves». La pregunta demana les greus: sis mesos, el mateix termini que les molt greus. Aquesta matèria —el règim sancionador general de trànsit— no la cobreix cap dels 40 temes de la convocatòria, i per això la pregunta no entra a l’entrenament per temes.',
+      es: 'El artículo 112.1 del texto refundido de la Ley de tráfico da dos plazos: «tres meses para las infracciones leves y de seis meses para las infracciones graves y muy graves». La pregunta pide las graves: seis meses, el mismo plazo que las muy graves. Esta materia —el régimen sancionador general de tráfico— no la cubre ninguno de los 40 temas de la convocatoria, y por eso la pregunta no entra en el entrenamiento por temas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 37, pàgina 10 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-6-2015-ltsv',
+        locator: 'art. 112.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2305,14 +2521,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20 del Reglament general de circulació rebaixa la taxa durant els dos primers anys de permís: els conductors novells «no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia». Els 0,25 mg/l de les opcions c) i d) són la taxa general, la que ja no els val.',
+      es: 'El artículo 20 del Reglamento general de circulación rebaja la tasa durante los dos primeros años de permiso: los conductores noveles «no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia». Los 0,25 mg/l de las opciones c) y d) son la tasa general, la que ya no les vale.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 38, pàgina 11 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 20',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2344,14 +2566,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Per sota dels catorze anys no hi ha responsabilitat penal. L’article 3 de la LO 5/2000 diu que quan l’autor «sea menor de catorce años, no se le exigirá responsabilidad con arreglo a la presente Ley, sino que se le aplicará lo dispuesto en las normas sobre protección de menores». Per això no es pot detenir com a responsable d’un delicte, però sí que hi pot haver una intervenció a efectes de protecció: la finalitat és tota la diferència.',
+      es: 'Por debajo de los catorce años no hay responsabilidad penal. El artículo 3 de la LO 5/2000 dice que cuando el autor «sea menor de catorce años, no se le exigirá responsabilidad con arreglo a la presente Ley, sino que se le aplicará lo dispuesto en las normas sobre protección de menores». Por eso no puede detenerse como responsable de un delito, pero sí puede haber una intervención a efectos de protección: la finalidad es toda la diferencia.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 39, pàgina 11 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2383,14 +2611,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 29.4 de l’Ordenança de convivència de Roses tanca el circuit del comís: «Una vegada dictada resolució ferma i transcorreguts dos mesos sense que el titular hagi recuperat l’objecte es procedirà a la seva destrucció o els lliurarà gratuïtament a entitats sense afany de lucre amb finalitats socials». Hi ha dues condicions prèvies —resolució ferma i dos mesos— i després dues sortides possibles: destruir o cedir. La modificació de 2021 no toca aquest article.',
+      es: 'El artículo 29.4 de la Ordenanza de convivencia de Roses cierra el circuito del comiso: «Una vegada dictada resolució ferma i transcorreguts dos mesos sense que el titular hagi recuperat l’objecte es procedirà a la seva destrucció o els lliurarà gratuïtament a entitats sense afany de lucre amb finalitats socials». Hay dos condiciones previas —resolución firme y dos meses— y después dos salidas posibles: destruir o ceder. La modificación de 2021 no toca este artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 40, pàgina 11 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 29.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2422,14 +2656,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 140 de la Constitució deixa la porta oberta a dos sistemes: «Los Alcaldes serán elegidos por los Concejales o por los vecinos». La Constitució no tria; remet a la llei electoral, que és qui concreta com es fa. Per això la resposta és la que manté les dues possibilitats, i no les que en tanquen una.',
+      es: 'El artículo 140 de la Constitución deja la puerta abierta a dos sistemas: «Los Alcaldes serán elegidos por los Concejales o por los vecinos». La Constitución no elige; remite a la ley electoral, que es quien concreta cómo se hace. Por eso la respuesta es la que mantiene las dos posibilidades, y no las que cierran una.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 41, pàgina 11 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 140',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2461,14 +2701,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 11 de l’Ordenança de convivència de Roses ataca la venda ambulant no autoritzada per tres bandes, un apartat per a cadascuna: prohibeix vendre sense autorització municipal (11.1), col·laborar-hi a l’espai públic (11.2) i «la compra o l’adquisició en l’espai públic de qualsevol producte procedent de la venda ambulant no autoritzada» (11.3). Per això la resposta ha d’incloure també qui compra. La modificació de 2021 reescriu els punts 1 i 2 però manté les tres conductes.',
+      es: 'El artículo 11 de la Ordenanza de convivencia de Roses ataca la venta ambulante no autorizada por tres flancos, un apartado para cada uno: prohíbe vender sin autorización municipal (11.1), colaborar en ella en el espacio público (11.2) y «la compra o l’adquisició en l’espai públic de qualsevol producte procedent de la venda ambulant no autoritzada» (11.3). Por eso la respuesta debe incluir también a quien compra. La modificación de 2021 reescribe los puntos 1 y 2 pero mantiene las tres conductas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 42, pàgina 12 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 11.1, 11.2 i 11.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia-mod-2021',
+        locator: 'modificació segona',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3319,14 +3571,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La resposta surt de creuar dos articles de la Constitució. L’article 23.1 reconeix que «los ciudadanos tienen el derecho a participar en los asuntos públicos», i l’article 13.2 obre una escletxa per als estrangers: atenent a criteris de reciprocitat, un tractat o una llei pot establir «el derecho de sufragio activo y pasivo en las elecciones municipales». Ni només els espanyols ni tothom qui resideixi a l’Estat: la clau és el títol —tractat o llei— i l’àmbit —les eleccions municipals—.',
+      es: 'La respuesta sale de cruzar dos artículos de la Constitución. El artículo 23.1 reconoce que «los ciudadanos tienen el derecho a participar en los asuntos públicos», y el artículo 13.2 abre una rendija para los extranjeros: atendiendo a criterios de reciprocidad, un tratado o una ley puede establecer «el derecho de sufragio activo y pasivo en las elecciones municipales». Ni solo los españoles ni todo el que resida en el Estado: la clave es el título —tratado o ley— y el ámbito —las elecciones municipales—.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 23.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 13.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3358,14 +3622,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: '«Dret fonamental», en sentit estricte, vol dir els de la secció 1a del capítol II del títol I. La llibertat i la seguretat (art. 17), la residència (art. 19) i la llibertat d’expressió (art. 20.1.a) hi són. Gaudir d’un habitatge digne i adequat és l’article 47, que viu al capítol III, el dels principis rectors de la política social i econòmica: és un mandat als poders públics, no un dret fonamental. La ubicació dins la Constitució és el que decideix la resposta.',
+      es: '«Derecho fundamental», en sentido estricto, significa los de la sección 1.ª del capítulo II del título I. La libertad y la seguridad (art. 17), la residencia (art. 19) y la libertad de expresión (art. 20.1.a) están ahí. Disfrutar de una vivienda digna y adecuada es el artículo 47, que vive en el capítulo III, el de los principios rectores de la política social y económica: es un mandato a los poderes públicos, no un derecho fundamental. La ubicación dentro de la Constitución es lo que decide la respuesta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 47',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3397,14 +3667,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 32 de l’Estatut és taxatiu i no porta cap excepció: «Els actes jurídics fets en qualsevol de les dues llengües oficials tenen, pel que fa a la llengua, validesa i eficàcia plenes». L’opció b) hi enganxa una excepció per a les actuacions davant dels òrgans judicials que l’article no diu —i que l’article 33.2, de fet, contradiu, perquè reconeix el dret d’usar la llengua oficial que s’esculli en actuacions judicials, notarials i registrals—. Per això la b) és la falsa.',
+      es: 'El artículo 32 del Estatuto es taxativo y no lleva ninguna excepción: «Els actes jurídics fets en qualsevol de les dues llengües oficials tenen, pel que fa a la llengua, validesa i eficàcia plenes». La opción b) le añade una excepción para las actuaciones ante los órganos judiciales que el artículo no dice —y que el artículo 33.2, de hecho, contradice, porque reconoce el derecho a usar la lengua oficial que se elija en actuaciones judiciales, notariales y registrales—. Por eso la b) es la falsa.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 32',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 33.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3436,14 +3718,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres opcions surten de la mateixa llista de l’article 84.2 de l’Estatut, que enumera les competències pròpies dels governs locals: la lletra e) hi posa la regulació de les condicions de seguretat en activitats en espais públics i locals de concurrència pública i la coordinació dels cossos presents al municipi mitjançant la Junta de Seguretat, i la lletra f) la protecció civil i la prevenció d’incendis. Com que cap de les tres falla, la resposta és «totes».',
+      es: 'Las tres opciones salen de la misma lista del artículo 84.2 del Estatuto, que enumera las competencias propias de los gobiernos locales: la letra e) incluye la regulación de las condiciones de seguridad en actividades en espacios públicos y locales de concurrencia pública y la coordinación de los cuerpos presentes en el municipio mediante la Junta de Seguridad, y la letra f) la protección civil y la prevención de incendios. Como ninguna de las tres falla, la respuesta es «todas».',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 84.2.e i 84.2.f',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3475,14 +3763,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 26.2 de la Llei de bases del règim local fa que, per sota dels 20.000 habitants, un grup de serveis els coordini la Diputació provincial, i la neteja viària n’és la lletra c). No és que el municipi deixi de ser-ne titular: el que fa la Diputació és coordinar-ne la prestació. Ni el Consell Comarcal ni la Generalitat ni l’Estat hi apareixen.',
+      es: 'El artículo 26.2 de la Ley de bases del régimen local hace que, por debajo de los 20.000 habitantes, un grupo de servicios los coordine la Diputación provincial, y la limpieza viaria es su letra c). No es que el municipio deje de ser titular: lo que hace la Diputación es coordinar su prestación. Ni el Consejo Comarcal ni la Generalitat ni el Estado aparecen.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 26.2.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3514,14 +3808,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 49.b de la Llei de bases del règim local fixa el tràmit posterior a l’aprovació inicial d’una ordenança: «Información pública y audiencia a los interesados por el plazo mínimo de treinta días para la presentación de reclamaciones y sugerencias». Hi ha dues coses a encertar: la xifra —trenta dies, no quinze— i que és un **mínim**, o sigui que l’ajuntament el pot allargar però no escurçar.',
+      es: 'El artículo 49.b de la Ley de bases del régimen local fija el trámite posterior a la aprobación inicial de una ordenanza: «Información pública y audiencia a los interesados por el plazo mínimo de treinta días para la presentación de reclamaciones y sugerencias». Hay dos cosas que acertar: la cifra —treinta días, no quince— y que es un **mínimo**, o sea que el ayuntamiento puede alargarlo pero no acortarlo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 49.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3553,14 +3853,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 159.3 de la Constitució diu les dues coses en una frase: els membres del Tribunal Constitucional «serán designados por un período de nueve años y se renovarán por terceras partes cada tres». Nou anys de mandat i renovació per terços cada tres anys, que és el que fa que el tribunal no es renovi mai de cop. Les opcions b) i d) encerten una meitat i erren l’altra.',
+      es: 'El artículo 159.3 de la Constitución dice las dos cosas en una frase: los miembros del Tribunal Constitucional «serán designados por un período de nueve años y se renovarán por terceras partes cada tres». Nueve años de mandato y renovación por tercios cada tres años, que es lo que hace que el tribunal no se renueve nunca de golpe. Las opciones b) y d) aciertan una mitad y yerran la otra.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3592,14 +3898,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 48 del text refós de l’Estatut bàsic de l’empleat públic llista els permisos, i la lletra l) equipara dues situacions en el mateix termini: «Por matrimonio o registro o constitución formalizada por documento público de pareja de hecho, quince días». Quinze dies, doncs, i els mateixos tant si hi ha matrimoni com si hi ha parella de fet formalitzada.',
+      es: 'El artículo 48 del texto refundido del Estatuto básico del empleado público lista los permisos, y la letra l) equipara dos situaciones en el mismo plazo: «Por matrimonio o registro o constitución formalizada por documento público de pareja de hecho, quince días». Quince días, pues, y los mismos tanto si hay matrimonio como si hay pareja de hecho formalizada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 48.l',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3631,14 +3943,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 14 de la Llei 53/1984 diu qui resol sobre compatibilitat en cada administració, i a l’administració local ho fa el Ple de la corporació: «la resolución motivada reconociendo la compatibilidad o declarando la incompatibilidad… corresponde… al Pleno de la Corporación Local». No és una decisió de gestió que pugui prendre l’alcaldia ni la Junta de Govern, encara que aquestes tramitin l’expedient.',
+      es: 'El artículo 14 de la Ley 53/1984 dice quién resuelve sobre compatibilidad en cada administración, y en la administración local lo hace el Pleno de la corporación: «la resolución motivada reconociendo la compatibilidad o declarando la incompatibilidad… corresponde… al Pleno de la Corporación Local». No es una decisión de gestión que pueda tomar la alcaldía ni la Junta de Gobierno, aunque estas tramiten el expediente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-53-1984-incompat',
+        locator: 'art. 14',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3670,14 +3988,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Llei 16/1991 obre la llista de faltes greus amb aquesta conducta: l’article 49.a diu que són faltes greus «la desobediència als superiors en l’exercici de les funcions i l’incompliment de les ordres rebudes». És greu, no molt greu: les molt greus de l’article 48 reserven la desobediència per a supòsits qualificats. I està tipificada, cosa que descarta la d).',
+      es: 'La Ley 16/1991 abre la lista de faltas graves con esta conducta: el artículo 49.a dice que son faltas graves «la desobediència als superiors en l’exercici de les funcions i l’incompliment de les ordres rebudes». Es grave, no muy grave: las muy graves del artículo 48 reservan la desobediencia para supuestos cualificados. Y está tipificada, lo que descarta la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3709,14 +4033,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 169.2 del text refós de la Llei d’hisendes locals posa data límit a l’aprovació definitiva del pressupost: «habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse». La diferència amb l’opció b) és d’un dia i és tota la pregunta. Que hi hagi data fixada descarta la a), i la majoria qualificada de la d) no apareix en aquest article.',
+      es: 'El artículo 169.2 del texto refundido de la Ley de haciendas locales pone fecha límite a la aprobación definitiva del presupuesto: «habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse». La diferencia con la opción b) es de un día y es toda la pregunta. Que haya fecha fijada descarta la a), y la mayoría cualificada de la d) no aparece en este artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-2-2004-trlrhl',
+        locator: 'art. 169.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3748,14 +4078,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’avocació és el moviment de baix a dalt: l’article 10.1 de la Llei 40/2015 permet als òrgans superiors «avocar para sí el conocimiento de uno o varios asuntos cuya resolución corresponda ordinariamente o por delegación a sus órganos administrativos dependientes, cuando circunstancias de índole técnica, económica, social, jurídica o territorial lo hagan conveniente». L’opció b) descriu el moviment contrari, la delegació. La c) i la d) parlen de competència pròpia i d’encàrrec de gestió.',
+      es: 'La avocación es el movimiento de abajo arriba: el artículo 10.1 de la Ley 40/2015 permite a los órganos superiores «avocar para sí el conocimiento de uno o varios asuntos cuya resolución corresponda ordinariamente o por delegación a sus órganos administrativos dependientes, cuando circunstancias de índole técnica, económica, social, jurídica o territorial lo hagan conveniente». La opción b) describe el movimiento contrario, la delegación. La c) y la d) hablan de competencia propia y de encargo de gestión.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-40-2015-rjsp',
+        locator: 'art. 10.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3787,14 +4123,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El parany és d’una sola paraula. L’article 35.1 de la Llei 39/2015 obliga a motivar «los actos que limiten derechos subjetivos o intereses legítimos»: limitar, no reconèixer. Els actes que resolen recursos, les propostes en procediments sancionadors i els dictats en exercici de potestats discrecionals també hi són, a les lletres b), h) i i). Reconèixer un dret no perjudica ningú i no entra a la llista.',
+      es: 'La trampa es de una sola palabra. El artículo 35.1 de la Ley 39/2015 obliga a motivar «los actos que limiten derechos subjetivos o intereses legítimos»: limitar, no reconocer. Los actos que resuelven recursos, las propuestas en procedimientos sancionadores y los dictados en ejercicio de potestades discrecionales también están, en las letras b), h) e i). Reconocer un derecho no perjudica a nadie y no entra en la lista.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 35.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3826,14 +4168,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 5.3 de la Llei 39/2015 posa la frontera en una frase: «Para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos… deberá acreditarse la representación. Para los actos y gestiones de mero trámite se presumirá aquella representación». Les tres primeres opcions són justament els actes on cal acreditar-la; el mer tràmit és l’excepció perquè la llei presumeix la representació.',
+      es: 'El artículo 5.3 de la Ley 39/2015 pone la frontera en una frase: «Para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos… deberá acreditarse la representación. Para los actos y gestiones de mero trámite se presumirá aquella representación». Las tres primeras opciones son justamente los actos donde hay que acreditarla; el mero trámite es la excepción porque la ley presume la representación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 5.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3865,14 +4213,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Un expedient sancionador de trànsit és un procediment iniciat d’ofici i desfavorable, i per a aquests l’article 25.1.b de la Llei 39/2015 és clar: si venç el termini màxim sense resoldre i notificar, «se producirá la caducidad». El silenci —estimatori o desestimatori— és la regla dels procediments iniciats a sol·licitud de l’interessat, no d’aquests, i el desistiment és una altra cosa: l’abandonament de la petició per qui la va fer.',
+      es: 'Un expediente sancionador de tráfico es un procedimiento iniciado de oficio y desfavorable, y para esos el artículo 25.1.b de la Ley 39/2015 es claro: si vence el plazo máximo sin resolver y notificar, «se producirá la caducidad». El silencio —estimatorio o desestimatorio— es la regla de los procedimientos iniciados a solicitud del interesado, no de estos, y el desistimiento es otra cosa: el abandono de la petición por quien la hizo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 25.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3904,14 +4258,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’emissió d’informes és l’article 80 de la Llei 39/2015, i on viu aquest article ja dona la resposta: dins el capítol IV del títol IV, titulat «Instrucción del procedimiento». La instrucció és la fase on l’expedient s’omple de proves, al·legacions i informes abans que ningú decideixi res. La «resolució» de l’opció d), a més, no és una fase autònoma: forma part de la finalització.',
+      es: 'La emisión de informes es el artículo 80 de la Ley 39/2015, y dónde vive ese artículo ya da la respuesta: dentro del capítulo IV del título IV, titulado «Instrucción del procedimiento». La instrucción es la fase donde el expediente se llena de pruebas, alegaciones e informes antes de que nadie decida nada. La «resolución» de la opción d), además, no es una fase autónoma: forma parte de la finalización.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 80, dins el capítol IV «Instrucción del procedimiento»',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3943,14 +4303,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 106.1 de la Llei 39/2015 obre la revisió d’ofici per dues vies alhora: les administracions declararan la nul·litat «en cualquier momento, por iniciativa propia o a solicitud de interesado». Que hi hagi les dues vies descarta les opcions a) i c), i que la revisió existeixi descarta la d).',
+      es: 'El artículo 106.1 de la Ley 39/2015 abre la revisión de oficio por dos vías a la vez: las administraciones declararán la nulidad «en cualquier momento, por iniciativa propia o a solicitud de interesado». Que existan las dos vías descarta las opciones a) y c), y que la revisión exista descarta la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 17, pàgina 5 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 106.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -3982,14 +4348,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 17.2 de la Llei 19/2013 enumera què ha de constar en una sol·licitud d’accés a la informació —identitat, informació que es demana, adreça de contacte i, si es vol, la modalitat d’accés preferida— i la motivació no hi apareix. L’apartat 3 ho diu encara més clar: «El solicitante no está obligado a motivar su solicitud de acceso a la información». És la peça central del dret: no cal explicar per què vols saber-ho.',
+      es: 'El artículo 17.2 de la Ley 19/2013 enumera qué debe constar en una solicitud de acceso a la información —identidad, información que se pide, dirección de contacto y, si se quiere, la modalidad de acceso preferida— y la motivación no aparece. El apartado 3 lo dice aún más claro: «El solicitante no está obligado a motivar su solicitud de acceso a la información». Es la pieza central del derecho: no hay que explicar por qué quieres saberlo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 18, pàgina 5 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-19-2013-transp',
+        locator: 'art. 17.2 i 17.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4060,14 +4432,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Els principis bàsics d’actuació de l’article 5è de la LOFCS estan agrupats per apartats, i la pregunta demana sota quin encapçalament cau la lletra c). L’apartat 2 es titula «Relaciones con la comunidad», i la seva lletra c) és la que exigeix actuar «rigiéndose… por los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance». L’adequació a l’ordenament jurídic és l’apartat 1 i el tractament de detinguts, el 3.',
+      es: 'Los principios básicos de actuación del artículo 5.º de la LOFCS están agrupados por apartados, y la pregunta pide bajo qué encabezamiento cae la letra c). El apartado 2 se titula «Relaciones con la comunidad», y su letra c) es la que exige actuar «rigiéndose… por los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance». La adecuación al ordenamiento jurídico es el apartado 1 y el tratamiento de detenidos, el 3.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 20, pàgina 5 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5è.2.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4099,14 +4477,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 8.2 de la LOFCS combina dues idees que sonen contradictòries i no ho són: establiment **ordinari**, però amb separació. El text diu que el compliment de la presó preventiva i de les penes privatives de llibertat pels membres de les forces i cossos de seguretat «se realizarán en establecimientos penitenciarios ordinarios, con separación del resto de detenidos o presos». No hi ha presons específiques; el que hi ha és separació dins de les comunes.',
+      es: 'El artículo 8.2 de la LOFCS combina dos ideas que suenan contradictorias y no lo son: establecimiento **ordinario**, pero con separación. El texto dice que el cumplimiento de la prisión preventiva y de las penas privativas de libertad por los miembros de las fuerzas y cuerpos de seguridad «se realizarán en establecimientos penitenciarios ordinarios, con separación del resto de detenidos o presos». No hay prisiones específicas; lo que hay es separación dentro de las comunes.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 21, pàgina 6 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 8è.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4138,14 +4522,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 3.1 de la Llei 4/2003 defineix el sistema amb tres peces i l’opció a) les recull totes tres: «a) Les autoritats de seguretat. b) Els cossos policials i altres serveis, públics o privats, de seguretat. c) Els òrgans de coordinació i participació en matèria de seguretat». Fixa’t que hi entren també els serveis **privats** de seguretat. Les opcions c) i d) confonen la part amb el tot: una llista d’autoritats o una d’òrgans de coordinació no és el sistema sencer.',
+      es: 'El artículo 3.1 de la Ley 4/2003 define el sistema con tres piezas y la opción a) las recoge las tres: «a) Les autoritats de seguretat. b) Els cossos policials i altres serveis, públics o privats, de seguretat. c) Els òrgans de coordinació i participació en matèria de seguretat». Fíjate en que entran también los servicios **privados** de seguridad. Las opciones c) y d) confunden la parte con el todo: una lista de autoridades o una de órganos de coordinación no es el sistema entero.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 22, pàgina 6 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 3.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4177,14 +4567,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 6.1 de la Llei 4/2003 defineix el Consell de Seguretat de Catalunya com «l’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat». Dues paraules decideixen la pregunta: **consultiu** (no executiu, o sigui que no mana ni resol) i **superior** (no inferior). Les opcions b) i d) hi posen «executiu» i la c) el degrada a inferior.',
+      es: 'El artículo 6.1 de la Ley 4/2003 define el Consejo de Seguridad de Cataluña como «l’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat». Dos palabras deciden la pregunta: **consultivo** (no ejecutivo, o sea que no manda ni resuelve) y **superior** (no inferior). Las opciones b) y d) ponen «ejecutivo» y la c) lo degrada a inferior.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 23, pàgina 6 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4216,14 +4612,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 12.2 de la Llei 16/1991 diu com s’han de complir les funcions de policia judicial: «d’acord amb els principis de cooperació mútua i de col·laboració recíproca amb la resta de forces i cossos de seguretat». Són dos principis aparellats amb el seu adjectiu —cooperació **mútua**, col·laboració **recíproca**— i amb un destinatari exprés: la resta de forces i cossos. Les altres opcions hi afegeixen o hi canvien termes que l’article no fa servir.',
+      es: 'El artículo 12.2 de la Ley 16/1991 dice cómo deben cumplirse las funciones de policía judicial: «d’acord amb els principis de cooperació mútua i de col·laboració recíproca amb la resta de forces i cossos de seguretat». Son dos principios emparejados con su adjetivo —cooperación **mutua**, colaboración **recíproca**— y con un destinatario expreso: el resto de fuerzas y cuerpos. Las otras opciones añaden o cambian términos que el artículo no usa.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 24, pàgina 7 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 12.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4255,14 +4657,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 25.3 de la Llei 16/1991 té regla i excepció, i la resposta ha de portar les dues. La regla: intendent major i intendent «només es poden crear en els municipis que tenen més de cent mil habitants». L’excepció: per sota d’aquesta xifra es poden crear igualment «si el nombre d’agents hi excedeix de dos-cents cinquanta o de cent, respectivament» i les característiques del municipi ho aconsellen. Per això la b), que diu «sempre i en tot cas», falla: hi ha excepció.',
+      es: 'El artículo 25.3 de la Ley 16/1991 tiene regla y excepción, y la respuesta debe llevar las dos. La regla: intendente mayor e intendente «només es poden crear en els municipis que tenen més de cent mil habitants». La excepción: por debajo de esa cifra pueden crearse igualmente «si el nombre d’agents hi excedeix de dos-cents cinquanta o de cent, respectivament» y las características del municipio lo aconsejan. Por eso la b), que dice «siempre y en todo caso», falla: hay excepción.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 25, pàgina 7 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 25.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4294,14 +4702,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 26.2 de la Llei 16/1991 resol la prefectura per graduació, no per càrrec polític: «És cap del cos el membre de la plantilla de major graduació; en cas d’igualtat, correspon a l’alcalde de fer el nomenament». L’alcalde hi apareix, però només per desempatar. No confonguis la prefectura del cos amb el comandament superior, que sí que és de l’alcaldia.',
+      es: 'El artículo 26.2 de la Ley 16/1991 resuelve la jefatura por graduación, no por cargo político: «És cap del cos el membre de la plantilla de major graduació; en cas d’igualtat, correspon a l’alcalde de fer el nomenament». El alcalde aparece, pero solo para desempatar. No confundas la jefatura del cuerpo con el mando superior, que sí es de la alcaldía.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 26, pàgina 7 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 26.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4333,14 +4747,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les quatre opcions són faltes reals de la Llei 16/1991; el que canvia és el calaix. Els enfrontaments en el servei, intervenir havent-hi motiu d’abstenció i el consum d’alcohol en servei són faltes **greus** de l’article 49 (lletres e, h i j). La manifesta manca de col·laboració amb altres membres de les forces o cossos de seguretat, en canvi, és **molt greu** i és a l’article 48.1: la llei protegeix la coordinació entre cossos amb el grau més alt.',
+      es: 'Las cuatro opciones son faltas reales de la Ley 16/1991; lo que cambia es el cajón. Los enfrentamientos en el servicio, intervenir habiendo motivo de abstención y el consumo de alcohol en servicio son faltas **graves** del artículo 49 (letras e, h y j). La manifiesta falta de colaboración con otros miembros de las fuerzas o cuerpos de seguridad, en cambio, es **muy grave** y está en el artículo 48.1: la ley protege la coordinación entre cuerpos con el grado más alto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 27, pàgina 8 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.e, 49.h i 49.j',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4372,14 +4798,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20.2 de l’Ordenança de circulació de Roses permet estacionar motocicletes i ciclomotors de dues rodes a la vorera quan no hi ha lloc senyalitzat a prop o està ocupat, però només «a les voreres de més de 3´4 metres d’amplada, en una única fila, a una distància mínima d’un metre entre elles». La xifra és 3,4 metres i les condicions d’una sola fila i un metre de separació formen part de la mateixa regla. La modificació de 2021 de l’ordenança no toca aquest article.',
+      es: 'El artículo 20.2 de la Ordenanza de circulación de Roses permite estacionar motocicletas y ciclomotores de dos ruedas en la acera cuando no hay sitio señalizado cerca o está ocupado, pero solo «a les voreres de més de 3´4 metres d’amplada, en una única fila, a una distància mínima d’un metre entre elles». La cifra es 3,4 metros y las condiciones de una sola fila y un metro de separación forman parte de la misma regla. La modificación de 2021 de la ordenanza no toca este artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 28, pàgina 8 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 20.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4411,14 +4843,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 41 de l’Ordenança de circulació de Roses tanca la càrrega i descàrrega en horari nocturn: «Llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades des de les 10 del vespre fins a les 8 del matí cada dia». Dues dades a fixar: l’hora de reobertura són les 8, no les 10, i la prohibició és de **cada dia**, no només de cap de setmana. La modificació de 2021 no toca aquest article.',
+      es: 'El artículo 41 de la Ordenanza de circulación de Roses cierra la carga y descarga en horario nocturno: «Llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades des de les 10 del vespre fins a les 8 del matí cada dia». Dos datos que fijar: la hora de reapertura son las 8, no las 10, y la prohibición es de **cada día**, no solo de fin de semana. La modificación de 2021 no toca este artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 29, pàgina 8 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 41',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4450,14 +4888,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La detenció d’un menor té un sostre més curt que la d’un adult. L’article 17.4 de la LO 5/2000 diu que no pot durar «más tiempo del estrictamente necesario» i que «en todo caso, dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal». Vint-i-quatre hores, doncs, i no les setanta-dues de l’article 17.2 de la Constitució; i el destinatari també canvia: el fiscal, no el jutjat.',
+      es: 'La detención de un menor tiene un techo más corto que la de un adulto. El artículo 17.4 de la LO 5/2000 dice que no puede durar «más tiempo del estrictamente necesario» y que «en todo caso, dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal». Veinticuatro horas, pues, y no las setenta y dos del artículo 17.2 de la Constitución; y el destinatario también cambia: el fiscal, no el juzgado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 30, pàgina 9 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4489,14 +4933,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 18.2 de la Constitució declara el domicili inviolable i tot seguit obre exactament tres portes: «Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito». Consentiment, resolució judicial i delicte flagrant són les tres opcions de la pregunta, i com que no en falta cap, la resposta és «totes».',
+      es: 'El artículo 18.2 de la Constitución declara el domicilio inviolable y acto seguido abre exactamente tres puertas: «Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito». Consentimiento, resolución judicial y delito flagrante son las tres opciones de la pregunta, y como no falta ninguna, la respuesta es «todas».',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 31, pàgina 9 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 18.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4528,14 +4978,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 379.1 del Codi penal posa dues xifres i cal no barrejar-les: castiga qui condueixi «a velocidad superior en sesenta kilómetros por hora en vía urbana o en ochenta kilómetros por hora en vía interurbana a la permitida reglamentariamente». La pregunta demana la urbana: seixanta km/h per damunt del límit. I compte, és un excés **sobre** el permès, no una velocitat absoluta.',
+      es: 'El artículo 379.1 del Código penal pone dos cifras y conviene no mezclarlas: castiga a quien conduzca «a velocidad superior en sesenta kilómetros por hora en vía urbana o en ochenta kilómetros por hora en vía interurbana a la permitida reglamentariamente». La pregunta pide la urbana: sesenta km/h por encima del límite. Y ojo, es un exceso **sobre** lo permitido, no una velocidad absoluta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 32, pàgina 9 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4567,14 +5023,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La discriminació per raó de raça, sexe, orientació sexual, religió, llengua o qualsevol altra condició personal o social és falta molt greu a l’article 48.1.b de la Llei 16/1991. Les altres dues conductes que proposa la pregunta són **greus**: causar danys greus al patrimoni de la corporació és l’article 49.d i la reincidència en faltes lleus, l’article 49.m. L’adjectiu és el que decideix: només els danys molt greus pugen a molt greus.',
+      es: 'La discriminación por razón de raza, sexo, orientación sexual, religión, lengua o cualquier otra condición personal o social es falta muy grave en el artículo 48.1.b de la Ley 16/1991. Las otras dos conductas que propone la pregunta son **graves**: causar daños graves al patrimonio de la corporación es el artículo 49.d y la reincidencia en faltas leves, el artículo 49.m. El adjetivo es lo que decide: solo los daños muy graves suben a muy graves.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 33, pàgina 9 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.d i 49.m',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4606,14 +5074,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 24 de la Llei 16/1991 encaixa cada categoria en una escala i cada escala en un grup de titulació. L’apartat 1.b posa l’inspector a l’escala executiva i l’apartat 2.b assigna a aquesta escala «el grup A, subgrup A2». Les tres dades van juntes: escala executiva, grup A, subgrup A2. Confondre-la amb l’escala intermèdia (C1) o amb la superior (A1) és l’error que busca la pregunta.',
+      es: 'El artículo 24 de la Ley 16/1991 encaja cada categoría en una escala y cada escala en un grupo de titulación. El apartado 1.b sitúa al inspector en la escala ejecutiva y el apartado 2.b asigna a esa escala «el grup A, subgrup A2». Los tres datos van juntos: escala ejecutiva, grupo A, subgrupo A2. Confundirla con la escala intermedia (C1) o con la superior (A1) es el error que busca la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 34, pàgina 10 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b i 24.2.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4645,14 +5119,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 51.2 de la Llei 16/1991 tracta l’encobriment com una participació menor: «Els policies locals que encobreixin les faltes molt greus i greus consumades incorren en una falta d’un grau inferior». Un grau **avall**, doncs: encobrir una molt greu és greu, i encobrir una greu és lleu. La lògica és que qui encobreix no comet la falta, però tampoc no queda indemne.',
+      es: 'El artículo 51.2 de la Ley 16/1991 trata el encubrimiento como una participación menor: «Els policies locals que encobreixin les faltes molt greus i greus consumades incorren en una falta d’un grau inferior». Un grado **abajo**, pues: encubrir una muy grave es grave, y encubrir una grave es leve. La lógica es que quien encubre no comete la falta, pero tampoco queda indemne.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 35, pàgina 10 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 51.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4684,14 +5164,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 16 de la LO 4/2015 permet portar algú a dependències policials per identificar-lo quan no ha estat possible fer-ho al carrer, però hi posa un límit dur: la diligència no pot durar més del temps imprescindible i «en ningún caso podrá superar las seis horas». No és una detenció ni compta com a tal, i per això el termini és molt més curt que les setanta-dues hores de l’article 17.2 de la Constitució.',
+      es: 'El artículo 16 de la LO 4/2015 permite llevar a alguien a dependencias policiales para identificarlo cuando no ha sido posible hacerlo en la calle, pero le pone un límite duro: la diligencia no puede durar más del tiempo imprescindible y «en ningún caso podrá superar las seis horas». No es una detención ni cuenta como tal, y por eso el plazo es mucho más corto que las setenta y dos horas del artículo 17.2 de la Constitución.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 36, pàgina 10 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 16.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4723,14 +5209,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 250.1 del Codi penal apuja l’estafa a presó d’un a sis anys i multa de sis a dotze mesos en una llista de circumstàncies, i la cinquena és la que descriu l’opció a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». Fixa’t que hi ha una **o**: n’hi ha prou amb una de les dues coses. Les altres opcions rebaixen la xifra o inventen supòsits que l’article no recull. Aquesta pregunta queda fora dels 40 temes de la convocatòria —el temari cobreix furts i robatoris, no l’estafa—, i per això no entra a l’entrenament per temes.',
+      es: 'El artículo 250.1 del Código penal sube la estafa a prisión de uno a seis años y multa de seis a doce meses en una lista de circunstancias, y la quinta es la que describe la opción a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». Fíjate en que hay una **o**: basta con una de las dos cosas. Las otras opciones rebajan la cifra o inventan supuestos que el artículo no recoge. Esta pregunta queda fuera de los 40 temas de la convocatoria —el temario cubre hurtos y robos, no la estafa—, y por eso no entra en el entrenamiento por temas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 37, pàgina 10 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 250.1.5è',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4762,14 +5254,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 519 de la Llei d’enjudiciament criminal cap en una línia: «Todas las diligencias de prisión provisional se sustanciarán en pieza separada». La peça separada serveix perquè la decisió sobre la llibertat d’algú es tramiti i es recorri pel seu compte, sense quedar enganxada al ritme de la causa principal.',
+      es: 'El artículo 519 de la Ley de enjuiciamiento criminal cabe en una línea: «Todas las diligencias de prisión provisional se sustanciarán en pieza separada». La pieza separada sirve para que la decisión sobre la libertad de alguien se tramite y se recurra por su cuenta, sin quedar pegada al ritmo de la causa principal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 38, pàgina 11 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 519',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4801,14 +5299,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 7.3 de la LOFCS delimita quan la Guàrdia Civil és força armada, i el criteri és la naturalesa de la missió: «sólo tendrá consideración de fuerza armada en el cumplimiento de las misiones de carácter militar que se le encomienden, de acuerdo con el ordenamiento jurídico». El «sólo» és el nucli de la regla: en les missions policials ordinàries no ho és, per molt que el cos tingui naturalesa militar.',
+      es: 'El artículo 7.3 de la LOFCS delimita cuándo la Guardia Civil es fuerza armada, y el criterio es la naturaleza de la misión: «sólo tendrá consideración de fuerza armada en el cumplimiento de las misiones de carácter militar que se le encomienden, de acuerdo con el ordenamiento jurídico». El «sólo» es el núcleo de la regla: en las misiones policiales ordinarias no lo es, por mucho que el cuerpo tenga naturaleza militar.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 39, pàgina 11 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 7è.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4840,14 +5344,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: '0,61 mg/l en aire espirat passa el llindar de l’article 379.2 del Codi penal, que condemna «en todo caso» per damunt de 0,60 mg/l: per tant hi ha delicte i la denúncia és penal, no administrativa. Ara bé, delicte no vol dir detenció automàtica: detenir és una decisió que l’agent ha de justificar amb les circumstàncies del cas, i l’enunciat no en dona cap. Per això la resposta és denunciar penalment sense detenir.',
+      es: '0,61 mg/l en aire espirado pasa el umbral del artículo 379.2 del Código penal, que condena «en todo caso» por encima de 0,60 mg/l: por tanto hay delito y la denuncia es penal, no administrativa. Ahora bien, delito no significa detención automática: detener es una decisión que el agente debe justificar con las circunstancias del caso, y el enunciado no da ninguna. Por eso la respuesta es denunciar penalmente sin detener.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 40, pàgina 11 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4879,14 +5389,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 31.2.b de la Llei 39/2015 protegeix qui presenta un escrit en dia inhàbil: «la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil». Dues precisions que decideixen la pregunta: el dia és **hàbil**, no natural, i l’excepció final forma part de la regla. Que es pugui presentar descarta la d).',
+      es: 'El artículo 31.2.b de la Ley 39/2015 protege a quien presenta un escrito en día inhábil: «la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil». Dos precisiones que deciden la pregunta: el día es **hábil**, no natural, y la excepción final forma parte de la regla. Que pueda presentarse descarta la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 41, pàgina 12 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 31.2.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -4918,14 +5434,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 28 de la Llei 4/2003 té tres apartats i cadascun un titular: funcions pròpies dels mossos, funcions pròpies de les policies locals i funcions compartides. Les compartides són només tres, a l’apartat 4, i entre elles hi ha «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides». El trànsit urbà i la policia comunitària són pròpies de la local, i la seguretat ciutadana i l’ordre públic, dels mossos.',
+      es: 'El artículo 28 de la Ley 4/2003 tiene tres apartados y cada uno un titular: funciones propias de los mossos, funciones propias de las policías locales y funciones compartidas. Las compartidas son solo tres, en el apartado 4, y entre ellas está «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides». El tráfico urbano y la policía comunitaria son propias de la local, y la seguridad ciudadana y el orden público, de los mossos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cp',
         locator: 'pregunta 42, pàgina 12 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 28.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 28.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -5776,14 +6304,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 9.3 de la Constitució enumera les garanties del principi de legalitat, i les tres opcions dolentes en toquen una cadascuna: la a) diu «favorables» on el text diu «no favorables», la b) canvia la seguretat jurídica per la «inseguretat» i la d) suprimeix el prefix d’«irretroactivitat». L’opció c) reprodueix la llista sencera: «la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos». En una pregunta així la resta de la frase és idèntica a les quatre opcions: només cal comparar aquests tres punts.',
+      es: 'El artículo 9.3 de la Constitución enumera las garantías del principio de legalidad, y las tres opciones malas alteran una cada una: la a) dice «favorables» donde el texto dice «no favorables», la b) cambia la seguridad jurídica por la «inseguridad» y la d) suprime el prefijo de «irretroactividad». La opción c) reproduce la lista entera: «la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos». En una pregunta así el resto de la frase es idéntico en las cuatro opciones: solo hay que comparar esos tres puntos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 9.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -5815,14 +6349,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 17.1 de la Constitució reconeix el dret a la llibertat i tot seguit el limita en la mateixa frase: «Nadie puede ser privado de su libertad, sino con la observancia de lo establecido en este artículo y en los casos y en la forma previstos en la ley». L’opció b) talla la frase abans del «sino» i converteix en absolut el que és una reserva de llei: per això és la falsa. Les altres tres reprodueixen els apartats 1 i 2 del mateix article, límit de setanta-dues hores inclòs.',
+      es: 'El artículo 17.1 de la Constitución reconoce el derecho a la libertad y acto seguido lo limita en la misma frase: «Nadie puede ser privado de su libertad, sino con la observancia de lo establecido en este artículo y en los casos y en la forma previstos en la ley». La opción b) corta la frase antes del «sino» y convierte en absoluto lo que es una reserva de ley: por eso es la falsa. Las otras tres reproducen los apartados 1 y 2 del mismo artículo, límite de setenta y dos horas incluido.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.1 i 17.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -5854,14 +6394,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’Estatut d’autonomia reconeix el dret d’opció lingüística davant les administracions: l’article 33.1 diu que «totes les persones tenen dret a utilitzar la llengua oficial que elegeixin». Que el dret existeixi descarta les opcions c) i d), i que vagi referit a les llengües oficials —i no a qualsevol llengua— és el que fa fallar la b). L’opció a) és el text de l’article.',
+      es: 'El Estatuto de autonomía reconoce el derecho de opción lingüística ante las administraciones: el artículo 33.1 dice que «totes les persones tenen dret a utilitzar la llengua oficial que elegeixin». Que el derecho exista descarta las opciones c) y d), y que se refiera a las lenguas oficiales —y no a cualquier lengua— es lo que hace fallar la b). La opción a) es el texto del artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 3, pàgina 2 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 33.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -5893,14 +6439,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres primeres opcions són, literalment, les lletres a), b) i c) de l’article 164.1 de l’Estatut, que llista les competències de la Generalitat en seguretat pública. La d) també és text de l’Estatut, però d’un altre article: l’article 84.2.e atribueix als governs locals «la regulació de les condicions de seguretat en les activitats organitzades en espais públics i en locals de concurrència pública». La pregunta no separa contingut sinó titular de la competència: dues llistes veïnes, dos nivells d’administració.',
+      es: 'Las tres primeras opciones son, literalmente, las letras a), b) y c) del artículo 164.1 del Estatuto, que lista las competencias de la Generalitat en seguridad pública. La d) también es texto del Estatuto, pero de otro artículo: el artículo 84.2.e atribuye a los gobiernos locales «la regulació de les condicions de seguretat en les activitats organitzades en espais públics i en locals de concurrència pública». La pregunta no separa contenido sino titular de la competencia: dos listas vecinas, dos niveles de administración.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 4, pàgina 2 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 84.2.e',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -5932,14 +6490,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 11 de la Llei de bases del règim local diu exactament el contrari de l’opció b): el municipi «tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines». Del mateix article surten la a) —«la entidad local básica de la organización territorial del Estado»— i la c), que n’enumera els elements: territori, població i organització. La d) és la regla de l’article 141.1 de la Constitució. Només la b) contradiu la llei, i per això és la falsa.',
+      es: 'El artículo 11 de la Ley de bases del régimen local dice exactamente lo contrario de la opción b): el municipio «tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines». Del mismo artículo salen la a) —«la entidad local básica de la organización territorial del Estado»— y la c), que enumera sus elementos: territorio, población y organización. La d) es la regla del artículo 141.1 de la Constitución. Solo la b) contradice la ley, y por eso es la falsa.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 11.1 i 11.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -5971,14 +6535,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’aprovació de les ordenances és una atribució del Ple, no d’un òrgan unipersonal ni de la Junta de Govern: l’article 22.2.d de la Llei de bases del règim local li reserva «la aprobación del reglamento orgánico y de las ordenanzas». Té sentit que sigui així, perquè una ordenança és una norma que obliga tot el veïnat i el Ple és l’òrgan on hi ha representats tots els grups.',
+      es: 'La aprobación de las ordenanzas es una atribución del Pleno, no de un órgano unipersonal ni de la Junta de Gobierno: el artículo 22.2.d de la Ley de bases del régimen local le reserva «la aprobación del reglamento orgánico y de las ordenanzas». Tiene sentido que sea así, porque una ordenanza es una norma que obliga a todo el vecindario y el Pleno es el órgano donde están representados todos los grupos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 6, pàgina 3 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6010,14 +6580,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La relació de llocs de treball apareix nomenada expressament a la llista d’atribucions del Ple: l’article 22.2.i de la Llei de bases del règim local hi posa «la aprobación de la plantilla de personal y de la relación de puestos de trabajo». És la mateixa lògica que amb les ordenances i, de fet, el mateix article: el que decideix l’estructura de la casa passa pel Ple.',
+      es: 'La relación de puestos de trabajo aparece nombrada expresamente en la lista de atribuciones del Pleno: el artículo 22.2.i de la Ley de bases del régimen local incluye «la aprobación de la plantilla de personal y de la relación de puestos de trabajo». Es la misma lógica que con las ordenanzas y, de hecho, el mismo artículo: lo que decide la estructura de la casa pasa por el Pleno.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 7, pàgina 3 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.i',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6049,14 +6625,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 159.3 de la Constitució fixa el mandat dels magistrats del Tribunal Constitucional: «Los miembros del Tribunal Constitucional serán designados por un período de nueve años». Nou anys, doncs, i cap de les altres xifres correspon a aquest òrgan.',
+      es: 'El artículo 159.3 de la Constitución fija el mandato de los magistrados del Tribunal Constitucional: «Los miembros del Tribunal Constitucional serán designados por un período de nueve años». Nueve años, pues, y ninguna de las otras cifras corresponde a este órgano.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 8, pàgina 3 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6088,14 +6670,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El codi de conducta dels empleats públics viu a l’Estatut bàsic de l’empleat públic. L’article 52 del text refós diu que els principis ètics i de conducta que venen a continuació «configuran el Código de Conducta de los empleados públicos», i els articles 53 i 54 els despleguen. Cap de les altres tres normes o instruments que proposa la pregunta conté aquest codi.',
+      es: 'El código de conducta de los empleados públicos vive en el Estatuto básico del empleado público. El artículo 52 del texto refundido dice que los principios éticos y de conducta que vienen a continuación «configuran el Código de Conducta de los empleados públicos», y los artículos 53 y 54 los desarrollan. Ninguna de las otras tres normas o instrumentos que propone la pregunta contiene este código.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 9, pàgina 4 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 52',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6127,14 +6715,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’opció b) descriu el règim disciplinari, no el d’incompatibilitats: parla d’exigir responsabilitat administrativa per faltes. El règim d’incompatibilitats fa una cosa diferent —limitar quines activitats es poden simultaniejar—, i així ho diu l’article 1.1 de la Llei 53/1984: el personal inclòs «no podrá compatibilizar sus actividades con el desempeño, por sí o mediante sustitución, de un segundo puesto de trabajo, cargo o actividad en el sector público». Aquesta mateixa llei és la que s’aplica al personal de les corporacions locals, cosa que fa certa l’opció d).',
+      es: 'La opción b) describe el régimen disciplinario, no el de incompatibilidades: habla de exigir responsabilidad administrativa por faltas. El régimen de incompatibilidades hace algo distinto —limitar qué actividades pueden simultanearse—, y así lo dice el artículo 1.1 de la Ley 53/1984: el personal incluido «no podrá compatibilizar sus actividades con el desempeño, por sí o mediante sustitución, de un segundo puesto de trabajo, cargo o actividad en el sector público». Esa misma ley es la que se aplica al personal de las corporaciones locales, lo que hace cierta la opción d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 10, pàgina 4 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-53-1984-incompat',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6166,14 +6760,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 48.1.b de la Llei 16/1991, de les policies locals de Catalunya, tipifica com a falta molt greu «tota actuació que signifiqui discriminació per raó de raça, sexe, orientació sexual, religió, llengua, opinió, lloc de naixement, veïnatge o qualsevol altra condició o circumstància personal o social»: és exactament la llista que reprodueix l’enunciat. L’opció d) té a més un parany de numeració: la llei de les policies locals de Catalunya és la 16/1991, no la 6/1991.',
+      es: 'El artículo 48.1.b de la Ley 16/1991, de las policías locales de Cataluña, tipifica como falta muy grave «tota actuació que signifiqui discriminació per raó de raça, sexe, orientació sexual, religió, llengua, opinió, lloc de naixement, veïnatge o qualsevol altra condició o circumstància personal o social»: es exactamente la lista que reproduce el enunciado. La opción d) tiene además una trampa de numeración: la ley de las policías locales de Cataluña es la 16/1991, no la 6/1991.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 11, pàgina 4 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6205,14 +6805,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 2.1 del text refós de la Llei d’hisendes locals enumera els recursos de les entitats locals i les tres primeres opcions en són, per ordre, les lletres a), b) i c): ingressos del patrimoni, tributs propis i participacions en els tributs de l’Estat i de les comunitats autònomes. Els ingressos de la Seguretat Social no figuren en aquesta enumeració, i per això són la resposta a una pregunta que demana el que no hi és.',
+      es: 'El artículo 2.1 del texto refundido de la Ley de haciendas locales enumera los recursos de las entidades locales y las tres primeras opciones son, por orden, las letras a), b) y c): ingresos del patrimonio, tributos propios y participaciones en los tributos del Estado y de las comunidades autónomas. Los ingresos de la Seguridad Social no figuran en esa enumeración, y por eso son la respuesta a una pregunta que pide lo que no está.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 12, pàgina 5 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-2-2004-trlrhl',
+        locator: 'art. 2.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6244,14 +6850,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'És una pregunta de número de norma. La llei estatal del procediment administratiu comú de les administracions públiques és la Llei 39/2015, d’1 d’octubre. Les opcions a) i c) copien el títol i la data exactes i només en canvien el número; la d) sí que és una norma real, però és la llei catalana de règim jurídic i de procediment, no l’estatal que demana la pregunta.',
+      es: 'Es una pregunta de número de norma. La ley estatal del procedimiento administrativo común de las administraciones públicas es la Ley 39/2015, de 1 de octubre. Las opciones a) y c) copian el título y la fecha exactos y solo cambian el número; la d) sí es una norma real, pero es la ley catalana de régimen jurídico y de procedimiento, no la estatal que pide la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 13, pàgina 5 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'títol',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6283,14 +6895,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 35.1 de la Llei 39/2015 llista els actes que s’han de motivar, i les tres primeres opcions en són les lletres a), c) i h): els que limiten drets subjectius o interessos legítims, els que se separen del criteri seguit en actuacions precedents o d’un dictamen, i els de matèria sancionadora. Atorgar una cessió d’ús temporal de la via pública no correspon a cap dels supòsits que enumera l’article, i és per això que és la resposta.',
+      es: 'El artículo 35.1 de la Ley 39/2015 lista los actos que deben motivarse, y las tres primeras opciones son sus letras a), c) y h): los que limitan derechos subjetivos o intereses legítimos, los que se separan del criterio seguido en actuaciones precedentes o de un dictamen, y los de materia sancionadora. Otorgar una cesión de uso temporal de la vía pública no corresponde a ninguno de los supuestos que enumera el artículo, y por eso es la respuesta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 14, pàgina 5 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 35.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6322,14 +6940,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 5.3 de la Llei 39/2015 exigeix acreditar la representació justament per als actes de les altres tres opcions —formular sol·licituds, presentar declaracions responsables o comunicacions i interposar recursos— i tot seguit hi posa l’excepció: «Para los actos y gestiones de mero trámite se presumirá aquella representación». Com que la llei la presumeix, no cal acreditar-la.',
+      es: 'El artículo 5.3 de la Ley 39/2015 exige acreditar la representación precisamente para los actos de las otras tres opciones —formular solicitudes, presentar declaraciones responsables o comunicaciones e interponer recursos— y acto seguido pone la excepción: «Para los actos y gestiones de mero trámite se presumirá aquella representación». Como la ley la presume, no hace falta acreditarla.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 15, pàgina 6 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 5.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6361,14 +6985,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21.3 de la Llei 39/2015 posa un termini de reserva per als procediments que no en tenen cap d’escrit: «Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de tres meses». És un màxim supletori, no el termini normal de tot procediment: si la norma que regula el teu procediment en fixa un altre, mana aquella.',
+      es: 'El artículo 21.3 de la Ley 39/2015 pone un plazo de reserva para los procedimientos que no tienen ninguno escrito: «Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de tres meses». Es un máximo supletorio, no el plazo normal de todo procedimiento: si la norma que regula tu procedimiento fija otro, manda aquella.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 16, pàgina 6 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 21.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6400,14 +7030,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El títol IV de la Llei 39/2015 s’ordena en capítols que són, precisament, les fases del procediment: garanties, iniciació, ordenació, instrucció i finalització. «Seguiment» no és cap d’aquests capítols ni apareix com a fase enlloc de la llei: és el terme inventat de la sèrie, i per això és la resposta.',
+      es: 'El título IV de la Ley 39/2015 se ordena en capítulos que son, precisamente, las fases del procedimiento: garantías, iniciación, ordenación, instrucción y finalización. «Seguimiento» no es ninguno de esos capítulos ni aparece como fase en ningún lugar de la ley: es el término inventado de la serie, y por eso es la respuesta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 17, pàgina 6 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'títol IV, capítols II a V',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6439,14 +7075,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 100.1 de la Llei 39/2015 tanca la llista dels mitjans d’execució forçosa i en són quatre: «a) Apremio sobre el patrimonio. b) Ejecución subsidiaria. c) Multa coercitiva. d) Compulsión sobre las personas». Un requeriment o una ordre d’actuació és el que l’administració fa abans d’executar —li diu a algú què ha de fer—, no el mitjà amb què ho imposa quan no s’obeeix.',
+      es: 'El artículo 100.1 de la Ley 39/2015 cierra la lista de los medios de ejecución forzosa y son cuatro: «a) Apremio sobre el patrimonio. b) Ejecución subsidiaria. c) Multa coercitiva. d) Compulsión sobre las personas». Un requerimiento o una orden de actuación es lo que la administración hace antes de ejecutar —le dice a alguien qué debe hacer—, no el medio con el que lo impone cuando no se obedece.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 18, pàgina 7 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 100.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6478,14 +7120,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La sol·licitud d’accés a la informació pública es resol i es notifica «en el plazo máximo de un mes desde la recepción de la solicitud por el órgano competente para resolver», segons l’article 20.1 de la Llei 19/2013. Compte amb l’inici del còmput: el mes no corre des que entra la sol·licitud a qualsevol registre, sinó des que la rep l’òrgan que ha de resoldre.',
+      es: 'La solicitud de acceso a la información pública se resuelve y notifica «en el plazo máximo de un mes desde la recepción de la solicitud por el órgano competente para resolver», según el artículo 20.1 de la Ley 19/2013. Cuidado con el inicio del cómputo: el mes no corre desde que entra la solicitud en cualquier registro, sino desde que la recibe el órgano que debe resolver.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 19, pàgina 7 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-19-2013-transp',
+        locator: 'art. 20.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6556,14 +7204,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La conducció temerària amb perill concret per a la vida o la integritat és l’article 380.1 del Codi penal, que la castiga «con las penas de prisión de seis meses a dos años y privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a uno y hasta seis años». Les quatre opcions comparteixen la privació del dret a conduir o s’hi assemblen; el que decideix és el sostre de la presó: dos anys, no un.',
+      es: 'La conducción temeraria con peligro concreto para la vida o la integridad es el artículo 380.1 del Código penal, que la castiga «con las penas de prisión de seis meses a dos años y privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a uno y hasta seis años». Las cuatro opciones comparten la privación del derecho a conducir o se le parecen; lo que decide es el techo de la prisión: dos años, no uno.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 21, pàgina 8 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 380.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6634,14 +7288,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Aquesta pregunta demana el que **no** hi és, i les competències del Consell de Política de Seguretat són les de l’article 48.2 de la LO 2/1986: aprovar els plans de coordinació i d’infraestructura policial, informar de les plantilles dels cossos autonòmics i «aprobar directivas y recomendaciones de carácter general». Les tres hi consten literalment. Proposar programes de formació i perfeccionament de les policies, en canvi, és de l’article 49.1 i correspon al Comitè d’Experts, un òrgan que funciona dins del Consell però que no és el Consell. Cap dels dos articles s’ha modificat des de 1986, de manera que això ja era així el dia de l’examen. El tribunal va publicar una altra lletra i aquella és la que puntua en reproduir la prova; el que has de recordar per a l’examen d’enguany és la distinció entre els dos òrgans.',
+      es: 'Esta pregunta pide lo que **no** está, y las competencias del Consejo de Política de Seguridad son las del artículo 48.2 de la LO 2/1986: aprobar los planes de coordinación y de infraestructura policial, informar las plantillas de los cuerpos autonómicos y «aprobar directivas y recomendaciones de carácter general». Las tres constan literalmente. Proponer programas de formación y perfeccionamiento de las policías, en cambio, es del artículo 49.1 y corresponde al Comité de Expertos, un órgano que funciona dentro del Consejo pero que no es el Consejo. Ninguno de los dos artículos se ha modificado desde 1986, de modo que ya era así el día del examen. El tribunal publicó otra letra y esa es la que puntúa al reproducir la prueba; lo que debes recordar para el examen de este año es la distinción entre los dos órganos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 23, pàgina 8 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 48.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 49.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6673,14 +7339,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 4.4 de la Llei 4/2003 llista les funcions de l’alcalde i la lletra f) és, literal, l’opció d): «Informar el Ple de l’ajuntament sobre el Pla local de seguretat, aprovat per la Junta Local de Seguretat». La a) hi juga a prop però canvia una paraula decisiva: la lletra d) del mateix article dona a l’alcalde el comandament **superior** de la policia local, no l’immediat. Les opcions b) i c) són funcions del conseller del ram, que són a l’apartat 3.',
+      es: 'El artículo 4.4 de la Ley 4/2003 lista las funciones del alcalde y la letra f) es, literal, la opción d): «Informar el Ple de l’ajuntament sobre el Pla local de seguretat, aprovat per la Junta Local de Seguretat». La a) juega cerca pero cambia una palabra decisiva: la letra d) del mismo artículo da al alcalde el mando **superior** de la policía local, no el inmediato. Las opciones b) y c) son funciones del consejero del ramo, que están en el apartado 3.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 24, pàgina 9 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.4.d i 4.4.f',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6712,14 +7384,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 9 de la Llei 4/2003 separa dues coses: qui integra la Junta Local de Seguretat (apartat 2) i qui hi pot ser convidat (apartat 4). Les opcions a), b) i d) són vocals permanents de l’apartat 2. L’apartat 4 reserva la invitació amb veu i sense vot a «les associacions i les entitats veïnals i ciutadanes del municipi, en el cas que puguin ésser afectades pels assumptes a tractar»: la condició final forma part de la regla.',
+      es: 'El artículo 9 de la Ley 4/2003 separa dos cosas: quién integra la Junta Local de Seguridad (apartado 2) y quién puede ser invitado (apartado 4). Las opciones a), b) y d) son vocales permanentes del apartado 2. El apartado 4 reserva la invitación con voz y sin voto a «les associacions i les entitats veïnals i ciutadanes del municipi, en el cas que puguin ésser afectades pels assumptes a tractar»: la condición final forma parte de la regla.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 25, pàgina 9 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6751,14 +7435,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 25.3 de la Llei 16/1991 diu que «la categoria de superintendent només es pot crear en els municipis que tenen més de dos-cents mil habitants». La xifra és l’única cosa que separa la resposta de l’opció a), i les opcions c) i d) proposen una excepció per nombre d’agents que aquest article no preveu per a aquesta categoria.',
+      es: 'El artículo 25.3 de la Ley 16/1991 dice que «la categoria de superintendent només es pot crear en els municipis que tenen més de dos-cents mil habitants». La cifra es lo único que separa la respuesta de la opción a), y las opciones c) y d) proponen una excepción por número de agentes que este artículo no prevé para esta categoría.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 26, pàgina 9 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 25.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6790,14 +7480,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La conducta que descriu l’enunciat és, paraula per paraula, l’apartat 10 de l’article 36 de la LO 4/2015, i aquest article és el de les infraccions **greus**. La quantia surt d’un altre article, el 39.1, que assigna a les greus «multa de 601 a 30.000 euros». Cal encertar les dues coses alhora: la a) i la d) posen bé la forquilla però erren la qualificació, i la b) encerta la qualificació però inventa una multa fixa de 600 euros.',
+      es: 'La conducta que describe el enunciado es, palabra por palabra, el apartado 10 del artículo 36 de la LO 4/2015, y ese artículo es el de las infracciones **graves**. La cuantía sale de otro artículo, el 39.1, que asigna a las graves «multa de 601 a 30.000 euros». Hay que acertar las dos cosas a la vez: la a) y la d) ponen bien la horquilla pero yerran la calificación, y la b) acierta la calificación pero inventa una multa fija de 600 euros.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 27, pàgina 10 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 36.10',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 39.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6829,14 +7531,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 235.1 del Codi penal enumera les circumstàncies que pugen el furt a la pena d’un a tres anys, i la primera és «cuando se sustraigan cosas de valor artístico, histórico, cultural o científico». L’opció c) inverteix la circumstància segona, que exigeix que **sí** que es causi una situació de desproveïment; la d) és l’agreujament de la neutralització d’alarmes, que viu a l’article 234.3 i no al 235; i la a) descriu el furt de menys de 400 euros, que és el supòsit atenuat.',
+      es: 'El artículo 235.1 del Código penal enumera las circunstancias que suben el hurto a la pena de uno a tres años, y la primera es «cuando se sustraigan cosas de valor artístico, histórico, cultural o científico». La opción c) invierte la circunstancia segunda, que exige que **sí** se cause una situación de desabastecimiento; la d) es la agravación de la neutralización de alarmas, que vive en el artículo 234.3 y no en el 235; y la a) describe el hurto de menos de 400 euros, que es el supuesto atenuado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 28, pàgina 10 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 235.1.1r',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6907,14 +7615,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Conduir sota la influència de drogues, substàncies psicotròpiques o begudes alcohòliques no és una sanció administrativa: és el delicte contra la seguretat viària de l’article 379.2 del Codi penal, que descriu «el que condujere un vehículo de motor o ciclomotor bajo la influencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o de bebidas alcohólicas». Les altres tres opcions barregen imports i punts d’un règim —l’administratiu de trànsit— que no és el que pregunta l’enunciat.',
+      es: 'Conducir bajo la influencia de drogas, sustancias psicotrópicas o bebidas alcohólicas no es una sanción administrativa: es el delito contra la seguridad vial del artículo 379.2 del Código penal, que describe «el que condujere un vehículo de motor o ciclomotor bajo la influencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o de bebidas alcohólicas». Las otras tres opciones mezclan importes y puntos de un régimen —el administrativo de tráfico— que no es el que pregunta el enunciado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 30, pàgina 11 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6946,14 +7660,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 33 del Codi penal classifica les penes per gravetat, i l’apartat 4 obre la llista de les lleus amb «la privación del derecho a conducir vehículos a motor y ciclomotores de tres meses a un año». Les altres tres opcions són penes reals però d’un altre calaix: la presó de més de cinc anys és greu, i la presó de tres mesos a cinc anys i la multa de més de tres mesos són menys greus. La trampa és que totes quatre sonen «petites».',
+      es: 'El artículo 33 del Código penal clasifica las penas por gravedad, y el apartado 4 abre la lista de las leves con «la privación del derecho a conducir vehículos a motor y ciclomotores de tres meses a un año». Las otras tres opciones son penas reales pero de otro cajón: la prisión de más de cinco años es grave, y la prisión de tres meses a cinco años y la multa de más de tres meses son menos graves. La trampa es que las cuatro suenan «pequeñas».',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 31, pàgina 11 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 33.4.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -6985,14 +7705,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La taula de l’article 4.2 del Reglament general de conductors diu, a la fila del permís B, que «se podrán conducir dentro del territorio nacional con el permiso de la clase B, con una antigüedad superior a tres años, las motocicletas cuya conducción autoriza el permiso de la clase A1». Tres anys, doncs, i no dos: la diferència entre les opcions c) i d) és tota la pregunta. Les opcions a) i b) descriuen el que autoritzen els permisos A2 i C1, no el B.',
+      es: 'La tabla del artículo 4.2 del Reglamento general de conductores dice, en la fila del permiso B, que «se podrán conducir dentro del territorio nacional con el permiso de la clase B, con una antigüedad superior a tres años, las motocicletas cuya conducción autoriza el permiso de la clase A1». Tres años, pues, y no dos: la diferencia entre las opciones c) y d) es toda la pregunta. Las opciones a) y b) describen lo que autorizan los permisos A2 y C1, no el B.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 32, pàgina 11 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2, fila B',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7024,14 +7750,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 384 del Codi penal reuneix tres supòsits de conducció sense habilitació —permís perdut per esgotament de punts, privació judicial i no haver-lo obtingut mai— i són exactament les opcions a), c) i d). La b) no és delicte per si sola: l’article 379.2 condemna en tot cas per damunt de 0,60 mg/l d’aire espirat, i per sota d’aquesta taxa només si es condueix **sota la influència**, cosa que l’opció no afirma. Una taxa inferior, sense influència acreditada, es queda en infracció administrativa.',
+      es: 'El artículo 384 del Código penal reúne tres supuestos de conducción sin habilitación —permiso perdido por agotamiento de puntos, privación judicial y no haberlo obtenido nunca— y son exactamente las opciones a), c) y d). La b) no es delito por sí sola: el artículo 379.2 condena en todo caso por encima de 0,60 mg/l de aire espirado, y por debajo de esa tasa solo si se conduce **bajo la influencia**, cosa que la opción no afirma. Una tasa inferior, sin influencia acreditada, se queda en infracción administrativa.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 33, pàgina 12 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 384',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7063,14 +7801,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 2.1 de la Llei 10/1999 imposa tres obligacions alhora als gossos potencialment perillosos a la via pública: han d’anar lligats, proveïts de morrió i «en cap cas no poden ésser conduïts per menors de setze anys». El «en cap cas» és el que descarta l’opció d): l’acompanyament d’un adult no salva la prohibició. I l’edat és setze anys, no divuit.',
+      es: 'El artículo 2.1 de la Ley 10/1999 impone tres obligaciones a la vez a los perros potencialmente peligrosos en la vía pública: deben ir atados, provistos de bozal y «en cap cas no poden ésser conduïts per menors de setze anys». El «en ningún caso» es lo que descarta la opción d): el acompañamiento de un adulto no salva la prohibición. Y la edad es dieciséis años, no dieciocho.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 34, pàgina 12 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-10-1999-gossos-cat',
+        locator: 'art. 2.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7102,14 +7846,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La modificació de 2021 de l’Ordenança de circulació de Roses va reescriure l’article 46.2 per encabir-hi els patinets: «Els únics vehicles autoritzats per circular pel carril bici són els cicles, les bicicletes i els vehicles de mobilitat personal». Són tres categories, no dues: les opcions a), b) i d) en deixen fora alguna. Aquesta redacció ja regia el dia de l’examen i continua vigent.',
+      es: 'La modificación de 2021 de la Ordenanza de circulación de Roses reescribió el artículo 46.2 para dar cabida a los patinetes: «Els únics vehicles autoritzats per circular pel carril bici són els cicles, les bicicletes i els vehicles de mobilitat personal». Son tres categorías, no dos: las opciones a), b) y d) dejan alguna fuera. Esta redacción ya regía el día del examen y sigue vigente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 35, pàgina 12 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio-mod-2021',
+        locator: 'art. 46.2 (redacció de 2021)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7141,14 +7891,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Aquesta pregunta té dues capes i val la pena separar-les. L’annex de l’Ordenança de convivència de Roses, en el text de 2019, qualificava la fila 11.2 —col·laborar a l’espai públic amb venedors ambulants no autoritzats— com a greu amb 750 €. La modificació aprovada el 24 de febrer de 2021, publicada al BOP de Girona núm. 54 del 19 de març de 2021 i en vigor quinze dies hàbils després, va reescriure aquella fila: passa a **lleu, 500 €**, i hi detalla les conductes (facilitar el gènere o el seu transport, vigilar i alertar de la presència dels agents). Això vol dir que el 16 d’abril de 2025, dia de l’examen, la norma vigent ja era la de 2021 i cap de les quatre opcions no deia «lleu, 500 €». Per reproduir l’examen puntua la lletra que va publicar el tribunal, que és un fet històric i no es toca; el que has d’endur-te per estudiar és la qualificació vigent.',
+      es: 'Esta pregunta tiene dos capas y vale la pena separarlas. El anexo de la Ordenanza de convivencia de Roses, en el texto de 2019, calificaba la fila 11.2 —colaborar en el espacio público con vendedores ambulantes no autorizados— como grave con 750 €. La modificación aprobada el 24 de febrero de 2021, publicada en el BOP de Girona núm. 54 del 19 de marzo de 2021 y en vigor quince días hábiles después, reescribió esa fila: pasa a **leve, 500 €**, y detalla las conductas (facilitar el género o su transporte, vigilar y alertar de la presencia de los agentes). Eso significa que el 16 de abril de 2025, día del examen, la norma vigente ya era la de 2021 y ninguna de las cuatro opciones decía «leve, 500 €». Para reproducir el examen puntúa la letra que publicó el tribunal, que es un hecho histórico y no se toca; lo que debes llevarte para estudiar es la calificación vigente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 36, pàgina 13 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 11.2 (text de 2019)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia-mod-2021',
+        locator: 'modificació cinquena, punt 2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia-mod-2021',
+        locator: 'edicte d’aprovació definitiva',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7180,14 +7948,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 17.2 de la LO 5/2000 dona al menor detingut l’entrevista reservada amb el seu advocat en dos moments, no en un: «con anterioridad y al término de la práctica de la diligencia de toma de declaración». Les opcions b) i c) es queden cadascuna amb la meitat del dret, i la d) el nega del tot.',
+      es: 'El artículo 17.2 de la LO 5/2000 da al menor detenido la entrevista reservada con su abogado en dos momentos, no en uno: «con anterioridad y al término de la práctica de la diligencia de toma de declaración». Las opciones b) y c) se quedan cada una con la mitad del derecho, y la d) lo niega del todo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 37, pàgina 13 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7219,14 +7993,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 3r de la LO 6/1984 obre la legitimació per instar l’habeas corpus a una llista ampla, i les tres primeres opcions hi són totes: la mateixa persona privada de llibertat, el Ministeri Fiscal i el Defensor del Poble —i encara hi consten el cònjuge, els parents, l’advocat defensor i el jutge d’ofici—. Com que cap de les tres és falsa, la resposta és «totes les anteriors».',
+      es: 'El artículo 3.º de la LO 6/1984 abre la legitimación para instar el habeas corpus a una lista amplia, y las tres primeras opciones están todas: la propia persona privada de libertad, el Ministerio Fiscal y el Defensor del Pueblo —y aún constan el cónyuge, los parientes, el abogado defensor y el juez de oficio—. Como ninguna de las tres es falsa, la respuesta es «todas las anteriores».',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 38, pàgina 13 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1984-habeas',
+        locator: 'art. 3r',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7258,14 +8038,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 28 de la Llei 4/2003 reparteix les funcions en tres calaixos: pròpies dels mossos, pròpies de les policies locals i compartides. Les compartides són només tres, a l’apartat 4: policia de proximitat i auxili als ciutadans, vigilància d’espais públics i «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides». Les altres opcions són pròpies —el trànsit urbà i la policia comunitària, de la local; la seguretat ciutadana i l’ordre públic, dels mossos—.',
+      es: 'El artículo 28 de la Ley 4/2003 reparte las funciones en tres cajones: propias de los mossos, propias de las policías locales y compartidas. Las compartidas son solo tres, en el apartado 4: policía de proximidad y auxilio a los ciudadanos, vigilancia de espacios públicos y «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides». Las otras opciones son propias —el tráfico urbano y la policía comunitaria, de la local; la seguridad ciudadana y el orden público, de los mossos—.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 39, pàgina 14 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 28.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 28.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7297,14 +8089,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 23.3 de la LO 4/2015 no dona una potestat general de dissoldre: la lliga a un supòsit concret i llavors n’allibera l’avís previ. Diu que quan hi ha alteració de la seguretat ciutadana «con armas, artefactos explosivos u objetos contundentes o de cualquier otro modo peligrosos», les forces i cossos de seguretat poden dissoldre o retirar vehicles i obstacles «sin necesidad de previo aviso». Les opcions a) i b) generalitzen la facultat a «qualsevol cas», i la d) manté l’avís previ que precisament l’article treu.',
+      es: 'El artículo 23.3 de la LO 4/2015 no da una potestad general de disolver: la liga a un supuesto concreto y entonces libera del aviso previo. Dice que cuando hay alteración de la seguridad ciudadana «con armas, artefactos explosivos u objetos contundentes o de cualquier otro modo peligrosos», las fuerzas y cuerpos de seguridad pueden disolver o retirar vehículos y obstáculos «sin necesidad de previo aviso». Las opciones a) y b) generalizan la facultad a «cualquier caso», y la d) mantiene el aviso previo que precisamente el artículo quita.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 40, pàgina 14 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 23.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7336,14 +8134,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Cal no confondre dos òrgans veïns de la Llei 4/2003. Les opcions a), b) i d) són funcions de la Junta Local de Seguretat, a l’article 10 —analitzar la situació de seguretat, conèixer els plans d’emergències i de seguretat viària, i executar el conveni amb el departament—. Assegurar la coordinació operativa dels diversos cossos i serveis al municipi, en canvi, és de la Mesa de Coordinació Operativa, a l’article 11.3.c. La Junta decideix i planifica; la Mesa opera.',
+      es: 'Conviene no confundir dos órganos vecinos de la Ley 4/2003. Las opciones a), b) y d) son funciones de la Junta Local de Seguridad, en el artículo 10 —analizar la situación de seguridad, conocer los planes de emergencias y de seguridad vial, y ejecutar el convenio con el departamento—. Asegurar la coordinación operativa de los distintos cuerpos y servicios en el municipio, en cambio, es de la Mesa de Coordinación Operativa, en el artículo 11.3.c. La Junta decide y planifica; la Mesa opera.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 41, pàgina 15 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 11.3.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7375,14 +8185,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 10 del Codi penal cap en una línia i cada paraula hi compta: «Son delitos las acciones y omisiones dolosas o imprudentes penadas por la ley». Les tres opcions dolentes retallen alguna d’aquestes dues parelles: deixen fora les omissions, o la imprudència, o el dol. La definició necessita totes quatre peces.',
+      es: 'El artículo 10 del Código penal cabe en una línea y cada palabra cuenta: «Son delitos las acciones y omisiones dolosas o imprudentes penadas por la ley». Las tres opciones malas recortan alguna de esas dos parejas: dejan fuera las omisiones, o la imprudencia, o el dolo. La definición necesita las cuatro piezas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 42, pàgina 15 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 10',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],

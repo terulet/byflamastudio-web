@@ -27,6 +27,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { ROSES_PACK } from '../../content/municipalities/roses/index.ts'
 import adoption from '../../content/municipalities/roses/adopcio-normativa-2026-08-24.json' with { type: 'json' }
+import evidenceMap from '../../content/municipalities/roses/questions/official-evidence-map.json' with { type: 'json' }
 
 const CACHE = fileURLToPath(new URL('../../sources/cache/', import.meta.url))
 
@@ -82,7 +83,36 @@ describe('cada referència diu la veritat sobre si està verificada', () => {
   // La clau porta el localitzador: tres microlliçons citen la mateixa font dues
   // vegades, amb dos localitzadors diferents, i cada cita es revisa per separat.
   const key = (consumer: string, sourceId: string, locator: string) => `${consumer}::${sourceId}::${locator}`
-  const byKey = new Map(adoption.claims.map((c) => [key(c.consumer, c.sourceId, c.locator), c]))
+
+  /*
+   * Hi ha dos registres de veredictes i tots dos valen, perquè tots dos diuen
+   * qui va obrir el document i què hi va trobar.
+   *
+   * El primer és l'adopció del 2026-08-24, que va revisar les referències que
+   * el banc ja tenia. El segon és la matriu probatòria de les 189 preguntes
+   * oficials: cada citació hi porta el fragment literal de la còpia local que
+   * sosté l'explicació, i és d'aquestes citacions que surten les referències
+   * normatives de les preguntes d'examen. Un registre no pot cobrir l'altre —
+   * són revisions de dies diferents sobre afirmacions diferents— però la regla
+   * que imposen és la mateixa: cap referència diu `verified` sense que algú
+   * hagi escrit què hi va llegir.
+   */
+  interface Decision {
+    citations?: Array<{ sourceId: string; locator: string; quote: string }>
+    explain?: { ca: string; es: string }
+  }
+  const decisions = evidenceMap.decisions as unknown as Record<string, Decision>
+  const evidenceClaims = Object.entries(decisions).flatMap(([questionId, decision]) =>
+    (decision.explain ? (decision.citations ?? []) : []).map((c) => ({
+      consumer: questionId,
+      sourceId: c.sourceId,
+      locator: c.locator,
+      verdict: 'demostrat',
+      evidence: c.quote,
+    })),
+  )
+  const allClaims = [...adoption.claims, ...evidenceClaims]
+  const byKey = new Map(allClaims.map((c) => [key(c.consumer, c.sourceId, c.locator), c]))
 
   it('tota referència a una de les 43 fonts té veredicte a l’adopció', () => {
     const orphans = REFERENCES.filter(
@@ -105,7 +135,7 @@ describe('cada referència diu la veritat sobre si està verificada', () => {
   })
 
   it('cap veredicte es dona per bo sense el fragment que el sosté', () => {
-    for (const claim of adoption.claims) {
+    for (const claim of allClaims) {
       // Un localitzador («art. 95») ja és evidència útil si algú l'ha obert i
       // hi ha trobat la proposició; el que no pot passar és que no hi hagi res.
       expect(claim.evidence, `${claim.consumer}::${claim.sourceId}`).toBeTruthy()
@@ -152,6 +182,7 @@ describe('el que encara no es pot afirmar es diu, no es tapa', () => {
   function byKey(r: (typeof REFERENCES)[number]) {
     return adoption.claims.find((c) => c.consumer === r.consumer && c.sourceId === r.ref.sourceId)
   }
+
 
   it('i les fonts que falten estan enumerades amb el motiu', () => {
     expect(adoption.missingSources.length).toBeGreaterThan(0)

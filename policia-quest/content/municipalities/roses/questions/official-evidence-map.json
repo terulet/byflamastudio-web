@@ -1246,7 +1246,11 @@
           "locator": "art. 6.1",
           "quote": "El Consell de Seguretat de Catalunya és l’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 6.1 de la Llei 4/2003 defineix el Consell de Seguretat de Catalunya com «l’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat». Dues paraules decideixen la pregunta: **consultiu** (no executiu, o sigui que no mana ni resol) i **superior** (no inferior). Les opcions b) i d) hi posen «executiu» i la c) el degrada a inferior.",
+        "es": "El artículo 6.1 de la Ley 4/2003 define el Consejo de Seguridad de Cataluña como «l’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat». Dos palabras deciden la pregunta: **consultivo** (no ejecutivo, o sea que no manda ni resuelve) y **superior** (no inferior). Las opciones b) y d) ponen «ejecutivo» y la c) lo degrada a inferior."
+      }
     },
     "q-of-roses-2025-propietat-cp-024": {
       "status": "supported-current",
@@ -1257,7 +1261,11 @@
           "locator": "art. 12.2",
           "quote": "Les funcions assenyalades per l’apartat 1 s’han de complir d’acord amb els principis de cooperació mútua i de col·laboració recíproca amb la resta de forces i cossos de seguretat."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 12.2 de la Llei 16/1991 diu com s’han de complir les funcions de policia judicial: «d’acord amb els principis de cooperació mútua i de col·laboració recíproca amb la resta de forces i cossos de seguretat». Són dos principis aparellats amb el seu adjectiu —cooperació **mútua**, col·laboració **recíproca**— i amb un destinatari exprés: la resta de forces i cossos. Les altres opcions hi afegeixen o hi canvien termes que l’article no fa servir.",
+        "es": "El artículo 12.2 de la Ley 16/1991 dice cómo deben cumplirse las funciones de policía judicial: «d’acord amb els principis de cooperació mútua i de col·laboració recíproca amb la resta de forces i cossos de seguretat». Son dos principios emparejados con su adjetivo —cooperación **mutua**, colaboración **recíproca**— y con un destinatario expreso: el resto de fuerzas y cuerpos. Las otras opciones añaden o cambian términos que el artículo no usa."
+      }
     },
     "q-of-roses-2025-propietat-cp-025": {
       "status": "supported-current",
@@ -1268,7 +1276,11 @@
           "locator": "art. 25.3",
           "quote": "les categories d’intendent major i d’intendent només es poden crear en els municipis que tenen més de cent mil habitants. En els municipis de menys de cent mil habitants es poden crear excepcionalment les categories d’intendent major i d’intendent, si el nombre d’agents hi excedeix de dos-cents cinquanta o de cent, respectivament"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 25.3 de la Llei 16/1991 té regla i excepció, i la resposta ha de portar les dues. La regla: intendent major i intendent «només es poden crear en els municipis que tenen més de cent mil habitants». L’excepció: per sota d’aquesta xifra es poden crear igualment «si el nombre d’agents hi excedeix de dos-cents cinquanta o de cent, respectivament» i les característiques del municipi ho aconsellen. Per això la b), que diu «sempre i en tot cas», falla: hi ha excepció.",
+        "es": "El artículo 25.3 de la Ley 16/1991 tiene regla y excepción, y la respuesta debe llevar las dos. La regla: intendente mayor e intendente «només es poden crear en els municipis que tenen més de cent mil habitants». La excepción: por debajo de esa cifra pueden crearse igualmente «si el nombre d’agents hi excedeix de dos-cents cinquanta o de cent, respectivament» y las características del municipio lo aconsejan. Por eso la b), que dice «siempre y en todo caso», falla: hay excepción."
+      }
     },
     "q-of-roses-2025-propietat-cp-026": {
       "status": "supported-current",
@@ -1279,7 +1291,11 @@
           "locator": "art. 26.2",
           "quote": "És cap del cos el membre de la plantilla de major graduació; en cas d’igualtat, correspon a l’alcalde de fer el nomenament"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 26.2 de la Llei 16/1991 resol la prefectura per graduació, no per càrrec polític: «És cap del cos el membre de la plantilla de major graduació; en cas d’igualtat, correspon a l’alcalde de fer el nomenament». L’alcalde hi apareix, però només per desempatar. No confonguis la prefectura del cos amb el comandament superior, que sí que és de l’alcaldia.",
+        "es": "El artículo 26.2 de la Ley 16/1991 resuelve la jefatura por graduación, no por cargo político: «És cap del cos el membre de la plantilla de major graduació; en cas d’igualtat, correspon a l’alcalde de fer el nomenament». El alcalde aparece, pero solo para desempatar. No confundas la jefatura del cuerpo con el mando superior, que sí es de la alcaldía."
+      }
     },
     "q-of-roses-2025-propietat-cp-027": {
       "status": "supported-current",
@@ -1295,7 +1311,11 @@
           "locator": "art. 49.e, 49.h i 49.j",
           "quote": "e) El fet d’originar enfrontaments en el servei… h) La intervenció en un procediment administratiu si hi ha establerts legalment motius d’abstenció. j) El consum de begudes alcohòliques durant el servei i el fet de negar-se a les comprovacions tècniques pertinents."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "Les quatre opcions són faltes reals de la Llei 16/1991; el que canvia és el calaix. Els enfrontaments en el servei, intervenir havent-hi motiu d’abstenció i el consum d’alcohol en servei són faltes **greus** de l’article 49 (lletres e, h i j). La manifesta manca de col·laboració amb altres membres de les forces o cossos de seguretat, en canvi, és **molt greu** i és a l’article 48.1: la llei protegeix la coordinació entre cossos amb el grau més alt.",
+        "es": "Las cuatro opciones son faltas reales de la Ley 16/1991; lo que cambia es el cajón. Los enfrentamientos en el servicio, intervenir habiendo motivo de abstención y el consumo de alcohol en servicio son faltas **graves** del artículo 49 (letras e, h y j). La manifiesta falta de colaboración con otros miembros de las fuerzas o cuerpos de seguridad, en cambio, es **muy grave** y está en el artículo 48.1: la ley protege la coordinación entre cuerpos con el grado más alto."
+      }
     },
     "q-of-roses-2025-propietat-cp-028": {
       "status": "supported-current",
@@ -1306,7 +1326,11 @@
           "locator": "art. 20.2",
           "quote": "podran estacionar a les voreres de més de 3´4 metres d’amplada, en una única fila, a una distància mínima d’un metre entre elles"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 20.2 de l’Ordenança de circulació de Roses permet estacionar motocicletes i ciclomotors de dues rodes a la vorera quan no hi ha lloc senyalitzat a prop o està ocupat, però només «a les voreres de més de 3´4 metres d’amplada, en una única fila, a una distància mínima d’un metre entre elles». La xifra és 3,4 metres i les condicions d’una sola fila i un metre de separació formen part de la mateixa regla. La modificació de 2021 de l’ordenança no toca aquest article.",
+        "es": "El artículo 20.2 de la Ordenanza de circulación de Roses permite estacionar motocicletas y ciclomotores de dos ruedas en la acera cuando no hay sitio señalizado cerca o está ocupado, pero solo «a les voreres de més de 3´4 metres d’amplada, en una única fila, a una distància mínima d’un metre entre elles». La cifra es 3,4 metros y las condiciones de una sola fila y un metro de separación forman parte de la misma regla. La modificación de 2021 de la ordenanza no toca este artículo."
+      }
     },
     "q-of-roses-2025-propietat-cp-029": {
       "status": "supported-current",
@@ -1317,7 +1341,11 @@
           "locator": "art. 41",
           "quote": "Llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades des de les 10 del vespre fins a les 8 del matí cada dia."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 41 de l’Ordenança de circulació de Roses tanca la càrrega i descàrrega en horari nocturn: «Llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades des de les 10 del vespre fins a les 8 del matí cada dia». Dues dades a fixar: l’hora de reobertura són les 8, no les 10, i la prohibició és de **cada dia**, no només de cap de setmana. La modificació de 2021 no toca aquest article.",
+        "es": "El artículo 41 de la Ordenanza de circulación de Roses cierra la carga y descarga en horario nocturno: «Llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades des de les 10 del vespre fins a les 8 del matí cada dia». Dos datos que fijar: la hora de reapertura son las 8, no las 10, y la prohibición es de **cada día**, no solo de fin de semana. La modificación de 2021 no toca este artículo."
+      }
     },
     "q-of-roses-2025-propietat-cp-030": {
       "status": "supported-current",
@@ -1328,7 +1356,11 @@
           "locator": "art. 17.4",
           "quote": "La detención de un menor por funcionarios de policía no podrá durar más tiempo del estrictamente necesario… y, en todo caso, dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "La detenció d’un menor té un sostre més curt que la d’un adult. L’article 17.4 de la LO 5/2000 diu que no pot durar «más tiempo del estrictamente necesario» i que «en todo caso, dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal». Vint-i-quatre hores, doncs, i no les setanta-dues de l’article 17.2 de la Constitució; i el destinatari també canvia: el fiscal, no el jutjat.",
+        "es": "La detención de un menor tiene un techo más corto que la de un adulto. El artículo 17.4 de la LO 5/2000 dice que no puede durar «más tiempo del estrictamente necesario» y que «en todo caso, dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal». Veinticuatro horas, pues, y no las setenta y dos del artículo 17.2 de la Constitución; y el destinatario también cambia: el fiscal, no el juzgado."
+      }
     },
     "q-of-roses-2025-propietat-cp-031": {
       "status": "supported-current",
@@ -1339,7 +1371,11 @@
           "locator": "art. 18.2",
           "quote": "El domicilio es inviolable. Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 18.2 de la Constitució declara el domicili inviolable i tot seguit obre exactament tres portes: «Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito». Consentiment, resolució judicial i delicte flagrant són les tres opcions de la pregunta, i com que no en falta cap, la resposta és «totes».",
+        "es": "El artículo 18.2 de la Constitución declara el domicilio inviolable y acto seguido abre exactamente tres puertas: «Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito». Consentimiento, resolución judicial y delito flagrante son las tres opciones de la pregunta, y como no falta ninguna, la respuesta es «todas»."
+      }
     },
     "q-of-roses-2025-propietat-cp-032": {
       "status": "supported-current",
@@ -1350,7 +1386,11 @@
           "locator": "art. 379.1",
           "quote": "El que condujere un vehículo de motor o un ciclomotor a velocidad superior en sesenta kilómetros por hora en vía urbana o en ochenta kilómetros por hora en vía interurbana a la permitida reglamentariamente"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 379.1 del Codi penal posa dues xifres i cal no barrejar-les: castiga qui condueixi «a velocidad superior en sesenta kilómetros por hora en vía urbana o en ochenta kilómetros por hora en vía interurbana a la permitida reglamentariamente». La pregunta demana la urbana: seixanta km/h per damunt del límit. I compte, és un excés **sobre** el permès, no una velocitat absoluta.",
+        "es": "El artículo 379.1 del Código penal pone dos cifras y conviene no mezclarlas: castiga a quien conduzca «a velocidad superior en sesenta kilómetros por hora en vía urbana o en ochenta kilómetros por hora en vía interurbana a la permitida reglamentariamente». La pregunta pide la urbana: sesenta km/h por encima del límite. Y ojo, es un exceso **sobre** lo permitido, no una velocidad absoluta."
+      }
     },
     "q-of-roses-2025-propietat-cp-033": {
       "status": "supported-current",
@@ -1366,7 +1406,11 @@
           "locator": "art. 49.d i 49.m",
           "quote": "d) El fet de causar, per negligència o per mala fe, danys greus en el patrimoni i els béns de la corporació. … m) La reincidència en la comissió de faltes lleus."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "La discriminació per raó de raça, sexe, orientació sexual, religió, llengua o qualsevol altra condició personal o social és falta molt greu a l’article 48.1.b de la Llei 16/1991. Les altres dues conductes que proposa la pregunta són **greus**: causar danys greus al patrimoni de la corporació és l’article 49.d i la reincidència en faltes lleus, l’article 49.m. L’adjectiu és el que decideix: només els danys molt greus pugen a molt greus.",
+        "es": "La discriminación por razón de raza, sexo, orientación sexual, religión, lengua o cualquier otra condición personal o social es falta muy grave en el artículo 48.1.b de la Ley 16/1991. Las otras dos conductas que propone la pregunta son **graves**: causar daños graves al patrimonio de la corporación es el artículo 49.d y la reincidencia en faltas leves, el artículo 49.m. El adjetivo es lo que decide: solo los daños muy graves suben a muy graves."
+      }
     },
     "q-of-roses-2025-propietat-cp-034": {
       "status": "supported-current",
@@ -1377,7 +1421,11 @@
           "locator": "art. 24.1.b i 24.2.b",
           "quote": "b) Escala executiva, que comprèn la categoria d’inspector… b) A l’escala executiva, el grup A, subgrup A2."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 24 de la Llei 16/1991 encaixa cada categoria en una escala i cada escala en un grup de titulació. L’apartat 1.b posa l’inspector a l’escala executiva i l’apartat 2.b assigna a aquesta escala «el grup A, subgrup A2». Les tres dades van juntes: escala executiva, grup A, subgrup A2. Confondre-la amb l’escala intermèdia (C1) o amb la superior (A1) és l’error que busca la pregunta.",
+        "es": "El artículo 24 de la Ley 16/1991 encaja cada categoría en una escala y cada escala en un grupo de titulación. El apartado 1.b sitúa al inspector en la escala ejecutiva y el apartado 2.b asigna a esa escala «el grup A, subgrup A2». Los tres datos van juntos: escala ejecutiva, grupo A, subgrupo A2. Confundirla con la escala intermedia (C1) o con la superior (A1) es el error que busca la pregunta."
+      }
     },
     "q-of-roses-2025-propietat-cp-035": {
       "status": "supported-current",
@@ -1388,7 +1436,11 @@
           "locator": "art. 51.2",
           "quote": "Els policies locals que encobreixin les faltes molt greus i greus consumades incorren en una falta d’un grau inferior."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 51.2 de la Llei 16/1991 tracta l’encobriment com una participació menor: «Els policies locals que encobreixin les faltes molt greus i greus consumades incorren en una falta d’un grau inferior». Un grau **avall**, doncs: encobrir una molt greu és greu, i encobrir una greu és lleu. La lògica és que qui encobreix no comet la falta, però tampoc no queda indemne.",
+        "es": "El artículo 51.2 de la Ley 16/1991 trata el encubrimiento como una participación menor: «Els policies locals que encobreixin les faltes molt greus i greus consumades incorren en una falta d’un grau inferior». Un grado **abajo**, pues: encubrir una muy grave es grave, y encubrir una grave es leve. La lógica es que quien encubre no comete la falta, pero tampoco queda indemne."
+      }
     },
     "q-of-roses-2025-propietat-cp-036": {
       "status": "supported-current",
@@ -1399,7 +1451,11 @@
           "locator": "art. 16.2",
           "quote": "que en ningún caso podrá superar las seis horas"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 16 de la LO 4/2015 permet portar algú a dependències policials per identificar-lo quan no ha estat possible fer-ho al carrer, però hi posa un límit dur: la diligència no pot durar més del temps imprescindible i «en ningún caso podrá superar las seis horas». No és una detenció ni compta com a tal, i per això el termini és molt més curt que les setanta-dues hores de l’article 17.2 de la Constitució.",
+        "es": "El artículo 16 de la LO 4/2015 permite llevar a alguien a dependencias policiales para identificarlo cuando no ha sido posible hacerlo en la calle, pero le pone un límite duro: la diligencia no puede durar más del tiempo imprescindible y «en ningún caso podrá superar las seis horas». No es una detención ni cuenta como tal, y por eso el plazo es mucho más corto que las setenta y dos horas del artículo 17.2 de la Constitución."
+      }
     },
     "q-of-roses-2025-propietat-cp-037": {
       "status": "out-of-syllabus",
@@ -1410,7 +1466,11 @@
           "locator": "art. 250.1.5è",
           "quote": "El delito de estafa será castigado con las penas de prisión de uno a seis años y multa de seis a doce meses, cuando: … 5.º El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 250.1 del Codi penal apuja l’estafa a presó d’un a sis anys i multa de sis a dotze mesos en una llista de circumstàncies, i la cinquena és la que descriu l’opció a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». Fixa’t que hi ha una **o**: n’hi ha prou amb una de les dues coses. Les altres opcions rebaixen la xifra o inventen supòsits que l’article no recull. Aquesta pregunta queda fora dels 40 temes de la convocatòria —el temari cobreix furts i robatoris, no l’estafa—, i per això no entra a l’entrenament per temes.",
+        "es": "El artículo 250.1 del Código penal sube la estafa a prisión de uno a seis años y multa de seis a doce meses en una lista de circunstancias, y la quinta es la que describe la opción a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». Fíjate en que hay una **o**: basta con una de las dos cosas. Las otras opciones rebajan la cifra o inventan supuestos que el artículo no recoge. Esta pregunta queda fuera de los 40 temas de la convocatoria —el temario cubre hurtos y robos, no la estafa—, y por eso no entra en el entrenamiento por temas."
+      }
     },
     "q-of-roses-2025-propietat-cp-038": {
       "status": "supported-current",
@@ -1421,7 +1481,11 @@
           "locator": "art. 519",
           "quote": "Todas las diligencias de prisión provisional se sustanciarán en pieza separada."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 519 de la Llei d’enjudiciament criminal cap en una línia: «Todas las diligencias de prisión provisional se sustanciarán en pieza separada». La peça separada serveix perquè la decisió sobre la llibertat d’algú es tramiti i es recorri pel seu compte, sense quedar enganxada al ritme de la causa principal.",
+        "es": "El artículo 519 de la Ley de enjuiciamiento criminal cabe en una línea: «Todas las diligencias de prisión provisional se sustanciarán en pieza separada». La pieza separada sirve para que la decisión sobre la libertad de alguien se tramite y se recurra por su cuenta, sin quedar pegada al ritmo de la causa principal."
+      }
     },
     "q-of-roses-2025-propietat-cp-039": {
       "status": "supported-current",
@@ -1432,7 +1496,11 @@
           "locator": "art. 7è.3",
           "quote": "La Guardia Civil sólo tendrá consideración de fuerza armada en el cumplimiento de las misiones de carácter militar que se le encomienden, de acuerdo con el ordenamiento jurídico."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 7.3 de la LOFCS delimita quan la Guàrdia Civil és força armada, i el criteri és la naturalesa de la missió: «sólo tendrá consideración de fuerza armada en el cumplimiento de las misiones de carácter militar que se le encomienden, de acuerdo con el ordenamiento jurídico». El «sólo» és el nucli de la regla: en les missions policials ordinàries no ho és, per molt que el cos tingui naturalesa militar.",
+        "es": "El artículo 7.3 de la LOFCS delimita cuándo la Guardia Civil es fuerza armada, y el criterio es la naturaleza de la misión: «sólo tendrá consideración de fuerza armada en el cumplimiento de las misiones de carácter militar que se le encomienden, de acuerdo con el ordenamiento jurídico». El «sólo» es el núcleo de la regla: en las misiones policiales ordinarias no lo es, por mucho que el cuerpo tenga naturaleza militar."
+      }
     },
     "q-of-roses-2025-propietat-cp-040": {
       "status": "supported-current",
@@ -1443,7 +1511,11 @@
           "locator": "art. 379.2",
           "quote": "En todo caso será condenado con dichas penas el que condujere con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "0,61 mg/l en aire espirat passa el llindar de l’article 379.2 del Codi penal, que condemna «en todo caso» per damunt de 0,60 mg/l: per tant hi ha delicte i la denúncia és penal, no administrativa. Ara bé, delicte no vol dir detenció automàtica: detenir és una decisió que l’agent ha de justificar amb les circumstàncies del cas, i l’enunciat no en dona cap. Per això la resposta és denunciar penalment sense detenir.",
+        "es": "0,61 mg/l en aire espirado pasa el umbral del artículo 379.2 del Código penal, que condena «en todo caso» por encima de 0,60 mg/l: por tanto hay delito y la denuncia es penal, no administrativa. Ahora bien, delito no significa detención automática: detener es una decisión que el agente debe justificar con las circunstancias del caso, y el enunciado no da ninguna. Por eso la respuesta es denunciar penalmente sin detener."
+      }
     },
     "q-of-roses-2025-propietat-cp-041": {
       "status": "supported-current",
@@ -1454,7 +1526,11 @@
           "locator": "art. 31.2.b",
           "quote": "la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 31.2.b de la Llei 39/2015 protegeix qui presenta un escrit en dia inhàbil: «la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil». Dues precisions que decideixen la pregunta: el dia és **hàbil**, no natural, i l’excepció final forma part de la regla. Que es pugui presentar descarta la d).",
+        "es": "El artículo 31.2.b de la Ley 39/2015 protege a quien presenta un escrito en día inhábil: «la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil». Dos precisiones que deciden la pregunta: el día es **hábil**, no natural, y la excepción final forma parte de la regla. Que pueda presentarse descarta la d)."
+      }
     },
     "q-of-roses-2025-propietat-cp-042": {
       "status": "supported-current",
@@ -1470,7 +1546,11 @@
           "locator": "art. 28.3",
           "quote": "Són funcions pròpies de les policies locals: … b) Les de policia de trànsit urbà… e) Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 28 de la Llei 4/2003 té tres apartats i cadascun un titular: funcions pròpies dels mossos, funcions pròpies de les policies locals i funcions compartides. Les compartides són només tres, a l’apartat 4, i entre elles hi ha «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides». El trànsit urbà i la policia comunitària són pròpies de la local, i la seguretat ciutadana i l’ordre públic, dels mossos.",
+        "es": "El artículo 28 de la Ley 4/2003 tiene tres apartados y cada uno un titular: funciones propias de los mossos, funciones propias de las policías locales y funciones compartidas. Las compartidas son solo tres, en el apartado 4, y entre ellas está «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides». El tráfico urbano y la policía comunitaria son propias de la local, y la seguridad ciudadana y el orden público, de los mossos."
+      }
     },
     "q-of-roses-2026-interins-cg-001": {
       "status": "general-knowledge",
@@ -1586,7 +1666,11 @@
           "locator": "art. 2",
           "quote": "reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 2 de la Constitució posa unitat i autonomia en la mateixa frase: es fonamenta en la indissoluble unitat de la Nació espanyola i «reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran». Autonomia, doncs, no independència: el mateix article que garanteix la primera afirma la unitat que exclou la segona.",
+        "es": "El artículo 2 de la Constitución pone unidad y autonomía en la misma frase: se fundamenta en la indisoluble unidad de la Nación española y «reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran». Autonomía, pues, no independencia: el mismo artículo que garantiza la primera afirma la unidad que excluye la segunda."
+      }
     },
     "q-of-roses-2026-interins-cp-002": {
       "status": "supported-current",
@@ -1597,7 +1681,11 @@
           "locator": "art. 16.2",
           "quote": "Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’opció certa és el text de l’article 16.2 de la Constitució: «Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias». Les altres tres les desmenteix el mateix article: l’apartat 1 sí que posa un límit a la manifestació d’aquestes llibertats —l’ordre públic protegit per la llei—, i l’apartat 3 diu que cap confessió tindrà caràcter estatal però que els poders públics tindran en compte les creences de la societat i mantindran relacions de cooperació.",
+        "es": "La opción cierta es el texto del artículo 16.2 de la Constitución: «Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias». Las otras tres las desmiente el mismo artículo: el apartado 1 sí pone un límite a la manifestación de esas libertades —el orden público protegido por la ley—, y el apartado 3 dice que ninguna confesión tendrá carácter estatal pero que los poderes públicos tendrán en cuenta las creencias de la sociedad y mantendrán relaciones de cooperación."
+      }
     },
     "q-of-roses-2026-interins-cp-003": {
       "status": "supported-current",
@@ -1608,7 +1696,11 @@
           "locator": "art. 6.1",
           "quote": "La llengua pròpia de Catalunya és el català."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 6.1 de l’Estatut ho diu en quatre paraules: «La llengua pròpia de Catalunya és el català». La pregunta demana la que és pròpia **i** oficial: el castellà és oficial però no propi de Catalunya, i l’aranès és la llengua pròpia de l’Aran, no de tot el país.",
+        "es": "El artículo 6.1 del Estatuto lo dice en cuatro palabras: «La llengua pròpia de Catalunya és el català». La pregunta pide la que es propia **y** oficial: el castellano es oficial pero no propio de Cataluña, y el aranés es la lengua propia del Arán, no de todo el país."
+      }
     },
     "q-of-roses-2026-interins-cp-004": {
       "status": "supported-current",
@@ -1619,7 +1711,11 @@
           "locator": "art. 132.1",
           "quote": "Correspon a la Generalitat la competència exclusiva en matèria de protecció civil"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 132.1 de l’Estatut atribueix a la Generalitat «la competència exclusiva en matèria de protecció civil». Que sigui exclusiva no vol dir que els municipis no hi facin res —l’article 84.2.f els reconeix la protecció civil com a competència pròpia—, però la titularitat de la competència, que és el que pregunta l’enunciat, és de la Generalitat.",
+        "es": "El artículo 132.1 del Estatuto atribuye a la Generalitat «la competència exclusiva en matèria de protecció civil». Que sea exclusiva no significa que los municipios no hagan nada —el artículo 84.2.f les reconoce la protección civil como competencia propia—, pero la titularidad de la competencia, que es lo que pregunta el enunciado, es de la Generalitat."
+      }
     },
     "q-of-roses-2026-interins-cp-005": {
       "status": "supported-current",
@@ -1630,7 +1726,11 @@
           "locator": "art. 26.1.c i 26.1.d",
           "quote": "c) En los Municipios con población superior a 20.000 habitantes, además: protección civil… prevención y extinción de incendios… d) En los Municipios con población superior a 50.000 habitantes, además: transporte colectivo urbano de viajeros y medio ambiente urbano."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 26.1 de la Llei de bases del règim local acumula serveis per trams de població, i el tram decideix la resposta. La protecció civil i la prevenció i extinció d’incendis apareixen a la lletra c), per damunt dels 20.000 habitants, i la pavimentació de les vies públiques ja ve del tram bàsic. El transport col·lectiu urbà de viatgers, en canvi, és de la lletra d): només a partir de 50.000 habitants.",
+        "es": "El artículo 26.1 de la Ley de bases del régimen local acumula servicios por tramos de población, y el tramo decide la respuesta. La protección civil y la prevención y extinción de incendios aparecen en la letra c), por encima de los 20.000 habitantes, y la pavimentación de las vías públicas ya viene del tramo básico. El transporte colectivo urbano de viajeros, en cambio, es de la letra d): solo a partir de 50.000 habitantes."
+      }
     },
     "q-of-roses-2026-interins-cp-006": {
       "status": "supported-current",
@@ -1641,7 +1741,11 @@
           "locator": "art. 70.2 i 65.2",
           "quote": "no entrarán en vigor hasta que se haya publicado completamente su texto y haya transcurrido el plazo previsto en el artículo 65.2"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "La publicació no és l’últim pas: l’article 70.2 de la Llei de bases del règim local diu que les ordenances i els reglaments «no entrarán en vigor hasta que se haya publicado completamente su texto y haya transcurrido el plazo previsto en el artículo 65.2», i aquell termini és de quinze dies hàbils. Compte de no confondre’l amb els trenta dies mínims d’informació pública de l’aprovació inicial: són dos moments diferents del mateix procediment.",
+        "es": "La publicación no es el último paso: el artículo 70.2 de la Ley de bases del régimen local dice que las ordenanzas y reglamentos «no entrarán en vigor hasta que se haya publicado completamente su texto y haya transcurrido el plazo previsto en el artículo 65.2», y ese plazo es de quince días hábiles. Cuidado con no confundirlo con los treinta días mínimos de información pública de la aprobación inicial: son dos momentos distintos del mismo procedimiento."
+      }
     },
     "q-of-roses-2026-interins-cp-007": {
       "status": "supported-current",
@@ -1652,7 +1756,11 @@
           "locator": "art. 159.1",
           "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 159.1 de la Constitució obre la regulació del Tribunal Constitucional amb la xifra: «El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Dotze magistrats, que encaixen amb la renovació per terços cada tres anys de l’apartat 3: quatre cada vegada.",
+        "es": "El artículo 159.1 de la Constitución abre la regulación del Tribunal Constitucional con la cifra: «El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Doce magistrados, que encajan con la renovación por tercios cada tres años del apartado 3: cuatro cada vez."
+      }
     },
     "q-of-roses-2026-interins-cp-008": {
       "status": "supported-current",
@@ -1663,7 +1771,11 @@
           "locator": "art. 52",
           "quote": "Deberes de los empleados públicos. Código de Conducta. Los empleados públicos deberán desempeñar con diligencia las tareas que tengan asignadas"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "El títol de l’article 52 del text refós ja dona la resposta: «Deberes de los empleados públicos. Código de Conducta», i el text s’obre amb «Los empleados públicos deberán…». «Empleat públic» és el terme ampli de l’Estatut i inclou tant funcionaris com personal laboral: per això la a), que el redueix als funcionaris, es queda curta.",
+        "es": "El título del artículo 52 del texto refundido ya da la respuesta: «Deberes de los empleados públicos. Código de Conducta», y el texto se abre con «Los empleados públicos deberán…». «Empleado público» es el término amplio del Estatuto e incluye tanto a funcionarios como a personal laboral: por eso la a), que lo reduce a los funcionarios, se queda corta."
+      }
     },
     "q-of-roses-2026-interins-cp-009": {
       "status": "supported-current",
@@ -1674,7 +1786,11 @@
           "locator": "títol i art. 1.1",
           "quote": "Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas… El personal comprendido en el ámbito de aplicación de esta Ley no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "El règim que descriu l’enunciat té nom propi i és el de la Llei 53/1984, «de Incompatibilidades del personal al servicio de las Administraciones Públicas». El seu article 1.1 és exactament el que resumeix la pregunta: el personal inclòs «no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público». Les altres tres opcions són noms inventats.",
+        "es": "El régimen que describe el enunciado tiene nombre propio y es el de la Ley 53/1984, «de Incompatibilidades del personal al servicio de las Administraciones Públicas». Su artículo 1.1 es exactamente lo que resume la pregunta: el personal incluido «no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público». Las otras tres opciones son nombres inventados."
+      }
     },
     "q-of-roses-2026-interins-cp-010": {
       "status": "supported-current",
@@ -1685,7 +1801,11 @@
           "locator": "art. 165.4",
           "quote": "Cada uno de los presupuestos que se integran en el presupuesto general deberá aprobarse sin déficit inicial."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 165.4 del text refós de la Llei d’hisendes locals diu just el contrari de l’opció b): «Cada uno de los presupuestos que se integran en el presupuesto general deberá aprobarse sin déficit inicial». Un pressupost pot acabar l’any amb desviacions, però no pot **néixer** desquadrat. Les altres tres opcions són certes: l’exercici coincideix amb l’any natural, el forma el president de l’entitat i s’aprova definitivament abans del 31 de desembre anterior.",
+        "es": "El artículo 165.4 del texto refundido de la Ley de haciendas locales dice justo lo contrario de la opción b): «Cada uno de los presupuestos que se integran en el presupuesto general deberá aprobarse sin déficit inicial». Un presupuesto puede acabar el año con desviaciones, pero no puede **nacer** descuadrado. Las otras tres opciones son ciertas: el ejercicio coincide con el año natural, lo forma el presidente de la entidad y se aprueba definitivamente antes del 31 de diciembre anterior."
+      }
     },
     "q-of-roses-2026-interins-cp-011": {
       "status": "supported-current",
@@ -1696,7 +1816,11 @@
           "locator": "art. 50.a i 50.b",
           "quote": "Són faltes lleus: a) La incorrecció envers els superiors, els companys, els subordinats o els ciutadans. b) El retard, la negligència i el descuit en el compliment de les funcions o de les ordres rebudes."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "Les dues conductes de l’enunciat són, per ordre, les lletres a) i b) de l’article 50 de la Llei 16/1991, que és el de les faltes **lleus**: la incorrecció envers superiors, companys, subordinats o ciutadans, i el retard, la negligència i el descuit en el compliment de les funcions o de les ordres rebudes. Convé no confondre-les amb la desobediència de l’article 49.a, que sí que és greu: aquí no hi ha refús d’una ordre, sinó compliment defectuós. I «supergreu» no existeix a la llei.",
+        "es": "Las dos conductas del enunciado son, por orden, las letras a) y b) del artículo 50 de la Ley 16/1991, que es el de las faltas **leves**: la incorrección hacia superiores, compañeros, subordinados o ciudadanos, y el retraso, la negligencia y el descuido en el cumplimiento de las funciones o de las órdenes recibidas. Conviene no confundirlas con la desobediencia del artículo 49.a, que sí es grave: aquí no hay rechazo de una orden, sino cumplimiento defectuoso. Y «supergrave» no existe en la ley."
+      }
     },
     "q-of-roses-2026-interins-cp-012": {
       "status": "supported-current",
@@ -1707,7 +1831,11 @@
           "locator": "títol i art. 1.1",
           "quote": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "La norma que regula el procediment administratiu comú és la que porta aquest nom al títol: la Llei 39/2015, d’1 d’octubre, del procediment administratiu comú de les administracions públiques. La parella que va sortir el mateix dia, la Llei 40/2015, regula una altra cosa —el règim jurídic del sector públic, és a dir, com s’organitza l’administració per dins—. Les opcions c) i d) juguen amb la llei catalana 26/2010, que no és la norma estatal comuna.",
+        "es": "La norma que regula el procedimiento administrativo común es la que lleva ese nombre en el título: la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. La pareja que salió el mismo día, la Ley 40/2015, regula otra cosa —el régimen jurídico del sector público, es decir, cómo se organiza la administración por dentro—. Las opciones c) y d) juegan con la ley catalana 26/2010, que no es la norma estatal común."
+      }
     },
     "q-of-roses-2026-interins-cp-013": {
       "status": "supported-current",
@@ -1718,7 +1846,11 @@
           "locator": "art. 40.2",
           "quote": "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 40.2 de la Llei 39/2015 posa un termini intern per no deixar dormir els actes: «Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado». Fixa’t que el que compta és **cursar** la notificació, no que arribi: el termini mira l’administració, no la persona destinatària.",
+        "es": "El artículo 40.2 de la Ley 39/2015 pone un plazo interno para no dejar dormir los actos: «Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado». Fíjate en que lo que cuenta es **cursar** la notificación, no que llegue: el plazo mira a la administración, no a la persona destinataria."
+      }
     },
     "q-of-roses-2026-interins-cp-014": {
       "status": "supported-current",
@@ -1729,7 +1861,11 @@
           "locator": "art. 4.1",
           "quote": "a) Quienes lo promuevan como titulares de derechos o intereses legítimos individuales o colectivos. b) Los que, sin haber iniciado el procedimiento, tengan derechos que puedan resultar afectados… c) Aquellos cuyos intereses legítimos… puedan resultar afectados por la resolución y se personen en el procedimiento"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 4.1 de la Llei 39/2015 tanca en tres lletres qui és persona interessada, i són exactament les tres primeres opcions: qui promou el procediment, qui té drets que hi poden quedar afectats encara que no l’hagi iniciat, i qui té interessos legítims afectats i s’hi persona abans de la resolució definitiva. Denunciar no és cap d’aquestes tres coses: qui denuncia posa uns fets en coneixement de l’administració, i això sol no li dona la condició d’interessat.",
+        "es": "El artículo 4.1 de la Ley 39/2015 cierra en tres letras quién es persona interesada, y son exactamente las tres primeras opciones: quien promueve el procedimiento, quien tiene derechos que pueden resultar afectados aunque no lo haya iniciado, y quien tiene intereses legítimos afectados y se persona antes de la resolución definitiva. Denunciar no es ninguna de esas tres cosas: quien denuncia pone unos hechos en conocimiento de la administración, y eso solo no le da la condición de interesado."
+      }
     },
     "q-of-roses-2026-interins-cp-015": {
       "status": "supported-current",
@@ -1740,7 +1876,11 @@
           "locator": "art. 21.1",
           "quote": "La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos cualquiera que sea su forma de iniciación."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 21.1 de la Llei 39/2015 imposa dues obligacions encadenades: «La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos cualquiera que sea su forma de iniciación». No n’hi ha prou de resoldre: la resolució ha d’arribar a qui l’espera. Publicar-la és un altre acte, i només substitueix la notificació en els casos que la llei preveu.",
+        "es": "El artículo 21.1 de la Ley 39/2015 impone dos obligaciones encadenadas: «La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos cualquiera que sea su forma de iniciación». No basta con resolver: la resolución debe llegar a quien la espera. Publicarla es otro acto, y solo sustituye a la notificación en los casos que la ley prevé."
+      }
     },
     "q-of-roses-2026-interins-cp-016": {
       "status": "supported-current",
@@ -1751,7 +1891,11 @@
           "locator": "art. 69.2",
           "quote": "se entenderá por comunicación aquel documento mediante el que los interesados ponen en conocimiento de la Administración Pública competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 69.2 de la Llei 39/2015 defineix la comunicació com «aquel documento mediante el que los interesados ponen en conocimiento de la Administración Pública competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho»: paraula per paraula, l’enunciat. La declaració responsable, de l’apartat 1, és una cosa diferent i més forta: qui la signa **declara** que compleix els requisits i que en té la documentació.",
+        "es": "El artículo 69.2 de la Ley 39/2015 define la comunicación como «aquel documento mediante el que los interesados ponen en conocimiento de la Administración Pública competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho»: palabra por palabra, el enunciado. La declaración responsable, del apartado 1, es algo distinto y más fuerte: quien la firma **declara** que cumple los requisitos y que dispone de la documentación."
+      }
     },
     "q-of-roses-2026-interins-cp-017": {
       "status": "supported-current",
@@ -1762,7 +1906,11 @@
           "locator": "art. 80.2",
           "quote": "Los informes serán emitidos… en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 80.2 de la Llei 39/2015 fixa el termini general dels informes: «Los informes serán emitidos… en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor». Deu dies, doncs, com a regla general, i l’excepció final és el que fa que la pregunta digui «amb caràcter general».",
+        "es": "El artículo 80.2 de la Ley 39/2015 fija el plazo general de los informes: «Los informes serán emitidos… en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor». Diez días, pues, como regla general, y la excepción final es lo que hace que la pregunta diga «con carácter general»."
+      }
     },
     "q-of-roses-2026-interins-cp-018": {
       "status": "supported-current",
@@ -1773,7 +1921,11 @@
           "locator": "art. 100.1",
           "quote": "La ejecución forzosa por las Administraciones Públicas se efectuará… por los siguientes medios: a) Apremio sobre el patrimonio. b) Ejecución subsidiaria. c) Multa coercitiva. d) Compulsión sobre las personas."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 20.1 de la Llei 19/2013 dona un mes: «la resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante y a los terceros afectados que así lo hayan solicitado en el plazo máximo de un mes desde la recepción de la solicitud». Compte amb dues coses: el termini inclou la notificació, no només la resolució, i corre des que la sol·licitud arriba a l’òrgan competent per resoldre.",
+        "es": "El artículo 20.1 de la Ley 19/2013 da un mes: «la resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante y a los terceros afectados que así lo hayan solicitado en el plazo máximo de un mes desde la recepción de la solicitud». Cuidado con dos cosas: el plazo incluye la notificación, no solo la resolución, y corre desde que la solicitud llega al órgano competente para resolver."
+      }
     },
     "q-of-roses-2026-interins-cp-019": {
       "status": "supported-current",
@@ -1784,7 +1936,11 @@
           "locator": "art. 20.1",
           "quote": "La resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante y a los terceros afectados que así lo hayan solicitado en el plazo máximo de un mes desde la recepción de la solicitud"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "Netejar un solar no és un acte personalíssim: el pot fer qualsevol, i per això la llei permet que l’administració el faci ella i passi el compte. És l’execució subsidiària, la lletra b) de la llista tancada de l’article 100.1 de la Llei 39/2015. El constrenyiment sobre el patrimoni serviria per cobrar una quantitat líquida, i la compulsió sobre les persones es reserva a obligacions personalíssimes de no fer o de suportar.",
+        "es": "Limpiar un solar no es un acto personalísimo: puede hacerlo cualquiera, y por eso la ley permite que la administración lo haga ella y pase la cuenta. Es la ejecución subsidiaria, la letra b) de la lista cerrada del artículo 100.1 de la Ley 39/2015. El apremio sobre el patrimonio serviría para cobrar una cantidad líquida, y la compulsión sobre las personas se reserva a obligaciones personalísimas de no hacer o de soportar."
+      }
     },
     "q-of-roses-2026-interins-cp-020": {
       "status": "supported-current",
@@ -1795,7 +1951,11 @@
           "locator": "art. 9.1",
           "quote": "Quedan prohibidos el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas… y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 9.1 del RGPD tanca la llista de categories especials —origen ètnic o racial, opinions polítiques, conviccions religioses o filosòfiques, afiliació sindical, dades genètiques, dades biomètriques per identificar unívocament una persona, salut i vida o orientació sexual— i l’adreça no hi és. L’adreça és una dada personal com qualsevol altra i està protegida, però no rep el règim reforçat de l’article 9.",
+        "es": "El artículo 9.1 del RGPD cierra la lista de categorías especiales —origen étnico o racial, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, datos genéticos, datos biométricos para identificar unívocamente a una persona, salud y vida u orientación sexual— y la dirección no está. La dirección es un dato personal como cualquier otro y está protegida, pero no recibe el régimen reforzado del artículo 9."
+      }
     },
     "q-of-roses-2026-interins-cp-021": {
       "status": "supported-current",
@@ -1806,7 +1966,11 @@
           "locator": "art. 385.1a",
           "quote": "el que originare un grave riesgo para la circulación de alguna de las siguientes formas: 1.ª Colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables o mutando, sustrayendo o anulando la señalización"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "Col·locar obstacles a la via és una de les conductes de l’article 385 del Codi penal, que castiga qui origini un greu risc per a la circulació «colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables o mutando, sustrayendo o anulando la señalización». Les altres tres opcions —temps de conducció i descans, il·luminació defectuosa i circular sense assegurança— són infraccions administratives de trànsit: es multen, però no són delicte.",
+        "es": "Colocar obstáculos en la vía es una de las conductas del artículo 385 del Código penal, que castiga a quien origine un grave riesgo para la circulación «colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables o mutando, sustrayendo o anulando la señalización». Las otras tres opciones —tiempos de conducción y descanso, iluminación defectuosa y circular sin seguro— son infracciones administrativas de tráfico: se multan, pero no son delito."
+      }
     },
     "q-of-roses-2026-interins-cp-022": {
       "status": "supported-current",
@@ -1817,7 +1981,11 @@
           "locator": "art. 58.1",
           "quote": "La responsabilitat disciplinària s’extingeix pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 58.1 de la Llei 16/1991 enumera cinc causes d’extinció de la responsabilitat disciplinària: «pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció». L’opció b) n’oblida dues —l’indult i l’amnistia— i la c) confon extingir la responsabilitat amb pagar una multa, que és només una de les formes de complir la sanció.",
+        "es": "El artículo 58.1 de la Ley 16/1991 enumera cinco causas de extinción de la responsabilidad disciplinaria: «pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció». La opción b) olvida dos —el indulto y la amnistía— y la c) confunde extinguir la responsabilidad con pagar una multa, que es solo una de las formas de cumplir la sanción."
+      }
     },
     "q-of-roses-2026-interins-cp-023": {
       "status": "supported-current",
@@ -1828,7 +1996,11 @@
           "locator": "art. 1r",
           "quote": "1. La Seguridad Pública es competencia exclusiva del Estado… 3. Las Corporaciones Locales participarán en el mantenimiento de la seguridad pública en los términos establecidos en la Ley Reguladora de las Bases de Régimen Local"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 1r de la LOFCS no diu una cosa o l’altra: diu les dues. L’apartat 1 declara que «la Seguridad Pública es competencia exclusiva del Estado», i els apartats 2 i 3 hi afegeixen que les comunitats autònomes i les corporacions locals hi participen segons els seus estatuts i la legislació de règim local. Titularitat exclusiva i participació no es contradiuen, i per això les opcions a) i c) són certes alhora.",
+        "es": "El artículo 1.º de la LOFCS no dice una cosa u otra: dice las dos. El apartado 1 declara que «la Seguridad Pública es competencia exclusiva del Estado», y los apartados 2 y 3 añaden que las comunidades autónomas y las corporaciones locales participan en ella según sus estatutos y la legislación de régimen local. Titularidad exclusiva y participación no se contradicen, y por eso las opciones a) y c) son ciertas a la vez."
+      }
     },
     "q-of-roses-2026-interins-cp-024": {
       "status": "supported-current",
@@ -1839,7 +2011,11 @@
           "locator": "art. 39.1",
           "quote": "Las infracciones muy graves se sancionarán con multa de 30.001 a 600.000 euros; las graves, con multa de 601 a 30.000 euros, y las leves, con multa de 100 a 600 euros."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 39.1 de la LO 4/2015 dona les tres forquilles d’un cop: molt greus de 30.001 a 600.000 euros, greus de 601 a 30.000 i lleus de 100 a 600. L’única opció que hi coincideix és la de les lleus. Les altres dues rebaixen el sostre —300.000 en comptes de 600.000, 3.000 en comptes de 30.000— i la c) inventa una categoria de «menys greus» que aquesta llei no té.",
+        "es": "El artículo 39.1 de la LO 4/2015 da las tres horquillas de una vez: muy graves de 30.001 a 600.000 euros, graves de 601 a 30.000 y leves de 100 a 600. La única opción que coincide es la de las leves. Las otras dos rebajan el techo —300.000 en vez de 600.000, 3.000 en vez de 30.000— y la c) inventa una categoría de «menos graves» que esta ley no tiene."
+      }
     },
     "q-of-roses-2026-interins-cp-025": {
       "status": "supported-current",
@@ -1850,7 +2026,11 @@
           "locator": "art. 12.A.e i 12.B",
           "quote": "A) …e) La investigación y persecución de los delitos relacionados con la droga. … B) Serán ejercidas por la Guardia Civil: … b) El resguardo fiscal del Estado… c) La vigilancia del tráfico, tránsito y transporte en las vías públicas interurbanas. d) La custodia de vías de comunicación terrestre, costas, fronteras…"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 12 de la LOFCS reparteix les funcions en dues columnes: l’apartat A) per al Cos Nacional de Policia i el B) per a la Guàrdia Civil. La investigació i persecució dels delictes relacionats amb la droga és la lletra e) de la columna A. Les altres tres opcions són de la columna B: el resguard fiscal i el contraban, el trànsit interurbà i la custòdia de vies, costes, fronteres i aeroports.",
+        "es": "El artículo 12 de la LOFCS reparte las funciones en dos columnas: el apartado A) para el Cuerpo Nacional de Policía y el B) para la Guardia Civil. La investigación y persecución de los delitos relacionados con la droga es la letra e) de la columna A. Las otras tres opciones son de la columna B: el resguardo fiscal y el contrabando, el tráfico interurbano y la custodia de vías, costas, fronteras y aeropuertos."
+      }
     },
     "q-of-roses-2026-interins-cp-026": {
       "status": "supported-current",
@@ -1866,7 +2046,11 @@
           "locator": "art. 28.3",
           "quote": "Són funcions pròpies de les policies locals: … b) Les de policia de trànsit urbà… e) Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 28 de la Llei 4/2003 separa funcions pròpies dels mossos, pròpies de les policies locals i compartides. Les compartides són les tres de l’apartat 4, i entre elles hi ha «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides» —amb la condició final inclosa: cal que algú les requereixi—. Trànsit urbà i policia comunitària són pròpies de la local; seguretat ciutadana i ordre públic, dels mossos.",
+        "es": "El artículo 28 de la Ley 4/2003 separa funciones propias de los mossos, propias de las policías locales y compartidas. Las compartidas son las tres del apartado 4, y entre ellas está «la intervenció en la resolució amistosa de conflictes privats, si hi són requerides» —con la condición final incluida: hace falta que alguien las requiera—. Tráfico urbano y policía comunitaria son propias de la local; seguridad ciudadana y orden público, de los mossos."
+      }
     },
     "q-of-roses-2026-interins-cp-027": {
       "status": "supported-current",
@@ -1877,7 +2061,11 @@
           "locator": "art. 9.3 i 9.4",
           "quote": "3. Quan ho requereixin els assumptes a tractar, han d’assistir també a la reunió de la junta local de seguretat, amb veu però sense vot, representants de la judicatura i de la fiscalia, si així ho acorda l’Administració de l’Estat. 4. Poden ésser també convidats a participar en la junta local de seguretat, amb veu però sense vot, les associacions i les entitats veïnals i ciutadanes del municipi"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 9 de la Llei 4/2003 té dos apartats de gent que no és vocal permanent. L’apartat 3 fa assistir, amb veu i sense vot, representants de la judicatura i de la fiscalia quan els assumptes ho requereixin i així ho acordi l’Administració de l’Estat; l’apartat 4 permet convidar-hi les associacions i entitats veïnals si poden quedar afectades. Totes dues opcions són certes, i per això la resposta és la que les suma. El delegat territorial del Govern, en canvi, és vocal permanent de l’apartat 2: no cal convidar-lo.",
+        "es": "El artículo 9 de la Ley 4/2003 tiene dos apartados de gente que no es vocal permanente. El apartado 3 hace asistir, con voz y sin voto, a representantes de la judicatura y de la fiscalía cuando los asuntos lo requieran y así lo acuerde la Administración del Estado; el apartado 4 permite invitar a las asociaciones y entidades vecinales si pueden resultar afectadas. Ambas opciones son ciertas, y por eso la respuesta es la que las suma. El delegado territorial del Gobierno, en cambio, es vocal permanente del apartado 2: no hace falta invitarlo."
+      }
     },
     "q-of-roses-2026-interins-cp-028": {
       "status": "supported-current",
@@ -1888,7 +2076,11 @@
           "locator": "art. 237",
           "quote": "Son reos del delito de robo los que, con ánimo de lucro, se apoderaren de las cosas muebles ajenas empleando fuerza en las cosas para acceder o abandonar el lugar donde éstas se encuentran o violencia o intimidación en las personas"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 237 del Codi penal defineix el robatori i hi posa dues modalitats: «con ánimo de lucro, se apoderaren de las cosas muebles ajenas empleando fuerza en las cosas para acceder o abandonar el lugar donde éstas se encuentran o violencia o intimidación en las personas». La força a les coses és, doncs, el que separa el robatori del furt, que és l’apoderament sense força ni violència. La receptació i l’apropiació indeguda no impliquen apoderament amb força.",
+        "es": "El artículo 237 del Código penal define el robo y le pone dos modalidades: «con ánimo de lucro, se apoderaren de las cosas muebles ajenas empleando fuerza en las cosas para acceder o abandonar el lugar donde éstas se encuentran o violencia o intimidación en las personas». La fuerza en las cosas es, pues, lo que separa el robo del hurto, que es el apoderamiento sin fuerza ni violencia. La receptación y la apropiación indebida no implican apoderamiento con fuerza."
+      }
     },
     "q-of-roses-2026-interins-cp-029": {
       "status": "pending-evidence",
@@ -1905,7 +2097,11 @@
           "locator": "art. 379.2",
           "quote": "Con las mismas penas será castigado el que condujere un vehículo de motor o ciclomotor bajo la influencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o de bebidas alcohólicas."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "Conduir sota la influència de drogues, substàncies psicotròpiques o begudes alcohòliques és delicte contra la seguretat viària: l’article 379.2 del Codi penal el castiga amb les mateixes penes que l’excés de velocitat de l’apartat 1. Les tres opcions restants proposen imports i punts d’un règim diferent, l’administratiu de trànsit. Que existeixi també una infracció administrativa no fa desaparèixer el delicte quan es dona la influència.",
+        "es": "Conducir bajo la influencia de drogas, sustancias psicotrópicas o bebidas alcohólicas es delito contra la seguridad vial: el artículo 379.2 del Código penal lo castiga con las mismas penas que el exceso de velocidad del apartado 1. Las tres opciones restantes proponen importes y puntos de un régimen distinto, el administrativo de tráfico. Que exista también una infracción administrativa no hace desaparecer el delito cuando se da la influencia."
+      }
     },
     "q-of-roses-2026-interins-cp-031": {
       "status": "pending-evidence",
@@ -1928,7 +2124,11 @@
           "locator": "art. 4.2, fila D1",
           "quote": "La edad mínima será 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria, si bien sólo podrán conducir estos vehículos dentro del territorio nacional hasta que el titular del permiso tenga 21 años cumplidos."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "La taula de l’article 4.2 del Reglament general de conductors dona per al permís D1 una edat general i una excepció, i és l’excepció el que recull la resposta: «la edad mínima será 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria, si bien sólo podrán conducir estos vehículos dentro del territorio nacional hasta que el titular del permiso tenga 21 años cumplidos». Les altres opcions donen una xifra pelada, sense la condició del CAP ni la limitació territorial que l’acompanya.",
+        "es": "La tabla del artículo 4.2 del Reglamento general de conductores da para el permiso D1 una edad general y una excepción, y es la excepción lo que recoge la respuesta: «la edad mínima será 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria, si bien sólo podrán conducir estos vehículos dentro del territorio nacional hasta que el titular del permiso tenga 21 años cumplidos». Las otras opciones dan una cifra pelada, sin la condición del CAP ni la limitación territorial que la acompaña."
+      }
     },
     "q-of-roses-2026-interins-cp-033": {
       "status": "supported-current",
@@ -1939,7 +2139,11 @@
           "locator": "art. 20",
           "quote": "No podrán circular… los conductores de vehículos ni los conductores de bicicletas con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 20 del Reglament general de circulació nomena expressament els conductors de bicicletes i els aplica la taxa general: no poden circular «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». No hi ha, doncs, tolerància zero per a la bicicleta (opció c), ni li correspon la taxa reduïda de 0,3 i 0,15, que el mateix article reserva als conductors novells i als professionals.",
+        "es": "El artículo 20 del Reglamento general de circulación nombra expresamente a los conductores de bicicletas y les aplica la tasa general: no pueden circular «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». No hay, pues, tolerancia cero para la bicicleta (opción c), ni le corresponde la tasa reducida de 0,3 y 0,15, que el mismo artículo reserva a los conductores noveles y a los profesionales."
+      }
     },
     "q-of-roses-2026-interins-cp-034": {
       "status": "supported-current",
@@ -1950,7 +2154,11 @@
           "locator": "art. 7.2, 7.3 i 7.4",
           "quote": "2. Són infraccions lleus: a) No inscriure el gos al registre específic del municipi corresponent… 3. Són infraccions greus: … b) No contractar l’assegurança de responsabilitat civil. c) Fer activitats d’ensinistrament sense acreditació professional oficial. 4. Són infraccions molt greus: a) Fer activitats d’ensinistrament d’atac no autoritzades."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 7 de la Llei 10/1999 gradua les infraccions en tres nivells i les quatre opcions hi són totes, però en calaixos diferents. L’única lleu és l’apartat 2.a: «No inscriure el gos al registre específic del municipi corresponent». No contractar l’assegurança de responsabilitat civil i ensinistrar sense acreditació professional són **greus** (apartat 3, lletres b i c), i l’ensinistrament d’atac no autoritzat és **molt greu** (apartat 4.a).",
+        "es": "El artículo 7 de la Ley 10/1999 gradúa las infracciones en tres niveles y las cuatro opciones están todas, pero en cajones distintos. La única leve es el apartado 2.a: «No inscriure el gos al registre específic del municipi corresponent». No contratar el seguro de responsabilidad civil y adiestrar sin acreditación profesional son **graves** (apartado 3, letras b y c), y el adiestramiento de ataque no autorizado es **muy grave** (apartado 4.a)."
+      }
     },
     "q-of-roses-2026-interins-cp-035": {
       "status": "supported-current",
@@ -1961,7 +2169,11 @@
           "locator": "art. 17.2",
           "quote": "El menor detenido tendrá derecho a la entrevista reservada con su abogado con anterioridad y al término de la práctica de la diligencia de toma de declaración."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "La falsa és la c) i el motiu és una sola paraula: «únicament». L’article 17.2 de la LO 5/2000 dona el dret a l’entrevista reservada amb l’advocat «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —abans **i** després—, o sigui que limitar-lo al moment previ retalla el dret. Les altres tres opcions són certes: el màxim de vint-i-quatre hores i la posada a disposició del fiscal (art. 17.4) i la notificació immediata als representants legals i al Ministeri Fiscal (art. 17.1).",
+        "es": "La falsa es la c) y el motivo es una sola palabra: «únicamente». El artículo 17.2 de la LO 5/2000 da el derecho a la entrevista reservada con el abogado «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —antes **y** después—, o sea que limitarlo al momento previo recorta el derecho. Las otras tres opciones son ciertas: el máximo de veinticuatro horas y la puesta a disposición del fiscal (art. 17.4) y la notificación inmediata a los representantes legales y al Ministerio Fiscal (art. 17.1)."
+      }
     },
     "q-of-roses-2026-interins-cp-036": {
       "status": "supported-current",
@@ -1972,7 +2184,11 @@
           "locator": "art. 16.2",
           "quote": "por el tiempo estrictamente necesario, que en ningún caso podrá superar las seis horas"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 16.2 de la LO 4/2015 permet el trasllat a dependències per identificar algú només «por el tiempo estrictamente necesario, que en ningún caso podrá superar las seis horas». Són dues regles en una: el temps imprescindible mana sempre, i les sis hores són el sostre que no es pot travessar ni quan sembli que caldria més estona.",
+        "es": "El artículo 16.2 de la LO 4/2015 permite el traslado a dependencias para identificar a alguien solo «por el tiempo estrictamente necesario, que en ningún caso podrá superar las seis horas». Son dos reglas en una: el tiempo imprescindible manda siempre, y las seis horas son el techo que no puede traspasarse ni cuando parezca que haría falta más rato."
+      }
     },
     "q-of-roses-2026-interins-cp-037": {
       "status": "out-of-syllabus",
@@ -1983,7 +2199,11 @@
           "locator": "art. 112.1",
           "quote": "El plazo de prescripción de las infracciones previstas en esta ley será de tres meses para las infracciones leves y de seis meses para las infracciones graves y muy graves."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 112.1 del text refós de la Llei de trànsit dona dos terminis: «tres meses para las infracciones leves y de seis meses para las infracciones graves y muy graves». La pregunta demana les greus: sis mesos, el mateix termini que les molt greus. Aquesta matèria —el règim sancionador general de trànsit— no la cobreix cap dels 40 temes de la convocatòria, i per això la pregunta no entra a l’entrenament per temes.",
+        "es": "El artículo 112.1 del texto refundido de la Ley de tráfico da dos plazos: «tres meses para las infracciones leves y de seis meses para las infracciones graves y muy graves». La pregunta pide las graves: seis meses, el mismo plazo que las muy graves. Esta materia —el régimen sancionador general de tráfico— no la cubre ninguno de los 40 temas de la convocatoria, y por eso la pregunta no entra en el entrenamiento por temas."
+      }
     },
     "q-of-roses-2026-interins-cp-038": {
       "status": "supported-current",
@@ -1994,7 +2214,11 @@
           "locator": "art. 20",
           "quote": "Los conductores de cualquier vehículo no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia que les habilita para conducir."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 20 del Reglament general de circulació rebaixa la taxa durant els dos primers anys de permís: els conductors novells «no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia». Els 0,25 mg/l de les opcions c) i d) són la taxa general, la que ja no els val.",
+        "es": "El artículo 20 del Reglamento general de circulación rebaja la tasa durante los dos primeros años de permiso: los conductores noveles «no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia». Los 0,25 mg/l de las opciones c) y d) son la tasa general, la que ya no les vale."
+      }
     },
     "q-of-roses-2026-interins-cp-039": {
       "status": "supported-current",
@@ -2005,7 +2229,11 @@
           "locator": "art. 3",
           "quote": "Cuando el autor de los hechos mencionados en los artículos anteriores sea menor de catorce años, no se le exigirá responsabilidad con arreglo a la presente Ley, sino que se le aplicará lo dispuesto en las normas sobre protección de menores previstas en el Código Civil"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "Per sota dels catorze anys no hi ha responsabilitat penal. L’article 3 de la LO 5/2000 diu que quan l’autor «sea menor de catorce años, no se le exigirá responsabilidad con arreglo a la presente Ley, sino que se le aplicará lo dispuesto en las normas sobre protección de menores». Per això no es pot detenir com a responsable d’un delicte, però sí que hi pot haver una intervenció a efectes de protecció: la finalitat és tota la diferència.",
+        "es": "Por debajo de los catorce años no hay responsabilidad penal. El artículo 3 de la LO 5/2000 dice que cuando el autor «sea menor de catorce años, no se le exigirá responsabilidad con arreglo a la presente Ley, sino que se le aplicará lo dispuesto en las normas sobre protección de menores». Por eso no puede detenerse como responsable de un delito, pero sí puede haber una intervención a efectos de protección: la finalidad es toda la diferencia."
+      }
     },
     "q-of-roses-2026-interins-cp-040": {
       "status": "supported-current",
@@ -2016,7 +2244,11 @@
           "locator": "art. 29.4",
           "quote": "Una vegada dictada resolució ferma i transcorreguts dos mesos sense que el titular hagi recuperat l’objecte es procedirà a la seva destrucció o els lliurarà gratuïtament a entitats sense afany de lucre amb finalitats socials."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 29.4 de l’Ordenança de convivència de Roses tanca el circuit del comís: «Una vegada dictada resolució ferma i transcorreguts dos mesos sense que el titular hagi recuperat l’objecte es procedirà a la seva destrucció o els lliurarà gratuïtament a entitats sense afany de lucre amb finalitats socials». Hi ha dues condicions prèvies —resolució ferma i dos mesos— i després dues sortides possibles: destruir o cedir. La modificació de 2021 no toca aquest article.",
+        "es": "El artículo 29.4 de la Ordenanza de convivencia de Roses cierra el circuito del comiso: «Una vegada dictada resolució ferma i transcorreguts dos mesos sense que el titular hagi recuperat l’objecte es procedirà a la seva destrucció o els lliurarà gratuïtament a entitats sense afany de lucre amb finalitats socials». Hay dos condiciones previas —resolución firme y dos meses— y después dos salidas posibles: destruir o ceder. La modificación de 2021 no toca este artículo."
+      }
     },
     "q-of-roses-2026-interins-cp-041": {
       "status": "supported-current",
@@ -2027,7 +2259,11 @@
           "locator": "art. 140",
           "quote": "Los Alcaldes serán elegidos por los Concejales o por los vecinos."
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 140 de la Constitució deixa la porta oberta a dos sistemes: «Los Alcaldes serán elegidos por los Concejales o por los vecinos». La Constitució no tria; remet a la llei electoral, que és qui concreta com es fa. Per això la resposta és la que manté les dues possibilitats, i no les que en tanquen una.",
+        "es": "El artículo 140 de la Constitución deja la puerta abierta a dos sistemas: «Los Alcaldes serán elegidos por los Concejales o por los vecinos». La Constitución no elige; remite a la ley electoral, que es quien concreta cómo se hace. Por eso la respuesta es la que mantiene las dos posibilidades, y no las que cierran una."
+      }
     },
     "q-of-roses-2026-interins-cp-042": {
       "status": "supported-current",
@@ -2043,7 +2279,11 @@
           "locator": "modificació segona",
           "quote": "SEGONA. Modificar el punt 1 i 2 de l’article 11"
         }
-      ]
+      ],
+      "explain": {
+        "ca": "L’article 11 de l’Ordenança de convivència de Roses ataca la venda ambulant no autoritzada per tres bandes, un apartat per a cadascuna: prohibeix vendre sense autorització municipal (11.1), col·laborar-hi a l’espai públic (11.2) i «la compra o l’adquisició en l’espai públic de qualsevol producte procedent de la venda ambulant no autoritzada» (11.3). Per això la resposta ha d’incloure també qui compra. La modificació de 2021 reescriu els punts 1 i 2 però manté les tres conductes.",
+        "es": "El artículo 11 de la Ordenanza de convivencia de Roses ataca la venta ambulante no autorizada por tres flancos, un apartado para cada uno: prohíbe vender sin autorización municipal (11.1), colaborar en ella en el espacio público (11.2) y «la compra o l’adquisició en l’espai públic de qualsevol producte procedent de la venda ambulant no autoritzada» (11.3). Por eso la respuesta debe incluir también a quien compra. La modificación de 2021 reescribe los puntos 1 y 2 pero mantiene las tres conductas."
+      }
     }
   }
 }
