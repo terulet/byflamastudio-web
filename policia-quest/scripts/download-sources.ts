@@ -19,6 +19,7 @@ import { mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { join } from 'node:path'
 import { SourceManifest, type Source } from '../content/schemas/index.ts'
+import { allowedHostsFor } from './lib/official-hosts.ts'
 
 const CACHE_DIR = 'sources/cache'
 const MANIFEST_PATH = 'sources/source-manifest.json'
@@ -51,6 +52,18 @@ async function download(source: Source): Promise<void> {
     })
     if (!response.ok) {
       throw new Error(`HTTP ${response.status} ${response.statusText}`)
+    }
+    // On hem acabat després de les redireccions. Si no és un amfitrió oficial
+    // per a aquesta font, no es desa: val més una font pendent amb el motiu
+    // escrit que una còpia d'origen desconegut amb un hash que la fa semblar
+    // comprovada.
+    const allowed = allowedHostsFor(source.url)
+    const landed = new URL(response.url).hostname
+    if (!allowed.includes(landed)) {
+      throw new Error(
+        `la redirecció acaba a ${landed}, que no és amfitrió oficial d’aquesta font ` +
+          `(esperats: ${allowed.join(', ')}). Si ho és, afegiu-lo a OFFICIAL_REDIRECTS.`,
+      )
     }
     const buffer = Buffer.from(await response.arrayBuffer())
     const ext = extensionFor(response.headers.get('content-type'))

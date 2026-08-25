@@ -304,7 +304,7 @@ abans no hi havia contra què escriure-les.
 | --- | --- |
 | `npm run typecheck` | ✓ |
 | `npm run content:validate` | ✓ totes les comprovacions de contingut |
-| `npm run test` | ✓ 208 tests, 12 fitxers (10 de nous a `fonts-normatives.test.ts`) |
+| `npm run test` | ✓ 216 tests, 13 fitxers (10 de nous a `fonts-normatives.test.ts`, 8 a `official-hosts.test.ts`) |
 | `npm run build` | ✓ |
 | `npm run test:e2e` | ✓ 51 tests |
 | `npm run test:a11y` | ✓ 23 tests, auditoria axe inclosa |
@@ -324,15 +324,52 @@ Dues coses que **no** han anat bé i cal dir-les:
   ja és dependència dels scripts de transcripció. Queda anotat com a feina
   petita: donar a `extract-sources.ts` un camí alternatiu quan no hi hagi
   poppler.
-- **La llista de hosts oficials del baixador segueix sense `portaldogc.gencat.cat`.**
-  L'inventari d'aquest repositori ja el declara a `resolvedHosts` per a les cinc
-  fonts del DOGC (va ser la correcció que va seguir al primer intent de
-  descàrrega), però el registre del paquet mostra que el baixador va treballar
-  amb la seva pròpia llista, sense aquell host. Les cinc van arribar igualment
-  —es van reaprofitar d'una execució anterior—, o sigui que el forat continua
-  obert per a la propera descàrrega neta.
+- **La llista de hosts oficials del baixador no tenia `portaldogc.gencat.cat`.**
+  El registre del paquet mostra que el baixador va treballar amb la seva pròpia
+  llista, sense aquell amfitrió; les cinc normes catalanes van arribar igualment
+  perquè es van reaprofitar d'una execució anterior, o sigui que el forat hauria
+  tornat a obrir-se a la primera descàrrega neta. **Tancat** després de
+  l'adopció: l'inventari publica ara la llista sencera d'amfitrions oficials
+  —dotze, generats de les fonts reals, no mantinguts a mà— i el baixador
+  d'aquest repositori la fa complir. Vegeu la secció 10.
 
 ---
 
-*Cap commit ni cap push. Els canvis són a l'arbre de treball de la branca
-`claude/new-session-34eyi7`.*
+## 9. Seguiment: el forat dels amfitrions, tancat
+
+El problema no era que faltés un amfitrió a una llista, sinó que la llista es
+mantenia **a mà** i en un altre lloc que les fonts. Dos canvis:
+
+1. **`npm run sources:inventory` publica la llista sencera.** Dotze amfitrions,
+   generats de les URL reals de les fonts més les redireccions oficials que van
+   passar de debò en baixar el paquet. Surten al JSON (`allowedOfficialHosts`) i
+   a l'informe, per a qui munti el proper paquet offline.
+2. **El baixador d'aquest repositori la fa complir.** `sources:download` baixava
+   amb `redirect: 'follow'` i desava el que tornés, sense mirar on havia acabat.
+   Un SHA-256 demostra que la còpia no ha canviat des que es va baixar; no
+   demostra que vingui de qui hauria de venir. Ara comprova l'amfitrió final i,
+   si no és oficial per a aquella font, deixa la font pendent amb el motiu
+   escrit en lloc de beneir el fitxer amb un hash.
+
+La taula viu a `scripts/lib/official-hosts.ts` i no s'endevina: cada entrada surt
+d'una redirecció documentada al registre del paquet. `tests/unit/official-hosts.test.ts`
+fixa les dues meitats —que les redireccions oficials segueixin funcionant i que
+cap altre amfitrió hi entri— i falla si algú obre la porta a un amfitrió que el
+manifest no visita.
+
+---
+
+## 10. On ha quedat
+
+| | |
+| --- | --- |
+| Branca | `claude/new-session-34eyi7` |
+| Commit | `c389d33` — «Tenir el document no verifica la cita: les 43 normes, llegides una a una» (61 fitxers, +5.663 −1.592) |
+| Seguiment | el commit que porta la secció 9 |
+| Publicat a | `origin/claude/new-session-34eyi7` |
+| Merge a `main` | no |
+| Pull request | cap |
+
+Aquest informe es va escriure abans del commit i deia «cap commit ni cap push»,
+cosa que va deixar de ser certa dins del mateix commit que el contenia. La frase
+s'ha substituït per aquesta taula.

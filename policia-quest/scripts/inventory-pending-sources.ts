@@ -42,6 +42,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
+import { allowedHostsFor } from './lib/official-hosts.ts'
 import { fileURLToPath } from 'node:url'
 import { ROSES_PACK } from '../content/municipalities/roses/index.ts'
 import manifestJson from '../sources/source-manifest.json' with { type: 'json' }
@@ -1139,6 +1140,10 @@ check(
 
 /* ─────────────────────────── Sortida ─────────────────────────── */
 
+const allowedOfficialHosts = [
+  ...new Set([...entries, ...rescuedEntries].flatMap((e) => allowedHostsFor(e.offlinePackage.downloadUrl))),
+].sort()
+
 const byPriority = { P0: 0, P1: 0, P2: 0 }
 const byIssuer = new Map<string, number>()
 for (const e of entries) {
@@ -1179,6 +1184,16 @@ writeFileSync(
         P2: 'un sol consumidor o cap: impacte menor',
       },
       contentFingerprint: fingerprint,
+      /**
+       * Tots els amfitrions on pot acabar legítimament la baixada d'alguna
+       * d'aquestes fonts, en una sola llista.
+       *
+       * Qui munti el paquet offline la necessita sencera: mantenir-la a mà és
+       * el que va fer fallar nou descàrregues el 2026-08-24, perquè el Portal
+       * Jurídic serveix els PDF des de `portaldogc.gencat.cat` i aquell
+       * amfitrió no hi era.
+       */
+      allowedOfficialHosts,
       totals,
       validations: checks,
       findings: {
@@ -1242,6 +1257,19 @@ if (byIssuer.size > 0) {
   }
   md.push('')
 }
+md.push('## Amfitrions oficials que ha de permetre el baixador')
+md.push('')
+md.push('Aquesta és la llista sencera, i és el que va fallar la primera vegada: el Portal')
+md.push('Jurídic serveix els PDF des de `portaldogc.gencat.cat`, i com que aquell amfitrió no')
+md.push('era a la llista de l’operador, cinc normes catalanes no es van poder baixar. Mantenir-la')
+md.push('a mà és el problema; aquí es genera de les fonts reals.')
+md.push('')
+for (const host of allowedOfficialHosts) md.push(`- \`${host}\``)
+md.push('')
+md.push('`scripts/lib/official-hosts.ts` porta la mateixa taula per al baixador d’aquest')
+md.push('repositori, que **refusa** desar una descàrrega que acabi en un amfitrió que no hi')
+md.push('sigui: un SHA-256 demostra que el fitxer no ha canviat, no que vingui de qui toca.')
+md.push('')
 md.push('## Com llegir una entrada')
 md.push('')
 md.push('De cada font hi ha la norma exacta amb el seu identificador legal, l’estat de')

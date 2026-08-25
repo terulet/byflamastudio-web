@@ -32,6 +32,30 @@ Què demostra cada referència i què encara no: `content/municipalities/roses/`
 | **P1** | 0 | Necessària per a lliçons i preguntes pròpies (2-9 consumidors). |
 | **P2** | 0 | Un sol consumidor o cap: impacte menor. |
 
+## Amfitrions oficials que ha de permetre el baixador
+
+Aquesta és la llista sencera, i és el que va fallar la primera vegada: el Portal
+Jurídic serveix els PDF des de `portaldogc.gencat.cat`, i com que aquell amfitrió no
+era a la llista de l’operador, cinc normes catalanes no es van poder baixar. Mantenir-la
+a mà és el problema; aquí es genera de les fonts reals.
+
+- `ciberseguretat.gencat.cat`
+- `dogc.gencat.cat`
+- `dsp.interior.gencat.cat`
+- `eur-lex.europa.eu`
+- `interior.gencat.cat`
+- `op.europa.eu`
+- `portaldogc.gencat.cat`
+- `portaljuridic.gencat.cat`
+- `www.boe.es`
+- `www.parlament.cat`
+- `www.roses.cat`
+- `www.un.org`
+
+`scripts/lib/official-hosts.ts` porta la mateixa taula per al baixador d’aquest
+repositori, que **refusa** desar una descàrrega que acabi en un amfitrió que no hi
+sigui: un SHA-256 demostra que el fitxer no ha canviat, no que vingui de qui toca.
+
 ## Com llegir una entrada
 
 De cada font hi ha la norma exacta amb el seu identificador legal, l’estat de

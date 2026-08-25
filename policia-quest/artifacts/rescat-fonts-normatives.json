@@ -15,6 +15,20 @@
     "P2": "un sol consumidor o cap: impacte menor"
   },
   "contentFingerprint": "7eae9a6321ec0b1fbd99eeb531cd7a29a85449be4fba9d69dfd552fc203a931e",
+  "allowedOfficialHosts": [
+    "ciberseguretat.gencat.cat",
+    "dogc.gencat.cat",
+    "dsp.interior.gencat.cat",
+    "eur-lex.europa.eu",
+    "interior.gencat.cat",
+    "op.europa.eu",
+    "portaldogc.gencat.cat",
+    "portaljuridic.gencat.cat",
+    "www.boe.es",
+    "www.parlament.cat",
+    "www.roses.cat",
+    "www.un.org"
+  ],
   "totals": {
     "pendingSources": 0,
     "pendingReferences": 26,

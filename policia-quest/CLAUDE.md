@@ -184,6 +184,17 @@ verificats pel seu SHA-256, document a document.
   cultura general retirada a `draft` perquè la seva pròpia explicació la
   contradeia— i totes estan documentades a l'informe. Cap resposta oficial s'ha
   tocat.
+- **El baixador ja no es fia de la redirecció.** `sources:download` baixava amb
+  `redirect: 'follow'` i desava el que tornés, fos qui fos, i li posava un
+  SHA-256 al manifest: aquell hash demostra que la còpia no ha canviat des que
+  es va baixar, no que vingui de qui hauria de venir. Ara comprova l'amfitrió
+  final contra `scripts/lib/official-hosts.ts` —una taula que surt de les
+  redireccions que van passar de debò, no d'endevinar— i, si no hi és, deixa la
+  font pendent amb el motiu. De passada es tanca el forat que va fer fallar cinc
+  normes catalanes: el Portal Jurídic serveix els PDF des de
+  `portaldogc.gencat.cat`. L'inventari publica la llista sencera d'amfitrions
+  oficials (`allowedOfficialHosts`) perquè qui munti el proper paquet no l'hagi
+  de mantenir a mà.
 - **El paquet d'actualitat té 25 preguntes vigents**, adoptades el 24 d'agost de
   2026 des de 19 instantànies textuals segellades amb SHA-256 que va portar el
   paquet de candidats. Cap ve de la xarxa: l'entorn continua sense arribar a cap
