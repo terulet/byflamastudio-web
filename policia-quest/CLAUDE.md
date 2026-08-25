@@ -160,12 +160,15 @@ verificats pel seu SHA-256, document a document.
   s'importen igualment en `draft`, mai s'omplen amb una resposta plausible.
   **Les 630 tenen ara la seva pròpia matriu probatòria**, amb el mateix
   mètode i el mateix rigor que les 189 vigents: 344 amb tema real es van
-  contrastar contra les fonts normatives ja adoptades (247 `supported-current`
-  amb citació literal i explicació ca/es, 12 `partially-supported`, 3
+  contrastar contra les fonts normatives ja adoptades (257 `supported-current`
+  amb citació literal i explicació ca/es, 13 `partially-supported`, 3
   `official-key-conflicts-with-law-at-exam` —incloent-hi una discrepància
   nova entre la plantilla i l'ordenança de convivència de Roses, del mateix
   tipus que la ja documentada per als vigents—, 1 `supported-at-exam-now-superseded`
-  i 90 `pending-evidence` amb el que hi falta escrit; les 286 sense tema
+  i 80 `pending-evidence` amb el que hi falta escrit —deu més d'aquestes es
+  van poder resoldre en una segona passada, cercant amb més cura dins de
+  fonts que ja teníem (CE, LO 2/1986, LO 6/1984), sense necessitar cap
+  descàrrega nova—; les 286 sense tema
   real es van classificar pel mateix criteri editorial que el mapa de temes
   (193 `general-knowledge`, 90 entre `historical-current-affairs` i
   `pending-evidence`, 3 `out-of-syllabus`). En total, **259 preguntes
@@ -334,10 +337,18 @@ La feina que queda, en aquest ordre:
    `artifacts/adopcio-fonts-normatives-2026-08-24.md` i a la secció 7 d'
    `artifacts/matriu-i-explicacions-2026-08-25.md`. Cap es dona per verificada
    fins que algú obri el document i hi busqui la proposició concreta.
-3. Tancar les 90 preguntes històriques que han quedat `pending-evidence`,
-   quan hi hagi font. La majoria (81) esperen la mateixa instantània de
+3. Tancar les 80 preguntes històriques que han quedat `pending-evidence`,
+   quan hi hagi font. La majoria (45) esperen la mateixa instantània de
    roses.cat renderitzat que ja bloqueja les 8 vigents —carrers, monuments,
-   adreces de departaments municipals— i unes poques necessiten una norma
-   concreta que no és al paquet (la Llei 10/1994 de la Policia de la
-   Generalitat, el RD 920/2017 d'ITV per als ciclomotors, la LOPJ). Cada una
+   adreces de departaments municipals—, 2 la mateixa d'Agència de
+   Ciberseguretat de Catalunya, i la resta necessita una norma concreta que
+   no és al paquet (la Llei 10/1994 de la Policia de la Generalitat, el RD
+   920/2017 d'ITV per als ciclomotors, la LOPJ, el Codi de conducta de l'ONU
+   per a funcionaris encarregats de fer complir la llei, la Carta de
+   Rotterdam). Deu preguntes que semblaven necessitar font nova es van
+   resoldre en una segona revisió sense sortir de les fonts ja adoptades
+   —la composició del Tribunal Constitucional i del CGPJ són a la pròpia
+   Constitució, la competència de l'«Habeas Corpus» a la seva llei
+   orgànica—: val la pena tornar-hi abans de donar per fet que cal una
+   font nova. Cada una
    diu, al seu propi `missing`, què li falta exactament.

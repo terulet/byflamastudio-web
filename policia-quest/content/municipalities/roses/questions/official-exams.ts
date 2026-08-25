@@ -11977,14 +11977,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 159.1 de la Constitució diu literalment que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey», repartits entre Congrés, Senat, Govern i Consell General del Poder Judicial. Aquesta xifra descarta directament les altres tres opcions (10, 20 i 25), que no apareixen enlloc de l\'article.',
+      es: 'El artículo 159.1 de la Constitución dice literalmente que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey», repartidos entre Congreso, Senado, Gobierno y Consejo General del Poder Judicial. Esta cifra descarta directamente las otras tres opciones (10, 20 y 25), que no aparecen en ningún punto del artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21031,14 +21037,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 159.1 de la Constitució fixa en 12 el nombre de membres del Tribunal Constitucional, i l\'apartat 3 del mateix article diu que «serán designados por un período de nueve años y se renovarán por terceras partes cada tres». Aquesta combinació —dotze, nou anys— coincideix exactament amb l\'opció b) i descarta les altres tres, que alteren el nombre (vint) o el període (cinc anys).',
+      es: 'El artículo 159.1 de la Constitución fija en 12 el número de miembros del Tribunal Constitucional, y el apartado 3 del mismo artículo dice que «serán designados por un período de nueve años y se renovarán por terceras partes cada tres». Esta combinación —doce, nueve años— coincide exactamente con la opción b) y descarta las otras tres, que alteran el número (veinte) o el período (cinco años).',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26230,14 +26248,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 122.3 de la Constitució diu que «el Consejo General del Poder Judicial estará integrado por el Presidente del Tribunal Supremo, que lo presidirá, y por veinte miembros nombrados por el Rey», exactament «20 membres i el president» de l\'opció a). Les altres opcions inventen xifres (150, 15 i el president del Govern —que no en forma part—, 20 i 3 vicepresidents) que l\'article no conté.',
+      es: 'El artículo 122.3 de la Constitución dice que «el Consejo General del Poder Judicial estará integrado por el Presidente del Tribunal Supremo, que lo presidirá, y por veinte miembros nombrados por el Rey», exactamente «20 miembros y el presidente» de la opción a). Las demás opciones inventan cifras (150, 15 y el presidente del Gobierno —que no forma parte de él—, 20 y 3 vicepresidentes) que el artículo no contiene.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 122.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26989,14 +27013,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 160 de la Constitució diu literalment que el president del Tribunal Constitucional «será nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno y por un período de tres años», exactament la frase de l\'enunciat completada amb l\'opció a). Cap dels altres períodes (14, 25 o 19 anys) apareix a l\'article.',
+      es: 'El artículo 160 de la Constitución dice literalmente que el presidente del Tribunal Constitucional «será nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno y por un período de tres años», exactamente la frase del enunciado completada con la opción a). Ninguno de los otros períodos (14, 25 o 19 años) aparece en el artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 18, pàgina 4 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 160',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29074,14 +29104,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2 de la Llei orgànica 6/1984, reguladora del procediment d\'«Habeas Corpus», diu literalment que «es competente para conocer la solicitud de Habeas Corpus el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Cap dels altres òrgans (jutjats penals, l\'Audiència provincial, el TSJ) hi apareix esmentat.',
+      es: 'El artículo 2 de la Ley Orgánica 6/1984, reguladora del procedimiento de «Habeas Corpus», dice literalmente que «es competente para conocer la solicitud de Habeas Corpus el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Ninguno de los demás órganos (juzgados penales, la Audiencia provincial, el TSJ) aparece mencionado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1984-habeas',
+        locator: 'art. 2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29113,14 +29149,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 159.1 de la Constitució fixa en 12 el nombre de membres del Tribunal Constitucional, repartits entre Congrés (4), Senat (4), Govern (2) i Consell General del Poder Judicial (2) —cap d\'ells «actuant en plens, sales o seccions» com diu l\'opció a), ni cap altra xifra (16, 13). Només l\'opció b) coincideix amb el text.',
+      es: 'El artículo 159.1 de la Constitución fija en 12 el número de miembros del Tribunal Constitucional, repartidos entre Congreso (4), Senado (4), Gobierno (2) y Consejo General del Poder Judicial (2) —ninguno de ellos «actuando en plenos, salas o secciones» como dice la opción a), ni ninguna otra cifra (16, 13). Solo la opción b) coincide con el texto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29368,14 +29410,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 8.1 de la LO 2/1986, de forces i cossos de seguretat, diu literalment que «la jurisdicción ordinaria será la competente para conocer de los delitos que se cometan contra miembros de las Fuerzas y Cuerpos de Seguridad, así como de los cometidos por éstos en el ejercicio de sus funciones». No hi ha cap jurisdicció «especial» ni «militar» per a aquests delictes, i la contenciosa administrativa és aliena a la matèria penal.',
+      es: 'El artículo 8.1 de la LO 2/1986, de fuerzas y cuerpos de seguridad, dice literalmente que «la jurisdicción ordinaria será la competente para conocer de los delitos que se cometan contra miembros de las Fuerzas y Cuerpos de Seguridad, así como de los cometidos por éstos en el ejercicio de sus funciones». No existe ninguna jurisdicción «especial» ni «militar» para estos delitos, y la contencioso-administrativa es ajena a la materia penal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 8.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -34474,14 +34522,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 159.1 de la Constitució diu literalment que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Cap de les altres tres xifres (2, 3, 1) apareix a l\'article: només l\'opció d) hi coincideix.',
+      es: 'El artículo 159.1 de la Constitución dice literalmente que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Ninguna de las otras tres cifras (2, 3, 1) aparece en el artículo: solo la opción d) coincide con él.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 15, pàgina 3 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 159.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -34666,14 +34720,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2 de la Llei orgànica 6/1984 atribueix la competència sobre l\'«Habeas Corpus» al «Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Ni el Tribunal Constitucional ni cap Tribunal Superior de Justícia hi apareixen esmentats: només l\'opció a) coincideix amb l\'article.',
+      es: 'El artículo 2 de la Ley Orgánica 6/1984 atribuye la competencia sobre el «Habeas Corpus» al «Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Ni el Tribunal Constitucional ni ningún Tribunal Superior de Justicia aparecen mencionados: solo la opción a) coincide con el artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 19, pàgina 4 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1984-habeas',
+        locator: 'art. 2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],

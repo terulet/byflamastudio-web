@@ -39,11 +39,11 @@
   ],
   "reviewedOn": "2026-08-25",
   "totals": {
-    "supported-current": 363,
+    "supported-current": 372,
     "general-knowledge": 226,
     "historical-current-affairs": 109,
-    "pending-evidence": 98,
-    "partially-supported": 12,
+    "pending-evidence": 88,
+    "partially-supported": 13,
     "official-key-conflicts-with-law-at-exam": 5,
     "out-of-syllabus": 5,
     "supported-at-exam-now-superseded": 1
@@ -3426,10 +3426,19 @@
       }
     },
     "q-of-roses-2024-interins-cp-002": {
-      "status": "pending-evidence",
-      "why": "El nombre de membres del Tribunal Constitucional el fixa l’art. 159.1 CE (dotze): ni l’EAC ni la Llei 4/2003, les dues fonts d’aquest lot, en diuen res.",
-      "citations": [],
-      "missing": "El text de l’article 159.1 de la Constitució espanyola de 1978 (o de l’article 5 de la Llei orgànica 2/1979, del Tribunal Constitucional), que fixa la composició del Tribunal en dotze membres."
+      "status": "supported-current",
+      "why": "Art. 159.1 CE, literal: el Tribunal Constitucional es compon de 12 membres.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.1",
+          "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey; de ellos, cuatro a propuesta del Congreso por mayoría de tres quintos de sus miembros; cuatro a propuesta del Senado, con idéntica mayoría; dos a propuesta del Gobierno, y dos a propuesta del Consejo General del Poder Judicial."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 159.1 de la Constitució diu literalment que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey», repartits entre Congrés, Senat, Govern i Consell General del Poder Judicial. Aquesta xifra descarta directament les altres tres opcions (10, 20 i 25), que no apareixen enlloc de l'article.",
+        "es": "El artículo 159.1 de la Constitución dice literalmente que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey», repartidos entre Congreso, Senado, Gobierno y Consejo General del Poder Judicial. Esta cifra descarta directamente las otras tres opciones (10, 20 y 25), que no aparecen en ningún punto del artículo."
+      }
     },
     "q-of-roses-2023-interins-cp-015": {
       "status": "pending-evidence",
@@ -3450,16 +3459,35 @@
       "missing": "El text dels articles 117 i 124 de la Constitució espanyola (o de la LO 6/1985, del poder judicial, i de l’Estatut orgànic del Ministeri Fiscal), per situar el Ministeri Fiscal fora dels òrgans jurisdiccionals que integren el Poder Judicial."
     },
     "q-of-roses-2021-interins-cp-007": {
-      "status": "pending-evidence",
-      "why": "El nombre de magistrats del TC i la durada del mandat (dotze membres, nou anys) són a l’art. 159 CE, fora de les dues fonts d’aquest lot.",
-      "citations": [],
-      "missing": "El text de l’article 159 (apartats 1 i 3) de la Constitució espanyola de 1978: dotze membres i designació per nou anys."
+      "status": "supported-current",
+      "why": "Art. 159.1 i 159.3 CE, literal: 12 membres, designats per nou anys.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.1",
+          "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey"
+        },
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.3",
+          "quote": "Los miembros del Tribunal Constitucional serán designados por un período de nueve años y se renovarán por terceras partes cada tres."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 159.1 de la Constitució fixa en 12 el nombre de membres del Tribunal Constitucional, i l'apartat 3 del mateix article diu que «serán designados por un período de nueve años y se renovarán por terceras partes cada tres». Aquesta combinació —dotze, nou anys— coincideix exactament amb l'opció b) i descarta les altres tres, que alteren el nombre (vint) o el període (cinc anys).",
+        "es": "El artículo 159.1 de la Constitución fija en 12 el número de miembros del Tribunal Constitucional, y el apartado 3 del mismo artículo dice que «serán designados por un período de nueve años y se renovarán por terceras partes cada tres». Esta combinación —doce, nueve años— coincide exactamente con la opción b) y descarta las otras tres, que alteran el número (veinte) o el período (cinco años)."
+      }
     },
     "q-of-roses-2019-propietat-cp-005": {
-      "status": "pending-evidence",
-      "why": "La composició del TC i el títol dels seus membres (magistrats del Tribunal Constitucional) són a l’art. 159.1 CE i a l’art. 5 LOTC: cap de les dues fonts del lot no ho recull.",
-      "citations": [],
-      "missing": "El text de l’article 159.1 de la Constitució i de l’article 5 de la Llei orgànica 2/1979, del Tribunal Constitucional (dotze membres amb el títol de magistrats del Tribunal Constitucional)."
+      "status": "partially-supported",
+      "why": "Art. 159.1 CE confirma que el Tribunal Constitucional té 12 membres (descarta les opcions de 20), però la Constitució no els dona el títol de «magistrats»: aquest matís requeriria la LO 2/1979 del Tribunal Constitucional, no adoptada.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.1",
+          "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey"
+        }
+      ]
     },
     "q-of-roses-2019-propietat-cp-006": {
       "status": "pending-evidence",
@@ -3474,40 +3502,94 @@
       "missing": "El text de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (organització territorial de l’Estat a efectes judicials i àmbit autonòmic dels tribunals superiors de justícia)."
     },
     "q-of-roses-2019-interins-cp-003": {
-      "status": "pending-evidence",
-      "why": "La composició del CGPJ (vint membres i el president) és a l’art. 122.3 CE, fora de les dues fonts d’aquest lot.",
-      "citations": [],
-      "missing": "El text de l’article 122.3 de la Constitució espanyola de 1978, que integra el CGPJ pel president del Tribunal Suprem, que el presideix, i per vint membres."
+      "status": "supported-current",
+      "why": "Art. 122.3 CE, literal: el CGPJ l'integren el president del Tribunal Suprem i vint membres.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 122.3",
+          "quote": "El Consejo General del Poder Judicial estará integrado por el Presidente del Tribunal Supremo, que lo presidirá, y por veinte miembros nombrados por el Rey por un período de cinco años."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 122.3 de la Constitució diu que «el Consejo General del Poder Judicial estará integrado por el Presidente del Tribunal Supremo, que lo presidirá, y por veinte miembros nombrados por el Rey», exactament «20 membres i el president» de l'opció a). Les altres opcions inventen xifres (150, 15 i el president del Govern —que no en forma part—, 20 i 3 vicepresidents) que l'article no conté.",
+        "es": "El artículo 122.3 de la Constitución dice que «el Consejo General del Poder Judicial estará integrado por el Presidente del Tribunal Supremo, que lo presidirá, y por veinte miembros nombrados por el Rey», exactamente «20 miembros y el presidente» de la opción a). Las demás opciones inventan cifras (150, 15 y el presidente del Gobierno —que no forma parte de él—, 20 y 3 vicepresidentes) que el artículo no contiene."
+      }
     },
     "q-of-roses-2019-interins-cp-018": {
-      "status": "pending-evidence",
-      "why": "El mandat de tres anys del president del Tribunal Constitucional el fixa l’art. 160 CE: cap de les dues fonts del lot no el recull.",
-      "citations": [],
-      "missing": "El text de l’article 160 de la Constitució espanyola de 1978: el president del TC és nomenat pel Rei, a proposta del Tribunal en Ple, per tres anys."
+      "status": "supported-current",
+      "why": "Art. 160 CE, literal: el president del TC és nomenat pel Rei, a proposta del Tribunal en Ple, per tres anys.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 160",
+          "quote": "El Presidente del Tribunal Constitucional será nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno y por un período de tres años."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 160 de la Constitució diu literalment que el president del Tribunal Constitucional «será nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno y por un período de tres años», exactament la frase de l'enunciat completada amb l'opció a). Cap dels altres períodes (14, 25 o 19 anys) apareix a l'article.",
+        "es": "El artículo 160 de la Constitución dice literalmente que el presidente del Tribunal Constitucional «será nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno y por un período de tres años», exactamente la frase del enunciado completada con la opción a). Ninguno de los otros períodos (14, 25 o 19 años) aparece en el artículo."
+      }
     },
     "q-of-roses-2018-propietat-cp-005": {
-      "status": "pending-evidence",
-      "why": "L’òrgan competent en l’habeas corpus (el jutge d’instrucció) el fixa la LO 6/1984: ni l’EAC ni la Llei 4/2003 en diuen res.",
-      "citations": [],
-      "missing": "El text de l’article 2 de la Llei orgànica 6/1984, del 24 de maig, reguladora del procediment d’habeas corpus, que atribueix la competència al jutge d’instrucció."
+      "status": "supported-current",
+      "why": "Art. 2 LO 6/1984, literal: és competent el Jutge d'Instrucció.",
+      "citations": [
+        {
+          "sourceId": "lo-6-1984-habeas",
+          "locator": "art. 2",
+          "quote": "Es competente para conocer la solicitud de «Habeas Corpus» el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad; si no constare, el del lugar en que se produzca la detención, y, en defecto de los anteriores, el del lugar donde se hayan tenido las últimas noticias sobre el paradero del detenido."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 2 de la Llei orgànica 6/1984, reguladora del procediment d'«Habeas Corpus», diu literalment que «es competente para conocer la solicitud de Habeas Corpus el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Cap dels altres òrgans (jutjats penals, l'Audiència provincial, el TSJ) hi apareix esmentat.",
+        "es": "El artículo 2 de la Ley Orgánica 6/1984, reguladora del procedimiento de «Habeas Corpus», dice literalmente que «es competente para conocer la solicitud de Habeas Corpus el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Ninguno de los demás órganos (juzgados penales, la Audiencia provincial, el TSJ) aparece mencionado."
+      }
     },
     "q-of-roses-2018-propietat-cp-006": {
-      "status": "pending-evidence",
-      "why": "La composició del Tribunal Constitucional (dotze membres) és a l’art. 159.1 CE, fora de les dues fonts d’aquest lot.",
-      "citations": [],
-      "missing": "El text de l’article 159.1 de la Constitució espanyola de 1978 (o de la LO 2/1979, del Tribunal Constitucional), que fixa el Tribunal en dotze membres."
+      "status": "supported-current",
+      "why": "Art. 159.1 CE, literal: el Tribunal Constitucional es compon de 12 membres.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.1",
+          "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey; de ellos, cuatro a propuesta del Congreso por mayoría de tres quintos de sus miembros; cuatro a propuesta del Senado, con idéntica mayoría; dos a propuesta del Gobierno, y dos a propuesta del Consejo General del Poder Judicial."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 159.1 de la Constitució fixa en 12 el nombre de membres del Tribunal Constitucional, repartits entre Congrés (4), Senat (4), Govern (2) i Consell General del Poder Judicial (2) —cap d'ells «actuant en plens, sales o seccions» com diu l'opció a), ni cap altra xifra (16, 13). Només l'opció b) coincideix amb el text.",
+        "es": "El artículo 159.1 de la Constitución fija en 12 el número de miembros del Tribunal Constitucional, repartidos entre Congreso (4), Senado (4), Gobierno (2) y Consejo General del Poder Judicial (2) —ninguno de ellos «actuando en plenos, salas o secciones» como dice la opción a), ni ninguna otra cifra (16, 13). Solo la opción b) coincide con el texto."
+      }
     },
     "q-of-roses-2017-interins-cp-015": {
-      "status": "pending-evidence",
-      "why": "El nombre de membres del Tribunal Constitucional (dotze) el fixa l’art. 159.1 CE: cap de les dues fonts d’aquest lot no el recull.",
-      "citations": [],
-      "missing": "El text de l’article 159.1 de la Constitució espanyola de 1978, que compon el Tribunal Constitucional de dotze membres nomenats pel Rei."
+      "status": "supported-current",
+      "why": "Art. 159.1 CE, literal: el Tribunal Constitucional es compon de 12 membres.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.1",
+          "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey"
+        }
+      ],
+      "explain": {
+        "ca": "L'article 159.1 de la Constitució diu literalment que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Cap de les altres tres xifres (2, 3, 1) apareix a l'article: només l'opció d) hi coincideix.",
+        "es": "El artículo 159.1 de la Constitución dice literalmente que «el Tribunal Constitucional se compone de 12 miembros nombrados por el Rey». Ninguna de las otras tres cifras (2, 3, 1) aparece en el artículo: solo la opción d) coincide con él."
+      }
     },
     "q-of-roses-2017-interins-cp-019": {
-      "status": "pending-evidence",
-      "why": "L’òrgan competent en l’habeas corpus (el jutge d’instrucció) el fixa la LO 6/1984, norma que no és entre les fonts d’aquest lot.",
-      "citations": [],
-      "missing": "El text de l’article 2 de la Llei orgànica 6/1984, del 24 de maig, reguladora del procediment d’habeas corpus, que atribueix la competència al jutge d’instrucció."
+      "status": "supported-current",
+      "why": "Art. 2 LO 6/1984, literal: és competent el Jutjat d'Instrucció.",
+      "citations": [
+        {
+          "sourceId": "lo-6-1984-habeas",
+          "locator": "art. 2",
+          "quote": "Es competente para conocer la solicitud de «Habeas Corpus» el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad"
+        }
+      ],
+      "explain": {
+        "ca": "L'article 2 de la Llei orgànica 6/1984 atribueix la competència sobre l'«Habeas Corpus» al «Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Ni el Tribunal Constitucional ni cap Tribunal Superior de Justícia hi apareixen esmentats: només l'opció a) coincideix amb l'article.",
+        "es": "El artículo 2 de la Ley Orgánica 6/1984 atribuye la competencia sobre el «Habeas Corpus» al «Juez de Instrucción del lugar en que se encuentre la persona privada de libertad». Ni el Tribunal Constitucional ni ningún Tribunal Superior de Justicia aparecen mencionados: solo la opción a) coincide con el artículo."
+      }
     },
     "q-of-roses-2024-propietat-cp-008": {
       "status": "supported-current",
@@ -7091,10 +7173,19 @@
       }
     },
     "q-of-roses-2018-propietat-cp-011": {
-      "status": "pending-evidence",
-      "why": "La disposició que ho decideix és l'art. 8.1 de la LO 2/1986 (la jurisdicció ordinària coneix dels delictes contra membres de les forces i cossos de seguretat), i aquesta llei no és entre les fonts extretes; cap dels quatre textos disponibles resol la pregunta.",
-      "citations": [],
-      "missing": "El text de la LO 2/1986, de 13 de març, de forces i cossos de seguretat, art. 8.1, que atribueix expressament a la jurisdicció ordinària el coneixement dels delictes comesos contra membres de les FCS en l'exercici de les seves funcions."
+      "status": "supported-current",
+      "why": "Art. 8.1 LO 2/1986, literal: la jurisdicció ordinària és la competent per als delictes contra membres de les FCS.",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 8.1",
+          "quote": "La jurisdicción ordinaria será la competente para conocer de los delitos que se cometan contra miembros de las Fuerzas y Cuerpos de Seguridad, así como de los cometidos por éstos en el ejercicio de sus funciones."
+        }
+      ],
+      "explain": {
+        "ca": "L'article 8.1 de la LO 2/1986, de forces i cossos de seguretat, diu literalment que «la jurisdicción ordinaria será la competente para conocer de los delitos que se cometan contra miembros de las Fuerzas y Cuerpos de Seguridad, así como de los cometidos por éstos en el ejercicio de sus funciones». No hi ha cap jurisdicció «especial» ni «militar» per a aquests delictes, i la contenciosa administrativa és aliena a la matèria penal.",
+        "es": "El artículo 8.1 de la LO 2/1986, de fuerzas y cuerpos de seguridad, dice literalmente que «la jurisdicción ordinaria será la competente para conocer de los delitos que se cometan contra miembros de las Fuerzas y Cuerpos de Seguridad, así como de los cometidos por éstos en el ejercicio de sus funciones». No existe ninguna jurisdicción «especial» ni «militar» para estos delitos, y la contencioso-administrativa es ajena a la materia penal."
+      }
     },
     "q-of-roses-2018-propietat-cp-022": {
       "status": "pending-evidence",

@@ -71,7 +71,7 @@ Generat el 2026-08-25 · versió de contingut 1
 | Estat | Referències |
 | --- | --- |
 | pending-source-verification | 28 |
-| verified | 1872 |
+| verified | 1882 |
 
 `verified` vol dir que algú ha obert la còpia local del document i hi ha trobat la proposició al lloc que diu el localitzador. Tenir el fitxer no verifica res per si sol.
 
@@ -137,7 +137,7 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 | Simulacre de cultura general | Cultura general | 10 | 21 | ✓ |
 | Simulacre de cultura general | Actualitat social, cultural i política | 10 | 25 | ✓ |
 | Simulacre de cultura general | Reserva | 1 | 1 | ✓ |
-| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 594 | ✓ |
+| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 604 | ✓ |
 | Simulacre de coneixements professionals | Reserva | 2 | 2 | ✓ |
 
 ## Què necessita revisió humana
