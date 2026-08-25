@@ -1,10 +1,14 @@
 /**
- * Rescat de les dues fonts que la descàrrega del 2026-08-24 no va portar.
+ * Rescat de les fonts que `www.roses.cat` no porta amb una petició HTTP
+ * simple.
  *
  * `www.roses.cat` i `ciberseguretat.gencat.cat` carreguen el cos de les pàgines
  * per JavaScript. `sources:download` fa una petició HTTP i desa el que torna:
- * l'esquelet de navegació, 6 i 8 kB de menús. El SHA-256 quadra i el fitxer no
- * conté res. Vint-i-una referències del banc en depenen i segueixen pendents.
+ * l'esquelet de navegació, uns quants kB de menús. El SHA-256 quadra i el
+ * fitxer no conté res. Les 21 referències normatives originals, i des del
+ * 2026-08-25 també 45 preguntes dels quadernets històrics (patrimoni,
+ * directori municipal, platges) i 5 sobre quines ordenances té Roses en
+ * vigor, en depenen i segueixen `pending-evidence`.
  *
  * Això no es pot arreglar des de l'entorn de construcció, que no arriba a cap
  * font. Aquest script s'executa **a la màquina de qui té xarxa**, deixa un
@@ -26,8 +30,8 @@
  *
  * ─── Què fa i què no ─────────────────────────────────────────────────────
  *
- * No inventa cap adreça. Surt de les dues úniques URL que ja consten al
- * manifest —les portades, que existeixen de debò— i navega només dins del
+ * No inventa cap adreça. Surt de les URL que ja consten al manifest —pàgines
+ * que existeixen de debò— i navega només dins del
  * mateix amfitrió, seguint els enllaços que la pàgina ja porta. Si una secció
  * ha canviat de lloc, la trobarà o no la portarà; el que no farà mai és desar
  * un 404 amb bona cara.
@@ -46,9 +50,9 @@
  *
  * ─── El que continua bloquejat ───────────────────────────────────────────
  *
- * Portar el paquet no verifica res per si sol. Les 21 referències i les dues
- * preguntes oficials de ciberseguretat segueixen pendents fins que algú obri
- * cada instantània i hi busqui la proposició concreta, una a una, com es va fer
+ * Portar el paquet no verifica res per si sol. Les referències i les
+ * preguntes que en depenen segueixen pendents fins que algú obri cada
+ * instantània i hi busqui la proposició concreta, una a una, com es va fer
  * amb les 313 del paquet normatiu. Aquest script porta el document; el
  * veredicte el signa qui llegeix.
  */
@@ -89,14 +93,40 @@ const TARGETS = [
   {
     sourceId: 'roses-web-municipi',
     start: 'https://www.roses.cat/',
-    // 15 referències pendents: situació, entorn, patrimoni, nuclis, economia.
+    // 15 referències pendents originals (situació, entorn, patrimoni, nuclis,
+    // economia) més els termes de les 45 preguntes dels quadernets històrics
+    // que la matriu del 2026-08-25 va deixar `pending-evidence` per la
+    // mateixa raó: patrimoni, directori municipal i platges.
     terms: [
       'ciutadella', 'castell de la trinitat', 'rhode', 'cap de creus',
       'dolmen', 'megalític', 'creu d’en cobertella', 'santa margarida',
       'canyelles', 'almadrava', 'alt empordà', 'badia de roses',
       'urbanitzacions',
+      // Patrimoni (12 preguntes pendents)
+      'castrum visigòtic', 'puig rom', 'monestir de santa maria',
+      'refugi antiaeri', 'guerra civil', 'guerra de successió',
+      'nomenclàtor',
+      // Directori municipal: adreces de departament (7 preguntes pendents)
+      'departament d’ensenyament', 'departament d’urbanisme',
+      'departament de cultura i festes', 'policia local',
+      'biblioteca municipal', 'oficines municipals',
+      // Platges i turisme (4 preguntes pendents)
+      'platges', 'cales', 'punta de l’ullastrell', 'punta de la poncella',
+      // Composició del ple (1 pregunta pendent)
+      'regidors', 'ple municipal',
     ],
     maxPages: 60,
+  },
+  {
+    sourceId: 'roses-ordenances-index',
+    start: 'https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1',
+    // 5 preguntes pendents: quines ordenances i reglaments té Roses en vigor
+    // (l'índex actual només en desa el menú de matèries, sense els títols).
+    terms: [
+      'ordenança', 'reglament', 'venda ambulant', 'mercat municipal',
+      'tinença d’animals', 'convivència ciutadana', 'circulació',
+    ],
+    maxPages: 40,
   },
   {
     sourceId: 'agencia-ciberseguretat-catalunya',
@@ -252,10 +282,10 @@ async function rescue(browser, target) {
 /*
  * Comprovació pròpia, sense xarxa: `node scripts/rescue-dynamic-sources.mjs --self-check`.
  *
- * Les dues còpies que van enganyar el baixador són a `sources/cache/`. Un
+ * Les còpies que van enganyar el baixador són a `sources/cache/`. Un
  * rebutjador que no les rebutgi no serveix de res, i és l'única part d'aquest
- * script que es pot provar des d'aquí. Obre els dos fitxers amb `file://` i
- * exigeix que tots dos caiguin.
+ * script que es pot provar des d'aquí. Obre cada fitxer amb `file://` i
+ * exigeix que tots caiguin.
  */
 if (process.argv.includes('--self-check')) {
   const CACHE = new URL('../sources/cache/', import.meta.url)
@@ -280,7 +310,7 @@ if (process.argv.includes('--self-check')) {
     console.error(`\n${bad} còpia(es) buida(es) han passat el filtre. El rebutjador no serveix.`)
     process.exit(1)
   }
-  console.log('\nLes dues còpies que van enganyar el baixador no passen aquest filtre.')
+  console.log('\nLes còpies que van enganyar el baixador no passen aquest filtre.')
   process.exit(0)
 }
 
