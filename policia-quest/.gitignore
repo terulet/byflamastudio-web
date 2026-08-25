@@ -1,0 +1,36 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Còpies i text extret: es regeneren amb els scripts de fonts.
+#
+# Excepció: les instantànies de text (.txt) sí que hi van. Són l'evidència de
+# les preguntes d'actualitat —el manifest en declara el SHA-256 i un test el
+# torna a comprovar— i pesen kilobytes, no megabytes com els PDF.
+sources/cache/*
+!sources/cache/.gitkeep
+!sources/cache/*.txt
+!sources/cache/*.md
+sources/extracted/
+
+# Sortides de test i captures de treball.
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+
+# Cachés d'eines.
+.vite/
+*.tsbuildinfo
+
+.DS_Store
+
+# Documents entregats a mà per adoptar: no es versionen (poden ser grans i el
+# manifest ja en guarda el SHA-256 un cop adoptats).
+sources/inbox/*
+!sources/inbox/.gitkeep
+
+# Cachés de Python dels scripts de transcripció.
+__pycache__/
+*.pyc

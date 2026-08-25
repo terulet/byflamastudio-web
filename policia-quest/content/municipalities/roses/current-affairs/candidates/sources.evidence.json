@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-08-24",
+  "status": "candidate_verified_against_official_source",
+  "sources": [
+    {
+      "id": "roses-budget-2026",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2025-10-28",
+      "title": "Aprovat el pressupost municipal de Roses per a 2026, que pujarà a 48,4 M€",
+      "url": "https://www.roses.cat/noticies/aprovat-el-pressupost-municipal-de-roses-per-a-2026-que-pujara-a-48-4-meur",
+      "facts": ["Pressupost específic de l'Ajuntament: 44.649.900 euros.", "Pressupost consolidat: 48.400.660 euros.", "Inversions previstes: 2,4 milions d'euros."]
+    },
+    {
+      "id": "roses-prego-festa-major-2026",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2026-08-06",
+      "title": "Roses obrirà demà la seva Festa Major amb un pregó innovador a càrrec del Grup de Teatre de Roses",
+      "url": "https://www.roses.cat/noticies/roses-obrira-dema-la-seva-festa-major-amb-un-prego-innovador-a-carrec-del-grup-de-teatre-de-roses",
+      "facts": ["El pregó teatralitzat de la Festa Major 2026 va començar a les 21.30 h."]
+    },
+    {
+      "id": "roses-nits-circ-2026",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2026-08-04",
+      "title": "Nits de Circ arriba a la sisena edició",
+      "url": "https://www.roses.cat/noticies/nits-de-circ-arriba-a-la-sisena-edicio-amb-un-espectacle-que-portara-a-roses-els-millors-trapezistes-volants-del-mon",
+      "facts": ["A Roses es van programar sis funcions, del 18 al 23 d'agost de 2026, a la Ciutadella."]
+    },
+    {
+      "id": "roses-catala-nouvinguts-2026",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2026-08-21",
+      "title": "Roses ofereix classes de català durant l’agost per facilitar l’acollida lingüística dels alumnes nouvinguts",
+      "url": "https://www.roses.cat/noticies/roses-ofereix-classes-de-catala-durant-l2019agost-per-facilitar-l2019acollida-linguistica-dels-alumnes-nouvinguts",
+      "facts": ["Les classes s'adrecen a alumnes nouvinguts d'entre 11 i 16 anys."]
+    },
+    {
+      "id": "roses-top-manta-2026-07-31",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2026-07-31",
+      "title": "Comissats més de 1.200 articles abans que es posessin a la venda en el top manta de Roses",
+      "url": "https://www.roses.cat/noticies/comissats-mes-de-1-200-articles-abans-que-es-posessin-a-la-venda-en-el-top-manta-de-roses",
+      "facts": ["L'operatiu va confiscar 1.207 articles."]
+    },
+    {
+      "id": "roses-carnaval-revista-2026",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2026-01-30",
+      "title": "El Carnaval de Roses no s’explica, es reviu: ja és aquí la revista amb 250 fotografies del 2025",
+      "url": "https://www.roses.cat/noticies/el-carnaval-de-roses-no-s2019explica-es-reviu-ja-es-aqui-la-revista-amb-250-fotografies-del-2025",
+      "facts": ["El Carnaval de Roses 2026 es va celebrar del 12 al 16 de febrer."]
+    },
+    {
+      "id": "roses-cartell-carnaval-2026",
+      "publisher": "Ajuntament de Roses",
+      "publishedAt": "2025-08-14",
+      "title": "Roses presenta el cartell del Carnaval 2026",
+      "url": "https://www.roses.cat/noticies/roses-presenta-el-cartell-del-carnaval-2026-coincidint-amb-la-inauguracio-de-les-barraques-de-la-festa-major",
+      "facts": ["El cartell és obra d'Alma Martín Guillén i es titula «Sirena de la Badia»."]
+    },
+    {
+      "id": "cat-carboni-2026-2030",
+      "publisher": "Parlament de Catalunya",
+      "publishedAt": "2025-09-09",
+      "title": "La Mesa rep la proposta de pressupostos de carboni",
+      "url": "https://www.parlament.cat/web/actualitat/noticies/index.html%3Fp_id%3D300613926",
+      "facts": ["La primera proposta rebuda pel Parlament correspon al període 2026-2030."]
+    },
+    {
+      "id": "cat-preus-universitaris-2025-2026",
+      "publisher": "Generalitat de Catalunya",
+      "publishedAt": "2025-06-17",
+      "title": "Un únic preu per a tots els graus i màsters habilitants",
+      "url": "https://govern.cat/salapremsa/notes-premsa/717964/govern-culmina-reduccio-progressiva-dels-preus-universitaris-unic-preu-tots-graus-masters-habilitants",
+      "facts": ["El curs 2025-2026 fixa 17,69 euros per crèdit per als graus i màsters habilitants."]
+    },
+    {
+      "id": "cat-esra-2026",
+      "publisher": "Generalitat de Catalunya",
+      "publishedAt": "2024-10-29",
+      "title": "Catalunya presidirà l'Aliança de Regions Europees de Semiconductors el 2026",
+      "url": "https://govern.cat/gov/notes-premsa/651582/catalunya-presidira-l-alianca-de-regions-europees-de-semiconductors-el-2026",
+      "facts": ["La nota descriu una aliança de 31 regions europees.", "L'ecosistema català de semiconductors constava de 260 agents."]
+    },
+    {
+      "id": "cat-previsions-2026",
+      "publisher": "Generalitat de Catalunya",
+      "publishedAt": "2025-05-15",
+      "title": "Previsió de creixement de l'economia catalana per al 2026",
+      "url": "https://govern.cat/gov/notes-premsa/707782/govern-situa-previsio-creixement-economia-catalana-26-percent-2025-2-percent-2026",
+      "facts": ["El consum de les llars previst per al 2026 creixia un 2,3%.", "La previsió de creixement del PIB per al 2026 era del 2,0%.", "La taxa d'atur prevista per al 2026 era del 8,4%."]
+    },
+    {
+      "id": "es-bono-cultural-2026",
+      "publisher": "La Moncloa, Govern d'Espanya",
+      "publishedAt": "2026-06-22",
+      "title": "Bono Cultural Joven 2026",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/Paginas/2026/220626-bono-cultural-joven-2026.aspx",
+      "facts": ["L'ajut és de 400 euros.", "El 2026 incorpora instruments musicals, materials artístics i cursos culturals entre els usos possibles."]
+    },
+    {
+      "id": "es-icaa-2026",
+      "publisher": "La Moncloa, Govern d'Espanya",
+      "publishedAt": "2026-05-05",
+      "title": "Ajuts generals de l'ICAA per a llargmetratges",
+      "url": "https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260505-referencia-rueda-de-prensa-ministros.aspx",
+      "facts": ["La convocatòria autoritzada per a 2026 és de 62 milions d'euros."]
+    },
+    {
+      "id": "es-estatut-practiques-2026",
+      "publisher": "La Moncloa, Govern d'Espanya",
+      "publishedAt": "2026-03-03",
+      "title": "Projecte de l'Estatut de les persones en formació pràctica no laboral",
+      "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/030326-rueda-prensa-ministros.aspx",
+      "facts": ["Més de dos milions de joves havien cotitzat per pràctiques no remunerades des de l'1 de gener de 2024; el 56% eren dones."]
+    },
+    {
+      "id": "es-visita-lleo-xiv-2026",
+      "publisher": "La Moncloa, Govern d'Espanya",
+      "publishedAt": "2026-06-08",
+      "title": "El president del Govern manté una trobada amb el papa Lleó XIV",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/080626-sanchez-encuentro-papa-leon-xiv.aspx",
+      "facts": ["Pedro Sánchez es va reunir amb el papa Lleó XIV a la Nunciatura Apostòlica de Madrid el 8 de juny de 2026."]
+    },
+    {
+      "id": "eu-presidencia-irlanda-2026",
+      "publisher": "Consell de la Unió Europea, Presidència irlandesa",
+      "publishedAt": "2026-07-01",
+      "title": "Introducing the Irish EU Presidency Programme",
+      "url": "https://irish-presidency.consilium.europa.eu/en/news/ni-neart-go-cur-le-cheile-introducing-the-irish-eu-presidency-programme/",
+      "facts": ["La de 2026 era la vuitena presidència irlandesa del Consell de la UE.", "Irlanda exerceix la presidència de l'1 de juliol al 31 de desembre de 2026.", "Els tres eixos són competitivitat, valors i seguretat."]
+    },
+    {
+      "id": "goya-2026",
+      "publisher": "Academia de las Artes y las Ciencias Cinematográficas de España",
+      "publishedAt": "2026-03-01",
+      "title": "Los Domingos triunfa en el 40 aniversario de los Goya",
+      "url": "https://www.academiadecine.com/2026/03/01/los-domingos-triunfa-en-el-40-aniversario-de-los-goya-y-de-la-academia/",
+      "facts": ["«Los Domingos» va obtenir cinc premis Goya.", "«Sirat» va obtenir sis Goya tècnics."]
+    },
+    {
+      "id": "eurovision-2026",
+      "publisher": "European Broadcasting Union, Eurovision Song Contest",
+      "publishedAt": "2025-08-20",
+      "title": "Vienna revealed as Host City for 70th Eurovision Song Contest in 2026",
+      "url": "https://eurovision.tv/mediacentre/release/vienna-host-city-70th-eurovision",
+      "facts": ["Viena va acollir Eurovisió 2026 i la final es va programar per al 16 de maig."]
+    },
+    {
+      "id": "olimpics-hivern-2026",
+      "publisher": "Comitè Olímpic Internacional",
+      "publishedAt": "2025-02-06",
+      "title": "One Year to Go: Milano Cortina 2026",
+      "url": "https://newsroom.olympics.com/record/1645",
+      "facts": ["Els Jocs Olímpics d'Hivern Milano Cortina 2026 es van celebrar del 6 al 22 de febrer."]
+    }
+  ]
+}

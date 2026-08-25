@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: es-visita-lleo-xiv-2026
+publisher: La Moncloa, Gobierno de España
+published_at: 2026-06-08
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/080626-sanchez-encuentro-papa-leon-xiv.aspx
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+El presidente del Gobierno mantiene un encuentro con el papa León XIV
+
+RELEVANT OFFICIAL TEXT
+«Pedro Sánchez, ha mantenido un encuentro con el papa León XIV»
+«Nunciatura Apostólica, Madrid»

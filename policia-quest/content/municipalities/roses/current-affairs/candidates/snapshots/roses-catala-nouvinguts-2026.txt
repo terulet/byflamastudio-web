@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-catala-nouvinguts-2026
+publisher: Ajuntament de Roses
+published_at: 2026-08-21 13:22
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/roses-ofereix-classes-de-catala-durant-l2019agost-per-facilitar-l2019acollida-linguistica-dels-alumnes-nouvinguts
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Roses ofereix classes de català durant l’agost per facilitar l’acollida lingüística dels alumnes nouvinguts
+
+RELEVANT OFFICIAL TEXT
+«classes de llengua catalana a alumnes nouvinguts a Roses d’entre 11 i 16 anys»
+

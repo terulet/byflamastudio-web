@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: eurovision-2026
+publisher: European Broadcasting Union, Eurovision Song Contest
+published_at: 2025-08-20 08:15 CEST
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://eurovision.tv/mediacentre/release/vienna-host-city-70th-eurovision
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Vienna revealed as Host City for 70th Eurovision Song Contest in 2026
+
+RELEVANT OFFICIAL TEXT
+«The Grand Final [...] will be held on Saturday 16 May at the Wiener Stadthalle»
+

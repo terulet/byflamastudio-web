@@ -1,0 +1,136 @@
+/**
+ * Sistema de disseny de Policia Quest.
+ *
+ * Paleta nocturna: blau marí profund de fons, superfícies blau pissarra i
+ * accent cian. L'ambre marca atenció, el verd domini i el vermell queda
+ * reservat als errors i al risc. El tema clar inverteix les superfícies
+ * mantenint les mateixes funcions semàntiques.
+ *
+ * ─── Contrast ────────────────────────────────────────────────────────────
+ *
+ * Tots els parells de text i fons d'aquesta paleta arriben a 4,5:1 com a mínim
+ * sobre **la superfície més clara on poden aparèixer**, que és el cas pitjor.
+ * Els valors estan mesurats, no estimats: `tests/e2e/accessibility.spec.ts`
+ * audita cada pantalla amb axe-core en els dos temes i falla si algun baixa.
+ *
+ * Els fons de les píndoles (`*-dim`) són **colors sòlids**, no capes amb alfa.
+ * Amb alfa, el contrast depenia de la superfície de sota i el mateix component
+ * passava sobre una targeta i fallava sobre una altra.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* Superfícies */
+  --bg: #0a1420;
+  --bg-elevated: #0f1d2e;
+  --surface: #14243a;
+  --surface-2: #1b2f49;
+  --surface-3: #223a59;
+  --border: #26405e;
+  --border-strong: #35597f;
+
+  /* Text */
+  --text: #e9f0f8;
+  --text-muted: #b6c8de;
+  --text-faint: #8ea9c6;
+
+  /* Accent i estats */
+  --accent: #2ad4ee;
+  --accent-strong: #0bb8d4;
+  --accent-dim: #103745;
+  --accent-contrast: #04202b;
+
+  --warn: #f2b134;
+  --warn-dim: #343024;
+  --ok: #3ddc97;
+  --ok-dim: #133835;
+  --danger: #ff8f8f;
+  --danger-dim: #362a34;
+  --info: #93b3ff;
+  --info-dim: #233148;
+
+  /* Formes */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Espais */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+
+  /* Tipografia */
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+
+  /* Àrea tàctil mínima */
+  --tap: 44px;
+
+  /* Alçada de la barra de navegació inferior */
+  --nav-h: 60px;
+
+  --motion-fast: 120ms;
+  --motion: 200ms;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f2f5f9;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --surface-3: #e3eaf3;
+  --border: #d5deea;
+  --border-strong: #b3c3d6;
+
+  --text: #10202f;
+  --text-muted: #3d4d60;
+  --text-faint: #566475;
+
+  --accent: #085f70;
+  --accent-strong: #064a58;
+  --accent-dim: #e6eff1;
+  --accent-contrast: #ffffff;
+
+  --warn: #7b4d03;
+  --warn-dim: #f2ede4;
+  --ok: #0f634a;
+  --ok-dim: #e7efed;
+  --danger: #9e2f27;
+  --danger-dim: #f5eae9;
+  --info: #2b52a8;
+  --info-dim: #eaedf7;
+
+  --shadow-sm: 0 1px 2px rgba(16, 32, 47, 0.08);
+  --shadow: 0 6px 20px rgba(16, 32, 47, 0.1);
+  --shadow-lg: 0 16px 40px rgba(16, 32, 47, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion: 0ms;
+  }
+}

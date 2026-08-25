@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: eu-presidencia-irlanda-2026
+publisher: Council of the European Union, Irish Presidency
+published_at: 2026-07-01
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://irish-presidency.consilium.europa.eu/en/news/ni-neart-go-cur-le-cheile-introducing-the-irish-eu-presidency-programme/
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Introducing the Irish EU Presidency Programme
+
+RELEVANT OFFICIAL TEXT
+«Today 1 July 2026 Ireland assumes the Presidency [...] for the eighth time.»
+«the core themes of competitiveness, values and security»

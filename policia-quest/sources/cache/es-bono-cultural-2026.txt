@@ -1,0 +1,15 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: es-bono-cultural-2026
+publisher: La Moncloa, Gobierno de España
+published_at: 2026-06-22
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/Paginas/2026/220626-bono-cultural-joven-2026.aspx
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Los jóvenes nacidos en 2008 pueden solicitar el Bono Cultural Joven 2026
+
+RELEVANT OFFICIAL TEXT
+«esta ayuda de 400 euros»
+«cursos y talleres [...] instrumentos musicales [...] y material artístico»
+

@@ -1,0 +1,327 @@
+/**
+ * Informe de cobertura. `npm run content:report`
+ *
+ * Diu, sense maquillatge, què cobreix el contingut i què li falta. Escriu
+ * artifacts/coverage-report.md i el mostra per consola.
+ */
+import { mkdirSync, writeFileSync } from 'node:fs'
+import { examAvailability } from '../src/engines/availability.ts'
+import { ROSES_PACK } from '../content/municipalities/roses/index.ts'
+
+const lines: string[] = []
+const out = (text = ''): void => {
+  lines.push(text)
+}
+
+const { syllabus, questions, lessons, exams, sources, currentAffairs, blueprints } = ROSES_PACK
+
+/** El contingut dinàmic caduca: la capacitat es mesura contra el dia d'avui. */
+const TODAY = new Date().toISOString().slice(0, 10)
+const active = questions.filter((q) => q.status === 'active')
+const today = new Date().toISOString().slice(0, 10)
+
+out('# Informe de cobertura — Policia Quest · Roses')
+out()
+out(`Generat el ${today} · versió de contingut ${ROSES_PACK.version.packVersion}`)
+out()
+
+/* ---------------- Resum ---------------- */
+
+out('## Resum')
+out()
+out('| Mètrica | Valor |')
+out('| --- | --- |')
+out(`| Temes del temari | ${syllabus.topics.length} |`)
+out(`| Microlliçons | ${lessons.length} |`)
+out(`| Preguntes totals | ${questions.length} |`)
+out(`| Preguntes actives | ${active.length} |`)
+out(`| — de coneixements professionals | ${active.filter((q) => q.track === 'coneixements-professionals').length} |`)
+out(`| — de cultura general | ${active.filter((q) => q.track === 'cultura-general').length} |`)
+out(`| Preguntes d’examen oficial importades | ${questions.filter((q) => q.origin === 'official').length} |`)
+out(`| Fonts registrades | ${sources.length} |`)
+out(`| Exàmens registrats | ${exams.length} |`)
+out()
+
+/* ---------------- Cobertura per tema ---------------- */
+
+out('## Cobertura per tema')
+out()
+out('| # | Tema | Bloc | Lliçó | Preguntes actives | Fonts |')
+out('| --- | --- | --- | --- | --- | --- |')
+
+const lessonTopics = new Set(lessons.map((l) => l.topicId))
+const activeByTopic = new Map<string, number>()
+for (const q of active) activeByTopic.set(q.topicId, (activeByTopic.get(q.topicId) ?? 0) + 1)
+
+const thinTopics: string[] = []
+for (const topic of [...syllabus.topics].sort((a, b) => a.number - b.number)) {
+  const n = activeByTopic.get(topic.topicId) ?? 0
+  // L'objectiu de disseny és 5 preguntes pròpies per tema; per sota, es reporta.
+  if (n < 5) thinTopics.push(`tema ${topic.number} (${n} preguntes)`)
+  out(
+    `| ${topic.number} | ${topic.title.ca} | ${topic.block} | ${lessonTopics.has(topic.topicId) ? '✓' : '✗'} | ${n} | ${topic.primarySourceIds.length} |`,
+  )
+}
+out()
+
+/* ---------------- Estat de les fonts ---------------- */
+
+out('## Estat de les fonts')
+out()
+const downloaded = sources.filter((s) => s.fetchStatus === 'downloaded')
+const pendingSources = sources.filter((s) => s.fetchStatus === 'pending-download')
+out(`- Descarregades i verificades per SHA-256: **${downloaded.length}**`)
+out(`- Pendents de descàrrega: **${pendingSources.length}**`)
+out()
+
+if (pendingSources.length > 0) {
+  out('### Fonts pendents')
+  out()
+  out('| Font | Àmbit | URL |')
+  out('| --- | --- | --- |')
+  for (const s of pendingSources) {
+    out(`| \`${s.sourceId}\` | ${s.scope} | ${s.url} |`)
+  }
+  out()
+  const reason = pendingSources[0]?.fetchNote
+  if (reason) {
+    out(`> Motiu registrat: ${reason}`)
+    out()
+  }
+}
+
+/* ---------------- Estat de revisió de les referències ---------------- */
+
+out('## Estat de verificació de les referències')
+out()
+const refStates = new Map<string, number>()
+for (const q of questions) {
+  for (const r of q.references) refStates.set(r.reviewStatus, (refStates.get(r.reviewStatus) ?? 0) + 1)
+}
+for (const l of lessons) {
+  for (const r of l.references) refStates.set(r.reviewStatus, (refStates.get(r.reviewStatus) ?? 0) + 1)
+}
+out('| Estat | Referències |')
+out('| --- | --- |')
+for (const [state, n] of [...refStates].sort()) out(`| ${state} | ${n} |`)
+out()
+const pendingRefs = [
+  ...questions.flatMap((q) => q.references.map((r) => ({ consumer: q.questionId, r }))),
+  ...lessons.flatMap((l) => l.references.map((r) => ({ consumer: l.lessonId, r }))),
+].filter((x) => x.r.reviewStatus === 'pending-source-verification')
+out(
+  '`verified` vol dir que algú ha obert la còpia local del document i hi ha trobat la proposició ' +
+  'al lloc que diu el localitzador. Tenir el fitxer no verifica res per si sol.',
+)
+out()
+if (pendingSources.length === 0 && pendingRefs.length > 0) {
+  const bySource = new Map<string, number>()
+  for (const x of pendingRefs) bySource.set(x.r.sourceId, (bySource.get(x.r.sourceId) ?? 0) + 1)
+  out(
+    `Totes les fonts tenen còpia local, i tot i així queden **${pendingRefs.length} referències** en ` +
+    '`pending-source-verification`. No és un tràmit pendent: cada una té un motiu concret —o la ' +
+    'descàrrega no porta el text del document, o el document no diu el que la referència afirma—. ' +
+    'El motiu de cada una és a `content/municipalities/roses/adopcio-normativa-2026-08-24.json`.',
+  )
+  out()
+  out('| Font | Referències pendents |')
+  out('| --- | --- |')
+  for (const [sourceId, n] of [...bySource].sort((a, b) => b[1] - a[1])) {
+    out(`| \`${sourceId}\` | ${n} |`)
+  }
+  out()
+}
+
+/* ---------------- Exàmens oficials ---------------- */
+
+out('## Exàmens oficials')
+out()
+out('| Examen | Prioritat | Estat | Preguntes | Font |')
+out('| --- | --- | --- | --- | --- |')
+for (const e of [...exams].sort((a, b) => a.priority.localeCompare(b.priority) || b.year - a.year)) {
+  out(
+    `| ${e.examId} | ${e.priority} | ${e.importStatus} | ${e.questionIds.length}${e.expectedQuestionCount ? ` / ${e.expectedQuestionCount}` : ''} | \`${e.sourceId}\` |`,
+  )
+}
+out()
+
+const p0Pending = exams.filter((e) => e.priority === 'P0' && e.importStatus !== 'imported')
+if (p0Pending.length > 0) {
+  out(`> **${p0Pending.length} dels 4 exàmens P0 no s’han pogut importar.** El seu contingut no s’inventa: `)
+  out('> el registre conserva la URL oficial i el nombre de preguntes esperat perquè la importació es')
+  out('> pugui completar en una execució amb accés a la xarxa.')
+  out()
+}
+
+/* ---------------- Actualitat ---------------- */
+
+out('## Actualitat')
+out()
+for (const pack of currentAffairs) {
+  out(`- \`${pack.packId}\` · ${pack.status} · cobreix ${pack.coversFrom} → ${pack.coversTo} · caduca ${pack.expiresAt} · **${pack.questionIds.length} preguntes**`)
+  if (pack.note) out(`  - ${pack.note}`)
+}
+out()
+
+/* ---------------- Simulacres ---------------- */
+
+out('## Capacitat dels simulacres')
+out()
+out(
+  'Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè pot muntar ' +
+  '**la prova que descriuen les bases**. Cada quota es compta a part: que en sobrin d’una ' +
+  'no compensa que en faltin d’una altra.',
+)
+out()
+out('| Simulacre | Quota | Necessàries | Vigents al banc | Estat |')
+out('| --- | --- | --- | --- | --- |')
+for (const bp of blueprints) {
+  const status = examAvailability(questions, bp, TODAY)
+  if (status.quotas.length > 0) {
+    for (const quota of status.quotas) {
+      const label = bp.composition?.find((c) => c.tag === quota.tag)?.label.ca ?? quota.tag
+      out(
+        `| ${bp.title.ca} | ${label} | ${quota.needed} | ${quota.available} | ` +
+          `${quota.missing === 0 ? '✓' : `✗ en falten ${quota.missing}`} |`,
+      )
+    }
+  } else {
+    out(
+      `| ${bp.title.ca} | (sense composició fixada) | ${bp.questionCount} | ${status.poolSize} | ` +
+        `${status.missingBody === 0 ? '✓' : `✗ en falten ${status.missingBody}`} |`,
+    )
+  }
+  out(
+    `| ${bp.title.ca} | Reserva | ${bp.reserveCount} | ${bp.reserveCount - status.missingReserve} | ` +
+      `${status.missingReserve === 0 ? '✓' : '⚠ sense reserva'} |`,
+  )
+}
+out()
+
+for (const bp of blueprints) {
+  const status = examAvailability(questions, bp, TODAY)
+  if (status.ok) continue
+  out(`**${bp.title.ca}: bloquejat.** ${bp.contentNote ?? 'Sense motiu declarat.'}`)
+  out()
+}
+
+for (const composition of ROSES_PACK.compositions) {
+  const blocked = composition.blueprintIds
+    .map((id) => blueprints.find((b) => b.blueprintId === id))
+    .filter((b) => b !== undefined)
+    .filter((b) => !examAvailability(questions, b, TODAY).ok)
+  if (blocked.length === 0) continue
+  out(
+    `**${composition.title.ca}: bloquejat**, perquè inclou ${blocked.map((b) => b.title.ca).join(' i ')}.`,
+  )
+  out()
+}
+
+/* ---------------- Què necessita revisió humana ---------------- */
+
+out('## Què necessita revisió humana')
+out()
+const todo: string[] = []
+
+if (pendingSources.length > 0) {
+  todo.push(
+    `Descarregar les ${pendingSources.length} fonts pendents i tornar a validar el contingut per passar ` +
+    'les referències a `verified`.',
+  )
+}
+const brokenDownloads = sources.filter((s) => s.fetchStatus === 'downloaded' && s.fetchNote)
+if (brokenDownloads.length > 0) {
+  todo.push(
+    `Tornar a capturar ${brokenDownloads.length} pàgines web la còpia de les quals només porta el menú ` +
+    `(${brokenDownloads.map((s) => `\`${s.sourceId}\``).join(', ')}): el cos es carrega per JavaScript. ` +
+    'Cal una instantània de text de les pàgines concretes, com es va fer amb el paquet d’actualitat.',
+  )
+}
+if (p0Pending.length > 0) {
+  todo.push(
+    `Importar els ${p0Pending.length} exàmens oficials de prioritat P0 (2025 en propietat i 2026 interins, ` +
+    'cultura general i coneixements professionals), amb les respostes publicades pel tribunal.',
+  )
+}
+// `partial` no és «falta la font»: el quadernet ja s'ha transcrit i només hi
+// queda una pregunta genuïnament irresoluble (ambigüitat pròpia del document
+// o anul·lació pel propi tribunal), documentada a la seva nota. Només
+// `pending-source` —cap còpia accessible— demana localitzar una URL.
+const p1Pending = exams.filter((e) => e.priority === 'P1' && e.importStatus === 'pending-source')
+if (p1Pending.length > 0) {
+  todo.push(
+    `Localitzar la URL directa dels ${p1Pending.length} quadernets de prioritat P1 a l’arxiu municipal i importar-los.`,
+  )
+}
+const emptyPacks = currentAffairs.filter((p) => p.status === 'active' && p.questionIds.length === 0)
+if (emptyPacks.length > 0) {
+  todo.push(
+    'Omplir el paquet d’actualitat amb fets verificats contra fonts oficials o periodístiques fiables. ' +
+    'La prova de cultura general reserva 10 de 20 preguntes a l’actualitat i ara mateix el banc no en té cap.',
+  )
+}
+const ordinanceRefs = questions.filter((q) =>
+  q.references.some((r) => r.sourceId.startsWith('roses-ordenanca')),
+).length
+todo.push(
+  `Contrastar contra el text vigent les ${ordinanceRefs} preguntes que citen les ordenances municipals de ` +
+  'Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.',
+)
+if (thinTopics.length > 0) {
+  todo.push(`Ampliar el banc als temes per sota de l'objectiu de 5 preguntes: ${thinTopics.join(', ')}.`)
+}
+
+for (const [i, item] of todo.entries()) out(`${i + 1}. ${item}`)
+out()
+
+/* ---------------- SOURCES.md, generat del manifest ---------------- */
+
+const sourceLines: string[] = []
+sourceLines.push('# Fonts — Policia Quest · Roses')
+sourceLines.push('')
+sourceLines.push('> **Fitxer generat.** No l’editeu a mà: surt de `sources/source-manifest.json`')
+sourceLines.push('> mitjançant `npm run content:report`. Per afegir o corregir una font, editeu el')
+sourceLines.push('> manifest.')
+sourceLines.push('')
+sourceLines.push(`Generat el ${today} · ${sources.length} fonts registrades.`)
+sourceLines.push('')
+
+const SCOPE_TITLES: Record<string, string> = {
+  roses: 'Roses',
+  catalunya: 'Catalunya',
+  estatal: 'Estat',
+  ue: 'Unió Europea',
+  internacional: 'Internacional',
+}
+
+for (const scope of ['roses', 'catalunya', 'estatal', 'ue', 'internacional']) {
+  const group = sources.filter((s) => s.scope === scope)
+  if (group.length === 0) continue
+  sourceLines.push(`## ${SCOPE_TITLES[scope] ?? scope}`)
+  sourceLines.push('')
+  for (const s of group) {
+    sourceLines.push(`### \`${s.sourceId}\``)
+    sourceLines.push('')
+    sourceLines.push(`- **Títol**: ${s.title}`)
+    sourceLines.push(`- **Organisme**: ${s.issuer}`)
+    sourceLines.push(`- **Tipus**: ${s.kind}`)
+    sourceLines.push(`- **URL**: ${s.url}`)
+    if (s.publishedAt) sourceLines.push(`- **Publicació**: ${s.publishedAt}`)
+    sourceLines.push(`- **Consulta**: ${s.consultedAt}`)
+    sourceLines.push(`- **Vigència**: ${s.status}`)
+    sourceLines.push(`- **Còpia local**: ${s.fetchStatus}${s.sha256 ? ` (SHA-256 \`${s.sha256}\`)` : ''}`)
+    if (s.fetchNote) sourceLines.push(`- **Nota de descàrrega**: ${s.fetchNote}`)
+    if (s.notes) sourceLines.push(`- **Notes**: ${s.notes}`)
+    sourceLines.push('')
+  }
+}
+
+writeFileSync('SOURCES.md', sourceLines.join('\n'))
+
+/* ---------------- Escriptura ---------------- */
+
+mkdirSync('artifacts', { recursive: true })
+const report = lines.join('\n')
+writeFileSync('artifacts/coverage-report.md', report + '\n')
+console.log(report)
+console.error('\n→ Escrit a artifacts/coverage-report.md i SOURCES.md')

@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: cat-preus-universitaris-2025-2026
+publisher: Generalitat de Catalunya
+published_at: 2025-06-17 15:05
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://govern.cat/salapremsa/notes-premsa/717964/govern-culmina-reduccio-progressiva-dels-preus-universitaris-unic-preu-tots-graus-masters-habilitants
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Un únic preu per a tots els graus i màsters habilitants
+
+RELEVANT OFFICIAL TEXT
+«tots els estudis de grau (17,69 €/crèdit) i [...] els màsters habilitants»
+

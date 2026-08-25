@@ -1,0 +1,15 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: cat-previsions-2026
+publisher: Generalitat de Catalunya
+published_at: 2025-05-15 09:55
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://govern.cat/gov/notes-premsa/707782/govern-situa-previsio-creixement-economia-catalana-26-percent-2025-2-percent-2026
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+El Govern situa la previsió de creixement de l'economia catalana en el 2% el 2026
+
+RELEVANT OFFICIAL TEXT
+«el creixement del PIB es moderaria fins al 2,0%»
+«El consum de les llars [...] presentarien un creixement [...] del 2,3%»
+«reduir la taxa d’atur fins al 8,4% el 2026»

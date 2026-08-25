@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: es-icaa-2026
+publisher: La Moncloa, Gobierno de España
+published_at: 2026-05-05
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260505-referencia-rueda-de-prensa-ministros.aspx
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Referencia del Consejo de Ministros de 5 de mayo de 2026
+
+RELEVANT OFFICIAL TEXT
+«ayudas generales para la producción de largometrajes [...] por importe de 62 millones de euros»
+

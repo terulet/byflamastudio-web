@@ -1,0 +1,15 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-cartell-carnaval-2026
+publisher: Ajuntament de Roses
+published_at: 2025-08-14 10:09
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/roses-presenta-el-cartell-del-carnaval-2026-coincidint-amb-la-inauguracio-de-les-barraques-de-la-festa-major
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Roses presenta el cartell del Carnaval 2026
+
+RELEVANT OFFICIAL TEXT
+«El cartell ha estat creat per l’estudiant [...] Alma Martín Guillén»
+«La Sirena de la Badia, el personatge creat per il·lustrar el proper carnaval rosinc»
+

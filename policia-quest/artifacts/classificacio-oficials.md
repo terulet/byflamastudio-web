@@ -1,0 +1,1768 @@
+# Classificació temàtica de les preguntes d'examen oficial
+
+**Generat** per `scripts/transcription/generate_official_questions.py` a partir
+d'`official-topic-map.json`, el mapa revisat pregunta a pregunta. No s'edita a mà.
+
+El tribunal no etiqueta les preguntes per tema: aquesta classificació és
+**editorial**, feta contra l'àmbit publicat de cada tema del temari, i cada
+decisió porta el seu motiu. Una pregunta s'assigna només si cau dins d'un
+àmbit; el que cap tema cobreix (cultura general, actualitat del dia de
+l'examen, matèria fora de temari) queda al contenidor, també amb motiu.
+
+**819 preguntes revisades: 476 classificades en 38 temes, 343 al contenidor.**
+
+## 1. La Constitució de 1978. Principis generals — 22
+
+- `q-of-roses-2026-interins-cp-001` — Completa la frase: «La Constitució es fonamenta en la indissoluble unitat de la Nació espanyola, pàtria com…
+  - *art. 2 CE: unitat de la nació i dret a l’autonomia (principis constitucionals)*
+- `q-of-roses-2025-propietat-cg-005` — Quantes comunitats autònomes té Espanya?
+  - *nombre de comunitats i ciutats autònomes (model territorial de la Constitució)*
+- `q-of-roses-2025-interins-cp-001` — D’acord amb l’article 9.3 de la Constitució espanyola, assenyala quina d’aquestes respostes és la correcta:
+  - *garanties de l’art. 9.3 CE (principis constitucionals)*
+- `q-of-roses-2024-propietat-cp-001` — D’acord amb la Constitució espanyola, Espanya propugna com a valors superiors del seu ordenament jurídic:
+  - *CE: valors superiors de l’ordenament jurídic*
+- `q-of-roses-2024-propietat-cp-002` — L’article 2 de la Constitució espanyola:
+  - *art. 2 de la Constitució espanyola: unitat i autonomia*
+- `q-of-roses-2024-interins-cp-001` — Segons la Constitució espanyola, Espanya es constitueix en:
+  - *CE: forma d’Estat*
+- `q-of-roses-2023-interins-cp-001` — Quin article de la Constitució espanyola estableix que l’Estat té la competència exclusiva sobre la seguret…
+  - *article CE: competència exclusiva de l’Estat sobre seguretat pública*
+- `q-of-roses-2023-interins-cp-004` — El Congrés dels Diputats té:
+  - *composició del Congrés dels Diputats*
+- `q-of-roses-2022-interins-cp-001` — La Constitució Espanyola de 1978 té:
+  - *estructura de la Constitució espanyola de 1978*
+- `q-of-roses-2021-propietat-cp-001` — L'article 104 de la Constitució Espanyola dóna prioritat:
+  - *art. 104 CE: missió de les forces i cossos de seguretat*
+- `q-of-roses-2021-interins-cp-003` — A quin Títol de la Constitució Espanyola es recull l’organització territorial de l’Estat?
+  - *CE: títol de l’organització territorial de l’Estat*
+- `q-of-roses-2021-interins-cp-017` — L’article 104 de la Constitució Espanyola, en establir la missió de les forces i cossos de seguretat, dóna …
+  - *art. 104 CE: missió de les forces i cossos de seguretat*
+- `q-of-roses-2019-propietat-cp-001` — Els projectes de reforma constitucional han de ser aprovats per:
+  - *aprovació dels projectes de reforma constitucional*
+- `q-of-roses-2019-propietat-cp-004` — Digues quina d'aquestes afirmacions és verdadera:
+  - *art. 138 CE: organització territorial i principi de solidaritat*
+- `q-of-roses-2019-interins-cp-001` — La Constitució espanyola va ser ratificada en referèndum pel poble espanyol el dia:
+  - *data de ratificació en referèndum de la CE*
+- `q-of-roses-2019-interins-cp-002` — Les Corts Generals es componen per:
+  - *composició de les Corts Generals*
+- `q-of-roses-2019-interins-cp-004` — D’acord amb la Constitució espanyola, l’Estat s’organitza territorialment en:
+  - *CE: organització territorial de l’Estat*
+- `q-of-roses-2018-propietat-cp-002` — Segons l'article 9 de la Constitució espanyola, qui està subjecte a la Constitució i a la resta de l'ordena…
+  - *art. 9 CE: subjecció a la Constitució i a l’ordenament jurídic*
+- `q-of-roses-2018-interins-cp-004` — Segons la Constitució Espanyola als arxipèlags, les illes tindran la seva administració en forma de...
+  - *CE: administració dels arxipèlags*
+- `q-of-roses-2018-interins-cp-015` — Quina és la figura nomenada pel Govern que dirigeix l'Administració de l'Estat a Catalunya?
+  - *figura que dirigeix l’Administració de l’Estat a Catalunya*
+- `q-of-roses-2017-interins-cp-001` — Quin any es va aprovar la Constitució Espanyola?
+  - *any d’aprovació de la Constitució espanyola*
+- `q-of-roses-2017-interins-cp-004` — Quina d'aquestes institucions no està recollida a la Constitució Espanyola?
+  - *institucions recollides a la Constitució espanyola*
+
+## 2. Els drets fonamentals a la Constitució de 1978 — 27
+
+- `q-of-roses-2026-interins-cp-002` — En relació amb el dret fonamental a la llibertat ideològica i religiosa, digues quina d’aquestes afirmacion…
+  - *art. 16 CE: llibertat ideològica i religiosa*
+- `q-of-roses-2025-propietat-cp-001` — Quins ciutadans són titulars del dret de participar en assumptes públics?
+  - *titulars del dret de participació en assumptes públics (art. 23 i 13 CE)*
+- `q-of-roses-2025-propietat-cp-002` — Quin d’aquests no és un dret fonamental recollit a la Constitució espanyola?
+  - *catàleg de drets fonamentals: l’habitatge n’és fora (principi rector)*
+- `q-of-roses-2025-propietat-cp-031` — Segons l’article 18.2 de la Constitució espanyola, l’entrada a un domicili pot ser emparada per:
+  - *inviolabilitat del domicili (art. 18.2 CE)*
+- `q-of-roses-2025-interins-cp-002` — D’acord amb l’article 17 de la Constitució espanyola, assenyala quina d’aquestes afirmacions és falsa:
+  - *art. 17 CE: llibertat i seguretat, detenció preventiva*
+- `q-of-roses-2024-propietat-cp-003` — La igualtat davant la llei, d’acord amb la Constitució espanyola, es recull a l’article:
+  - *article CE: igualtat davant la llei*
+- `q-of-roses-2024-propietat-cp-004` — Segons l’article 17 de la Constitució espanyola, es garanteix l’assistència d’advocat al detingut:
+  - *art. 17 CE: assistència d’advocat al detingut*
+- `q-of-roses-2024-propietat-cp-028` — Quan es va proclamar la Declaració Universal dels Drets Humans?
+  - *proclamació de la Declaració Universal dels Drets Humans*
+- `q-of-roses-2024-propietat-cp-040` — Segons l’article 17.2 de la Constitució espanyola:
+  - *art. 17.2 CE*
+- `q-of-roses-2024-interins-cp-003` — Quin d’aquests drets NO és un dret fonamental?
+  - *drets que no són fonamentals*
+- `q-of-roses-2024-interins-cp-006` — Qui escull el síndic de greuges?
+  - *elecció del síndic de greuges*
+- `q-of-roses-2024-interins-cp-026` — Tot agent de policia és titular dels drets fonamentals de la Declaració Universal dels Drets Humans (1948).…
+  - *Declaració Universal dels Drets Humans: dret reconegut als agents de policia*
+- `q-of-roses-2023-interins-cp-003` — Estan legitimats per interposar recurs d’empara constitucional:
+  - *legitimació per interposar recurs d’empara constitucional*
+- `q-of-roses-2022-interins-cp-003` — Segons l’article 18.2 de la Constitució Espanyola, només és legítima l’entrada en un domicili:
+  - *art. 18.2 CE: entrada legítima en un domicili*
+- `q-of-roses-2021-propietat-cp-003` — Les sentències del Tribunal Europeu dels Drets Humans:
+  - *aplicació directa de les sentències del Tribunal Europeu dels Drets Humans*
+- `q-of-roses-2021-propietat-cp-008` — La Declaració Universal dels Drets Humans:
+  - *Declaració Universal dels Drets Humans*
+- `q-of-roses-2021-propietat-cp-013` — Els drets fonamentals regulats a la Constitució Espanyola es regulen en el:
+  - *ubicació dels drets fonamentals a la Constitució*
+- `q-of-roses-2021-interins-cp-010` — Quins d’aquests no és un dret fonamental recollit en el Títol I, secció Primera, capítol Segon de la Consti…
+  - *drets fonamentals del Títol I, secció I, capítol II CE*
+- `q-of-roses-2021-interins-cp-012` — Segons la Llei 24/2009, de 23 de desembre, del síndic de greuges, la persona titular de la institució del s…
+  - *Llei 24/2009 del síndic de greuges: elecció del titular*
+- `q-of-roses-2019-propietat-cp-002` — Quin d'aquests drets no és un dret fonamental de la secció I, capítol segon, del títol I de la Constitució:
+  - *drets de la secció I, capítol segon, títol I CE*
+- `q-of-roses-2019-propietat-cp-035` — La Declaració Universal dels Drets Humans va ser aprovada:
+  - *Declaració Universal dels Drets Humans: any d’aprovació*
+- `q-of-roses-2019-interins-cp-005` — Identifica quin d’aquests drets no es troba recollit a la secció I, capítol II, títol I de la Constitució e…
+  - *drets de la secció I, capítol II, títol I CE*
+- `q-of-roses-2019-interins-cp-022` — Qui és l'Alt Comissionat de les Corts Generals per a la defensa de les llibertats i els drets fonamentals?
+  - *Defensor del Poble: alt comissionat per a la defensa dels drets i llibertats*
+- `q-of-roses-2018-propietat-cp-001` — El dret de vaga que reconeix l'article 28 de la Constitució espanyola en favor dels treballadors, com està …
+  - *art. 28 CE: configuració jurídica del dret de vaga*
+- `q-of-roses-2018-interins-cp-001` — A quin article de la Constitució Espanyola es recull que tota persona té dret a la llibertat i a la seguretat?
+  - *article CE: dret a la llibertat i a la seguretat*
+- `q-of-roses-2018-interins-cp-019` — Qui és l'Alt Comissionat de les Corts Generals per la defensa de les llibertats i els drets fonamentals?
+  - *Defensor del Poble: alt comissionat per a la defensa dels drets i llibertats*
+- `q-of-roses-2017-interins-cp-007` — Quin és l'alt comissionat de les Corts Generals per a la defensa dels drets compresos al Títol IV de la Con…
+  - *Defensor del Poble: alt comissionat per a la defensa dels drets del Títol I*
+
+## 3. L’Estatut d’Autonomia de Catalunya de 2006 — 16
+
+- `q-of-roses-2026-interins-cp-003` — Quina és la llengua pròpia i alhora oficial de Catalunya, d’acord amb l’Estatut d’Autonomia de Catalunya?
+  - *art. 6 EAC: llengua pròpia i llengües oficials*
+- `q-of-roses-2026-interins-cp-004` — D’acord amb l’Estatut de Catalunya, a qui correspon la competència exclusiva en matèria de protecció civil?
+  - *competència exclusiva de protecció civil a l’EAC*
+- `q-of-roses-2025-propietat-cp-003` — En relació amb els drets i deures lingüístics que recull l’Estatut d’Autonomia de Catalunya, digues quina d…
+  - *drets i deures lingüístics de l’EAC*
+- `q-of-roses-2025-propietat-cp-004` — Els governs locals de Catalunya tenen competències pròpies sobre:
+  - *competències pròpies dels governs locals a l’EAC (art. 84; el tema inclou el govern local)*
+- `q-of-roses-2025-interins-cp-003` — D’acord amb l’Estatut d’Autonomia de Catalunya, en relació amb els drets lingüístics que tenen els ciutadan…
+  - *drets lingüístics davant les administracions (EAC)*
+- `q-of-roses-2024-propietat-cp-005` — L’Estatut d’Autonomia de Catalunya és:
+  - *naturalesa jurídica de l’Estatut d’autonomia de Catalunya*
+- `q-of-roses-2024-interins-cp-005` — L’Estatut d’Autonomia de Catalunya té:
+  - *naturalesa jurídica de l’Estatut d’autonomia de Catalunya*
+- `q-of-roses-2023-interins-cp-005` — D’acord amb l’article 79 de l’Estatut d’Autonomia de Catalunya, el Síndic de Greuges és elegit:
+  - *art. 79 EAC: elecció del síndic de greuges*
+- `q-of-roses-2023-interins-cp-020` — L’Estatut d’Autonomia de Catalunya és:
+  - *naturalesa jurídica de l’Estatut d’autonomia de Catalunya*
+- `q-of-roses-2021-interins-cp-008` — L’Estatut d’Autonomia de Catalunya entrà en vigor:
+  - *entrada en vigor de l’Estatut d’autonomia de Catalunya*
+- `q-of-roses-2019-propietat-cp-003` — L'Estatut d'autonomia de Catalunya vigent està recollit a:
+  - *norma vigent de l’Estatut d’autonomia de Catalunya*
+- `q-of-roses-2018-propietat-cp-003` — D'acord amb l'Estatut d'Autonomia de Catalunya, els municipis:
+  - *EAC: els municipis*
+- `q-of-roses-2018-interins-cp-002` — L'Estatut d'Autonomia de Catalunya estableix en el seu article 8 que els símbols de Catalunya són:
+  - *art. 8 EAC: símbols de Catalunya*
+- `q-of-roses-2018-interins-cp-001r` — A qui correspon la competència exclusiva en matèria de protecció civil a Catalunya?
+  - *competència exclusiva de protecció civil (EAC)*
+- `q-of-roses-2017-interins-cp-002` — L'Estatut d'autonomia de Catalunya vigent està recollit a la següent norma:
+  - *norma vigent de l’Estatut d’autonomia de Catalunya*
+- `q-of-roses-2017-interins-cp-012` — Quina és la llengua pròpia de l'Administració Local a Catalunya?
+  - *llengua pròpia de l’Administració Local a Catalunya*
+
+## 4. La Generalitat de Catalunya, el Parlament i el Consell Executiu — 14
+
+- `q-of-roses-2026-interins-cg-013` — Qui és el conseller/a d’Interior de la Generalitat de Catalunya?
+  - *conseller/a d’Interior: organització institucional de la Generalitat en matèria de seguretat*
+- `q-of-roses-2025-propietat-cg-013` — Qui és el conseller/a d’Interior i Seguretat Pública de la Generalitat de Catalunya?
+  - *conseller/a d’Interior i Seguretat Pública: organització institucional de la Generalitat*
+- `q-of-roses-2025-interins-cg-013` — Qui és el/la conseller/a d’Interior de la Generalitat de Catalunya?
+  - *conseller/a d’Interior: organització institucional de la Generalitat en matèria de seguretat*
+- `q-of-roses-2025-interins-cp-004` — Quina d’aquestes NO és una competència de la Generalitat de Catalunya en matèria de seguretat pública:
+  - *competències de la Generalitat en matèria de seguretat pública*
+- `q-of-roses-2024-propietat-cp-006` — D’acord amb l’article 2 de l’Estatut d’Autonomia de Catalunya, la Generalitat de Catalunya està integrada:
+  - *art. 2 EAC: integració de la Generalitat de Catalunya*
+- `q-of-roses-2024-propietat-cp-007` — La Sindicatura de Comptes depèn orgànicament:
+  - *dependència orgànica de la Sindicatura de Comptes*
+- `q-of-roses-2024-interins-cp-004` — Quina d’aquestes NO és una institució de la Generalitat de Catalunya?
+  - *institucions de la Generalitat de Catalunya*
+- `q-of-roses-2022-interins-cp-002` — L’Estatut d’Autonomia de Catalunya estableix que el Parlament de Catalunya:
+  - *EAC: el Parlament de Catalunya*
+- `q-of-roses-2022-interins-cp-005` — Segons l’article 164 de l’Estatut d’Autonomia de Catalunya correspon a la Generalitat, en matèria de segure…
+  - *art. 164 EAC: competències de la Generalitat en matèria de seguretat*
+- `q-of-roses-2021-propietat-cp-026` — En quin article de l’Estatut d’Autonomia s’estableix que correspon a la Generalitat, en matèria de segureta…
+  - *EAC: planificació de la Generalitat en matèria de seguretat pública*
+- `q-of-roses-2021-interins-cp-014` — L’article 164 de l’Estatut d’Autonomia de Catalunya estableix que en matèria de seguretat pública, d’acord …
+  - *art. 164 EAC: competències de la Generalitat en matèria de seguretat pública*
+- `q-of-roses-2018-propietat-cp-004` — Les competències exclusives de la Generalitat inclouen les potestats:
+  - *competències exclusives de la Generalitat*
+- `q-of-roses-2018-interins-cp-003` — Segons l'article 164 de l'Estatut d'Autonomia de Catalunya, correspon a la Generalitat, en matèria de Segur…
+  - *art. 164 EAC: competències de la Generalitat en matèria de seguretat pública*
+- `q-of-roses-2017-interins-cp-003` — Segons l'article 164 de l'Estatut d'autonomia de Catalunya, correspon a la Generalitat, en matèria de Segur…
+  - *art. 164 EAC: competències de la Generalitat en matèria de seguretat pública*
+
+## 5. El municipi: concepte, elements, potestats i competències — 30
+
+- `q-of-roses-2026-interins-cp-005` — Quina d’aquestes NO és una competència d’un municipi amb població superior a 20.000 habitants i inferior a …
+  - *art. 26 LBRL: competències municipals per trams de població*
+- `q-of-roses-2026-interins-cp-041` — D’acord amb la Constitució espanyola, els alcaldes són escollits:
+  - *elecció dels alcaldes (art. 140 CE; organització del municipi)*
+- `q-of-roses-2025-propietat-cp-005` — En els municipis amb població inferior a 20.000 habitants, quina administració coordinarà la prestació del …
+  - *coordinació de serveis en municipis de menys de 20.000 habitants (art. 26.2 LBRL)*
+- `q-of-roses-2025-propietat-cp-012` — Assenyala a quina definició respon el concepte d’avocació referida a les competències municipals:
+  - *avocació de competències municipals (potestats i competències)*
+- `q-of-roses-2025-interins-cp-005` — En relació amb el municipi, quina d’aquestes afirmacions és falsa:
+  - *el municipi: concepte, personalitat i elements*
+- `q-of-roses-2025-interins-cp-007` — Quin és l’òrgan competent per a l’aprovació de la Relació de Llocs de Treball?
+  - *competència del Ple: aprovació de la relació de llocs de treball (organització municipal)*
+- `q-of-roses-2024-propietat-cp-008` — Segons l’article 20.1 b) de la Llei 7/1985, de 2 d’abril, la Junta de Govern Local existeix en tots els mun…
+  - *art. 20.1.b LBRL: existència de la Junta de Govern Local*
+- `q-of-roses-2024-propietat-cp-009` — Quin és l’òrgan competent per a l’aprovació del reglament orgànic?
+  - *òrgan competent per a l’aprovació del reglament orgànic*
+- `q-of-roses-2024-propietat-cp-011` — A qui correspon l’aprovació de les formes de gestió dels serveis i dels expedients de municipalització?
+  - *aprovació de les formes de gestió dels serveis*
+- `q-of-roses-2024-propietat-cp-012` — Segons l’article 26 de la Llei 7/1985, de 2 d’abril, NO és una obligació en tots els municipis prestar el s…
+  - *art. 26 LBRL: serveis no obligatoris en tots els municipis*
+- `q-of-roses-2024-interins-cp-007` — Quins són els elements del municipi?
+  - *elements del municipi*
+- `q-of-roses-2024-interins-cp-009` — D’acord amb la normativa de règim local, quina d’aquestes atribucions correspon a l’alcalde?
+  - *atribucions de l’alcalde en règim local*
+- `q-of-roses-2024-interins-cp-010` — D’acord amb la normativa de règim local, qui aprova l’oferta pública d’ocupació?
+  - *aprovació de l’oferta pública d’ocupació*
+- `q-of-roses-2024-interins-cp-011` — D’acord amb la normativa de règim local, qui aprova la plantilla i la relació de llocs de treball del perso…
+  - *aprovació de la plantilla i la relació de llocs de treball*
+- `q-of-roses-2023-interins-cp-016` — El municipi és:
+  - *concepte de municipi*
+- `q-of-roses-2021-interins-cp-011` — Segons l’article 11.2 de la Llei 7/1985, de 2 d’abril, reguladora de les bases del règim local, són element…
+  - *art. 11.2 LBRL: elements del municipi*
+- `q-of-roses-2019-propietat-cp-008` — Quina d'aquestes atribucions no és de l'alcalde:
+  - *atribucions no pròpies de l’alcalde*
+- `q-of-roses-2019-propietat-cp-009` — D’acord amb la Llei 7/1985, de 2 d’abril, reguladora de les bases del règim local, els elements del municip…
+  - *Llei 7/1985 (LBRL): elements del municipi*
+- `q-of-roses-2019-propietat-cp-041` — Quina de les següents atribucions no correspon aL Ple municipal:
+  - *atribucions no pròpies del Ple municipal*
+- `q-of-roses-2019-interins-cp-010` — D’acord amb la Llei 7/1985, de 2 d’abril, reguladora de les bases del règim local, existirà en l’organitzac…
+  - *Llei 7/1985 (LBRL): organització mínima dels ajuntaments*
+- `q-of-roses-2019-interins-cp-015` — Quin d’aquests serveis no és obligatori en tots els municipis?
+  - *serveis municipals no obligatoris en tots els municipis*
+- `q-of-roses-2018-propietat-cp-007` — Quina d'aquestes és una competència del Ple municipal?
+  - *competències del Ple municipal*
+- `q-of-roses-2018-propietat-cp-008` — Quina d'aquestes afirmacions és falsa:
+  - *el Padró municipal: població, inscripció i veïnatge*
+- `q-of-roses-2018-interins-cp-011` — El Ple de l'Ajuntament pot celebrar sessions però de quins 3 tipus?
+  - *tipus de sessions del Ple de l’Ajuntament*
+- `q-of-roses-2018-interins-cp-012` — El govern i l'administració municipal corresponen a ...
+  - *govern i administració municipal*
+- `q-of-roses-2018-interins-cp-013` — Qui és el responsable de la formació, el manteniment, la revisió i la custòdia del Padró municipal?
+  - *responsable del Padró municipal*
+- `q-of-roses-2018-interins-cp-017` — No és una competència pròpia del municipi:
+  - *competències pròpies del municipi*
+- `q-of-roses-2018-interins-cp-002r` — La Junta de Govern Local és:
+  - *naturalesa de la Junta de Govern Local*
+- `q-of-roses-2017-interins-cp-011` — El Ple de l'Ajuntament està integrat per:
+  - *composició del Ple de l’Ajuntament*
+- `q-of-roses-2017-interins-cp-002r` — La Junta de Govern Local és:
+  - *naturalesa de la Junta de Govern Local*
+
+## 6. Les ordenances i els bans — 5
+
+- `q-of-roses-2026-interins-cp-006` — Quan entren en vigor les ordenances i els reglaments una vegada publicats al Butlletí Oficial de la província?
+  - *entrada en vigor de les ordenances un cop publicades*
+- `q-of-roses-2025-propietat-cp-006` — Acordada l’aprovació inicial d’una ordenança pel Ple de l’ajuntament, durant quin termini s’ha de sotmetre …
+  - *informació pública en el procediment d’aprovació d’ordenances*
+- `q-of-roses-2025-interins-cp-006` — Quin és l’òrgan competent per a l’aprovació d’una ordenança municipal?
+  - *òrgan competent per aprovar una ordenança: el Ple*
+- `q-of-roses-2024-propietat-cp-010` — Dictar bans correspon a:
+  - *competència per dictar bans*
+- `q-of-roses-2024-interins-cp-008` — Quin és l’òrgan competent per a l’aprovació definitiva d’una ordenança?
+  - *òrgan competent per a l’aprovació definitiva d’una ordenança*
+
+## 7. Els òrgans jurisdiccionals: poder judicial i Tribunal Constitucional — 17
+
+- `q-of-roses-2026-interins-cp-007` — De quants membres està compost el Tribunal Constitucional?
+  - *art. 159 CE: composició del Tribunal Constitucional*
+- `q-of-roses-2025-propietat-cp-007` — Cada quant són designats els membres del Tribunal Constitucional?
+  - *mandat i renovació dels membres del TC*
+- `q-of-roses-2025-interins-cp-008` — Per quin període de temps es designen els membres del Tribunal Constitucional?
+  - *mandat dels membres del TC*
+- `q-of-roses-2024-interins-cp-002` — El Tribunal Constitucional està integrat per un total de:
+  - *nombre de membres del Tribunal Constitucional*
+- `q-of-roses-2023-interins-cp-015` — El president del Consell General del Poder Judicial és elegit:
+  - *elecció del president del Consell General del Poder Judicial*
+- `q-of-roses-2022-interins-cp-004` — El Consell General del Poder Judicial està integrat:
+  - *composició del Consell General del Poder Judicial*
+- `q-of-roses-2022-interins-cp-015` — Quin dels següents òrgans no forma part del Poder Judicial?
+  - *òrgans que no formen part del Poder Judicial*
+- `q-of-roses-2021-interins-cp-007` — El Tribunal Constitucional està integrat per:
+  - *composició del Tribunal Constitucional*
+- `q-of-roses-2019-propietat-cp-005` — El Tribunal Constitucional està integrat per:
+  - *composició del Tribunal Constitucional*
+- `q-of-roses-2019-propietat-cp-006` — D’acord amb la Llei orgànica del Tribunal Constitucional, quin d’aquests supòsits no ha de conèixer aquest …
+  - *LO del Tribunal Constitucional: supòsits que no coneix*
+- `q-of-roses-2019-propietat-cp-007` — D’acord amb l’article 34 de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial, l’àmbit territorial…
+  - *art. 34 LOPJ: àmbit territorial dels tribunals superiors de justícia*
+- `q-of-roses-2019-interins-cp-003` — El Consell General del Poder Judicial està format per:
+  - *composició del Consell General del Poder Judicial*
+- `q-of-roses-2019-interins-cp-018` — El president del Tribunal Constitucional serà nomenat pel Rei, a proposta del mateix Tribunal en Ple, per u…
+  - *nomenament i mandat del president del Tribunal Constitucional*
+- `q-of-roses-2018-propietat-cp-005` — Quin és l'òrgan jurisdiccional competent que coneixerà dels procediments «d'habeas corpus»?
+  - *òrgan jurisdiccional competent en l’habeas corpus*
+- `q-of-roses-2018-propietat-cp-006` — El Tribunal Constitucional es compon:
+  - *composició del Tribunal Constitucional*
+- `q-of-roses-2017-interins-cp-015` — Quants membres té el Tribunal Constitucional?
+  - *membres del Tribunal Constitucional*
+- `q-of-roses-2017-interins-cp-019` — Quin és l'òrgan jurisdiccional competent que coneixerà dels procediments «d'habeas corpus»?
+  - *òrgan jurisdiccional competent en l’habeas corpus*
+
+## 8. Drets i deures dels funcionaris públics. Codi de conducta — 5
+
+- `q-of-roses-2026-interins-cp-008` — A quines persones els és d’aplicació el Codi de Conducta recollit al Reial decret legislatiu 5/2015, de 30 …
+  - *àmbit subjectiu del codi de conducta del TREBEP*
+- `q-of-roses-2025-propietat-cp-008` — De quants dies de permís disposen els empleats públics per registre o constitució formalitzada per document…
+  - *permisos dels empleats públics (TREBEP)*
+- `q-of-roses-2025-interins-cp-009` — En quina normativa es troba regulat el codi de conducta dels empleats públics?
+  - *norma que recull el codi de conducta (TREBEP)*
+- `q-of-roses-2019-propietat-cp-010` — Els empleats públics es classifiquen en:
+  - *classificació dels empleats públics*
+- `q-of-roses-2019-propietat-cp-011` — Quin és el personal que en virtut de nomenament i amb caràcter no permanent només realitza funcions express…
+  - *personal eventual: nomenament de caràcter no permanent*
+
+## 9. Règim d’incompatibilitats del personal al servei de les administracions públiques — 5
+
+- `q-of-roses-2026-interins-cp-009` — Com s’anomena el règim jurídic en virtut del qual tot el personal que presta els seus serveis a l’administr…
+  - *definició del règim d’incompatibilitats*
+- `q-of-roses-2025-propietat-cp-009` — Quin és l’òrgan competent de l’administració local per al reconeixement de la compatibilitat d’una activita…
+  - *òrgan competent per reconèixer la compatibilitat*
+- `q-of-roses-2025-interins-cp-010` — Assenyala l’opció incorrecta de les proposades en relació amb el règim d’incompatibilitats:
+  - *règim d’incompatibilitats: afirmació incorrecta*
+- `q-of-roses-2018-propietat-cp-009` — Quina de les activitats següents no requereix autorització de compatibilitat perquè el personal funcionari …
+  - *activitats sense necessitat d’autorització de compatibilitat*
+- `q-of-roses-2018-propietat-cp-010` — El personal funcionari que passi a ocupar un càrrec electiu retribuït i de dedicació exclusiva en una corpo…
+  - *situació administrativa del funcionari que accedeix a un càrrec electiu*
+
+## 10. Pressupostos i hisendes locals — 5
+
+- `q-of-roses-2026-interins-cp-010` — En relació amb els pressupostos municipals, digues quina d’aquestes afirmacions és falsa:
+  - *principis pressupostaris de les entitats locals*
+- `q-of-roses-2025-propietat-cp-011` — Quan ha d’acordar-se l’aprovació definitiva del pressupost general d’un ajuntament?
+  - *termini d’aprovació definitiva del pressupost general*
+- `q-of-roses-2025-interins-cp-012` — Quin d’aquests NO és un recurs de les hisendes locals:
+  - *recursos de les hisendes locals*
+- `q-of-roses-2024-propietat-cp-014` — Aprovat inicialment el pressupost general, s’ha d’exposar al públic, previ anunci en el BOP, durant un term…
+  - *exposició pública del pressupost general aprovat inicialment*
+- `q-of-roses-2024-interins-cp-013` — D’acord amb el Reial decret legislatiu 2/2004, de 5 de març, pel qual s’aprova el text refós de la Llei reg…
+  - *RDL 2/2004 (hisendes locals): composició*
+
+## 11. Règim disciplinari dels funcionaris d’un cos de Policia Local — 28
+
+- `q-of-roses-2026-interins-cp-011` — La incorrecció envers els superiors, els companys, els subordinats o els ciutadans i el  retard, la negligè…
+  - *falta lleu del règim disciplinari policial (incorrecció, retard, negligència)*
+- `q-of-roses-2026-interins-cp-022` — La responsabilitat disciplinària, segons la Llei 16/1991, de 10 de juliol, de les policies locals de Catalu…
+  - *extinció de la responsabilitat disciplinària (Llei 16/1991)*
+- `q-of-roses-2025-propietat-cp-010` — La desobediència d’un agent de la Policia local als superiors en l'exercici de les funcions i l'incomplimen…
+  - *falta greu del règim disciplinari policial: desobediència*
+- `q-of-roses-2025-propietat-cp-027` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, quina de les següents és una …
+  - *faltes molt greus del règim disciplinari (Llei 16/1991)*
+- `q-of-roses-2025-propietat-cp-033` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, quina de les següents és una falta molt gr…
+  - *falta molt greu: discriminació (règim disciplinari policial)*
+- `q-of-roses-2025-propietat-cp-035` — Segons l’article 51 de la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, els policies …
+  - *encobriment de faltes greus i molt greus (art. 51 Llei 16/1991)*
+- `q-of-roses-2025-interins-cp-011` — Tota actuació d’un policia local que signifiqui discriminació per raó de raça, sexe, orientació sexual, rel…
+  - *falta molt greu: discriminació (règim disciplinari policial)*
+- `q-of-roses-2024-propietat-cp-013` — Les faltes greus dels policies locals, segons la Llei 16/1991, de 10 de juliol, prescriuen, a comptar de la…
+  - *Llei 16/1991: prescripció de les faltes greus*
+- `q-of-roses-2024-propietat-cp-025` — Segons l’article 49 de la Llei 16/1991, de 10 de juliol, de les policies locals, és una infracció greu:
+  - *art. 49 Llei 16/1991: infracció greu*
+- `q-of-roses-2024-propietat-cp-026` — Segons l’article 52 de la Llei 16/1991, de 10 de juliol, de les policies locals, per una falta greu s’impos…
+  - *art. 52 Llei 16/1991: sanció per falta greu*
+- `q-of-roses-2024-interins-cp-012` — Les faltes molt greus dels policies locals segons la Llei 16/1991, de 10 de juliol, i a comptar de la data …
+  - *Llei 16/1991: prescripció de les faltes molt greus*
+- `q-of-roses-2023-interins-cp-007` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, les sancions imposades per faltes greus pr…
+  - *Llei 16/1991: prescripció de les sancions per faltes greus*
+- `q-of-roses-2023-interins-cp-014` — D’acord amb l’article 52 de la Llei 16/1991, de 10 de juliol, de policies locals, la comissió d’una infracc…
+  - *art. 52 Llei 16/1991: conseqüències d’una infracció lleu*
+- `q-of-roses-2022-interins-cp-009` — D’acord amb l’article 48 de la Llei 16/1991, de 10 de juliol, de les policies locals, són infraccions molt …
+  - *art. 48 Llei 16/1991: infraccions molt greus*
+- `q-of-roses-2022-interins-cp-012` — D’acord amb l’article 52 la Llei 16/1991, de 10 de juliol, de policies locals, la comissió d’una infracció …
+  - *art. 52 Llei 16/1991: conseqüències d’una infracció greu*
+- `q-of-roses-2021-propietat-cp-016` — D’acord amb el Decret 179/2015, de 4 d’agost, pel qual s’aprova el Reglament del procediment del règim disc…
+  - *Decret 179/2015: reglament del procediment disciplinari*
+- `q-of-roses-2021-propietat-cp-017` — És una falta greu, d’acord amb la Llei 16/1991 de les policies locals:
+  - *Llei 16/1991: falta greu*
+- `q-of-roses-2021-interins-cp-001` — Quina d’aquestes és una infracció greu, d’acord amb la Llei 16/1991, de 10 de juliol, de les Policies Locals?
+  - *Llei 16/1991: infracció greu (règim disciplinari)*
+- `q-of-roses-2019-propietat-cp-018` — D’acord amb la Llei 16/1991, de 10 de juliol, de les policies locals, les faltes lleus prescriuen:
+  - *Llei 16/1991: prescripció de les faltes lleus*
+- `q-of-roses-2019-propietat-cp-019` — D’acord amb la Llei 16/1991, de 10 de juliol, de les policies locals, les sancions imposades per faltes gre…
+  - *Llei 16/1991: prescripció de les sancions per faltes greus*
+- `q-of-roses-2019-interins-cp-019` — D’acord amb la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, és una falta greu:
+  - *Llei 16/1991: falta greu (règim disciplinari)*
+- `q-of-roses-2019-interins-cp-021` — D'acord amb la Llei 16/1991, de 10 de juliol, de les policies locals, per graduar les sancions no es tindrà…
+  - *Llei 16/1991: criteris de graduació de les sancions*
+- `q-of-roses-2018-propietat-cp-017` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, la sanció per la comissió d'una falta molt…
+  - *Llei 16/1991: sanció per falta molt greu*
+- `q-of-roses-2018-interins-cp-010` — Segons la Llei 16/1991, de 10 de juliol, de les Policies Locals, és una falta molt greu:
+  - *Llei 16/1991: falta molt greu (règim disciplinari)*
+- `q-of-roses-2018-interins-cp-018` — D'acord amb la Llei 16/1991, de 10 de juliol, de les Policies Locals, per graduar les sancions, no es tindr…
+  - *Llei 16/1991: criteris de graduació de les sancions*
+- `q-of-roses-2017-interins-cp-010` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, és una falta greu:
+  - *Llei 16/1991: falta greu (règim disciplinari)*
+- `q-of-roses-2017-interins-cp-017` — La responsabilitat disciplinària, segons la Llei 16/1991, de 10 de juliol, de les policies locals de Catalu…
+  - *Llei 16/1991: extinció de la responsabilitat disciplinària*
+- `q-of-roses-2016-interins-cp-005` — Quina d'aquestes és considerada per la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, …
+  - *Llei 16/1991: falta molt greu (règim disciplinari)*
+
+## 12. El procediment administratiu com a garantia d’una actuació correcta — 3
+
+- `q-of-roses-2026-interins-cp-012` — A quina normativa es regula el procediment administratiu comú de les administracions públiques per a les ad…
+  - *identificació de la norma reguladora del procediment comú (Llei 39/2015)*
+- `q-of-roses-2025-interins-cp-013` — Quina és la llei estatal que regula el procediment administratiu?
+  - *identificació de la llei estatal del procediment (Llei 39/2015)*
+- `q-of-roses-2023-interins-cp-021` — Per la relació que tenen amb la llei, els reglaments poden ser:
+  - *classificació dels reglaments per la seva relació amb la llei*
+
+## 13. L’acte administratiu — 3
+
+- `q-of-roses-2026-interins-cp-013` — En quin termini s’ha de cursar una notificació des que s’ha dictat l’acte administratiu?
+  - *termini per cursar la notificació des que es dicta l’acte*
+- `q-of-roses-2025-propietat-cp-013` — Quin d’aquests actes no requereix motivació d’acord amb les previsions de la Llei 39/2015, d’1 d’octubre, d…
+  - *actes que requereixen motivació*
+- `q-of-roses-2025-interins-cp-014` — Quin d’aquests actes NO ha de ser motivat?
+  - *actes que no s’han de motivar*
+
+## 14. Les persones en el procediment administratiu — 7
+
+- `q-of-roses-2026-interins-cp-014` — Assenyala quina opció NO és correcta a la pregunta de qui són les persones interessades en un procediment a…
+  - *qui té la condició de persona interessada*
+- `q-of-roses-2025-propietat-cp-014` — En quin d’aquests supòsits no cal acreditar la representació?
+  - *supòsits en què cal acreditar la representació*
+- `q-of-roses-2025-interins-cp-015` — D’acord amb les normes que regulen el procediment administratiu, en quin d’aquests supòsits no cal acredita…
+  - *representació: actes de mer tràmit*
+- `q-of-roses-2024-propietat-cp-015` — El tràmit d’audiència als interessats:
+  - *el tràmit d’audiència als interessats*
+- `q-of-roses-2024-propietat-cp-017` — Com s’ha d’identificar a l’interessat en un procediment administratiu que es presenti de forma presencial a…
+  - *identificació de l’interessat presencial*
+- `q-of-roses-2024-interins-cp-015` — És necessari notificar als interessats els actes de tràmit que es dictin en un procediment?
+  - *notificació dels actes de tràmit als interessats*
+- `q-of-roses-2024-interins-cp-017` — En relació amb els interessats, digues quin d’aquests drets els correspon com a tals, en el marc d’un proce…
+  - *drets dels interessats en un procediment administratiu*
+
+## 15. Aspectes generals de l’activitat administrativa — 4
+
+- `q-of-roses-2026-interins-cp-015` — Completa la frase en relació amb l’obligació de resoldre que té l’administració: “L’administració està obli…
+  - *obligació de resoldre i notificar*
+- `q-of-roses-2025-propietat-cp-015` — Si un expedient sancionador en matèria de trànsit (procediment iniciat d’ofici) no es resol i es notifica d…
+  - *caducitat del procediment sancionador iniciat d’ofici*
+- `q-of-roses-2025-propietat-cp-041` — Als efectes del còmput de termini fixat en dies hàbils i pel que fa al compliment de terminis per part dels…
+  - *còmput de terminis: presentació d’escrits en dia inhàbil*
+- `q-of-roses-2025-interins-cp-016` — Quin és el termini com a màxim per resoldre i notificar un procediment en absència de disposició expressa?
+  - *termini supletori per resoldre i notificar (tres mesos)*
+
+## 16. La regulació del procediment administratiu — 9
+
+- `q-of-roses-2026-interins-cp-016` — Com s’anomena el document mitjançant el qual les persones interessades posen en coneixement de l'Administra…
+  - *la comunicació com a forma d’iniciar una activitat (art. 69 Llei 39/2015)*
+- `q-of-roses-2026-interins-cp-017` — Amb caràcter general, en quin termini s’han d’emetre els informes en un procediment administratiu?
+  - *termini d’emissió d’informes dins la instrucció*
+- `q-of-roses-2025-propietat-cp-016` — L’emissió dels informes preceptius en el marc d’un procediment administratiu, a quina fase correspon?
+  - *els informes preceptius pertanyen a la fase d’instrucció*
+- `q-of-roses-2025-interins-cp-017` — Quina d’aquestes fases NO forma part del procediment administratiu?
+  - *fases del procediment administratiu*
+- `q-of-roses-2024-propietat-cp-016` — En els procediments iniciats a sol·licitud dels interessats, quan es produeix la paralització per causa imp…
+  - *paralització del procediment per causa imputable a l’interessat*
+- `q-of-roses-2024-propietat-cp-018` — Segons la Llei del procediment administratiu comú, els informes seran:
+  - *Llei 39/2015: termini dels informes*
+- `q-of-roses-2024-interins-cp-014` — En el procediment administratiu, la resolució forma part de la fase:
+  - *fase del procediment administratiu en què s’inclou la resolució*
+- `q-of-roses-2024-interins-cp-016` — Segons la Llei 39/2015, d’1 d’octubre, del procediment administratiu comú de les administracions públiques,…
+  - *Llei 39/2015: termini dels informes*
+- `q-of-roses-2024-interins-cp-020` — Assenyala per quina d’aquestes actuacions no es requereix l’ús obligatori de la signatura:
+  - *actuacions que no requereixen signatura obligatòria*
+
+## 17. Execució i revisió de l’acte administratiu — 3
+
+- `q-of-roses-2026-interins-cp-018` — L’ajuntament ordena al propietari d’un solar que el netegi de runes i deixalles  en el termini d’un mes. Qu…
+  - *execució subsidiària com a mitjà d’execució forçosa*
+- `q-of-roses-2025-propietat-cp-017` — En els actes administratius, qui pot promoure’n la revisió?
+  - *qui pot promoure la revisió dels actes*
+- `q-of-roses-2025-interins-cp-018` — Quin d’aquests mitjans NO és un mitjà d’execució forçosa d’acord amb la normativa del procediment administr…
+  - *mitjans d’execució forçosa*
+
+## 18. Transparència i informació pública — 3
+
+- `q-of-roses-2026-interins-cp-019` — En quin termini s’ha de resoldre una sol·licitud de dret d’accés a la informació pública?
+  - *termini de resolució del dret d’accés a la informació pública*
+- `q-of-roses-2025-propietat-cp-018` — Quin d’aquests no és un requisit d’una sol·licitud d’accés a la informació?
+  - *requisits de la sol·licitud d’accés a la informació*
+- `q-of-roses-2025-interins-cp-019` — Quin és el termini per notificar la resolució de la sol·licitud d'accés?
+  - *termini per notificar la resolució d’accés*
+
+## 19. Ciberseguretat — 4
+
+- `q-of-roses-2025-propietat-cp-019` — Les funcions de l'Agència de Ciberseguretat de Catalunya són les següents:
+  - *funcions de l’Agència de Ciberseguretat de Catalunya*
+- `q-of-roses-2025-interins-cp-020` — L’Agència de Ciberseguretat de Catalunya, com a impulsor de la seguretat TIC a Catalunya, té per objectiu:
+  - *objectiu de l’Agència de Ciberseguretat de Catalunya*
+- `q-of-roses-2024-propietat-cp-019` — Analitzo la meva xarxa i he trobat un dispositiu sospitós connectat. Per bloquejar- lo i eliminar-lo de la …
+  - *ciberseguretat: bloqueig d’un dispositiu sospitós a la xarxa*
+- `q-of-roses-2024-interins-cp-018` — L’agència de Ciberseguretat de Catalunya, com a impulsor de la seguretat TIC a Catalunya, té per objectiu:
+  - *objectiu de l’Agència de Ciberseguretat de Catalunya*
+
+## 20. Protecció de dades com a dret fonamental — 2
+
+- `q-of-roses-2026-interins-cp-020` — Quina d’aquestes dades personals NO es considera una dada de categoria especial?
+  - *categories especials de dades personals*
+- `q-of-roses-2024-propietat-cp-020` — Quines de les dades següents són dades biomètriques?
+  - *dades biomètriques*
+
+## 21. Llei orgànica 2/1986, de forces i cossos de seguretat — 19
+
+- `q-of-roses-2026-interins-cp-023` — Segons la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat:
+  - *repartiment competencial de la seguretat pública (LO 2/1986)*
+- `q-of-roses-2026-interins-cp-025` — Segons l’article 12 de la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, quina d’aqu…
+  - *funcions del Cos Nacional de Policia (art. 12 LO 2/1986)*
+- `q-of-roses-2025-propietat-cp-020` — D’acord amb l’article 5.2.c) de la LO 2/1986, de 13 de març, de forces i cossos de seguretat, l’ús dels pri…
+  - *principis bàsics d’actuació: congruència, oportunitat i proporcionalitat (art. 5 LO 2/1986)*
+- `q-of-roses-2025-propietat-cp-021` — Segons l’article 8.2 de la LO 2/1986, de 13 de març, de forces i cossos de seguretat, el compliment de la p…
+  - *compliment de presó pels membres de les FCS (art. 8.2 LO 2/1986)*
+- `q-of-roses-2025-propietat-cp-039` — Segons l’article 7 de la LO 2/1986, de 13 de març, de forces i cossos de seguretat, la Guàrdia Civil només …
+  - *la Guàrdia Civil com a força armada (LO 2/1986)*
+- `q-of-roses-2025-interins-cp-023` — Segons l’article 48 de la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, quina de le…
+  - *el Consell de Política de Seguretat (art. 48 LO 2/1986)*
+- `q-of-roses-2024-propietat-cp-021` — Segons l’article 9 de la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, el Cos Nacio…
+  - *art. 9 LOFCS: el Cos Nacional de Policia*
+- `q-of-roses-2024-propietat-cp-022` — A quin article de la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, es troben recoll…
+  - *article LOFCS: principis bàsics d’actuació*
+- `q-of-roses-2024-interins-cp-021` — Segons l’article 1 de la LO 2/1986, de 13 de març, la Seguretat Pública és:
+  - *art. 1 LOFCS: concepte de Seguretat Pública*
+- `q-of-roses-2023-interins-cp-012` — Segons l’article 5 de la Llei orgànica 2/1986, de 13 de març, de les forces i cossos de seguretat, són prin…
+  - *art. 5 LOFCS: principis bàsics d’actuació*
+- `q-of-roses-2022-interins-cp-008` — En aplicació de l’article 53 de la Llei orgànica 2/1986, de 13 de març, de les forces i cossos de seguretat…
+  - *art. 53 LOFCS: funcions dels cossos de policia local*
+- `q-of-roses-2022-interins-cp-016` — Segons la Llei orgànica 2/1986, de 13 de març, són forces i cossos de seguretat:
+  - *LOFCS: forces i cossos de seguretat*
+- `q-of-roses-2021-propietat-cp-014` — Són funcions de la Policia Local, d’acord amb l’article 53 de la Llei orgànica 2/1986 de forces i cossos de…
+  - *art. 53 LOFCS: funcions de la Policia Local*
+- `q-of-roses-2019-propietat-cp-012` — D’acord amb la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, iniciades unes actuaci…
+  - *LOFCS: actuacions davant el jutge d’instrucció*
+- `q-of-roses-2019-propietat-cp-013` — D’acord amb la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, els principis bàsics d…
+  - *LOFCS: principis bàsics d’actuació*
+- `q-of-roses-2019-propietat-cp-036` — L'ús de l'arma de foc està reservat:
+  - *LOFCS: ús de l’arma de foc*
+- `q-of-roses-2019-interins-cp-007` — D’acord amb la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat és un principi bàsic d’…
+  - *LOFCS: principi bàsic d’actuació*
+- `q-of-roses-2018-propietat-cp-012` — Segons la Llei orgànica 2/1986, de 13 de març, de forces i cossos de seguretat, els cossos de policia local…
+  - *LOFCS: funcions dels cossos de policia local*
+- `q-of-roses-2018-propietat-cp-033` — Una competència exclusiva de les policies locals és instruir atestats de circulació dins del nucli urbà. Aq…
+  - *art. 53.1.c LOFCS: instruir atestats de circulació dins el nucli urbà*
+
+## 22. Llei 4/2003, del sistema de seguretat pública de Catalunya — 15
+
+- `q-of-roses-2026-interins-cp-026` — Són funcions compartides entre la policia de la Generalitat-Mossos desquadra i les policies locals:
+  - *funcions compartides entre PG-ME i policies locals (sistema de seguretat)*
+- `q-of-roses-2025-propietat-cp-022` — Segons l’article 3.1 de la Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Catal…
+  - *integrants del sistema de seguretat de Catalunya (art. 3.1 Llei 4/2003)*
+- `q-of-roses-2025-propietat-cp-023` — Segons l’article 6 de la Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Catalun…
+  - *el Consell de Seguretat de Catalunya (art. 6 Llei 4/2003)*
+- `q-of-roses-2025-propietat-cp-042` — Són funcions compartides entre la policia de la Generalitat-Mossos d'esquadra i les policies locals:
+  - *funcions compartides entre PG-ME i policies locals (sistema de seguretat)*
+- `q-of-roses-2025-interins-cp-024` — D’acord amb l’article 4 de la Llei 4/2003, de 7 d’abril, d’ordenació del Sistema de Seguretat Pública de Ca…
+  - *funcions de l’alcalde dins el sistema de seguretat (art. 4 Llei 4/2003)*
+- `q-of-roses-2025-interins-cp-039` — Són funcions compartides entre la policia de la Generalitat-Mossos d'esquadra i les policies locals:
+  - *funcions compartides entre PG-ME i policies locals (sistema de seguretat)*
+- `q-of-roses-2024-propietat-cp-023` — Segons l’article 2 de la Llei 4/2003, de 7 d’abril, d'ordenació del sistema de seguretat pública de Catalun…
+  - *art. 2 Llei 4/2003: principis del sistema de seguretat pública*
+- `q-of-roses-2024-interins-cp-022` — Segons l’article 4 de la LO 4/2003, de 7 d’abril, són funcions dels alcaldes:
+  - *art. 4 Llei 4/2003: funcions dels alcaldes*
+- `q-of-roses-2023-interins-cp-011` — Segons la Llei 4/2003, de 7 d’abril, d’ordenació dels sistemes de seguretat pública, la Comissió de Policia…
+  - *Llei 4/2003: integració de la Comissió de Policia de Catalunya*
+- `q-of-roses-2022-interins-cp-006` — La Comissió de Policia de Catalunya:
+  - *la Comissió de Policia de Catalunya*
+- `q-of-roses-2021-propietat-cp-027` — Segons la Llei 4/2003, de 7 d’abril, el Sistema de Seguretat Pública de Catalunya està integrat per:
+  - *Llei 4/2003: integració del Sistema de Seguretat Pública de Catalunya*
+- `q-of-roses-2021-interins-cp-005` — D’acord amb la Llei 4/2003 del sistema de seguretat pública de Catalunya, la Comissió de Policia de Catalunya:
+  - *Llei 4/2003: la Comissió de Policia de Catalunya*
+- `q-of-roses-2019-propietat-cp-015` — Segons l’art 13 de la Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Catalunya:
+  - *art. 13 Llei 4/2003: òrgan superior de coordinació operativa*
+- `q-of-roses-2019-interins-cp-006` — Segons la Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat de Catalunya, el Consell de Segur…
+  - *Llei 4/2003: presidència del Consell de Seguretat de Catalunya*
+- `q-of-roses-2018-propietat-cp-014` — El Pla General de Seguretat de Catalunya:
+  - *Pla General de Seguretat de Catalunya (Llei 4/2003)*
+
+## 23. Les juntes locals de seguretat — 15
+
+- `q-of-roses-2026-interins-cp-027` — D’acord amb l’article 9 de la Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Ca…
+  - *convidats a la junta local de seguretat (art. 9 Llei 4/2003)*
+- `q-of-roses-2025-interins-cp-025` — D’acord amb l’article 9 de la Llei 4/2003, de 7 d’abril, d’ordenació del Sistema de Seguretat Pública de Ca…
+  - *convidats a la junta local de seguretat (art. 9 Llei 4/2003)*
+- `q-of-roses-2025-interins-cp-041` — Segons la Llei 4/2003, de 7 d’abril, d’ordenació del Sistema de Seguretat Pública de Catalunya, no és una f…
+  - *funcions de la junta local de seguretat*
+- `q-of-roses-2024-propietat-cp-024` — La Junta Local de Seguretat:
+  - *la Junta Local de Seguretat*
+- `q-of-roses-2024-propietat-cp-041` — Segons la Llei 4/2003, de 7 d’abril, d'ordenació del sistema de seguretat pública de Catalunya, els acords …
+  - *Llei 4/2003: comunicació dels acords de les Juntes Locals de Seguretat*
+- `q-of-roses-2024-interins-cp-023` — Quina d’aquestes funcions no correspon a les Juntes Locals de Seguretat:
+  - *funcions no pròpies de les Juntes Locals de Seguretat*
+- `q-of-roses-2024-interins-cp-024` — Segons la Llei 4/2003, de 7 d’abril, presideix la Junta Local de Seguretat:
+  - *Llei 4/2003: presidència de la Junta Local de Seguretat*
+- `q-of-roses-2023-interins-cp-006` — Són funcions de la Junta Local de Seguretat:
+  - *funcions de la Junta Local de Seguretat*
+- `q-of-roses-2019-propietat-cp-014` — Segons l’article 9 de la Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Catalunya:
+  - *art. 9 Llei 4/2003: presidència de les Juntes Locals de Seguretat*
+- `q-of-roses-2019-interins-cp-012` — Les Juntes Locals de Seguretat les presideix:
+  - *presidència de les Juntes Locals de Seguretat*
+- `q-of-roses-2018-propietat-cp-013` — Quina d'aquestes no és una funció de la Junta Local de Seguretat?
+  - *funcions de la Junta Local de Seguretat*
+- `q-of-roses-2018-propietat-cp-031` — La Junta Local de Seguretat haurà de reunir-se en sessió ordinària, convocada pel president o presidenta, a…
+  - *periodicitat de les sessions de la Junta Local de Seguretat*
+- `q-of-roses-2018-interins-cp-008` — La Junta Local de Seguretat, haurà de reunir-se en sessió ordinària, amb caràcter trimestral i la presidirà:
+  - *periodicitat i presidència de les sessions de la Junta Local de Seguretat*
+- `q-of-roses-2017-interins-cp-008` — La Junta Local de Seguretat haurà de reunir-se en sessió ordinària, convocada pel president o presidenta am…
+  - *periodicitat de les sessions ordinàries de la Junta Local de Seguretat*
+- `q-of-roses-2016-interins-cp-007` — A quins municipis s'haurà de constituir la Junta Local de Seguretat?
+  - *municipis on s’ha de constituir la Junta Local de Seguretat*
+
+## 24. Llei 16/1991, de les policies locals — 31
+
+- `q-of-roses-2025-propietat-cp-024` — Segons l’article 12 de la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, els principis…
+  - *principis de les funcions de policia judicial (art. 12 Llei 16/1991)*
+- `q-of-roses-2025-propietat-cp-025` — D’acord amb l’article 25 de la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, quants h…
+  - *categories segons població: intendent major (art. 25 Llei 16/1991)*
+- `q-of-roses-2025-propietat-cp-026` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, qui és el cap del cos?
+  - *el cap del cos de la policia local*
+- `q-of-roses-2025-propietat-cp-034` — La categoria d’inspector de la Policia local, segons l’article 24 de la Llei 16/1991, de 10 de juliol, de l…
+  - *escales i categories: inspector (art. 24 Llei 16/1991)*
+- `q-of-roses-2025-interins-cp-026` — D’acord amb l’article 25 de la Llei 16/1991, de 10 de juliol, de les policies locals, la categoria de super…
+  - *la categoria de superintendent (art. 25 Llei 16/1991)*
+- `q-of-roses-2024-interins-cp-025` — Segons el règim estatutari recollit a la Llei 16/1991, de 10 de juliol, els policies locals:
+  - *règim estatutari dels policies locals a la Llei 16/1991*
+- `q-of-roses-2023-interins-cp-002` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, quina de les següents categories no comprè…
+  - *Llei 16/1991: categories de l’escala superior*
+- `q-of-roses-2023-interins-cp-008` — Segons l’article 12 de la Llei 16/1991, de 10 de juliol, de les policies locals, són funcions de policia ju…
+  - *art. 12 Llei 16/1991: funcions de policia judicial*
+- `q-of-roses-2023-interins-cp-018` — A quin article de la Llei 16/1991, de 10 de juliol, de les policies locals es regulen els principis bàsics …
+  - *article de la Llei 16/1991 que regula els principis bàsics d’actuació*
+- `q-of-roses-2021-propietat-cp-015` — Segons la Llei 16/91 de les policies locals, a qui correspon determinar les circumstàncies i els serveis en…
+  - *Llei 16/1991: circumstàncies i serveis sense arma de foc*
+- `q-of-roses-2021-propietat-cp-018` — A quin article estan establertes les funcions de la Policia Local a la Llei 16/1991, de 10 de juliol, de le…
+  - *article de les funcions de la Policia Local a la Llei 16/1991*
+- `q-of-roses-2021-interins-cp-009` — D’acord amb l’article 10 de la Llei 16/1991, de 10 juliol, són principis bàsics d’actuació:
+  - *art. 10 Llei 16/1991: principis bàsics d’actuació*
+- `q-of-roses-2021-interins-cp-015` — Segons la Llei 16/1991 de 10 de juliol, de les policies locals, l’escala bàsica comprèn:
+  - *Llei 16/1991: escala bàsica*
+- `q-of-roses-2019-propietat-cp-031` — D’acord amb l’article 12 de la  Llei 16/1991, de 10 de juliol, de les policies locals, la funció de Policia…
+  - *art. 12 Llei 16/1991: funció de policia judicial*
+- `q-of-roses-2019-interins-cp-008` — D’acord amb disposició addicional quarta de la Llei 16/1991, de 10 de juliol, de les policies locals de Cat…
+  - *Llei 16/1991, disposició addicional quarta: agents en règim de funcionari interí*
+- `q-of-roses-2019-interins-cp-009` — D’acord la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya pot haver-hi Policia Local en…
+  - *Llei 16/1991: llindar d’habitants per a la Policia Local*
+- `q-of-roses-2019-interins-cp-020` — L’escala intermèdia del cos de la Policia Local comprèn les categories de:
+  - *escala intermèdia: categories*
+- `q-of-roses-2018-propietat-cp-018` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, pot existir Policia Local en els municipis…
+  - *municipis on pot existir Policia Local*
+- `q-of-roses-2018-propietat-cp-036` — L’article 10.1 primer de la Llei de les policies locals de Catalunya estableix que els funcionaris de polic…
+  - *art. 10.1 Llei 16/1991: deures dels funcionaris de policia*
+- `q-of-roses-2018-interins-cp-005` — El marc legal determina que tots els municipi de més de ................. habitants tenen la potestat, que …
+  - *llindar d’habitants per a la potestat de crear un cos de Policia Local*
+- `q-of-roses-2018-interins-cp-007` — Segons la Llei 16/1991, de 10 de juliol, de les Policies Locals, corresponen a les Policies locals, en el s…
+  - *Llei 16/1991: funcions de les policies locals*
+- `q-of-roses-2018-interins-cp-014` — Quina d'aquestes escales comprèn la categoria d'Inspector?
+  - *escala que comprèn la categoria d’inspector*
+- `q-of-roses-2018-interins-cp-016` — Quin d'aquests NO és un dels principis bàsics d'actuació de les Policies Locals?
+  - *principis bàsics d’actuació de les policies locals*
+- `q-of-roses-2017-interins-cp-005` — Segons la Llei 16/1991, de 10 de juliol, de les policies locals, són principis bàsics d'actuació de les pol…
+  - *Llei 16/1991: principis bàsics d’actuació de les policies locals*
+- `q-of-roses-2017-interins-cp-014` — Quina d'aquestes escales comprèn la categoria d'intendent?
+  - *escala que comprèn la categoria d’intendent*
+- `q-of-roses-2017-interins-cp-016` — La coordinació de l'activitat dels policies locals s'ha de complir:
+  - *coordinació de l’activitat dels policies locals*
+- `q-of-roses-2017-interins-cp-018` — Quina d'aquestes escales comprèn la categoria d'agent:
+  - *escala que comprèn la categoria d’agent*
+- `q-of-roses-2017-interins-cp-020` — Quina de les següents lleis regula les policies locals de Catalunya?
+  - *llei que regula les policies locals de Catalunya*
+- `q-of-roses-2017-interins-cp-001r` — Segons la Llei 16/1991, de 10 de juliol, quin d'aquests supòsits no és un principi bàsic d'actuació dels po…
+  - *Llei 16/1991: principis bàsics d’actuació de les policies locals*
+- `q-of-roses-2016-interins-cp-003` — D'acord amb la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, quina d'aquestes no és u…
+  - *Llei 16/1991: funcions d’un policia local en règim d’interinitat*
+- `q-of-roses-2016-interins-cp-004` — Segons l'article 24 de la Llei 16/1991, de 10 de juliol, de les policies locals de Catalunya, quines catego…
+  - *art. 24 Llei 16/1991: escala intermèdia*
+
+## 25. Ètica i deontologia professional — 10
+
+- `q-of-roses-2024-propietat-cp-027` — Quin any es va aprovar el Codi d’Ètica de la Policia de Catalunya?
+  - *any d’aprovació del Codi d’Ètica de la Policia de Catalunya*
+- `q-of-roses-2021-propietat-cp-002` — Quin format legal té el Codi Europeu d’Ètica de la policia de 2001?
+  - *rang legal del Codi Europeu d’Ètica de la Policia de 2001*
+- `q-of-roses-2021-propietat-cp-006` — Segons el Codi d’Ètica de la Policia de Catalunya, els valors, les actituds i les competències s’agrupen en…
+  - *Codi d’Ètica de la Policia de Catalunya: les cinc àrees*
+- `q-of-roses-2021-interins-cp-013` — El Codi de conducta per a funcionaris encarregats de fer complir la llei va ser aprovat:
+  - *aprovació del Codi de conducta per als funcionaris encarregats de fer complir la llei*
+- `q-of-roses-2019-propietat-cp-017` — El marc de referència a nivell europeu en relació amb els principis bàsics que han de regir la pràctica pol…
+  - *marc europeu de principis bàsics de la pràctica policial en societat multicultural: ètica i deontologia professional*
+- `q-of-roses-2019-propietat-cp-042` — Quin rang legal té el Codi Europeu d’Ètica de la Policia de 2001?
+  - *rang legal del Codi Europeu d’Ètica de la Policia de 2001*
+- `q-of-roses-2018-propietat-cp-032` — El codi de conducta per a funcionaris encarregats de fer complir la llei estableix:
+  - *codi de conducta per als funcionaris encarregats de fer complir la llei*
+- `q-of-roses-2018-propietat-cp-035` — L’acord GOV/25/2015 aprova el Codi d’Ètica de la Policia de Catalunya i identifica els valors, actituds i c…
+  - *Codi d’Ètica de la Policia de Catalunya (acord GOV/25/2015)*
+- `q-of-roses-2017-interins-cp-009` — Quin és el marc de referència en l'àmbit europeu en relació amb els principis bàsics que han de regir la pr…
+  - *marc europeu de principis bàsics de la pràctica policial en societat multiètnica: ètica i deontologia professional*
+- `q-of-roses-2016-interins-cp-001` — Quin és el marc de referència en l'àmbit europeu en relació amb els principis bàsics que han de regir la pr…
+  - *marc europeu de principis bàsics de la pràctica policial en societat multicultural: ètica i deontologia professional*
+
+## 26. Llei orgànica 4/2015, de protecció de la seguretat ciutadana — 21
+
+- `q-of-roses-2026-interins-cp-024` — D’acord amb l’article 39 de la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana,…
+  - *quadre sancionador de l’art. 39 LO 4/2015*
+- `q-of-roses-2026-interins-cp-036` — Si no es pot identificar una persona per cap mitjà possible, quin és el termini màxim que es disposa en tem…
+  - *termini màxim d’identificació (art. 16 LO 4/2015)*
+- `q-of-roses-2025-propietat-cp-036` — Si no es pot identificar una persona per cap mitjà possible, quin és el termini màxim que es disposa en tem…
+  - *identificació en dependències policials (art. 16 LO 4/2015)*
+- `q-of-roses-2025-interins-cp-027` — Portar, exhibir o usar armes prohibides, així com portar, exhibir o usar armes de mode negligent, temerari …
+  - *armes prohibides: infracció greu (LO 4/2015)*
+- `q-of-roses-2025-interins-cp-040` — D’acord amb l’article 23 de la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana:
+  - *dissolució de reunions i manifestacions (art. 23 LO 4/2015)*
+- `q-of-roses-2024-propietat-cp-029` — Digues quina de les següents afirmacions és correcta:
+  - *art. 32 LO 4/2015: sancions imposades pels alcaldes*
+- `q-of-roses-2024-interins-cp-027` — Segons l’article 16 de la LO 4/2015, de 30 de març, en compliment de les seves funcions, els agents de les …
+  - *art. 16 LO 4/2015: requeriment d’identificació*
+- `q-of-roses-2024-interins-cp-028` — Segons l’article 37 de la LO 4/2015, de 30 de març, NO és una infracció lleu:
+  - *art. 37 LO 4/2015: infraccions que no són lleus*
+- `q-of-roses-2023-interins-cp-010` — Segons l’article 37 de la Llei Orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana, és u…
+  - *art. 37 LO 4/2015: infracció lleu*
+- `q-of-roses-2023-interins-cp-019` — Segons l’article 9 de la Llei orgànica 4/2015, de 30 de març, de protecció de la Seguretat Ciutadana, el do…
+  - *art. 9 LO 4/2015: obligatorietat del document d’identitat*
+- `q-of-roses-2022-interins-cp-007` — L’article 16 de la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana, estableix q…
+  - *art. 16 LO 4/2015: requeriment d’identificació*
+- `q-of-roses-2022-interins-cp-018` — Segons l’article 40 de la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana, les …
+  - *art. 40 LO 4/2015: sancions per infraccions molt greus*
+- `q-of-roses-2022-interins-cp-020` — Segons l’article 39 de la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana, les …
+  - *art. 39 LO 4/2015: sanció de les infraccions lleus*
+- `q-of-roses-2021-propietat-cp-012` — D’acord amb l’article 4 de la Llei orgànica 4/2015 de protecció de la seguretat ciutadana, quin d’aquests n…
+  - *art. 4 LO 4/2015: principis rectors de l’acció dels poders públics*
+- `q-of-roses-2021-interins-cp-004` — Les infraccions administratives tipificades a la Llei orgànica 4/2015 de protecció de la seguretat ciutadan…
+  - *LO 4/2015: prescripció de les infraccions administratives*
+- `q-of-roses-2019-propietat-cp-030` — La pertorbació de la seguretat ciutadana en actes públics als quals assisteixin nombroses persones, quan no…
+  - *LO 4/2015: pertorbació de la seguretat ciutadana en actes públics*
+- `q-of-roses-2018-propietat-cp-028` — Segons la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana, qui pot dictar norme…
+  - *LO 4/2015: normes de seguretat pública per a edificis i instal·lacions*
+- `q-of-roses-2018-propietat-cp-029` — Quina d'aquestes afirmacions sobre el passaport és falsa?
+  - *el passaport: LO 4/2015*
+- `q-of-roses-2018-propietat-cp-030` — És una infracció greu a la Llei orgànica 4/2015, de 30 de març, de protecció de la seguretat ciutadana:
+  - *LO 4/2015: infracció greu*
+- `q-of-roses-2018-interins-cp-020` — Quina de les següents lleis té per objecte la regulació d'un conjunt plural i diversificat d'actuacions de …
+  - *LO 4/2015, de protecció de la seguretat ciutadana*
+- `q-of-roses-2016-interins-cp-010` — Les denúncies efectuades pels agents de l'autoritat encarregats de la vigilància del trànsit tenen presumpc…
+  - *presumpció de veracitat de les denúncies dels agents de l’autoritat (LO 4/2015)*
+
+## 27. Furts i robatoris — 5
+
+- `q-of-roses-2026-interins-cp-028` — Segons l’article 237 del Codi Penal espanyol, el qui amb ànim de lucre s’apoderi de les coses mobles aliene…
+  - *robatori amb força (art. 237 CP)*
+- `q-of-roses-2025-interins-cp-028` — Segons l’article 235, el furt serà castigat amb pena de presó d’un a tres anys, quan:
+  - *furt agreujat (art. 235 CP)*
+- `q-of-roses-2024-propietat-cp-030` — A quin article del Codi Penal espanyol es troba recollit el robatori?
+  - *article del codi penal: el robatori*
+- `q-of-roses-2024-propietat-cp-042` — Digues quina de les següents afirmacions és correcta:
+  - *codi penal: el furt*
+- `q-of-roses-2024-interins-cp-029` — El qui, amb ànim de lucre, prengui les coses mobles alienes sense la voluntat del seu propietari, serà auto…
+  - *codi penal: el furt*
+
+## 28. Jurisdicció penal — 7
+
+- `q-of-roses-2026-interins-cp-029` — Segons l’article 65 de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial, l’Audiència Nacional con…
+  - *competència penal de l’Audiència Nacional (art. 65 LOPJ)*
+- `q-of-roses-2025-propietat-cp-038` — Segons l’article 519 de la LECrim, les diligències de presó provisional:
+  - *presó provisional en peça separada (art. 519 LECrim; procés penal)*
+- `q-of-roses-2025-interins-cp-029` — Quins d’aquests òrgans jurisdiccionals és un òrgan col·legiat?
+  - *òrgans col·legiats de l’ordre penal: l’Audiència Provincial*
+- `q-of-roses-2024-propietat-cp-031` — Segons l’article 87 de la Llei orgànica 6/1985, d’1 de juliol, els jutjats d’instrucció coneixeran en l’ord…
+  - *art. 87 LOPJ: competència dels jutjats d’instrucció*
+- `q-of-roses-2024-interins-cp-030` — Són òrgans jurisdiccionals en matèria penal:
+  - *òrgans jurisdiccionals en matèria penal*
+- `q-of-roses-2018-propietat-cp-011` — Quina jurisdicció coneix els delictes que es cometen contra membres de les forces i cossos de seguretat en …
+  - *jurisdicció competent en delictes contra membres de les forces i cossos de seguretat*
+- `q-of-roses-2018-propietat-cp-022` — Els òrgans jurisdiccionals amb matèria penal són:
+  - *òrgans jurisdiccionals en matèria penal*
+
+## 29. Codi penal: garanties, aplicació de la llei i seguretat viària — 16
+
+- `q-of-roses-2026-interins-cp-021` — És infracció de trànsit constitutiva de delicte:
+  - *infracció de trànsit constitutiva de delicte: obstacles a la via (art. 385 CP)*
+- `q-of-roses-2025-propietat-cp-032` — A les vies urbanes, quina velocitat es considera penal d’acord amb l’article 379.1 del Codi Penal?
+  - *velocitat penalment rellevant en via urbana (art. 379.1 CP)*
+- `q-of-roses-2025-interins-cp-021` — El que condueixi un vehicle de motor o un ciclomotor amb temeritat manifesta i posi en perill concret la vi…
+  - *conducció temerària amb perill concret (art. 380 CP)*
+- `q-of-roses-2025-interins-cp-031` — Segons l’article 33 del Codi Penal espanyol, és una pena lleu:
+  - *classes de penes: pena lleu (art. 33 CP; part general del CP)*
+- `q-of-roses-2025-interins-cp-033` — Segons el Codi Penal espanyol, NO és un delicte contra la seguretat viària:
+  - *catàleg de delictes contra la seguretat viària*
+- `q-of-roses-2025-interins-cp-042` — Segons l’article 10 del Codi Penal espanyol:
+  - *concepte de delicte (art. 10 CP; part general)*
+- `q-of-roses-2024-propietat-cp-032` — El delicte recollit a l’article 384.2 del Codi Penal, per no haver obtingut mai el permís de conduir, té un…
+  - *art. 384.2 CP: no haver obtingut mai el permís de conduir*
+- `q-of-roses-2024-interins-cp-031` — Quin dels següents supòsits és un delicte contra la seguretat viària establert en el Codi Penal?
+  - *delictes contra la seguretat viària: codi penal*
+- `q-of-roses-2022-interins-cp-014` — Quin dels següents supòsits no és un delicte contra la seguretat viària establert en el Codi Penal?
+  - *delictes contra la seguretat viària: codi penal*
+- `q-of-roses-2021-propietat-cp-025` — D’acord amb el Codi Penal, la conducta consistent en “el particular que, sin habitar en ella, entraré en mo…
+  - *codi penal: allanament de morada*
+- `q-of-roses-2019-propietat-cp-020` — D’acord amb el Codi Penal, quina d’aquestes mesures comporta la privació de la llibertat:
+  - *codi penal: mesures privatives de llibertat*
+- `q-of-roses-2019-propietat-cp-021` — D’acord amb el Codi Penal, no serà castigat com a reu d’assassinat el qui mati a altre en alguna de les cir…
+  - *codi penal: circumstàncies que exclouen l’assassinat*
+- `q-of-roses-2019-propietat-cp-023` — La Policia s'introdueix en un fòrum d'Internet obert, en el qual els membres intercanvien fotografies porno…
+  - *cas pràctic: pornografia infantil, codi penal*
+- `q-of-roses-2018-propietat-cp-015` — La imputació d'un delicte fet amb coneixement de la seva falsedat o temerari menyspreu a la veritat és:
+  - *acusació o denúncia falsa: codi penal*
+- `q-of-roses-2018-propietat-cp-019` — El que no socorri una persona que es trobi desemparada i en perill manifest i greu, quan pugui fer-ho sense…
+  - *omissió del deure de socors: codi penal*
+- `q-of-roses-2018-propietat-cp-020` — Quina d'aquestes conductes no és una agressió sexual?
+  - *conductes que no constitueixen agressió sexual: codi penal*
+
+## 31. Coneixements generals de Roses — 45
+
+- `q-of-roses-2026-interins-cg-017` — Qui és l’actual regidor/a del Departament d’Esports de l’Ajuntament de Roses?
+  - *regidoria d’Esports de l’Ajuntament de Roses (coneixement institucional local)*
+- `q-of-roses-2025-propietat-cg-006` — Quines d’aquestes comarques són limítrofes amb la comarca de l’Alt Empordà:
+  - *comarques limítrofes amb l’Alt Empordà (entorn territorial de Roses)*
+- `q-of-roses-2025-propietat-cg-017` — Qui és l’actual alcalde/ssa de l’Ajuntament de Roses?
+  - *alcaldia de l’Ajuntament de Roses (coneixement institucional local)*
+- `q-of-roses-2025-interins-cg-017` — Qui és l’actual regidor/a de Seguretat ciutadana de l’Ajuntament de Roses?
+  - *regidoria de Seguretat Ciutadana de l’Ajuntament de Roses (coneixement institucional local)*
+- `q-of-roses-2025-interins-cp-022` — A quin carrer està ubicada la Biblioteca de Roses?
+  - *ubicació de la Biblioteca de Roses (equipaments del municipi)*
+- `q-of-roses-2024-propietat-cp-033` — En quina urbanització de Roses es troba el carrer de la Serra del Cadí?
+  - *carrer de la Serra del Cadí: ubicació per urbanització de Roses*
+- `q-of-roses-2024-interins-cp-032` — On està ubicat el Castell de la Trinitat de Roses?
+  - *ubicació del Castell de la Trinitat de Roses*
+- `q-of-roses-2021-propietat-cg-013` — A quin segle es va construir el Castell de la Trinitat de Roses?
+  - *segle de construcció del Castell de la Trinitat: patrimoni de Roses*
+- `q-of-roses-2021-propietat-cg-015` — Quin dia i any la banda terrorista ETA va fer explotar a Roses un cotxe carregat amb 50 quilos de dinamita …
+  - *atemptat d’ETA a Roses, davant l’hotel Montecarlo: fet local*
+- `q-of-roses-2021-propietat-cg-019` — Com és anomenada la casa on hi ha els serveis municipals d'urbanisme de l'Ajuntament de Roses?
+  - *casa dels serveis d’Urbanisme de l’Ajuntament: equipament municipal*
+- `q-of-roses-2021-propietat-cg-021` — A quin carrer de Roses es troben les oficines de la Policia Local?
+  - *oficines de la Policia Local: equipament municipal*
+- `q-of-roses-2021-propietat-cg-022` — Com es diu la Biblioteca de Roses?
+  - *Biblioteca de Roses: equipament municipal*
+- `q-of-roses-2021-propietat-cg-025` — A quina urbanització de Roses trobem el carrer del Turó de l'Home?
+  - *carrer del Turó de l’Home: ubicació per urbanització*
+- `q-of-roses-2021-interins-cg-012` — A quina urbanització de Roses trobem el carrer Lisboa?
+  - *carrer Lisboa: ubicació per urbanització*
+- `q-of-roses-2021-interins-cg-013` — La Ciutadella de Roses és una fortificació que presenta una forma de:
+  - *forma de la Ciutadella de Roses: patrimoni*
+- `q-of-roses-2021-interins-cg-014` — A quina urbanització de Roses trobem el carrer del Faig?
+  - *carrer del Faig: ubicació per urbanització*
+- `q-of-roses-2019-propietat-cg-002` — La Punta de l'Ullastrell de Roses es troba entre:
+  - *la Punta de l’Ullastrell: geografia del terme*
+- `q-of-roses-2019-propietat-cg-014` — A quina urbanització de Roses es troba el carrer Om?
+  - *carrer Om: ubicació per urbanització*
+- `q-of-roses-2019-propietat-cg-015` — Berruguete a més d’un pintor és el nom d'un carrer de Roses. A quina urbanització de Roses es troba?
+  - *carrer Berruguete: ubicació per urbanització*
+- `q-of-roses-2019-propietat-cg-016` — El Castrum Visigòtic de Roses a quina urbanització el trobaries?
+  - *Castrum Visigòtic: ubicació per urbanització*
+- `q-of-roses-2019-propietat-cg-017` — L’Àrea d'Infraestructures i Serveis Públics de l'Ajuntament de Roses es troba a:
+  - *Àrea d’Infraestructures i Serveis Públics: equipament municipal*
+- `q-of-roses-2019-propietat-cg-019` — El cossi de la Reina és un element arquitectònic que podem veure a:
+  - *cossi de la Reina: element arquitectònic de Roses*
+- `q-of-roses-2019-interins-cg-002` — La Punta de la Poncella es troba entre:
+  - *la Punta de la Poncella: geografia del terme*
+- `q-of-roses-2019-interins-cg-015` — Rembrandt a més de pintor és el nom d'un carrer de Roses. A quina urbanització de Roses es troba?
+  - *carrer Rembrandt: ubicació per urbanització*
+- `q-of-roses-2019-interins-cg-016` — Sòcrates, a més d’un filòsof, és el nom d'un carrer de Roses. A quina urbanització de Roses es troba?
+  - *carrer Sòcrates: ubicació per urbanització*
+- `q-of-roses-2019-interins-cg-017` — El Departament d'Ensenyament de l'Ajuntament de Roses es troba a:
+  - *Departament d’Ensenyament de l’Ajuntament: equipament municipal*
+- `q-of-roses-2019-interins-cg-018` — Quines d'aquestes cales són de Roses?
+  - *cales de Roses: geografia del terme*
+- `q-of-roses-2019-interins-cg-019` — La Ciutadella de Roses presenta una forma de:
+  - *forma de la Ciutadella de Roses: patrimoni*
+- `q-of-roses-2019-interins-cg-021` — El carrer Atenes es troba a la següent urbanització de Roses:
+  - *carrer Atenes: ubicació per urbanització*
+- `q-of-roses-2019-interins-cp-017` — L’Àrea Bàsica Policial de l'Alt Empordà-Roses presta servei al municipi de:
+  - *Àrea Bàsica Policial de l’Alt Empordà-Roses: coneixement institucional del municipi*
+- `q-of-roses-2018-propietat-cg-015` — A quina urbanització de Roses es troba el Carrer de Cala Nans?
+  - *carrer de Cala Nans: ubicació per urbanització*
+- `q-of-roses-2018-propietat-cg-024` — A quina urbanització de Roses es troba el carrer de Sorolla?
+  - *carrer de Sorolla: ubicació per urbanització*
+- `q-of-roses-2018-propietat-cg-035` — Quin d'aquests és un monument de Roses?
+  - *monuments de Roses*
+- `q-of-roses-2018-propietat-cg-038` — A quin carrer es troben les oficines d'Urbanisme de l'Ajuntament de Roses?
+  - *oficines d’Urbanisme: equipament municipal*
+- `q-of-roses-2018-propietat-cg-001r` — A quina urbanització de Roses trobem el carrer de Lisboa?
+  - *carrer de Lisboa: ubicació per urbanització*
+- `q-of-roses-2018-interins-cg-015` — Rubens a més de pintor és el nom d'un carrer de Roses. A quina urbanització de Roses es troba?
+  - *carrer Rubens: ubicació per urbanització*
+- `q-of-roses-2018-interins-cg-017` — El Departament de Cultura i Festes de l'Ajuntament de Roses es troba a...
+  - *Departament de Cultura i Festes de l’Ajuntament: equipament municipal*
+- `q-of-roses-2018-interins-cg-018` — Quines d'aquestes són Platges de Roses?
+  - *platges de Roses: geografia del terme*
+- `q-of-roses-2018-interins-cg-019` — De quin segle és el monestir romànic llombard de Santa Maria de la Ciutadella de Roses?
+  - *monestir romànic de Santa Maria de la Ciutadella: patrimoni de Roses*
+- `q-of-roses-2018-interins-cg-001r` — El Castrum Visigòtic de Roses es troba a...
+  - *Castrum Visigòtic: ubicació per urbanització*
+- `q-of-roses-2017-interins-cg-013` — Durant la Guerra Civil a Roses es va construir un refugi antiaeri que es troba entre els carrers Trinitat i…
+  - *refugi antiaeri de la Guerra Civil entre els carrers Trinitat i Josep Sabater: patrimoni històric de Roses*
+- `q-of-roses-2017-interins-cg-014` — Quin d'aquests no és un dolmen del municipi de Roses?
+  - *dòlmens del municipi de Roses: patrimoni del terme*
+- `q-of-roses-2017-interins-cg-015` — A quina urbanització de Roses es troba el Castrum Visigòtic?
+  - *Castrum Visigòtic: ubicació per urbanització*
+- `q-of-roses-2016-interins-cp-006` — A quina d'aquestes urbanitzacions de Roses es troba el carrer Berlín?
+  - *carrer Berlín: ubicació per urbanització de Roses*
+- `q-of-roses-2016-interins-cp-001r` — Durant quina d'aquestes guerres Roses va ser l'única plaça forta de Catalunya que mai va donar l'obediència…
+  - *Guerra de Successió: Roses com a plaça forta, patrimoni i història local*
+
+## 32. Permisos i llicències de conducció — 12
+
+- `q-of-roses-2026-interins-cp-031` — Per una motocicleta, la inspecció tècnica de vehicles (ITV) s’ha de fer:
+  - *periodicitat de la ITV d’una motocicleta (condicions dels vehicles)*
+- `q-of-roses-2026-interins-cp-032` — Quina és l’edat mínima que habilita a conduir amb el permís D1:
+  - *edat mínima per al permís D1*
+- `q-of-roses-2025-interins-cp-032` — El permís de conducció de la categoria B, habilita a conduir:
+  - *vehicles que habilita a conduir el permís B*
+- `q-of-roses-2024-propietat-cp-034` — Els automòbils amb una MMA que no excedeixin de 3500 kg i que estiguin dissenyats i construïts per al trans…
+  - *permís de conducció per a automòbils fins a 8 passatgers*
+- `q-of-roses-2024-interins-cp-033` — Quina és l’edat mínima que habilita conduir amb el permís A2:
+  - *edat mínima per al permís de conducció A2*
+- `q-of-roses-2023-interins-cp-009` — Quina és l’edat mínima que habilita a conduir amb el permís C:
+  - *edat mínima per al permís de conducció C*
+- `q-of-roses-2022-interins-cp-010` — Quina és l’edat mínima requerida per a conduir motocicletes de la categoria A2?
+  - *edat mínima per conduir motocicletes A2*
+- `q-of-roses-2021-propietat-cp-011` — Els automòbils dissenyats i construïts per al transport de no més de 16 passatgers, a més del conductor i l…
+  - *permís de conducció per a automòbils de fins a 16 passatgers*
+- `q-of-roses-2021-interins-cp-016` — El permís de conducció de la classe A1:
+  - *permís de conducció de la classe A1*
+- `q-of-roses-2019-propietat-cp-033` — Per a un ciclomotor de dues rodes, la inspecció tècnica de vehicles (ITV) s’ha de fer:
+  - *inspecció tècnica de vehicles: periodicitat en un ciclomotor*
+- `q-of-roses-2019-propietat-cp-034` — D’acord amb l’article 12 del Reial decret 818/2009, de 9 de maig, pel qual s’aprova el Reglament general de…
+  - *art. 12 RD 818/2009 (RGCond): permís de conducció*
+- `q-of-roses-2019-interins-cp-014` — Quin d’aquests permisos de conducció habilita per a la conducció d’automòbils tipus autocars de més de 9 pl…
+  - *permís de conducció d’autocars de més de 9 places*
+
+## 33. Conducció sota els efectes d’alcohol o drogues — 15
+
+- `q-of-roses-2026-interins-cp-030` — Conduir un vehicle de motor o ciclomotor sota els efectes de drogues tòxiques, estupefaents, substàncies ps…
+  - *conducció sota efectes: tipificació penal (art. 379.2 CP)*
+- `q-of-roses-2026-interins-cp-033` — D’acord amb l’article 20 del Reglament General de Circulació, els conductors de bicicletes:
+  - *taxes d’alcohol dels ciclistes (art. 20 RGC)*
+- `q-of-roses-2026-interins-cp-038` — Segons la normativa vigent, la taxa d’alcoholèmia de les persones conductores novelles administrativament é…
+  - *taxa d’alcoholèmia sancionable dels conductors novells*
+- `q-of-roses-2025-propietat-cp-040` — Si un conductor nacional NO novell de turisme en un control preventiu dona una taxa d’alcohol de 0,61 mg/l …
+  - *taxa penal amb símptomes: detenció i denúncia penal*
+- `q-of-roses-2025-interins-cp-030` — Conduir un vehicle de motor o ciclomotor sota la influència de drogues tòxiques, estupefaents, substàncies …
+  - *conducció sota efectes: tipificació penal (art. 379.2 CP)*
+- `q-of-roses-2024-propietat-cp-035` — Segons el Codi Penal, conduir un vehicle de motor amb una taxa d’alcohol superior a 0,60 mil·ligrams per li…
+  - *codi penal: taxa d’alcohol superior a 0,60 mg/l*
+- `q-of-roses-2024-interins-cp-034` — La taxa d’alcoholèmia permesa de les persones conductores menors d’edat de qualsevol tipus de vehicle és:
+  - *taxa d’alcoholèmia permesa als menors d’edat*
+- `q-of-roses-2024-interins-cp-035` — Segons l’article 21 del Reglament general de circulació, els agents de l’autoritat encarregats de la vigilà…
+  - *art. 21 RGC: proves de detecció alcohòlica*
+- `q-of-roses-2023-interins-cp-017` — La taxa d’alcoholèmia de les persones conductores novelles administrativament és sancionable si superen els:
+  - *taxa d’alcoholèmia dels conductors novells*
+- `q-of-roses-2022-interins-cp-013` — La taxa d’alcohol pels conductors en general és sancionable:
+  - *taxa d’alcohol sancionable dels conductors en general*
+- `q-of-roses-2022-interins-cp-019` — D’acord amb l’article 21 del Reglament general de circulació, els agents encarregats de la vigilància del t…
+  - *art. 21 RGC: proves de detecció alcohòlica*
+- `q-of-roses-2021-propietat-cp-019` — El delicte recollit a l’article 383 del Codi Penal Espanyol, per negar-se a sotmetre’s a les proves de dete…
+  - *art. 383 CP: negativa a les proves de detecció alcohòlica*
+- `q-of-roses-2021-interins-cp-002` — - La taxa d’alcoholèmia sancionable, de les persones conductores en general, es sancionarà si superen els:
+  - *taxa d’alcoholèmia sancionable dels conductors en general*
+- `q-of-roses-2018-propietat-cp-034` — Quines persones estan obligades a sotmetre’s a la prova preventiva d’alcoholèmia segons l’article 21 del Re…
+  - *art. 21 RGC: persones obligades a la prova d’alcoholèmia*
+- `q-of-roses-2016-interins-cp-009` — La taxa d'alcoholèmia de les persones conductores novelles administrativament és sancionable a partir de:
+  - *taxa d’alcoholèmia dels conductors novells*
+
+## 34. Animals domèstics i de companyia — 6
+
+- `q-of-roses-2026-interins-cp-034` — Segons l’article 7 de la Llei 10/1999, de 30 de juliol, sobre tinença de gossos potencialment perillosos, é…
+  - *infracció lleu de la Llei 10/1999 de gossos potencialment perillosos*
+- `q-of-roses-2025-interins-cp-034` — D’acord amb l’article 2 de la Llei 10/1999, de 30 de juliol, els gossos potencialment perillosos:
+  - *conducció de gossos potencialment perillosos per menors (Llei 10/1999)*
+- `q-of-roses-2024-propietat-cp-036` — Segons l’Ordenança reguladora de la tinença d’animals de Roses, el fet de NO portar les persones que condue…
+  - *ordenança de tinença d’animals de Roses: llicència per a gossos perillosos*
+- `q-of-roses-2024-interins-cp-036` — Segons l’article 1 de la Llei 10/1999, de 30 de juliol, sobre tinença de gossos potencialment perillosos, t…
+  - *art. 1 Llei 10/1999: gossos potencialment perillosos*
+- `q-of-roses-2021-propietat-cp-023` — Segons l’Ordenança municipal de tinença d’animals, quina d’aquestes no és una infracció greu?
+  - *ordenança de tinença d’animals de Roses: infraccions greus*
+- `q-of-roses-2018-propietat-cp-040` — En quina d'aquestes ordenances del municipi de Roses està regulada la llicència d'obertura i el permís de n…
+  - *ordenança de nuclis zoològics de Roses: llicència d’obertura*
+
+## 35. Ordenança municipal de circulació de Roses — 12
+
+- `q-of-roses-2025-propietat-cp-028` — D’acord amb l’article 20.2 de l’Ordenança de circulació de l’Ajuntament de Roses, les motocicletes i els ci…
+  - *estacionament de motocicletes a la vorera (art. 20.2 ordenança de circulació de Roses)*
+- `q-of-roses-2025-propietat-cp-029` — D’acord amb l’article 41 de l’Ordenança de circulació de l’Ajuntament de Roses, llevat d’autorització espec…
+  - *horari de càrrega i descàrrega (art. 41 ordenança de circulació de Roses)*
+- `q-of-roses-2025-interins-cp-035` — Arran de la modificació de l’Ordenança de circulació de Roses, els vehicles autoritzats per circular pel ca…
+  - *vehicles autoritzats al carril bici (modificació 2021 de l’ordenança de circulació)*
+- `q-of-roses-2024-propietat-cp-037` — Segons l’article 41 de l’Ordenança municipal de circulació de Roses, llevat d’autorització especial, les op…
+  - *art. 41 ordenança de circulació de Roses: càrrega i descàrrega*
+- `q-of-roses-2024-propietat-cp-038` — Estacionar un vehicle en una zona senyalitzada com a reserva de càrrega i descàrrega, llevat dels autoritza…
+  - *estacionar en zona de reserva de càrrega i descàrrega*
+- `q-of-roses-2024-interins-cp-037` — Segons la modificació de l’Ordenança municipal de circulació de Roses, els vehicles de mobilitat personal p…
+  - *modificació de l’ordenança de circulació de Roses: VMP*
+- `q-of-roses-2021-propietat-cp-004` — La recent modificació de l’ordenança municipal de circulació de Roses estableix que l’edat mínima dels cond…
+  - *ordenança de circulació de Roses: edat mínima dels VMP*
+- `q-of-roses-2021-propietat-cp-007` — Segons l’Ordenança municipal de circulació de Roses, en quins casos la Policia Local podrà procedir, si l’o…
+  - *ordenança de circulació de Roses: retirada del vehicle*
+- `q-of-roses-2019-propietat-cp-037` — D’acord amb l’article 41 de l’Ordenança municipal de circulació de Roses, llevat d’autorització especial, l…
+  - *art. 41 ordenança de circulació de Roses: càrrega i descàrrega*
+- `q-of-roses-2019-propietat-cp-038` — D’acord amb l’article 16 de l’Ordenança municipal de circulació de Roses, estacionar un vehicle en una zona…
+  - *art. 16 ordenança de circulació de Roses: zona de reserva de càrrega i descàrrega*
+- `q-of-roses-2018-propietat-cp-037` — D'acord amb l'ordenança de circulació de Roses no es prohibeix la parada:
+  - *ordenança de circulació de Roses: parada no prohibida*
+- `q-of-roses-2018-propietat-cp-038` — D'acord amb l'ordenança de circulació de Roses, quin és l'òrgan competent per determinar les zones reservad…
+  - *ordenança de circulació de Roses: òrgan competent en càrrega i descàrrega*
+
+## 36. Ordenança municipal de convivència ciutadana de Roses — 10
+
+- `q-of-roses-2026-interins-cp-040` — Què pot fer l'ajuntament amb els objectes confiscats (comís) segons l’ordenança de convivència ciutadana si…
+  - *destinació dels objectes comissats (ordenança de convivència)*
+- `q-of-roses-2026-interins-cp-042` — Què prohibeix l'article 11 de l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al mu…
+  - *prohibicions sobre el comerç ambulant no autoritzat (art. 11 de l’ordenança de convivència)*
+- `q-of-roses-2025-interins-cp-036` — Segons l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al municipi de Roses, “Col·l…
+  - *col·laborar amb la venda ambulant no autoritzada: infracció greu (ordenança de convivència)*
+- `q-of-roses-2024-propietat-cp-039` — Segons l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al municipi, quina de les se…
+  - *ordenança de convivència de Roses: infracció greu*
+- `q-of-roses-2024-interins-cp-038` — Comprar o adquirir en l’espai públic qualsevol producte procedent de la venda ambulant no autoritzada:
+  - *compra de productes de venda ambulant no autoritzada*
+- `q-of-roses-2024-interins-cp-039` — Segons l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al municipi, les infraccions…
+  - *ordenança de convivència de Roses: multa per infraccions molt greus*
+- `q-of-roses-2021-propietat-cp-009` — Segons l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al municipi de Roses, el fet…
+  - *ordenança de convivència de Roses: consum de begudes alcohòliques*
+- `q-of-roses-2021-propietat-cp-010` — Segons l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al municipi de Roses:
+  - *ordenança de convivència de Roses*
+- `q-of-roses-2021-propietat-cp-022` — D’acord amb l’Ordenança de mesures per fomentar i garantir la convivència ciutadana al municipi, l’article …
+  - *art. 25.1 ordenança de convivència de Roses: reg de plantes*
+- `q-of-roses-2021-propietat-cp-024` — Realitzar la venda ambulant sense autorització municipal en tot el municipi, fora de l’àmbit del mercat mun…
+  - *venda ambulant sense autorització municipal*
+
+## 37. Policia judicial i persona detinguda — 9
+
+- `q-of-roses-2025-interins-cp-038` — D’acord amb l’article 3 de la Llei orgànica 6/1984, de 24 de maig, qui pot instar el procediment «Habeas Co…
+  - *legitimats per instar l’habeas corpus*
+- `q-of-roses-2024-interins-cp-040` — Segons l’article 520 de la Llei d’enjudiciament criminal, són drets de les persones detingudes:
+  - *art. 520 LECrim: drets de les persones detingudes*
+- `q-of-roses-2019-propietat-cp-026` — D’acord amb la Llei d’enjudiciament criminal, la detenció preventiva:
+  - *Llei d’enjudiciament criminal: detenció preventiva*
+- `q-of-roses-2019-propietat-cp-032` — La Constitució Espanyola estableix les funcions genèriques de la Policia Judicial en el seu article:
+  - *CE: article de les funcions genèriques de la policia judicial*
+- `q-of-roses-2019-interins-cp-016` — Quina d’aquestes no és una tècnica d’investigació criminal?
+  - *tècniques d’investigació criminal*
+- `q-of-roses-2018-propietat-cp-021` — Els atestats que practiquin els funcionaris de policia hauran d'especificar amb la major exactitud:
+  - *contingut dels atestats policials*
+- `q-of-roses-2018-propietat-cp-025` — Els agents de policia no podran procedir a la immediata detenció de persones en els següents supòsits:
+  - *supòsits en què no es procedeix a la detenció immediata*
+- `q-of-roses-2018-propietat-cp-026` — Digues quina de les següents afirmacions és falsa:
+  - *detenció, presó provisional i contingut de l’atestat*
+- `q-of-roses-2016-interins-cp-002r` — La competència de policia judicial es troba regulada a:
+  - *competència de policia judicial*
+
+## 38. Llei 27/2003: ordre de protecció de les víctimes de violència domèstica — 5
+
+- `q-of-roses-2024-interins-cp-041` — L’ordre de protecció per a les víctimes de violència de gènere, d’acord amb la Llei 27/2003, de 31 de julio…
+  - *Llei 27/2003: inscripció de l’ordre de protecció*
+- `q-of-roses-2019-propietat-cp-022` — Federico, de 25 anys, incompleix una ordre de protecció i s'apropa al domicili dels seus pares que, atemori…
+  - *cas pràctic: incompliment d’una ordre de protecció*
+- `q-of-roses-2019-propietat-cp-027` — D’acord amb la Llei 27/2003, de 31 de juliol, reguladora de l’ordre de protecció de les víctimes de la viol…
+  - *Llei 27/2003: ordre de protecció, contingut*
+- `q-of-roses-2019-propietat-cp-028` — D’acord amb la Llei 27/2003, de 31 de juliol, reguladora de l’ordre de protecció de les víctimes de la viol…
+  - *Llei 27/2003: ordre de protecció*
+- `q-of-roses-2018-propietat-cp-027` — L'ordre de protecció per a les víctimes de violència de gènere, d'acord amb la Llei 27/2003, de 31 de julio…
+  - *Llei 27/2003: ordre de protecció per a víctimes de violència de gènere*
+
+## 40. Llei orgànica 5/2000: responsabilitat penal i detenció de menors — 11
+
+- `q-of-roses-2026-interins-cp-035` — Quina de les següents afirmacions NO és correcta:
+  - *durada màxima de la detenció d’una persona menor*
+- `q-of-roses-2026-interins-cp-039` — Un menor de 14 anys pot ser detingut com a responsable de la comissió d’un delicte?
+  - *detenció d’un menor de catorze anys*
+- `q-of-roses-2025-propietat-cp-030` — Quina és la durada màxima de la detenció d’un menor?
+  - *durada màxima de la detenció d’una persona menor*
+- `q-of-roses-2025-interins-cp-037` — Segons la Llei orgànica 5/2000, de 12 de gener, reguladora de la responsabilitat penal dels menors:
+  - *drets de la persona menor detinguda (LO 5/2000)*
+- `q-of-roses-2024-interins-cp-042` — Quant pot durar com a màxim la detenció d’un menor per funcionaris de policia?
+  - *durada màxima de la detenció d’un menor*
+- `q-of-roses-2021-propietat-cp-020` — La instrucció dels procediments pels fets delictius presumptament comesos per menors correspon al:
+  - *instrucció dels procediments per fets delictius de menors*
+- `q-of-roses-2021-propietat-cp-021` — D’acord amb la Llei orgànica 5/2000, de 12 de gener, reguladora de la responsabilitat penal dels menors, el…
+  - *LO 5/2000: prescripció dels fets delictius comesos per menors*
+- `q-of-roses-2019-propietat-cp-024` — D’acord amb la Llei orgànica 5/2000, de 12 de gener, reguladora de la responsabilitat penal dels menors:
+  - *LO 5/2000: responsabilitat penal dels menors*
+- `q-of-roses-2019-propietat-cp-025` — La detenció d’un menor per funcionaris de policia:
+  - *LO 5/2000: detenció d’un menor*
+- `q-of-roses-2018-propietat-cp-023` — Segons la Llei orgànica 5/2000, de 12 de gener, reguladora de la responsabilitat penal dels menors, quin és…
+  - *LO 5/2000: òrgan competent per als fets comesos per menors*
+- `q-of-roses-2018-propietat-cp-024` — Els fets delictius greus comesos per menors i sancionats al codi penal amb penes superiors a 10 anys prescr…
+  - *LO 5/2000: prescripció dels fets delictius greus comesos per menors*
+
+## Contenidor dels quadernets (fora del temari) — 343
+
+- `q-of-roses-2026-interins-cg-001` — Per la compra d’un cotxe m’han cobrat un 21% d’IVA. Tenint en compte que el preu inicial sense IVA era de 1…
+  - *matemàtiques de cultura general; cap tema del temari (percentatges)*
+- `q-of-roses-2026-interins-cg-002` — El Mulhacén es troba:
+  - *geografia de cultura general; cap tema del temari (el Mulhacén)*
+- `q-of-roses-2026-interins-cg-003` — El mot «camió» és una paraula:
+  - *llengua de cultura general; cap tema del temari (accentuació)*
+- `q-of-roses-2026-interins-cg-004` — Figueres és a l’Alt Empordà com Igualada és a...
+  - *geografia de cultura general; cap tema del temari (comarques i capitals)*
+- `q-of-roses-2026-interins-cg-005` — Quina és la capital d’Estònia?
+  - *geografia de cultura general; cap tema del temari (capitals d’Europa)*
+- `q-of-roses-2026-interins-cg-006` — Quin any va acabar la II Guerra Mundial?
+  - *història de cultura general; cap tema del temari (II Guerra Mundial)*
+- `q-of-roses-2026-interins-cg-007` — Quin d’aquests autors va composar «les quatre estacions»?
+  - *art i cultura generals; cap tema del temari (música clàssica)*
+- `q-of-roses-2026-interins-cg-008` — En quin país es va utilitzar la primera bomba atòmica?
+  - *història de cultura general; cap tema del temari (bomba atòmica)*
+- `q-of-roses-2026-interins-cg-009` — Quin és el pic més alt de Catalunya?
+  - *geografia de cultura general; cap tema del temari (la Pica d’Estats)*
+- `q-of-roses-2026-interins-cg-010` — Quin és l’autor de l’obra «la persistència de la memòria (1931)»?
+  - *art i cultura generals; cap tema del temari (Dalí)*
+- `q-of-roses-2026-interins-cg-011` — A quin municipi gironí van resultar ferits tres menors per una explosió mentre feien un experiment químic a…
+  - *actualitat del moment de l’examen; cap tema del temari (succés a la demarcació de Girona, març 2026)*
+- `q-of-roses-2026-interins-cg-012` — Quina va ser la novel·la guanyadora del darrer premi Planeta 2025?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta 2025)*
+- `q-of-roses-2026-interins-cg-014` — Qui va fundar l’any 1994 Amazon?
+  - *història de cultura general; cap tema del temari (fundació d’Amazon)*
+- `q-of-roses-2026-interins-cg-015` — Qui és l'actual president/a de Venezuela?
+  - *actualitat del moment de l’examen; cap tema del temari (presidència de Veneçuela)*
+- `q-of-roses-2026-interins-cg-016` — Qui és l’actual ministre/a de Defensa del Govern espanyol?
+  - *actualitat del moment de l’examen; cap tema del temari (ministeri de Defensa)*
+- `q-of-roses-2026-interins-cg-018` — Quina esportista espanyola proclamada campiona olímpica als Jocs Olímpics d’estiu 2016 celebrats a Rio de J…
+  - *actualitat del moment de l’examen; cap tema del temari (esport)*
+- `q-of-roses-2026-interins-cg-019` — Què era ETA?
+  - *història de cultura general; cap tema del temari (ETA)*
+- `q-of-roses-2026-interins-cg-020` — Qui ha estat el guanyador de l’Òscar al millor actor principal l’any 2026?
+  - *actualitat del moment de l’examen; cap tema del temari (Òscars 2026)*
+- `q-of-roses-2026-interins-cg-021` — Quina és la capital de Costa de Marfil?
+  - *geografia de cultura general; cap tema del temari (capital de Costa d’Ivori)*
+- `q-of-roses-2026-interins-cp-037` — Les infraccions de trànsit greus prescriuen als:
+  - *prescripció de les infraccions de trànsit (LSV): cap tema del temari cobreix el règim sancionador general de trànsit*
+- `q-of-roses-2025-propietat-cg-001` — Si en una operació matemàtica l’exponent és 4 i la base és 4, el resultat serà:
+  - *matemàtiques de cultura general; cap tema del temari (potències)*
+- `q-of-roses-2025-propietat-cg-002` — Quina d’aquestes paraules és un antònim de «simpàtic»:
+  - *llengua de cultura general; cap tema del temari (antònims)*
+- `q-of-roses-2025-propietat-cg-003` — Quin és l’oceà més petit de la terra?
+  - *geografia de cultura general; cap tema del temari (oceans)*
+- `q-of-roses-2025-propietat-cg-004` — Qui presideix actualment el Banc Central Europeu?
+  - *actualitat del moment de l’examen; cap tema del temari (presidència del BCE)*
+- `q-of-roses-2025-propietat-cg-007` — Quina d’aquestes obres va ser pintada pel pintor «Vincent Van Gogh» pocs mesos abans de morir?
+  - *art i cultura generals; cap tema del temari (Van Gogh)*
+- `q-of-roses-2025-propietat-cg-008` — Quina és la capital de Bielorrúsia?
+  - *geografia de cultura general; cap tema del temari (capitals d’Europa)*
+- `q-of-roses-2025-propietat-cg-009` — La plaça del Diamant és una obra de:
+  - *art i cultura generals; cap tema del temari (literatura catalana)*
+- `q-of-roses-2025-propietat-cg-010` — La temperatura de Lapònia el dia 25 de gener ha estat de -30 graus i la de Berna de -12 graus. Has viatjat …
+  - *matemàtiques de cultura general; cap tema del temari (temperatures)*
+- `q-of-roses-2025-propietat-cg-011` — Qui/na és l’actual president/a de la Diputació de Girona?
+  - *actualitat del moment de l’examen; cap tema del temari (presidència de la Diputació de Girona)*
+- `q-of-roses-2025-propietat-cg-012` — De quin/a cantant espanyol és l’àlbum Lux?
+  - *actualitat del moment de l’examen; cap tema del temari (música)*
+- `q-of-roses-2025-propietat-cg-014` — Actualment, s’està celebrant un judici a l’Audiència Nacional contra un antic president de la Generalitat d…
+  - *actualitat del moment de l’examen; cap tema del temari (procés judicial a un expresident)*
+- `q-of-roses-2025-propietat-cg-015` — En el certamen dels Premis Goya 2025, celebrats el passat 8 de febrer a Granada, el jurat va atorgar el pre…
+  - *actualitat del moment de l’examen; cap tema del temari (premis Goya 2025)*
+- `q-of-roses-2025-propietat-cg-016` — Segons el Centre d’Estudis d’Opinió (CEO) de la Generalitat de Catalunya, les enquestes donen un fort augme…
+  - *actualitat del moment de l’examen; cap tema del temari (enquestes del CEO)*
+- `q-of-roses-2025-propietat-cg-018` — Quin és el nom del fiscal general de l’Estat que el passat dilluns 24 de novembre de 2025 va presentar la s…
+  - *actualitat del moment de l’examen; cap tema del temari (fiscalia general de l’Estat)*
+- `q-of-roses-2025-propietat-cg-019` — Quin país ha estat el guanyador de la Copa Davis de tenis aquest any 2025?
+  - *actualitat del moment de l’examen; cap tema del temari (Copa Davis 2025)*
+- `q-of-roses-2025-propietat-cg-020` — El 2 de març de 2025 es va celebrar la gala dels Premis Oscar 2025. Qui va guanyar el premi a la millor pel…
+  - *actualitat del moment de l’examen; cap tema del temari (Òscars 2025)*
+- `q-of-roses-2025-propietat-cg-021` — Quina és la capital política oficial de Costa de Marfil?
+  - *geografia de cultura general; cap tema del temari (capital de Costa d’Ivori)*
+- `q-of-roses-2025-propietat-cp-037` — Segons l’article 250.1 del Codi Penal, quin d’aquests delictes ha de ser castigat amb les penes de presó d’…
+  - *estafa agreujada (art. 250.1 CP): delicte patrimonial fora de furts i robatoris; cap tema del temari el cobreix*
+- `q-of-roses-2025-interins-cg-001` — Per la compra d’un televisor m’han fet un descompte del 35% sobre el preu total de venda que puja a 3.000 €…
+  - *matemàtiques de cultura general; cap tema del temari (percentatges)*
+- `q-of-roses-2025-interins-cg-002` — Els llacs de Covadonga es troben...
+  - *geografia de cultura general; cap tema del temari (llacs de Covadonga)*
+- `q-of-roses-2025-interins-cg-003` — El mot «química» és una paraula...
+  - *llengua de cultura general; cap tema del temari (accentuació)*
+- `q-of-roses-2025-interins-cg-004` — Tremp és als Pallars Jussà com Manresa és a...
+  - *geografia de cultura general; cap tema del temari (comarques i capitals)*
+- `q-of-roses-2025-interins-cg-005` — Quina és la capital de Bielorússia?
+  - *geografia de cultura general; cap tema del temari (capitals d’Europa)*
+- `q-of-roses-2025-interins-cg-006` — Els colors de la bandera de Croàcia són:
+  - *geografia de cultura general; cap tema del temari (bandera de Croàcia)*
+- `q-of-roses-2025-interins-cg-007` — Quin d’aquests autors va escriure la simfonia número 5?
+  - *art i cultura generals; cap tema del temari (música clàssica)*
+- `q-of-roses-2025-interins-cg-008` — Quines d’aquestes comunitats autònomes d’Espanya són limítrofes?
+  - *geografia de cultura general; cap tema del temari (comunitats autònomes limítrofes)*
+- `q-of-roses-2025-interins-cg-009` — Quin és el pic més alt d’Àfrica amb una alçada de més o menys 5.895 metres?
+  - *geografia de cultura general; cap tema del temari (el Kilimanjaro)*
+- `q-of-roses-2025-interins-cg-010` — Quin és l’autor de l’obra «la maja nua»?
+  - *art i cultura generals; cap tema del temari (Goya)*
+- `q-of-roses-2025-interins-cg-011` — A quina ciutat espanyola s’està investigant a quatre estudiants per la presumpta implicació en l’assetjamen…
+  - *actualitat del moment de l’examen; cap tema del temari (succés escolar)*
+- `q-of-roses-2025-interins-cg-012` — Quina va ser la novel·la guanyadora del darrer premi Planeta 2024?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta 2024)*
+- `q-of-roses-2025-interins-cg-014` — Qui va fundar l’any 1975 Microsoft Corporation?
+  - *història de cultura general; cap tema del temari (fundació de Microsoft)*
+- `q-of-roses-2025-interins-cg-015` — Qui és l'actual president/a de Rússia?
+  - *actualitat del moment de l’examen; cap tema del temari (presidència de Rússia)*
+- `q-of-roses-2025-interins-cg-016` — Qui és l’actual ministre/a d’Hisenda del govern espanyol?
+  - *actualitat del moment de l’examen; cap tema del temari (ministeri d’Hisenda)*
+- `q-of-roses-2025-interins-cg-018` — Quin d’aquests és el tiktoker amb més seguidors l’any 2025?
+  - *actualitat del moment de l’examen; cap tema del temari (xarxes socials)*
+- `q-of-roses-2025-interins-cg-019` — Què és l’hezbol·là?
+  - *actualitat del moment de l’examen; cap tema del temari (Hezbol·là)*
+- `q-of-roses-2025-interins-cg-020` — Qui ha estat la guanyadora de l’òscar a la millor actriu l’any 2025?
+  - *actualitat del moment de l’examen; cap tema del temari (Òscars 2025)*
+- `q-of-roses-2025-interins-cg-021` — Quina és la capital d’Armènia?
+  - *geografia de cultura general; cap tema del temari (capital d’Armènia)*
+- `q-of-roses-2024-propietat-cg-001` — Quants eixos de simetria té un triangle equilàter?
+  - *cultura general; cap tema del temari (geometria: eixos de simetria del triangle equilàter)*
+- `q-of-roses-2024-propietat-cg-002` — Quina d’aquestes paraules NO és un sinònim de «covard»?
+  - *cultura general; cap tema del temari (vocabulari: sinònims de «covard»)*
+- `q-of-roses-2024-propietat-cg-003` — Quin és l’oceà més gran de la terra?
+  - *cultura general; cap tema del temari (geografia: oceà més gran)*
+- `q-of-roses-2024-propietat-cg-004` — L’actual president/a d’Argentina és:
+  - *actualitat del moment de l’examen; cap tema del temari (president/a de l’Argentina, 2024)*
+- `q-of-roses-2024-propietat-cg-005` — On es troba el volcà de «Cumbre Vieja» que va estar actiu durant l’any 2021?
+  - *cultura general; cap tema del temari (geografia: volcà de Cumbre Vieja)*
+- `q-of-roses-2024-propietat-cg-006` — Quina és la capital de Mali:
+  - *cultura general; cap tema del temari (geografia: capital de Mali)*
+- `q-of-roses-2024-propietat-cg-007` — Quina d’aquestes obres va ser pintada pel pintor «Leonardo Da Vinci»?
+  - *cultura general; cap tema del temari (art: Leonardo da Vinci)*
+- `q-of-roses-2024-propietat-cg-008` — Quina és la capital de la comarca de la Terra Alta?
+  - *cultura general; cap tema del temari (geografia: capital de la Terra Alta)*
+- `q-of-roses-2024-propietat-cg-009` — Quin és el pic més alt dels Alps amb una alçada de 4.810 metres?
+  - *cultura general; cap tema del temari (geografia: pic més alt dels Alps)*
+- `q-of-roses-2024-propietat-cg-010` — On va morir l’any 1828 el pintor espanyol Francisco de Goya Lucientes?
+  - *cultura general; cap tema del temari (biografia: mort de Goya)*
+- `q-of-roses-2024-propietat-cg-011` — Qui/na és l’actual síndic/a de greuges a Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (síndic/a de greuges, 2024)*
+- `q-of-roses-2024-propietat-cg-012` — El mes de maig de 2024 les escales del Parc Güell de Barcelona van ser malmeses durant els preparatius d’un…
+  - *actualitat del moment de l’examen; cap tema del temari (desfilada de moda al Parc Güell, 2024)*
+- `q-of-roses-2024-propietat-cg-013` — Qui és el conseller/a d’Interior de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (conseller/a d’Interior, 2024)*
+- `q-of-roses-2024-propietat-cg-014` — Quin conegut multimilionari és el propietari i director executiu de l’empresa Amazon?
+  - *actualitat del moment de l’examen; cap tema del temari (propietari d’Amazon, coneixement general)*
+- `q-of-roses-2024-propietat-cg-015` — Qui ha guanyat el premi Princesa d’Astúries de les Arts 2024?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Princesa d’Astúries de les Arts, 2024)*
+- `q-of-roses-2024-propietat-cg-016` — Després de les eleccions al Parlament de Catalunya del passat 12 de maig quina força política ha obtingut 2…
+  - *actualitat del moment de l’examen; cap tema del temari (eleccions al Parlament, 2024)*
+- `q-of-roses-2024-propietat-cg-017` — Qui és l’actual alcalde/ssa de l’Ajuntament de Roses?
+  - *actualitat del moment de l’examen; cap tema del temari (alcalde/ssa de l’Ajuntament de Roses, 2024)*
+- `q-of-roses-2024-propietat-cg-018` — Quin/a tiktoker espanyol té més seguidors en l’actualitat?
+  - *actualitat del moment de l’examen; cap tema del temari (identitat pública, tiktoker espanyol)*
+- `q-of-roses-2024-propietat-cg-019` — Quin país va ser expulsat aquest any del festival d’Eurovisió?
+  - *actualitat del moment de l’examen; cap tema del temari (expulsió d’Eurovisió, 2024)*
+- `q-of-roses-2024-propietat-cg-020` — El 10 de març de 2024 es va celebrar la gala dels Premis Oscar 2024. Qui va guanyar el premi a la millor pe…
+  - *actualitat del moment de l’examen; cap tema del temari (Premis Oscar, 2024)*
+- `q-of-roses-2024-propietat-cg-021` — Si en una operació matemàtica l’exponent és 4 i la base és 2, el resultat serà:
+  - *cultura general; cap tema del temari (aritmètica: potències)*
+- `q-of-roses-2024-interins-cg-001` — Per la compra d’un telèfon hem pagat 100 €, més el 21% d’IVA. Quant hem hagut de pagar en total?
+  - *cultura general; cap tema del temari (aritmètica: IVA)*
+- `q-of-roses-2024-interins-cg-002` — En l’oració «He fet el sopar a la Duna», actua com a complement indirecte:
+  - *cultura general; cap tema del temari (gramàtica: complement indirecte)*
+- `q-of-roses-2024-interins-cg-003` — El mot «cadira» és una paraula...
+  - *cultura general; cap tema del temari (lingüística: paraules planes)*
+- `q-of-roses-2024-interins-cg-004` — Puigcerdà és a la Cerdanya com la Bisbal és a...
+  - *cultura general; cap tema del temari (geografia: comarques catalanes)*
+- `q-of-roses-2024-interins-cg-005` — Quina és la capital de Suècia?
+  - *cultura general; cap tema del temari (geografia: capital de Suècia)*
+- `q-of-roses-2024-interins-cg-006` — Els colors de la bandera de França són:
+  - *cultura general; cap tema del temari (geografia: colors de la bandera de França)*
+- `q-of-roses-2024-interins-cg-007` — Quina d’aquestes obres va ser pintada pel pintor «El Greco»?
+  - *cultura general; cap tema del temari (art: El Greco)*
+- `q-of-roses-2024-interins-cg-008` — Quantes comunitats autònomes té Espanya?
+  - *cultura general; cap tema del temari (geografia: comunitats autònomes d’Espanya)*
+- `q-of-roses-2024-interins-cg-009` — Quin és el pic més alt dels Andes amb una alçada de 6.960 metres?
+  - *cultura general; cap tema del temari (geografia: pic més alt dels Andes)*
+- `q-of-roses-2024-interins-cg-010` — Quin és el nom d’un polígon regular de set costats?
+  - *cultura general; cap tema del temari (geometria: polígon de set costats)*
+- `q-of-roses-2024-interins-cg-011` — A quina ciutat espanyola s’han incendiat recentment 2 edificis causant la mort d’almenys 10 persones?
+  - *actualitat del moment de l’examen; cap tema del temari (incendi urbà, coneixement puntual del moment)*
+- `q-of-roses-2024-interins-cg-012` — Qui va guanyar el darrer premi Planeta 2023 amb l’obra «Las Hijas de la Criada»?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta, 2023)*
+- `q-of-roses-2024-interins-cg-013` — Qui és el conseller/a d’Interior de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (conseller/a d’Interior, 2024)*
+- `q-of-roses-2024-interins-cg-014` — Quin conegut multimilionari va adquirir la xarxa social Twitter, actualment coneguda com a X?
+  - *actualitat del moment de l’examen; cap tema del temari (adquisició de Twitter, 2022)*
+- `q-of-roses-2024-interins-cg-015` — Qui és l'actual president d’Ucraïna?
+  - *actualitat del moment de l’examen; cap tema del temari (president d’Ucraïna, 2024)*
+- `q-of-roses-2024-interins-cg-016` — Qui és l’actual ministra de Defensa del govern espanyol?
+  - *actualitat del moment de l’examen; cap tema del temari (ministra de Defensa, 2024)*
+- `q-of-roses-2024-interins-cg-017` — Qui és l’actual regidor/a de Seguretat Ciutadana de l’Ajuntament de Roses?
+  - *actualitat del moment de l’examen; cap tema del temari (regidor/a de Seguretat Ciutadana de l’Ajuntament de Roses, 2024)*
+- `q-of-roses-2024-interins-cg-018` — Quina d’aquestes dones és una coneguda tiktoker espanyola d’actualitat?
+  - *actualitat del moment de l’examen; cap tema del temari (identitat pública, tiktoker espanyola)*
+- `q-of-roses-2024-interins-cg-019` — Quin equip és l’actual campió de l’Eurolliga de bàsquet?
+  - *actualitat del moment de l’examen; cap tema del temari (campió de l’Eurolliga, 2024)*
+- `q-of-roses-2024-interins-cg-020` — El passat 10 de febrer de 2024 es va celebrar la 38a edició dels Premis Goya. Qui va guanyar el premi a la …
+  - *actualitat del moment de l’examen; cap tema del temari (Premis Goya, 2024)*
+- `q-of-roses-2024-interins-cg-021` — Què són els números primers?
+  - *cultura general; cap tema del temari (matemàtiques: nombres primers)*
+- `q-of-roses-2023-interins-cg-001` — Per la compra d’un llibre hem pagat 50 €, més el 21% d’IVA. Quant hem hagut de pagar en total?
+  - *cultura general; cap tema del temari (aritmètica: IVA)*
+- `q-of-roses-2023-interins-cg-002` — Qui és l’autor de la frase «Penso, després existeixo»?
+  - *cultura general; cap tema del temari (filosofia: Descartes)*
+- `q-of-roses-2023-interins-cg-003` — Una roda d’un cotxe dona 4.590 voltes en 9 minuts. Quantes voltes donarà en 24 hores i 24 minuts?
+  - *cultura general; cap tema del temari (aritmètica: regla de tres)*
+- `q-of-roses-2023-interins-cg-004` — Quin d’aquests llacs es troba a Àfrica?
+  - *cultura general; cap tema del temari (geografia: llacs d’Àfrica)*
+- `q-of-roses-2023-interins-cg-005` — Quina és la capital de la comarca de la Conca de Barberà?
+  - *cultura general; cap tema del temari (geografia: capital de la Conca de Barberà)*
+- `q-of-roses-2023-interins-cg-006` — Qui va ser l'autor del quadre «El Sant Sopar o El darrer Sopar»?
+  - *cultura general; cap tema del temari (art: El Sant Sopar)*
+- `q-of-roses-2023-interins-cg-007` — Quina és la capital de Somàlia?
+  - *cultura general; cap tema del temari (geografia: capital de Somàlia)*
+- `q-of-roses-2023-interins-cg-008` — Quantes províncies té Espanya?
+  - *cultura general; cap tema del temari (geografia: províncies d’Espanya)*
+- `q-of-roses-2023-interins-cg-009` — Quina és la nacionalitat de Jorge Mario Bergoglio, màxim representant de l’Església catòlica?
+  - *actualitat del moment de l’examen; cap tema del temari (nacionalitat del Papa Francesc, 2023)*
+- `q-of-roses-2023-interins-cg-010` — En quin període de la prehistòria va ser descobert el foc?
+  - *cultura general; cap tema del temari (prehistòria: descobriment del foc)*
+- `q-of-roses-2023-interins-cg-011` — Quin és el nom de l'actual president/a de Brasil?
+  - *actualitat del moment de l’examen; cap tema del temari (president del Brasil, 2023)*
+- `q-of-roses-2023-interins-cg-012` — Quin país europeu està patint actualment manifestacions al carrer per la reforma de les seves pensions?
+  - *actualitat del moment de l’examen; cap tema del temari (manifestacions per la reforma de pensions, 2023)*
+- `q-of-roses-2023-interins-cg-013` — Quina quantitat de sang té un adult en el seu cos?
+  - *cultura general; cap tema del temari (fisiologia: volum de sang)*
+- `q-of-roses-2023-interins-cg-014` — Aquest any 2023 se celebraran les eleccions municipals als 947 municipis catalans per a l’elecció dels nous…
+  - *actualitat del moment de l’examen; cap tema del temari (eleccions municipals catalanes, 2023)*
+- `q-of-roses-2023-interins-cg-015` — Qui és l'actual president de Rússia?
+  - *actualitat del moment de l’examen; cap tema del temari (president de Rússia, 2023)*
+- `q-of-roses-2023-interins-cg-016` — Qui és el conseller/a d’Interior de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (conseller/a d’Interior, 2023)*
+- `q-of-roses-2023-interins-cg-017` — Qui és la vicepresidenta primera del Govern d'Espanya i ministra d’Assumptes Econòmics i Transformació Digi…
+  - *actualitat del moment de l’examen; cap tema del temari (vicepresidenta primera del govern espanyol, 2023)*
+- `q-of-roses-2023-interins-cg-018` — Quin d’aquests és un youtuber espanyol molt conegut?
+  - *actualitat del moment de l’examen; cap tema del temari (identitat pública, youtuber espanyol)*
+- `q-of-roses-2023-interins-cg-019` — Quin equip de bàsquet és l’actual campió de l’Eurolliga?
+  - *actualitat del moment de l’examen; cap tema del temari (campió de l’Eurolliga, 2023)*
+- `q-of-roses-2023-interins-cg-020` — El passat 11 de febrer de 2023 es va celebrar la 37a edició dels Premis Goya. Qui va guanyar el premi a la …
+  - *actualitat del moment de l’examen; cap tema del temari (Premis Goya, 2023)*
+- `q-of-roses-2023-interins-cg-021` — Quin d'aquests elements de la taula periòdica és el Fòsfor?
+  - *cultura general; cap tema del temari (química: element Fòsfor)*
+- `q-of-roses-2023-interins-cp-013` — El Tractat d’Amsterdam:
+  - *Tractat d’Amsterdam: cap tema del temari*
+- `q-of-roses-2022-interins-cg-001` — Un cotxe de la policia local de Roses que circula en una persecució a una velocitat constant, triga 60 minu…
+  - *cultura general; cap tema del temari (aritmètica: velocitat i distància)*
+- `q-of-roses-2022-interins-cg-002` — Quin d'aquests números romans és el 2049?
+  - *cultura general; cap tema del temari (numeració romana)*
+- `q-of-roses-2022-interins-cg-003` — Aproximadament, quin percentatge de la superfície del planeta Terra està coberta d'aigua?
+  - *cultura general; cap tema del temari (geografia: superfície d’aigua del planeta)*
+- `q-of-roses-2022-interins-cg-004` — Quin és el país més petit del món?
+  - *cultura general; cap tema del temari (geografia: país més petit del món)*
+- `q-of-roses-2022-interins-cg-005` — Quina és la capital de la comarca del Pla d'Urgell?
+  - *cultura general; cap tema del temari (geografia: capital del Pla d’Urgell)*
+- `q-of-roses-2022-interins-cg-006` — Qui va ser l'autor del quadre «Las Meninas»?
+  - *cultura general; cap tema del temari (art: Las Meninas)*
+- `q-of-roses-2022-interins-cg-007` — Quina és la capital de Bielorrússia?
+  - *cultura general; cap tema del temari (geografia: capital de Bielorússia)*
+- `q-of-roses-2022-interins-cg-008` — Quantes províncies té la comunitat autònoma de Castella i Lleó?
+  - *cultura general; cap tema del temari (geografia: províncies de Castella i Lleó)*
+- `q-of-roses-2022-interins-cg-009` — Qui ha guanyat el premi planeta 2021?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta, 2021)*
+- `q-of-roses-2022-interins-cg-010` — Quin és l'idioma oficial de Brasil?
+  - *cultura general; cap tema del temari (geografia: idioma oficial del Brasil)*
+- `q-of-roses-2022-interins-cg-011` — Quin és el nom de l'actual president dels Estats Units?
+  - *actualitat del moment de l’examen; cap tema del temari (president dels EUA, 2022)*
+- `q-of-roses-2022-interins-cg-012` — La inflació va augmentar el passat mes de març de 2022 fins a arribar a la taxa més alta des de l'any 1985.…
+  - *actualitat del moment de l’examen; cap tema del temari (inflació a Espanya, març 2022)*
+- `q-of-roses-2022-interins-cg-013` — Quina part del cos produeix insulina?
+  - *cultura general; cap tema del temari (biologia: producció d’insulina)*
+- `q-of-roses-2022-interins-cg-014` — El Butlletí Oficial de l'Estat amb data 30 de març va publicar les mesures del pla de xoc per pal·liar les …
+  - *actualitat del moment de l’examen; cap tema del temari (pla de xoc, guerra d’Ucraïna, 2022)*
+- `q-of-roses-2022-interins-cg-015` — Qui és l'actual president d'Ucraïna?
+  - *actualitat del moment de l’examen; cap tema del temari (president d’Ucraïna, 2022)*
+- `q-of-roses-2022-interins-cg-016` — Qui és la consellera de la Presidència de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (consellera de la Presidència, 2022)*
+- `q-of-roses-2022-interins-cg-017` — Qui és la vicepresidenta tercera del Govern d'Espanya i ministra per a la transició ecològica i el repte de…
+  - *actualitat del moment de l’examen; cap tema del temari (vicepresidenta tercera del govern espanyol, 2022)*
+- `q-of-roses-2022-interins-cg-018` — Qui és Maikel Delacalle?
+  - *actualitat del moment de l’examen; cap tema del temari (identitat pública, Maikel Delacalle)*
+- `q-of-roses-2022-interins-cg-019` — De quin equip de futbol de la Premier League ha estat destituït com a president el magnat rus Roman Abramov…
+  - *actualitat del moment de l’examen; cap tema del temari (presidència del Chelsea FC, 2022)*
+- `q-of-roses-2022-interins-cg-020` — El Tribunal Suprem ha confirmat que a les escoles de Catalunya s'hauran d'impartir classes en castellà en un:
+  - *actualitat del moment de l’examen; cap tema del temari (sentència del Tribunal Suprem sobre llengües a l’escola, 2022)*
+- `q-of-roses-2022-interins-cg-021` — Quin d'aquests elements de la taula periòdica és l'Estronci?
+  - *cultura general; cap tema del temari (química: element Estronci)*
+- `q-of-roses-2022-interins-cp-011` — Quina de les següents no és una institució de la Unió Europea?
+  - *institucions de la Unió Europea: cap tema del temari les cobreix*
+- `q-of-roses-2022-interins-cp-017` — Actualment, el Parlament Europeu té:
+  - *nombre d’eurodiputats del Parlament Europeu: cap tema del temari*
+- `q-of-roses-2022-interins-cp-021` — El Tractat de la Unió Europea:
+  - *Tractat de la Unió Europea: cap tema del temari*
+- `q-of-roses-2021-propietat-cg-001` — Al llarg de la història hi ha hagut gran quantitat de conflictes bèl·lics. Quin d'aquests ha estat consider…
+  - *cultura general; cap tema del temari (història: conflicte armat més mortífer)*
+- `q-of-roses-2021-propietat-cg-002` — A la taula periòdica dels elements quin símbol químic correspon a la plata?
+  - *cultura general; cap tema del temari (química: símbol de la plata)*
+- `q-of-roses-2021-propietat-cg-003` — Qui és l'actual directora gerent de l’FMI (Fons Monetari Internacional) i successora de Christine Lagarde?
+  - *actualitat del moment de l’examen; cap tema del temari (directora gerent de l’FMI, 2021)*
+- `q-of-roses-2021-propietat-cg-004` — País banyat per les aigües del mar Negre:
+  - *cultura general; cap tema del temari (geografia: mar Negre)*
+- `q-of-roses-2021-propietat-cg-005` — Quina disciplina esportiva practica el serbi Vasilije Micic?
+  - *cultura general; cap tema del temari (esport: bàsquet, Vasilije Micic)*
+- `q-of-roses-2021-propietat-cg-006` — De quina empresa són fundadors els empresaris, Larry Page i Sergey Brin?
+  - *cultura general; cap tema del temari (empresa: fundadors de Google)*
+- `q-of-roses-2021-propietat-cg-007` — Quin/a és l'actual titular del Ministeri de Sanitat d’Espanya?
+  - *actualitat del moment de l’examen; cap tema del temari (ministre/a de Sanitat d’Espanya, 2021)*
+- `q-of-roses-2021-propietat-cg-008` — Qui va escriure «Estimada Marta»?
+  - *cultura general; cap tema del temari (teatre: Estimada Marta)*
+- `q-of-roses-2021-propietat-cg-009` — Qui ha estat elegida l'any 2020 com la primera dona vicepresidenta dels Estats Units?
+  - *actualitat del moment de l’examen; cap tema del temari (vicepresidenta dels EUA, 2020)*
+- `q-of-roses-2021-propietat-cg-010` — Què és el fracking?
+  - *cultura general; cap tema del temari (energia: fracking)*
+- `q-of-roses-2021-propietat-cg-011` — Quina de les següents obres va ser escrita per Joanot Martorell i acabada per Martí Joan de Galba?
+  - *cultura general; cap tema del temari (literatura: Tirant lo Blanc)*
+- `q-of-roses-2021-propietat-cg-012` — Quin és el tribunal europeu que va jutjar els 24 principals líders del Tercer Reich acusats de conspiració,…
+  - *cultura general; cap tema del temari (història: judicis de Nuremberg)*
+- `q-of-roses-2021-propietat-cg-014` — Qui va pintar el quadre «El Crit» l'any 1893 i que en la seva versió més famosa es troba exposat a la Galer…
+  - *cultura general; cap tema del temari (art: El Crit, Edvard Munch)*
+- `q-of-roses-2021-propietat-cg-016` — Quin és el pic més alt dels Pirineus?
+  - *cultura general; cap tema del temari (geografia: pic més alt dels Pirineus)*
+- `q-of-roses-2021-propietat-cg-017` — Qui és Patry Jordan?
+  - *actualitat del moment de l’examen; cap tema del temari (identitat pública, Patry Jordan)*
+- `q-of-roses-2021-propietat-cg-018` — En estadística, quin nom rep el nombre segons el qual la meitat de les dades numèriques són menors (o igual…
+  - *cultura general; cap tema del temari (estadística: mediana)*
+- `q-of-roses-2021-propietat-cg-020` — En quina sèrie televisiva de ficció s'explora la vida d'una nena òrfena, prodigi dels escacs, mentre lluita…
+  - *actualitat del moment de l’examen; cap tema del temari (sèrie de ficció, Gambito de Dama)*
+- `q-of-roses-2021-propietat-cg-023` — Com es diu la poetessa que va intervenir en l'acte de proclamació del president dels EUA Joe Biden amb el s…
+  - *actualitat del moment de l’examen; cap tema del temari (poema d’Amanda Gorman, investidura de Biden)*
+- `q-of-roses-2021-propietat-cg-024` — Catorze (14) policies han realitzat un total de 294 desplaçaments durant una setmana. Si tots han realitzat…
+  - *cultura general; cap tema del temari (aritmètica: proporcions)*
+- `q-of-roses-2021-propietat-cg-026` — Quina d'aquestes obres NO és de Mercè Rodoreda i Gurguí?
+  - *cultura general; cap tema del temari (literatura: obres de Mercè Rodoreda)*
+- `q-of-roses-2021-propietat-cg-027` — Quin/a és l'actual director/a general de la Organització Mundial de la Salut (OMS), càrrec que ostenta des …
+  - *actualitat del moment de l’examen; cap tema del temari (director/a general de l’OMS, 2021)*
+- `q-of-roses-2021-propietat-cp-005` — Quina d’aquestes no és una ordenança del municipi de Roses?
+  - *ordenances no aprovades a Roses: enumeració, cap tema del temari*
+- `q-of-roses-2021-interins-cg-001` — Quina guerra fou un conflicte europeu que modificà contínuament les fronteres de nombrosos estats i que es …
+  - *cultura general; cap tema del temari (història: Guerra dels Trenta Anys)*
+- `q-of-roses-2021-interins-cg-002` — Com es deia el famós goril·la albí del zoo de Barcelona?
+  - *actualitat del moment de l’examen; cap tema del temari (gorilla albí del zoo de Barcelona, coneixement local puntual)*
+- `q-of-roses-2021-interins-cg-003` — On pots trobar la farmàcia més antiga de Catalunya?
+  - *cultura general; cap tema del temari (història de la farmàcia més antiga de Catalunya (fora del terme de Roses))*
+- `q-of-roses-2021-interins-cg-004` — Què tenen en comú Vandellòs i Ascó?
+  - *cultura general; cap tema del temari (geografia: Vandellòs i Ascó)*
+- `q-of-roses-2021-interins-cg-005` — Quin grup formaven Quimi Portet i Manolo García?
+  - *cultura general; cap tema del temari (música: Quimi Portet i Manolo García)*
+- `q-of-roses-2021-interins-cg-006` — A quina ciutat europea trobem una petita i simpàtica estàtua de 55,5 centímetres d'alçada que representa un…
+  - *cultura general; cap tema del temari (turisme: estàtua del Manneken Pis)*
+- `q-of-roses-2021-interins-cg-007` — Quina és la capital d’Eritrea?
+  - *cultura general; cap tema del temari (geografia: capital d’Eritrea)*
+- `q-of-roses-2021-interins-cg-008` — Quines d'aquestes són les 5 províncies de la Comunitat Autònoma de Castella la Manxa?
+  - *cultura general; cap tema del temari (geografia: províncies de Castella-La Manxa)*
+- `q-of-roses-2021-interins-cg-009` — Qui va escriure la tragèdia «Romeu i Julieta»?
+  - *cultura general; cap tema del temari (literatura: Romeu i Julieta)*
+- `q-of-roses-2021-interins-cg-010` — Amb quin nom es coneix al portacontenidors que va estar bloquejant el canal de Suez durant sis dies el mes …
+  - *actualitat del moment de l’examen; cap tema del temari (bloqueig del canal de Suez, març 2021)*
+- `q-of-roses-2021-interins-cg-011` — Qui és el/la conseller/a de Salut de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (conseller/a de Salut, 2021)*
+- `q-of-roses-2021-interins-cg-015` — Qui ha guanyat el premi Planeta 2020?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta, 2020)*
+- `q-of-roses-2021-interins-cg-016` — Quan perdem o alterem el gust, probablement tenim:
+  - *cultura general; cap tema del temari (fisiologia: pèrdua del gust (anòsmia))*
+- `q-of-roses-2021-interins-cg-017` — Qui ostenta actualment la vicepresidència segona del Govern d'Espanya?
+  - *actualitat del moment de l’examen; cap tema del temari (vicepresidència segona del govern espanyol, 2021)*
+- `q-of-roses-2019-propietat-cg-001` — Quina és la capital de Corea del Nord?
+  - *cultura general; cap tema del temari (geografia: capital de Corea del Nord)*
+- `q-of-roses-2019-propietat-cg-003` — Quines d'aquestes tres províncies d'Espanya són limítrofes amb Portugal?
+  - *cultura general; cap tema del temari (geografia: províncies frontereres amb Portugal)*
+- `q-of-roses-2019-propietat-cg-004` — Si necessito 3,5 litres de pintura per pintar dues habitacions, quants litres necessito per pintar set habi…
+  - *cultura general; cap tema del temari (aritmètica: proporcions)*
+- `q-of-roses-2019-propietat-cg-005` — Quina d'aquestes pel·lícules ha guanyat «La Palma d'Or» al festival de Cannes 2019?
+  - *actualitat del moment de l’examen; cap tema del temari (Palma d’Or de Cannes, 2019)*
+- `q-of-roses-2019-propietat-cg-006` — Quina d'aquestes comarques catalanes limita amb la comunitat autònoma d'Aragó?
+  - *cultura general; cap tema del temari (geografia: comarques i l’Aragó)*
+- `q-of-roses-2019-propietat-cg-007` — Quin és el pic més alt de la península Ibèrica?
+  - *cultura general; cap tema del temari (geografia: pic més alt de la península)*
+- `q-of-roses-2019-propietat-cg-008` — De quin autor espanyol és l'obra «La família de Pascual Duarte»?
+  - *cultura general; cap tema del temari (literatura: La família de Pascual Duarte)*
+- `q-of-roses-2019-propietat-cg-009` — En quin període va tenir lloc la II Guerra Mundial?
+  - *cultura general; cap tema del temari (història: II Guerra Mundial)*
+- `q-of-roses-2019-propietat-cg-010` — Quin any va tenir lloc el bombardeig atòmic d'Hiroshima i Nagasaki?
+  - *cultura general; cap tema del temari (història: bombardeig d’Hiroshima i Nagasaki)*
+- `q-of-roses-2019-propietat-cg-011` — De quin pintor és el quadre «Las hilanderas»?
+  - *cultura general; cap tema del temari (art: Las hilanderas)*
+- `q-of-roses-2019-propietat-cg-012` — De quin pintor és el quadre «La persistencia de la memoria»?
+  - *cultura general; cap tema del temari (art: La persistencia de la memoria)*
+- `q-of-roses-2019-propietat-cg-013` — Quin d’aquests jugadors espanyols ha participat a la final de l’NBA de la temporada 2018-2019?
+  - *actualitat del moment de l’examen; cap tema del temari (final de l’NBA, 2019)*
+- `q-of-roses-2019-propietat-cg-018` — On es troba el Cabo de Gata?
+  - *cultura general; cap tema del temari (geografia: Cabo de Gata (fora del terme de Roses))*
+- `q-of-roses-2019-propietat-cg-020` — Quina és la capital del Vietnam?
+  - *cultura general; cap tema del temari (geografia: capital del Vietnam)*
+- `q-of-roses-2019-propietat-cg-021` — Qui va escriure l'òpera «La Flauta Màgica»?
+  - *cultura general; cap tema del temari (música: La Flauta Màgica)*
+- `q-of-roses-2019-propietat-cg-022` — En quin país europeu es troba la ciutat de Graz?
+  - *cultura general; cap tema del temari (geografia: ciutat de Graz)*
+- `q-of-roses-2019-propietat-cg-023` — Quin és l’actual president del Parlament de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (president del Parlament, 2019)*
+- `q-of-roses-2019-propietat-cg-024` — Com es diu l’actual vicepresidenta del govern espanyol?
+  - *actualitat del moment de l’examen; cap tema del temari (vicepresidenta del govern espanyol, 2019)*
+- `q-of-roses-2019-propietat-cg-025` — L’aigua és el resultat de la integració de diversos elements, fonamentalment dos, que són:
+  - *cultura general; cap tema del temari (química: composició de l’aigua)*
+- `q-of-roses-2019-propietat-cg-026` — Qui és el conseller/a del Departament d’Interior de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (conseller/a d’Interior, 2019)*
+- `q-of-roses-2019-propietat-cg-027` — A quin continent es troba “el kilimanjaro”?
+  - *cultura general; cap tema del temari (geografia: el Kilimanjaro)*
+- `q-of-roses-2019-propietat-cg-028` — Qui va descobrir la penicil·lina?
+  - *cultura general; cap tema del temari (història de la ciència: penicil·lina)*
+- `q-of-roses-2019-propietat-cg-029` — Amb quin país ha trencat relacions comercials recentment Donald Trump?
+  - *actualitat del moment de l’examen; cap tema del temari (relacions comercials dels EUA, 2019)*
+- `q-of-roses-2019-propietat-cg-030` — Quina és la magnitud que relaciona espai i temps?
+  - *cultura general; cap tema del temari (física: magnitud espai-temps)*
+- `q-of-roses-2019-propietat-cg-031` — On se situen els prefixos en una paraula?
+  - *cultura general; cap tema del temari (gramàtica: prefixos)*
+- `q-of-roses-2019-propietat-cg-032` — Qui va dissenyar el “Parc Güell” declarat patrimoni de la Humanitat?
+  - *cultura general; cap tema del temari (art: Parc Güell)*
+- `q-of-roses-2019-propietat-cg-033` — Quants costats té un hexàgon?
+  - *cultura general; cap tema del temari (geometria: costats de l’hexàgon)*
+- `q-of-roses-2019-propietat-cg-034` — Quin era el lema del sistema polític del despotisme il·lustrat?
+  - *cultura general; cap tema del temari (història: despotisme il·lustrat)*
+- `q-of-roses-2019-propietat-cg-035` — On es troba la catedral de Braga?
+  - *cultura general; cap tema del temari (geografia: catedral de Braga)*
+- `q-of-roses-2019-propietat-cg-036` — A quina ciutat es troba el museu del Louvre?
+  - *cultura general; cap tema del temari (art: museu del Louvre)*
+- `q-of-roses-2019-propietat-cg-037` — Quants estats formen els Estats Units d'Amèrica?
+  - *cultura general; cap tema del temari (geografia: estats dels EUA)*
+- `q-of-roses-2019-propietat-cg-038` — En quin esport va destacar Carl Lewis?
+  - *cultura general; cap tema del temari (esport: Carl Lewis)*
+- `q-of-roses-2019-propietat-cg-039` — Quin d'aquests rius d'Espanya té més longitud?
+  - *cultura general; cap tema del temari (geografia: rius d’Espanya)*
+- `q-of-roses-2019-propietat-cg-040` — Quin interès s'haurà de pagar al cap d'un any per 500 € a un tipus d'interès fix del 5%?
+  - *cultura general; cap tema del temari (aritmètica: interès simple)*
+- `q-of-roses-2019-propietat-cg-041` — Quin dels oceans és el més gran del planeta?
+  - *cultura general; cap tema del temari (geografia: oceans)*
+- `q-of-roses-2019-propietat-cg-042` — Qui va inventar el telèfon?
+  - *cultura general; cap tema del temari (història de la tècnica: telèfon)*
+- `q-of-roses-2019-propietat-cp-016` — Quin d'aquests és un objectiu del Tractat de Shenguen:
+  - *objectiu del Tractat de Schengen: cap tema del temari*
+- `q-of-roses-2019-propietat-cp-029` — El fet de sol·licitar o acceptar serveis sexuals en zones de trànsit públic a les proximitats de llocs dest…
+  - *pregunta anul·lada pel propi quadernet: es reemplaça per la reserva 42*
+- `q-of-roses-2019-propietat-cp-039` — Quina d’aquestes ordenances no ha estat aprovada en el municipi de Roses:
+  - *ordenances no aprovades a Roses: enumeració, cap tema del temari*
+- `q-of-roses-2019-propietat-cp-040` — L’àmbit d’aplicació del Reglament del mercat de venda no sedentària de Roses s’estén a:
+  - *Reglament del mercat de venda no sedentària de Roses: cap tema del temari el cobreix*
+- `q-of-roses-2019-interins-cg-001` — Quina és la capital de Lituània?
+  - *cultura general; cap tema del temari (geografia: capital de Lituània)*
+- `q-of-roses-2019-interins-cg-003` — Quantes províncies té la Comunitat Valenciana?
+  - *cultura general; cap tema del temari (geografia: províncies de la Comunitat Valenciana)*
+- `q-of-roses-2019-interins-cg-004` — Quin d'aquests números romans és el 2019?
+  - *cultura general; cap tema del temari (numeració romana)*
+- `q-of-roses-2019-interins-cg-005` — Quina d'aquestes obres ha estat la guanyadora del premi Planeta 2018?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta, 2018)*
+- `q-of-roses-2019-interins-cg-006` — Quina és la capital de la comarca de la Selva?
+  - *cultura general; cap tema del temari (geografia: capital de la Selva)*
+- `q-of-roses-2019-interins-cg-007` — Què és el Mulhacén?
+  - *cultura general; cap tema del temari (geografia: el Mulhacén)*
+- `q-of-roses-2019-interins-cg-008` — De quin poeta espanyol és l'obra «El Romancero Gitano»?
+  - *cultura general; cap tema del temari (literatura: El Romancero Gitano)*
+- `q-of-roses-2019-interins-cg-009` — En quin període es va produir la Guerra civil espanyola?
+  - *cultura general; cap tema del temari (història: Guerra civil espanyola)*
+- `q-of-roses-2019-interins-cg-010` — Quan parlem del Brexit, a quin país ens estem referint?
+  - *actualitat del moment de l’examen; cap tema del temari (el Brexit, 2019)*
+- `q-of-roses-2019-interins-cg-011` — De quin pintor és el quadre «Los girasoles»?
+  - *cultura general; cap tema del temari (art: Los girasoles)*
+- `q-of-roses-2019-interins-cg-012` — Quin és el país més gran del món?
+  - *cultura general; cap tema del temari (geografia: país més gran del món)*
+- `q-of-roses-2019-interins-cg-013` — Per quin equip ha estat eliminada la Juventus de Torí de l'edició de la Champions d'aquesta temporada?
+  - *actualitat del moment de l’examen; cap tema del temari (resultats de la Champions League, 2019)*
+- `q-of-roses-2019-interins-cg-014` — Quin és el pintor figuerenc més conegut de tots els temps?
+  - *cultura general; cap tema del temari (art: pintor figuerenc)*
+- `q-of-roses-2019-interins-cg-020` — Quina d'aquestes comarques limita amb la Comunitat Autònoma Valenciana?
+  - *cultura general; cap tema del temari (geografia: comarques i la Comunitat Valenciana)*
+- `q-of-roses-2019-interins-cg-022` — Qui va ser l'autor del quadre «Las Meninas»?
+  - *cultura general; cap tema del temari (art: Las Meninas)*
+- `q-of-roses-2019-interins-cp-011` — Quina d’aquestes no és una institució de la Unió Europea:
+  - *institucions de la Unió Europea: cap tema del temari les cobreix*
+- `q-of-roses-2019-interins-cp-013` — Quin és l’òrgan encarregat de supervisar l’activitat de l’Administració Local de Catalunya i la dels organi…
+  - *òrgan de supervisió de l’Administració Local de Catalunya: cap tema del temari el cobreix*
+- `q-of-roses-2018-propietat-cg-001` — Un cotxe que circula a una velocitat uniforme triga 60 minuts a recórrer 100 km. Quants quilòmetres portarà…
+  - *cultura general; cap tema del temari (aritmètica: velocitat i distància)*
+- `q-of-roses-2018-propietat-cg-002` — Un heptàgon és un polígon amb quants costats?
+  - *cultura general; cap tema del temari (geometria: costats de l’heptàgon)*
+- `q-of-roses-2018-propietat-cg-003` — Segrega hormones encarregades de regular l’homeòstasi:
+  - *cultura general; cap tema del temari (biologia: homeòstasi hormonal)*
+- `q-of-roses-2018-propietat-cg-004` — Quina és la consonant número 14 de l'abecedari espanyol?
+  - *cultura general; cap tema del temari (llengua: abecedari espanyol)*
+- `q-of-roses-2018-propietat-cg-005` — Com es diu el punt on s'originen les ones sísmiques en la superfície terrestre?
+  - *cultura general; cap tema del temari (geologia: hipocentre)*
+- `q-of-roses-2018-propietat-cg-006` — Quina de les següents paraules hauria de portar accent segons les regles ortogràfiques del castellà?
+  - *cultura general; cap tema del temari (ortografia castellana)*
+- `q-of-roses-2018-propietat-cg-007` — Com es representa el número 1261 en números romans?
+  - *cultura general; cap tema del temari (numeració romana)*
+- `q-of-roses-2018-propietat-cg-008` — Quina de les següents províncies no té frontera amb Portugal?
+  - *cultura general; cap tema del temari (geografia: províncies frontereres amb Portugal)*
+- `q-of-roses-2018-propietat-cg-009` — A quin període pertany el poeta Lope de Vega?
+  - *cultura general; cap tema del temari (literatura: Lope de Vega)*
+- `q-of-roses-2018-propietat-cg-010` — Quina és la capital de Groenlàndia?
+  - *cultura general; cap tema del temari (geografia: capital de Groenlàndia)*
+- `q-of-roses-2018-propietat-cg-011` — Quin és el predicat de l'oració «Marco hizo un ejercicio de gramática»?
+  - *cultura general; cap tema del temari (gramàtica castellana: predicat)*
+- `q-of-roses-2018-propietat-cg-012` — Quin any va entrar Espanya a la Comunitat Europea?
+  - *cultura general; cap tema del temari (història: entrada d’Espanya a la CE)*
+- `q-of-roses-2018-propietat-cg-013` — Quin d'aquests estils arquitectònics no té la Mesquita de Córdoba?
+  - *cultura general; cap tema del temari (art: estils arquitectònics de la Mesquita de Còrdova)*
+- `q-of-roses-2018-propietat-cg-014` — A quina Comunitat Autònoma va néixer Francisco José de Goya y Lucientes?
+  - *cultura general; cap tema del temari (biografia: naixement de Goya)*
+- `q-of-roses-2018-propietat-cg-016` — Quins països banya el Llac Titicaca?
+  - *cultura general; cap tema del temari (geografia: llac Titicaca)*
+- `q-of-roses-2018-propietat-cg-017` — A quina d'aquestes presons es troba Iñaki Urdangarín?
+  - *actualitat del moment de l’examen; cap tema del temari (presó d’Iñaki Urdangarín, 2018)*
+- `q-of-roses-2018-propietat-cg-018` — Com es coneixen els animals que neixen d'un ou?
+  - *cultura general; cap tema del temari (zoologia: animals ovípars)*
+- `q-of-roses-2018-propietat-cg-019` — Quin és el continent més petit del món?
+  - *cultura general; cap tema del temari (geografia: continent més petit)*
+- `q-of-roses-2018-propietat-cg-020` — Com es deia el primer astronauta americà que va trepitjar la lluna?
+  - *cultura general; cap tema del temari (història: primer home a la Lluna)*
+- `q-of-roses-2018-propietat-cg-021` — Quin esport practicava Manute Bol?
+  - *cultura general; cap tema del temari (esport: Manute Bol)*
+- `q-of-roses-2018-propietat-cg-022` — Si 50 és el 100%, quant és el 60%?
+  - *cultura general; cap tema del temari (aritmètica: percentatges)*
+- `q-of-roses-2018-propietat-cg-023` — A quin arxipèlag pertany l’illa de Formentera?
+  - *cultura general; cap tema del temari (geografia: arxipèlag de Formentera)*
+- `q-of-roses-2018-propietat-cg-025` — En quin país es troba el famós monument Machu Picchu?
+  - *cultura general; cap tema del temari (geografia: Machu Picchu)*
+- `q-of-roses-2018-propietat-cg-026` — Quina és la capital de Malí?
+  - *cultura general; cap tema del temari (geografia: capital de Mali)*
+- `q-of-roses-2018-propietat-cg-027` — Qui va ser l'impressionista per excel·lència a França?
+  - *cultura general; cap tema del temari (art: impressionisme francès)*
+- `q-of-roses-2018-propietat-cg-028` — Qui va compondre els concerts de Brandenburg?
+  - *cultura general; cap tema del temari (música: concerts de Brandenburg)*
+- `q-of-roses-2018-propietat-cg-029` — Quin d'aquests personatges ha estat guardonat amb el Premi Nobel de la Pau?
+  - *cultura general; cap tema del temari (premi Nobel de la Pau)*
+- `q-of-roses-2018-propietat-cg-030` — Qui és l'escriptor del llibre «El retrat de Dorian Gray»?
+  - *cultura general; cap tema del temari (literatura: El retrat de Dorian Gray)*
+- `q-of-roses-2018-propietat-cg-031` — Quin és el planeta de major grandària del sistema solar?
+  - *cultura general; cap tema del temari (astronomia: planeta més gran)*
+- `q-of-roses-2018-propietat-cg-032` — Quin any es va iniciar la Primera Guerra Mundial?
+  - *cultura general; cap tema del temari (història: Primera Guerra Mundial)*
+- `q-of-roses-2018-propietat-cg-033` — Quina serà la ciutat dels Jocs Olímpics l'any 2020?
+  - *actualitat del moment de l’examen; cap tema del temari (seu dels Jocs Olímpics 2020, coneguda el 2018)*
+- `q-of-roses-2018-propietat-cg-034` — Quants anys té un lustre?
+  - *cultura general; cap tema del temari (vocabulari: durada d’un lustre)*
+- `q-of-roses-2018-propietat-cg-036` — Un triangle amb dos costats iguals es diu:
+  - *cultura general; cap tema del temari (geometria: triangle isòsceles)*
+- `q-of-roses-2018-propietat-cg-037` — Quin element químic està representat pel símbol N?
+  - *cultura general; cap tema del temari (química: element N)*
+- `q-of-roses-2018-propietat-cg-039` — Qui va ser el gran arquitecte florentí del renaixement italià?
+  - *cultura general; cap tema del temari (art: arquitecte del Renaixement italià)*
+- `q-of-roses-2018-propietat-cg-040` — De quina localitat és l'actual president del Parlament de Catalunya, Roger Torrent i Ramió?
+  - *actualitat del moment de l’examen; cap tema del temari (president del Parlament, 2018)*
+- `q-of-roses-2018-propietat-cg-002r` — Qui va ser l'autor de «La maja desnuda»?
+  - *pendent d’evidència: el quadernet porta dos asteriscos (Kafka i Goya) i no es pot triar cap opció sense inventar; cap tema del temari*
+- `q-of-roses-2018-propietat-cp-016` — Espanya i Portugal van adherir-se a l'espai Schengen l'any:
+  - *adhesió d’Espanya i Portugal a l’espai Schengen: cap tema del temari*
+- `q-of-roses-2018-propietat-cp-039` — Digues quins d'aquests reglaments o ordenances no té el municipi de Roses:
+  - *reglaments o ordenances que no té el municipi de Roses: depèn de l’opció concreta; cap tema del temari ho classifica sense veure-la*
+- `q-of-roses-2018-propietat-cp-001r` — Quina de les següents lleis té per objecte el procés de creació, l'estructuració i la regulació funcional i…
+  - *llei de creació de la Policia de la Generalitat-Mossos d’Esquadra: cap tema del temari la cobreix*
+- `q-of-roses-2018-propietat-cp-002r` — D'acord amb el Reglament del mercat de venda no sedentària de Roses, l'exercici de la venda ambulant sense …
+  - *Reglament del mercat de venda no sedentària de Roses: cap tema del temari el cobreix*
+- `q-of-roses-2018-interins-cg-001` — Quina és la capital de Xina?
+  - *cultura general; cap tema del temari (geografia: capital de la Xina)*
+- `q-of-roses-2018-interins-cg-002` — Un cotxe que circula a una velocitat uniforme triga 60 minuts en recórrer 90 km. Quants quilòmetres portarà…
+  - *cultura general; cap tema del temari (aritmètica: velocitat i distància)*
+- `q-of-roses-2018-interins-cg-003` — Darwin exposa la teoria que explica l'origen de les espècies i que coneixem com...
+  - *cultura general; cap tema del temari (biologia: teoria de Darwin)*
+- `q-of-roses-2018-interins-cg-004` — Quin d'aquests números romans és el 67?
+  - *cultura general; cap tema del temari (numeració romana)*
+- `q-of-roses-2018-interins-cg-005` — Quina d'aquestes obres és l'actual guanyadora del premi Planeta?
+  - *actualitat del moment de l’examen; cap tema del temari (premi Planeta, 2018)*
+- `q-of-roses-2018-interins-cg-006` — Quina és la capital de la comarca del Baix Empordà?
+  - *cultura general; cap tema del temari (geografia: capital del Baix Empordà)*
+- `q-of-roses-2018-interins-cg-007` — Què és el Chimborazo?
+  - *cultura general; cap tema del temari (geografia: el Chimborazo)*
+- `q-of-roses-2018-interins-cg-008` — El poeta espanyol Juan Ramón Jiménez Mantecón autor de l'obra «Platero y yo», va nèixer a...
+  - *cultura general; cap tema del temari (literatura: Juan Ramón Jiménez)*
+- `q-of-roses-2018-interins-cg-009` — En quin període es va produir la I Guerra Mundial?
+  - *cultura general; cap tema del temari (història: I Guerra Mundial)*
+- `q-of-roses-2018-interins-cg-010` — Quin any va començar la Revolució francesa?
+  - *cultura general; cap tema del temari (història: Revolució francesa)*
+- `q-of-roses-2018-interins-cg-011` — De quin pintor és el quadre «El naixement de Venus»?
+  - *cultura general; cap tema del temari (art: El naixement de Venus)*
+- `q-of-roses-2018-interins-cg-012` — Quin és el país més petit del món?
+  - *cultura general; cap tema del temari (geografia: país més petit del món)*
+- `q-of-roses-2018-interins-cg-013` — Quin equip de fútbol ha eliminat aquest any el Sevilla de la Champions?
+  - *actualitat del moment de l’examen; cap tema del temari (resultats de la Champions League, 2018)*
+- `q-of-roses-2018-interins-cg-014` — Quin és l'animal més ràpid del món?
+  - *cultura general; cap tema del temari (zoologia: animal més ràpid)*
+- `q-of-roses-2018-interins-cg-016` — A quin partit polític milita l'actual President del Parlament de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (partit del president del Parlament, 2018)*
+- `q-of-roses-2018-interins-cg-020` — Quina d'aquestes comarques no limita amb la Comunitat Autònoma d'Aragó?
+  - *cultura general; cap tema del temari (geografia: comarques i l’Aragó)*
+- `q-of-roses-2018-interins-cg-002r` — Qui va ser l'autor del llibre «El alquimista»?
+  - *cultura general; cap tema del temari (literatura: El alquimista)*
+- `q-of-roses-2018-interins-cp-006` — Quin és l'actual President del Parlament Europeu?
+  - *President del Parlament Europeu: cap tema del temari el cobreix*
+- `q-of-roses-2018-interins-cp-009` — La Comissió Europea és un òrgan independent dels estats membres, i la seva missió és protegir i vetllar pel…
+  - *mandat de la Comissió Europea: cap tema del temari el cobreix*
+- `q-of-roses-2017-interins-cg-001` — Joan, té 10 anys, Marc, té 5 anys més que en Joan i Josep té 3 anys menys que en Joan. Quants anys té en Jo…
+  - *cultura general; cap tema del temari (lògica: edats)*
+- `q-of-roses-2017-interins-cg-002` — Quants costats té un heptàgon?
+  - *cultura general; cap tema del temari (geometria: costats de l’heptàgon)*
+- `q-of-roses-2017-interins-cg-003` — És aquell que ni creu ni descreu en la existència de Déu:
+  - *cultura general; cap tema del temari (vocabulari: agnòstic)*
+- `q-of-roses-2017-interins-cg-004` — Com es deia el Cid Campeador?
+  - *cultura general; cap tema del temari (història: nom del Cid)*
+- `q-of-roses-2017-interins-cg-005` — Quin any va ser signat el Tractat de Maastricht?
+  - *cultura general; cap tema del temari (història: Tractat de Maastricht)*
+- `q-of-roses-2017-interins-cg-006` — Qui va inventar la bombeta elèctrica?
+  - *cultura general; cap tema del temari (història de la tècnica: bombeta)*
+- `q-of-roses-2017-interins-cg-007` — Quin d'aquests muscles és el més potent del cos humà?
+  - *cultura general; cap tema del temari (anatomia: múscul més potent)*
+- `q-of-roses-2017-interins-cg-008` — Quina de les següents províncies no té frontera amb Portugal?
+  - *cultura general; cap tema del temari (geografia: províncies frontereres amb Portugal)*
+- `q-of-roses-2017-interins-cg-009` — Quin dels següents rius no pertany a la vertent atlàntica?
+  - *cultura general; cap tema del temari (geografia: vertent atlàntica)*
+- `q-of-roses-2017-interins-cg-010` — Quina és la capital d'Armènia?
+  - *cultura general; cap tema del temari (geografia: capital d’Armènia)*
+- `q-of-roses-2017-interins-cg-011` — Com es diu l'ex-tresorer de Convergència Democràtica de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (ex-tresorer de CDC, 2017)*
+- `q-of-roses-2017-interins-cg-012` — Quants regidors té actualment l'Ajuntament de Roses?
+  - *nombre de regidors de l’Ajuntament de Roses: dada puntual sense article que la reguli al temari; cap tema del temari*
+- `q-of-roses-2017-interins-cg-016` — Quina professió exercia l'actual President de la Generalitat de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (professió de l’actual president de la Generalitat, 2017)*
+- `q-of-roses-2017-interins-cg-017` — Quin és l'actual Síndic de Greuges?
+  - *actualitat del moment de l’examen; cap tema del temari (actual Síndic de Greuges, 2017)*
+- `q-of-roses-2017-interins-cg-018` — Qui va escriure «Incerta glòria»?
+  - *cultura general; cap tema del temari (literatura: Incerta glòria)*
+- `q-of-roses-2017-interins-cg-019` — Qui és el cap de l'oposició al Parlament de Catalunya?
+  - *actualitat del moment de l’examen; cap tema del temari (cap de l’oposició al Parlament, 2017)*
+- `q-of-roses-2017-interins-cg-020` — Quina d'aquestes comarques no limita amb el mar Mediterrani?
+  - *cultura general; cap tema del temari (geografia: comarques i mar Mediterrani)*
+- `q-of-roses-2017-interins-cg-001r` — Santa Maria de Montserrat és un monestir:
+  - *cultura general; cap tema del temari (patrimoni: Montserrat (fora del terme de Roses))*
+- `q-of-roses-2017-interins-cg-002r` — Qui va ser l'autor de «Així va parlar Zaratustra»?
+  - *cultura general; cap tema del temari (filosofia: Així va parlar Zaratustra)*
+- `q-of-roses-2017-interins-cp-006` — Quina d'aquestes no és una institució comunitària europea?
+  - *institucions de la Unió Europea: cap tema del temari les cobreix*
+- `q-of-roses-2017-interins-cp-013` — En quin registre s'han d'inscriure les persones que resideixen habitualment a Catalunya?
+  - *registre de persones residents a Catalunya: cap tema del temari el cobreix específicament*
+- `q-of-roses-2016-interins-cg-001` — Si el radi d'un cercle mesura 10 centímetres, quant mesura el diàmetre?
+  - *cultura general; cap tema del temari (geometria: diàmetre)*
+- `q-of-roses-2016-interins-cg-002` — El telègraf elèctric va ser descobert per:
+  - *cultura general; cap tema del temari (història de la tècnica: telègraf)*
+- `q-of-roses-2016-interins-cg-003` — El «llibre de la selva» és una obra de:
+  - *cultura general; cap tema del temari (literatura: El llibre de la selva)*
+- `q-of-roses-2016-interins-cg-004` — Quin rei va rebre el sobrenom de «el Savi»?
+  - *cultura general; cap tema del temari (història: sobrenom reial)*
+- `q-of-roses-2016-interins-cg-005` — Quin riu passa per Valladolid?
+  - *cultura general; cap tema del temari (geografia: riu que passa per Valladolid)*
+- `q-of-roses-2016-interins-cg-006` — Els països pels quals passa el riu Amazones, són:
+  - *cultura general; cap tema del temari (geografia: riu Amazones)*
+- `q-of-roses-2016-interins-cg-007` — On es troba el Tower Bridge?
+  - *cultura general; cap tema del temari (geografia: Tower Bridge)*
+- `q-of-roses-2016-interins-cg-008` — Quina d'aquestes batalles és considerada la batalla marítima més gran de la història?
+  - *cultura general; cap tema del temari (història: batalla marítima)*
+- `q-of-roses-2016-interins-cg-009` — Quina és la capital de Somàlia?
+  - *cultura general; cap tema del temari (geografia: capital de Somàlia)*
+- `q-of-roses-2016-interins-cg-010` — A quin país et trobes si estàs fent senderisme al Parc Nacional de Banff?
+  - *cultura general; cap tema del temari (geografia: Parc Nacional de Banff)*
+- `q-of-roses-2016-interins-cg-011` — Quin IVA s'aplica actualment a Espanya per la compra d'un llibre?
+  - *cultura general; cap tema del temari (economia: IVA d’un llibre)*
+- `q-of-roses-2016-interins-cg-012` — Com es diu la dona de l'actual president de la Generalitat de Catalunya, Carles Puigdemont?
+  - *actualitat del moment de l’examen; cap tema del temari (dona del president de la Generalitat, 2016)*
+- `q-of-roses-2016-interins-cg-013` — Com es diu l'actual president del Congrés dels Diputats?
+  - *actualitat del moment de l’examen; cap tema del temari (president del Congrés dels Diputats, 2016)*
+- `q-of-roses-2016-interins-cg-014` — Últimament l'ADN de l'home d'Atapuerca ha revelat que era un avantpassat llunyà de la branca evolutiva dels:
+  - *cultura general; cap tema del temari (paleontologia: home d’Atapuerca)*
+- `q-of-roses-2016-interins-cg-015` — A quina estació de metro de Brussel·les va atemptar Estat Islàmic el passat 22 de març de 2016?
+  - *actualitat del moment de l’examen; cap tema del temari (atemptat de Brussel·les, març 2016)*
+- `q-of-roses-2016-interins-cg-016` — El passat 27 de març de 2016, les tropes síries de El Asad van recuperar el control d'una ciutat que fins a…
+  - *actualitat del moment de l’examen; cap tema del temari (ofensiva a Síria, març 2016)*
+- `q-of-roses-2016-interins-cg-017` — Com es diu el nou president de Telefònica?
+  - *actualitat del moment de l’examen; cap tema del temari (president de Telefónica, 2016)*
+- `q-of-roses-2016-interins-cg-018` — Quina Comunitat Autònoma espanyola ha aprovat recentment que no es pugui fumar en estadis i places de braus?
+  - *actualitat del moment de l’examen; cap tema del temari (normativa antitabac autonòmica, 2016)*
+- `q-of-roses-2016-interins-cg-019` — Qui ha guanyat la primera volta de les eleccions a Perú?
+  - *actualitat del moment de l’examen; cap tema del temari (eleccions al Perú, 2016)*
+- `q-of-roses-2016-interins-cg-020` — Amb quin estat ha signat la Unió Europea recentment un conveni de col·laboració en la gestió de refugiats?
+  - *actualitat del moment de l’examen; cap tema del temari (conveni UE de refugiats, 2016)*
+- `q-of-roses-2016-interins-cg-001r` — Quants graus té un angle obtús?
+  - *cultura general; cap tema del temari (geometria: angle obtús)*
+- `q-of-roses-2016-interins-cg-002r` — De quin club de futbol espanyol és propietari el magnat Peter Lim?
+  - *actualitat del moment de l’examen; cap tema del temari (propietat d’un club de futbol, 2016)*
+- `q-of-roses-2016-interins-cp-002` — Què és el SIS a l'àmbit policial?
+  - *SIS (Sistema d’Informació Schengen): cap tema del temari el cobreix específicament*
+- `q-of-roses-2016-interins-cp-008` — Les infraccions de trànsit GREUS prescriuen als:
+  - *prescripció de les infraccions de trànsit (LTSV): cap tema del temari cobreix el règim sancionador general de trànsit*
+

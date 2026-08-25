@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: es-estatut-practiques-2026
+publisher: La Moncloa, Gobierno de España
+published_at: 2026-03-03
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/030326-rueda-prensa-ministros.aspx
+capture_method: official page indexed through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+El Gobierno aprueba el proyecto del Estatuto de las personas en formación práctica no laboral
+
+RELEVANT OFFICIAL TEXT
+«se superó la cifra de dos millones de jóvenes [...] de los que el 56% son mujeres»
+

@@ -1,0 +1,14 @@
+OFFICIAL PAGE TEXT SNAPSHOT
+source_id: roses-prego-festa-major-2026
+publisher: Ajuntament de Roses
+published_at: 2026-08-06 13:50
+captured_at: 2026-08-24 Europe/Madrid
+canonical_url: https://www.roses.cat/noticies/roses-obrira-dema-la-seva-festa-major-amb-un-prego-innovador-a-carrec-del-grup-de-teatre-de-roses
+capture_method: official page opened through OpenAI web retrieval; relevant page text preserved below
+
+TITLE
+Roses obrirà demà la seva Festa Major amb un pregó innovador a càrrec del Grup de Teatre de Roses
+
+RELEVANT OFFICIAL TEXT
+«El Grup de Teatre de Roses serà l'encarregat de donar el tret de sortida oficial»
+«a les 21.30 h, al pregó teatralitzat»
