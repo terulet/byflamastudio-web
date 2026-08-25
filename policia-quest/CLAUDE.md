@@ -158,10 +158,27 @@ verificats pel seu SHA-256, document a document.
   —ambigüitat pròpia del document, no de l'extractor— i l'altra diu
   literalment «pregunta anul·lada» al seu propi enunciat; totes dues
   s'importen igualment en `draft`, mai s'omplen amb una resposta plausible.
-  Sense evidència pròpia —la matriu i les explicacions són feina posterior i
-  deliberadament separada—, aquestes 630 no compten per al domini ni surten
-  a l'entrenament normal, però es poden consultar quadernet a quadernet com
-  a material d'examen oficial històric.
+  **Les 630 tenen ara la seva pròpia matriu probatòria**, amb el mateix
+  mètode i el mateix rigor que les 189 vigents: 344 amb tema real es van
+  contrastar contra les fonts normatives ja adoptades (247 `supported-current`
+  amb citació literal i explicació ca/es, 12 `partially-supported`, 3
+  `official-key-conflicts-with-law-at-exam` —incloent-hi una discrepància
+  nova entre la plantilla i l'ordenança de convivència de Roses, del mateix
+  tipus que la ja documentada per als vigents—, 1 `supported-at-exam-now-superseded`
+  i 90 `pending-evidence` amb el que hi falta escrit; les 286 sense tema
+  real es van classificar pel mateix criteri editorial que el mapa de temes
+  (193 `general-knowledge`, 90 entre `historical-current-affairs` i
+  `pending-evidence`, 3 `out-of-syllabus`). En total, **259 preguntes
+  professionals dels quadernets històrics ja compten per al domini i
+  surten a l'entrenament i als simulacres normals** —el dret que demostren
+  no ha caducat pel fet que l'examen fos de fa anys—; les de cultura general
+  i actualitat es queden fora perquè porten `reviewBy` a la data del seu
+  examen, com ja passava. La feina va trobar que `scripts/report-coverage.ts`
+  i la pantalla de Simulacres comptaven «vigents al banc» sense passar pel
+  judici probatori (`examAvailability` només mirava `isCurrent`, no
+  `officialVerdict`): es va corregir movent `isCurrent` a un mòdul propi
+  (`src/engines/freshness.ts`) perquè `availability.ts` pogués consultar
+  `official-evidence.ts` sense crear un cicle d'importació.
 - **Els temes 35 i 36** estan escrits sobre l'articulat real de les ordenances
   de circulació i de convivència, amb la modificació de 2021 consolidada i
   referències amb article i pàgina del PDF.
@@ -317,9 +334,10 @@ La feina que queda, en aquest ordre:
    `artifacts/adopcio-fonts-normatives-2026-08-24.md` i a la secció 7 d'
    `artifacts/matriu-i-explicacions-2026-08-25.md`. Cap es dona per verificada
    fins que algú obri el document i hi busqui la proposició concreta.
-3. Construir la matriu probatòria i les explicacions de les 630 preguntes
-   històriques, amb el mateix rigor que les 189 vigents (citació literal
-   contra la còpia local, mai una explicació inventada). Fins que això no
-   passi, es queden en `pending-evidence`: no compten per al domini ni surten
-   a l'entrenament normal, encara que ja es puguin consultar quadernet a
-   quadernet com a material d'examen oficial històric.
+3. Tancar les 90 preguntes històriques que han quedat `pending-evidence`,
+   quan hi hagi font. La majoria (81) esperen la mateixa instantània de
+   roses.cat renderitzat que ja bloqueja les 8 vigents —carrers, monuments,
+   adreces de departaments municipals— i unes poques necessiten una norma
+   concreta que no és al paquet (la Llei 10/1994 de la Policia de la
+   Generalitat, el RD 920/2017 d'ITV per als ciclomotors, la LOPJ). Cada una
+   diu, al seu propi `missing`, què li falta exactament.
