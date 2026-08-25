@@ -217,7 +217,10 @@ describe('banc de preguntes', () => {
     for (const q of officials) {
       const parts = q.questionId.split('-') // q-of-roses-2026-interins-cp-001
       const exam = parts.slice(2, 6).join('-')
-      const number = String(Number(parts[6]))
+      // Una reserva pot reprendre la numeració de l'examen o reiniciar-la des
+      // d'1: en els quadernets que la reinicien, la clau xocaria amb la
+      // pregunta ordinària del mateix número si no es distingís.
+      const number = String(Number(parts[6])) + (q.officialExam?.reserve ? 'r' : '')
       const entry = map.exams[exam]?.[number]
       expect(entry, `${q.questionId}: sense decisió al mapa`).toBeDefined()
       expect(entry!.why.length, `${q.questionId}: decisió sense motiu`).toBeGreaterThan(10)

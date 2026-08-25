@@ -224,10 +224,16 @@ def main():
             if explain:
                 ca, es = explain['ca'], explain['es']
 
-            entry = topic_map.get(exam_id, {}).get(str(q.number))
+            # Les preguntes de reserva a vegades reprenen la numeració
+            # de l'examen (21, 41…) i a vegades la reinicien des d'1: en
+            # els quadernets que la reinicien, una reserva #1 col·lidiria
+            # amb la pregunta ordinària #1 si la clau fos només el número.
+            # El sufix «r» les separa sempre, tant si calia com si no.
+            topic_key = f'{q.number}r' if q.reserve else str(q.number)
+            entry = topic_map.get(exam_id, {}).get(topic_key)
             if entry is None:
                 raise SystemExit(
-                    f'{exam_id} #{q.number}: sense decisió a official-topic-map.json. '
+                    f'{exam_id} #{topic_key}: sense decisió a official-topic-map.json. '
                     'La classificació es revisa a mà; no es deixa cap pregunta sense decidir.'
                 )
             topic_id = CONTAINER_TOPIC if entry['topic'] is None else f"roses-t{entry['topic']:02d}"
