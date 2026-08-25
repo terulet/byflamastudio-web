@@ -510,11 +510,13 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page.getByTestId('train')).toBeVisible()
 
   // Sense haver estudiat res, "noves" ha de tenir totes les preguntes del tema.
-  // El tema 35 (ordenança de circulació) en té 6 de pròpies i 3 d'examen
-  // oficial que la classificació editorial hi assigna.
+  // El tema 35 (ordenança de circulació) en té 6 de pròpies i 12 d'examen
+  // oficial que la classificació editorial hi assigna i que ja tenen prou
+  // evidència per servir com a material vigent (9 dels 24 quadernets
+  // històrics, més les 3 dels vigents).
   await page.getByTestId('select-topic-35').click()
   await page.getByTestId('filter-state-new').click()
-  await expect(page.getByTestId('start-topic-session')).toContainText('9')
+  await expect(page.getByTestId('start-topic-session')).toContainText('18')
   await page.getByTestId('filter-origin-authored').click()
   await expect(page.getByTestId('start-topic-session')).toContainText('6')
   await page.getByTestId('filter-origin-authored').click()
@@ -638,9 +640,10 @@ test('es pot practicar només l’ordenança de circulació de Roses', async ({ 
   await page.getByTestId('practice-topic').click()
 
   await expect(page.getByTestId('study')).toBeVisible()
-  // Totes les preguntes de la sessió han de ser del tema 35: les 6 pròpies
-  // més les 3 d'examen oficial que la classificació editorial hi assigna.
-  await expect(page.getByTestId('study-progress')).toContainText('de 9')
+  // El tema 35 ja té 18 preguntes disponibles (6 pròpies + 12 d'examen
+  // oficial amb prou evidència), més que la mida fixa d'una sessió «per
+  // tema» (10): la sessió arriba al límit, no al total del tema.
+  await expect(page.getByTestId('study-progress')).toContainText('de 10')
 })
 
 test('exporta i importa la còpia de seguretat', async ({ page }) => {
@@ -733,16 +736,25 @@ test('una pregunta on la plantilla i la norma no coincideixen ho diu tot', async
   await page.getByTestId('start-topic-session').click()
   await expect(page.getByTestId('study-question')).toBeVisible()
 
-  // Recorre les preguntes fins a trobar la del conflicte.
+  // Recorre les preguntes fins a trobar LA del conflicte —hi ha dues entre
+  // les deu del tema 36 (una de vigent, una d'històrica: la classificació
+  // editorial no les distingeix), i aquest test verifica el cas dels
+  // venedors ambulants del 2025, no qualsevol dels dos.
   let found = false
   for (let i = 0; i < 10 && !found; i++) {
-    await page.getByTestId('option-a').click()
-    await page.getByTestId('check-answer').click()
-    await expect(page.getByTestId('correction')).toBeVisible()
-    found = (await page.getByTestId('notice-key-conflict').count()) > 0
-    if (!found) await page.getByTestId('next-question').click()
+    found = (await page.getByTestId('study-question').getAttribute('data-question-id')) ===
+      'q-of-roses-2025-interins-cp-036'
+    if (!found) {
+      await page.getByTestId('option-a').click()
+      await page.getByTestId('check-answer').click()
+      await expect(page.getByTestId('correction')).toBeVisible()
+      await page.getByTestId('next-question').click()
+    }
   }
   expect(found).toBe(true)
+  await page.getByTestId('option-a').click()
+  await page.getByTestId('check-answer').click()
+  await expect(page.getByTestId('correction')).toBeVisible()
 
   // Les dues capes, cadascuna amb el seu nom, i l'avís entremig.
   await expect(page.getByTestId('official-key')).toContainText('b)')
