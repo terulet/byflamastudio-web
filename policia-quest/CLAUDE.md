@@ -242,7 +242,9 @@ verificats pel seu SHA-256, document a document.
   denominador, el resum de sessió diu què passa amb els errors i ofereix
   repassar-los, el filtre «D'examen oficial» entrena el banc oficial (abans no
   podia servir mai res), i el «per què» de les 189 preguntes oficials diu la
-  veritat en lloc de vestir la procedència d'explicació.
+  veritat en lloc de vestir la procedència d'explicació. (Aquell «per què» ara
+  només es queda a les 69 que no es poden demostrar: vegeu el punt de la matriu
+  més avall.)
 - **La constància es diu pel seu nom i no amaga cap dia.** La ratxa continua
   exigint l'objectiu diari sencer, però ara es diu «Ratxa d'objectius», i al
   costat hi ha «Dies estudiats», que compta dies amb alguna resposta i no es
@@ -250,6 +252,40 @@ verificats pel seu SHA-256, document a document.
   La regla de no castigar es manté: cap de les dues bloqueja res, i els
   assoliments no canvien. La distinció viu a `src/engines/activity.ts` i té
   test unitari i d'extrem a extrem.
+
+- **Les 189 oficials tenen matriu probatòria i 120 tenen explicació de debò.**
+  `content/.../questions/official-evidence-map.json` diu, pregunta a pregunta,
+  què se'n sap i amb quina cita literal de la còpia local: 116 amb la plantilla
+  demostrada i vigent, 33 de cultura general, 28 d'actualitat del dia de
+  l'examen, 8 pendents amb el motiu escrit, 2 fora de temari i **2 on la
+  plantilla del tribunal i la norma no coincideixen**. Cent vint porten
+  explicació escrita contra l'article, en català i castellà, i arrosseguen la
+  norma citada com a referència pròpia: 136 citacions a 117 localitzadors de 26
+  normes. Les altres 69 conserven el text de procedència, perquè escriure'ls un
+  fonament seria inventar-lo. `npm run content:matrix` uneix mapa i banc i
+  falla si algú els separa; `tests/unit/matriu-oficials.test.ts` ho torna a
+  comprovar amb 26 proves, l'empremta dels textos oficials inclosa.
+- **La plantilla del tribunal i el dret vigent són dues veritats i l'app diu les
+  dues.** `src/engines/official-evidence.ts` és l'únic lloc que ho decideix, amb
+  el dia com a paràmetre: si la pregunta es pot servir com a material vigent, si
+  compta per al domini, si pot generar repàs, quin avís necessita la correcció i
+  quina lletra puntua. Hi passen la selecció, els simulacres, el domini, la cua
+  de repàs, les dues correccions i l'informe. Una pregunta amb discrepància no
+  entra a l'estudi vigent, ni al domini, ni al repàs, ni a un quadernet puntuat;
+  demanar expressament material d'examen oficial sí que la serveix —és consultar
+  història— i llavors la correcció ensenya les dues capes en lloc d'un ✓ o una
+  ✕ que hauria de dir dues coses oposades alhora. El detall dels dos casos, amb
+  les dates que ho decideixen, és a
+  `artifacts/matriu-i-explicacions-2026-08-25.md`.
+- **Les dues fonts dinàmiques tenen rescatador, però encara no document.**
+  `npm run sources:rescue` s'executa a la màquina de qui té xarxa, surt de les
+  dues portades que ja consten al manifest i deixa un paquet segellat amb
+  mètode, data, adreça final, caràcters útils i SHA-256 de cada instantània.
+  `--self-check` prova sense xarxa que rebutja les dues còpies que ja ens van
+  enganyar: mesura la **prosa** —el text que no és dins d'un enllaç— i no la
+  mida del fitxer, perquè la portada de roses.cat té 55.000 caràcters visibles
+  i 119 de prosa. Les 21 referències que en depenen i les dues preguntes
+  oficials de ciberseguretat segueixen bloquejades.
 
 La feina que queda, en aquest ordre:
 
@@ -260,17 +296,17 @@ La feina que queda, en aquest ordre:
    —instantànies amb hash— és el que ja s'ha fet servir dues vegades. No
    s'allarga cap `reviewBy` per guanyar temps: una data allargada és una
    afirmació que ningú ha comprovat.
-2. Escriure les explicacions reals de les 189 preguntes oficials, contra
-   l'article concret de cada font, tema a tema seguint la classificació
-   d'`official-topic-map.json`. És on la correcció ensenya menys precisament on
-   les preguntes són més reals, i fins ara no es podia fer perquè no hi havia
-   contra què escriure-les. Ara sí: les 98 fonts tenen còpia local.
-   Pel camí, tancar les 26 referències que van quedar pendents. Què falta per a
-   cada una és a la taula de la secció 7 d'
-   `artifacts/adopcio-fonts-normatives-2026-08-24.md`: dues instantànies de text
-   de pàgines que es munten amb JavaScript, la Llei 10/2007 de l'Institut de
-   Seguretat Pública, el Decret legislatiu 2/2008 de protecció dels animals i
-   tres dades de cultura general que cap norma enumera.
+2. Tancar les 26 referències pendents i, amb elles, les 8 preguntes oficials
+   que encara no es poden explicar. Cadascuna diu què li falta: dues
+   instantànies de pàgines que es munten amb JavaScript —per a això hi ha
+   `npm run sources:rescue`—, la Llei 10/2007 de l'Institut de Seguretat
+   Pública, el Decret legislatiu 2/2008 de protecció dels animals, la LO 6/1985
+   del poder judicial, el RD 920/2017 d'inspecció tècnica de vehicles i tres
+   dades de cultura general que cap norma enumera. La taula de què falta per a
+   cada una és a la secció 7 d'
+   `artifacts/adopcio-fonts-normatives-2026-08-24.md` i a la secció 7 d'
+   `artifacts/matriu-i-explicacions-2026-08-25.md`. Cap es dona per verificada
+   fins que algú obri el document i hi busqui la proposició concreta.
 3. Transcriure els 24 exàmens històrics. Els sis sense marca llegible al text
    exigeixen revisió visual; no se'n pot deduir cap resposta per densitat de
    tinta, freqüència ni coneixement general.
