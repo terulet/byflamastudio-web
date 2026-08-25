@@ -168,8 +168,15 @@ describe('una descàrrega buida no verifica res', () => {
 })
 
 describe('el que encara no es pot afirmar es diu, no es tapa', () => {
-  it('les referències pendents són només les que l’adopció explica', () => {
-    const pending = REFERENCES.filter((r) => r.ref.reviewStatus === 'pending-source-verification')
+  it('les referències pendents de les 43 fonts són només les que l’adopció explica', () => {
+    // Aquest fitxer revisa el paquet de les 43 normes generals; una
+    // pregunta d'examen que cita el seu propi quadernet (sense marca de
+    // resposta llegible) ja s'explica sola amb `status: 'draft'` —el
+    // validador de contingut li impedeix ser `active` sense font— i no és
+    // el que aquest test verifica.
+    const pending = REFERENCES.filter(
+      (r) => r.ref.reviewStatus === 'pending-source-verification' && PACK_SOURCE_IDS.has(r.ref.sourceId),
+    )
     // Cada pendent ha de tenir motiu: o la còpia no porta text, o la font no
     // sosté l'afirmació. Cap pendent pot ser un descuit.
     const unexplained = pending.filter((r) => {

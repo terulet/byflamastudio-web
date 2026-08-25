@@ -219,8 +219,10 @@ describe('banc de preguntes', () => {
       const exam = parts.slice(2, 6).join('-')
       // Una reserva pot reprendre la numeració de l'examen o reiniciar-la des
       // d'1: en els quadernets que la reinicien, la clau xocaria amb la
-      // pregunta ordinària del mateix número si no es distingís.
-      const number = String(Number(parts[6])) + (q.officialExam?.reserve ? 'r' : '')
+      // pregunta ordinària del mateix número si no es distingís. Quan la
+      // col·lisió és real, l'`questionId` ja porta un sufix «r» propi
+      // («…-001r»); es treu abans de llegir el número perquè no és un dígit.
+      const number = String(Number(parts[6]!.replace(/r$/, ''))) + (q.officialExam?.reserve ? 'r' : '')
       const entry = map.exams[exam]?.[number]
       expect(entry, `${q.questionId}: sense decisió al mapa`).toBeDefined()
       expect(entry!.why.length, `${q.questionId}: decisió sense motiu`).toBeGreaterThan(10)
@@ -302,8 +304,13 @@ describe('banc de preguntes', () => {
    * text; ho va destapar obrir l'app i llegir una pregunta.
    */
   it('cap enunciat ni cap opció arrossega capçaleres del quadernet', () => {
+    // «Plaça de Catalunya» a seques no hi val: és l'adreça de l'Ajuntament
+    // quan porta la resta («, 12», codi postal…), però també és una opció de
+    // resposta legítima en una pregunta sobre on es troba un departament
+    // municipal (q-of-roses-2019-propietat-cg-017). Només la forma completa
+    // de l'adreça és senyal de capçalera arrossegada.
     const boilerplate =
-      /Exp\.:|Plaça de Catalunya|Procés selectiu|Primer exercici|Segon exercici|informacio@roses|www\.roses\.cat/
+      /Exp\.:|Plaça de Catalunya, 12|Procés selectiu|Primer exercici|Segon exercici|informacio@roses|www\.roses\.cat/
     for (const q of questions) {
       expect(boilerplate.test(q.stem), `${q.questionId}: enunciat amb capçalera`).toBe(false)
       for (const option of q.options) {

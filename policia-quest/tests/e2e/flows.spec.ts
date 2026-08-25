@@ -525,13 +525,15 @@ test('els filtres d’entrenament arriben a la sessió', async ({ page }) => {
   await expect(page.getByText(/No hi ha preguntes que compleixin/)).toBeVisible()
 
   // El filtre d'examen oficial respecta la classificació editorial per tema:
-  // amb el tema 35 seleccionat hi ha 3 preguntes oficials; sense cap tema
-  // seleccionat, s'entrena el banc oficial sencer.
+  // amb el tema 35 seleccionat hi ha 12 preguntes oficials (3 dels exàmens
+  // vigents i 9 dels històrics, que aquest filtre consulta encara que no
+  // comptin per al domini); sense cap tema seleccionat, s'entrena el banc
+  // oficial sencer.
   await page.getByTestId('filter-state-new').click()
   await page.getByTestId('filter-origin-official').click()
   await expect(page.getByText(/cap pregunta d’examen oficial importada/)).toHaveCount(0)
   await expect(page.getByText(/classificació pròpia, no del tribunal/)).toBeVisible()
-  await expect(page.getByTestId('start-topic-session')).toContainText('3')
+  await expect(page.getByTestId('start-topic-session')).toContainText('12')
   await page.getByTestId('select-topic-35').click()
   await expect(page.getByTestId('start-topic-session')).toBeEnabled()
   await page.getByTestId('start-topic-session').click()
@@ -711,11 +713,13 @@ test('registra el service worker per funcionar sense connexió', async ({ page }
 
 test('una pregunta on la plantilla i la norma no coincideixen ho diu tot', async ({ page }) => {
   /*
-   * El tema 36 (ordenança de convivència de Roses) té tres preguntes d'examen
-   * oficial, i una d'elles és el cas dels venedors ambulants: el tribunal va
-   * marcar «greu, 750 €», que era la qualificació del text de 2019, però la
-   * modificació de 2021 ja havia rebaixat la fila a «lleu, 500 €» quatre anys
-   * abans de l'examen. Cap de les quatre opcions ho diu.
+   * El tema 36 (ordenança de convivència de Roses) té deu preguntes d'examen
+   * oficial (tres dels exàmens vigents i set dels històrics, que aquest
+   * filtre consulta encara que no comptin per al domini), i una de les
+   * vigents és el cas dels venedors ambulants: el tribunal va marcar «greu,
+   * 750 €», que era la qualificació del text de 2019, però la modificació de
+   * 2021 ja havia rebaixat la fila a «lleu, 500 €» quatre anys abans de
+   * l'examen. Cap de les quatre opcions ho diu.
    *
    * L'app no pot corregir la plantilla —és un document— ni pot ensenyar dret
    * derogat. Ha de dir les dues coses, i aquest test comprova que ho fa i que
@@ -725,13 +729,13 @@ test('una pregunta on la plantilla i la norma no coincideixen ho diu tot', async
   await page.goto('/#/train')
   await page.getByTestId('filter-origin-official').click()
   await page.getByTestId('select-topic-36').click()
-  await expect(page.getByTestId('start-topic-session')).toContainText('3')
+  await expect(page.getByTestId('start-topic-session')).toContainText('10')
   await page.getByTestId('start-topic-session').click()
   await expect(page.getByTestId('study-question')).toBeVisible()
 
-  // Recorre les tres preguntes fins a trobar la del conflicte.
+  // Recorre les preguntes fins a trobar la del conflicte.
   let found = false
-  for (let i = 0; i < 3 && !found; i++) {
+  for (let i = 0; i < 10 && !found; i++) {
     await page.getByTestId('option-a').click()
     await page.getByTestId('check-answer').click()
     await expect(page.getByTestId('correction')).toBeVisible()

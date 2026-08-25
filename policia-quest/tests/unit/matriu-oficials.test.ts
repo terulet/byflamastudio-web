@@ -50,7 +50,19 @@ interface Decision {
 }
 
 const DECISIONS = evidenceMap.decisions as unknown as Record<string, Decision>
-const OFFICIAL = ROSES_PACK.questions.filter((q) => q.officialExam !== undefined)
+
+/*
+ * Aquesta matriu és de les 189 dels exàmens **vigents** (2025-2026): és on
+ * viu la matriu probatòria, l'empremta segellada i les explicacions. Els 24
+ * quadernets històrics (2016-2024) es van transcriure després, amb la
+ * mateixa disciplina de no inventar mai una resposta, però sense repetir
+ * aquí aquell treball —viuen al seu propi test, `tests/content/content.test.ts`—.
+ * Filtrar per any evita que aquest fitxer intenti demostrar coses que no ha
+ * revisat.
+ */
+const CURRENT_YEARS = new Set([2025, 2026])
+const ALL_OFFICIAL = ROSES_PACK.questions.filter((q) => q.officialExam !== undefined)
+const OFFICIAL = ALL_OFFICIAL.filter((q) => CURRENT_YEARS.has(q.officialExam!.year))
 const byId = new Map(OFFICIAL.map((q) => [q.questionId, q]))
 
 /** Un dia qualsevol posterior a l'últim examen, per a les proves de vigència. */
@@ -278,12 +290,15 @@ describe('una pregunta amb discrepància no es cola a l’estudi vigent', () => 
    * pantalla ensenyi les dues capes en lloc d'un ✓ o una ✕.
    */
   it('demanant-la com a material oficial sí que surt, i avisada', () => {
+    // `size` ha de cobrir tot el banc oficial —ara amb els 24 quadernets
+    // històrics ja transcrits, no només els 189 vigents— perquè un límit
+    // més curt convertiria la comprovació en una mostra aleatòria.
     const sessio = selectSession({
       mode: 'per-tema',
       pool: actives,
       reviews: new Map(),
       today: 20_000,
-      size: 200,
+      size: actives.length,
       seed: 'matriu',
       todayIso: AVUI,
       filters: { onlyOfficialExam: true },
