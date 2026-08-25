@@ -10,7 +10,7 @@ import { pack, useActions, useApp, XP_BY_OUTCOME } from '../app/store.tsx'
 import { useActiveQuestions, useToday } from '../app/selectors.ts'
 import { navigate, type StudyRouteFilters } from '../app/router.ts'
 import { dict, fill, pick } from '../i18n/index.ts'
-import { Meter } from '../components/ui.tsx'
+import { Emphasised, Meter } from '../components/ui.tsx'
 import { selectSession } from '../engines/selection.ts'
 import { applyOutcome, getOrInit, intervalDays, outcomeFor } from '../engines/srs.ts'
 import { officialVerdict } from '../engines/official-evidence.ts'
@@ -367,6 +367,15 @@ function QuestionView({
             } else if (conflict && option.optionId === lawAnswer) {
               className += ' option--selected'
               mark = t.study.lawLabel
+            } else if (conflict && isChosen) {
+              /*
+               * Qui tria una opció que no és ni la del tribunal ni la que
+               * sosté la norma es quedava sense cap marca i perdia de vista
+               * què havia contestat. La marca no diu si és bona ni dolenta
+               * —aquí això no ho pot dir ningú—, només on va tocar.
+               */
+              className += ' option--selected'
+              mark = t.study.yourAnswerLabel
             } else if (conflict) {
               // La resta d'opcions no porten marca: cap dels dos marcs les dona.
             } else if (isRight) {
@@ -479,7 +488,9 @@ function Correction({
 
       <div className="card">
         <div className="card__label">{t.study.why}</div>
-        <p style={{ marginTop: 'var(--sp-2)', lineHeight: 1.6 }}>{pick(question.explanation, lang)}</p>
+        <p style={{ marginTop: 'var(--sp-2)', lineHeight: 1.6 }}>
+          <Emphasised text={pick(question.explanation, lang)} />
+        </p>
       </div>
 
       {official ? <OfficialLawToday question={question} lang={lang} /> : null}

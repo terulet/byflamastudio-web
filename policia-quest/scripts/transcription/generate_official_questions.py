@@ -46,21 +46,13 @@ EXAMS = [
 
 # Notes de revisió humana, per questionId.
 #
-# Aquí només hi entra el que s'ha comprovat mirant el document oficial i
-# contrastant-lo amb la norma vigent. Una resposta oficial **no es canvia mai**:
-# el que va publicar el tribunal es conserva. El que sí que es fa és avisar quan
-# ha quedat enrere, perquè qui estudia no aprengui una redacció derogada.
-#
-# Vegeu artifacts/auditoria-visual-p0.md.
-REVIEW_NOTES = {
-    'q-of-roses-2025-interins-cp-036': (
-        'La resposta del tribunal (greu, 750 €) és la qualificació del text de 2019. '
-        'La modificació de l’Ordenança de convivència aprovada el 24 de febrer de 2021 '
-        '(BOP de Girona núm. 54, de 19-03-2021, modificació cinquena) va rebaixar '
-        'l’article 11.2 a infracció lleu amb 500 €. La resposta oficial es conserva tal '
-        'com es va publicar; el dret vigent avui, però, és l’altre.'
-    ),
-}
+# Això és per a coses de la **transcripció**: una marca ambigua al PDF, una
+# errata del quadernet, un detall que només es veu obrint el document. El que
+# digui la norma, en canvi, ja no viu aquí: viu a `official-evidence-map.json`,
+# amb la cita que ho sosté, i la pantalla en fa tres blocs. Repetir-ho en prosa
+# en un quart lloc no informava més; només deia dues vegades el mateix amb
+# paraules diferents.
+REVIEW_NOTES: dict[str, str] = {}
 
 # El tribunal no etiqueta les preguntes per tema. La classificació que porta
 # cada pregunta és **editorial**: viu a `official-topic-map.json`, revisada

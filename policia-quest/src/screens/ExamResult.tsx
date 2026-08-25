@@ -3,7 +3,7 @@ import { useMemo, useState, type ReactNode } from 'react'
 import { pack, useActions, useApp } from '../app/store.tsx'
 import { navigate } from '../app/router.ts'
 import { dict, fill, pick, plural } from '../i18n/index.ts'
-import { Stat } from '../components/ui.tsx'
+import { Emphasised, Stat } from '../components/ui.tsx'
 import { formatMilli, scoreExam, type ScoreBreakdown, type ScoredItem } from '../engines/scoring.ts'
 import { sectionOffsets } from './ExamRunner.tsx'
 import { epochDayToIso, formatDuration } from '../util/date.ts'
@@ -426,7 +426,9 @@ function ReviewDetail({
 
       <div className="card">
         <div className="card__label">{t.study.why}</div>
-        <p style={{ marginTop: 'var(--sp-2)' }}>{pick(question.explanation, lang)}</p>
+        <p style={{ marginTop: 'var(--sp-2)' }}>
+          <Emphasised text={pick(question.explanation, lang)} />
+        </p>
       </div>
 
       {question.references.map((reference, i) => {

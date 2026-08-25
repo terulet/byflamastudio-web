@@ -274,13 +274,22 @@ describe('banc de preguntes', () => {
    * tribunal la va publicar amb la qualificació del text de 2019 i la norma es
    * va modificar el 2021. La resposta es conserva; l'avís ha d'arribar a qui
    * estudia.
+   *
+   * L'avís era una nota en prosa dins la pregunta. Ara el porta el judici
+   * probatori, que a més diu quin dia va canviar la norma i quina lletra
+   * sosté avui; `tests/unit/matriu-oficials.test.ts` en comprova el detall i
+   * el motor de vigència. Aquí es fixa el que no pot fallar mai: la clau del
+   * tribunal es conserva i la discrepància consta.
    */
   it('avisa quan una resposta oficial ha quedat enrere respecte del dret vigent', () => {
     const q = questions.find((x) => x.questionId === 'q-of-roses-2025-interins-cp-036')
     expect(q, 'falta la pregunta auditada').toBeDefined()
     expect(q!.correct, 'la resposta del tribunal no es toca').toBe('b')
     expect(q!.officialExam?.officialAnswer).toBe('b')
-    expect(q!.officialExam?.transcriptionNotes, 'sense nota de revisió').toMatch(/2021/)
+    const evidence = q!.officialExam?.evidence
+    expect(evidence?.status, 'sense judici probatori').toBe('official-key-conflicts-with-law-at-exam')
+    expect(evidence?.changedOn, 'sense la data del canvi de norma').toMatch(/^2021-/)
+    expect(q!.explanation.ca, 'l’explicació no diu què va canviar').toMatch(/2021/)
   })
 
   /*

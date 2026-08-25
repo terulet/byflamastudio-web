@@ -753,4 +753,13 @@ test('una pregunta on la plantilla i la norma no coincideixen ho diu tot', async
 
   // I com que no pot generar repàs, no pot prometre'n cap.
   await expect(page.getByText(/Programada per repassar/)).toHaveCount(0)
+
+  /*
+   * L'explicació marca amb dos asteriscs la paraula que decideix la resposta
+   * —aquí «lleu, 500 €»—. Si la pantalla pinta el text a seques, l'asterisc es
+   * veu i l'èmfasi es perd, que és el que passava fins ara a la correcció.
+   */
+  const correction = page.getByTestId('correction')
+  await expect(correction.locator('strong')).not.toHaveCount(0)
+  await expect(correction).not.toContainText('**')
 })

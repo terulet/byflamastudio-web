@@ -179,6 +179,7 @@ const ca = {
     officialHeld: 'Examen del {date} · {exam}',
     officialKeyLabel: 'Plantilla del tribunal',
     lawLabel: 'Normativa verificada',
+    yourAnswerLabel: 'La teva resposta',
     noticeSuperseded: 'Pregunta oficial històrica: la normativa ha canviat',
     noticeSupersededBody:
       'La resposta del tribunal era correcta el dia de l’examen. Una reforma posterior la va canviar, i per això aquesta pregunta no compta per al domini ni entra a la cua de repàs.',
@@ -547,6 +548,7 @@ const es: Dict = {
     officialHeld: 'Examen del {date} · {exam}',
     officialKeyLabel: 'Plantilla del tribunal',
     lawLabel: 'Normativa verificada',
+    yourAnswerLabel: 'Tu respuesta',
     noticeSuperseded: 'Pregunta oficial histórica: la normativa ha cambiado',
     noticeSupersededBody:
       'La respuesta del tribunal era correcta el día del examen. Una reforma posterior la cambió, y por eso esta pregunta no cuenta para el dominio ni entra en la cola de repaso.',

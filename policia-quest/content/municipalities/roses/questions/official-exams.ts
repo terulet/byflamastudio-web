@@ -952,8 +952,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'L’article 6.1 de l’Estatut ho diu en quatre paraules: «La llengua pròpia de Catalunya és el català». La pregunta demana la que és pròpia **i** oficial: el castellà és oficial però no propi de Catalunya, i l’aranès és la llengua pròpia de l’Aran, no de tot el país.',
-      es: 'El artículo 6.1 del Estatuto lo dice en cuatro palabras: «La llengua pròpia de Catalunya és el català». La pregunta pide la que es propia **y** oficial: el castellano es oficial pero no propio de Cataluña, y el aranés es la lengua propia del Arán, no de todo el país.',
+      ca: 'L’article 6.1 de l’Estatut ho diu en quatre paraules: «La llengua pròpia de Catalunya és el català». La pregunta demana la que és alhora pròpia i oficial: el castellà és oficial però no propi de Catalunya, i l’aranès és la llengua pròpia de l’Aran, no de tot el país.',
+      es: 'El artículo 6.1 del Estatuto lo dice en cuatro palabras: «La llengua pròpia de Catalunya és el català». La pregunta pide la que es a la vez propia y oficial: el castellano es oficial pero no propio de Cataluña, y el aranés es la lengua propia del Arán, no de todo el país.',
     },
     references: [
       {
@@ -2386,8 +2386,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'La falsa és la c) i el motiu és una sola paraula: «únicament». L’article 17.2 de la LO 5/2000 dona el dret a l’entrevista reservada amb l’advocat «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —abans **i** després—, o sigui que limitar-lo al moment previ retalla el dret. Les altres tres opcions són certes: el màxim de vint-i-quatre hores i la posada a disposició del fiscal (art. 17.4) i la notificació immediata als representants legals i al Ministeri Fiscal (art. 17.1).',
-      es: 'La falsa es la c) y el motivo es una sola palabra: «únicamente». El artículo 17.2 de la LO 5/2000 da el derecho a la entrevista reservada con el abogado «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —antes **y** después—, o sea que limitarlo al momento previo recorta el derecho. Las otras tres opciones son ciertas: el máximo de veinticuatro horas y la puesta a disposición del fiscal (art. 17.4) y la notificación inmediata a los representantes legales y al Ministerio Fiscal (art. 17.1).',
+      ca: 'La falsa és la c) i el motiu és una sola paraula: «únicament». L’article 17.2 de la LO 5/2000 dona el dret a l’entrevista reservada amb l’advocat «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —abans de declarar i en acabat—, o sigui que limitar-lo al moment previ retalla el dret. Les altres tres opcions són certes: el màxim de vint-i-quatre hores i la posada a disposició del fiscal (art. 17.4) i la notificació immediata als representants legals i al Ministeri Fiscal (art. 17.1).',
+      es: 'La falsa es la c) y el motivo es una sola palabra: «únicamente». El artículo 17.2 de la LO 5/2000 da el derecho a la entrevista reservada con el abogado «con anterioridad y al término de la práctica de la diligencia de toma de declaración» —antes de declarar y al terminar—, o sea que limitarlo al momento previo recorta el derecho. Las otras tres opciones son ciertas: el máximo de veinticuatro horas y la puesta a disposición del fiscal (art. 17.4) y la notificación inmediata a los representantes legales y al Ministerio Fiscal (art. 17.1).',
     },
     references: [
       {
@@ -5209,8 +5209,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'L’article 250.1 del Codi penal apuja l’estafa a presó d’un a sis anys i multa de sis a dotze mesos en una llista de circumstàncies, i la cinquena és la que descriu l’opció a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». Fixa’t que hi ha una **o**: n’hi ha prou amb una de les dues coses. Les altres opcions rebaixen la xifra o inventen supòsits que l’article no recull. Aquesta pregunta queda fora dels 40 temes de la convocatòria —el temari cobreix furts i robatoris, no l’estafa—, i per això no entra a l’entrenament per temes.',
-      es: 'El artículo 250.1 del Código penal sube la estafa a prisión de uno a seis años y multa de seis a doce meses en una lista de circunstancias, y la quinta es la que describe la opción a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». Fíjate en que hay una **o**: basta con una de las dos cosas. Las otras opciones rebajan la cifra o inventan supuestos que el artículo no recoge. Esta pregunta queda fuera de los 40 temas de la convocatoria —el temario cubre hurtos y robos, no la estafa—, y por eso no entra en el entrenamiento por temas.',
+      ca: 'L’article 250.1 del Codi penal apuja l’estafa a presó d’un a sis anys i multa de sis a dotze mesos en una llista de circumstàncies, i la cinquena és la que descriu l’opció a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». L’article fa servir una disjunció, no una suma: n’hi ha prou amb una de les dues coses. Les altres opcions rebaixen la xifra o inventen supòsits que l’article no recull. Aquesta pregunta queda fora dels 40 temes de la convocatòria —el temari cobreix furts i robatoris, no l’estafa—, i per això no entra a l’entrenament per temes.',
+      es: 'El artículo 250.1 del Código penal sube la estafa a prisión de uno a seis años y multa de seis a doce meses en una lista de circunstancias, y la quinta es la que describe la opción a): «El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas». El artículo usa una disyunción, no una suma: basta con una de las dos cosas. Las otras opciones rebajan la cifra o inventan supuestos que el artículo no recoge. Esta pregunta queda fuera de los 40 temas de la convocatoria —el temario cubre hurtos y robos, no la estafa—, y por eso no entra en el entrenamiento por temas.',
     },
     references: [
       {
@@ -7288,8 +7288,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'Aquesta pregunta demana el que **no** hi és, i les competències del Consell de Política de Seguretat són les de l’article 48.2 de la LO 2/1986: aprovar els plans de coordinació i d’infraestructura policial, informar de les plantilles dels cossos autonòmics i «aprobar directivas y recomendaciones de carácter general». Les tres hi consten literalment. Proposar programes de formació i perfeccionament de les policies, en canvi, és de l’article 49.1 i correspon al Comitè d’Experts, un òrgan que funciona dins del Consell però que no és el Consell. Cap dels dos articles s’ha modificat des de 1986, de manera que això ja era així el dia de l’examen. El tribunal va publicar una altra lletra i aquella és la que puntua en reproduir la prova; el que has de recordar per a l’examen d’enguany és la distinció entre els dos òrgans.',
-      es: 'Esta pregunta pide lo que **no** está, y las competencias del Consejo de Política de Seguridad son las del artículo 48.2 de la LO 2/1986: aprobar los planes de coordinación y de infraestructura policial, informar las plantillas de los cuerpos autonómicos y «aprobar directivas y recomendaciones de carácter general». Las tres constan literalmente. Proponer programas de formación y perfeccionamiento de las policías, en cambio, es del artículo 49.1 y corresponde al Comité de Expertos, un órgano que funciona dentro del Consejo pero que no es el Consejo. Ninguno de los dos artículos se ha modificado desde 1986, de modo que ya era así el día del examen. El tribunal publicó otra letra y esa es la que puntúa al reproducir la prueba; lo que debes recordar para el examen de este año es la distinción entre los dos órganos.',
+      ca: 'Aquesta pregunta demana quina competència NO hi és, i les competències del Consell de Política de Seguretat són les de l’article 48.2 de la LO 2/1986: aprovar els plans de coordinació i d’infraestructura policial, informar de les plantilles dels cossos autonòmics i «aprobar directivas y recomendaciones de carácter general». Les tres hi consten literalment. Proposar programes de formació i perfeccionament de les policies, en canvi, és de l’article 49.1 i correspon al Comitè d’Experts, un òrgan que funciona dins del Consell però que no és el Consell. Cap dels dos articles s’ha modificat des de 1986, de manera que això ja era així el dia de l’examen. El tribunal va publicar una altra lletra i aquella és la que puntua en reproduir la prova; el que has de recordar per a l’examen d’enguany és la distinció entre els dos òrgans.',
+      es: 'Esta pregunta pide qué competencia NO está, y las competencias del Consejo de Política de Seguridad son las del artículo 48.2 de la LO 2/1986: aprobar los planes de coordinación y de infraestructura policial, informar las plantillas de los cuerpos autonómicos y «aprobar directivas y recomendaciones de carácter general». Las tres constan literalmente. Proponer programas de formación y perfeccionamiento de las policías, en cambio, es del artículo 49.1 y corresponde al Comité de Expertos, un órgano que funciona dentro del Consejo pero que no es el Consejo. Ninguno de los dos artículos se ha modificado desde 1986, de modo que ya era así el día del examen. El tribunal publicó otra letra y esa es la que puntúa al reproducir la prueba; lo que debes recordar para el examen de este año es la distinción entre los dos órganos.',
     },
     references: [
       {
@@ -7531,8 +7531,8 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'L’article 235.1 del Codi penal enumera les circumstàncies que pugen el furt a la pena d’un a tres anys, i la primera és «cuando se sustraigan cosas de valor artístico, histórico, cultural o científico». L’opció c) inverteix la circumstància segona, que exigeix que **sí** que es causi una situació de desproveïment; la d) és l’agreujament de la neutralització d’alarmes, que viu a l’article 234.3 i no al 235; i la a) descriu el furt de menys de 400 euros, que és el supòsit atenuat.',
-      es: 'El artículo 235.1 del Código penal enumera las circunstancias que suben el hurto a la pena de uno a tres años, y la primera es «cuando se sustraigan cosas de valor artístico, histórico, cultural o científico». La opción c) invierte la circunstancia segunda, que exige que **sí** se cause una situación de desabastecimiento; la d) es la agravación de la neutralización de alarmas, que vive en el artículo 234.3 y no en el 235; y la a) describe el hurto de menos de 400 euros, que es el supuesto atenuado.',
+      ca: 'L’article 235.1 del Codi penal enumera les circumstàncies que pugen el furt a la pena d’un a tres anys, i la primera és «cuando se sustraigan cosas de valor artístico, histórico, cultural o científico». L’opció c) inverteix la circumstància segona, que exigeix justament que es causi una situació de desproveïment; la d) és l’agreujament de la neutralització d’alarmes, que viu a l’article 234.3 i no al 235; i la a) descriu el furt de menys de 400 euros, que és el supòsit atenuat.',
+      es: 'El artículo 235.1 del Código penal enumera las circunstancias que suben el hurto a la pena de uno a tres años, y la primera es «cuando se sustraigan cosas de valor artístico, histórico, cultural o científico». La opción c) invierte la circunstancia segunda, que exige justamente que se cause una situación de desabastecimiento; la d) es la agravación de la neutralización de alarmas, que vive en el artículo 234.3 y no en el 235; y la a) describe el hurto de menos de 400 euros, que es el supuesto atenuado.',
     },
     references: [
       {
@@ -7929,7 +7929,7 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
       originalNumber: 36,
       officialAnswer: 'b',
       reserve: false,
-      transcriptionNotes: 'La resposta del tribunal (greu, 750 €) és la qualificació del text de 2019. La modificació de l’Ordenança de convivència aprovada el 24 de febrer de 2021 (BOP de Girona núm. 54, de 19-03-2021, modificació cinquena) va rebaixar l’article 11.2 a infracció lleu amb 500 €. La resposta oficial es conserva tal com es va publicar; el dret vigent avui, però, és l’altre.',    },
+    },
     tags: ['examen-oficial', 'examen-2025'],
   },
   {

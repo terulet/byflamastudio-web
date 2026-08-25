@@ -163,3 +163,29 @@ export function Disclaimer({ text }: { text: string }): ReactNode {
     </p>
   )
 }
+
+/**
+ * Interpreta els `**èmfasis**` del text de contingut, sense HTML arbitrari.
+ *
+ * Les lliçons i les explicacions s'escriuen marcant amb dos asteriscs la
+ * paraula que decideix la resposta —«el comandament **superior**», «infracció
+ * **lleu**»—, perquè sovint tota la diferència entre dues opcions és aquella
+ * paraula. Qui pinti aquest text amb `{text}` a seques ensenyarà els asteriscs
+ * i perdrà l'èmfasi; per això el trosseja aquí i no a cada pantalla.
+ *
+ * No és Markdown ni ho vol ser: només aquesta marca, i mai `innerHTML`.
+ */
+export function Emphasised({ text }: { text: string }): ReactNode {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  return (
+    <>
+      {parts.map((part, i) =>
+        part.startsWith('**') && part.endsWith('**') ? (
+          <strong key={i}>{part.slice(2, -2)}</strong>
+        ) : (
+          <span key={i}>{part}</span>
+        ),
+      )}
+    </>
+  )
+}

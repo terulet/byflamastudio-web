@@ -5,7 +5,7 @@ import { loadLesson } from '../content/index.ts'
 import { useDashboard } from '../app/selectors.ts'
 import { navigate } from '../app/router.ts'
 import { dict, fill, pick } from '../i18n/index.ts'
-import { Meter } from '../components/ui.tsx'
+import { Emphasised, Meter } from '../components/ui.tsx'
 import type { Lesson, LessonCard } from '../domain/types.ts'
 
 export function TopicDetail({ topicId }: { topicId: string }): ReactNode {
@@ -186,21 +186,5 @@ function LessonCardView({ card, lang }: { card: LessonCard; lang: 'ca' | 'es' })
         <Emphasised text={pick(card.body, lang)} />
       </p>
     </div>
-  )
-}
-
-/** Interpreta els `**èmfasis**` del text de contingut, sense HTML arbitrari. */
-function Emphasised({ text }: { text: string }): ReactNode {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g)
-  return (
-    <>
-      {parts.map((part, i) =>
-        part.startsWith('**') && part.endsWith('**') ? (
-          <strong key={i}>{part.slice(2, -2)}</strong>
-        ) : (
-          <span key={i}>{part}</span>
-        ),
-      )}
-    </>
   )
 }
