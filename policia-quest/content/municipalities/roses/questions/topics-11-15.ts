@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, refv } from '../authoring.ts'
 
 export const QUESTIONS_11_15: Question[] = [
   ...questionsFor(11, [
@@ -21,8 +21,8 @@ export const QUESTIONS_11_15: Question[] = [
       explainCa: 'La Llei 16/1991 de les policies locals conté el règim disciplinari propi i el Decret 179/2015 aprova el reglament del procediment aplicable. L’Estatut bàsic de l’empleat públic actua com a norma supletòria.',
       explainEs: 'La Ley 16/1991 de las policías locales contiene el régimen disciplinario propio y el Decreto 179/2015 aprueba el reglamento del procedimiento aplicable. El Estatuto básico del empleado público actúa como norma supletoria.',
       refs: [
-        ref('llei-16-1991-policies-locals', 'règim disciplinari'),
-        ref('decret-179-2015-disciplinari', 'reglament del procediment'),
+        refv('llei-16-1991-policies-locals', 'règim disciplinari', '2026-08-24'),
+        refv('decret-179-2015-disciplinari', 'reglament del procediment', '2026-08-24'),
       ],
       difficulty: 'facil',
     },
@@ -43,7 +43,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Les faltes disciplinàries es classifiquen en molt greus, greus i lleus, i a cada categoria li correspon un ventall propi de sancions i un règim de prescripció diferenciat.',
       explainEs: 'Las faltas disciplinarias se clasifican en muy graves, graves y leves, y a cada categoría le corresponde un abanico propio de sanciones y un régimen de prescripción diferenciado.',
-      refs: [ref('llei-16-1991-policies-locals', 'classificació de les faltes')],
+      refs: [refv('llei-16-1991-policies-locals', 'classificació de les faltes', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -63,7 +63,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'La suspensió provisional és una mesura cautelar que es pot adoptar durant la instrucció per assegurar l’eficàcia de la resolució o evitar la persistència dels efectes de la infracció. Si l’expedient acaba sense sanció, la persona ha de ser reposada en els seus drets.',
       explainEs: 'La suspensión provisional es una medida cautelar que puede adoptarse durante la instrucción para asegurar la eficacia de la resolución o evitar la persistencia de los efectos de la infracción. Si el expediente acaba sin sanción, la persona debe ser repuesta en sus derechos.',
-      refs: [ref('decret-179-2015-disciplinari', 'mesures cautelars')],
+      refs: [refv('decret-179-2015-disciplinari', 'mesures cautelars', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -83,7 +83,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'La separació del servei és la sanció més greu del catàleg disciplinari: comporta la pèrdua de la condició de funcionari i només es pot imposar per faltes molt greus, després d’un expedient amb totes les garanties.',
       explainEs: 'La separación del servicio es la sanción más grave del catálogo disciplinario: comporta la pérdida de la condición de funcionario y solo puede imponerse por faltas muy graves, tras un expediente con todas las garantías.',
-      refs: [ref('llei-16-1991-policies-locals', 'catàleg de sancions')],
+      refs: [refv('llei-16-1991-policies-locals', 'catàleg de sancions', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -103,7 +103,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Els criteris de graduació de les sancions disciplinàries són la intencionalitat, la pertorbació del servei, els danys i perjudicis causats a l’Administració o a la ciutadania, la reincidència i el grau de participació. La capacitat econòmica és un criteri propi de les multes administratives, no de les sancions disciplinàries.',
       explainEs: 'Los criterios de graduación de las sanciones disciplinarias son la intencionalidad, la perturbación del servicio, los daños y perjuicios causados a la Administración o a la ciudadanía, la reincidencia y el grado de participación. La capacidad económica es un criterio propio de las multas administrativas, no de las sanciones disciplinarias.',
-      refs: [ref('llei-16-1991-policies-locals', 'graduació de les sancions')],
+      refs: [refv('llei-16-1991-policies-locals', 'graduació de les sancions', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -121,7 +121,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'La Llei 39/2015, d’1 d’octubre, regula el procediment administratiu comú de les administracions públiques, és a dir, les relacions «cap enfora» amb la ciutadania. La seva bessona, la Llei 40/2015, regula el funcionament intern del sector públic.',
       explainEs: 'La Ley 39/2015, de 1 de octubre, regula el procedimiento administrativo común de las administraciones públicas, es decir, las relaciones «hacia fuera» con la ciudadanía. Su gemela, la Ley 40/2015, regula el funcionamiento interno del sector público.',
-      refs: [ref('llei-39-2015-pac', 'objecte i àmbit')],
+      refs: [refv('llei-39-2015-pac', 'objecte i àmbit', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -141,7 +141,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'La denúncia és un acte d’iniciació del procediment. La sanció només es pot imposar mitjançant resolució de l’òrgan competent, després de donar audiència a la persona interessada i de respectar la presumpció d’innocència.',
       explainEs: 'La denuncia es un acto de iniciación del procedimiento. La sanción solo puede imponerse mediante resolución del órgano competente, tras dar audiencia a la persona interesada y respetar la presunción de inocencia.',
-      refs: [ref('llei-39-2015-pac', 'art. 54, 58 i 63')],
+      refs: [refv('llei-39-2015-pac', 'art. 54, 58 i 63', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -161,7 +161,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Els principis específics de la potestat sancionadora són la legalitat, la tipicitat, la irretroactivitat, la responsabilitat, la proporcionalitat, la prescripció i el non bis in idem. La tipicitat exigeix que la infracció i la sanció estiguin previstes en una norma amb rang suficient.',
       explainEs: 'Los principios específicos de la potestad sancionadora son la legalidad, la tipicidad, la irretroactividad, la responsabilidad, la proporcionalidad, la prescripción y el non bis in idem. La tipicidad exige que la infracción y la sanción estén previstas en una norma con rango suficiente.',
-      refs: [ref('llei-40-2015-rjsp', 'art. 25 a 31')],
+      refs: [refv('llei-40-2015-rjsp', 'art. 25 a 31', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -181,7 +181,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Els procediments sancionadors respecten la presumpció d’innocència: correspon a l’Administració acreditar els fets. Les denúncies formulades per agents de l’autoritat tenen valor probatori qualificat pel que fa als fets constatats directament, però sempre admeten prova en contra.',
       explainEs: 'Los procedimientos sancionadores respetan la presunción de inocencia: corresponde a la Administración acreditar los hechos. Las denuncias formuladas por agentes de la autoridad tienen valor probatorio cualificado en cuanto a los hechos constatados directamente, pero siempre admiten prueba en contra.',
-      refs: [ref('llei-39-2015-pac', 'art. 53.2 i 77'), ref('ce-1978', 'art. 24.2')],
+      refs: [refv('llei-39-2015-pac', 'art. 53.2 i 77', '2026-08-24'), refv('ce-1978', 'art. 24.2', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -201,7 +201,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'El principi d’oficialitat obliga l’Administració a impulsar d’ofici el procediment en totes les seves fases, sense esperar que la persona interessada ho demani, i a acordar simultàniament els tràmits que admetin un impuls simultani.',
       explainEs: 'El principio de oficialidad obliga a la Administración a impulsar de oficio el procedimiento en todas sus fases, sin esperar a que la persona interesada lo pida, y a acordar simultáneamente los trámites que admitan un impulso simultáneo.',
-      refs: [ref('llei-39-2015-pac', 'art. 71')],
+      refs: [refv('llei-39-2015-pac', 'art. 71', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -219,7 +219,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Tota resolució s’ha de notificar a les persones interessades en el termini de deu dies a partir de la data en què l’acte s’hagi dictat, amb el text íntegre, la indicació de si posa fi a la via administrativa i els recursos procedents.',
       explainEs: 'Toda resolución debe notificarse a las personas interesadas en el plazo de diez días a partir de la fecha en que el acto se haya dictado, con el texto íntegro, la indicación de si pone fin a la vía administrativa y los recursos procedentes.',
-      refs: [ref('llei-39-2015-pac', 'art. 40')],
+      refs: [refv('llei-39-2015-pac', 'art. 40', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -239,7 +239,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Són nuls de ple dret, entre altres, els actes que lesionen drets susceptibles d’empara constitucional, els dictats per òrgan manifestament incompetent per raó de la matèria o del territori, els de contingut impossible, els constitutius d’infracció penal i els dictats prescindint totalment del procediment.',
       explainEs: 'Son nulos de pleno derecho, entre otros, los actos que lesionan derechos susceptibles de amparo constitucional, los dictados por órgano manifiestamente incompetente por razón de la materia o del territorio, los de contenido imposible, los constitutivos de infracción penal y los dictados prescindiendo total y absolutamente del procedimiento.',
-      refs: [ref('llei-39-2015-pac', 'art. 47')],
+      refs: [refv('llei-39-2015-pac', 'art. 47', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -259,7 +259,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'La llei exigeix motivació, amb referència succinta de fets i fonaments de dret, per als actes que limiten drets subjectius o interessos legítims, els que resolen procediments de revisió o recursos, els que se separen del criteri seguit en actuacions precedents, els sancionadors, els que suspenen actes i els que s’adopten en exercici de potestats discrecionals, entre altres.',
       explainEs: 'La ley exige motivación, con sucinta referencia de hechos y fundamentos de derecho, para los actos que limitan derechos subjetivos o intereses legítimos, los que resuelven procedimientos de revisión o recursos, los que se apartan del criterio seguido en actuaciones precedentes, los sancionadores, los que suspenden actos y los que se adoptan en ejercicio de potestades discrecionales, entre otros.',
-      refs: [ref('llei-39-2015-pac', 'art. 35')],
+      refs: [refv('llei-39-2015-pac', 'art. 35', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -279,7 +279,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'L’acte anul·lable és eficaç mentre no s’anul·li i, si el vici ho permet, es pot convalidar esmenant el defecte. L’acte nul de ple dret, en canvi, no produeix efectes des de l’origen i no admet convalidació.',
       explainEs: 'El acto anulable es eficaz mientras no se anule y, si el vicio lo permite, puede convalidarse subsanando el defecto. El acto nulo de pleno derecho, en cambio, no produce efectos desde el origen y no admite convalidación.',
-      refs: [ref('llei-39-2015-pac', 'art. 47, 48 i 52')],
+      refs: [refv('llei-39-2015-pac', 'art. 47, 48 i 52', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -299,7 +299,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Les notificacions que continguin el text íntegre de l’acte però ometin altres requisits produeixen efectes a partir de la data en què la persona interessada faci actuacions que suposin el coneixement del contingut i l’abast de la resolució, o interposi qualsevol recurs procedent.',
       explainEs: 'Las notificaciones que contengan el texto íntegro del acto pero omitan otros requisitos surten efecto a partir de la fecha en que la persona interesada realice actuaciones que supongan el conocimiento del contenido y alcance de la resolución, o interponga cualquier recurso procedente.',
-      refs: [ref('llei-39-2015-pac', 'art. 40.3')],
+      refs: [refv('llei-39-2015-pac', 'art. 40.3', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -322,7 +322,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Tenen capacitat d’obrar davant les administracions, a més de les persones amb capacitat d’obrar segons les normes civils, els menors d’edat per a l’exercici i la defensa d’aquells dels seus drets i interessos l’actuació dels quals estigui permesa per l’ordenament sense l’assistència de qui n’exerceixi la pàtria potestat o la tutela.',
       explainEs: 'Tienen capacidad de obrar ante las administraciones, además de las personas con capacidad de obrar según las normas civiles, los menores de edad para el ejercicio y defensa de aquellos de sus derechos e intereses cuya actuación esté permitida por el ordenamiento sin la asistencia de quien ejerza la patria potestad o la tutela.',
-      refs: [ref('llei-39-2015-pac', 'art. 3')],
+      refs: [refv('llei-39-2015-pac', 'art. 3', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -342,7 +342,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'La presentació d’una denúncia no confereix, per si sola, la condició de persona interessada en el procediment. Per ser-ho cal promoure’l com a titular de drets o interessos legítims, o tenir drets o interessos legítims que puguin resultar afectats per la resolució.',
       explainEs: 'La presentación de una denuncia no confiere, por sí sola, la condición de persona interesada en el procedimiento. Para serlo hay que promoverlo como titular de derechos o intereses legítimos, o tener derechos o intereses legítimos que puedan resultar afectados por la resolución.',
-      refs: [ref('llei-39-2015-pac', 'art. 4 i 62')],
+      refs: [refv('llei-39-2015-pac', 'art. 4 i 62', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -362,7 +362,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Cal acreditar la representació per formular sol·licituds, presentar declaracions responsables o comunicacions, interposar recursos, desistir d’accions i renunciar a drets en nom d’una altra persona. Per als actes i gestions de mer tràmit es presumeix la representació.',
       explainEs: 'Hay que acreditar la representación para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos en nombre de otra persona. Para los actos y gestiones de mero trámite se presume la representación.',
-      refs: [ref('llei-39-2015-pac', 'art. 5')],
+      refs: [refv('llei-39-2015-pac', 'art. 5', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -382,7 +382,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Entre els drets de les persones hi ha el de no presentar dades o documents no exigits per les normes, ni documents que ja hagin estat aportats anteriorment per la persona interessada a qualsevol Administració o que hagin estat elaborats per aquestes.',
       explainEs: 'Entre los derechos de las personas está el de no presentar datos o documentos no exigidos por las normas, ni documentos que ya hayan sido aportados anteriormente por la persona interesada a cualquier Administración o que hayan sido elaborados por estas.',
-      refs: [ref('llei-39-2015-pac', 'art. 13 i 53')],
+      refs: [refv('llei-39-2015-pac', 'art. 13 i 53', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -402,7 +402,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Tant l’Estatut com la legislació de procediment reconeixen el dret d’opció lingüística: les persones poden utilitzar qualsevol de les llengües oficials i han de ser ateses en la que triïn, sense que se’ls pugui exigir cap traducció.',
       explainEs: 'Tanto el Estatuto como la legislación de procedimiento reconocen el derecho de opción lingüística: las personas pueden utilizar cualquiera de las lenguas oficiales y deben ser atendidas en la que elijan, sin que se les pueda exigir ninguna traducción.',
-      refs: [ref('llei-39-2015-pac', 'art. 15'), ref('lo-6-2006-eac', 'drets lingüístics')],
+      refs: [refv('llei-39-2015-pac', 'art. 15', '2026-08-24'), refv('lo-6-2006-eac', 'drets lingüístics', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -420,7 +420,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Sempre que per llei o pel dret de la Unió Europea no s’expressi altra cosa, quan els terminis s’assenyalin per dies s’entén que són hàbils, i s’exclouen del còmput els dissabtes, els diumenges i els declarats festius. Si s’expressen en dies naturals, s’ha de fer constar.',
       explainEs: 'Siempre que por ley o por el derecho de la Unión Europea no se exprese otra cosa, cuando los plazos se señalen por días se entiende que son hábiles, y se excluyen del cómputo los sábados, los domingos y los declarados festivos. Si se expresan en días naturales, debe hacerse constar.',
-      refs: [ref('llei-39-2015-pac', 'art. 30.1 i 30.2')],
+      refs: [refv('llei-39-2015-pac', 'art. 30.1 i 30.2', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -435,7 +435,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Quan les normes reguladores dels procediments no fixin el termini màxim, aquest serà de tres mesos. El termini es compta des de la data de l’acord d’iniciació en els procediments d’ofici, i des de l’entrada de la sol·licitud al registre de l’òrgan competent en els iniciats a sol·licitud de la persona interessada.',
       explainEs: 'Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, este será de tres meses. El plazo se cuenta desde la fecha del acuerdo de iniciación en los procedimientos de oficio, y desde la entrada de la solicitud en el registro del órgano competente en los iniciados a solicitud de la persona interesada.',
-      refs: [ref('llei-39-2015-pac', 'art. 21')],
+      refs: [refv('llei-39-2015-pac', 'art. 21', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -455,7 +455,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'En els procediments iniciats d’ofici dels quals pugui derivar l’exercici de potestats sancionadores o, en general, efectes desfavorables o de gravamen, el venciment del termini màxim sense dictar resolució produeix la caducitat del procediment.',
       explainEs: 'En los procedimientos iniciados de oficio de los que pueda derivarse el ejercicio de potestades sancionadoras o, en general, efectos desfavorables o de gravamen, el vencimiento del plazo máximo sin dictar resolución produce la caducidad del procedimiento.',
-      refs: [ref('llei-39-2015-pac', 'art. 25.1.b')],
+      refs: [refv('llei-39-2015-pac', 'art. 25.1.b', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -475,7 +475,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Quan l’últim dia del termini sigui inhàbil, s’entén prorrogat al primer dia hàbil següent. Aquesta és una regla de garantia per a la persona interessada.',
       explainEs: 'Cuando el último día del plazo sea inhábil, se entiende prorrogado al primer día hábil siguiente. Esta es una regla de garantía para la persona interesada.',
-      refs: [ref('llei-39-2015-pac', 'art. 30.5')],
+      refs: [refv('llei-39-2015-pac', 'art. 30.5', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -495,7 +495,7 @@ export const QUESTIONS_11_15: Question[] = [
       },
       explainCa: 'Són motius d’abstenció, entre altres, tenir interès personal en l’assumpte, tenir parentiu proper amb les persones interessades, tenir amistat íntima o enemistat manifesta, i haver intervingut com a perit o testimoni. Qui hi concorri s’ha d’abstenir i comunicar-ho al superior immediat.',
       explainEs: 'Son motivos de abstención, entre otros, tener interés personal en el asunto, tener parentesco cercano con las personas interesadas, tener amistad íntima o enemistad manifiesta, y haber intervenido como perito o testigo. Quien incurra en ellos debe abstenerse y comunicarlo al superior inmediato.',
-      refs: [ref('llei-40-2015-rjsp', 'art. 23 i 24')],
+      refs: [refv('llei-40-2015-rjsp', 'art. 23 i 24', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),

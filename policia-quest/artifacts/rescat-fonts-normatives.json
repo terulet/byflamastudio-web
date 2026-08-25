@@ -14,79 +14,163 @@
     "P1": "necessària per a lliçons i preguntes pròpies (entre 2 i 9 consumidors)",
     "P2": "un sol consumidor o cap: impacte menor"
   },
-  "contentFingerprint": "b07c3beb8f4cf817bea13b2fd2ba0165b9d08577018109e58fa365ffefcafb95",
+  "contentFingerprint": "7eae9a6321ec0b1fbd99eeb531cd7a29a85449be4fba9d69dfd552fc203a931e",
   "totals": {
-    "pendingSources": 43,
-    "pendingReferences": 313,
-    "ownQuestionsBlocked": 213,
-    "lessonsBlocked": 39,
-    "officialQuestionsUnlockable": 129,
+    "pendingSources": 0,
+    "pendingReferences": 26,
+    "ownQuestionsBlocked": 0,
+    "lessonsBlocked": 0,
+    "officialQuestionsUnlockable": 0,
     "byPriority": {
-      "P0": 16,
-      "P1": 23,
-      "P2": 4
+      "P0": 0,
+      "P1": 0,
+      "P2": 0
     },
-    "byIssuer": {
-      "BOE": 27,
-      "Portal Jurídic de Catalunya": 7,
-      "Ajuntament de Roses": 4,
-      "EUR-Lex": 2,
-      "Departament d’Interior i Seguretat Pública": 1,
-      "Generalitat de Catalunya": 1,
-      "Nacions Unides": 1
-    }
+    "byIssuer": {}
   },
   "validations": [
     {
       "id": "1",
       "title": "Totes les fonts pendents són a l’inventari",
-      "detail": "43 entrades per a 43 fonts amb fetchStatus pending-download.",
+      "detail": "Cap font amb fetchStatus pending-download: totes tenen còpia local. La taula ENRICHMENT es conserva com a registre del rescat.",
       "ok": true
     },
     {
       "id": "2",
       "title": "Cap referència pendent d’una font inventariada es queda fora",
-      "detail": "313 referències pendents en total; 311 apunten a fonts inventariades i totes hi consten. 2 apunten a fonts ja adoptades i queden anotades com a troballa.",
+      "detail": "26 referències pendents en total; 0 apunten a fonts inventariades i totes hi consten. 26 apunten a fonts ja adoptades i queden anotades com a troballa.",
       "ok": true
     },
     {
       "id": "3",
       "title": "Cap font ja baixada no s’ha colat a l’inventari",
-      "detail": "Les 43 entrades tenen fetchStatus pending-download al manifest.",
+      "detail": "Les 0 entrades tenen fetchStatus pending-download al manifest.",
       "ok": true
     },
     {
       "id": "4",
-      "title": "Cap pregunta, clau, topicId ni explicació ha canviat",
-      "detail": "content/ i src/ sense canvis respecte de HEAD; empremta de 439 preguntes: b07c3beb8f4cf817…",
+      "title": "Cap afirmació de l’inventari apunta a una pregunta o lliçó que ja no existeix",
+      "detail": "439 preguntes i 40 lliçons resolen tots els consumidors; empremta de contingut: 7eae9a6321ec0b1f…",
       "ok": true
     },
     {
       "id": "5",
       "title": "La taula revisada i les dades reals quadren exactament",
-      "detail": "Cap entrada sobrera a ENRICHMENT; una font pendent nova sense classificar atura l’script abans d’escriure res.",
+      "detail": "43 entrades corresponen a fonts ja rescatades i es conserven com a registre; cap entrada desconeguda.",
       "ok": true
     }
   ],
   "findings": {
     "pendingReferencesOnAdoptedSources": [
       {
-        "consumer": "q-roses-t24-002",
-        "sourceId": "roses-bases-2026-interins"
+        "consumer": "q-roses-t04-005",
+        "sourceId": "llei-4-2003-seguretat-publica"
       },
       {
-        "consumer": "roses-t24-l1",
-        "sourceId": "roses-bases-2026-interins"
+        "consumer": "q-roses-t19-001",
+        "sourceId": "agencia-ciberseguretat-catalunya"
+      },
+      {
+        "consumer": "q-roses-t19-002",
+        "sourceId": "agencia-ciberseguretat-catalunya"
+      },
+      {
+        "consumer": "q-roses-t19-003",
+        "sourceId": "agencia-ciberseguretat-catalunya"
+      },
+      {
+        "consumer": "q-roses-t19-004",
+        "sourceId": "agencia-ciberseguretat-catalunya"
+      },
+      {
+        "consumer": "q-roses-t19-005",
+        "sourceId": "agencia-ciberseguretat-catalunya"
+      },
+      {
+        "consumer": "q-roses-t31-001",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-002",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-003",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-004",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-005",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-006",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t34-005",
+        "sourceId": "llei-7-2023-benestar-animal"
+      },
+      {
+        "consumer": "q-roses-t31-101",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-102",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-103",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-104",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-105",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-106",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-107",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t31-108",
+        "sourceId": "roses-web-municipi"
+      },
+      {
+        "consumer": "q-roses-t01-101",
+        "sourceId": "ce-1978"
+      },
+      {
+        "consumer": "q-roses-t01-102",
+        "sourceId": "ce-1978"
+      },
+      {
+        "consumer": "q-roses-t04-102",
+        "sourceId": "lo-6-2006-eac"
+      },
+      {
+        "consumer": "roses-t19-l1",
+        "sourceId": "agencia-ciberseguretat-catalunya"
+      },
+      {
+        "consumer": "roses-t31-l1",
+        "sourceId": "roses-web-municipi"
       }
     ],
-    "issuersWithGazetteInline": [
-      {
-        "sourceId": "llei-10-1999-gossos-cat",
-        "issuer": "Portal Jurídic de Catalunya — DOGC núm. 2948"
-      }
-    ]
+    "issuersWithGazetteInline": []
   },
-  "sources": [
+  "sources": [],
+  "rescued": [
     {
       "sourceId": "roses-arxiu-examens",
       "priority": "P2",
@@ -175,7 +259,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t06",
           "locator": "ordenances vigents de Roses",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Ordenances i bans: les normes que aplica la policia local»."
         },
         {
@@ -183,7 +267,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t31",
           "locator": "delimitació d’àmbits i zones al terme municipal",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Roses: territori, història i equipaments»."
         }
       ],
@@ -546,7 +630,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t01",
           "locator": "estructura general",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quants articles té la Constitució espanyola de 1978?» és «169 articles»."
         },
         {
@@ -554,7 +638,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t01",
           "locator": "art. 1.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’article 1.1 de la Constitució, quins són els valors superiors de l’ordenament jurídic?» és «La llibertat, la justícia, la igualtat i el pluralisme polític»."
         },
         {
@@ -562,7 +646,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t01",
           "locator": "art. 9.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests principis NO està garantit expressament per l’article 9.3 de la Constitució?» és «La proporcionalitat de les penes»."
         },
         {
@@ -570,7 +654,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t01",
           "locator": "art. 167 i 168",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La reforma agreujada de l’article 168 de la Constitució s’exigeix, entre altres supòsits, quan la reforma afecta:» és «El títol preliminar, la secció 1a del capítol II del títol I o el títol II»."
         },
         {
@@ -578,7 +662,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t01",
           "locator": "art. 1.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’article 1.3 de la Constitució, la forma política de l’Estat espanyol és:» és «La monarquia parlamentària»."
         },
         {
@@ -586,7 +670,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 53.2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El recurs d’empara davant el Tribunal Constitucional protegeix:» és «L’article 14, els articles 15 a 29 i l’objecció de consciència de l’article 30.2»."
         },
         {
@@ -594,7 +678,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 17.2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la durada màxima de la detenció preventiva segons l’article 17.2 de la Constitució?» és «72 hores»."
         },
         {
@@ -602,7 +686,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 55",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La suspensió individual de drets prevista a l’article 55.2 de la Constitució, en relació amb bandes armades o terrorisme, pot a…» és «El termini màxim de detenció preventiva, la inviolabilitat del domicili i el secret de les comunicacions»."
         },
         {
@@ -610,7 +694,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 21",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El dret de reunió pacífica i sense armes reconegut a l’article 21 de la Constitució:» és «No requereix autorització prèvia; en llocs de trànsit públic i manifestacions cal comunicació prèvia»."
         },
         {
@@ -618,7 +702,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 54",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El Defensor del Poble és:» és «Un alt comissionat de les Corts Generals designat per aquestes»."
         },
         {
@@ -626,7 +710,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "títol IX, art. 159 i següents",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El Tribunal Constitucional:» és «És un òrgan constitucional independent que no forma part del poder judicial»."
         },
         {
@@ -634,7 +718,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "art. 159.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Els dotze magistrats del Tribunal Constitucional són nomenats pel Rei a proposta de:» és «Quatre del Congrés, quatre del Senat, dos del Govern i dos del CGPJ»."
         },
         {
@@ -642,7 +726,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "art. 117.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’article 117 de la Constitució, la justícia:» és «Emana del poble i s’administra en nom del Rei»."
         },
         {
@@ -650,7 +734,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "art. 152",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin òrgan judicial culmina l’organització judicial dins el territori de Catalunya?» és «El Tribunal Superior de Justícia de Catalunya»."
         },
         {
@@ -658,7 +742,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "art. 159.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La durada del mandat dels magistrats del Tribunal Constitucional és de:» és «Nou anys»."
         },
         {
@@ -666,7 +750,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t12",
           "locator": "art. 24.2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La presumpció d’innocència en el procediment administratiu sancionador:» és «S’aplica plenament i correspon a l’Administració provar els fets»."
         },
         {
@@ -674,7 +758,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "art. 18.4",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El dret a la protecció de dades personals:» és «És un dret fonamental autònom, diferenciat del dret a la intimitat»."
         },
         {
@@ -682,7 +766,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t26",
           "locator": "art. 21",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una reunió pacífica i sense armes en un lloc de trànsit públic:» és «Requereix comunicació prèvia a l’autoritat, però no autorització»."
         },
         {
@@ -690,7 +774,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
           "locator": "art. 125",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’acusació popular és la que exerceix:» és «Qualsevol ciutadà en els delictes públics, encara que no sigui la persona ofesa»."
         },
         {
@@ -698,7 +782,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
           "locator": "art. 126",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La policia judicial actua sota la dependència funcional de:» és «Els jutges, els tribunals i el Ministeri Fiscal»."
         },
         {
@@ -706,7 +790,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
           "locator": "art. 123",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és l’òrgan penal superior de l’Estat en tots els ordres, excepte en matèria de garanties constitucionals?» és «El Tribunal Suprem»."
         },
         {
@@ -714,7 +798,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t29",
           "locator": "art. 9.3 i 25.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons el principi de legalitat penal, les lleis penals:» és «No són retroactives, llevat que afavoreixin la persona reu»."
         },
         {
@@ -722,7 +806,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t37",
           "locator": "art. 17.4",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’habeas corpus serveix per:» és «Examinar la legalitat de la privació de llibertat»."
         },
         {
@@ -746,7 +830,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t01",
           "locator": "art. 3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons la Constitució, la llengua espanyola oficial de l’Estat és:» és «El castellà»."
         },
         {
@@ -754,7 +838,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 14",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin article de la Constitució proclama la igualtat davant la llei sense discriminació?» és «L’article 14»."
         },
         {
@@ -762,7 +846,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t02",
           "locator": "art. 15",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La pena de mort a Espanya:» és «Està abolida, tret del que puguin disposar les lleis penals militars en temps de guerra»."
         },
         {
@@ -770,7 +854,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "art. 122.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quants vocals té el Consell General del Poder Judicial, a més del seu president?» és «Vint»."
         },
         {
@@ -778,7 +862,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "art. 54",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin òrgan té encomanada la defensa dels drets del títol I de la Constitució com a alt comissionat de les Corts?» és «El Defensor del Poble»."
         },
         {
@@ -786,7 +870,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t01",
           "locator": "art. 1, 2, 9 i títol X (art. 166-169)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «La Constitució de 1978: l’esquelet de tot el sistema»."
         },
         {
@@ -794,7 +878,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t01",
           "locator": "estructura general: títol preliminar i títols I a X",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «La Constitució de 1978: l’esquelet de tot el sistema»."
         },
         {
@@ -802,7 +886,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t02",
           "locator": "títol I, art. 10 a 55",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Drets fonamentals: què protegeix cada nivell»."
         },
         {
@@ -810,7 +894,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t02",
           "locator": "art. 53 i 54 (garanties i Defensor del Poble)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Drets fonamentals: què protegeix cada nivell»."
         },
         {
@@ -818,7 +902,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t07",
           "locator": "títol VI (art. 117-127) i títol IX (art. 159-165)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Poder judicial i Tribunal Constitucional»."
         },
         {
@@ -826,7 +910,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t20",
           "locator": "art. 18.4",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Protecció de dades»."
         },
         {
@@ -834,7 +918,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t26",
           "locator": "art. 21 (dret de reunió)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Protecció de la seguretat ciutadana»."
         },
         {
@@ -842,7 +926,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t28",
           "locator": "art. 117 a 127",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «La jurisdicció penal»."
         },
         {
@@ -850,7 +934,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t37",
           "locator": "art. 17",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Detenció, drets i habeas corpus»."
         }
       ],
@@ -1028,7 +1112,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "norma aprovatòria",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’Estatut d’autonomia de Catalunya vigent va ser aprovat per:» és «La Llei orgànica 6/2006, de 19 de juliol»."
         },
         {
@@ -1036,7 +1120,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "drets i deures lingüístics",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’Estatut, la llengua pròpia de Catalunya és:» és «El català, que és també llengua oficial juntament amb el castellà»."
         },
         {
@@ -1044,7 +1128,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "drets lingüístics davant les administracions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El dret d’opció lingüística reconegut per l’Estatut implica que:» és «Les persones tenen dret a ser ateses en la llengua oficial que triïn»."
         },
         {
@@ -1052,7 +1136,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "text consolidat després de la STC 31/2010",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina sentència del Tribunal Constitucional va declarar inconstitucionals o va reinterpretar diversos preceptes de l’Estatut de…» és «La STC 31/2010»."
         },
         {
@@ -1060,7 +1144,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "govern local",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’Estatut, quin és l’ens bàsic de l’organització territorial de Catalunya i del govern local?» és «El municipi»."
         },
         {
@@ -1068,7 +1152,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t04",
           "locator": "la Presidència de la Generalitat",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El president o presidenta de la Generalitat de Catalunya és:» és «Elegit pel Parlament d’entre els seus membres i nomenat pel Rei»."
         },
         {
@@ -1076,7 +1160,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t04",
           "locator": "el Parlament",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La durada ordinària del mandat del Parlament de Catalunya és de:» és «Quatre anys»."
         },
         {
@@ -1084,7 +1168,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t04",
           "locator": "competències en seguretat pública",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La relació entre la Generalitat i les policies locals de Catalunya és de:» és «Coordinació, mantenint la dependència de l’alcalde o alcaldessa»."
         },
         {
@@ -1092,7 +1176,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t04",
           "locator": "el Govern",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és l’òrgan superior col·legiat que dirigeix l’acció política i l’Administració de la Generalitat?» és «El Govern o Consell Executiu»."
         },
         {
@@ -1100,7 +1184,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t07",
           "locator": "el poder judicial a Catalunya",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin òrgan judicial culmina l’organització judicial dins el territori de Catalunya?» és «El Tribunal Superior de Justícia de Catalunya»."
         },
         {
@@ -1108,7 +1192,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t14",
           "locator": "drets lingüístics",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una persona pot dirigir-se a l’Ajuntament de Roses en castellà i ser-hi atesa en aquesta llengua?» és «Sí, perquè el castellà també és llengua oficial i regeix el dret d’opció lingüística»."
         },
         {
@@ -1116,7 +1200,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "règim lingüístic",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quantes llengües són oficials a Catalunya?» és «Tres»."
         },
         {
@@ -1124,7 +1208,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "l’aranès",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’aranès és la variant d’una llengua més àmplia. Quina?» és «L’occità»."
         },
         {
@@ -1132,7 +1216,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t04",
           "locator": "antecedents i norma aprovatòria",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quantes vegades s’ha reformat l’Estatut d’autonomia de Catalunya des de la Transició?» és «Una: el de 2006 va substituir el de 1979»."
         },
         {
@@ -1148,7 +1232,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t03",
           "locator": "títol I (drets i deures) i capítol de govern local",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «L’Estatut d’Autonomia de Catalunya de 2006»."
         },
         {
@@ -1156,7 +1240,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t03",
           "locator": "competències en matèria de seguretat pública",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «L’Estatut d’Autonomia de Catalunya de 2006»."
         },
         {
@@ -1164,7 +1248,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t04",
           "locator": "institucions de la Generalitat: Parlament, Presidència i Govern",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Generalitat, Parlament i Govern»."
         },
         {
@@ -1172,7 +1256,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t07",
           "locator": "el poder judicial a Catalunya i el TSJC",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Poder judicial i Tribunal Constitucional»."
         }
       ],
@@ -1293,6 +1377,7 @@
         "art. 15 i 16",
         "art. 20",
         "art. 21.1.e",
+        "art. 21.1.i",
         "art. 22 i 49",
         "art. 25",
         "art. 4",
@@ -1306,7 +1391,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t03",
           "locator": "art. 1 i 11",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’Estatut, quin és l’ens bàsic de l’organització territorial de Catalunya i del govern local?» és «El municipi»."
         },
         {
@@ -1314,7 +1399,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t05",
           "locator": "art. 11",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quins són els tres elements del municipi segons la legislació bàsica de règim local?» és «Territori, població i organització»."
         },
         {
@@ -1322,7 +1407,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t05",
           "locator": "art. 15 i 16",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui té la condició de veí d’un municipi?» és «Qui estigui inscrit al padró municipal d’habitants»."
         },
         {
@@ -1330,7 +1415,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t05",
           "locator": "art. 20",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests òrgans NO és d’existència obligatòria en tots els municipis?» és «La junta de govern local»."
         },
         {
@@ -1338,7 +1423,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t05",
           "locator": "art. 25",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes és una competència pròpia del municipi en matèria de seguretat?» és «La policia local i la seguretat en llocs públics»."
         },
         {
@@ -1346,7 +1431,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t05",
           "locator": "art. 4",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La presumpció de legitimitat i l’executivitat dels actes municipals és:» és «Una potestat reconeguda als municipis per la legislació de règim local»."
         },
         {
@@ -1354,7 +1439,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t06",
           "locator": "art. 49",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és el termini mínim d’informació pública i audiència en la tramitació d’una ordenança municipal?» és «30 dies»."
         },
         {
@@ -1362,7 +1447,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t06",
           "locator": "art. 22 i 49",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui té la competència per aprovar una ordenança municipal?» és «El ple de la corporació»."
         },
         {
@@ -1370,7 +1455,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t06",
           "locator": "art. 21.1.e",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un ban de l’alcaldia pot:» és «Recordar, concretar o advertir sobre el compliment de normes ja existents»."
         },
         {
@@ -1378,7 +1463,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t06",
           "locator": "art. 65.2 i 70.2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «On s’ha de publicar íntegrament una ordenança municipal de Roses perquè pugui entrar en vigor?» és «Al Butlletí Oficial de la Província de Girona»."
         },
         {
@@ -1386,15 +1471,23 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t06",
           "locator": "art. 49",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Si durant el període d’informació pública no es presenta cap reclamació ni suggeriment sobre una ordenança:» és «L’acord fins llavors provisional esdevé definitiu automàticament»."
+        },
+        {
+          "consumer": "q-roses-t24-004",
+          "consumerKind": "pregunta",
+          "topicId": "roses-t24",
+          "locator": "art. 21.1.i",
+          "reviewStatus": "verified",
+          "claim": "Que, en el punt citat, la resposta a «De qui depèn jeràrquicament el cos de la Policia Local de Roses?» és «De l’alcalde o alcaldessa de Roses»."
         },
         {
           "consumer": "roses-t05-l1",
           "consumerKind": "llico",
           "topicId": "roses-t05",
           "locator": "art. 1, 4, 11, 12, 15, 16, 20 i 25",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «El municipi: territori, població i organització»."
         },
         {
@@ -1402,7 +1495,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t06",
           "locator": "art. 4.1.a, 21.1.e, 49, 70.2 i 84",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Ordenances i bans: les normes que aplica la policia local»."
         },
         {
@@ -1410,7 +1503,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t36",
           "locator": "art. 139 a 141 (tipificació d’infraccions i límits de les multes)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Ordenança de convivència ciutadana de Roses»."
         }
       ],
@@ -1426,7 +1519,8 @@
           "q-roses-t06-002",
           "q-roses-t06-003",
           "q-roses-t06-004",
-          "q-roses-t06-005"
+          "q-roses-t06-005",
+          "q-roses-t24-004"
         ],
         "lessons": [
           "roses-t05-l1",
@@ -1437,6 +1531,7 @@
           "roses-t03",
           "roses-t05",
           "roses-t06",
+          "roses-t24",
           "roses-t36"
         ],
         "primarySourceForTopics": [
@@ -1456,13 +1551,18 @@
           "q-of-roses-2025-propietat-cp-005",
           "q-of-roses-2025-propietat-cp-006",
           "q-of-roses-2025-propietat-cp-012",
+          "q-of-roses-2025-propietat-cp-024",
+          "q-of-roses-2025-propietat-cp-025",
+          "q-of-roses-2025-propietat-cp-026",
+          "q-of-roses-2025-propietat-cp-034",
           "q-of-roses-2025-interins-cp-003",
           "q-of-roses-2025-interins-cp-005",
           "q-of-roses-2025-interins-cp-006",
           "q-of-roses-2025-interins-cp-007",
+          "q-of-roses-2025-interins-cp-026",
           "q-of-roses-2025-interins-cp-036"
         ],
-        "totalConsumers": 14
+        "totalConsumers": 15
       },
       "offlinePackage": {
         "filename": "llei-7-1985-lrbrl.pdf",
@@ -1529,7 +1629,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 8",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons l’Estatut bàsic de l’empleat públic, quines són les classes d’empleats públics?» és «Funcionaris de carrera, funcionaris interins, personal laboral i personal eventual»."
         },
         {
@@ -1537,7 +1637,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 14 i 15",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests drets s’exerceix col·lectivament segons l’Estatut bàsic de l’empleat públic?» és «La llibertat sindical»."
         },
         {
@@ -1545,15 +1645,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 54",
-          "reviewStatus": "pending-source-verification",
-          "claim": "Que, en el punt citat, la resposta a «El deure d’obediència d’un empleat públic cedeix quan la instrucció rebuda:» és «Constitueix una infracció manifesta, clara i terminant de l’ordenament jurídic»."
+          "reviewStatus": "verified",
+          "claim": "Que, en el punt citat, la resposta a «El deure d’obediència d’un empleat públic cedeix quan la instrucció rebuda:» és «Constitueix una infracció manifesta de l’ordenament jurídic»."
         },
         {
           "consumer": "q-roses-t08-004",
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 52, 53 i 54",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El codi de conducta dels empleats públics està integrat per:» és «Els principis ètics i els principis de conducta»."
         },
         {
@@ -1561,7 +1661,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 53",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’abstenció en els assumptes en què es tingui un interès personal és, segons l’Estatut bàsic:» és «Un principi ètic d’obligat compliment»."
         },
         {
@@ -1569,7 +1669,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "art. 53",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un company t’explica que ha «arreglat» una denúncia a un conegut. Segons els principis ètics i deontològics, això és:» és «Un tracte de favor prohibit que pot constituir falta disciplinària i, segons el cas, delicte»."
         },
         {
@@ -1577,7 +1677,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t08",
           "locator": "art. 8, 14, 15, 52, 53 i 54",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Drets, deures i codi de conducta dels funcionaris»."
         }
       ],
@@ -1663,7 +1763,7 @@
         "art. 1, 3, 11, 12, 14 i 16",
         "art. 11 i 12",
         "art. 14",
-        "art. 16",
+        "art. 16.4",
         "art. 3 i 14"
       ],
       "claims": [
@@ -1672,15 +1772,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t09",
           "locator": "art. 1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El principi general de la Llei 53/1984 d’incompatibilitats és que el personal al servei de les administracions públiques:» és «Només pot ocupar un lloc de treball al sector públic»."
         },
         {
           "consumer": "q-roses-t09-002",
           "consumerKind": "pregunta",
           "topicId": "roses-t09",
-          "locator": "art. 16",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 16.4",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «No es pot autoritzar la compatibilitat per a activitats privades quan el complement específic o concepte equiparable supera:» és «El 30 % de la retribució bàsica, exclosa l’antiguitat»."
         },
         {
@@ -1688,7 +1788,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t09",
           "locator": "art. 14",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El reconeixement de compatibilitat per a una segona activitat:» és «No pot modificar la jornada de treball ni l’horari de la persona interessada»."
         },
         {
@@ -1696,7 +1796,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t09",
           "locator": "art. 11 i 12",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En cap cas es pot autoritzar l’exercici d’activitats privades que:» és «Es relacionin amb assumptes en què la persona intervingui o hagi intervingut els dos últims anys»."
         },
         {
@@ -1704,7 +1804,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t09",
           "locator": "art. 3 i 14",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Iniciar una activitat privada abans d’obtenir el reconeixement de compatibilitat:» és «Constitueix per si mateix un incompliment del règim d’incompatibilitats»."
         },
         {
@@ -1712,7 +1812,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t09",
           "locator": "art. 1, 3, 11, 12, 14 i 16",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Incompatibilitats: un sol lloc al sector públic»."
         }
       ],
@@ -1805,7 +1905,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t10",
           "locator": "art. 59",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quins impostos són d’exigència obligatòria per als ajuntaments?» és «IBI, IAE i IVTM»."
         },
         {
@@ -1813,7 +1913,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t10",
           "locator": "art. 169.6",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Si el pressupost municipal no està aprovat definitivament l’1 de gener:» és «Es prorroga automàticament el de l’exercici anterior amb els seus crèdits inicials»."
         },
         {
@@ -1821,7 +1921,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t10",
           "locator": "art. 20 i 41",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La diferència essencial entre una taxa i un preu públic és que:» és «La taxa retribueix serveis de recepció obligatòria o en règim de monopoli públic; el preu públic, serveis de recepció voluntària que també presta el sector privat»."
         },
         {
@@ -1829,7 +1929,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t10",
           "locator": "art. 168 i 169",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El pressupost general de l’entitat local s’ha de remetre al ple per a la seva aprovació abans del:» és «15 d’octubre»."
         },
         {
@@ -1837,7 +1937,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t10",
           "locator": "art. 2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Les multes i sancions imposades per l’Ajuntament de Roses en matèria de trànsit són, dins la hisenda local:» és «Un recurs de la hisenda local dins la categoria de multes i sancions»."
         },
         {
@@ -1845,7 +1945,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t10",
           "locator": "art. 2, 20, 41, 59, 162, 164, 168 i 169",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Pressupostos i hisendes locals»."
         }
       ],
@@ -1990,7 +2090,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t12",
           "locator": "objecte i àmbit",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina llei regula el procediment administratiu comú de les administracions públiques?» és «La Llei 39/2015»."
         },
         {
@@ -1998,7 +2098,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t12",
           "locator": "art. 54, 58 i 63",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quan un agent de la Policia Local de Roses formula una denúncia per infracció de l’ordenança de convivència:» és «Inicia el procediment sancionador, que resoldrà l’òrgan competent»."
         },
         {
@@ -2006,7 +2106,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t12",
           "locator": "art. 53.2 i 77",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La presumpció d’innocència en el procediment administratiu sancionador:» és «S’aplica plenament i correspon a l’Administració provar els fets»."
         },
         {
@@ -2014,7 +2114,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t12",
           "locator": "art. 71",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El principi d’oficialitat en el procediment administratiu significa que:» és «L’Administració ha d’impulsar el procediment d’ofici en totes les seves fases»."
         },
         {
@@ -2022,7 +2122,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t13",
           "locator": "art. 40",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En quin termini s’ha de notificar una resolució administrativa des que es dicta l’acte?» és «10 dies»."
         },
         {
@@ -2030,7 +2130,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t13",
           "locator": "art. 47",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests supòsits és causa de nul·litat de ple dret d’un acte administratiu?» és «Que l’hagi dictat un òrgan manifestament incompetent per raó de la matèria o del territori»."
         },
         {
@@ -2038,7 +2138,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t13",
           "locator": "art. 35",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quins actes administratius han de ser motivats?» és «Els que limiten drets subjectius, resolen recursos, se separen del criteri precedent, els sancionadors i els discrecionals, entre altres»."
         },
         {
@@ -2046,7 +2146,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t13",
           "locator": "art. 47, 48 i 52",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un acte anul·lable, a diferència d’un acte nul de ple dret:» és «Produeix efectes fins que s’anul·la i pot ser convalidat»."
         },
         {
@@ -2054,7 +2154,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t13",
           "locator": "art. 40.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una notificació que ometi els recursos procedents:» és «Produeix efectes des que la persona interessada fa una actuació que en demostri el coneixement o interposa el recurs procedent»."
         },
         {
@@ -2062,7 +2162,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t14",
           "locator": "art. 3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Els menors d’edat davant l’Administració:» és «Tenen capacitat d’obrar per a l’exercici i la defensa dels drets que l’ordenament els permet sense assistència»."
         },
         {
@@ -2070,7 +2170,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t14",
           "locator": "art. 4 i 62",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui presenta una denúncia administrativa adquireix per aquest sol fet la condició de persona interessada?» és «No; cal ser titular d’un dret o interès legítim afectat»."
         },
         {
@@ -2078,7 +2178,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t14",
           "locator": "art. 5",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Per a quin d’aquests actes NO cal acreditar la representació?» és «Realitzar actes de tràmit ordinari»."
         },
         {
@@ -2086,7 +2186,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t14",
           "locator": "art. 13 i 53",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests és un dret de les persones en les seves relacions amb les administracions públiques?» és «No presentar documents ja aportats o elaborats per qualsevol Administració»."
         },
         {
@@ -2094,7 +2194,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t14",
           "locator": "art. 15",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una persona pot dirigir-se a l’Ajuntament de Roses en castellà i ser-hi atesa en aquesta llengua?» és «Sí, perquè el castellà també és llengua oficial i regeix el dret d’opció lingüística»."
         },
         {
@@ -2102,7 +2202,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t15",
           "locator": "art. 30.1 i 30.2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quan un termini administratiu s’assenyala per dies i la norma no diu res més, s’entenen:» és «Dies hàbils, excloent dissabtes, diumenges i festius»."
         },
         {
@@ -2110,7 +2210,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t15",
           "locator": "art. 21",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és el termini màxim per notificar la resolució d’un procediment quan la norma reguladora no en fixa cap?» és «Tres mesos»."
         },
         {
@@ -2118,7 +2218,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t15",
           "locator": "art. 25.1.b",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En un procediment sancionador iniciat d’ofici, la manca de resolució en termini produeix:» és «La caducitat del procediment»."
         },
         {
@@ -2126,7 +2226,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t15",
           "locator": "art. 30.5",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Si l’últim dia d’un termini administratiu és inhàbil:» és «S’entén prorrogat al primer dia hàbil següent»."
         },
         {
@@ -2134,7 +2234,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t16",
           "locator": "títol IV, capítols II a VI",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quines són les quatre fases del procediment administratiu?» és «Iniciació, ordenació, instrucció i finalització»."
         },
         {
@@ -2142,7 +2242,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t16",
           "locator": "art. 82",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El tràmit d’audiència s’ha de concedir per un termini:» és «No inferior a deu dies ni superior a quinze»."
         },
         {
@@ -2150,7 +2250,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t16",
           "locator": "art. 54 i 58",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes NO és una forma de començar un procediment d’ofici?» és «Per sol·licitud de la persona interessada»."
         },
         {
@@ -2158,7 +2258,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t16",
           "locator": "art. 94",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina diferència hi ha entre desistiment i renúncia?» és «Qui desisteix abandona la sol·licitud però conserva el dret; qui renuncia abandona el dret mateix»."
         },
         {
@@ -2166,7 +2266,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t16",
           "locator": "art. 56",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Les mesures provisionals en un procediment administratiu:» és «Es poden adoptar per assegurar l’eficàcia de la resolució, fins i tot abans de la iniciació en casos d’urgència inajornable»."
         },
         {
@@ -2174,7 +2274,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t17",
           "locator": "art. 100",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quins són els mitjans d’execució forçosa previstos per la Llei 39/2015?» és «Constrenyiment sobre el patrimoni, execució subsidiària, multa coercitiva i compulsió sobre les persones»."
         },
         {
@@ -2182,7 +2282,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t17",
           "locator": "art. 122",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El termini per interposar un recurs d’alçada contra un acte exprés és de:» és «Un mes»."
         },
         {
@@ -2190,7 +2290,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t17",
           "locator": "art. 123",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El recurs potestatiu de reposició s’interposa contra actes que:» és «Posen fi a la via administrativa»."
         },
         {
@@ -2198,7 +2298,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t17",
           "locator": "art. 124",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El termini màxim per resoldre i notificar un recurs de reposició és de:» és «Un mes»."
         },
         {
@@ -2206,7 +2306,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t17",
           "locator": "art. 106, 107 i 109",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Per anul·lar un acte declaratiu de drets que sigui merament anul·lable, l’Administració ha de:» és «Declarar-lo lesiu per a l’interès públic i impugnar-lo davant la jurisdicció contenciosa administrativa»."
         },
         {
@@ -2214,7 +2314,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t12",
           "locator": "títol preliminar i disposicions generals",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «El procediment administratiu com a garantia»."
         },
         {
@@ -2222,7 +2322,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t13",
           "locator": "art. 34 a 52 (requisits, eficàcia i invalidesa dels actes)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «L’acte administratiu: validesa i invalidesa»."
         },
         {
@@ -2230,7 +2330,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t14",
           "locator": "art. 3 a 13 (capacitat, interessat, representació i drets)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Les persones en el procediment»."
         },
         {
@@ -2238,7 +2338,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t15",
           "locator": "art. 21, 24, 25, 29 a 33",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Terminis, silenci i abstenció»."
         },
         {
@@ -2246,7 +2346,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t16",
           "locator": "art. 54 a 95 (iniciació, ordenació, instrucció i finalització)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Les fases del procediment administratiu»."
         },
         {
@@ -2254,7 +2354,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t17",
           "locator": "art. 98 a 126 (executivitat, execució forçosa, revisió i recursos)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Execució i revisió de l’acte administratiu»."
         }
       ],
@@ -2398,7 +2498,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 23",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’abstenció en els assumptes en què es tingui un interès personal és, segons l’Estatut bàsic:» és «Un principi ètic d’obligat compliment»."
         },
         {
@@ -2406,7 +2506,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t12",
           "locator": "art. 25 a 31",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests principis és específic de la potestat sancionadora?» és «El principi de tipicitat»."
         },
         {
@@ -2414,7 +2514,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t15",
           "locator": "art. 23 i 24",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un funcionari amb amistat íntima amb la persona interessada en un expedient:» és «S’ha d’abstenir i comunicar-ho al seu superior»."
         },
         {
@@ -2422,7 +2522,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t12",
           "locator": "objecte i àmbit d’aplicació",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «El procediment administratiu com a garantia»."
         },
         {
@@ -2430,7 +2530,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t15",
           "locator": "art. 23 i 24 (abstenció i recusació)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Terminis, silenci i abstenció»."
         }
       ],
@@ -2529,7 +2629,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t18",
           "locator": "art. 17",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Per exercir el dret d’accés a la informació pública cal:» és «No cal motivar-la, tot i que es pot exposar el motiu»."
         },
         {
@@ -2537,7 +2637,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t18",
           "locator": "art. 20",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El termini màxim per resoldre una sol·licitud d’accés a la informació pública és de:» és «Un mes»."
         },
         {
@@ -2545,7 +2645,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t18",
           "locator": "art. 5 a 8",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La publicitat activa consisteix en:» és «Publicar periòdicament i actualitzada informació sense que ningú l’hagi demanat»."
         },
         {
@@ -2553,7 +2653,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t18",
           "locator": "art. 14 i 16",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Que una informació estigui relacionada amb la prevenció o investigació d’il·lícits:» és «Permet limitar l’accés si es justifica un perjudici concret i de manera proporcionada»."
         },
         {
@@ -2561,7 +2661,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t18",
           "locator": "art. 5 a 24 (publicitat activa, dret d’accés i límits)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Transparència i accés a la informació pública»."
         }
       ],
@@ -2644,7 +2744,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "tractaments per obligació legal",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la base de legitimació habitual del tractament de dades en l’actuació policial?» és «El compliment d’una obligació legal i l’exercici de poders públics»."
         },
         {
@@ -2652,7 +2752,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "objecte",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El dret a la protecció de dades personals:» és «És un dret fonamental autònom, diferenciat del dret a la intimitat»."
         },
         {
@@ -2660,7 +2760,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t20",
           "locator": "disposicions generals i drets",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Protecció de dades»."
         }
       ],
@@ -2729,19 +2829,18 @@
         1,
         5,
         9,
-        51,
+        31,
         53
       ],
       "locators": [
         "art. 1, 2, 5, 9, 11 i 53",
+        "art. 31.1",
         "art. 5",
         "art. 5.1",
         "art. 5.2.c",
         "art. 5.2.d",
-        "art. 51 i 53",
         "art. 53.1",
-        "art. 9",
-        "policia judicial"
+        "art. 9"
       ],
       "claims": [
         {
@@ -2749,15 +2848,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t08",
           "locator": "art. 5.1",
-          "reviewStatus": "pending-source-verification",
-          "claim": "Que, en el punt citat, la resposta a «El deure d’obediència d’un empleat públic cedeix quan la instrucció rebuda:» és «Constitueix una infracció manifesta, clara i terminant de l’ordenament jurídic»."
+          "reviewStatus": "verified",
+          "claim": "Que, en el punt citat, la resposta a «El deure d’obediència d’un empleat públic cedeix quan la instrucció rebuda:» és «Constitueix una infracció manifesta de l’ordenament jurídic»."
         },
         {
           "consumer": "q-roses-t21-001",
           "consumerKind": "pregunta",
           "topicId": "roses-t21",
           "locator": "art. 5.2.d",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons la Llei orgànica 2/1986, les armes de foc només es poden utilitzar:» és «En situacions de risc racionalment greu per a la vida o la integritat física pròpia o de tercers, o de risc greu per a la seguretat ciutadana»."
         },
         {
@@ -2765,7 +2864,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t21",
           "locator": "art. 5.2.c",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quins principis han de regir la utilització dels mitjans a l’abast de la policia?» és «Congruència, oportunitat i proporcionalitat»."
         },
         {
@@ -2773,7 +2872,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t21",
           "locator": "art. 53.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La instrucció d’atestats per accidents de circulació correspon a la policia local:» és «Dins el nucli urbà»."
         },
         {
@@ -2781,7 +2880,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t21",
           "locator": "art. 9",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la naturalesa de la Guàrdia Civil segons la Llei orgànica 2/1986?» és «Institut armat de naturalesa militar»."
         },
         {
@@ -2789,23 +2888,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t21",
           "locator": "art. 5",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests grups NO forma part dels principis bàsics d’actuació de la Llei orgànica 2/1986?» és «Rendiment econòmic del servei»."
-        },
-        {
-          "consumer": "q-roses-t24-004",
-          "consumerKind": "pregunta",
-          "topicId": "roses-t24",
-          "locator": "art. 51 i 53",
-          "reviewStatus": "pending-source-verification",
-          "claim": "Que, en el punt citat, la resposta a «De qui depèn jeràrquicament el cos de la Policia Local de Roses?» és «De l’alcalde o alcaldessa de Roses»."
         },
         {
           "consumer": "q-roses-t28-004",
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
-          "locator": "policia judicial",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 31.1",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La policia judicial actua sota la dependència funcional de:» és «Els jutges, els tribunals i el Ministeri Fiscal»."
         },
         {
@@ -2813,7 +2904,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t21",
           "locator": "art. 1, 2, 5, 9, 11 i 53",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Llei orgànica 2/1986: el mapa dels cossos policials»."
         }
       ],
@@ -2825,7 +2916,6 @@
           "q-roses-t21-003",
           "q-roses-t21-004",
           "q-roses-t21-005",
-          "q-roses-t24-004",
           "q-roses-t28-004"
         ],
         "lessons": [
@@ -2834,7 +2924,6 @@
         "topics": [
           "roses-t08",
           "roses-t21",
-          "roses-t24",
           "roses-t28"
         ],
         "primarySourceForTopics": [
@@ -2848,18 +2937,13 @@
           "q-of-roses-2025-propietat-cp-008",
           "q-of-roses-2025-propietat-cp-020",
           "q-of-roses-2025-propietat-cp-021",
-          "q-of-roses-2025-propietat-cp-024",
-          "q-of-roses-2025-propietat-cp-025",
-          "q-of-roses-2025-propietat-cp-026",
-          "q-of-roses-2025-propietat-cp-034",
           "q-of-roses-2025-propietat-cp-038",
           "q-of-roses-2025-propietat-cp-039",
           "q-of-roses-2025-interins-cp-009",
           "q-of-roses-2025-interins-cp-023",
-          "q-of-roses-2025-interins-cp-026",
           "q-of-roses-2025-interins-cp-029"
         ],
-        "totalConsumers": 9
+        "totalConsumers": 8
       },
       "offlinePackage": {
         "filename": "lo-2-1986-fcs.pdf",
@@ -2928,7 +3012,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t26",
           "locator": "art. 16",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El temps màxim de permanència en dependències policials per a una diligència d’identificació és de:» és «6 hores»."
         },
         {
@@ -2936,7 +3020,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t26",
           "locator": "art. 16.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El trasllat a dependències per a una diligència d’identificació:» és «No és una detenció, però s’ha de registrar al llibre-registre corresponent»."
         },
         {
@@ -2944,7 +3028,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t26",
           "locator": "art. 20",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un registre corporal que obligui a deixar a la vista parts del cos normalment cobertes:» és «S’ha de fer en un lloc reservat, fora de la vista de tercers, i se n’ha d’estendre diligència»."
         },
         {
@@ -2952,7 +3036,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t26",
           "locator": "art. 39",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és el rang de la sanció econòmica per a una infracció greu de la Llei orgànica 4/2015?» és «De 601 a 30.000 euros»."
         },
         {
@@ -2960,7 +3044,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t26",
           "locator": "art. 23",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una reunió pacífica i sense armes en un lloc de trànsit públic:» és «Requereix comunicació prèvia a l’autoritat, però no autorització»."
         },
         {
@@ -2968,7 +3052,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "règim sancionador",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Amb la desaparició de les faltes, moltes conductes menors van passar a ser:» és «Delictes lleus o infraccions administratives, especialment de la Llei orgànica 4/2015»."
         },
         {
@@ -2976,7 +3060,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t26",
           "locator": "art. 4, 15 a 20, 23 i 35 a 39",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Protecció de la seguretat ciutadana»."
         }
       ],
@@ -3064,7 +3148,8 @@
         379,
         383,
         384,
-        385
+        385,
+        404
       ],
       "locators": [
         "art. 1 a 9 i art. 379 a 385 ter",
@@ -3072,7 +3157,7 @@
         "art. 234",
         "art. 234 a 242",
         "art. 234 i 237",
-        "art. 235",
+        "art. 235.1.7è",
         "art. 238",
         "art. 239",
         "art. 379.1",
@@ -3081,15 +3166,24 @@
         "art. 383",
         "art. 384",
         "art. 385",
+        "art. 404 i 390",
         "text consolidat després de la reforma de 2015"
       ],
       "claims": [
+        {
+          "consumer": "q-roses-t25-005",
+          "consumerKind": "pregunta",
+          "topicId": "roses-t25",
+          "locator": "art. 404 i 390",
+          "reviewStatus": "verified",
+          "claim": "Que, en el punt citat, la resposta a «Un company t’explica que ha «arreglat» una denúncia a un conegut. Segons els principis ètics i deontològics, això és:» és «Un tracte de favor prohibit que pot constituir falta disciplinària i, segons el cas, delicte»."
+        },
         {
           "consumer": "q-roses-t27-001",
           "consumerKind": "pregunta",
           "topicId": "roses-t27",
           "locator": "art. 234 i 237",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la diferència essencial entre furt i robatori?» és «L’ús de força en les coses o de violència o intimidació en les persones»."
         },
         {
@@ -3097,7 +3191,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t27",
           "locator": "art. 234",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és el llindar que separa el furt delicte del furt delicte lleu?» és «400 euros»."
         },
         {
@@ -3105,7 +3199,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t27",
           "locator": "art. 238",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests supòsits NO constitueix força en les coses segons el Codi penal?» és «Arrencar un objecte pesant per poder-se’l endur»."
         },
         {
@@ -3113,7 +3207,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t27",
           "locator": "art. 239",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «A efectes del delicte de robatori amb força, es consideren claus falses:» és «Els ganxets, les claus legítimes perdudes o obtingudes il·lícitament i qualsevol altra no destinada pel propietari a obrir el pany»."
         },
         {
@@ -3121,7 +3215,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t27",
           "locator": "art. 234 i 237",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una persona s’emporta del passeig marítim de Roses una bicicleta que no estava lligada, valorada en 300 euros. Quina qualificac…» és «Furt en la modalitat de delicte lleu»."
         },
         {
@@ -3129,7 +3223,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t29",
           "locator": "art. 379.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «A partir de quin excés de velocitat es comet delicte contra la seguretat viària en via urbana?» és «60 km/h per sobre del límit»."
         },
         {
@@ -3137,7 +3231,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t29",
           "locator": "art. 383",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La negativa a sotmetre’s a les proves de detecció d’alcohol o drogues és:» és «Un delicte autònom, encara que la persona no anés beguda»."
         },
         {
@@ -3145,7 +3239,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t29",
           "locator": "art. 2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons el principi de legalitat penal, les lleis penals:» és «No són retroactives, llevat que afavoreixin la persona reu»."
         },
         {
@@ -3153,7 +3247,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t29",
           "locator": "art. 384",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Conduir havent perdut la totalitat dels punts assignats legalment:» és «Constitueix delicte contra la seguretat viària»."
         },
         {
@@ -3161,15 +3255,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t29",
           "locator": "art. 385",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Col·locar obstacles imprevisibles a la calçada creant un greu risc per a la circulació:» és «Constitueix un delicte contra la seguretat viària»."
         },
         {
           "consumer": "q-roses-t30-004",
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
-          "locator": "art. 235",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 235.1.7è",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La multireincidència introduïda per la reforma de 2015 permet que:» és «Els furts lleus reiterats es tractin com a delicte encara que cap superi els 400 euros»."
         },
         {
@@ -3177,7 +3271,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "art. 384",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes figures NO va ser introduïda o reformada per la Llei orgànica 1/2015?» és «El delicte de conducció amb pèrdua total de punts»."
         },
         {
@@ -3185,7 +3279,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t33",
           "locator": "art. 379.2",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina taxa d’alcohol en aire espirat converteix la conducta en delicte contra la seguretat viària?» és «Superior a 0,60 mg/l»."
         },
         {
@@ -3193,7 +3287,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t27",
           "locator": "art. 234 a 242",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Furts i robatoris»."
         },
         {
@@ -3201,7 +3295,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t29",
           "locator": "art. 1 a 9 i art. 379 a 385 ter",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Codi penal: garanties i seguretat viària»."
         },
         {
@@ -3209,7 +3303,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t30",
           "locator": "text consolidat després de la reforma de 2015",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «La reforma penal de 2015»."
         },
         {
@@ -3217,12 +3311,13 @@
           "consumerKind": "llico",
           "topicId": "roses-t33",
           "locator": "art. 379.2 i 383",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Alcohol i drogues al volant»."
         }
       ],
       "consumers": {
         "ownQuestions": [
+          "q-roses-t25-005",
           "q-roses-t27-001",
           "q-roses-t27-002",
           "q-roses-t27-003",
@@ -3244,6 +3339,7 @@
           "roses-t33-l1"
         ],
         "topics": [
+          "roses-t25",
           "roses-t27",
           "roses-t29",
           "roses-t30",
@@ -3270,7 +3366,7 @@
           "q-of-roses-2025-interins-cp-033",
           "q-of-roses-2025-interins-cp-042"
         ],
-        "totalConsumers": 17
+        "totalConsumers": 18
       },
       "offlinePackage": {
         "filename": "lo-10-1995-cp.pdf",
@@ -3332,7 +3428,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "supressió del llibre III",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin llibre del Codi penal va suprimir la Llei orgànica 1/2015?» és «El llibre III»."
         },
         {
@@ -3340,7 +3436,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "presó permanent revisable",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina pena va introduir la Llei orgànica 1/2015 per a supòsits d’excepcional gravetat?» és «La presó permanent revisable»."
         },
         {
@@ -3348,7 +3444,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "reconversió de les faltes",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Amb la desaparició de les faltes, moltes conductes menors van passar a ser:» és «Delictes lleus o infraccions administratives, especialment de la Llei orgànica 4/2015»."
         },
         {
@@ -3356,7 +3452,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "reforma dels delictes contra el patrimoni",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La multireincidència introduïda per la reforma de 2015 permet que:» és «Els furts lleus reiterats es tractin com a delicte encara que cap superi els 400 euros»."
         },
         {
@@ -3364,7 +3460,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t30",
           "locator": "novetats de la reforma",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes figures NO va ser introduïda o reformada per la Llei orgànica 1/2015?» és «El delicte de conducció amb pèrdua total de punts»."
         },
         {
@@ -3372,7 +3468,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t30",
           "locator": "preàmbul i modificacions principals",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «La reforma penal de 2015»."
         }
       ],
@@ -3464,7 +3560,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
           "locator": "competència per a l’enjudiciament de delictes lleus",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin òrgan judicial enjudicia els delictes lleus?» és «El jutjat d’instrucció»."
         },
         {
@@ -3472,7 +3568,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
           "locator": "parts acusadores",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’acusació popular és la que exerceix:» és «Qualsevol ciutadà en els delictes públics, encara que no sigui la persona ofesa»."
         },
         {
@@ -3480,7 +3576,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t28",
           "locator": "valor de l’atestat",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin valor té, en principi, l’atestat policial en el procés penal?» és «Valor de denúncia»."
         },
         {
@@ -3488,7 +3584,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t37",
           "locator": "art. 520",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests NO és un dret de la persona detinguda segons la Llei d’enjudiciament criminal?» és «Escollir el jutjat que instruirà la causa»."
         },
         {
@@ -3496,7 +3592,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t37",
           "locator": "art. 490 i 492",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Els particulars, davant un delicte:» és «Poden detenir en els supòsits taxats que preveu la llei»."
         },
         {
@@ -3504,7 +3600,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "art. 544 ter",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui pot acordar una ordre de protecció d’una víctima de violència domèstica?» és «El jutge competent»."
         },
         {
@@ -3512,7 +3608,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "art. 544 ter.4",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En quin termini màxim s’ha de celebrar l’audiència urgent per resoldre una ordre de protecció?» és «72 hores»."
         },
         {
@@ -3520,7 +3616,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "art. 544 ter.1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Els dos pressupòsits per acordar una ordre de protecció són:» és «Indicis fundats de delicte i situació objectiva de risc per a la víctima»."
         },
         {
@@ -3528,7 +3624,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "art. 544 ter.7",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Les mesures civils que pot contenir una ordre de protecció:» és «Tenen una vigència temporal limitada i s’han de ratificar en el procés civil corresponent»."
         },
         {
@@ -3536,7 +3632,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "art. 544 ter.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una víctima demana protecció a la comissaria de la Policia Local de Roses. L’actuació correcta és:» és «Recollir la sol·licitud, instruir les diligències i remetre-la immediatament al jutjat de guàrdia»."
         },
         {
@@ -3544,7 +3640,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t28",
           "locator": "competència dels òrgans penals, parts i valor de l’atestat",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «La jurisdicció penal»."
         },
         {
@@ -3552,7 +3648,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t37",
           "locator": "art. 490, 492, 496 i 520",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Detenció, drets i habeas corpus»."
         },
         {
@@ -3560,7 +3656,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t38",
           "locator": "art. 544 ter (ordre de protecció)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «L’ordre de protecció de les víctimes»."
         }
       ],
@@ -3662,7 +3758,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t37",
           "locator": "art. 3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui NO està legitimat per instar un procediment d’habeas corpus?» és «Qualsevol veí del municipi sense relació amb la persona detinguda»."
         },
         {
@@ -3670,7 +3766,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t37",
           "locator": "art. 2 i 7",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin jutge és competent per conèixer d’un procediment d’habeas corpus?» és «El jutge d’instrucció del lloc on es trobi la persona detinguda»."
         },
         {
@@ -3678,7 +3774,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t37",
           "locator": "art. 1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’habeas corpus serveix per:» és «Examinar la legalitat de la privació de llibertat»."
         },
         {
@@ -3686,7 +3782,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t37",
           "locator": "art. 1 a 9 (legitimació, competència i termini)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Detenció, drets i habeas corpus»."
         }
       ],
@@ -3754,48 +3850,52 @@
         }
       ],
       "needed": "Immobilització i retirada de vehicles, tractament del vehicle residual o abandonat, obligació de sotmetre’s a les proves de detecció, presència de drogues i el règim sancionador (incloent-hi la prescripció de les infraccions).",
-      "articlesCited": [],
+      "articlesCited": [
+        104,
+        105,
+        106
+      ],
       "locators": [
-        "causes de retirada de vehicles",
-        "causes d’immobilització",
-        "immobilització i retirada de vehicles",
+        "art. 104 i 105",
+        "art. 104.1.d",
+        "art. 105.1",
+        "art. 106.1.a",
         "immobilització, retirada i vehicles abandonats",
         "obligació de sotmetre’s a les proves",
         "obligació de sotmetre’s a les proves i règim sancionador",
-        "presència de drogues en l’organisme",
-        "tractament residual del vehicle"
+        "presència de drogues en l’organisme"
       ],
       "claims": [
         {
           "consumer": "q-roses-t32-001",
           "consumerKind": "pregunta",
           "topicId": "roses-t32",
-          "locator": "immobilització i retirada de vehicles",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 104 i 105",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina diferència hi ha entre immobilització i retirada d’un vehicle?» és «La immobilització deixa el vehicle al lloc sense poder circular; la retirada el trasllada al dipòsit»."
         },
         {
           "consumer": "q-roses-t32-002",
           "consumerKind": "pregunta",
           "topicId": "roses-t32",
-          "locator": "tractament residual del vehicle",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 106.1.a",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quan es presumeix que un vehicle està abandonat per romandre al dipòsit?» és «Quan hi ha estat més de dos mesos»."
         },
         {
           "consumer": "q-roses-t32-003",
           "consumerKind": "pregunta",
           "topicId": "roses-t32",
-          "locator": "causes d’immobilització",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 104.1.d",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes és causa d’immobilització d’un vehicle?» és «Que el conductor superi la taxa d’alcohol permesa o es negui a les proves»."
         },
         {
           "consumer": "q-roses-t32-004",
           "consumerKind": "pregunta",
           "topicId": "roses-t32",
-          "locator": "causes de retirada de vehicles",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 105.1",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un vehicle estacionat de manera incorrecta però sense crear cap perill ni obstaculitzar res:» és «No es pot retirar: cal que concorri una de les causes taxades de retirada»."
         },
         {
@@ -3803,7 +3903,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t33",
           "locator": "obligació de sotmetre’s a les proves",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui està obligat a sotmetre’s a les proves de detecció d’alcohol o drogues?» és «Els conductors, els implicats com a possibles responsables en un accident, qui presenti símptomes i qui hagi comès una infracció»."
         },
         {
@@ -3811,7 +3911,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t33",
           "locator": "presència de drogues en l’organisme",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En matèria de drogues al volant, la regla general és que:» és «La infracció és conduir amb presència de drogues a l’organisme, amb l’excepció de les prescrites terapèuticament»."
         },
         {
@@ -3819,7 +3919,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t32",
           "locator": "immobilització, retirada i vehicles abandonats",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Permisos, llicències i retirada de vehicles»."
         },
         {
@@ -3827,7 +3927,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t33",
           "locator": "obligació de sotmetre’s a les proves i règim sancionador",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Alcohol i drogues al volant»."
         }
       ],
@@ -3874,7 +3974,9 @@
         "resolvedHosts": [],
         "mustContain": [
           "Tráfico",
-          "Seguridad Vial"
+          "Seguridad Vial",
+          "Artículo 104",
+          "Artículo 105"
         ]
       },
       "dedupe": {
@@ -3918,7 +4020,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t33",
           "locator": "taxes d’alcoholèmia",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la taxa màxima d’alcohol en aire espirat per a un conductor novell o professional?» és «0,15 mg/l»."
         },
         {
@@ -3926,7 +4028,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t33",
           "locator": "pràctica de les proves de detecció alcohòlica",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La pràctica de la prova d’alcoholèmia amb etilòmetre exigeix:» és «Dues determinacions successives amb un interval mínim de deu minuts»."
         },
         {
@@ -3934,7 +4036,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t33",
           "locator": "normes sobre begudes alcohòliques i estupefaents, i pràctica de les proves",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Alcohol i drogues al volant»."
         }
       ],
@@ -4014,7 +4116,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t32",
           "locator": "classes de permisos de conducció",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin permís habilita per conduir turismes?» és «El permís B»."
         },
         {
@@ -4022,7 +4124,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t32",
           "locator": "classes de permisos i llicències de conducció",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Permisos, llicències i retirada de vehicles»."
         }
       ],
@@ -4098,7 +4200,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t32",
           "locator": "condicions tècniques i documentació dels vehicles",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Permisos, llicències i retirada de vehicles»."
         }
       ],
@@ -4174,7 +4276,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "concepte",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quines vies hi ha perquè un gos sigui considerat potencialment perillós?» és «Per raça o encreuament, per episodis d’agressió previs i per ensinistrament per a l’atac i la defensa»."
         },
         {
@@ -4182,7 +4284,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "llicència administrativa",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui atorga la llicència per a la tinença de gossos potencialment perillosos?» és «L’ajuntament del municipi de residència de la persona sol·licitant»."
         },
         {
@@ -4190,7 +4292,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "requisits de la llicència",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests NO és un requisit per obtenir la llicència de tinença d’un gos potencialment perillós?» és «Acreditar una formació prèvia com a ensinistrador caní»."
         },
         {
@@ -4198,7 +4300,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t34",
           "locator": "llicència, registre i obligacions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Animals de companyia i gossos potencialment perillosos»."
         }
       ],
@@ -4276,7 +4378,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "desenvolupament reglamentari",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests NO és un requisit per obtenir la llicència de tinença d’un gos potencialment perillós?» és «Acreditar una formació prèvia com a ensinistrador caní»."
         },
         {
@@ -4284,7 +4386,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "mesures de seguretat a la via pública",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «A la via pública, un gos potencialment perillós ha d’anar:» és «Lligat amb corretja no extensible de longitud limitada i amb morrió»."
         },
         {
@@ -4292,7 +4394,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t34",
           "locator": "llista de races i requisits de la llicència",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Animals de companyia i gossos potencialment perillosos»."
         }
       ],
@@ -4358,9 +4460,11 @@
         }
       ],
       "needed": "Article únic i el procediment: competència judicial i presentació de la sol·licitud.",
-      "articlesCited": [],
+      "articlesCited": [
+        544
+      ],
       "locators": [
-        "article únic i procediment",
+        "art. segon (nou art. 544 ter LECrim)",
         "competència judicial",
         "presentació de la sol·licitud",
         "procediment"
@@ -4371,7 +4475,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "competència judicial",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui pot acordar una ordre de protecció d’una víctima de violència domèstica?» és «El jutge competent»."
         },
         {
@@ -4379,7 +4483,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "procediment",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En quin termini màxim s’ha de celebrar l’audiència urgent per resoldre una ordre de protecció?» és «72 hores»."
         },
         {
@@ -4387,15 +4491,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t38",
           "locator": "presentació de la sol·licitud",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Una víctima demana protecció a la comissaria de la Policia Local de Roses. L’actuació correcta és:» és «Recollir la sol·licitud, instruir les diligències i remetre-la immediatament al jutjat de guàrdia»."
         },
         {
           "consumer": "roses-t38-l1",
           "consumerKind": "llico",
           "topicId": "roses-t38",
-          "locator": "article únic i procediment",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. segon (nou art. 544 ter LECrim)",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «L’ordre de protecció de les víctimes»."
         }
       ],
@@ -4426,7 +4530,8 @@
         "maxBytes": 60000000,
         "resolvedHosts": [],
         "mustContain": [
-          "orden de protección"
+          "orden de protección",
+          "Artículo 544"
         ]
       },
       "dedupe": {
@@ -4480,7 +4585,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t39",
           "locator": "art. 6",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Es produeix discriminació indirecta per raó de sexe quan:» és «Una disposició, criteri o pràctica aparentment neutres posen persones d’un sexe en desavantatge particular»."
         },
         {
@@ -4488,7 +4593,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t39",
           "locator": "art. 7",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Segons la Llei orgànica 3/2007, l’assetjament sexual i l’assetjament per raó de sexe:» és «Es consideren sempre actes discriminatoris»."
         },
         {
@@ -4496,7 +4601,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t39",
           "locator": "art. 11",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Les accions positives previstes per la llei d’igualtat:» és «Són mesures específiques i temporals, admissibles mentre subsisteixi la desigualtat que pretenen corregir»."
         },
         {
@@ -4504,7 +4609,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t39",
           "locator": "art. 8",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un tracte desfavorable a una dona relacionat amb l’embaràs o la maternitat:» és «Constitueix en tot cas discriminació directa per raó de sexe»."
         },
         {
@@ -4512,7 +4617,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t39",
           "locator": "art. 9",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La indemnitat davant represàlies significa que:» és «Ningú pot patir un tracte advers per haver denunciat o participat en un procediment sobre discriminació»."
         },
         {
@@ -4520,7 +4625,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t39",
           "locator": "art. 3 a 11 i 51 (igualtat, discriminació, assetjament i accions positives)",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Igualtat efectiva entre dones i homes»."
         }
       ],
@@ -4608,7 +4713,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t40",
           "locator": "art. 1 i 3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «A quines edats s’aplica la Llei orgànica 5/2000, reguladora de la responsabilitat penal dels menors?» és «A partir dels 14 i fins als 18 anys»."
         },
         {
@@ -4616,7 +4721,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t40",
           "locator": "art. 17.4",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és el termini màxim de detenció d’un menor per part de funcionaris de policia?» és «24 hores»."
         },
         {
@@ -4624,7 +4729,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t40",
           "locator": "art. 16 i 17",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un menor detingut ha de ser posat a disposició de:» és «El Ministeri Fiscal»."
         },
         {
@@ -4632,7 +4737,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t40",
           "locator": "art. 17.3",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Durant la detenció d’un menor, la custòdia s’ha de fer:» és «En dependències adequades i separades de les que s’utilitzen per als majors d’edat»."
         },
         {
@@ -4640,7 +4745,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t40",
           "locator": "exposició de motius i art. 7",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és el criteri rector per triar la mesura aplicable a un menor?» és «L'interès superior del menor»."
         },
         {
@@ -4648,7 +4753,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t40",
           "locator": "art. 1, 3, 7 i 17",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Responsabilitat penal i detenció de menors»."
         }
       ],
@@ -4727,17 +4832,19 @@
         }
       ],
       "needed": "Naturalesa i dependència municipal dels cossos, àmbit territorial, art. 12 (policia judicial), 24 (escales i categories), 25 (categories segons població) i tot el règim disciplinari (classificació de faltes, catàleg i graduació de sancions, art. 51 sobre encobriment).",
-      "articlesCited": [],
+      "articlesCited": [
+        24
+      ],
       "locators": [
+        "art. 24.1.d i 24.2.d",
         "catàleg de sancions",
         "classificació de les faltes",
-        "dependència",
         "dependència dels cossos de policia local",
         "dependència municipal",
-        "escales i categories",
         "graduació de les sancions",
         "naturalesa dels cossos",
         "naturalesa, dependència, escales, categories i funcions",
+        "preàmbul III",
         "règim disciplinari",
         "règim disciplinari: classificació de faltes i sancions",
         "text consolidat i modificacions",
@@ -4749,7 +4856,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t04",
           "locator": "dependència dels cossos de policia local",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La relació entre la Generalitat i les policies locals de Catalunya és de:» és «Coordinació, mantenint la dependència de l’alcalde o alcaldessa»."
         },
         {
@@ -4757,7 +4864,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t11",
           "locator": "règim disciplinari",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El règim disciplinari dels cossos de policia local de Catalunya es regula principalment a:» és «La Llei 16/1991 i el Decret 179/2015»."
         },
         {
@@ -4765,7 +4872,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t11",
           "locator": "classificació de les faltes",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Com es classifiquen les faltes disciplinàries dels membres dels cossos de policia local?» és «Molt greus, greus i lleus»."
         },
         {
@@ -4773,7 +4880,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t11",
           "locator": "catàleg de sancions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la sanció més greu prevista per a una falta molt greu d’un membre d’un cos de policia local?» és «La separació del servei»."
         },
         {
@@ -4781,7 +4888,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t11",
           "locator": "graduació de les sancions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En la graduació de la sanció disciplinària NO es té en compte:» és «La situació econòmica de la persona expedientada»."
         },
         {
@@ -4789,7 +4896,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t22",
           "locator": "dependència municipal",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La coordinació de les policies locals per part de la Generalitat implica que:» és «S’homogeneïtzen mitjans, formació, uniformitat i criteris, mantenint la dependència municipal»."
         },
         {
@@ -4797,15 +4904,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t24",
           "locator": "naturalesa dels cossos",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Els cossos de policia local de Catalunya són:» és «Instituts armats de naturalesa civil amb estructura i organització jerarquitzada»."
         },
         {
           "consumer": "q-roses-t24-002",
           "consumerKind": "pregunta",
           "topicId": "roses-t24",
-          "locator": "escales i categories",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 24.1.d i 24.2.d",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «A quina escala pertany la categoria d’agent de policia local?» és «Escala bàsica»."
         },
         {
@@ -4813,15 +4920,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t24",
           "locator": "àmbit territorial",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’àmbit territorial d’actuació de la policia local és:» és «El terme municipal, llevat dels supòsits previstos legalment»."
         },
         {
           "consumer": "q-roses-t24-004",
           "consumerKind": "pregunta",
           "topicId": "roses-t24",
-          "locator": "dependència",
-          "reviewStatus": "pending-source-verification",
+          "locator": "preàmbul III",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «De qui depèn jeràrquicament el cos de la Policia Local de Roses?» és «De l’alcalde o alcaldessa de Roses»."
         },
         {
@@ -4829,7 +4936,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t24",
           "locator": "text consolidat i modificacions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quan estudiïs la Llei 16/1991, per què cal treballar sobre el text consolidat?» és «Perquè ha estat modificada diverses vegades, entre altres per la Llei 3/2023»."
         },
         {
@@ -4837,7 +4944,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t11",
           "locator": "règim disciplinari: classificació de faltes i sancions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Règim disciplinari de la policia local»."
         },
         {
@@ -4845,7 +4952,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t24",
           "locator": "naturalesa, dependència, escales, categories i funcions",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Llei 16/1991: estructura i funcions de les policies locals»."
         }
       ],
@@ -4915,7 +5022,8 @@
         ],
         "mustContain": [
           "policies locals",
-          "Article 25"
+          "Article 25",
+          "Article 24"
         ]
       },
       "dedupe": {
@@ -4949,10 +5057,13 @@
       "needed": "Art. 1-10: objecte, integrants del sistema (art. 3.1), funcions de l’alcalde (art. 4), Consell de Seguretat de Catalunya (art. 6), juntes locals de seguretat (art. 9, amb els convidats amb veu i sense vot), planificació i coordinació de policies locals.",
       "articlesCited": [
         1,
+        9,
         10
       ],
       "locators": [
         "art. 1 a 10, sistema de seguretat pública de Catalunya",
+        "art. 10.b",
+        "art. 9.1",
         "coordinació de policies locals",
         "formació i coordinació policial",
         "integrants del sistema",
@@ -4976,7 +5087,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t22",
           "locator": "objecte de la llei",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La Llei 4/2003 de Catalunya regula:» és «L’ordenació del sistema de seguretat pública de Catalunya»."
         },
         {
@@ -4984,7 +5095,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t22",
           "locator": "òrgans del sistema",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin és l’òrgan consultiu i de participació superior en matèria de seguretat de Catalunya?» és «El Consell de Seguretat de Catalunya»."
         },
         {
@@ -4992,7 +5103,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t22",
           "locator": "planificació de la seguretat",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin instrument concreta al municipi els objectius del Pla general de seguretat de Catalunya?» és «El pla local de seguretat»."
         },
         {
@@ -5000,7 +5111,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t22",
           "locator": "integrants del sistema",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests serveis NO forma part del sistema de seguretat pública de Catalunya?» és «Els serveis d’inspecció tributària»."
         },
         {
@@ -5008,15 +5119,31 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t22",
           "locator": "coordinació de policies locals",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La coordinació de les policies locals per part de la Generalitat implica que:» és «S’homogeneïtzen mitjans, formació, uniformitat i criteris, mantenint la dependència municipal»."
+        },
+        {
+          "consumer": "q-roses-t23-002",
+          "consumerKind": "pregunta",
+          "topicId": "roses-t23",
+          "locator": "art. 9.1",
+          "reviewStatus": "verified",
+          "claim": "Que, en el punt citat, la resposta a «En quins municipis és obligatòria la constitució d’una junta local de seguretat?» és «En els municipis que disposen de cos de policia local propi»."
+        },
+        {
+          "consumer": "q-roses-t23-003",
+          "consumerKind": "pregunta",
+          "topicId": "roses-t23",
+          "locator": "art. 10.b",
+          "reviewStatus": "verified",
+          "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes és una funció pròpia de la junta local de seguretat?» és «Analitzar la situació de seguretat, aprovar el pla local de seguretat i fixar criteris de coordinació»."
         },
         {
           "consumer": "roses-t04-l1",
           "consumerKind": "llico",
           "topicId": "roses-t04",
           "locator": "art. 1 a 10, sistema de seguretat pública de Catalunya",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Generalitat, Parlament i Govern»."
         },
         {
@@ -5024,7 +5151,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t22",
           "locator": "sistema de seguretat pública, òrgans i planificació",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «El sistema de seguretat pública de Catalunya»."
         },
         {
@@ -5032,7 +5159,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t23",
           "locator": "juntes locals de seguretat",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Les juntes locals de seguretat»."
         }
       ],
@@ -5043,7 +5170,9 @@
           "q-roses-t22-002",
           "q-roses-t22-003",
           "q-roses-t22-004",
-          "q-roses-t22-005"
+          "q-roses-t22-005",
+          "q-roses-t23-002",
+          "q-roses-t23-003"
         ],
         "lessons": [
           "roses-t04-l1",
@@ -5075,7 +5204,7 @@
           "q-of-roses-2025-interins-cp-039",
           "q-of-roses-2025-interins-cp-041"
         ],
-        "totalConsumers": 9
+        "totalConsumers": 11
       },
       "offlinePackage": {
         "filename": "llei-4-2003-seguretat-publica.pdf",
@@ -5090,8 +5219,7 @@
         "mustContain": [
           "seguretat pública",
           "Article 9",
-          "Article 1",
-          "Article 10"
+          "Article 1"
         ]
       },
       "dedupe": {
@@ -5135,7 +5263,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t11",
           "locator": "reglament del procediment",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El règim disciplinari dels cossos de policia local de Catalunya es regula principalment a:» és «La Llei 16/1991 i el Decret 179/2015»."
         },
         {
@@ -5143,7 +5271,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t11",
           "locator": "mesures cautelars",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La suspensió provisional de funcions durant la tramitació d’un expedient disciplinari és:» és «Una mesura cautelar que no prejutja el resultat de l’expedient»."
         },
         {
@@ -5151,7 +5279,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t11",
           "locator": "procediment disciplinari i mesures cautelars",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Règim disciplinari de la policia local»."
         }
       ],
@@ -5223,14 +5351,15 @@
         }
       ],
       "needed": "Àmbit d’aplicació, composició i presidència, funcions, funcionament i coordinació de dispositius.",
-      "articlesCited": [],
+      "articlesCited": [
+        2
+      ],
       "locators": [
+        "art. 2",
         "composició i presidència",
         "composició, funcions i funcionament",
         "coordinació de dispositius",
-        "funcions",
-        "norma reguladora",
-        "àmbit d’aplicació"
+        "norma reguladora"
       ],
       "claims": [
         {
@@ -5238,23 +5367,15 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t23",
           "locator": "composició i presidència",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui presideix la junta local de seguretat?» és «L’alcalde o alcaldessa»."
-        },
-        {
-          "consumer": "q-roses-t23-002",
-          "consumerKind": "pregunta",
-          "topicId": "roses-t23",
-          "locator": "àmbit d’aplicació",
-          "reviewStatus": "pending-source-verification",
-          "claim": "Que, en el punt citat, la resposta a «En quins municipis és obligatòria la constitució d’una junta local de seguretat?» és «En els municipis que disposen de cos de policia local propi»."
         },
         {
           "consumer": "q-roses-t23-003",
           "consumerKind": "pregunta",
           "topicId": "roses-t23",
-          "locator": "funcions",
-          "reviewStatus": "pending-source-verification",
+          "locator": "art. 2",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina d’aquestes és una funció pròpia de la junta local de seguretat?» és «Analitzar la situació de seguretat, aprovar el pla local de seguretat i fixar criteris de coordinació»."
         },
         {
@@ -5262,7 +5383,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t23",
           "locator": "norma reguladora",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina norma regula específicament les juntes locals de seguretat a Catalunya?» és «El Decret 151/1998, de 23 de juny»."
         },
         {
@@ -5270,7 +5391,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t23",
           "locator": "coordinació de dispositius",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un dispositiu conjunt entre policia local i Mossos d’Esquadra per a la Festa Major de Roses:» és «Es prepara i s’acorda en el marc de la junta local de seguretat»."
         },
         {
@@ -5278,14 +5399,13 @@
           "consumerKind": "llico",
           "topicId": "roses-t23",
           "locator": "composició, funcions i funcionament",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Les juntes locals de seguretat»."
         }
       ],
       "consumers": {
         "ownQuestions": [
           "q-roses-t23-001",
-          "q-roses-t23-002",
           "q-roses-t23-003",
           "q-roses-t23-004",
           "q-roses-t23-005"
@@ -5304,7 +5424,7 @@
           "q-of-roses-2025-interins-cp-025",
           "q-of-roses-2025-interins-cp-041"
         ],
-        "totalConsumers": 6
+        "totalConsumers": 5
       },
       "offlinePackage": {
         "filename": "decret-151-1998-juntes.pdf",
@@ -5317,7 +5437,8 @@
           "portaldogc.gencat.cat"
         ],
         "mustContain": [
-          "juntes locals de seguretat"
+          "juntes locals de seguretat",
+          "Article 2"
         ]
       },
       "dedupe": {
@@ -5360,7 +5481,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t18",
           "locator": "Comissió de Garantia del Dret d’Accés",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin òrgan resol les reclamacions en matèria d’accés a la informació pública a Catalunya?» és «La Comissió de Garantia del Dret d’Accés a la Informació Pública»."
         },
         {
@@ -5368,7 +5489,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t18",
           "locator": "dret d’accés i Comissió de Garantia del Dret d’Accés",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Transparència i accés a la informació pública»."
         }
       ],
@@ -5445,7 +5566,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "Acord GOV/25/2015",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «El Codi d’ètica de la Policia de Catalunya va ser aprovat per:» és «L’Acord GOV/25/2015, de 24 de febrer»."
         },
         {
@@ -5453,7 +5574,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "integritat i imparcialitat",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Un company t’explica que ha «arreglat» una denúncia a un conegut. Segons els principis ètics i deontològics, això és:» és «Un tracte de favor prohibit que pot constituir falta disciplinària i, segons el cas, delicte»."
         },
         {
@@ -5461,7 +5582,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t25",
           "locator": "Acord GOV/25/2015, principis i pautes de conducta",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Ètica i deontologia professional»."
         }
       ],
@@ -5553,7 +5674,7 @@
           "decret-179-2015-disciplinari",
           "decret-151-1998-juntes"
         ],
-        "note": "Candidat a paraigua: si el recull inclou aquestes quatre normes consolidades, una sola baixada les cobreix totes. **Cal comprovar-ne el contingut en baixar-lo**; els `sourceId` no es toquen ara, i cada norma conserva el seu perquè la referència ha d’apuntar a la norma, no al recull."
+        "note": "No és paraigua: baixat el 2026-08-24, el recull resulta ser un **índex d’enllaços** —els catorze apartats, de «Constitució i Estatut» a «Organismes», amb el títol de cada norma— i no el text de cap. Serveix de punt d’entrada per trobar-les; cada norma ha de seguir baixant-se a part i conserva el seu `sourceId`."
       }
     },
     {
@@ -5716,7 +5837,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "valor jurídic i proclamació",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La Carta de Drets Fonamentals de la Unió Europea té el mateix valor jurídic que els Tractats des de:» és «L’entrada en vigor del Tractat de Lisboa el 2009»."
         },
         {
@@ -5724,7 +5845,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "valor jurídic",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina diferència jurídica hi ha entre la Declaració Universal i la Carta de Drets Fonamentals de la UE?» és «La Declaració no és un tractat vinculant per si mateixa; la Carta sí que té valor jurídic vinculant»."
         },
         {
@@ -5732,7 +5853,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "estructura",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quants títols té la Carta de Drets Fonamentals de la Unió Europea?» és «Set»."
         },
         {
@@ -5740,7 +5861,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t25",
           "locator": "títols I a VII",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Ètica i deontologia professional»."
         }
       ],
@@ -5821,7 +5942,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "art. 5",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quin d’aquests NO és un principi del tractament de dades del Reglament general de protecció de dades?» és «Gratuïtat del tractament»."
         },
         {
@@ -5829,7 +5950,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "art. 6",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina és la base de legitimació habitual del tractament de dades en l’actuació policial?» és «El compliment d’una obligació legal i l’exercici de poders públics»."
         },
         {
@@ -5837,7 +5958,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "art. 5.1.b",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Publicar a xarxes socials imatges gravades per una càmera de vehicle policial seria:» és «Un tractament nou que necessitaria base legal pròpia i que, en general, seria il·lícit»."
         },
         {
@@ -5845,7 +5966,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t20",
           "locator": "art. 5, 6 i 15 a 22",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Protecció de dades»."
         }
       ],
@@ -5928,7 +6049,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "preàmbul i art. 1 a 30",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quants articles té la Declaració Universal dels Drets Humans?» és «30 articles»."
         },
         {
@@ -5936,7 +6057,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "naturalesa jurídica",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quina diferència jurídica hi ha entre la Declaració Universal i la Carta de Drets Fonamentals de la UE?» és «La Declaració no és un tractat vinculant per si mateixa; la Carta sí que té valor jurídic vinculant»."
         },
         {
@@ -5944,7 +6065,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "proclamació",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «En quina data es va proclamar la Declaració Universal dels Drets Humans?» és «El 10 de desembre de 1948»."
         },
         {
@@ -5952,7 +6073,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t25",
           "locator": "art. 1",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «L’article 1 de la Declaració Universal dels Drets Humans proclama que tots els éssers humans neixen:» és «Lliures i iguals en dignitat i drets»."
         },
         {
@@ -5960,7 +6081,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t25",
           "locator": "preàmbul i art. 1 a 30",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Ètica i deontologia professional»."
         }
       ],
@@ -6037,7 +6158,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "objecte i àmbit d’aplicació",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Els tractaments de dades amb finalitats de prevenció, investigació i enjudiciament d’infraccions penals es regeixen per:» és «La normativa específica que transposa la Directiva (UE) 2016/680»."
         },
         {
@@ -6045,7 +6166,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t20",
           "locator": "finalitats del tractament",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Publicar a xarxes socials imatges gravades per una càmera de vehicle policial seria:» és «Un tractament nou que necessitaria base legal pròpia i que, en general, seria il·lícit»."
         }
       ],
@@ -6118,7 +6239,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "gossos considerats potencialment perillosos",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Quines vies hi ha perquè un gos sigui considerat potencialment perillós?» és «Per raça o encreuament, per episodis d’agressió previs i per ensinistrament per a l’atac i la defensa»."
         },
         {
@@ -6126,7 +6247,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "identificació i registre",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «La identificació per microxip i la inscripció al registre censal municipal són obligatòries per a:» és «Tots els gossos»."
         },
         {
@@ -6134,7 +6255,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t34",
           "locator": "llista catalana de races i règim propi",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Animals de companyia i gossos potencialment perillosos»."
         }
       ],
@@ -6281,7 +6402,7 @@
           "consumerKind": "pregunta",
           "topicId": "roses-t34",
           "locator": "tràmit municipal a Roses",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que, en el punt citat, la resposta a «Qui atorga la llicència per a la tinença de gossos potencialment perillosos?» és «L’ajuntament del municipi de residència de la persona sol·licitant»."
         },
         {
@@ -6289,7 +6410,7 @@
           "consumerKind": "llico",
           "topicId": "roses-t34",
           "locator": "requisits municipals de la llicència a Roses",
-          "reviewStatus": "pending-source-verification",
+          "reviewStatus": "verified",
           "claim": "Que el punt citat sosté el contingut de la microlliçó «Animals de companyia i gossos potencialment perillosos»."
         }
       ],

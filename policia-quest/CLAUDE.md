@@ -155,9 +155,35 @@ verificats pel seu SHA-256, document a document.
 - **Els temes 35 i 36** estan escrits sobre l'articulat real de les ordenances
   de circulació i de convivència, amb la modificació de 2021 consolidada i
   referències amb article i pàgina del PDF.
-- **43 de les 79 fonts continuen pendents**: són les normes generals (BOE,
-  Portal Jurídic) que aquest paquet no incloïa. Les seves referències segueixen
-  en `pending-source-verification`.
+- **Les 98 fonts del manifest tenen còpia local.** Les 43 normes generals que
+  faltaven —BOE, Portal Jurídic, DOUE, Nacions Unides— es van adoptar el 24
+  d'agost de 2026 des d'un tercer paquet portat a mà, amb el SHA-256 comprovat
+  43/43 contra el `SHA256SUMS.txt` del paquet, contra el manifest i contra el
+  fitxer que ha quedat a `sources/cache/`.
+- **Les 313 referències que en depenien s'han revisat una a una**, llegint el
+  document i buscant-hi la proposició que cada localitzador afirma. 287 han
+  passat a `verified` i **26 es queden pendents amb el motiu escrit**. El
+  veredicte i el fragment que el sosté viuen a
+  `content/.../adopcio-normativa-2026-08-24.json`, i
+  `tests/unit/fonts-normatives.test.ts` impedeix que aquell fitxer i el
+  contingut se separin: cap referència pot dir `verified` sense veredicte que ho
+  aguanti. L'informe complet és a
+  `artifacts/adopcio-fonts-normatives-2026-08-24.md`.
+- **Dues de les 43 descàrregues no porten el document**: `roses-web-municipi` i
+  `agencia-ciberseguretat-catalunya` són esquelets de navegació (6 i 8 kB de
+  text net, tot menús) perquè el cos de la pàgina es carrega per JavaScript. Va
+  ser un error de l'inventari: la comprovació mínima era `mustContain: ['Roses']`
+  i el menú la passa. Les 21 referències que en depenen segueixen pendents i cal
+  una instantània de text de les pàgines concretes, com al paquet d'actualitat.
+- **Tenir el document no verifica la cita, i el codi ho tracta així.** El SHA-256
+  demostra que el fitxer és el que el paquet diu; no demostra que la redacció
+  sigui la vigent avui, cosa que des d'aquí no es pot confirmar. La revisió va
+  trobar set coses que calia corregir al banc —una opció que afirmava més del que
+  cap font diu, dues referències que apuntaven a l'article equivocat, dues que
+  necessitaven una font més, vuit localitzadors conceptuals i una pregunta de
+  cultura general retirada a `draft` perquè la seva pròpia explicació la
+  contradeia— i totes estan documentades a l'informe. Cap resposta oficial s'ha
+  tocat.
 - **El paquet d'actualitat té 25 preguntes vigents**, adoptades el 24 d'agost de
   2026 des de 19 instantànies textuals segellades amb SHA-256 que va portar el
   paquet de candidats. Cap ve de la xarxa: l'entorn continua sense arribar a cap
@@ -223,17 +249,17 @@ La feina que queda, en aquest ordre:
    —instantànies amb hash— és el que ja s'ha fet servir dues vegades. No
    s'allarga cap `reviewBy` per guanyar temps: una data allargada és una
    afirmació que ningú ha comprovat.
-2. Aconseguir les 43 fonts generals pendents. L'inventari complet és a
-   `artifacts/rescat-fonts-normatives.{json,md}` (`npm run sources:inventory`):
-   de cada font hi ha la norma exacta, els articles que el banc cita, què ha de
-   demostrar cada referència, qui la consumeix i la prioritat. El JSON porta
-   nom de fitxer, URL, MIME i comprovacions mínimes per muntar el paquet
-   offline, com els dos anteriors. Després, contrastar-hi les referències que
-   segueixen sense verificar. Quan hi siguin, el primer contingut a escriure
-   són les explicacions reals de les 189 preguntes oficials, contra l'article
-   concret de cada font: és on la correcció ensenya menys precisament on les
-   preguntes són més reals, escrites tema a tema seguint la classificació
-   d'`official-topic-map.json`.
+2. Escriure les explicacions reals de les 189 preguntes oficials, contra
+   l'article concret de cada font, tema a tema seguint la classificació
+   d'`official-topic-map.json`. És on la correcció ensenya menys precisament on
+   les preguntes són més reals, i fins ara no es podia fer perquè no hi havia
+   contra què escriure-les. Ara sí: les 98 fonts tenen còpia local.
+   Pel camí, tancar les 26 referències que van quedar pendents. Què falta per a
+   cada una és a la taula de la secció 7 d'
+   `artifacts/adopcio-fonts-normatives-2026-08-24.md`: dues instantànies de text
+   de pàgines que es munten amb JavaScript, la Llei 10/2007 de l'Institut de
+   Seguretat Pública, el Decret legislatiu 2/2008 de protecció dels animals i
+   tres dades de cultura general que cap norma enumera.
 3. Transcriure els 24 exàmens històrics. Els sis sense marca llegible al text
    exigeixen revisió visual; no se'n pot deduir cap resposta per densitat de
    tinta, freqüència ni coneixement general.

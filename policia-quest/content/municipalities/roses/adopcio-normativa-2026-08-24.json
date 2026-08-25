@@ -1,0 +1,3302 @@
+{
+  "_note": [
+    "Adopció del paquet de 43 fonts normatives generals, 2026-08-24.",
+    "Per a cada referència del banc que apunta a una d’aquestes 43 fonts: quin",
+    "veredicte va donar la revisió i quin fragment del document el sosté. La",
+    "revisió es va fer llegint el text extret de la còpia de sources/cache/,",
+    "afirmació per afirmació; «demostrat» vol dir que la proposició hi és al lloc",
+    "que diu el localitzador.",
+    "",
+    "Veredictes:",
+    "  demostrat                       la font sosté l’afirmació sencera.",
+    "  demostrat-localitzador-corregit igual, però el localitzador era conceptual",
+    "                                  o imprecís i s’ha concretat.",
+    "  demostrat-parcial               en sosté una part; l’evidència diu quina i",
+    "                                  quina no. La referència passa a verified amb",
+    "                                  nota, perquè el localitzador sí que porta on",
+    "                                  toca.",
+    "  font-insuficient                el document no sosté l’afirmació. La",
+    "                                  referència es queda en pending.",
+    "  extraccio-defectuosa            la descàrrega no conté el document (pàgina",
+    "                                  carregada per JavaScript). Es queda en",
+    "                                  pending; no és un problema de la referència.",
+    "",
+    "tests/unit/fonts-normatives.test.ts torna a comprovar que el reviewStatus de",
+    "cada referència del paquet quadra amb el veredicte d’aquest fitxer, que cap",
+    "referència a una còpia defectuosa consta com a verificada, i que el manifest",
+    "declara el mateix fitxer i el mateix SHA-256 que aquí."
+  ],
+  "packId": "policia-quest-roses-fonts-normatives-2026-08-24",
+  "adoptedAt": "2026-08-24",
+  "inventory": {
+    "artifact": "artifacts/rescat-fonts-normatives.json",
+    "sourceInventorySha256": "095efb1f2ede4d07fbfe2426cef8e6ca9c1eabe7f7ba96939abfe35018be51d1",
+    "contentFingerprint": "b07c3beb8f4cf817bea13b2fd2ba0165b9d08577018109e58fa365ffefcafb95",
+    "note": "El paquet es va muntar contra la versió 095efb1f… de l’inventari. La d’ara té un SHA-256 diferent perquè s’hi van corregir MIME, mides mínimes i hosts de resolució després del primer intent de descàrrega, però el contentFingerprint —que cobreix fonts, afirmacions i consumidors— és el mateix: el paquet respon exactament l’inventari de contingut que se li va demanar."
+  },
+  "totals": {
+    "sources": 43,
+    "sourcesWithText": 41,
+    "claims": 313,
+    "demostrat": 267,
+    "demostrat-localitzador-corregit": 8,
+    "demostrat-parcial": 12,
+    "extraccio-defectuosa": 21,
+    "font-insuficient": 5
+  },
+  "contentDecisions": [
+    {
+      "target": "q-roses-t08-003",
+      "change": "opció correcta retallada",
+      "from": "Constitueix una infracció manifesta, clara i terminant de l’ordenament jurídic",
+      "to": "Constitueix una infracció manifesta de l’ordenament jurídic",
+      "why": "El TREBEP (art. 54.3) diu «infracción manifiesta del ordenamiento jurídico» i la LO 2/1986 (art. 5.1.d) «manifiestamente constituyan delito o sean contrarios a la Constitución o a las Leyes». La fórmula «clara y terminante» no surt a cap de les 43 fonts; ve de la Llei de funcionaris civils de l’Estat, que no és al paquet. També s’han ajustat les explicacions i la microlliçó del tema 8."
+    },
+    {
+      "target": "q-roses-t24-004",
+      "change": "referència substituïda",
+      "from": "ref('lo-2-1986-fcs', 'art. 51 i 53')",
+      "to": "refv('llei-7-1985-lrbrl', 'art. 21.1.i')",
+      "why": "Els arts. 51 i 53 de la LO 2/1986 regulen la creació i les funcions dels cossos locals, no la dependència jeràrquica. L’art. 21.1.i) de la LRBRL sí que ho diu literalment: l’alcalde exerceix «la jefatura de la Policía Municipal»."
+    },
+    {
+      "target": "q-roses-t23-002",
+      "change": "referència substituïda",
+      "from": "ref('decret-151-1998-juntes', 'àmbit d’aplicació')",
+      "to": "refv('llei-4-2003-seguretat-publica', 'art. 9.1')",
+      "why": "El Decret 151/1998 fa la junta potestativa («es poden constituir… quan així ho acordi el ple») i en limita l’àmbit als municipis amb desplegament per substitució. L’obligació que la pregunta afirma és de la Llei 4/2003, art. 9.1: «Als municipis que tinguin policia local hi ha d’haver una junta local de seguretat»."
+    },
+    {
+      "target": "q-roses-t23-003",
+      "change": "referència afegida",
+      "from": "ref('decret-151-1998-juntes', 'funcions')",
+      "to": "refv('decret-151-1998-juntes', 'art. 2') + refv('llei-4-2003-seguretat-publica', 'art. 10.b')",
+      "why": "L’art. 2.b) del Decret diu «Elaborar plans»; «elaborar i aprovar el Pla de seguretat local» és l’art. 10.b) de la Llei 4/2003."
+    },
+    {
+      "target": "q-roses-t25-005",
+      "change": "referència afegida",
+      "from": "—",
+      "to": "refv('lo-10-1995-cp', 'art. 404 i 390')",
+      "why": "Ni el TREBEP ni el Codi d’ètica qualifiquen penalment el fet; l’opció diu «i, segons el cas, delicte». Els arts. 404 (prevaricació) i 390 (falsedat documental per funcionari) ho sostenen."
+    },
+    {
+      "target": "q-roses-t04-102",
+      "change": "pregunta retirada a draft",
+      "from": "active",
+      "to": "draft",
+      "why": "Cap de les 43 fonts enumera les comarques de la província de Girona, i la mateixa explicació de la pregunta en llistava vuit mentre la resposta bona deia «set». No hi ha opció «Vuit» per corregir-ho amb el canvi mínim i aquí no s’inventa una divisió comarcal: es retira fins que algú la contrasti amb la font oficial."
+    },
+    {
+      "target": "q-roses-t24-002 i roses-t24-l1",
+      "change": "referència a les bases verificada",
+      "from": "ref('roses-bases-2026-interins', …)",
+      "to": "refv('roses-bases-2026-interins', 'capçalera de la convocatòria', …)",
+      "why": "Les bases diuen literalment «categoria agent, grup de titulació C1». Prova la categoria convocada, no l’escala: l’escala bàsica és l’art. 24.1.d de la Llei 16/1991, que és l’altra referència de la pregunta."
+    }
+  ],
+  "missingSources": [
+    {
+      "forClaim": "q-roses-t04-005",
+      "need": "Llei 10/2007, de creació de l’Institut de Seguretat Pública de Catalunya",
+      "why": "La Llei 4/2003, art. 14, encara anomena l’Escola de Policia de Catalunya. La resposta és correcta en dret vigent, però cap font del paquet la demostra."
+    },
+    {
+      "forClaim": "q-roses-t34-005",
+      "need": "Decret legislatiu 2/2008, text refós de la Llei de protecció dels animals (Catalunya)",
+      "why": "La Llei 7/2023, art. 26.i), imposa el microxip només «de todos los gatos». L’obligació general per a tots els gossos és autonòmica."
+    },
+    {
+      "forClaim": "q-roses-t01-101",
+      "need": "Font que dati el referèndum de ratificació (6-12-1978)",
+      "why": "El text consolidat de la Constitució només porta la publicació al BOE de 29-12-1978."
+    },
+    {
+      "forClaim": "q-roses-t01-102",
+      "need": "Font que enumeri les 17 comunitats i 2 ciutats autònomes",
+      "why": "La Constitució fixa el marc del títol VIII però no les enumera."
+    },
+    {
+      "forClaim": "q-roses-t04-102",
+      "need": "IDESCAT o el decret de divisió territorial vigent",
+      "why": "Cal per decidir el nombre de comarques de la província de Girona; la pregunta queda en draft mentrestant."
+    },
+    {
+      "forClaim": "tema 31 (14 preguntes i la microlliçó)",
+      "need": "Instantànies de text de les pàgines de www.roses.cat, no la portada",
+      "why": "La descàrrega de la portada és un esquelet de navegació."
+    },
+    {
+      "forClaim": "tema 19 (4 preguntes i la microlliçó)",
+      "need": "Instantànies de text de ciberseguretat.gencat.cat (ciberamenaces i autoprotecció)",
+      "why": "La descàrrega de la portada és un esquelet de navegació."
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "roses-arxiu-examens",
+      "cacheFile": "roses-arxiu-examens.html",
+      "sha256": "172d18d0c26051e4d6d77af8054b414b8bcce91f5a506678684bff73b3938395",
+      "bytes": 172910,
+      "downloadedFrom": "https://www.roses.cat/ajuntament/informacio-administrativa/oferta-publica-docupacio/examens-1",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "roses-ordenances-index",
+      "cacheFile": "roses-ordenances-index.html",
+      "sha256": "35eae04006593c73ba339e3e3ba63f12730352c4d29e52e23e4c88834cc1bb88",
+      "bytes": 75663,
+      "downloadedFrom": "https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "roses-web-municipi",
+      "cacheFile": "roses-web-municipi.html",
+      "sha256": "12ab22566302116885c013cf23dc561c02bc118baeb11b810d72d8dec2990777",
+      "bytes": 136223,
+      "downloadedFrom": "https://www.roses.cat/",
+      "textExtracted": false,
+      "note": "La còpia és l’esquelet de navegació de www.roses.cat: 6 kB de text net, tot menús. El contingut es carrega per JavaScript i no hi és."
+    },
+    {
+      "sourceId": "ce-1978",
+      "cacheFile": "ce-1978.pdf",
+      "sha256": "1a6d7ae6ab092984eb9ba4d327b33184729e01f279b3fe785c523608168b2330",
+      "bytes": 330448,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1978/BOE-A-1978-31229-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-6-2006-eac",
+      "cacheFile": "lo-6-2006-eac.pdf",
+      "sha256": "a0625d6103d6a5fe584b3e5405655f4b5fe472cb2f47c6f4cb10a4108a10fdc5",
+      "bytes": 4018208,
+      "downloadedFrom": "https://www.parlament.cat/document/cataleg/48089.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-7-1985-lrbrl",
+      "cacheFile": "llei-7-1985-lrbrl.pdf",
+      "sha256": "77bde9a18873cd4d85ac035825f15e7aacfa515f711bb9e96fba5151f342507f",
+      "bytes": 563859,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1985/BOE-A-1985-5392-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rdleg-5-2015-trebep",
+      "cacheFile": "rdleg-5-2015-trebep.pdf",
+      "sha256": "000e4de146fa3983e961dee11a36e11926890695d373e62a1f2fdae4d6497496",
+      "bytes": 459621,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-11719-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-53-1984-incompat",
+      "cacheFile": "llei-53-1984-incompat.pdf",
+      "sha256": "3a39e4ccc4040fbeb2096bf7c7b3bb0d2e8e12c59a93a100c392542bf664acec",
+      "bytes": 184981,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1985/BOE-A-1985-151-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "cacheFile": "rdleg-2-2004-trlrhl.pdf",
+      "sha256": "d2f0055ecc70de7bd385a3e49f928be4cf3ac753b0f77b708eadaf90600ae821",
+      "bytes": 747224,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2004/BOE-A-2004-4214-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-39-2015-pac",
+      "cacheFile": "llei-39-2015-pac.pdf",
+      "sha256": "f92d4402b820d2af2dcf115832706210e984a5946218bae4a66650a52271417c",
+      "bytes": 579493,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-10565-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-40-2015-rjsp",
+      "cacheFile": "llei-40-2015-rjsp.pdf",
+      "sha256": "ac5ea378c0cf2e44fe7cfba8220576319c6422ff2448763997add27afaa5bf0a",
+      "bytes": 775672,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-10566-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-19-2013-transp",
+      "cacheFile": "llei-19-2013-transp.pdf",
+      "sha256": "02b2b6728ffdb035c2e95598f4c157a5e31253a1facf249259c0233256bc8517",
+      "bytes": 310588,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2013/BOE-A-2013-12887-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-3-2018-lopdgdd",
+      "cacheFile": "lo-3-2018-lopdgdd.pdf",
+      "sha256": "a736af56c1f5527a44d59ad1b26d34da04231e6d4ba4865dd26d2e20ac0ba924",
+      "bytes": 542839,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2018/BOE-A-2018-16673-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-2-1986-fcs",
+      "cacheFile": "lo-2-1986-fcs.pdf",
+      "sha256": "133ac0ad5c98a28b98335d963d6a28701ecb65d17179e0558758ad59c81eb6d7",
+      "bytes": 308216,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1986/BOE-A-1986-6859-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-4-2015-psc",
+      "cacheFile": "lo-4-2015-psc.pdf",
+      "sha256": "2aad2cd9935cd0ad5db712036574f1c7774bbb3f7df3423ca13e39a2c1c66f87",
+      "bytes": 319276,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-3442-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-10-1995-cp",
+      "cacheFile": "lo-10-1995-cp.pdf",
+      "sha256": "c9f96007c9f2c3de1fc82c8834d2ccc9ae21625ffe20dee6dd042b35fe7e9fb5",
+      "bytes": 1256106,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1995/BOE-A-1995-25444-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-1-2015-reforma-cp",
+      "cacheFile": "lo-1-2015-reforma-cp.pdf",
+      "sha256": "d697bb8d907edcf1cca616bbc3531a62d643c637b6d4885c656c85b8a0e9f7b3",
+      "bytes": 629505,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-3439-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lecrim-1882",
+      "cacheFile": "lecrim-1882.pdf",
+      "sha256": "c65f5e92bd278f527926bfef44eed8fab263de9d24690d6689eef2cd29a29f4c",
+      "bytes": 1334362,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1882/BOE-A-1882-6036-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-6-1984-habeas",
+      "cacheFile": "lo-6-1984-habeas.pdf",
+      "sha256": "b6d285e576c5a484e76f472921170795a2dc01afef8601a6be480b3e44d142cf",
+      "bytes": 126545,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1984/BOE-A-1984-11620-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rdleg-6-2015-ltsv",
+      "cacheFile": "rdleg-6-2015-ltsv.pdf",
+      "sha256": "dc46ae73a46469ce118f986ebd7707d7af0d800a36689f2cbb96e37c752d6bb4",
+      "bytes": 594733,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-11722-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rd-1428-2003-rgc",
+      "cacheFile": "rd-1428-2003-rgc.html",
+      "sha256": "c912ee494e6061027f3ae8a2a2a9e2afaa2a7c1a8aa5480ca007f9503df6fb17",
+      "bytes": 687707,
+      "downloadedFrom": "https://www.boe.es/eli/es/rd/2003/11/21/1428/con",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rd-818-2009-rgcond",
+      "cacheFile": "rd-818-2009-rgcond.pdf",
+      "sha256": "9138c10c43d96d707c37d1796739556e4779dbf66699eecd496f98e0d42402e5",
+      "bytes": 3835793,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2009/BOE-A-2009-9481-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rd-2822-1998-rgv",
+      "cacheFile": "rd-2822-1998-rgv.pdf",
+      "sha256": "5b057269e2f49d619c41ea0191fe44daf034c3984418c8cc41a3e2f9aac2a0b5",
+      "bytes": 8289622,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1999/BOE-A-1999-1826-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-50-1999-app",
+      "cacheFile": "llei-50-1999-app.pdf",
+      "sha256": "c11a57159c24b8f8901f9d185c447f697690eedea77a326bfdd19a9548e67c4c",
+      "bytes": 154121,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/1999/BOE-A-1999-24419-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rd-287-2002-app",
+      "cacheFile": "rd-287-2002-app.pdf",
+      "sha256": "6d517b60cb5c49c5c77ac2971171db683b488865822e66c6556c75eb2c0cfbff",
+      "bytes": 140016,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2002/BOE-A-2002-6016-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-27-2003-ordre-proteccio",
+      "cacheFile": "llei-27-2003-ordre-proteccio.pdf",
+      "sha256": "1a86ba339f99a170fd10ddaa8ac39277c4082b61be4dc616ace1a0cb229c21b5",
+      "bytes": 125366,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2003/BOE-A-2003-15411-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-3-2007-igualtat",
+      "cacheFile": "lo-3-2007-igualtat.pdf",
+      "sha256": "aab1e0d9c3c4bf358ffc7e04a5c60d3606256d34e14f3839e896a886dc020465",
+      "bytes": 515380,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2007/BOE-A-2007-6115-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-5-2000-menors",
+      "cacheFile": "lo-5-2000-menors.pdf",
+      "sha256": "2f591ac24233298b9035527f61e24c9061970ff7fd90895089456c778f0c1245",
+      "bytes": 351605,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2000/BOE-A-2000-641-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-16-1991-policies-locals",
+      "cacheFile": "llei-16-1991-policies-locals.pdf",
+      "sha256": "47d7b396ebba617de2d39c672e8397e1ded6b20cfa0a549e4a0068101e37d077",
+      "bytes": 305058,
+      "downloadedFrom": "https://portaldogc.gencat.cat/utilsEADOP/PDF/1469/2161477.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "cacheFile": "llei-4-2003-seguretat-publica.pdf",
+      "sha256": "b3ca023f11372262955dd691c03e039fefd31916aa88ae49e6474c3dbb199d8a",
+      "bytes": 292150,
+      "downloadedFrom": "https://portaldogc.gencat.cat/utilsEADOP/PDF/3865/2161484.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "decret-179-2015-disciplinari",
+      "cacheFile": "decret-179-2015-disciplinari.pdf",
+      "sha256": "7f3bedbd57cecbd2c0a6c9143c4500359fa221cdfd07c0074befd80383d0b714",
+      "bytes": 217721,
+      "downloadedFrom": "https://portaldogc.gencat.cat/utilsEADOP/PDF/6929/1458754.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "decret-151-1998-juntes",
+      "cacheFile": "decret-151-1998-juntes.pdf",
+      "sha256": "995ce79f84f7a2b66832fc21f4cc116fa1df0dfc790a4700215fc3cf4ebd2808",
+      "bytes": 123696,
+      "downloadedFrom": "https://portaldogc.gencat.cat/utilsEADOP/PDF/2671/1300420.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-19-2014-transp-cat",
+      "cacheFile": "llei-19-2014-transp-cat.pdf",
+      "sha256": "7ca43416b69d36501255ef098bd6aa2cd7b570c2d30020826df71b989d48ec8e",
+      "bytes": 381705,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-470-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "codi-etic-policia-catalunya",
+      "cacheFile": "codi-etic-policia-catalunya.pdf",
+      "sha256": "3d481f263bdd5cabbc96c67b9363369676f806bd93402fd5b2f14f21abc9bb3a",
+      "bytes": 100438,
+      "downloadedFrom": "https://dsp.interior.gencat.cat/bitstream/handle/20.500.14007/6060/ACORD%20GOV_25_2015.pdf?sequence=1&isAllowed=y",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "codi-seguretat-catalunya",
+      "cacheFile": "codi-seguretat-catalunya.html",
+      "sha256": "a094c26598b3684393a45149d4100676064e2241042955139e56bf6782a97087",
+      "bytes": 132218,
+      "downloadedFrom": "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "cacheFile": "agencia-ciberseguretat-catalunya.html",
+      "sha256": "67f433f65b6c8e56078d8088e911dbf54f33e5c55f9e9a40930f1934cbf177ea",
+      "bytes": 144135,
+      "downloadedFrom": "https://ciberseguretat.gencat.cat/ca/Inici",
+      "textExtracted": false,
+      "note": "La còpia és l’esquelet de navegació de ciberseguretat.gencat.cat: 8 kB de text net, tot menús. El cos de les pàgines es carrega per JavaScript."
+    },
+    {
+      "sourceId": "carta-drets-ue",
+      "cacheFile": "carta-drets-ue.pdf",
+      "sha256": "45c341f8d1d2b2599fcdca6000ae3accb1e900dc5db2b1fa685ced9c7b098c1b",
+      "bytes": 4766131,
+      "downloadedFrom": "https://op.europa.eu/o/opportal-service/download-handler?identifier=1194001c-c811-11e6-a6db-01aa75ed71a1&format=PDF&language=es&productionSystem=cellar",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "rgpd-2016-679",
+      "cacheFile": "rgpd-2016-679.pdf",
+      "sha256": "a2fa3289de2f124c92748a181ad1499411b24ee3d26c74bd12781afa43cfa481",
+      "bytes": 1024768,
+      "downloadedFrom": "https://op.europa.eu/o/opportal-service/download-handler?identifier=3e485e15-11bd-11e6-ba9a-01aa75ed71a1&format=PDF&language=es&productionSystem=cellar",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "ddhh-1948",
+      "cacheFile": "ddhh-1948.html",
+      "sha256": "dac93023f48e98494a36f04caf33965ccfcf266c2194add7e5dc95ae11cb153a",
+      "bytes": 106040,
+      "downloadedFrom": "https://www.un.org/es/about-us/universal-declaration-of-human-rights",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "lo-7-2021-dades-policials",
+      "cacheFile": "lo-7-2021-dades-policials.pdf",
+      "sha256": "dc57f09b46811ddfed2403969502a9e910db946ec64d249d5a3b8fd6511ef154",
+      "bytes": 421809,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2021/BOE-A-2021-8806-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-10-1999-gossos-cat",
+      "cacheFile": "llei-10-1999-gossos-cat.pdf",
+      "sha256": "8ca5fa907a3accde07ad244c73cabf96867ab49d16fb16216919d3f6dafd74de",
+      "bytes": 120854,
+      "downloadedFrom": "https://portaldogc.gencat.cat/utilsEADOP/PDF/2948/1794584.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "llei-7-2023-benestar-animal",
+      "cacheFile": "llei-7-2023-benestar-animal.pdf",
+      "sha256": "23147891ce17c77f65f681b4b30d0ade82fae985dd4b0e82a747cc83d2353776",
+      "bytes": 448911,
+      "downloadedFrom": "https://www.boe.es/buscar/pdf/2023/BOE-A-2023-7936-consolidado.pdf",
+      "textExtracted": true
+    },
+    {
+      "sourceId": "roses-tramits-animals",
+      "cacheFile": "roses-tramits-animals.html",
+      "sha256": "5b2e0e3514826364cc61ab8afe72c164cf6fa73d55ce66b2ecae3cf543e13570",
+      "bytes": 64384,
+      "downloadedFrom": "https://www.roses.cat/tramits/llicancia-per-a-la-tinenaa-i-conduccia-danimals",
+      "textExtracted": true
+    }
+  ],
+  "claims": [
+    {
+      "consumer": "q-roses-t01-001",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "estructura general",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "l’articulat indexat del text consolidat té exactament 169 articles"
+    },
+    {
+      "consumer": "q-roses-t01-002",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 1.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.1: «libertad, la justicia, la igualdad y el pluralismo político»"
+    },
+    {
+      "consumer": "q-roses-t01-003",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 9.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 9.3 enumera set garanties i cap és la proporcionalitat de les penes"
+    },
+    {
+      "consumer": "q-roses-t01-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 167 i 168",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 168.1: «título preliminar, al capítulo segundo, sección primera del título I, o al título II»"
+    },
+    {
+      "consumer": "q-roses-t01-005",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 1.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.3: «la Monarquía parlamentaria»"
+    },
+    {
+      "consumer": "q-roses-t01-101",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "tramitació i promulgació",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "font-insuficient",
+      "evidence": "la data del referèndum (6-12-1978) no consta al text consolidat: la capçalera només dona la publicació al BOE de 29-12-1978"
+    },
+    {
+      "consumer": "q-roses-t01-102",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "títol VIII, organització territorial",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "font-insuficient",
+      "evidence": "la Constitució no enumera les 17 comunitats ni les 2 ciutats autònomes; només fixa el marc del títol VIII"
+    },
+    {
+      "consumer": "q-roses-t01-103",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.1: «El castellano es la lengua española oficial del Estado»"
+    },
+    {
+      "consumer": "q-roses-t02-001",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 53.2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 53.2: art. 14, secció 1a del capítol II i objecció de consciència de l’art. 30"
+    },
+    {
+      "consumer": "q-roses-t02-002",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 17.2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 17.2: termini màxim de setanta-dues hores"
+    },
+    {
+      "consumer": "q-roses-t02-003",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 55",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 55.2: suspensió individual dels art. 17.2 i 18.2 i 3 per a bandes armades o terrorisme"
+    },
+    {
+      "consumer": "q-roses-t02-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 21",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 21.1 i 21.2: sense autorització prèvia; comunicació prèvia en via pública"
+    },
+    {
+      "consumer": "q-roses-t02-005",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 54",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 54: «alto comisionado de las Cortes Generales, designado por éstas»"
+    },
+    {
+      "consumer": "q-roses-t02-101",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 14",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14: igualtat davant la llei"
+    },
+    {
+      "consumer": "q-roses-t02-102",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 15",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 15: «Queda abolida la pena de muerte, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra»"
+    },
+    {
+      "consumer": "q-roses-t03-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "norma aprovatòria",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "portada: LO 6/2006, de reforma de l’Estatut, sancionada el 19 de juliol de 2006"
+    },
+    {
+      "consumer": "q-roses-t03-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "drets i deures lingüístics",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6.1: «La llengua pròpia de Catalunya és el català»; 6.2, oficial amb el castellà"
+    },
+    {
+      "consumer": "q-roses-t03-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "drets lingüístics davant les administracions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 33.1: dret d’opció lingüística davant les administracions"
+    },
+    {
+      "consumer": "q-roses-t03-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "text consolidat després de la STC 31/2010",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "l’edició incorpora la STC 31/2010 en 47 notes i la llista de sentències"
+    },
+    {
+      "consumer": "q-roses-t03-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 1 i 11",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.1: els municipis són entitats bàsiques de l’organització territorial"
+    },
+    {
+      "consumer": "q-roses-t03-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "govern local",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 86.1: «El municipi és l’ens local bàsic de l’organització territorial de Catalunya»"
+    },
+    {
+      "consumer": "q-roses-t03-101",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "règim lingüístic",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6.2 (català i castellà) i 6.5 (aranès): tres llengües oficials"
+    },
+    {
+      "consumer": "q-roses-t03-102",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "l’aranès",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6.5: «La llengua occitana, denominada aranès a l’Aran»"
+    },
+    {
+      "consumer": "q-roses-t04-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "la Presidència de la Generalitat",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 67.2 i 67.4: elegit pel Parlament d’entre els seus membres i nomenat pel rei"
+    },
+    {
+      "consumer": "q-roses-t04-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "el Parlament",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 56.1: diputats «elegits per a un termini de quatre anys»"
+    },
+    {
+      "consumer": "q-roses-t04-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "dependència dels cossos de policia local",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul III i art. 15: la Generalitat coordina; el cos queda «sota el comandament superior de l’alcalde»"
+    },
+    {
+      "consumer": "q-roses-t04-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "competències en seguretat pública",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 164.2: a la Generalitat li correspon «la coordinació de l’actuació de les policies locals»"
+    },
+    {
+      "consumer": "q-roses-t04-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "el Govern",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol II: el Govern o Consell Executiu"
+    },
+    {
+      "consumer": "q-roses-t04-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "formació i coordinació policial",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "font-insuficient",
+      "evidence": "l’art. 14 crea l’ESCOLA de Policia de Catalunya; l’Institut de Seguretat Pública el crea la Llei 10/2007, que no és al paquet. La resposta és correcta en dret vigent, però aquesta font no la demostra"
+    },
+    {
+      "consumer": "q-roses-t04-101",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "antecedents i norma aprovatòria",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "portada i preàmbul: l’Estatut de 2006 substitueix el de 1979"
+    },
+    {
+      "consumer": "q-roses-t04-102",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "organització territorial de Catalunya",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "font-insuficient",
+      "evidence": "l’Estatut no enumera les comarques de la província de Girona; el nombre no es pot verificar amb aquesta font i cal contrastar-lo amb l’IDESCAT abans de donar-lo per bo"
+    },
+    {
+      "consumer": "q-roses-t05-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 11",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 11.2: «el territorio, la población y la organización»"
+    },
+    {
+      "consumer": "q-roses-t05-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 15 i 16",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 15-16: la condició de veí s’adquireix per inscripció al padró"
+    },
+    {
+      "consumer": "q-roses-t05-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 20",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 20.1.b: la Junta de Govern Local existeix als municipis de més de 5.000 habitants"
+    },
+    {
+      "consumer": "q-roses-t05-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 25",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 25.2.f: «Policía local, protección civil, prevención y extinción de incendios»"
+    },
+    {
+      "consumer": "q-roses-t05-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 4: potestats reconegudes als municipis"
+    },
+    {
+      "consumer": "q-roses-t06-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 49",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 49.b: informació pública «por el plazo mínimo de treinta días»"
+    },
+    {
+      "consumer": "q-roses-t06-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 22 i 49",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 49.a i 22: aprovació inicial i definitiva pel Ple"
+    },
+    {
+      "consumer": "q-roses-t06-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 21.1.e",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "l’art. 21.1.e atribueix a l’alcalde «dictar bandos», però no en defineix el contingut ni el límit; el matís el dona la doctrina i l’art. 84"
+    },
+    {
+      "consumer": "q-roses-t06-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 65.2 i 70.2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 70.2: publicació al «Boletín Oficial de la Provincia» (Girona, per raó del municipi)"
+    },
+    {
+      "consumer": "q-roses-t06-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 49",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 49 in fine: «se entenderá definitivamente adoptado el acuerdo hasta entonces provisional»"
+    },
+    {
+      "consumer": "q-roses-t07-001",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "títol IX, art. 159 i següents",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "el TC es regula al títol IX, separat del poder judicial (títol VI)"
+    },
+    {
+      "consumer": "q-roses-t07-002",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 159.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 159.1: quatre Congrés, quatre Senat, dos Govern, dos CGPJ"
+    },
+    {
+      "consumer": "q-roses-t07-003",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 117.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 117.1: «La justicia emana del pueblo y se administra en nombre del Rey»"
+    },
+    {
+      "consumer": "q-roses-t07-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 152",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 152.1: «Un Tribunal Superior de Justicia… culminará la organización judicial»"
+    },
+    {
+      "consumer": "q-roses-t07-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "el poder judicial a Catalunya",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 95.1: el TSJC és l’òrgan en què culmina l’organització judicial a Catalunya"
+    },
+    {
+      "consumer": "q-roses-t07-005",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 159.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 159.3: «designados por un período de nueve años»"
+    },
+    {
+      "consumer": "q-roses-t07-101",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 122.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 122.3: el CGPJ té el president del TS i «veinte miembros»"
+    },
+    {
+      "consumer": "q-roses-t07-102",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 54",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 54: el Defensor del Poble"
+    },
+    {
+      "consumer": "q-roses-t08-001",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 8",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 8.2 llista literalment a) funcionarios de carrera b) interinos c) laboral d) eventual"
+    },
+    {
+      "consumer": "q-roses-t08-002",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 14 i 15",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 15.a): la llibertat sindical és un dret individual exercit col·lectivament"
+    },
+    {
+      "consumer": "q-roses-t08-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 5.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.1.d): «en ningún caso, la obediencia debida podrá amparar órdenes que entrañen la ejecución de actos que manifiestamente constituyan delito o sean contrarios a la Constitución o a las Leyes»"
+    },
+    {
+      "consumer": "q-roses-t08-003",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 54",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 54.3: «Obedecerán las instrucciones y órdenes profesionales de los superiores, salvo que constituyan una infracción manifiesta del ordenamiento jurídico». L’opció s’ha retallat el 2026-08-24: deia «manifesta, clara i terminant» i cap de les 43 fonts conté aquesta fórmula."
+    },
+    {
+      "consumer": "q-roses-t08-004",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 52, 53 i 54",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 52 configura el Codi de Conducta «por los principios éticos y de conducta regulados en los artículos siguientes» (53 i 54)"
+    },
+    {
+      "consumer": "q-roses-t08-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-40-2015-rjsp",
+      "locator": "art. 23",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "l’art. 23 imposa el deure d’abstenció, però la qualificació com a «principi ètic» és del TREBEP (art. 53), no d’aquesta llei"
+    },
+    {
+      "consumer": "q-roses-t08-005",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 53",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 53.5 «Se abstendrán en aquellos asuntos en los que tengan un interés personal», dins «Principios éticos»; art. 52 «deberán actuar con arreglo» i informa el règim disciplinari"
+    },
+    {
+      "consumer": "q-roses-t09-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-53-1984-incompat",
+      "locator": "art. 1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.1: «no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público, salvo en los supuestos previstos en la misma»"
+    },
+    {
+      "consumer": "q-roses-t09-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-53-1984-incompat",
+      "locator": "art. 16.4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "és l’art. 16.4, no l’encapçalament de l’art. 16: «cuya cuantía no supere el 30 por 100 de su retribución básica, excluidos los conceptos que tengan su origen en la antigüedad»"
+    },
+    {
+      "consumer": "q-roses-t09-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-53-1984-incompat",
+      "locator": "art. 14",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14 §3: «Los reconocimientos de compatibilidad no podrán modificar la jornada de trabajo y horario del interesado»"
+    },
+    {
+      "consumer": "q-roses-t09-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-53-1984-incompat",
+      "locator": "art. 11 i 12",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 12.1.a): «en los asuntos en que esté interviniendo, haya intervenido en los dos últimos años o tenga que intervenir por razón del puesto público»"
+    },
+    {
+      "consumer": "q-roses-t09-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-53-1984-incompat",
+      "locator": "art. 3 i 14",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14 §1: «El ejercicio de actividades profesionales… fuera de las Administraciones Públicas requerirá el previo reconocimiento de compatibilidad»; art. 3.1: «indispensable la previa y expresa autorización de compatibilidad»"
+    },
+    {
+      "consumer": "q-roses-t10-001",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "locator": "art. 59",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 59.1: IBI, IAE i IVTM són els obligatoris; el 59.2 deixa ICIO i IIVTNU com a potestatius"
+    },
+    {
+      "consumer": "q-roses-t10-002",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "locator": "art. 169.6",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 169.6: «se considerará automáticamente prorrogado el del anterior, con sus créditos iniciales»"
+    },
+    {
+      "consumer": "q-roses-t10-003",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "locator": "art. 20 i 41",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 20.1.B).a) (recepció no voluntària) i b) (monopoli / sector públic) enfront de l’art. 41, que permet preu públic només si no concorre cap circumstància de l’art. 20.1.B)"
+    },
+    {
+      "consumer": "q-roses-t10-004",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "locator": "art. 168 i 169",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 168.4: el president remet el pressupost general al Ple «antes del día 15 de octubre»"
+    },
+    {
+      "consumer": "q-roses-t10-005",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "locator": "art. 2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 2.1.g): «El producto de las multas y sanciones en el ámbito de sus competencias»"
+    },
+    {
+      "consumer": "q-roses-t11-001",
+      "consumerKind": "pregunta",
+      "sourceId": "decret-179-2015-disciplinari",
+      "locator": "reglament del procediment",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.1: el règim disciplinari de les policies locals és el que estableix la Llei 16/1991, desplegat per aquest Decret"
+    },
+    {
+      "consumer": "q-roses-t11-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "règim disciplinari",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 46: el règim disciplinari és el d’aquesta Llei; el Decret 179/2015 n’és el reglament de procediment"
+    },
+    {
+      "consumer": "q-roses-t11-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "classificació de les faltes",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 47: «poden ésser molt greus, greus i lleus»"
+    },
+    {
+      "consumer": "q-roses-t11-003",
+      "consumerKind": "pregunta",
+      "sourceId": "decret-179-2015-disciplinari",
+      "locator": "mesures cautelars",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 19: mesures cautelars durant l’expedient, revocables i limitades a la seva durada"
+    },
+    {
+      "consumer": "q-roses-t11-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "catàleg de sancions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 52.1.a: «La separació del servei»"
+    },
+    {
+      "consumer": "q-roses-t11-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "graduació de les sancions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 53: els sis criteris de graduació no inclouen la situació econòmica"
+    },
+    {
+      "consumer": "q-roses-t12-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "objecte i àmbit",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "capçalera: Llei 39/2015, d’1 d’octubre, del procediment administratiu comú"
+    },
+    {
+      "consumer": "q-roses-t12-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 54, 58 i 63",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 63.1: els sancionadors s’inicien sempre d’ofici, amb separació entre instrucció i sanció"
+    },
+    {
+      "consumer": "q-roses-t12-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-40-2015-rjsp",
+      "locator": "art. 25 a 31",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 27: principi de tipicitat dins dels art. 25 a 31"
+    },
+    {
+      "consumer": "q-roses-t12-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 24.2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "l’art. 24.2 reconeix la presumpció d’innocència; la seva aplicació plena al procediment sancionador administratiu és doctrina del TC i no consta al text"
+    },
+    {
+      "consumer": "q-roses-t12-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 53.2 i 77",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 53.2.b: «presunción de no existencia de responsabilidad administrativa mientras no se demuestre lo contrario»"
+    },
+    {
+      "consumer": "q-roses-t12-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 71",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 71.1: «se impulsará de oficio en todos sus trámites»"
+    },
+    {
+      "consumer": "q-roses-t13-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 40",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 40.2: tota notificació s’ha de cursar dins del termini de deu dies"
+    },
+    {
+      "consumer": "q-roses-t13-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 47",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 47.1.b: òrgan manifestament incompetent per raó de matèria o territori"
+    },
+    {
+      "consumer": "q-roses-t13-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 35",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 35: llista d’actes que han de ser motivats"
+    },
+    {
+      "consumer": "q-roses-t13-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 47, 48 i 52",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 48 (anul·labilitat) i 52 (convalidació)"
+    },
+    {
+      "consumer": "q-roses-t13-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 40.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 40.3: efectes des de l’actuació que demostri coneixement o des del recurs"
+    },
+    {
+      "consumer": "q-roses-t14-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.b: capacitat d’obrar dels menors per als drets que l’ordenament els permet"
+    },
+    {
+      "consumer": "q-roses-t14-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 4 i 62",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 4.1: interessats són titulars de drets o interessos legítims"
+    },
+    {
+      "consumer": "q-roses-t14-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 5",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.3: «Para los actos y gestiones de mero trámite se presumirá aquella representación»"
+    },
+    {
+      "consumer": "q-roses-t14-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 13 i 53",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 53.1.d: dret a no presentar documents ja aportats a qualsevol Administració"
+    },
+    {
+      "consumer": "q-roses-t14-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 15",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 15: llengua dels procediments i dret d’opció"
+    },
+    {
+      "consumer": "q-roses-t14-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "drets lingüístics",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 33.1: dret d’opció lingüística"
+    },
+    {
+      "consumer": "q-roses-t15-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 30.1 i 30.2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 30.1: dies hàbils «excluyéndose del cómputo los sábados, los domingos y los declarados festivos»"
+    },
+    {
+      "consumer": "q-roses-t15-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 21",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 21.3: termini supletori de tres mesos"
+    },
+    {
+      "consumer": "q-roses-t15-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 25.1.b",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 25.1.b: caducitat als procediments desfavorables iniciats d’ofici"
+    },
+    {
+      "consumer": "q-roses-t15-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 30.5",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 30.5: si l’últim dia és inhàbil, es prorroga al primer hàbil següent"
+    },
+    {
+      "consumer": "q-roses-t15-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-40-2015-rjsp",
+      "locator": "art. 23 i 24",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 23.1: «se abstendrán de intervenir en el procedimiento y lo comunicarán a su superior inmediato»"
+    },
+    {
+      "consumer": "q-roses-t16-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "títol IV, capítols II a VI",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol IV, capítols II a VI: iniciació, ordenació, instrucció i finalització"
+    },
+    {
+      "consumer": "q-roses-t16-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 82",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 82.2: audiència «no inferior a diez días ni superior a quince»"
+    },
+    {
+      "consumer": "q-roses-t16-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 54 i 58",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 54: d’ofici o a sol·licitud de la persona interessada"
+    },
+    {
+      "consumer": "q-roses-t16-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 94",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 94.1: desistiment de la sol·licitud i renúncia al dret"
+    },
+    {
+      "consumer": "q-roses-t16-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 56",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 56: mesures provisionals per assegurar l’eficàcia de la resolució"
+    },
+    {
+      "consumer": "q-roses-t17-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 100",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 100.1: constrenyiment, execució subsidiària, multa coercitiva i compulsió"
+    },
+    {
+      "consumer": "q-roses-t17-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 122",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 122.1: alçada, un mes si l’acte és exprés"
+    },
+    {
+      "consumer": "q-roses-t17-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 123",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 123.1: reposició contra actes que posen fi a la via administrativa"
+    },
+    {
+      "consumer": "q-roses-t17-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 124",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 124.1: reposició, un mes si l’acte és exprés"
+    },
+    {
+      "consumer": "q-roses-t17-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 106, 107 i 109",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 107.1: declaració de lesivitat i impugnació contenciosa"
+    },
+    {
+      "consumer": "q-roses-t18-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-19-2013-transp",
+      "locator": "art. 17",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 17.3: «El solicitante no está obligado a motivar su solicitud de acceso… Sin embargo, podrá exponer los motivos»"
+    },
+    {
+      "consumer": "q-roses-t18-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-19-2013-transp",
+      "locator": "art. 20",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 20.1: «en el plazo máximo de un mes desde la recepción de la solicitud», ampliable per un mes més"
+    },
+    {
+      "consumer": "q-roses-t18-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-19-2014-transp-cat",
+      "locator": "Comissió de Garantia del Dret d’Accés",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 39.1: la reclamació es fa «ante la Comisión de Garantía del Derecho de Acceso a la Información Pública», òrgan independent (art. 39.2)"
+    },
+    {
+      "consumer": "q-roses-t18-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-19-2013-transp",
+      "locator": "art. 5 a 8",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.1: «publicarán de forma periódica y actualizada la información cuyo conocimiento sea relevante»"
+    },
+    {
+      "consumer": "q-roses-t18-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-19-2013-transp",
+      "locator": "art. 14 i 16",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14.2: «La aplicación de los límites será justificada y proporcionada a su objeto y finalidad de protección»"
+    },
+    {
+      "consumer": "q-roses-t19-001",
+      "consumerKind": "pregunta",
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "locator": "recomanacions i tipologia d’incidents",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "descàrrega defectuosa: el fitxer de 144 KB només conté l’esquelet de navegació (8,3 KB de text net, tot menús); el cos de la pàgina es carrega per JavaScript i no hi és. El mustContain de l’inventari («Agència de Ciberseguretat») passava sobre el menú."
+    },
+    {
+      "consumer": "q-roses-t19-002",
+      "consumerKind": "pregunta",
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "locator": "funcions institucionals",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "descàrrega defectuosa: el fitxer de 144 KB només conté l’esquelet de navegació (8,3 KB de text net, tot menús). El menú «Què fem?» anomena l’organisme i les seves línies d’activitat, però una etiqueta de menú no és el document: el cos de la pàgina no s’ha descarregat."
+    },
+    {
+      "consumer": "q-roses-t19-003",
+      "consumerKind": "pregunta",
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "locator": "tipologia d’amenaces",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "descàrrega defectuosa: el fitxer de 144 KB només conté l’esquelet de navegació (8,3 KB de text net, tot menús); el cos de la pàgina es carrega per JavaScript i no hi és. El mustContain de l’inventari («Agència de Ciberseguretat») passava sobre el menú."
+    },
+    {
+      "consumer": "q-roses-t19-004",
+      "consumerKind": "pregunta",
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "locator": "preservació de proves digitals",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "descàrrega defectuosa: el fitxer de 144 KB només conté l’esquelet de navegació (8,3 KB de text net, tot menús); el cos de la pàgina es carrega per JavaScript i no hi és. El mustContain de l’inventari («Agència de Ciberseguretat») passava sobre el menú."
+    },
+    {
+      "consumer": "q-roses-t19-005",
+      "consumerKind": "pregunta",
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "locator": "mesures d’autoprotecció",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "descàrrega defectuosa: el fitxer de 144 KB només conté l’esquelet de navegació (8,3 KB de text net, tot menús); el cos de la pàgina es carrega per JavaScript i no hi és. El mustContain de l’inventari («Agència de Ciberseguretat») passava sobre el menú."
+    },
+    {
+      "consumer": "q-roses-t20-001",
+      "consumerKind": "pregunta",
+      "sourceId": "rgpd-2016-679",
+      "locator": "art. 5",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.1 llista licitud/lleialtat/transparència, limitació de la finalitat, minimització, exactitud, limitació del termini i integritat; l’art. 5.2 hi afegeix la responsabilitat proactiva. Cap principi de gratuïtat."
+    },
+    {
+      "consumer": "q-roses-t20-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2018-lopdgdd",
+      "locator": "tractaments per obligació legal",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 8.1 i 8.2: obligació legal (art. 6.1.c RGPD) i exercici de poders públics (art. 6.1.e RGPD) exigeixen norma amb rang de llei"
+    },
+    {
+      "consumer": "q-roses-t20-002",
+      "consumerKind": "pregunta",
+      "sourceId": "rgpd-2016-679",
+      "locator": "art. 6",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6.1.c) (obligació legal) i 6.1.e) (missió d’interès públic o exercici de poders públics); l’art. 6.1 in fine exclou l’interès legítim «al tratamiento realizado por las autoridades públicas en el ejercicio de sus funciones»"
+    },
+    {
+      "consumer": "q-roses-t20-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-7-2021-dades-policials",
+      "locator": "objecte i àmbit d’aplicació",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul: transposa «la Directiva (UE) 2016/680… por parte de las autoridades competentes para fines de prevención, investigación, detección o enjuiciamiento de infracciones penales»; art. 1 en fixa l’objecte amb la mateixa finalitat"
+    },
+    {
+      "consumer": "q-roses-t20-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 18.4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "l’art. 18.4 limita l’ús de la informàtica; l’autonomia del dret a la protecció de dades és doctrina (STC 292/2000), no literal"
+    },
+    {
+      "consumer": "q-roses-t20-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2018-lopdgdd",
+      "locator": "objecte",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.a): «El derecho fundamental de las personas físicas a la protección de datos personales, amparado por el artículo 18.4 de la Constitución»: dret propi, amb el seu propi objecte"
+    },
+    {
+      "consumer": "q-roses-t20-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-7-2021-dades-policials",
+      "locator": "finalitats del tractament",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6.2: «Los datos personales recogidos por las autoridades competentes no serán tratados para otros fines distintos de los establecidos en el artículo 1, salvo que dicho tratamiento esté autorizado por el Derecho de la Unión Europea o por la legislación española»"
+    },
+    {
+      "consumer": "q-roses-t20-005",
+      "consumerKind": "pregunta",
+      "sourceId": "rgpd-2016-679",
+      "locator": "art. 5.1.b",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.1.b): les dades es recullen «con fines determinados, explícitos y legítimos, y no serán tratados ulteriormente de manera incompatible con dichos fines»"
+    },
+    {
+      "consumer": "q-roses-t21-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 5.2.d",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.2.d: «utilizar las armas… riesgo racionalmente grave para su vida, su integridad física o las de terceras personas»"
+    },
+    {
+      "consumer": "q-roses-t21-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 5.2.c",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.2.c: «congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance»"
+    },
+    {
+      "consumer": "q-roses-t21-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 53.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 53.1.c: «Instruir atestados por accidentes de circulación dentro del casco urbano»"
+    },
+    {
+      "consumer": "q-roses-t21-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 9",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 9.b: «La Guardia Civil, que es un Instituto Armado de naturaleza militar»"
+    },
+    {
+      "consumer": "q-roses-t21-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 5",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5: els sis principis no inclouen cap rendiment econòmic"
+    },
+    {
+      "consumer": "q-roses-t22-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "objecte de la llei",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1: «l’objecte d’aquesta Llei és l’ordenació de les competències de la Generalitat en matèria de seguretat pública… en un sistema general de seguretat propi de Catalunya»"
+    },
+    {
+      "consumer": "q-roses-t22-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "òrgans del sistema",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6 i preàmbul: el Consell de Seguretat de Catalunya com a òrgan superior de participació"
+    },
+    {
+      "consumer": "q-roses-t22-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "planificació de la seguretat",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 10.b: les juntes locals «elaboren i aproven el Pla de seguretat local»"
+    },
+    {
+      "consumer": "q-roses-t22-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "integrants del sistema",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.1: integrants són autoritats, cossos i serveis de seguretat i òrgans de coordinació; no hi ha inspecció tributària"
+    },
+    {
+      "consumer": "q-roses-t22-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "dependència municipal",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 15.1.a: homogeneïtzació de mitjans i uniformitat, mantenint la prestació directa municipal"
+    },
+    {
+      "consumer": "q-roses-t22-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "coordinació de policies locals",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 15.2.a: homogeneïtzació de mitjans i uniformitat"
+    },
+    {
+      "consumer": "q-roses-t23-001",
+      "consumerKind": "pregunta",
+      "sourceId": "decret-151-1998-juntes",
+      "locator": "composició i presidència",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.a): «El president, que serà l’alcalde del municipi corresponent»"
+    },
+    {
+      "consumer": "q-roses-t23-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "art. 9.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 9.1: «Als municipis que tinguin policia local hi ha d’haver una junta local de seguretat». Substitueix la referència al Decret 151/1998, que la fa potestativa («es poden constituir… quan així ho acordi el ple»)."
+    },
+    {
+      "consumer": "q-roses-t23-003",
+      "consumerKind": "pregunta",
+      "sourceId": "decret-151-1998-juntes",
+      "locator": "art. 2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "art. 2.a) (analitzar i valorar la situació) i 2.c) (plans i procediments de coordinació); l’art. 2.b) diu «Elaborar plans», no aprovar-los"
+    },
+    {
+      "consumer": "q-roses-t23-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "art. 10.b",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 10.b): «Elaborar i aprovar el Pla de seguretat local… i fer-ne el seguiment i l’avaluació»"
+    },
+    {
+      "consumer": "q-roses-t23-004",
+      "consumerKind": "pregunta",
+      "sourceId": "decret-151-1998-juntes",
+      "locator": "norma reguladora",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol literal: «DECRET 151/1998, de 23 de juny, de regulació de les juntes locals de seguretat»"
+    },
+    {
+      "consumer": "q-roses-t23-005",
+      "consumerKind": "pregunta",
+      "sourceId": "decret-151-1998-juntes",
+      "locator": "coordinació de dispositius",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 2.c): «Elaborar plans i procediments per a una eficaç coordinació i col·laboració dels diferents cossos de seguretat que actuïn al municipi»"
+    },
+    {
+      "consumer": "q-roses-t24-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "naturalesa dels cossos",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 2.1: «instituts armats de naturalesa civil amb estructura i organització jerarquitzades»"
+    },
+    {
+      "consumer": "q-roses-t24-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "art. 24.1.d i 24.2.d",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 24.1.d: «Escala bàsica, que comprèn les categories de caporal i d’agent»"
+    },
+    {
+      "consumer": "q-roses-t24-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "àmbit territorial",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 5.1: «l’àmbit d’actuació… és constituït pel territori del municipi corresponent»"
+    },
+    {
+      "consumer": "q-roses-t24-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "preàmbul III",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul III: els cossos de policia local actuen «sota el comandament superior de l’alcalde»"
+    },
+    {
+      "consumer": "q-roses-t24-004",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 21.1.i",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 21.1.i): l’alcalde exerceix «la jefatura de la Policía Municipal». Substitueix la referència a la LO 2/1986 arts. 51 i 53, que regulen la creació i les funcions dels cossos locals però no la dependència."
+    },
+    {
+      "consumer": "q-roses-t24-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "text consolidat i modificacions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "l’annex de modificacions cita la LLEI 3/2023, del 16 de març, que modifica l’art. 24.2"
+    },
+    {
+      "consumer": "q-roses-t25-001",
+      "consumerKind": "pregunta",
+      "sourceId": "ddhh-1948",
+      "locator": "preàmbul i art. 1 a 30",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "el text complet hi és: preàmbul, art. 1 i art. 30 localitzats, 30 articles"
+    },
+    {
+      "consumer": "q-roses-t25-002",
+      "consumerKind": "pregunta",
+      "sourceId": "carta-drets-ue",
+      "locator": "valor jurídic i proclamació",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "nota al lector: «la sustituye desde el 1 de diciembre de 2009, fecha de la entrada en vigor del Tratado de Lisboa. En virtud del artículo 6, apartado 1… la Carta… tiene el mismo valor jurídico que los Tratados»"
+    },
+    {
+      "consumer": "q-roses-t25-003",
+      "consumerKind": "pregunta",
+      "sourceId": "codi-etic-policia-catalunya",
+      "locator": "Acord GOV/25/2015",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "capçalera literal al DOGC: «ACORD GOV/25/2015, de 24 de febrer, pel qual s’aprova el Codi d’ètica de la Policia de Catalunya»"
+    },
+    {
+      "consumer": "q-roses-t25-004",
+      "consumerKind": "pregunta",
+      "sourceId": "carta-drets-ue",
+      "locator": "valor jurídic",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "mateixa nota: la Carta té «el mismo valor jurídico que los Tratados» des de Lisboa"
+    },
+    {
+      "consumer": "q-roses-t25-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ddhh-1948",
+      "locator": "naturalesa jurídica",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "la meitat que li toca al localitzador «naturalesa jurídica»: «la Declaración fue proclamada por la Asamblea General… en su Resolución 217 A (III)» — resolució, no tractat"
+    },
+    {
+      "consumer": "q-roses-t25-005",
+      "consumerKind": "pregunta",
+      "sourceId": "codi-etic-policia-catalunya",
+      "locator": "integritat i imparcialitat",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "Integritat: «no caure en cap comportament que signifiqui l’acceptació o l’oferiment de regals o de favors que puguin condicionar les decisions», amb «l’obligació de denunciar i de perseguir… qualsevol proposta que signifiqui un afavoriment indegut, injustificat o il·legal»; Imparcialitat: «s’oposa a qualsevol tipus de favoritisme». La qualificació penal no surt del Codi."
+    },
+    {
+      "consumer": "q-roses-t25-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 404 i 390",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 404 (prevaricació administrativa) i art. 390.1.1r i 4t (falsedat documental per autoritat o funcionari): sostenen la meitat penal de l’opció, que ni el TREBEP ni el Codi d’ètica cobreixen"
+    },
+    {
+      "consumer": "q-roses-t25-005",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 53",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "art. 53.7 «No aceptarán ningún trato de favor…» + art. 52 (informa el règim disciplinari). La qualificació penal («segons el cas, delicte») no surt del TREBEP."
+    },
+    {
+      "consumer": "q-roses-t25-101",
+      "consumerKind": "pregunta",
+      "sourceId": "ddhh-1948",
+      "locator": "proclamació",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "«proclamada por la Asamblea General de las Naciones Unidas en París, el 10 de diciembre de 1948»"
+    },
+    {
+      "consumer": "q-roses-t25-102",
+      "consumerKind": "pregunta",
+      "sourceId": "carta-drets-ue",
+      "locator": "estructura",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "índex de la Carta: títols I Dignidad, II Libertades, III Igualdad, IV Solidaridad, V Ciudadanía, VI Justicia i VII Disposiciones generales — set"
+    },
+    {
+      "consumer": "q-roses-t25-103",
+      "consumerKind": "pregunta",
+      "sourceId": "ddhh-1948",
+      "locator": "art. 1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1: «Todos los seres humanos nacen libres e iguales en dignidad y derechos»"
+    },
+    {
+      "consumer": "q-roses-t26-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "art. 16",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 16.2: màxim de sis hores a dependències policials"
+    },
+    {
+      "consumer": "q-roses-t26-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "art. 16.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 16.3: llibre-registre de les diligències d’identificació"
+    },
+    {
+      "consumer": "q-roses-t26-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "art. 20",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 20.2: registre en lloc reservat i fora de la vista de tercers"
+    },
+    {
+      "consumer": "q-roses-t26-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "art. 39",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 39.1: infraccions greus «con multa de 601 a 30.000 euros»"
+    },
+    {
+      "consumer": "q-roses-t26-005",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 21",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 21.2: comunicació prèvia, no autorització"
+    },
+    {
+      "consumer": "q-roses-t26-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "art. 23",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 23: reunions i manifestacions"
+    },
+    {
+      "consumer": "q-roses-t27-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 234 i 237",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 237: força en les coses o violència o intimidació en les persones"
+    },
+    {
+      "consumer": "q-roses-t27-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 234",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 234.1 i 234.2: llindar dels 400 euros"
+    },
+    {
+      "consumer": "q-roses-t27-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 238",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 238: les cinc circumstàncies no inclouen arrencar un objecte pesant"
+    },
+    {
+      "consumer": "q-roses-t27-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 239",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 239: ganzúes, claus legítimes perdudes o obtingudes il·lícitament, i qualsevol altra no destinada pel propietari"
+    },
+    {
+      "consumer": "q-roses-t27-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 234 i 237",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 234.2: multa d’un a tres mesos si no excedeix de 400 euros"
+    },
+    {
+      "consumer": "q-roses-t28-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "competència per a l’enjudiciament de delictes lleus",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 962.1: l’enjudiciament dels delictes lleus correspon al Jutjat d’Instrucció"
+    },
+    {
+      "consumer": "q-roses-t28-002",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 125",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 125: acció popular dels ciutadans"
+    },
+    {
+      "consumer": "q-roses-t28-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "parts acusadores",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 101 i 270: acció penal pública exercitable per qualsevol ciutadà"
+    },
+    {
+      "consumer": "q-roses-t28-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "valor de l’atestat",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 297: «Los atestados que redactaren… los funcionarios de Policía judicial… se considerarán denuncias para los efectos legales» (verificat al text del PDF; el salt de línia entre «se» i «considerarán» amagava la cerca literal)"
+    },
+    {
+      "consumer": "q-roses-t28-004",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 126",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 126: «La policía judicial depende de los Jueces, de los Tribunales y del Ministerio Fiscal»"
+    },
+    {
+      "consumer": "q-roses-t28-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 31.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "la dependència funcional consta a l’art. 31.1, no al genèric «policia judicial»: «respecto de los Jueces, de los Tribunales y del Ministerio Fiscal»"
+    },
+    {
+      "consumer": "q-roses-t28-005",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 123",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 123.1: «órgano jurisdiccional superior en todos los órdenes»"
+    },
+    {
+      "consumer": "q-roses-t29-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 379.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 379.1: seixanta km/h en via urbana"
+    },
+    {
+      "consumer": "q-roses-t29-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 383",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 383: la negativa a les proves és delicte autònom"
+    },
+    {
+      "consumer": "q-roses-t29-003",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 9.3 i 25.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 9.3: irretroactivitat de les disposicions sancionadores NO favorables; a contrario, les favorables sí"
+    },
+    {
+      "consumer": "q-roses-t29-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 2.2: efecte retroactiu de les lleis penals que afavoreixen el reu"
+    },
+    {
+      "consumer": "q-roses-t29-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 384",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 384: conducció amb pèrdua total de punts"
+    },
+    {
+      "consumer": "q-roses-t29-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 385",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 385: creació d’un greu risc per a la circulació"
+    },
+    {
+      "consumer": "q-roses-t30-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-1-2015-reforma-cp",
+      "locator": "supressió del llibre III",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul: «se suprimen las faltas que históricamente se regulaban en el Libro III del Código Penal» i «La reforma supone la derogación completa del Libro III»"
+    },
+    {
+      "consumer": "q-roses-t30-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-1-2015-reforma-cp",
+      "locator": "presó permanent revisable",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul II: «La reforma introduce una nueva pena de prisión permanente revisable, que podrá ser impuesta únicamente en supuestos de excepcional gravedad», amb règim de revisió"
+    },
+    {
+      "consumer": "q-roses-t30-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-1-2015-reforma-cp",
+      "locator": "reconversió de les faltes",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "el preàmbul demostra el repartiment (delictes lleus al Llibre II i «respuesta a través del sistema de sanciones administrativas»), però no anomena la LO 4/2015: aquesta part la sosté la referència a lo-4-2015-psc"
+    },
+    {
+      "consumer": "q-roses-t30-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "règim sancionador",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "capçalera i règim sancionador de la LO 4/2015"
+    },
+    {
+      "consumer": "q-roses-t30-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-1-2015-reforma-cp",
+      "locator": "reforma dels delictes contra el patrimoni",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "apartat Cent setze: nou art. 235.1.7è (condemna executòria per almenys tres delictes del mateix títol) combinat amb el nou art. 234.2 (fins a 400 €, multa «salvo si concurriese alguna de las circunstancias del artículo 235»)"
+    },
+    {
+      "consumer": "q-roses-t30-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 235.1.7è",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "la multireincidència és a l’art. 235.1.7è («condenado ejecutoriamente por al menos tres delitos… de la misma naturaleza»), no a l’art. 235 en general"
+    },
+    {
+      "consumer": "q-roses-t30-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-1-2015-reforma-cp",
+      "locator": "novetats de la reforma",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "el preàmbul enumera les figures noves («matrimonio forzado, hostigamiento o acecho, divulgación no autorizada de imágenes o grabaciones íntimas… decomiso ampliado») i la llei no toca l’art. 384: 0 mencions a tot el text"
+    },
+    {
+      "consumer": "q-roses-t30-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 384",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 384: delicte de conducció amb pèrdua total de punts"
+    },
+    {
+      "consumer": "q-roses-t31-001",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "situació geogràfica del municipi",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-002",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "entorn natural del municipi",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-003",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "patrimoni històric: Ciutadella",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-004",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "patrimoni històric: Castell de la Trinitat",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-005",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "patrimoni megalític del municipi",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-006",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "cales i entorn del municipi",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-101",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "situació administrativa del municipi",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-102",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "context comarcal",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-103",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "situació geogràfica",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-104",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "nuclis i urbanitzacions",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-105",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "patrimoni arqueològic",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-106",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "patrimoni: Ciutadella",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-107",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "entorn natural",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t31-108",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-web-municipi",
+      "locator": "activitat econòmica",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "q-roses-t32-001",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "art. 104 i 105",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "art. 104 (immobilització) i 105 (retirada i dipòsit): el localitzador conceptual es concreta en aquests dos articles"
+    },
+    {
+      "consumer": "q-roses-t32-002",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "art. 106.1.a",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "art. 106.1.a: «más de dos meses desde que el vehículo fuera inmovilizado o retirado»"
+    },
+    {
+      "consumer": "q-roses-t32-003",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "art. 104.1.d",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "art. 104.1.d: negativa a les proves o resultat positiu"
+    },
+    {
+      "consumer": "q-roses-t32-004",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "art. 105.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "art. 105.1: llista taxada de causes de retirada"
+    },
+    {
+      "consumer": "q-roses-t32-005",
+      "consumerKind": "pregunta",
+      "sourceId": "rd-818-2009-rgcond",
+      "locator": "classes de permisos de conducció",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 4.2, taula de classes: el permís B autoritza «Automóviles cuya masa máxima autorizada no exceda de 3.500 kg… para el transporte de no más de ocho pasajeros además del conductor»"
+    },
+    {
+      "consumer": "q-roses-t33-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 379.2",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 379.2: taxa superior a 0,60 mg/l en aire espirat"
+    },
+    {
+      "consumer": "q-roses-t33-002",
+      "consumerKind": "pregunta",
+      "sourceId": "rd-1428-2003-rgc",
+      "locator": "taxes d’alcoholèmia",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 20: 0,15 mg/l en aire espirat per a transports especials i conductors novells"
+    },
+    {
+      "consumer": "q-roses-t33-003",
+      "consumerKind": "pregunta",
+      "sourceId": "rd-1428-2003-rgc",
+      "locator": "pràctica de les proves de detecció alcohòlica",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 23.2: «entre la realización de la primera y de la segunda prueba medie un tiempo mínimo de 10 minutos»"
+    },
+    {
+      "consumer": "q-roses-t33-004",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "obligació de sotmetre’s a les proves",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14.2: conductor obligat, i també els usuaris implicats en accident o que hagin comès una infracció"
+    },
+    {
+      "consumer": "q-roses-t33-005",
+      "consumerKind": "pregunta",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "presència de drogues en l’organisme",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14.1: presència de drogues, excloses les de prescripció facultativa amb finalitat terapèutica"
+    },
+    {
+      "consumer": "q-roses-t34-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-10-1999-gossos-cat",
+      "locator": "gossos considerats potencialment perillosos",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1: a) episodis d’agressions, b) ensinistrats per a l’atac i la defensa, c) races i encreuaments. Les tres vies, literals."
+    },
+    {
+      "consumer": "q-roses-t34-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-50-1999-app",
+      "locator": "concepte",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "art. 2.2 cobreix la via racial («incluidos dentro de una tipología racial»); els episodis d’agressió i l’ensinistrament per a l’atac no surten de l’articulat d’aquesta llei"
+    },
+    {
+      "consumer": "q-roses-t34-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-50-1999-app",
+      "locator": "llicència administrativa",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.1: llicència «otorgada por el Ayuntamiento del municipio de residencia del solicitante»"
+    },
+    {
+      "consumer": "q-roses-t34-002",
+      "consumerKind": "pregunta",
+      "sourceId": "roses-tramits-animals",
+      "locator": "tràmit municipal a Roses",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "fitxa municipal completa: «Òrgan de resolució: Decret d’Alcaldia», «Lloc de presentació: Servei d’atenció ciutadana» de l’Ajuntament de Roses"
+    },
+    {
+      "consumer": "q-roses-t34-003",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-50-1999-app",
+      "locator": "requisits de la llicència",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.1 llista els requisits (major d’edat, antecedents, aptitud psicològica, assegurança de RC): cap formació d’ensinistrador"
+    },
+    {
+      "consumer": "q-roses-t34-003",
+      "consumerKind": "pregunta",
+      "sourceId": "rd-287-2002-app",
+      "locator": "desenvolupament reglamentari",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3.1: a) major d’edat, d) capacitat física i aptitud psicològica, e) assegurança de 120.000 €. Cap requisit de formació com a ensinistrador."
+    },
+    {
+      "consumer": "q-roses-t34-004",
+      "consumerKind": "pregunta",
+      "sourceId": "rd-287-2002-app",
+      "locator": "mesures de seguretat a la via pública",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 8.2 (morrió apropiat) i 8.3 («cadena o correa no extensible de menos de 2 metros, sin que pueda llevarse más de uno de estos perros por persona»)"
+    },
+    {
+      "consumer": "q-roses-t34-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-10-1999-gossos-cat",
+      "locator": "identificació i registre",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "el preàmbul recita l’obligació general («els posseïdors d’animals domèstics de companyia estan obligats a inscriure llurs animals en el registre censal del municipi de residència habitual»), però és un recital de la Llei 3/1994 i el Decret 328/1998, no articulat d’aquesta llei; «microxip» no hi surt cap vegada"
+    },
+    {
+      "consumer": "q-roses-t34-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-7-2023-benestar-animal",
+      "locator": "obligacions generals de les persones titulars",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "font-insuficient",
+      "evidence": "l’art. 26.i) imposa microxip i esterilització només «de todos los gatos»; l’art. 26 no estableix cap obligació general de microxip i cens per a tots els gossos, que a Catalunya ve del DL 2/2008 (font que no és al paquet)"
+    },
+    {
+      "consumer": "q-roses-t37-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 520",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 520.2: el catàleg de drets del detingut no inclou triar el jutjat instructor"
+    },
+    {
+      "consumer": "q-roses-t37-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 490 i 492",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 490 («Cualquier persona puede detener») i 492, amb supòsits taxats"
+    },
+    {
+      "consumer": "q-roses-t37-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-1984-habeas",
+      "locator": "art. 3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3: la llista tancada és privat de llibertat i familiars, Ministeri Fiscal, Defensor del Poble i advocat defensor, més d’ofici el jutge. Cap veí sense relació."
+    },
+    {
+      "consumer": "q-roses-t37-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-1984-habeas",
+      "locator": "art. 2 i 7",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 2: «Es competente… el Juez de Instrucción del lugar en que se encuentre la persona privada de libertad»; art. 7 fixa el termini de 24 hores"
+    },
+    {
+      "consumer": "q-roses-t37-005",
+      "consumerKind": "pregunta",
+      "sourceId": "ce-1978",
+      "locator": "art. 17.4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 17.4: habeas corpus per a la immediata posada a disposició judicial"
+    },
+    {
+      "consumer": "q-roses-t37-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-6-1984-habeas",
+      "locator": "art. 1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1: el procediment obté «la inmediata puesta a disposición de la Autoridad judicial competente, de cualquier persona detenida ilegalmente», amb la llista de detencions il·legals"
+    },
+    {
+      "consumer": "q-roses-t38-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 544 ter",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 544 ter.1 i 2: l’ordre la dicta el jutge competent"
+    },
+    {
+      "consumer": "q-roses-t38-001",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-27-2003-ordre-proteccio",
+      "locator": "competència judicial",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. segon (nou art. 544 ter.1 LECrim): «El juez de instrucción dictará orden de protección»; el 544 ter.2 deixa clar que el Ministeri Fiscal només la insta"
+    },
+    {
+      "consumer": "q-roses-t38-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 544 ter.4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 544 ter.4: audiència «en un plazo máximo de setenta y dos horas»"
+    },
+    {
+      "consumer": "q-roses-t38-002",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-27-2003-ordre-proteccio",
+      "locator": "procediment",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. segon (544 ter.4): «la audiencia habrá de celebrarse en un plazo máximo de 72 horas desde la presentación de la solicitud»"
+    },
+    {
+      "consumer": "q-roses-t38-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 544 ter.1",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 544 ter.1: indicis fundats i «situación objetiva de riesgo para la víctima»"
+    },
+    {
+      "consumer": "q-roses-t38-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 544 ter.7",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 544 ter.7: mesures civils amb «vigencia temporal de treinta días», ratificables en el procés de família"
+    },
+    {
+      "consumer": "q-roses-t38-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 544 ter.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 544 ter.3: remissió immediata al jutge de guàrdia o al Ministeri Fiscal"
+    },
+    {
+      "consumer": "q-roses-t38-005",
+      "consumerKind": "pregunta",
+      "sourceId": "llei-27-2003-ordre-proteccio",
+      "locator": "presentació de la sol·licitud",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. segon (544 ter.3): la sol·licitud es pot presentar «ante las Fuerzas y Cuerpos de Seguridad… Dicha solicitud habrá de ser remitida de forma inmediata al juez competente»"
+    },
+    {
+      "consumer": "q-roses-t39-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2007-igualtat",
+      "locator": "art. 6",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 6.2: «una disposición, criterio o práctica aparentemente neutros pone a personas de un sexo en desventaja particular»"
+    },
+    {
+      "consumer": "q-roses-t39-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2007-igualtat",
+      "locator": "art. 7",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 7.3: «Se considerarán en todo caso discriminatorios el acoso sexual y el acoso por razón de sexo»"
+    },
+    {
+      "consumer": "q-roses-t39-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2007-igualtat",
+      "locator": "art. 11",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 11.1: «medidas específicas… aplicables en tanto subsistan dichas situaciones… razonables y proporcionadas»"
+    },
+    {
+      "consumer": "q-roses-t39-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2007-igualtat",
+      "locator": "art. 8",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 8: «Constituye discriminación directa por razón de sexo todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad»"
+    },
+    {
+      "consumer": "q-roses-t39-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-3-2007-igualtat",
+      "locator": "art. 9",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 9 (indemnitat davant represàlies): tracte advers per queixa, reclamació, denúncia, demanda o recurs"
+    },
+    {
+      "consumer": "q-roses-t40-001",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-5-2000-menors",
+      "locator": "art. 1 i 3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1.1 «mayores de catorce años y menores de dieciocho»; art. 3 exclou els menors de 14"
+    },
+    {
+      "consumer": "q-roses-t40-002",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-5-2000-menors",
+      "locator": "art. 17.4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 17.4: «dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal»"
+    },
+    {
+      "consumer": "q-roses-t40-003",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-5-2000-menors",
+      "locator": "art. 16 i 17",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 16.1: «Corresponde al Ministerio Fiscal la instrucción de los procedimientos»"
+    },
+    {
+      "consumer": "q-roses-t40-004",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-5-2000-menors",
+      "locator": "art. 17.3",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 17.3: «custodiados en dependencias adecuadas y separadas de las que se utilicen para los mayores de edad»"
+    },
+    {
+      "consumer": "q-roses-t40-005",
+      "consumerKind": "pregunta",
+      "sourceId": "lo-5-2000-menors",
+      "locator": "exposició de motius i art. 7",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "exposició de motius («ha de primar… como elemento determinante del procedimiento y de las medidas que se adopten, el superior interés del menor») i art. 7.3"
+    },
+    {
+      "consumer": "roses-t01-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "art. 1, 2, 9 i títol X (art. 166-169)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1, 2, 9 i títol X: valors, unitat, garanties i reforma"
+    },
+    {
+      "consumer": "roses-t01-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "estructura general: títol preliminar i títols I a X",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1, 2, 9 i títol X: valors, unitat, garanties i reforma"
+    },
+    {
+      "consumer": "roses-t02-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "art. 53 i 54 (garanties i Defensor del Poble)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol I (art. 10-55), amb art. 53 i 54 per a garanties i Defensor del Poble"
+    },
+    {
+      "consumer": "roses-t02-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "títol I, art. 10 a 55",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol I (art. 10-55), amb art. 53 i 54 per a garanties i Defensor del Poble"
+    },
+    {
+      "consumer": "roses-t03-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "competències en matèria de seguretat pública",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol I i capítol de govern local (art. 86 i següents)"
+    },
+    {
+      "consumer": "roses-t03-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "títol I (drets i deures) i capítol de govern local",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol I i capítol de govern local (art. 86 i següents)"
+    },
+    {
+      "consumer": "roses-t04-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "art. 1 a 10, sistema de seguretat pública de Catalunya",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1 a 10: objecte, sistema, autoritats i juntes locals"
+    },
+    {
+      "consumer": "roses-t04-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "institucions de la Generalitat: Parlament, Presidència i Govern",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol II: Parlament (art. 55-58), Presidència (art. 67) i Govern"
+    },
+    {
+      "consumer": "roses-t05-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 1, 4, 11, 12, 15, 16, 20 i 25",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1, 4, 11, 12, 15, 16, 20 i 25"
+    },
+    {
+      "consumer": "roses-t06-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 4.1.a, 21.1.e, 49, 70.2 i 84",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 4.1.a, 21.1.e, 49, 70.2 i 84"
+    },
+    {
+      "consumer": "roses-t06-l1",
+      "consumerKind": "llico",
+      "sourceId": "roses-ordenances-index",
+      "locator": "ordenances vigents de Roses",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "l’índex llista les ordenances vigents, incloses la de circulació i la de convivència"
+    },
+    {
+      "consumer": "roses-t07-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "títol VI (art. 117-127) i títol IX (art. 159-165)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol VI (art. 117-127) i títol IX (art. 159-165)"
+    },
+    {
+      "consumer": "roses-t07-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-6-2006-eac",
+      "locator": "el poder judicial a Catalunya i el TSJC",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 95: el TSJC"
+    },
+    {
+      "consumer": "roses-t08-l1",
+      "consumerKind": "llico",
+      "sourceId": "rdleg-5-2015-trebep",
+      "locator": "art. 8, 14, 15, 52, 53 i 54",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 8, 14, 15, 52, 53 i 54 localitzats i coincidents amb l’àmbit de la microlliçó"
+    },
+    {
+      "consumer": "roses-t09-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-53-1984-incompat",
+      "locator": "art. 1, 3, 11, 12, 14 i 16",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 1, 3, 11, 12, 14 i 16 localitzats i coincidents amb la microlliçó"
+    },
+    {
+      "consumer": "roses-t10-l1",
+      "consumerKind": "llico",
+      "sourceId": "rdleg-2-2004-trlrhl",
+      "locator": "art. 2, 20, 41, 59, 162, 164, 168 i 169",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 2, 20, 41, 59, 162, 164, 168 i 169 localitzats i coincidents amb la microlliçó"
+    },
+    {
+      "consumer": "roses-t11-l1",
+      "consumerKind": "llico",
+      "sourceId": "decret-179-2015-disciplinari",
+      "locator": "procediment disciplinari i mesures cautelars",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "capítols de procediment i art. 19 de mesures cautelars"
+    },
+    {
+      "consumer": "roses-t11-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "règim disciplinari: classificació de faltes i sancions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol 6 (art. 46-54): faltes, sancions i graduació"
+    },
+    {
+      "consumer": "roses-t12-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "títol preliminar i disposicions generals",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol preliminar i disposicions generals"
+    },
+    {
+      "consumer": "roses-t12-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-40-2015-rjsp",
+      "locator": "objecte i àmbit d’aplicació",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "objecte i àmbit d’aplicació"
+    },
+    {
+      "consumer": "roses-t13-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 34 a 52 (requisits, eficàcia i invalidesa dels actes)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 34 a 52: producció, eficàcia, nul·litat i anul·labilitat"
+    },
+    {
+      "consumer": "roses-t14-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 3 a 13 (capacitat, interessat, representació i drets)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 3 a 13: capacitat, interessat, representació i drets"
+    },
+    {
+      "consumer": "roses-t15-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 21, 24, 25, 29 a 33",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 21, 24, 25 i 29 a 33: obligació de resoldre, silenci i terminis"
+    },
+    {
+      "consumer": "roses-t15-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-40-2015-rjsp",
+      "locator": "art. 23 i 24 (abstenció i recusació)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 23 i 24: abstenció i recusació"
+    },
+    {
+      "consumer": "roses-t16-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 54 a 95 (iniciació, ordenació, instrucció i finalització)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 54 a 95: iniciació, ordenació, instrucció i finalització"
+    },
+    {
+      "consumer": "roses-t17-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-39-2015-pac",
+      "locator": "art. 98 a 126 (executivitat, execució forçosa, revisió i recursos)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 98 a 126: executivitat, execució forçosa, revisió i recursos"
+    },
+    {
+      "consumer": "roses-t18-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-19-2013-transp",
+      "locator": "art. 5 a 24 (publicitat activa, dret d’accés i límits)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 5 a 24 localitzats: publicitat activa, dret d’accés i límits"
+    },
+    {
+      "consumer": "roses-t18-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-19-2014-transp-cat",
+      "locator": "dret d’accés i Comissió de Garantia del Dret d’Accés",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol II (dret d’accés) i arts. 38 a 44 (garanties i Comissió de Garantia). Nota: el fitxer del paquet és la versió castellana consolidada al BOE."
+    },
+    {
+      "consumer": "roses-t19-l1",
+      "consumerKind": "llico",
+      "sourceId": "agencia-ciberseguretat-catalunya",
+      "locator": "funcions i recomanacions d’autoprotecció",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "descàrrega defectuosa: el fitxer de 144 KB només conté l’esquelet de navegació (8,3 KB de text net, tot menús); el cos de la pàgina es carrega per JavaScript i no hi és. El mustContain de l’inventari («Agència de Ciberseguretat») passava sobre el menú."
+    },
+    {
+      "consumer": "roses-t20-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "art. 18.4",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "l’art. 18.4 dona la base constitucional; el desplegament és a la LOPDGDD i al RGPD"
+    },
+    {
+      "consumer": "roses-t20-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-3-2018-lopdgdd",
+      "locator": "disposicions generals i drets",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títol I (disposicions generals) i títol III (drets) localitzats"
+    },
+    {
+      "consumer": "roses-t20-l1",
+      "consumerKind": "llico",
+      "sourceId": "rgpd-2016-679",
+      "locator": "art. 5, 6 i 15 a 22",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 5, 6 i 15 a 22 localitzats: principis, licitud i drets de la persona interessada"
+    },
+    {
+      "consumer": "roses-t21-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-2-1986-fcs",
+      "locator": "art. 1, 2, 5, 9, 11 i 53",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1, 2, 5, 9, 11 i 53 localitzats al cos i cobreixen el mapa de cossos policials"
+    },
+    {
+      "consumer": "roses-t22-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "sistema de seguretat pública, òrgans i planificació",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1, 3, 6 i 10: sistema, òrgans i planificació"
+    },
+    {
+      "consumer": "roses-t23-l1",
+      "consumerKind": "llico",
+      "sourceId": "decret-151-1998-juntes",
+      "locator": "composició, funcions i funcionament",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "composició (art. 3), funcions (art. 2) i funcionament (arts. 5 a 9); la microlliçó ja cita també la Llei 4/2003, que sosté «obligatòria» i «aprovar»"
+    },
+    {
+      "consumer": "roses-t23-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-4-2003-seguretat-publica",
+      "locator": "juntes locals de seguretat",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 9 i 10: composició i funcions de les juntes locals de seguretat"
+    },
+    {
+      "consumer": "roses-t24-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-16-1991-policies-locals",
+      "locator": "naturalesa, dependència, escales, categories i funcions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 2, 5, 11-12 i 24: naturalesa, àmbit, funcions i escales"
+    },
+    {
+      "consumer": "roses-t25-l1",
+      "consumerKind": "llico",
+      "sourceId": "carta-drets-ue",
+      "locator": "títols I a VII",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "títols I a VII de la Carta localitzats a l’índex i al cos"
+    },
+    {
+      "consumer": "roses-t25-l1",
+      "consumerKind": "llico",
+      "sourceId": "codi-etic-policia-catalunya",
+      "locator": "Acord GOV/25/2015, principis i pautes de conducta",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "Acord GOV/25/2015: els tres principis, els valors (integritat, imparcialitat, respecte…) i les pautes de conducta"
+    },
+    {
+      "consumer": "roses-t25-l1",
+      "consumerKind": "llico",
+      "sourceId": "ddhh-1948",
+      "locator": "preàmbul i art. 1 a 30",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul i arts. 1 a 30 presents al fitxer"
+    },
+    {
+      "consumer": "roses-t26-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "art. 21 (dret de reunió)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 21: dret de reunió"
+    },
+    {
+      "consumer": "roses-t26-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-4-2015-psc",
+      "locator": "art. 4, 15 a 20, 23 i 35 a 39",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 4, 15 a 20, 23 i 35 a 39"
+    },
+    {
+      "consumer": "roses-t27-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 234 a 242",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 234 a 242: furts i robatoris"
+    },
+    {
+      "consumer": "roses-t28-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "art. 117 a 127",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 117 a 127: poder judicial, TS, MF i policia judicial"
+    },
+    {
+      "consumer": "roses-t28-l1",
+      "consumerKind": "llico",
+      "sourceId": "lecrim-1882",
+      "locator": "competència dels òrgans penals, parts i valor de l’atestat",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "competència (art. 962.1), parts (art. 101, 270) i valor de l’atestat (art. 297, text literal comprovat)"
+    },
+    {
+      "consumer": "roses-t29-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 1 a 9 i art. 379 a 385 ter",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1 a 9 i 379 a 385 ter"
+    },
+    {
+      "consumer": "roses-t30-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-1-2015-reforma-cp",
+      "locator": "preàmbul i modificacions principals",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "preàmbul i articulat modificat coincidents amb la microlliçó"
+    },
+    {
+      "consumer": "roses-t30-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "text consolidat després de la reforma de 2015",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "text consolidat posterior a la LO 1/2015"
+    },
+    {
+      "consumer": "roses-t31-l1",
+      "consumerKind": "llico",
+      "sourceId": "roses-ordenances-index",
+      "locator": "delimitació d’àmbits i zones al terme municipal",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-parcial",
+      "evidence": "l’índex confirma les ordenances vigents, però no delimita àmbits ni zones del terme municipal"
+    },
+    {
+      "consumer": "roses-t31-l1",
+      "consumerKind": "llico",
+      "sourceId": "roses-web-municipi",
+      "locator": "informació del municipi, barris, serveis i equipaments",
+      "reviewStatus": "pending-source-verification",
+      "verdict": "extraccio-defectuosa",
+      "evidence": "la captura de roses.cat és només el menú de navegació: 136 KB sense cap contingut del municipi (zero aparicions de Ciutadella, Rhode, Cap de Creus, dolmen, Santa Margarida…). La pàgina carrega el text amb JavaScript"
+    },
+    {
+      "consumer": "roses-t32-l1",
+      "consumerKind": "llico",
+      "sourceId": "rd-2822-1998-rgv",
+      "locator": "condicions tècniques i documentació dels vehicles",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "annexos de condicions tècniques i règim de documentació dels vehicles localitzats al text"
+    },
+    {
+      "consumer": "roses-t32-l1",
+      "consumerKind": "llico",
+      "sourceId": "rd-818-2009-rgcond",
+      "locator": "classes de permisos i llicències de conducció",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 4 i següents: classes de permisos i llicència de conducció"
+    },
+    {
+      "consumer": "roses-t32-l1",
+      "consumerKind": "llico",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "immobilització, retirada i vehicles abandonats",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 104 a 106"
+    },
+    {
+      "consumer": "roses-t33-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-10-1995-cp",
+      "locator": "art. 379.2 i 383",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 379.2 i 383"
+    },
+    {
+      "consumer": "roses-t33-l1",
+      "consumerKind": "llico",
+      "sourceId": "rd-1428-2003-rgc",
+      "locator": "normes sobre begudes alcohòliques i estupefaents, i pràctica de les proves",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 20 a 26: taxes, pràctica de les proves i drets de la persona examinada"
+    },
+    {
+      "consumer": "roses-t33-l1",
+      "consumerKind": "llico",
+      "sourceId": "rdleg-6-2015-ltsv",
+      "locator": "obligació de sotmetre’s a les proves i règim sancionador",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 14 i règim sancionador"
+    },
+    {
+      "consumer": "roses-t34-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-10-1999-gossos-cat",
+      "locator": "llista catalana de races i règim propi",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 1 (llista catalana de races) i arts. 2 a 3 (mesures de seguretat i registres)"
+    },
+    {
+      "consumer": "roses-t34-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-50-1999-app",
+      "locator": "llicència, registre i obligacions",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "llicència (art. 3), registre (art. 6) i obligacions localitzats"
+    },
+    {
+      "consumer": "roses-t34-l1",
+      "consumerKind": "llico",
+      "sourceId": "rd-287-2002-app",
+      "locator": "llista de races i requisits de la llicència",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "annex I (llista de races) i art. 3 (requisits de la llicència)"
+    },
+    {
+      "consumer": "roses-t34-l1",
+      "consumerKind": "llico",
+      "sourceId": "roses-tramits-animals",
+      "locator": "requisits municipals de la llicència a Roses",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "la fitxa detalla els requisits municipals: assegurança de 150.253 €, certificat de capacitat física i aptitud psicològica, certificat veterinari de microxip i vacunació, taxa de 89 €"
+    },
+    {
+      "consumer": "roses-t36-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-7-1985-lrbrl",
+      "locator": "art. 139 a 141 (tipificació d’infraccions i límits de les multes)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 139 a 141: tipificació d’infraccions locals i límits de les multes"
+    },
+    {
+      "consumer": "roses-t37-l1",
+      "consumerKind": "llico",
+      "sourceId": "ce-1978",
+      "locator": "art. 17",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 17: llibertat, detenció preventiva, drets i habeas corpus"
+    },
+    {
+      "consumer": "roses-t37-l1",
+      "consumerKind": "llico",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 490, 492, 496 i 520",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 490, 492, 496 i 520"
+    },
+    {
+      "consumer": "roses-t37-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-6-1984-habeas",
+      "locator": "art. 1 a 9 (legitimació, competència i termini)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 1 a 9 localitzats: legitimació (3), competència (2), tramitació i termini de 24 h (7)"
+    },
+    {
+      "consumer": "roses-t38-l1",
+      "consumerKind": "llico",
+      "sourceId": "lecrim-1882",
+      "locator": "art. 544 ter (ordre de protecció)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "art. 544 ter sencer"
+    },
+    {
+      "consumer": "roses-t38-l1",
+      "consumerKind": "llico",
+      "sourceId": "llei-27-2003-ordre-proteccio",
+      "locator": "art. segon (nou art. 544 ter LECrim)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat-localitzador-corregit",
+      "evidence": "la llei no té article únic: són els arts. primer a cinquè; el gruix és l’art. segon, que afegeix l’art. 544 ter LECrim"
+    },
+    {
+      "consumer": "roses-t39-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-3-2007-igualtat",
+      "locator": "art. 3 a 11 i 51 (igualtat, discriminació, assetjament i accions positives)",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 3 a 11 i 51 localitzats i coincidents amb la microlliçó"
+    },
+    {
+      "consumer": "roses-t40-l1",
+      "consumerKind": "llico",
+      "sourceId": "lo-5-2000-menors",
+      "locator": "art. 1, 3, 7 i 17",
+      "reviewStatus": "verified",
+      "verdict": "demostrat",
+      "evidence": "arts. 1, 3, 7 i 17 localitzats i coincidents amb la microlliçó"
+    }
+  ]
+}

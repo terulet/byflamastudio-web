@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 37 a 40 (bloc Actuació policial i protecció). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, refv } from '../authoring.ts'
 
 export const LESSONS_37_40: Lesson[] = [
   lesson(
@@ -49,9 +49,9 @@ export const LESSONS_37_40: Lesson[] = [
       ),
     ],
     [
-      ref('lecrim-1882', 'art. 490, 492, 496 i 520'),
-      ref('lo-6-1984-habeas', 'art. 1 a 9 (legitimació, competència i termini)'),
-      ref('ce-1978', 'art. 17'),
+      refv('lecrim-1882', 'art. 490, 492, 496 i 520', '2026-08-24'),
+      refv('lo-6-1984-habeas', 'art. 1 a 9 (legitimació, competència i termini)', '2026-08-24'),
+      refv('ce-1978', 'art. 17', '2026-08-24'),
     ],
   ),
 
@@ -99,8 +99,8 @@ export const LESSONS_37_40: Lesson[] = [
       ),
     ],
     [
-      ref('llei-27-2003-ordre-proteccio', 'article únic i procediment'),
-      ref('lecrim-1882', 'art. 544 ter (ordre de protecció)'),
+      refv('llei-27-2003-ordre-proteccio', 'art. segon (nou art. 544 ter LECrim)', '2026-08-24'),
+      refv('lecrim-1882', 'art. 544 ter (ordre de protecció)', '2026-08-24'),
     ],
   ),
 
@@ -151,7 +151,7 @@ export const LESSONS_37_40: Lesson[] = [
       ),
     ],
     [
-      ref('lo-3-2007-igualtat', 'art. 3 a 11 i 51 (igualtat, discriminació, assetjament i accions positives)'),
+      refv('lo-3-2007-igualtat', 'art. 3 a 11 i 51 (igualtat, discriminació, assetjament i accions positives)', '2026-08-24'),
     ],
   ),
 
@@ -195,7 +195,7 @@ export const LESSONS_37_40: Lesson[] = [
       ),
     ],
     [
-      ref('lo-5-2000-menors', 'art. 1, 3, 7 i 17'),
+      refv('lo-5-2000-menors', 'art. 1, 3, 7 i 17', '2026-08-24'),
     ],
   ),
 ]

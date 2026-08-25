@@ -169,7 +169,7 @@ const ca = {
     officialNote: 'Nota de revisió sobre aquesta pregunta oficial',
     officialFrom: 'Examen oficial del {date}',
     pendingVerification:
-      'Referència pendent de contrast automàtic amb el text consolidat.',
+      'Referència encara no contrastada amb el document oficial. Comprova-la abans de donar-la per bona.',
   },
 
   exams: {
@@ -509,7 +509,7 @@ const es: Dict = {
     officialNote: 'Nota de revisión sobre esta pregunta oficial',
     officialFrom: 'Examen oficial del {date}',
     pendingVerification:
-      'Referencia pendiente de contraste automático con el texto consolidado.',
+      'Referencia todavía no contrastada con el documento oficial. Compruébala antes de darla por buena.',
   },
 
   exams: {

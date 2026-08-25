@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 16 a 20 (bloc Institucions i Administració). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref, refv } from '../authoring.ts'
 
 export const LESSONS_16_20: Lesson[] = [
   lesson(
@@ -43,7 +43,7 @@ export const LESSONS_16_20: Lesson[] = [
       ),
     ],
     [
-      ref('llei-39-2015-pac', 'art. 54 a 95 (iniciació, ordenació, instrucció i finalització)'),
+      refv('llei-39-2015-pac', 'art. 54 a 95 (iniciació, ordenació, instrucció i finalització)', '2026-08-24'),
     ],
   ),
 
@@ -101,7 +101,7 @@ export const LESSONS_16_20: Lesson[] = [
       ),
     ],
     [
-      ref('llei-39-2015-pac', 'art. 98 a 126 (executivitat, execució forçosa, revisió i recursos)'),
+      refv('llei-39-2015-pac', 'art. 98 a 126 (executivitat, execució forçosa, revisió i recursos)', '2026-08-24'),
     ],
   ),
 
@@ -145,8 +145,8 @@ export const LESSONS_16_20: Lesson[] = [
       ),
     ],
     [
-      ref('llei-19-2013-transp', 'art. 5 a 24 (publicitat activa, dret d’accés i límits)'),
-      ref('llei-19-2014-transp-cat', 'dret d’accés i Comissió de Garantia del Dret d’Accés'),
+      refv('llei-19-2013-transp', 'art. 5 a 24 (publicitat activa, dret d’accés i límits)', '2026-08-24'),
+      refv('llei-19-2014-transp-cat', 'dret d’accés i Comissió de Garantia del Dret d’Accés', '2026-08-24'),
     ],
   ),
 
@@ -242,9 +242,9 @@ export const LESSONS_16_20: Lesson[] = [
       ),
     ],
     [
-      ref('rgpd-2016-679', 'art. 5, 6 i 15 a 22'),
-      ref('lo-3-2018-lopdgdd', 'disposicions generals i drets'),
-      ref('ce-1978', 'art. 18.4'),
+      refv('rgpd-2016-679', 'art. 5, 6 i 15 a 22', '2026-08-24'),
+      refv('lo-3-2018-lopdgdd', 'disposicions generals i drets', '2026-08-24'),
+      refv('ce-1978', 'art. 18.4', '2026-08-24'),
     ],
   ),
 ]

@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, refv } from '../authoring.ts'
 
 export const QUESTIONS_26_30: Question[] = [
   ...questionsFor(26, [
@@ -15,7 +15,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'Quan no es pot identificar una persona per cap mitjà, se la pot requerir per acompanyar els agents a dependències properes que disposin dels mitjans adequats. La permanència ha de ser pel temps estrictament necessari i, en tot cas, no pot superar les sis hores.',
       explainEs: 'Cuando no se puede identificar a una persona por ningún medio, se le puede requerir para acompañar a los agentes a dependencias próximas que dispongan de los medios adecuados. La permanencia debe ser por el tiempo estrictamente necesario y, en todo caso, no puede superar las seis horas.',
-      refs: [ref('lo-4-2015-psc', 'art. 16')],
+      refs: [refv('lo-4-2015-psc', 'art. 16', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -35,7 +35,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La diligència d’identificació no és una detenció i no comporta els drets de l’article 520 de la Llei d’enjudiciament criminal, però la llei obliga a portar un llibre-registre on constin les diligències practicades, la causa, la identitat i la durada.',
       explainEs: 'La diligencia de identificación no es una detención y no comporta los derechos del artículo 520 de la Ley de enjuiciamiento criminal, pero la ley obliga a llevar un libro-registro donde consten las diligencias practicadas, la causa, la identidad y la duración.',
-      refs: [ref('lo-4-2015-psc', 'art. 16.3')],
+      refs: [refv('lo-4-2015-psc', 'art. 16.3', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -55,7 +55,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'Quan el registre exigeixi deixar a la vista parts del cos normalment cobertes, s’ha de fer en un lloc reservat i fora de la vista de terceres persones, se n’ha de deixar constància escrita mitjançant diligència i, sempre que sigui possible, l’ha de practicar un agent del mateix sexe.',
       explainEs: 'Cuando el registro exija dejar a la vista partes del cuerpo normalmente cubiertas, debe hacerse en un lugar reservado y fuera de la vista de terceras personas, debe dejarse constancia escrita mediante diligencia y, siempre que sea posible, debe practicarlo un agente del mismo sexo.',
-      refs: [ref('lo-4-2015-psc', 'art. 20')],
+      refs: [refv('lo-4-2015-psc', 'art. 20', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -75,7 +75,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La llei estableix tres trams: les infraccions molt greus se sancionen amb multa de 30.001 a 600.000 euros, les greus de 601 a 30.000 euros i les lleus de 100 a 600 euros.',
       explainEs: 'La ley establece tres tramos: las infracciones muy graves se sancionan con multa de 30.001 a 600.000 euros, las graves de 601 a 30.000 euros y las leves de 100 a 600 euros.',
-      refs: [ref('lo-4-2015-psc', 'art. 39')],
+      refs: [refv('lo-4-2015-psc', 'art. 39', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -95,7 +95,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El dret de reunió no està sotmès a autorització prèvia. En els casos de reunions en llocs de trànsit públic i de manifestacions cal donar comunicació prèvia a l’autoritat, que només les pot prohibir per raons fonamentades d’alteració de l’ordre públic amb perill per a persones o béns.',
       explainEs: 'El derecho de reunión no está sometido a autorización previa. En los casos de reuniones en lugares de tránsito público y de manifestaciones hay que dar comunicación previa a la autoridad, que solo puede prohibirlas por razones fundadas de alteración del orden público con peligro para personas o bienes.',
-      refs: [ref('ce-1978', 'art. 21'), ref('lo-4-2015-psc', 'art. 23')],
+      refs: [refv('ce-1978', 'art. 21', '2026-08-24'), refv('lo-4-2015-psc', 'art. 23', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -118,7 +118,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El furt consisteix a prendre coses mobles alienes amb ànim de lucre i sense la voluntat del propietari. Hi ha robatori quan, a més, s’empra força en les coses per accedir-hi o violència o intimidació en les persones.',
       explainEs: 'El hurto consiste en tomar cosas muebles ajenas con ánimo de lucro y sin la voluntad del propietario. Hay robo cuando, además, se emplea fuerza en las cosas para acceder a ellas o violencia o intimidación en las personas.',
-      refs: [ref('lo-10-1995-cp', 'art. 234 i 237')],
+      refs: [refv('lo-10-1995-cp', 'art. 234 i 237', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -133,7 +133,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El furt de coses el valor de les quals excedeixi els 400 euros és delicte; si no els excedeix, es tracta d’un delicte lleu. Aquest llindar es va consolidar amb la reforma de 2015 en desaparèixer les faltes.',
       explainEs: 'El hurto de cosas cuyo valor exceda de 400 euros es delito; si no los excede, se trata de un delito leve. Este umbral se consolidó con la reforma de 2015 al desaparecer las faltas.',
-      refs: [ref('lo-10-1995-cp', 'art. 234')],
+      refs: [refv('lo-10-1995-cp', 'art. 234', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -153,7 +153,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La força que qualifica el robatori és la que s’empra **per accedir** a la cosa o al lloc on es troba, no la que es fa servir per traslladar-la. Arrencar un objecte perquè pesa o està fixat no és, per si sol, força en les coses en el sentit del Codi penal.',
       explainEs: 'La fuerza que califica el robo es la que se emplea **para acceder** a la cosa o al lugar donde se encuentra, no la que se usa para trasladarla. Arrancar un objeto porque pesa o está fijado no es, por sí solo, fuerza en las cosas en el sentido del Código penal.',
-      refs: [ref('lo-10-1995-cp', 'art. 238')],
+      refs: [refv('lo-10-1995-cp', 'art. 238', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -173,7 +173,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El Codi penal considera claus falses els ganxets i altres instruments anàlegs, les claus legítimes perdudes pel propietari o obtingudes per un mitjà que constitueixi infracció penal, i qualsevol altra que no sigui la destinada pel propietari per obrir el pany violentat. Les targetes magnètiques o perforades i els comandaments d’obertura a distància es consideren claus.',
       explainEs: 'El Código penal considera llaves falsas las ganzúas y otros instrumentos análogos, las llaves legítimas perdidas por el propietario u obtenidas por un medio que constituya infracción penal, y cualquier otra que no sea la destinada por el propietario para abrir la cerradura violentada. Las tarjetas magnéticas o perforadas y los mandos de apertura a distancia se consideran llaves.',
-      refs: [ref('lo-10-1995-cp', 'art. 239')],
+      refs: [refv('lo-10-1995-cp', 'art. 239', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -193,7 +193,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'No hi ha força en les coses perquè no cal vèncer cap obstacle per accedir a la bicicleta, ni violència ni intimidació sobre persones. És, per tant, un furt, i com que el valor no supera els 400 euros, es qualifica com a delicte lleu.',
       explainEs: 'No hay fuerza en las cosas porque no hay que vencer ningún obstáculo para acceder a la bicicleta, ni violencia ni intimidación sobre personas. Es, por tanto, un hurto, y como el valor no supera los 400 euros, se califica como delito leve.',
-      refs: [ref('lo-10-1995-cp', 'art. 234 i 237')],
+      refs: [refv('lo-10-1995-cp', 'art. 234 i 237', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -216,7 +216,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'Des de la reforma de 2015, que va suprimir les faltes, els delictes lleus els enjudicien els jutjats d’instrucció, que a més investiguen la resta de delictes.',
       explainEs: 'Desde la reforma de 2015, que suprimió las faltas, los delitos leves los enjuician los juzgados de instrucción, que además investigan el resto de delitos.',
-      refs: [ref('lecrim-1882', 'competència per a l’enjudiciament de delictes lleus')],
+      refs: [refv('lecrim-1882', 'competència per a l’enjudiciament de delictes lleus', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -236,7 +236,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'L’acusació particular la formula la persona ofesa pel delicte; l’acusació popular pot exercir-la qualsevol ciutadà en els delictes públics encara que no hagi estat perjudicat; i l’acusació privada opera en els delictes només perseguibles a instància de part.',
       explainEs: 'La acusación particular la formula la persona ofendida por el delito; la acusación popular puede ejercerla cualquier ciudadano en los delitos públicos aunque no haya sido perjudicado; y la acusación privada opera en los delitos solo perseguibles a instancia de parte.',
-      refs: [ref('lecrim-1882', 'parts acusadores'), ref('ce-1978', 'art. 125')],
+      refs: [refv('lecrim-1882', 'parts acusadores', '2026-08-24'), refv('ce-1978', 'art. 125', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -256,7 +256,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'L’atestat té, en principi, valor de denúncia. Perquè el seu contingut adquireixi valor probatori cal que es reprodueixi i se sotmeti a contradicció en el judici oral, amb l’excepció de les diligències objectives i irrepetibles com la inspecció ocular o les actes d’intervenció.',
       explainEs: 'El atestado tiene, en principio, valor de denuncia. Para que su contenido adquiera valor probatorio hace falta que se reproduzca y se someta a contradicción en el juicio oral, con la excepción de las diligencias objetivas e irrepetibles como la inspección ocular o las actas de intervención.',
-      refs: [ref('lecrim-1882', 'valor de l’atestat')],
+      refs: [refv('lecrim-1882', 'valor de l’atestat', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -276,7 +276,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'En les funcions d’esbrinament del delicte i descobriment i assegurament del delinqüent, la policia judicial depèn funcionalment dels jutges, dels tribunals i del Ministeri Fiscal, sens perjudici de la seva dependència orgànica del seu cos.',
       explainEs: 'En las funciones de averiguación del delito y descubrimiento y aseguramiento del delincuente, la policía judicial depende funcionalmente de los jueces, de los tribunales y del Ministerio Fiscal, sin perjuicio de su dependencia orgánica de su cuerpo.',
-      refs: [ref('ce-1978', 'art. 126'), ref('lo-2-1986-fcs', 'policia judicial')],
+      refs: [refv('ce-1978', 'art. 126', '2026-08-24'), refv('lo-2-1986-fcs', 'art. 31.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -296,7 +296,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El Tribunal Suprem, amb jurisdicció en tot Espanya, és l’òrgan jurisdiccional superior en tots els ordres, llevat del que disposa la Constitució en matèria de garanties constitucionals. La seva Sala Segona és la sala penal.',
       explainEs: 'El Tribunal Supremo, con jurisdicción en toda España, es el órgano jurisdiccional superior en todos los órdenes, salvo lo dispuesto en la Constitución en materia de garantías constitucionales. Su Sala Segunda es la sala penal.',
-      refs: [ref('ce-1978', 'art. 123')],
+      refs: [refv('ce-1978', 'art. 123', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),
@@ -319,7 +319,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'És delicte conduir un vehicle de motor o un ciclomotor a una velocitat superior en seixanta quilòmetres per hora a la permesa reglamentàriament en via urbana, o en vuitanta quilòmetres per hora en via interurbana.',
       explainEs: 'Es delito conducir un vehículo de motor o un ciclomotor a una velocidad superior en sesenta kilómetros por hora a la permitida reglamentariamente en vía urbana, o en ochenta kilómetros por hora en vía interurbana.',
-      refs: [ref('lo-10-1995-cp', 'art. 379.1')],
+      refs: [refv('lo-10-1995-cp', 'art. 379.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -339,7 +339,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El Codi penal castiga de manera autònoma qui, requerit per un agent de l’autoritat, es negui a sotmetre’s a les proves legalment establertes de comprovació de les taxes d’alcoholèmia i de la presència de drogues. Es castiga la desobediència en si, amb independència del resultat que hauria donat la prova.',
       explainEs: 'El Código penal castiga de manera autónoma a quien, requerido por un agente de la autoridad, se niegue a someterse a las pruebas legalmente establecidas de comprobación de las tasas de alcoholemia y de la presencia de drogas. Se castiga la desobediencia en sí, con independencia del resultado que habría dado la prueba.',
-      refs: [ref('lo-10-1995-cp', 'art. 383')],
+      refs: [refv('lo-10-1995-cp', 'art. 383', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -359,7 +359,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'Les lleis penals no tenen efecte retroactiu, però sí que el tenen les que afavoreixin la persona reu, encara que en entrar en vigor hi hagi sentència ferma i s’estigui complint condemna.',
       explainEs: 'Las leyes penales no tienen efecto retroactivo, pero sí lo tienen las que favorezcan a la persona reo, aunque al entrar en vigor haya sentencia firme y se esté cumpliendo condena.',
-      refs: [ref('lo-10-1995-cp', 'art. 2'), ref('ce-1978', 'art. 9.3 i 25.1')],
+      refs: [refv('lo-10-1995-cp', 'art. 2', '2026-08-24'), refv('ce-1978', 'art. 9.3 i 25.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -379,7 +379,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El Codi penal castiga qui condueixi un vehicle de motor o ciclomotor havent perdut la vigència del permís per pèrdua total dels punts assignats legalment, després d’haver estat privat cautelarment o definitivament del dret a conduir per decisió judicial, o sense haver obtingut mai permís o llicència.',
       explainEs: 'El Código penal castiga a quien conduzca un vehículo de motor o ciclomotor habiendo perdido la vigencia del permiso por pérdida total de los puntos asignados legalmente, tras haber sido privado cautelar o definitivamente del derecho a conducir por decisión judicial, o sin haber obtenido nunca permiso o licencia.',
-      refs: [ref('lo-10-1995-cp', 'art. 384')],
+      refs: [refv('lo-10-1995-cp', 'art. 384', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -399,7 +399,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El Codi penal castiga qui originï un greu risc per a la circulació col·locant a la via obstacles imprevisibles, vessant substàncies lliscants o inflamables, mutant o alterant la senyalització, o no restablint la seguretat de la via quan hi estigui obligat. És un delicte de perill: no cal que es produeixi cap accident.',
       explainEs: 'El Código penal castiga a quien origine un grave riesgo para la circulación colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables, mutando o alterando la señalización, o no restableciendo la seguridad de la vía cuando esté obligado. Es un delito de peligro: no hace falta que se produzca ningún accidente.',
-      refs: [ref('lo-10-1995-cp', 'art. 385')],
+      refs: [refv('lo-10-1995-cp', 'art. 385', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -417,7 +417,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La reforma de 2015 va suprimir el llibre III del Codi penal, dedicat a les faltes. Algunes conductes es van despenalitzar i altres es van reconvertir en delictes lleus, integrats al llibre II.',
       explainEs: 'La reforma de 2015 suprimió el libro III del Código penal, dedicado a las faltas. Algunas conductas se despenalizaron y otras se reconvirtieron en delitos leves, integrados en el libro II.',
-      refs: [ref('lo-1-2015-reforma-cp', 'supressió del llibre III')],
+      refs: [refv('lo-1-2015-reforma-cp', 'supressió del llibre III', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -437,7 +437,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La Llei orgànica 1/2015 va introduir la presó permanent revisable per a supòsits d’excepcional gravetat expressament taxats, amb un sistema de revisió obligatòria de la situació penitenciària un cop complerta una part de la condemna.',
       explainEs: 'La Ley orgánica 1/2015 introdujo la prisión permanente revisable para supuestos de excepcional gravedad expresamente tasados, con un sistema de revisión obligatoria de la situación penitenciaria una vez cumplida una parte de la condena.',
-      refs: [ref('lo-1-2015-reforma-cp', 'presó permanent revisable')],
+      refs: [refv('lo-1-2015-reforma-cp', 'presó permanent revisable', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -457,7 +457,15 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La reforma va repartir les antigues faltes en dues direccions: algunes es van convertir en delictes lleus dins el Codi penal i altres van passar a l’àmbit administratiu sancionador, sobretot a la Llei orgànica 4/2015 de protecció de la seguretat ciutadana i a les ordenances municipals.',
       explainEs: 'La reforma repartió las antiguas faltas en dos direcciones: algunas se convirtieron en delitos leves dentro del Código penal y otras pasaron al ámbito administrativo sancionador, sobre todo a la Ley orgánica 4/2015 de protección de la seguridad ciudadana y a las ordenanzas municipales.',
-      refs: [ref('lo-1-2015-reforma-cp', 'reconversió de les faltes'), ref('lo-4-2015-psc', 'règim sancionador')],
+      refs: [
+        refv(
+          'lo-1-2015-reforma-cp',
+          'reconversió de les faltes',
+          '2026-08-24',
+          'El preàmbul remet a la via administrativa sense anomenar la LO 4/2015.',
+        ),
+        refv('lo-4-2015-psc', 'règim sancionador', '2026-08-24'),
+      ],
       difficulty: 'mitjana',
     },
     {
@@ -477,7 +485,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'La reforma va introduir l’agreujament per multireincidència en el furt: la comissió reiterada de sostraccions de petita quantia pot qualificar-se com a delicte encara que cap fet aïllat superi els 400 euros. Va ser la resposta legislativa a la desaparició de la falta de furt.',
       explainEs: 'La reforma introdujo la agravación por multirreincidencia en el hurto: la comisión reiterada de sustracciones de pequeña cuantía puede calificarse como delito aunque ningún hecho aislado supere los 400 euros. Fue la respuesta legislativa a la desaparición de la falta de hurto.',
-      refs: [ref('lo-1-2015-reforma-cp', 'reforma dels delictes contra el patrimoni'), ref('lo-10-1995-cp', 'art. 235')],
+      refs: [refv('lo-1-2015-reforma-cp', 'reforma dels delictes contra el patrimoni', '2026-08-24'), refv('lo-10-1995-cp', 'art. 235.1.7è', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -497,7 +505,7 @@ export const QUESTIONS_26_30: Question[] = [
       },
       explainCa: 'El delicte de conducció havent perdut la totalitat dels punts ja existia abans de 2015: es va introduir amb la reforma de seguretat viària de 2007. La reforma de 2015 sí que va crear l’assetjament persistent, la difusió no consentida d’imatges íntimes i el decomís ampliat.',
       explainEs: 'El delito de conducción habiendo perdido la totalidad de los puntos ya existía antes de 2015: se introdujo con la reforma de seguridad vial de 2007. La reforma de 2015 sí creó el acoso persistente, la difusión no consentida de imágenes íntimas y el decomiso ampliado.',
-      refs: [ref('lo-1-2015-reforma-cp', 'novetats de la reforma'), ref('lo-10-1995-cp', 'art. 384')],
+      refs: [refv('lo-1-2015-reforma-cp', 'novetats de la reforma', '2026-08-24'), refv('lo-10-1995-cp', 'art. 384', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),

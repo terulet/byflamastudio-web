@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, ref, refv } from '../authoring.ts'
 
 export const QUESTIONS_01_05: Question[] = [
   ...questionsFor(1, [
@@ -15,7 +15,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'La Constitució té 169 articles, distribuïts en un títol preliminar i deu títols, més quatre disposicions addicionals, nou transitòries, una derogatòria i una final.',
       explainEs: 'La Constitución tiene 169 artículos, distribuidos en un título preliminar y diez títulos, más cuatro disposiciones adicionales, nueve transitorias, una derogatoria y una final.',
-      refs: [ref('ce-1978', 'estructura general')],
+      refs: [refv('ce-1978', 'estructura general', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -35,7 +35,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 1.1 constitueix Espanya en un Estat social i democràtic de dret que propugna com a valors superiors del seu ordenament jurídic la llibertat, la justícia, la igualtat i el pluralisme polític.',
       explainEs: 'El artículo 1.1 constituye a España en un Estado social y democrático de derecho que propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político.',
-      refs: [ref('ce-1978', 'art. 1.1')],
+      refs: [refv('ce-1978', 'art. 1.1', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -55,7 +55,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 9.3 garanteix el principi de legalitat, la jerarquia normativa, la publicitat de les normes, la irretroactivitat de les disposicions sancionadores no favorables o restrictives de drets individuals, la seguretat jurídica, la responsabilitat i la interdicció de l’arbitrarietat dels poders públics. La proporcionalitat de les penes és un principi penal derivat, però no consta en aquesta enumeració.',
       explainEs: 'El artículo 9.3 garantiza el principio de legalidad, la jerarquía normativa, la publicidad de las normas, la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos. La proporcionalidad de las penas es un principio penal derivado, pero no consta en esta enumeración.',
-      refs: [ref('ce-1978', 'art. 9.3')],
+      refs: [refv('ce-1978', 'art. 9.3', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -75,7 +75,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 168 s’aplica a la revisió total de la Constitució o a una revisió parcial que afecti el títol preliminar, la secció 1a del capítol II del títol I (drets fonamentals i llibertats públiques) o el títol II (la Corona). Exigeix majoria de dos terços, dissolució de les Corts, ratificació per les noves cambres i referèndum.',
       explainEs: 'El artículo 168 se aplica a la revisión total de la Constitución o a una revisión parcial que afecte al título preliminar, la sección 1ª del capítulo II del título I (derechos fundamentales y libertades públicas) o el título II (la Corona). Exige mayoría de dos tercios, disolución de las Cortes, ratificación por las nuevas cámaras y referéndum.',
-      refs: [ref('ce-1978', 'art. 167 i 168')],
+      refs: [refv('ce-1978', 'art. 167 i 168', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -95,7 +95,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 1.3 diu literalment que la forma política de l’Estat espanyol és la monarquia parlamentària. Convé recordar el terme exacte perquè es pregunta sovint amb distractors molt propers.',
       explainEs: 'El artículo 1.3 dice literalmente que la forma política del Estado español es la monarquía parlamentaria. Conviene recordar el término exacto porque se pregunta a menudo con distractores muy próximos.',
-      refs: [ref('ce-1978', 'art. 1.3')],
+      refs: [refv('ce-1978', 'art. 1.3', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),
@@ -118,7 +118,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 53.2 estableix que qualsevol ciutadà pot recabar la tutela de les llibertats i drets reconeguts a l’article 14 i a la secció 1a del capítol II (articles 15 a 29), i aquesta protecció s’estén també a l’objecció de consciència de l’article 30.2.',
       explainEs: 'El artículo 53.2 establece que cualquier ciudadano puede recabar la tutela de las libertades y derechos reconocidos en el artículo 14 y en la sección 1ª del capítulo II (artículos 15 a 29), y esta protección se extiende también a la objeción de conciencia del artículo 30.2.',
-      refs: [ref('ce-1978', 'art. 53.2')],
+      refs: [refv('ce-1978', 'art. 53.2', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -133,7 +133,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'La detenció preventiva no pot durar més del temps estrictament necessari per fer les esbrinacions tendents a l’esclariment dels fets i, en tot cas, dins el termini màxim de setanta-dues hores la persona detinguda ha de ser posada en llibertat o a disposició de l’autoritat judicial.',
       explainEs: 'La detención preventiva no puede durar más del tiempo estrictamente necesario para realizar las averiguaciones tendentes al esclarecimiento de los hechos y, en todo caso, dentro del plazo máximo de setenta y dos horas la persona detenida debe ser puesta en libertad o a disposición de la autoridad judicial.',
-      refs: [ref('ce-1978', 'art. 17.2')],
+      refs: [refv('ce-1978', 'art. 17.2', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -153,7 +153,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 55.2 permet, mitjançant llei orgànica i amb la necessària intervenció judicial i el control parlamentari adequat, suspendre de forma individual els drets dels articles 17.2 (termini de detenció), 18.2 (inviolabilitat del domicili) i 18.3 (secret de les comunicacions) per a persones determinades en relació amb investigacions sobre bandes armades o elements terroristes.',
       explainEs: 'El artículo 55.2 permite, mediante ley orgánica y con la necesaria intervención judicial y el adecuado control parlamentario, suspender de forma individual los derechos de los artículos 17.2 (plazo de detención), 18.2 (inviolabilidad del domicilio) y 18.3 (secreto de las comunicaciones) para personas determinadas en relación con investigaciones sobre bandas armadas o elementos terroristas.',
-      refs: [ref('ce-1978', 'art. 55')],
+      refs: [refv('ce-1978', 'art. 55', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -173,7 +173,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 21.1 reconeix el dret de reunió pacífica i sense armes sense necessitat d’autorització prèvia. L’apartat 2 exigeix comunicació prèvia a l’autoritat en els casos de reunions en llocs de trànsit públic i de manifestacions; l’autoritat només les pot prohibir quan hi hagi raons fonamentades d’alteració de l’ordre públic amb perill per a persones o béns.',
       explainEs: 'El artículo 21.1 reconoce el derecho de reunión pacífica y sin armas sin necesidad de autorización previa. El apartado 2 exige comunicación previa a la autoridad en los casos de reuniones en lugares de tránsito público y de manifestaciones; la autoridad solo puede prohibirlas cuando existan razones fundadas de alteración del orden público con peligro para personas o bienes.',
-      refs: [ref('ce-1978', 'art. 21')],
+      refs: [refv('ce-1978', 'art. 21', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -193,7 +193,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’article 54 configura el Defensor del Poble com a alt comissionat de les Corts Generals, designat per aquestes per a la defensa dels drets del títol I, i li atribueix la facultat de supervisar l’activitat de l’Administració, donant-ne compte a les Corts.',
       explainEs: 'El artículo 54 configura al Defensor del Pueblo como alto comisionado de las Cortes Generales, designado por estas para la defensa de los derechos del título I, y le atribuye la facultad de supervisar la actividad de la Administración, dando cuenta de ello a las Cortes.',
-      refs: [ref('ce-1978', 'art. 54')],
+      refs: [refv('ce-1978', 'art. 54', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),
@@ -216,7 +216,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’Estatut vigent és la Llei orgànica 6/2006, de 19 de juliol, de reforma de l’Estatut d’autonomia de Catalunya, que va substituir l’Estatut de 1979.',
       explainEs: 'El Estatuto vigente es la Ley orgánica 6/2006, de 19 de julio, de reforma del Estatuto de autonomía de Cataluña, que sustituyó al Estatuto de 1979.',
-      refs: [ref('lo-6-2006-eac', 'norma aprovatòria')],
+      refs: [refv('lo-6-2006-eac', 'norma aprovatòria', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -236,7 +236,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’Estatut estableix que la llengua pròpia de Catalunya és el català i que és també, com el castellà, llengua oficial. L’aranès, variant de l’occità, és la llengua pròpia de l’Aran i també és oficial a Catalunya.',
       explainEs: 'El Estatuto establece que la lengua propia de Cataluña es el catalán y que es también, como el castellano, lengua oficial. El aranés, variante del occitano, es la lengua propia del Arán y también es oficial en Cataluña.',
-      refs: [ref('lo-6-2006-eac', 'drets i deures lingüístics')],
+      refs: [refv('lo-6-2006-eac', 'drets i deures lingüístics', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -256,7 +256,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'El dret d’opció lingüística permet a qualsevol persona adreçar-se a les administracions i ser-hi atesa en la llengua oficial que esculli, sense que se li pugui exigir cap tipus de traducció. Per a un agent de policia local, això vol dir estar en condicions d’atendre en català i en castellà.',
       explainEs: 'El derecho de opción lingüística permite a cualquier persona dirigirse a las administraciones y ser atendida en la lengua oficial que escoja, sin que se le pueda exigir ningún tipo de traducción. Para un agente de policía local, esto significa estar en condiciones de atender en catalán y en castellano.',
-      refs: [ref('lo-6-2006-eac', 'drets lingüístics davant les administracions')],
+      refs: [refv('lo-6-2006-eac', 'drets lingüístics davant les administracions', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -276,7 +276,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'La sentència 31/2010 del Tribunal Constitucional va resoldre el recurs d’inconstitucionalitat contra l’Estatut de 2006 i va declarar inconstitucionals alguns preceptes i va fixar la interpretació conforme d’altres. Per això cal treballar sempre amb el text consolidat i comprovar si l’article estudiat està afectat.',
       explainEs: 'La sentencia 31/2010 del Tribunal Constitucional resolvió el recurso de inconstitucionalidad contra el Estatuto de 2006 y declaró inconstitucionales algunos preceptos y fijó la interpretación conforme de otros. Por eso hay que trabajar siempre con el texto consolidado y comprobar si el artículo estudiado está afectado.',
-      refs: [ref('lo-6-2006-eac', 'text consolidat després de la STC 31/2010')],
+      refs: [refv('lo-6-2006-eac', 'text consolidat després de la STC 31/2010', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -291,7 +291,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’Estatut reconeix el municipi com a ens bàsic de l’organització territorial de Catalunya i com a mitjà essencial de participació de la comunitat local en els afers públics, en la mateixa línia que la legislació bàsica de règim local.',
       explainEs: 'El Estatuto reconoce el municipio como ente básico de la organización territorial de Cataluña y como medio esencial de participación de la comunidad local en los asuntos públicos, en la misma línea que la legislación básica de régimen local.',
-      refs: [ref('lo-6-2006-eac', 'govern local'), ref('llei-7-1985-lrbrl', 'art. 1 i 11')],
+      refs: [refv('lo-6-2006-eac', 'govern local', '2026-08-24'), refv('llei-7-1985-lrbrl', 'art. 1 i 11', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -314,7 +314,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'El president de la Generalitat és elegit pel Parlament d’entre els seus membres i nomenat pel Rei. Té la més alta representació de la Generalitat i, alhora, la representació ordinària de l’Estat a Catalunya.',
       explainEs: 'El presidente de la Generalitat es elegido por el Parlamento de entre sus miembros y nombrado por el Rey. Tiene la más alta representación de la Generalitat y, a la vez, la representación ordinaria del Estado en Cataluña.',
-      refs: [ref('lo-6-2006-eac', 'la Presidència de la Generalitat')],
+      refs: [refv('lo-6-2006-eac', 'la Presidència de la Generalitat', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -329,7 +329,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'Els diputats del Parlament de Catalunya són elegits per un mandat de quatre anys, mitjançant sufragi universal, lliure, igual, directe i secret, sens perjudici de la possibilitat de dissolució anticipada.',
       explainEs: 'Los diputados del Parlamento de Cataluña son elegidos por un mandato de cuatro años, mediante sufragio universal, libre, igual, directo y secreto, sin perjuicio de la posibilidad de disolución anticipada.',
-      refs: [ref('lo-6-2006-eac', 'el Parlament')],
+      refs: [refv('lo-6-2006-eac', 'el Parlament', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -350,8 +350,8 @@ export const QUESTIONS_01_05: Question[] = [
       explainCa: 'La Generalitat té competència sobre la coordinació de les policies locals, però aquestes depenen jeràrquicament de l’alcalde o alcaldessa del municipi. Coordinar inclou homogeneïtzar mitjans, formació, uniformitat i criteris d’actuació, però no substituir el comandament municipal.',
       explainEs: 'La Generalitat tiene competencia sobre la coordinación de las policías locales, pero estas dependen jerárquicamente del alcalde o alcaldesa del municipio. Coordinar incluye homogeneizar medios, formación, uniformidad y criterios de actuación, pero no sustituir el mando municipal.',
       refs: [
-        ref('lo-6-2006-eac', 'competències en seguretat pública'),
-        ref('llei-16-1991-policies-locals', 'dependència dels cossos de policia local'),
+        refv('lo-6-2006-eac', 'competències en seguretat pública', '2026-08-24'),
+        refv('llei-16-1991-policies-locals', 'dependència dels cossos de policia local', '2026-08-24'),
       ],
       difficulty: 'mitjana',
     },
@@ -372,7 +372,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'El Govern o Consell Executiu és l’òrgan superior col·legiat que dirigeix l’acció política i l’Administració de la Generalitat, i exerceix la funció executiva i la potestat reglamentària.',
       explainEs: 'El Gobierno o Consejo Ejecutivo es el órgano superior colegiado que dirige la acción política y la Administración de la Generalitat, y ejerce la función ejecutiva y la potestad reglamentaria.',
-      refs: [ref('lo-6-2006-eac', 'el Govern')],
+      refs: [refv('lo-6-2006-eac', 'el Govern', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -415,7 +415,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'La llei defineix el municipi com l’entitat local bàsica de l’organització territorial de l’Estat, amb personalitat jurídica i plena capacitat, i n’identifica com a elements el territori, la població i l’organització.',
       explainEs: 'La ley define el municipio como la entidad local básica de la organización territorial del Estado, con personalidad jurídica y plena capacidad, e identifica como sus elementos el territorio, la población y la organización.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 11')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 11', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -435,7 +435,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'El conjunt de persones inscrites al padró municipal constitueix la població del municipi, i les persones inscrites en són veïnes. La inscripció al padró és, doncs, el fet determinant de la condició de veí, amb els drets i deures que comporta.',
       explainEs: 'El conjunto de personas inscritas en el padrón municipal constituye la población del municipio, y las personas inscritas son sus vecinas. La inscripción en el padrón es, pues, el hecho determinante de la condición de vecino, con los derechos y deberes que conlleva.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 15 i 16')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 15 i 16', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -455,7 +455,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'L’alcalde, els tinents d’alcalde i el ple existeixen en tots els ajuntaments. La junta de govern local només és obligatòria als municipis amb població superior a cinc mil habitants i en aquells en què ho disposi el seu reglament orgànic o ho acordi el ple.',
       explainEs: 'El alcalde, los tenientes de alcalde y el pleno existen en todos los ayuntamientos. La junta de gobierno local solo es obligatoria en los municipios con población superior a cinco mil habitantes y en aquellos en que lo disponga su reglamento orgánico o lo acuerde el pleno.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 20')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 20', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -475,7 +475,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'La legislació bàsica de règim local atribueix als municipis, entre les competències pròpies, la policia local i la seguretat en llocs públics, així com el trànsit, l’estacionament de vehicles i la mobilitat, i la protecció civil i la prevenció i extinció d’incendis.',
       explainEs: 'La legislación básica de régimen local atribuye a los municipios, entre las competencias propias, la policía local y la seguridad en lugares públicos, así como el tráfico, el estacionamiento de vehículos y la movilidad, y la protección civil y la prevención y extinción de incendios.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 25')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 25', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -495,7 +495,7 @@ export const QUESTIONS_01_05: Question[] = [
       },
       explainCa: 'Entre les potestats que la legislació bàsica reconeix als municipis hi ha la presumpció de legitimitat i l’executivitat dels seus actes, juntament amb les potestats d’execució forçosa i sancionadora. Per això una ordenança o una sanció desplega efectes tot i que s’hagi recorregut, llevat que se’n suspengui l’execució.',
       explainEs: 'Entre las potestades que la legislación básica reconoce a los municipios está la presunción de legitimidad y la ejecutividad de sus actos, junto con las potestades de ejecución forzosa y sancionadora. Por eso una ordenanza o una sanción despliega efectos aunque se haya recurrido, salvo que se suspenda su ejecución.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 4')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 4', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),

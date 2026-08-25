@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, refv } from '../authoring.ts'
 
 export const QUESTIONS_37_40: Question[] = [
   ...questionsFor(37, [
@@ -20,7 +20,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La competència judicial ve determinada per la llei i no és disponible per a les parts. La resta d’opcions són drets recollits expressament al catàleg de drets de la persona detinguda.',
       explainEs: 'La competencia judicial viene determinada por la ley y no es disponible para las partes. El resto de opciones son derechos recogidos expresamente en el catálogo de derechos de la persona detenida.',
-      refs: [ref('lecrim-1882', 'art. 520')],
+      refs: [refv('lecrim-1882', 'art. 520', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -40,7 +40,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'Els particulars **poden** detenir qui intenti cometre un delicte en el moment d’anar a cometre’l, el delinqüent in fraganti, qui s’hagi fugat d’un establiment penal o mentre és conduït a la presó, i el processat o condemnat en rebel·lia. L’autoritat i els agents de policia judicial, en canvi, **han** de detenir.',
       explainEs: 'Los particulares **pueden** detener a quien intente cometer un delito en el momento de ir a cometerlo, al delincuente in fraganti, a quien se haya fugado de un establecimiento penal o mientras es conducido a prisión, y al procesado o condenado en rebeldía. La autoridad y los agentes de policía judicial, en cambio, **deben** detener.',
-      refs: [ref('lecrim-1882', 'art. 490 i 492')],
+      refs: [refv('lecrim-1882', 'art. 490 i 492', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -60,7 +60,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La legitimació és taxada: la persona privada de llibertat, el seu cònjuge o persona unida per relació anàloga d’afectivitat, descendents, ascendents, germans, els representants legals si és menor o persona amb la capacitat modificada, el Ministeri Fiscal i el Defensor del Poble. També pot iniciar-lo d’ofici el jutge competent.',
       explainEs: 'La legitimación es tasada: la persona privada de libertad, su cónyuge o persona unida por relación análoga de afectividad, descendientes, ascendientes, hermanos, los representantes legales si es menor o persona con la capacidad modificada, el Ministerio Fiscal y el Defensor del Pueblo. También puede iniciarlo de oficio el juez competente.',
-      refs: [ref('lo-6-1984-habeas', 'art. 3')],
+      refs: [refv('lo-6-1984-habeas', 'art. 3', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -80,7 +80,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'És competent el jutge d’instrucció del lloc on es trobi la persona privada de llibertat; si no consta, el del lloc on es va produir la detenció; i, en defecte d’aquests, el del lloc on s’hagin tingut les últimes notícies del seu parador. Ha de resoldre en vint-i-quatre hores.',
       explainEs: 'Es competente el juez de instrucción del lugar donde se encuentre la persona privada de libertad; si no consta, el del lugar donde se produjo la detención; y, en defecto de estos, el del lugar donde se hayan tenido las últimas noticias sobre su paradero. Debe resolver en veinticuatro horas.',
-      refs: [ref('lo-6-1984-habeas', 'art. 2 i 7')],
+      refs: [refv('lo-6-1984-habeas', 'art. 2 i 7', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -100,7 +100,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'L’habeas corpus és un procediment sumari i urgent que té per objecte únic i exclusiu examinar la legalitat de la privació de llibertat i, si escau, posar immediatament la persona en llibertat o a disposició judicial. No entra en el fons de la causa.',
       explainEs: 'El habeas corpus es un procedimiento sumario y urgente que tiene por objeto único y exclusivo examinar la legalidad de la privación de libertad y, en su caso, poner inmediatamente a la persona en libertad o a disposición judicial. No entra en el fondo de la causa.',
-      refs: [ref('lo-6-1984-habeas', 'art. 1'), ref('ce-1978', 'art. 17.4')],
+      refs: [refv('lo-6-1984-habeas', 'art. 1', '2026-08-24'), refv('ce-1978', 'art. 17.4', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -123,7 +123,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'L’ordre de protecció l’acorda sempre l’autoritat judicial mitjançant resolució. La policia, els serveis socials, les oficines d’atenció a la víctima i el Ministeri Fiscal poden rebre o instar la sol·licitud, però la decisió correspon al jutge.',
       explainEs: 'La orden de protección la acuerda siempre la autoridad judicial mediante resolución. La policía, los servicios sociales, las oficinas de atención a la víctima y el Ministerio Fiscal pueden recibir o instar la solicitud, pero la decisión corresponde al juez.',
-      refs: [ref('llei-27-2003-ordre-proteccio', 'competència judicial'), ref('lecrim-1882', 'art. 544 ter')],
+      refs: [refv('llei-27-2003-ordre-proteccio', 'competència judicial', '2026-08-24'), refv('lecrim-1882', 'art. 544 ter', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -138,7 +138,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'Rebuda la sol·licitud, el jutge de guàrdia convoca una audiència urgent amb la víctima o el seu representant legal, el sol·licitant, el presumpte agressor assistit de lletrat i el Ministeri Fiscal. Aquesta audiència s’ha de celebrar en un termini màxim de setanta-dues hores des de la presentació de la sol·licitud.',
       explainEs: 'Recibida la solicitud, el juez de guardia convoca una audiencia urgente con la víctima o su representante legal, el solicitante, el presunto agresor asistido de letrado y el Ministerio Fiscal. Esta audiencia debe celebrarse en un plazo máximo de setenta y dos horas desde la presentación de la solicitud.',
-      refs: [ref('lecrim-1882', 'art. 544 ter.4'), ref('llei-27-2003-ordre-proteccio', 'procediment')],
+      refs: [refv('lecrim-1882', 'art. 544 ter.4', '2026-08-24'), refv('llei-27-2003-ordre-proteccio', 'procediment', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -158,7 +158,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'Cal que existeixin indicis fundats de la comissió d’un delicte contra la vida, la integritat física o moral, la llibertat sexual, la llibertat o la seguretat d’alguna de les persones incloses en l’àmbit protegit, i que en resulti una situació objectiva de risc que requereixi l’adopció d’alguna mesura de protecció.',
       explainEs: 'Es necesario que existan indicios fundados de la comisión de un delito contra la vida, la integridad física o moral, la libertad sexual, la libertad o la seguridad de alguna de las personas incluidas en el ámbito protegido, y que resulte una situación objetiva de riesgo que requiera la adopción de alguna medida de protección.',
-      refs: [ref('lecrim-1882', 'art. 544 ter.1')],
+      refs: [refv('lecrim-1882', 'art. 544 ter.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -178,7 +178,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'L’ordre de protecció pot incloure mesures civils com l’atribució de l’ús de l’habitatge familiar, el règim de custòdia i visites, i la prestació d’aliments. Aquestes mesures tenen una vigència temporal limitada, pensada perquè es consolidin —o no— en el procés de família corresponent.',
       explainEs: 'La orden de protección puede incluir medidas civiles como la atribución del uso de la vivienda familiar, el régimen de custodia y visitas, y la prestación de alimentos. Estas medidas tienen una vigencia temporal limitada, pensada para que se consoliden —o no— en el proceso de familia correspondiente.',
-      refs: [ref('lecrim-1882', 'art. 544 ter.7')],
+      refs: [refv('lecrim-1882', 'art. 544 ter.7', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -198,7 +198,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La sol·licitud d’ordre de protecció es pot presentar davant les forces i cossos de seguretat. Rebuda, s’ha de remetre de manera immediata al jutge de guàrdia competent, sense perjudici de la coordinació amb els serveis socials i amb l’oficina d’atenció a la víctima.',
       explainEs: 'La solicitud de orden de protección puede presentarse ante las fuerzas y cuerpos de seguridad. Recibida, debe remitirse de manera inmediata al juez de guardia competente, sin perjuicio de la coordinación con los servicios sociales y con la oficina de atención a la víctima.',
-      refs: [ref('lecrim-1882', 'art. 544 ter.3'), ref('llei-27-2003-ordre-proteccio', 'presentació de la sol·licitud')],
+      refs: [refv('lecrim-1882', 'art. 544 ter.3', '2026-08-24'), refv('llei-27-2003-ordre-proteccio', 'presentació de la sol·licitud', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -221,7 +221,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La discriminació indirecta es produeix quan una disposició, un criteri o una pràctica aparentment neutres posen persones d’un sexe en desavantatge particular respecte de persones de l’altre, llevat que puguin justificar-se objectivament amb una finalitat legítima i que els mitjans siguin adequats i necessaris.',
       explainEs: 'La discriminación indirecta se produce cuando una disposición, un criterio o una práctica aparentemente neutros ponen a personas de un sexo en desventaja particular respecto de personas del otro, salvo que puedan justificarse objetivamente con una finalidad legítima y que los medios sean adecuados y necesarios.',
-      refs: [ref('lo-3-2007-igualtat', 'art. 6')],
+      refs: [refv('lo-3-2007-igualtat', 'art. 6', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -241,7 +241,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La llei estableix que l’assetjament sexual i l’assetjament per raó de sexe es consideren en tot cas actes discriminatoris, i afegeix que el condicionament d’un dret o d’una expectativa de dret a l’acceptació d’una situació d’assetjament també és discriminació.',
       explainEs: 'La ley establece que el acoso sexual y el acoso por razón de sexo se consideran en todo caso actos discriminatorios, y añade que el condicionamiento de un derecho o de una expectativa de derecho a la aceptación de una situación de acoso también es discriminación.',
-      refs: [ref('lo-3-2007-igualtat', 'art. 7')],
+      refs: [refv('lo-3-2007-igualtat', 'art. 7', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -261,7 +261,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'Els poders públics poden adoptar mesures específiques a favor de les dones per corregir situacions patents de desigualtat de fet respecte dels homes. Aquestes mesures han de ser raonables i proporcionades en relació amb l’objectiu perseguit i s’han d’aplicar mentre subsisteixin aquestes situacions.',
       explainEs: 'Los poderes públicos pueden adoptar medidas específicas a favor de las mujeres para corregir situaciones patentes de desigualdad de hecho respecto de los hombres. Estas medidas deben ser razonables y proporcionadas en relación con el objetivo perseguido y deben aplicarse mientras subsistan dichas situaciones.',
-      refs: [ref('lo-3-2007-igualtat', 'art. 11')],
+      refs: [refv('lo-3-2007-igualtat', 'art. 11', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -281,7 +281,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La llei disposa que constitueix discriminació directa per raó de sexe tot tracte desfavorable a les dones relacionat amb l’embaràs o la maternitat. És una de les manifestacions més clares i menys matisables de la discriminació directa.',
       explainEs: 'La ley dispone que constituye discriminación directa por razón de sexo todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad. Es una de las manifestaciones más claras y menos matizables de la discriminación directa.',
-      refs: [ref('lo-3-2007-igualtat', 'art. 8')],
+      refs: [refv('lo-3-2007-igualtat', 'art. 8', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -301,7 +301,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La llei considera discriminació per raó de sexe qualsevol tracte advers o efecte negatiu que es produeixi en una persona com a conseqüència de la presentació d’una queixa, reclamació, denúncia, demanda o recurs destinats a impedir la seva discriminació i a exigir el compliment efectiu del principi d’igualtat.',
       explainEs: 'La ley considera discriminación por razón de sexo cualquier trato adverso o efecto negativo que se produzca en una persona como consecuencia de la presentación de una queja, reclamación, denuncia, demanda o recurso destinados a impedir su discriminación y a exigir el cumplimiento efectivo del principio de igualdad.',
-      refs: [ref('lo-3-2007-igualtat', 'art. 9')],
+      refs: [refv('lo-3-2007-igualtat', 'art. 9', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -324,7 +324,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La llei s’aplica per exigir responsabilitat a les persones majors de catorze anys i menors de divuit per la comissió de fets tipificats com a delictes. Als menors de catorze anys no se’ls exigeix responsabilitat penal: se’ls aplica la normativa de protecció de menors.',
       explainEs: 'La ley se aplica para exigir responsabilidad a las personas mayores de catorce años y menores de dieciocho por la comisión de hechos tipificados como delitos. A los menores de catorce años no se les exige responsabilidad penal: se les aplica la normativa de protección de menores.',
-      refs: [ref('lo-5-2000-menors', 'art. 1 i 3')],
+      refs: [refv('lo-5-2000-menors', 'art. 1 i 3', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -339,7 +339,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La detenció d’un menor no pot durar més temps del estrictament necessari i, en tot cas, dins el termini màxim de vint-i-quatre hores el menor detingut ha de ser posat en llibertat o a disposició del Ministeri Fiscal.',
       explainEs: 'La detención de un menor no puede durar más tiempo del estrictamente necesario y, en todo caso, dentro del plazo máximo de veinticuatro horas el menor detenido debe ser puesto en libertad o a disposición del Ministerio Fiscal.',
-      refs: [ref('lo-5-2000-menors', 'art. 17.4')],
+      refs: [refv('lo-5-2000-menors', 'art. 17.4', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -359,7 +359,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'En el procés de menors, la investigació la dirigeix el Ministeri Fiscal. Per això el menor detingut es posa a disposició del Fiscal, i no del jutge, dins el termini màxim de vint-i-quatre hores.',
       explainEs: 'En el proceso de menores, la investigación la dirige el Ministerio Fiscal. Por eso el menor detenido se pone a disposición del Fiscal, y no del juez, dentro del plazo máximo de veinticuatro horas.',
-      refs: [ref('lo-5-2000-menors', 'art. 16 i 17')],
+      refs: [refv('lo-5-2000-menors', 'art. 16 i 17', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -379,7 +379,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'La llei exigeix que el menor detingut romangui custodiat en dependències adequades i separades de les que s’utilitzen per als majors d’edat, i que se li dispensi les cures, la protecció i l’assistència social, psicològica, mèdica i física que requereixi.',
       explainEs: 'La ley exige que el menor detenido permanezca custodiado en dependencias adecuadas y separadas de las que se utilizan para los mayores de edad, y que se le dispense los cuidados, la protección y la asistencia social, psicológica, médica y física que requiera.',
-      refs: [ref('lo-5-2000-menors', 'art. 17.3')],
+      refs: [refv('lo-5-2000-menors', 'art. 17.3', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -399,7 +399,7 @@ export const QUESTIONS_37_40: Question[] = [
       },
       explainCa: 'El procés de menors té naturalesa formalment penal però materialment sancionadora-educativa. El criteri rector per determinar la mesura és l’interès superior del menor, valorat per equips tècnics especialitzats, juntament amb les circumstàncies del fet i de l’autor.',
       explainEs: 'El proceso de menores tiene naturaleza formalmente penal pero materialmente sancionadora-educativa. El criterio rector para determinar la medida es el interés superior del menor, valorado por equipos técnicos especializados, junto con las circunstancias del hecho y del autor.',
-      refs: [ref('lo-5-2000-menors', 'exposició de motius i art. 7')],
+      refs: [refv('lo-5-2000-menors', 'exposició de motius i art. 7', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),

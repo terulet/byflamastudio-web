@@ -48,7 +48,7 @@ export const LESSONS_31_36: Lesson[] = [
     ],
     [
       ref('roses-web-municipi', 'informació del municipi, barris, serveis i equipaments'),
-      ref('roses-ordenances-index', 'delimitació d’àmbits i zones al terme municipal'),
+      refv('roses-ordenances-index', 'delimitació d’àmbits i zones al terme municipal', '2026-08-24'),
     ],
   ),
 
@@ -99,9 +99,9 @@ export const LESSONS_31_36: Lesson[] = [
       ),
     ],
     [
-      ref('rd-818-2009-rgcond', 'classes de permisos i llicències de conducció'),
-      ref('rdleg-6-2015-ltsv', 'immobilització, retirada i vehicles abandonats'),
-      ref('rd-2822-1998-rgv', 'condicions tècniques i documentació dels vehicles'),
+      refv('rd-818-2009-rgcond', 'classes de permisos i llicències de conducció', '2026-08-24'),
+      refv('rdleg-6-2015-ltsv', 'immobilització, retirada i vehicles abandonats', '2026-08-24'),
+      refv('rd-2822-1998-rgv', 'condicions tècniques i documentació dels vehicles', '2026-08-24'),
     ],
   ),
 
@@ -156,9 +156,9 @@ export const LESSONS_31_36: Lesson[] = [
       ),
     ],
     [
-      ref('rdleg-6-2015-ltsv', 'obligació de sotmetre’s a les proves i règim sancionador'),
-      ref('rd-1428-2003-rgc', 'normes sobre begudes alcohòliques i estupefaents, i pràctica de les proves'),
-      ref('lo-10-1995-cp', 'art. 379.2 i 383'),
+      refv('rdleg-6-2015-ltsv', 'obligació de sotmetre’s a les proves i règim sancionador', '2026-08-24'),
+      refv('rd-1428-2003-rgc', 'normes sobre begudes alcohòliques i estupefaents, i pràctica de les proves', '2026-08-24'),
+      refv('lo-10-1995-cp', 'art. 379.2 i 383', '2026-08-24'),
     ],
   ),
 
@@ -202,10 +202,10 @@ export const LESSONS_31_36: Lesson[] = [
       ),
     ],
     [
-      ref('llei-50-1999-app', 'llicència, registre i obligacions'),
-      ref('rd-287-2002-app', 'llista de races i requisits de la llicència'),
-      ref('llei-10-1999-gossos-cat', 'llista catalana de races i règim propi'),
-      ref('roses-tramits-animals', 'requisits municipals de la llicència a Roses'),
+      refv('llei-50-1999-app', 'llicència, registre i obligacions', '2026-08-24'),
+      refv('rd-287-2002-app', 'llista de races i requisits de la llicència', '2026-08-24'),
+      refv('llei-10-1999-gossos-cat', 'llista catalana de races i règim propi', '2026-08-24'),
+      refv('roses-tramits-animals', 'requisits municipals de la llicència a Roses', '2026-08-24'),
     ],
   ),
 
@@ -346,7 +346,7 @@ export const LESSONS_31_36: Lesson[] = [
       refv('roses-ordenanca-convivencia', 'art. 10 (consum de begudes alcohòliques) i art. 11 (comerç ambulant), pàgina 4 del PDF', '2019-05-29'),
       refv('roses-ordenanca-convivencia-mod-2021', 'modificacions primera a quarta (art. 10, 11, 20 i 28), pàgines 1–2 del PDF', '2021-03-19'),
       refv('roses-ordenanca-convivencia-mod-2021', 'modificació cinquena (annex: art. 10.4, 11.1, 11.2 i 16), pàgines 3–4 del PDF', '2021-03-19'),
-      ref('llei-7-1985-lrbrl', 'art. 139 a 141 (tipificació d’infraccions i límits de les multes)'),
+      refv('llei-7-1985-lrbrl', 'art. 139 a 141 (tipificació d’infraccions i límits de les multes)', '2026-08-24'),
     ],
   ),
 ]

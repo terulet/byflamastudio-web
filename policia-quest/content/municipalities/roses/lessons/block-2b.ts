@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 26 a 30 (bloc Seguretat, policia i dret penal). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, refv } from '../authoring.ts'
 
 export const LESSONS_26_30: Lesson[] = [
   lesson(
@@ -56,8 +56,8 @@ export const LESSONS_26_30: Lesson[] = [
       ),
     ],
     [
-      ref('lo-4-2015-psc', 'art. 4, 15 a 20, 23 i 35 a 39'),
-      ref('ce-1978', 'art. 21 (dret de reunió)'),
+      refv('lo-4-2015-psc', 'art. 4, 15 a 20, 23 i 35 a 39', '2026-08-24'),
+      refv('ce-1978', 'art. 21 (dret de reunió)', '2026-08-24'),
     ],
   ),
 
@@ -105,7 +105,7 @@ export const LESSONS_26_30: Lesson[] = [
       ),
     ],
     [
-      ref('lo-10-1995-cp', 'art. 234 a 242'),
+      refv('lo-10-1995-cp', 'art. 234 a 242', '2026-08-24'),
     ],
   ),
 
@@ -149,8 +149,8 @@ export const LESSONS_26_30: Lesson[] = [
       ),
     ],
     [
-      ref('lecrim-1882', 'competència dels òrgans penals, parts i valor de l’atestat'),
-      ref('ce-1978', 'art. 117 a 127'),
+      refv('lecrim-1882', 'competència dels òrgans penals, parts i valor de l’atestat', '2026-08-24'),
+      refv('ce-1978', 'art. 117 a 127', '2026-08-24'),
     ],
   ),
 
@@ -194,7 +194,7 @@ export const LESSONS_26_30: Lesson[] = [
       ),
     ],
     [
-      ref('lo-10-1995-cp', 'art. 1 a 9 i art. 379 a 385 ter'),
+      refv('lo-10-1995-cp', 'art. 1 a 9 i art. 379 a 385 ter', '2026-08-24'),
     ],
   ),
 
@@ -238,8 +238,8 @@ export const LESSONS_26_30: Lesson[] = [
       ),
     ],
     [
-      ref('lo-1-2015-reforma-cp', 'preàmbul i modificacions principals'),
-      ref('lo-10-1995-cp', 'text consolidat després de la reforma de 2015'),
+      refv('lo-1-2015-reforma-cp', 'preàmbul i modificacions principals', '2026-08-24'),
+      refv('lo-10-1995-cp', 'text consolidat després de la reforma de 2015', '2026-08-24'),
     ],
   ),
 ]

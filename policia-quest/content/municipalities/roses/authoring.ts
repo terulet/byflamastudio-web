@@ -143,6 +143,14 @@ export interface QuestionSpec {
   explainCa: string
   explainEs: string
   refs: SourceReference[]
+  /**
+   * Per defecte `active`. Es posa a `draft` quan la revisió d'una font ha deixat
+   * la pregunta sense res que la sostingui i, a més, hi ha motiu per dubtar de
+   * la resposta: llavors no es mostra a ningú fins que algú la pugui contrastar.
+   * Retirar-la és preferible a servir-la amb un avís, perquè qui estudia
+   * memoritza la resposta molt abans de llegir l'avís.
+   */
+  status?: 'active' | 'draft'
   difficulty?: 'facil' | 'mitjana' | 'dificil'
   track?: 'cultura-general' | 'coneixements-professionals'
   tags?: string[]
@@ -160,7 +168,7 @@ export function questionsFor(topicNumber: number, specs: QuestionSpec[]): Questi
       topicId,
       track: spec.track ?? 'coneixements-professionals',
       origin: 'authored' as const,
-      status: 'active' as const,
+      status: spec.status ?? ('active' as const),
       difficulty: spec.difficulty ?? 'mitjana',
       stem: spec.stem,
       options: letters.map((letter, i) => {

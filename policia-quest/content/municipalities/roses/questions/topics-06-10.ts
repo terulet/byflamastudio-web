@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, refv } from '../authoring.ts'
 
 export const QUESTIONS_06_10: Question[] = [
   ...questionsFor(6, [
@@ -15,7 +15,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Després de l’aprovació inicial pel ple s’obre un període d’informació pública i audiència a les persones interessades per un termini mínim de trenta dies per presentar reclamacions i suggeriments.',
       explainEs: 'Tras la aprobación inicial por el pleno se abre un período de información pública y audiencia a las personas interesadas por un plazo mínimo de treinta días para presentar reclamaciones y sugerencias.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 49')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 49', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -30,7 +30,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'L’aprovació de les ordenances és una competència indelegable del ple de la corporació, tant en la fase inicial com en la definitiva.',
       explainEs: 'La aprobación de las ordenanzas es una competencia indelegable del pleno de la corporación, tanto en la fase inicial como en la definitiva.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 22 i 49')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 22 i 49', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -50,7 +50,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'El ban és un acte de l’autoritat municipal, no una norma reglamentària. Serveix per recordar obligacions, concretar aspectes organitzatius o advertir la població, però no pot crear infraccions ni contradir una ordenança.',
       explainEs: 'El bando es un acto de la autoridad municipal, no una norma reglamentaria. Sirve para recordar obligaciones, concretar aspectos organizativos o advertir a la población, pero no puede crear infracciones ni contradecir una ordenanza.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 21.1.e')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 21.1.e', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -70,7 +70,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Les ordenances s’han de publicar íntegrament al butlletí oficial de la província —a Roses, el BOP de Girona— i no entren en vigor fins que hagi transcorregut el termini de quinze dies hàbils previst per a la comunicació a l’Estat i a la comunitat autònoma.',
       explainEs: 'Las ordenanzas deben publicarse íntegramente en el boletín oficial de la provincia —en Roses, el BOP de Girona— y no entran en vigor hasta que haya transcurrido el plazo de quince días hábiles previsto para la comunicación al Estado y a la comunidad autónoma.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 65.2 i 70.2')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 65.2 i 70.2', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -90,7 +90,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Si no es presenta cap reclamació ni suggeriment, s’entén definitivament adoptat l’acord fins llavors provisional, sense necessitat d’un nou acord exprés del ple. Encara caldrà, això sí, la publicació íntegra al butlletí provincial.',
       explainEs: 'Si no se presenta ninguna reclamación ni sugerencia, se entiende definitivamente adoptado el acuerdo hasta entonces provisional, sin necesidad de un nuevo acuerdo expreso del pleno. Todavía hará falta, eso sí, la publicación íntegra en el boletín provincial.',
-      refs: [ref('llei-7-1985-lrbrl', 'art. 49')],
+      refs: [refv('llei-7-1985-lrbrl', 'art. 49', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -113,7 +113,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'El Tribunal Constitucional es regula al títol IX de la Constitució, separat del títol VI dedicat al poder judicial. És un òrgan constitucional independent, únic en el seu ordre, amb jurisdicció en tot el territori espanyol.',
       explainEs: 'El Tribunal Constitucional se regula en el título IX de la Constitución, separado del título VI dedicado al poder judicial. Es un órgano constitucional independiente, único en su orden, con jurisdicción en todo el territorio español.',
-      refs: [ref('ce-1978', 'títol IX, art. 159 i següents')],
+      refs: [refv('ce-1978', 'títol IX, art. 159 i següents', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -133,7 +133,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Els dotze membres són nomenats pel Rei: quatre a proposta del Congrés per majoria de tres cinquenes parts, quatre a proposta del Senat per la mateixa majoria, dos a proposta del Govern i dos a proposta del Consell General del Poder Judicial.',
       explainEs: 'Los doce miembros son nombrados por el Rey: cuatro a propuesta del Congreso por mayoría de tres quintas partes, cuatro a propuesta del Senado por la misma mayoría, dos a propuesta del Gobierno y dos a propuesta del Consejo General del Poder Judicial.',
-      refs: [ref('ce-1978', 'art. 159.1')],
+      refs: [refv('ce-1978', 'art. 159.1', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -153,7 +153,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'L’article 117.1 estableix que la justícia emana del poble i s’administra en nom del Rei per jutges i magistrats integrants del poder judicial, independents, inamovibles, responsables i sotmesos únicament a l’imperi de la llei.',
       explainEs: 'El artículo 117.1 establece que la justicia emana del pueblo y se administra en nombre del Rey por jueces y magistrados integrantes del poder judicial, independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley.',
-      refs: [ref('ce-1978', 'art. 117.1')],
+      refs: [refv('ce-1978', 'art. 117.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -173,7 +173,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'El Tribunal Superior de Justícia de Catalunya culmina l’organització judicial dins el territori de la comunitat autònoma, sens perjudici de la jurisdicció que correspon al Tribunal Suprem.',
       explainEs: 'El Tribunal Superior de Justicia de Cataluña culmina la organización judicial dentro del territorio de la comunidad autónoma, sin perjuicio de la jurisdicción que corresponde al Tribunal Supremo.',
-      refs: [ref('ce-1978', 'art. 152'), ref('lo-6-2006-eac', 'el poder judicial a Catalunya')],
+      refs: [refv('ce-1978', 'art. 152', '2026-08-24'), refv('lo-6-2006-eac', 'el poder judicial a Catalunya', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -188,7 +188,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Els magistrats del Tribunal Constitucional són designats per un període de nou anys i es renoven per terceres parts cada tres anys.',
       explainEs: 'Los magistrados del Tribunal Constitucional son designados por un período de nueve años y se renuevan por terceras partes cada tres años.',
-      refs: [ref('ce-1978', 'art. 159.3')],
+      refs: [refv('ce-1978', 'art. 159.3', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -211,7 +211,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'L’Estatut bàsic classifica els empleats públics en funcionaris de carrera, funcionaris interins, personal laboral (fix, per temps indefinit o temporal) i personal eventual.',
       explainEs: 'El Estatuto básico clasifica a los empleados públicos en funcionarios de carrera, funcionarios interinos, personal laboral (fijo, por tiempo indefinido o temporal) y personal eventual.',
-      refs: [ref('rdleg-5-2015-trebep', 'art. 8')],
+      refs: [refv('rdleg-5-2015-trebep', 'art. 8', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -231,7 +231,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'La llei distingeix els drets individuals dels drets individuals exercits col·lectivament. Entre aquests darrers hi ha la llibertat sindical, la negociació col·lectiva, l’exercici de la vaga amb garantia dels serveis essencials, el plantejament de conflictes col·lectius i el dret de reunió.',
       explainEs: 'La ley distingue los derechos individuales de los derechos individuales ejercidos colectivamente. Entre estos últimos están la libertad sindical, la negociación colectiva, el ejercicio de la huelga con garantía de los servicios esenciales, el planteamiento de conflictos colectivos y el derecho de reunión.',
-      refs: [ref('rdleg-5-2015-trebep', 'art. 14 i 15')],
+      refs: [refv('rdleg-5-2015-trebep', 'art. 14 i 15', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -239,7 +239,7 @@ export const QUESTIONS_06_10: Question[] = [
       stem: 'El deure d’obediència d’un empleat públic cedeix quan la instrucció rebuda:',
       options: [
         'Li sembla injusta',
-        'Constitueix una infracció manifesta, clara i terminant de l’ordenament jurídic',
+        'Constitueix una infracció manifesta de l’ordenament jurídic',
         'Prové d’un superior d’una altra unitat',
         'No consta per escrit',
       ],
@@ -249,9 +249,9 @@ export const QUESTIONS_06_10: Question[] = [
         c: 'La qüestió competencial es resol per la via orgànica, no desobeint.',
         d: 'La forma verbal no invalida per si mateixa una instrucció.',
       },
-      explainCa: 'Els principis de conducta obliguen a obeir les instruccions i ordres professionals dels superiors, llevat que constitueixin una infracció manifesta, clara i terminant d’un precepte de llei o de qualsevol altra disposició. La mateixa excepció apareix als principis bàsics d’actuació policial.',
-      explainEs: 'Los principios de conducta obligan a obedecer las instrucciones y órdenes profesionales de los superiores, salvo que constituyan una infracción manifiesta, clara y terminante de un precepto de ley o de cualquier otra disposición. La misma excepción aparece en los principios básicos de actuación policial.',
-      refs: [ref('rdleg-5-2015-trebep', 'art. 54'), ref('lo-2-1986-fcs', 'art. 5.1')],
+      explainCa: 'Els principis de conducta obliguen a obeir les instruccions i ordres professionals dels superiors, «llevat que constitueixin una infracció manifesta de l’ordenament jurídic», i en aquest cas s’han de posar immediatament en coneixement dels òrgans d’inspecció. La mateixa excepció apareix als principis bàsics d’actuació policial, on l’obediència deguda no pot emparar ordres que constitueixin manifestament delicte o siguin contràries a la Constitució o a les lleis.',
+      explainEs: 'Los principios de conducta obligan a obedecer las instrucciones y órdenes profesionales de los superiores, «salvo que constituyan una infracción manifiesta del ordenamiento jurídico», y en ese caso deben ponerse inmediatamente en conocimiento de los órganos de inspección. La misma excepción aparece en los principios básicos de actuación policial, donde la obediencia debida no puede amparar órdenes que constituyan manifiestamente delito o sean contrarias a la Constitución o a las leyes.',
+      refs: [refv('rdleg-5-2015-trebep', 'art. 54', '2026-08-24'), refv('lo-2-1986-fcs', 'art. 5.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -271,7 +271,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'L’Estatut bàsic disposa que els empleats públics han de complir amb diligència les tasques que tenen assignades i vetllar pels interessos generals, i que el seu codi de conducta està integrat pels principis ètics i pels principis de conducta que la mateixa llei enumera.',
       explainEs: 'El Estatuto básico dispone que los empleados públicos deben cumplir con diligencia las tareas que tienen asignadas y velar por los intereses generales, y que su código de conducta está integrado por los principios éticos y por los principios de conducta que la propia ley enumera.',
-      refs: [ref('rdleg-5-2015-trebep', 'art. 52, 53 i 54')],
+      refs: [refv('rdleg-5-2015-trebep', 'art. 52, 53 i 54', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -291,7 +291,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Entre els principis ètics hi ha el deure d’abstenir-se en els assumptes en què es tingui un interès personal, així com de tota activitat privada que pugui suposar un risc de conflicte d’interessos amb el lloc públic. La regulació concreta de l’abstenció i la recusació és a la Llei 40/2015.',
       explainEs: 'Entre los principios éticos está el deber de abstenerse en los asuntos en que se tenga un interés personal, así como de toda actividad privada que pueda suponer un riesgo de conflicto de intereses con el puesto público. La regulación concreta de la abstención y la recusación está en la Ley 40/2015.',
-      refs: [ref('rdleg-5-2015-trebep', 'art. 53'), ref('llei-40-2015-rjsp', 'art. 23')],
+      refs: [refv('rdleg-5-2015-trebep', 'art. 53', '2026-08-24'), refv('llei-40-2015-rjsp', 'art. 23', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -314,7 +314,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'La llei estableix que el personal comprès en el seu àmbit no podrà ocupar més d’un lloc de treball al sector públic ni percebre més d’una remuneració amb càrrec a pressupostos públics, llevat dels supòsits d’excepció expressament previstos.',
       explainEs: 'La ley establece que el personal comprendido en su ámbito no podrá ocupar más de un puesto de trabajo en el sector público ni percibir más de una remuneración con cargo a presupuestos públicos, salvo los supuestos de excepción expresamente previstos.',
-      refs: [ref('llei-53-1984-incompat', 'art. 1')],
+      refs: [refv('llei-53-1984-incompat', 'art. 1', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -334,7 +334,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'La llei impedeix autoritzar la compatibilitat per exercir activitats privades quan la quantia del complement específic o concepte equiparable supera el trenta per cent de la retribució bàsica, exclosos els conceptes que tinguin origen en l’antiguitat.',
       explainEs: 'La ley impide autorizar la compatibilidad para ejercer actividades privadas cuando la cuantía del complemento específico o concepto equiparable supera el treinta por ciento de la retribución básica, excluidos los conceptos que tengan su origen en la antigüedad.',
-      refs: [ref('llei-53-1984-incompat', 'art. 16')],
+      refs: [refv('llei-53-1984-incompat', 'art. 16.4', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -354,7 +354,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'La llei estableix que el reconeixement de compatibilitat no podrà modificar la jornada de treball ni l’horari de la persona interessada, i queda automàticament sense efecte en cas de canvi de lloc al sector públic.',
       explainEs: 'La ley establece que el reconocimiento de compatibilidad no podrá modificar la jornada de trabajo ni el horario de la persona interesada, y queda automáticamente sin efecto en caso de cambio de puesto en el sector público.',
-      refs: [ref('llei-53-1984-incompat', 'art. 14')],
+      refs: [refv('llei-53-1984-incompat', 'art. 14', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -374,7 +374,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'La llei prohibeix reconèixer la compatibilitat per a activitats privades relacionades directament amb les que desenvolupa el departament, organisme o entitat on la persona presta serveis, i molt especialment les relatives a assumptes en què estigui intervenint o hagi intervingut en els dos últims anys.',
       explainEs: 'La ley prohíbe reconocer la compatibilidad para actividades privadas relacionadas directamente con las que desarrolla el departamento, organismo o entidad donde la persona presta servicios, y muy especialmente las relativas a asuntos en que esté interviniendo o haya intervenido en los dos últimos años.',
-      refs: [ref('llei-53-1984-incompat', 'art. 11 i 12')],
+      refs: [refv('llei-53-1984-incompat', 'art. 11 i 12', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -394,7 +394,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'El règim d’incompatibilitats és preventiu i exigeix un acte administratiu **previ i exprés** de reconeixement. Exercir l’activitat sense aquest reconeixement és un incompliment, amb independència que després s’obtingui l’autorització o que no s’arribi a produir cap conflicte concret.',
       explainEs: 'El régimen de incompatibilidades es preventivo y exige un acto administrativo **previo y expreso** de reconocimiento. Ejercer la actividad sin ese reconocimiento es un incumplimiento, con independencia de que después se obtenga la autorización o de que no llegue a producirse ningún conflicto concreto.',
-      refs: [ref('llei-53-1984-incompat', 'art. 3 i 14')],
+      refs: [refv('llei-53-1984-incompat', 'art. 3 i 14', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -417,7 +417,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Els ajuntaments han d’exigir obligatòriament l’impost sobre béns immobles, l’impost sobre activitats econòmiques i l’impost sobre vehicles de tracció mecànica. L’impost sobre construccions, instal·lacions i obres i l’impost sobre l’increment de valor dels terrenys de naturalesa urbana són potestatius i requereixen ordenança fiscal.',
       explainEs: 'Los ayuntamientos deben exigir obligatoriamente el impuesto sobre bienes inmuebles, el impuesto sobre actividades económicas y el impuesto sobre vehículos de tracción mecánica. El impuesto sobre construcciones, instalaciones y obras y el impuesto sobre el incremento de valor de los terrenos de naturaleza urbana son potestativos y requieren ordenanza fiscal.',
-      refs: [ref('rdleg-2-2004-trlrhl', 'art. 59')],
+      refs: [refv('rdleg-2-2004-trlrhl', 'art. 59', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -437,7 +437,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Si en iniciar-se l’exercici econòmic no ha entrat en vigor el pressupost corresponent, es considerarà automàticament prorrogat el de l’anterior, amb els seus crèdits inicials, sens perjudici de les modificacions que escaiguin.',
       explainEs: 'Si al iniciarse el ejercicio económico no ha entrado en vigor el presupuesto correspondiente, se considerará automáticamente prorrogado el del anterior, con sus créditos iniciales, sin perjuicio de las modificaciones que procedan.',
-      refs: [ref('rdleg-2-2004-trlrhl', 'art. 169.6')],
+      refs: [refv('rdleg-2-2004-trlrhl', 'art. 169.6', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -457,7 +457,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'Les taxes retribueixen la utilització privativa o l’aprofitament especial del domini públic i la prestació de serveis o realització d’activitats que no siguin de sol·licitud voluntària o que no els presti el sector privat. Els preus públics retribueixen serveis de sol·licitud voluntària que també presta el sector privat.',
       explainEs: 'Las tasas retribuyen la utilización privativa o el aprovechamiento especial del dominio público y la prestación de servicios o realización de actividades que no sean de solicitud voluntaria o que no los preste el sector privado. Los precios públicos retribuyen servicios de solicitud voluntaria que también presta el sector privado.',
-      refs: [ref('rdleg-2-2004-trlrhl', 'art. 20 i 41')],
+      refs: [refv('rdleg-2-2004-trlrhl', 'art. 20 i 41', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -472,7 +472,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'El president de la corporació forma el pressupost general i, informat per la Intervenció, el remet al ple abans del 15 d’octubre per a la seva aprovació, esmena o devolució. L’aprovació definitiva ha de tenir lloc abans del 31 de desembre.',
       explainEs: 'El presidente de la corporación forma el presupuesto general y, informado por la Intervención, lo remite al pleno antes del 15 de octubre para su aprobación, enmienda o devolución. La aprobación definitiva debe tener lugar antes del 31 de diciembre.',
-      refs: [ref('rdleg-2-2004-trlrhl', 'art. 168 i 169')],
+      refs: [refv('rdleg-2-2004-trlrhl', 'art. 168 i 169', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -492,7 +492,7 @@ export const QUESTIONS_06_10: Question[] = [
       },
       explainCa: 'La llei enumera com a recursos de les hisendes locals, entre altres, els ingressos de dret privat, els tributs propis, les participacions en tributs de l’Estat i de les comunitats autònomes, les subvencions, els preus públics, les operacions de crèdit i **les multes i sancions** en l’àmbit de les seves competències.',
       explainEs: 'La ley enumera como recursos de las haciendas locales, entre otros, los ingresos de derecho privado, los tributos propios, las participaciones en tributos del Estado y de las comunidades autónomas, las subvenciones, los precios públicos, las operaciones de crédito y **las multas y sanciones** en el ámbito de sus competencias.',
-      refs: [ref('rdleg-2-2004-trlrhl', 'art. 2')],
+      refs: [refv('rdleg-2-2004-trlrhl', 'art. 2', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),

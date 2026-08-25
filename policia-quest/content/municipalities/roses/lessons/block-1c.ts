@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 11 a 15 (bloc Institucions i Administració). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, refv } from '../authoring.ts'
 
 export const LESSONS_11_15: Lesson[] = [
   lesson(
@@ -43,8 +43,8 @@ export const LESSONS_11_15: Lesson[] = [
       ),
     ],
     [
-      ref('llei-16-1991-policies-locals', 'règim disciplinari: classificació de faltes i sancions'),
-      ref('decret-179-2015-disciplinari', 'procediment disciplinari i mesures cautelars'),
+      refv('llei-16-1991-policies-locals', 'règim disciplinari: classificació de faltes i sancions', '2026-08-24'),
+      refv('decret-179-2015-disciplinari', 'procediment disciplinari i mesures cautelars', '2026-08-24'),
     ],
   ),
 
@@ -86,8 +86,8 @@ export const LESSONS_11_15: Lesson[] = [
       ),
     ],
     [
-      ref('llei-39-2015-pac', 'títol preliminar i disposicions generals'),
-      ref('llei-40-2015-rjsp', 'objecte i àmbit d’aplicació'),
+      refv('llei-39-2015-pac', 'títol preliminar i disposicions generals', '2026-08-24'),
+      refv('llei-40-2015-rjsp', 'objecte i àmbit d’aplicació', '2026-08-24'),
     ],
   ),
 
@@ -138,7 +138,7 @@ export const LESSONS_11_15: Lesson[] = [
       ),
     ],
     [
-      ref('llei-39-2015-pac', 'art. 34 a 52 (requisits, eficàcia i invalidesa dels actes)'),
+      refv('llei-39-2015-pac', 'art. 34 a 52 (requisits, eficàcia i invalidesa dels actes)', '2026-08-24'),
     ],
   ),
 
@@ -182,7 +182,7 @@ export const LESSONS_11_15: Lesson[] = [
       ),
     ],
     [
-      ref('llei-39-2015-pac', 'art. 3 a 13 (capacitat, interessat, representació i drets)'),
+      refv('llei-39-2015-pac', 'art. 3 a 13 (capacitat, interessat, representació i drets)', '2026-08-24'),
     ],
   ),
 
@@ -226,8 +226,8 @@ export const LESSONS_11_15: Lesson[] = [
       ),
     ],
     [
-      ref('llei-39-2015-pac', 'art. 21, 24, 25, 29 a 33'),
-      ref('llei-40-2015-rjsp', 'art. 23 i 24 (abstenció i recusació)'),
+      refv('llei-39-2015-pac', 'art. 21, 24, 25, 29 a 33', '2026-08-24'),
+      refv('llei-40-2015-rjsp', 'art. 23 i 24 (abstenció i recusació)', '2026-08-24'),
     ],
   ),
 ]

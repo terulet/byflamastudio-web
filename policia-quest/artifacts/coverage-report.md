@@ -1,6 +1,6 @@
 # Informe de cobertura — Policia Quest · Roses
 
-Generat el 2026-08-24 · versió de contingut 1
+Generat el 2026-08-25 · versió de contingut 1
 
 ## Resum
 
@@ -9,9 +9,9 @@ Generat el 2026-08-24 · versió de contingut 1
 | Temes del temari | 40 |
 | Microlliçons | 40 |
 | Preguntes totals | 439 |
-| Preguntes actives | 439 |
+| Preguntes actives | 438 |
 | — de coneixements professionals | 329 |
-| — de cultura general | 110 |
+| — de cultura general | 109 |
 | Preguntes d’examen oficial importades | 189 |
 | Fonts registrades | 98 |
 | Exàmens registrats | 30 |
@@ -23,7 +23,7 @@ Generat el 2026-08-24 · versió de contingut 1
 | 1 | La Constitució de 1978. Principis generals | institucions | ✓ | 11 | 1 |
 | 2 | Els drets fonamentals a la Constitució de 1978 | institucions | ✓ | 12 | 1 |
 | 3 | L’Estatut d’Autonomia de Catalunya de 2006 | institucions | ✓ | 12 | 1 |
-| 4 | La Generalitat de Catalunya, el Parlament i el Consell Executiu | institucions | ✓ | 11 | 2 |
+| 4 | La Generalitat de Catalunya, el Parlament i el Consell Executiu | institucions | ✓ | 10 | 2 |
 | 5 | El municipi: concepte, elements, potestats i competències | institucions | ✓ | 11 | 1 |
 | 6 | Les ordenances i els bans | institucions | ✓ | 8 | 2 |
 | 7 | Els òrgans jurisdiccionals: poder judicial i Tribunal Constitucional | institucions | ✓ | 10 | 1 |
@@ -63,67 +63,28 @@ Generat el 2026-08-24 · versió de contingut 1
 
 ## Estat de les fonts
 
-- Descarregades i verificades per SHA-256: **55**
-- Pendents de descàrrega: **43**
-
-### Fonts pendents
-
-| Font | Àmbit | URL |
-| --- | --- | --- |
-| `roses-arxiu-examens` | roses | https://www.roses.cat/ajuntament/informacio-administrativa/oferta-publica-docupacio/examens-1 |
-| `roses-ordenances-index` | roses | https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1 |
-| `roses-web-municipi` | roses | https://www.roses.cat/ |
-| `ce-1978` | estatal | https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229 |
-| `lo-6-2006-eac` | estatal | https://www.boe.es/eli/es/lo/2006/07/19/6/con |
-| `llei-7-1985-lrbrl` | estatal | https://www.boe.es/eli/es/l/1985/04/02/7/con |
-| `rdleg-5-2015-trebep` | estatal | https://www.boe.es/eli/es/rdlg/2015/10/30/5/con |
-| `llei-53-1984-incompat` | estatal | https://www.boe.es/eli/es/l/1984/12/26/53/con |
-| `rdleg-2-2004-trlrhl` | estatal | https://www.boe.es/eli/es/rdlg/2004/03/05/2/con |
-| `llei-39-2015-pac` | estatal | https://www.boe.es/eli/es/l/2015/10/01/39/con |
-| `llei-40-2015-rjsp` | estatal | https://www.boe.es/eli/es/l/2015/10/01/40/con |
-| `llei-19-2013-transp` | estatal | https://www.boe.es/eli/es/l/2013/12/09/19/con |
-| `lo-3-2018-lopdgdd` | estatal | https://www.boe.es/eli/es/lo/2018/12/05/3/con |
-| `lo-2-1986-fcs` | estatal | https://www.boe.es/eli/es/lo/1986/03/13/2/con |
-| `lo-4-2015-psc` | estatal | https://www.boe.es/eli/es/lo/2015/03/30/4/con |
-| `lo-10-1995-cp` | estatal | https://www.boe.es/eli/es/lo/1995/11/23/10/con |
-| `lo-1-2015-reforma-cp` | estatal | https://www.boe.es/eli/es/lo/2015/03/30/1/con |
-| `lecrim-1882` | estatal | https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036 |
-| `lo-6-1984-habeas` | estatal | https://www.boe.es/eli/es/lo/1984/05/24/6/con |
-| `rdleg-6-2015-ltsv` | estatal | https://www.boe.es/eli/es/rdlg/2015/10/30/6/con |
-| `rd-1428-2003-rgc` | estatal | https://www.boe.es/eli/es/rd/2003/11/21/1428/con |
-| `rd-818-2009-rgcond` | estatal | https://www.boe.es/eli/es/rd/2009/05/08/818/con |
-| `rd-2822-1998-rgv` | estatal | https://www.boe.es/eli/es/rd/1998/12/23/2822/con |
-| `llei-50-1999-app` | estatal | https://www.boe.es/eli/es/l/1999/12/23/50/con |
-| `rd-287-2002-app` | estatal | https://www.boe.es/eli/es/rd/2002/03/22/287/con |
-| `llei-27-2003-ordre-proteccio` | estatal | https://www.boe.es/eli/es/l/2003/07/31/27/con |
-| `lo-3-2007-igualtat` | estatal | https://www.boe.es/eli/es/lo/2007/03/22/3/con |
-| `lo-5-2000-menors` | estatal | https://www.boe.es/eli/es/lo/2000/01/12/5/con |
-| `llei-16-1991-policies-locals` | catalunya | https://portaljuridic.gencat.cat/eli/es-ct/l/1991/07/10/16 |
-| `llei-4-2003-seguretat-publica` | catalunya | https://portaljuridic.gencat.cat/eli/es-ct/l/2003/04/07/4 |
-| `decret-179-2015-disciplinari` | catalunya | https://portaljuridic.gencat.cat/eli/es-ct/d/2015/08/04/179 |
-| `decret-151-1998-juntes` | catalunya | https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=194957 |
-| `llei-19-2014-transp-cat` | catalunya | https://portaljuridic.gencat.cat/eli/es-ct/l/2014/12/29/19 |
-| `codi-etic-policia-catalunya` | catalunya | https://interior.gencat.cat/ca/arees_dactuacio/policia/comite-detica-de-la-policia-de-catalunya/codi-detica-de-la-policia-de-catalunya/ |
-| `codi-seguretat-catalunya` | catalunya | https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/ |
-| `agencia-ciberseguretat-catalunya` | catalunya | https://ciberseguretat.gencat.cat/ |
-| `carta-drets-ue` | ue | https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:12012P/TXT |
-| `rgpd-2016-679` | ue | https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:32016R0679 |
-| `ddhh-1948` | internacional | https://www.un.org/es/about-us/universal-declaration-of-human-rights |
-| `lo-7-2021-dades-policials` | estatal | https://www.boe.es/eli/es/lo/2021/05/26/7/con |
-| `llei-10-1999-gossos-cat` | catalunya | https://portaljuridic.gencat.cat/eli/es-ct/l/1999/07/30/10 |
-| `llei-7-2023-benestar-animal` | estatal | https://www.boe.es/eli/es/l/2023/03/28/7/con |
-| `roses-tramits-animals` | roses | https://www.roses.cat/tramits/llicancia-per-a-la-tinenaa-i-conduccia-danimals |
-
-> Motiu registrat: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- Descarregades i verificades per SHA-256: **98**
+- Pendents de descàrrega: **0**
 
 ## Estat de verificació de les referències
 
 | Estat | Referències |
 | --- | --- |
-| pending-source-verification | 313 |
-| verified | 237 |
+| pending-source-verification | 26 |
+| verified | 526 |
 
-`pending-source-verification` vol dir que la referència apunta a una norma real i concreta, però que encara no s’ha contrastat automàticament contra la còpia local del text consolidat. Passarà a `verified` quan `npm run sources:download` i la validació s’executin amb accés a la xarxa.
+`verified` vol dir que algú ha obert la còpia local del document i hi ha trobat la proposició al lloc que diu el localitzador. Tenir el fitxer no verifica res per si sol.
+
+Totes les fonts tenen còpia local, i tot i així queden **26 referències** en `pending-source-verification`. No és un tràmit pendent: cada una té un motiu concret —o la descàrrega no porta el text del document, o el document no diu el que la referència afirma—. El motiu de cada una és a `content/municipalities/roses/adopcio-normativa-2026-08-24.json`.
+
+| Font | Referències pendents |
+| --- | --- |
+| `roses-web-municipi` | 15 |
+| `agencia-ciberseguretat-catalunya` | 6 |
+| `ce-1978` | 2 |
+| `llei-4-2003-seguretat-publica` | 1 |
+| `llei-7-2023-benestar-animal` | 1 |
+| `lo-6-2006-eac` | 1 |
 
 ## Exàmens oficials
 
@@ -171,7 +132,7 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 
 | Simulacre | Quota | Necessàries | Vigents al banc | Estat |
 | --- | --- | --- | --- | --- |
-| Simulacre de cultura general | Cultura general | 10 | 22 | ✓ |
+| Simulacre de cultura general | Cultura general | 10 | 21 | ✓ |
 | Simulacre de cultura general | Actualitat social, cultural i política | 10 | 25 | ✓ |
 | Simulacre de cultura general | Reserva | 1 | 1 | ✓ |
 | Simulacre de coneixements professionals | (sense composició fixada) | 40 | 329 | ✓ |
@@ -179,7 +140,7 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 
 ## Què necessita revisió humana
 
-1. Descarregar les 43 fonts pendents i tornar a validar el contingut per passar les referències a `verified`.
+1. Tornar a capturar 2 pàgines web la còpia de les quals només porta el menú (`roses-web-municipi`, `agencia-ciberseguretat-catalunya`): el cos es carrega per JavaScript. Cal una instantània de text de les pàgines concretes, com es va fer amb el paquet d’actualitat.
 2. Localitzar la URL directa dels 24 quadernets de prioritat P1 a l’arxiu municipal i importar-los.
 3. Contrastar contra el text vigent les 12 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
 

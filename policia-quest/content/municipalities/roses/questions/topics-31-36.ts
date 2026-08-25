@@ -128,7 +128,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'La immobilització manté el vehicle al lloc on es troba fins que desapareix la causa que la va motivar. La retirada comporta el trasllat al dipòsit municipal i només procedeix per les causes taxades que preveu la llei.',
       explainEs: 'La inmovilización mantiene el vehículo en el lugar donde se encuentra hasta que desaparece la causa que la motivó. La retirada comporta el traslado al depósito municipal y solo procede por las causas tasadas que prevé la ley.',
-      refs: [ref('rdleg-6-2015-ltsv', 'immobilització i retirada de vehicles')],
+      refs: [refv('rdleg-6-2015-ltsv', 'art. 104 i 105', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -148,7 +148,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'Es presumeix racionalment l’abandonament quan el vehicle roman al dipòsit més de dos mesos, o quan resta estacionat a la via pública durant més d’un mes amb desperfectes que facin impossible el desplaçament pels seus mitjans o li faltin les plaques de matrícula.',
       explainEs: 'Se presume racionalmente el abandono cuando el vehículo permanece en el depósito más de dos meses, o cuando queda estacionado en la vía pública durante más de un mes con desperfectos que hagan imposible su desplazamiento por sus medios o le falten las placas de matrícula.',
-      refs: [ref('rdleg-6-2015-ltsv', 'tractament residual del vehicle')],
+      refs: [refv('rdleg-6-2015-ltsv', 'art. 106.1.a', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -168,7 +168,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'Entre les causes d’immobilització hi ha que el conductor superi les taxes d’alcohol o presenti signes de consum de drogues, que es negui a sotmetre’s a les proves, que el vehicle no disposi de l’assegurança obligatòria, o que superi els límits de càrrega o pes autoritzats.',
       explainEs: 'Entre las causas de inmovilización están que el conductor supere las tasas de alcohol o presente signos de consumo de drogas, que se niegue a someterse a las pruebas, que el vehículo carezca del seguro obligatorio, o que supere los límites de carga o peso autorizados.',
-      refs: [ref('rdleg-6-2015-ltsv', 'causes d’immobilització')],
+      refs: [refv('rdleg-6-2015-ltsv', 'art. 104.1.d', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -188,7 +188,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'La retirada exigeix una causa taxada: perill, pertorbació greu de la circulació o del funcionament d’un servei públic, obstaculització de sortides o passos, ocupació d’espais reservats. Si no en concorre cap, es denuncia la infracció però no es pot retirar el vehicle ni repercutir-ne les despeses.',
       explainEs: 'La retirada exige una causa tasada: peligro, perturbación grave de la circulación o del funcionamiento de un servicio público, obstaculización de salidas o pasos, ocupación de espacios reservados. Si no concurre ninguna, se denuncia la infracción pero no se puede retirar el vehículo ni repercutir sus gastos.',
-      refs: [ref('rdleg-6-2015-ltsv', 'causes de retirada de vehicles')],
+      refs: [refv('rdleg-6-2015-ltsv', 'art. 105.1', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -203,7 +203,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'El permís de la classe B habilita per conduir automòbils la massa màxima autoritzada dels quals no excedeixi els límits reglamentaris i estiguin dissenyats per transportar un nombre limitat de persones a més del conductor, és a dir, els turismes.',
       explainEs: 'El permiso de la clase B habilita para conducir automóviles cuya masa máxima autorizada no exceda los límites reglamentarios y estén diseñados para transportar un número limitado de personas además del conductor, es decir, los turismos.',
-      refs: [ref('rd-818-2009-rgcond', 'classes de permisos de conducció')],
+      refs: [refv('rd-818-2009-rgcond', 'classes de permisos de conducció', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),
@@ -226,7 +226,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'El Codi penal estableix que en tot cas serà condemnat qui condueixi amb una taxa d’alcohol en aire espirat superior a 0,60 mil·ligrams per litre o amb una taxa d’alcohol en sang superior a 1,2 grams per litre.',
       explainEs: 'El Código penal establece que en todo caso será condenado quien conduzca con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro o con una tasa de alcohol en sangre superior a 1,2 gramos por litro.',
-      refs: [ref('lo-10-1995-cp', 'art. 379.2')],
+      refs: [refv('lo-10-1995-cp', 'art. 379.2', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -241,7 +241,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'Els conductors novells —durant els dos anys següents a l’obtenció del permís— i els professionals no poden superar una taxa de 0,15 mil·ligrams per litre en aire espirat, o 0,3 grams per litre en sang. Per a la resta de conductors el límit és 0,25 mg/l i 0,5 g/l.',
       explainEs: 'Los conductores noveles —durante los dos años siguientes a la obtención del permiso— y los profesionales no pueden superar una tasa de 0,15 miligramos por litro en aire espirado, o 0,3 gramos por litro en sangre. Para el resto de conductores el límite es 0,25 mg/l y 0,5 g/l.',
-      refs: [ref('rd-1428-2003-rgc', 'taxes d’alcoholèmia')],
+      refs: [refv('rd-1428-2003-rgc', 'taxes d’alcoholèmia', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -261,7 +261,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'La prova consisteix en dues determinacions successives amb un etilòmetre homologat, separades per un interval mínim de deu minuts. La persona interessada té dret a contrastar el resultat mitjançant anàlisi de sang, amb les despeses al seu càrrec si es confirma la infracció.',
       explainEs: 'La prueba consiste en dos determinaciones sucesivas con un etilómetro homologado, separadas por un intervalo mínimo de diez minutos. La persona interesada tiene derecho a contrastar el resultado mediante análisis de sangre, con los gastos a su cargo si se confirma la infracción.',
-      refs: [ref('rd-1428-2003-rgc', 'pràctica de les proves de detecció alcohòlica')],
+      refs: [refv('rd-1428-2003-rgc', 'pràctica de les proves de detecció alcohòlica', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -281,7 +281,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'Estan obligats a sotmetre’s a les proves els conductors de vehicles, les persones implicades directament com a possibles responsables en un accident de circulació, qui presenti símptomes evidents o un comportament que faci presumir la influència de begudes o drogues, i qui hagi comès una infracció de trànsit, a més dels controls preventius reglamentaris.',
       explainEs: 'Están obligados a someterse a las pruebas los conductores de vehículos, las personas implicadas directamente como posibles responsables en un accidente de circulación, quien presente síntomas evidentes o un comportamiento que haga presumir la influencia de bebidas o drogas, y quien haya cometido una infracción de tráfico, además de los controles preventivos reglamentarios.',
-      refs: [ref('rdleg-6-2015-ltsv', 'obligació de sotmetre’s a les proves')],
+      refs: [refv('rdleg-6-2015-ltsv', 'obligació de sotmetre’s a les proves', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -301,7 +301,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'A diferència de l’alcohol, en drogues no hi ha taxa permesa: la infracció administrativa és conduir amb presència de drogues a l’organisme. S’exclouen les substàncies utilitzades sota prescripció facultativa i amb una finalitat terapèutica, sempre que no afectin la capacitat de conduir.',
       explainEs: 'A diferencia del alcohol, en drogas no hay tasa permitida: la infracción administrativa es conducir con presencia de drogas en el organismo. Se excluyen las sustancias utilizadas bajo prescripción facultativa y con una finalidad terapéutica, siempre que no afecten a la capacidad de conducir.',
-      refs: [ref('rdleg-6-2015-ltsv', 'presència de drogues en l’organisme')],
+      refs: [refv('rdleg-6-2015-ltsv', 'presència de drogues en l’organisme', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -324,7 +324,15 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'Un gos pot ser considerat potencialment perillós per pertànyer a una raça de la llista o ser-ne un encreuament, per haver tingut episodis d’agressions a persones o a altres gossos, o per haver estat ensinistrat per a l’atac i la defensa. També s’hi inclouen exemplars amb determinades característiques físiques.',
       explainEs: 'Un perro puede ser considerado potencialmente peligroso por pertenecer a una raza de la lista o ser un cruce, por haber tenido episodios de agresiones a personas o a otros perros, o por haber sido adiestrado para el ataque y la defensa. También se incluyen ejemplares con determinadas características físicas.',
-      refs: [ref('llei-50-1999-app', 'concepte'), ref('llei-10-1999-gossos-cat', 'gossos considerats potencialment perillosos')],
+      refs: [
+        refv(
+          'llei-50-1999-app',
+          'concepte',
+          '2026-08-24',
+          'L’art. 2.2 cobreix la via racial; les altres dues vies són de la Llei 10/1999, art. 1.',
+        ),
+        refv('llei-10-1999-gossos-cat', 'gossos considerats potencialment perillosos', '2026-08-24'),
+      ],
       difficulty: 'mitjana',
     },
     {
@@ -344,7 +352,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'La llicència administrativa per a la tinença d’animals potencialment perillosos l’atorga l’ajuntament del municipi de residència de la persona sol·licitant. A Roses és un tràmit municipal específic.',
       explainEs: 'La licencia administrativa para la tenencia de animales potencialmente peligrosos la otorga el ayuntamiento del municipio de residencia de la persona solicitante. En Roses es un trámite municipal específico.',
-      refs: [ref('llei-50-1999-app', 'llicència administrativa'), ref('roses-tramits-animals', 'tràmit municipal a Roses')],
+      refs: [refv('llei-50-1999-app', 'llicència administrativa', '2026-08-24'), refv('roses-tramits-animals', 'tràmit municipal a Roses', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -364,7 +372,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'Els requisits són ser major d’edat, no haver estat condemnat per determinats delictes ni sancionat per infraccions greus o molt greus en la matèria, acreditar capacitat física i aptitud psicològica mitjançant certificat, i disposar d’una assegurança de responsabilitat civil per danys a tercers. No s’exigeix formació com a ensinistrador.',
       explainEs: 'Los requisitos son ser mayor de edad, no haber sido condenado por determinados delitos ni sancionado por infracciones graves o muy graves en la materia, acreditar capacidad física y aptitud psicológica mediante certificado, y disponer de un seguro de responsabilidad civil por daños a terceros. No se exige formación como adiestrador.',
-      refs: [ref('llei-50-1999-app', 'requisits de la llicència'), ref('rd-287-2002-app', 'desenvolupament reglamentari')],
+      refs: [refv('llei-50-1999-app', 'requisits de la llicència', '2026-08-24'), refv('rd-287-2002-app', 'desenvolupament reglamentari', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -384,7 +392,7 @@ export const QUESTIONS_31_36: Question[] = [
       },
       explainCa: 'A les vies públiques i als espais d’ús públic, el gos ha de portar obligatòriament morrió adequat a la seva raça i anar subjecte amb una cadena o corretja no extensible de longitud limitada. A més, una persona no pot conduir més d’un gos potencialment perillós alhora.',
       explainEs: 'En las vías públicas y en los espacios de uso público, el perro debe llevar obligatoriamente bozal adecuado a su raza e ir sujeto con una cadena o correa no extensible de longitud limitada. Además, una persona no puede conducir más de un perro potencialmente peligroso a la vez.',
-      refs: [ref('rd-287-2002-app', 'mesures de seguretat a la via pública')],
+      refs: [refv('rd-287-2002-app', 'mesures de seguretat a la via pública', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -405,7 +413,12 @@ export const QUESTIONS_31_36: Question[] = [
       explainCa: 'La identificació mitjançant microxip i la inscripció al registre censal municipal són obligatòries per a tots els gossos. El que és exclusiu dels gossos potencialment perillosos és la llicència administrativa i la inscripció al registre específic.',
       explainEs: 'La identificación mediante microchip y la inscripción en el registro censal municipal son obligatorias para todos los perros. Lo que es exclusivo de los perros potencialmente peligrosos es la licencia administrativa y la inscripción en el registro específico.',
       refs: [
-        ref('llei-10-1999-gossos-cat', 'identificació i registre'),
+        refv(
+          'llei-10-1999-gossos-cat',
+          'identificació i registre',
+          '2026-08-24',
+          'El preàmbul recita l’obligació general de cens; l’articulat només regula els gossos perillosos.',
+        ),
         ref('llei-7-2023-benestar-animal', 'obligacions generals de les persones titulars'),
       ],
       difficulty: 'mitjana',

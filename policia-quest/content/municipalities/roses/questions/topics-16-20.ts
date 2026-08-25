@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, ref, refv } from '../authoring.ts'
 
 export const QUESTIONS_16_20: Question[] = [
   ...questionsFor(16, [
@@ -20,7 +20,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La llei estructura el procediment en quatre fases: iniciació, ordenació, instrucció i finalització. L’execució de l’acte ja pertany a una etapa posterior.',
       explainEs: 'La ley estructura el procedimiento en cuatro fases: iniciación, ordenación, instrucción y finalización. La ejecución del acto ya pertenece a una etapa posterior.',
-      refs: [ref('llei-39-2015-pac', 'títol IV, capítols II a VI')],
+      refs: [refv('llei-39-2015-pac', 'títol IV, capítols II a VI', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -40,7 +40,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'Instruït el procediment i immediatament abans de redactar la proposta de resolució, s’ha de posar de manifest a les persones interessades, que disposaran d’un termini no inferior a deu dies ni superior a quinze per formular al·legacions i presentar documents.',
       explainEs: 'Instruido el procedimiento e inmediatamente antes de redactar la propuesta de resolución, debe ponerse de manifiesto a las personas interesadas, que dispondrán de un plazo no inferior a diez días ni superior a quince para formular alegaciones y presentar documentos.',
-      refs: [ref('llei-39-2015-pac', 'art. 82')],
+      refs: [refv('llei-39-2015-pac', 'art. 82', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -60,7 +60,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'Els procediments s’inicien d’ofici per acord de l’òrgan competent, bé per pròpia iniciativa, bé com a conseqüència d’ordre superior, per petició raonada d’altres òrgans o per denúncia. La sol·licitud de la persona interessada és, per definició, l’altra via d’iniciació.',
       explainEs: 'Los procedimientos se inician de oficio por acuerdo del órgano competente, bien por propia iniciativa, bien como consecuencia de orden superior, por petición razonada de otros órganos o por denuncia. La solicitud de la persona interesada es, por definición, la otra vía de iniciación.',
-      refs: [ref('llei-39-2015-pac', 'art. 54 i 58')],
+      refs: [refv('llei-39-2015-pac', 'art. 54 i 58', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -80,7 +80,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'El desistiment posa fi al procediment concret però permet tornar a exercir el dret més endavant si no ha prescrit. La renúncia, en canvi, extingeix el dret en què es fonamenta la sol·licitud, i per això només és possible quan l’ordenament no la prohibeix.',
       explainEs: 'El desistimiento pone fin al procedimiento concreto pero permite volver a ejercer el derecho más adelante si no ha prescrito. La renuncia, en cambio, extingue el derecho en que se fundamenta la solicitud, y por eso solo es posible cuando el ordenamiento no la prohíbe.',
-      refs: [ref('llei-39-2015-pac', 'art. 94')],
+      refs: [refv('llei-39-2015-pac', 'art. 94', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -100,7 +100,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'Iniciat el procediment, l’òrgan competent pot adoptar d’ofici o a instància de part les mesures provisionals que consideri oportunes per assegurar l’eficàcia de la resolució. Abans de la iniciació, en casos d’urgència inajornable i per a la protecció provisional dels interessos implicats, es poden adoptar mesures que hauran de ser confirmades, modificades o aixecades en l’acord d’iniciació.',
       explainEs: 'Iniciado el procedimiento, el órgano competente puede adoptar de oficio o a instancia de parte las medidas provisionales que estime oportunas para asegurar la eficacia de la resolución. Antes de la iniciación, en casos de urgencia inaplazable y para la protección provisional de los intereses implicados, pueden adoptarse medidas que deberán ser confirmadas, modificadas o levantadas en el acuerdo de iniciación.',
-      refs: [ref('llei-39-2015-pac', 'art. 56')],
+      refs: [refv('llei-39-2015-pac', 'art. 56', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -123,7 +123,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La llei enumera de manera tancada quatre mitjans d’execució forçosa: constrenyiment sobre el patrimoni, execució subsidiària, multa coercitiva i compulsió sobre les persones. Cal advertiment previ i s’ha d’escollir el mitjà menys restrictiu de la llibertat individual.',
       explainEs: 'La ley enumera de manera cerrada cuatro medios de ejecución forzosa: apremio sobre el patrimonio, ejecución subsidiaria, multa coercitiva y compulsión sobre las personas. Se requiere apercibimiento previo y debe escogerse el medio menos restrictivo de la libertad individual.',
-      refs: [ref('llei-39-2015-pac', 'art. 100')],
+      refs: [refv('llei-39-2015-pac', 'art. 100', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -138,7 +138,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'El recurs d’alçada s’ha d’interposar en el termini d’un mes si l’acte és exprés. Si no ho és, el sol·licitant i altres possibles interessats poden interposar-lo en qualsevol moment a partir de l’endemà del dia en què es produeixin els efectes del silenci administratiu.',
       explainEs: 'El recurso de alzada debe interponerse en el plazo de un mes si el acto es expreso. Si no lo es, el solicitante y otros posibles interesados pueden interponerlo en cualquier momento a partir del día siguiente a aquel en que se produzcan los efectos del silencio administrativo.',
-      refs: [ref('llei-39-2015-pac', 'art. 122')],
+      refs: [refv('llei-39-2015-pac', 'art. 122', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -158,7 +158,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'Els actes administratius que posin fi a la via administrativa poden ser recorreguts potestativament en reposició davant el mateix òrgan que els hagi dictat, o ser impugnats directament davant l’ordre jurisdiccional contenciós administratiu.',
       explainEs: 'Los actos administrativos que pongan fin a la vía administrativa pueden ser recurridos potestativamente en reposición ante el mismo órgano que los hubiera dictado, o ser impugnados directamente ante el orden jurisdiccional contencioso-administrativo.',
-      refs: [ref('llei-39-2015-pac', 'art. 123')],
+      refs: [refv('llei-39-2015-pac', 'art. 123', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -173,7 +173,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'El termini màxim per dictar i notificar la resolució del recurs de reposició és d’un mes. Transcorregut aquest termini sense resolució expressa, es pot entendre desestimat i queda oberta la via contenciosa administrativa.',
       explainEs: 'El plazo máximo para dictar y notificar la resolución del recurso de reposición es de un mes. Transcurrido ese plazo sin resolución expresa, puede entenderse desestimado y queda abierta la vía contencioso-administrativa.',
-      refs: [ref('llei-39-2015-pac', 'art. 124')],
+      refs: [refv('llei-39-2015-pac', 'art. 124', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -193,7 +193,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La declaració de lesivitat és el camí per anul·lar actes favorables anul·lables: s’ha de declarar la lesivitat dins els quatre anys següents a la notificació de l’acte i, després, impugnar-lo davant la jurisdicció contenciosa administrativa. La revisió d’ofici directa queda reservada als actes nuls de ple dret.',
       explainEs: 'La declaración de lesividad es el camino para anular actos favorables anulables: debe declararse la lesividad dentro de los cuatro años siguientes a la notificación del acto y, después, impugnarlo ante la jurisdicción contencioso-administrativa. La revisión de oficio directa queda reservada a los actos nulos de pleno derecho.',
-      refs: [ref('llei-39-2015-pac', 'art. 106, 107 i 109')],
+      refs: [refv('llei-39-2015-pac', 'art. 106, 107 i 109', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -216,7 +216,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La sol·licitud d’accés no ha de ser motivada, tot i que la persona sol·licitant pot exposar els motius pels quals demana la informació i aquests es podran tenir en compte en dictar resolució. L’absència de motivació no pot ser per si sola causa de rebuig.',
       explainEs: 'La solicitud de acceso no tiene que ser motivada, aunque la persona solicitante puede exponer los motivos por los que solicita la información y estos podrán tenerse en cuenta al dictar resolución. La ausencia de motivación no puede ser por sí sola causa de rechazo.',
-      refs: [ref('llei-19-2013-transp', 'art. 17')],
+      refs: [refv('llei-19-2013-transp', 'art. 17', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -231,7 +231,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La resolució en què es concedeixi o es denegui l’accés s’ha de notificar en el termini màxim d’un mes des de la recepció de la sol·licitud per l’òrgan competent per resoldre, prorrogable per un mes més si el volum o la complexitat ho justifiquen.',
       explainEs: 'La resolución en la que se conceda o deniegue el acceso debe notificarse en el plazo máximo de un mes desde la recepción de la solicitud por el órgano competente para resolver, prorrogable por otro mes si el volumen o la complejidad lo justifican.',
-      refs: [ref('llei-19-2013-transp', 'art. 20')],
+      refs: [refv('llei-19-2013-transp', 'art. 20', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -251,7 +251,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La Llei catalana 19/2014 crea la Comissió de Garantia del Dret d’Accés a la Informació Pública (GAIP) com a òrgan independent encarregat de resoldre les reclamacions contra les resolucions en matèria d’accés a la informació pública.',
       explainEs: 'La Ley catalana 19/2014 crea la Comisión de Garantía del Derecho de Acceso a la Información Pública (GAIP) como órgano independiente encargado de resolver las reclamaciones contra las resoluciones en materia de acceso a la información pública.',
-      refs: [ref('llei-19-2014-transp-cat', 'Comissió de Garantia del Dret d’Accés')],
+      refs: [refv('llei-19-2014-transp-cat', 'Comissió de Garantia del Dret d’Accés', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -271,7 +271,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La publicitat activa obliga els subjectes obligats a publicar de forma periòdica i actualitzada la informació institucional, organitzativa i de planificació, la de rellevància jurídica i la econòmica, pressupostària i estadística, sense necessitat de cap sol·licitud prèvia.',
       explainEs: 'La publicidad activa obliga a los sujetos obligados a publicar de forma periódica y actualizada la información institucional, organizativa y de planificación, la de relevancia jurídica y la económica, presupuestaria y estadística, sin necesidad de solicitud previa.',
-      refs: [ref('llei-19-2013-transp', 'art. 5 a 8')],
+      refs: [refv('llei-19-2013-transp', 'art. 5 a 8', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -291,7 +291,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La prevenció, la investigació i la sanció dels il·lícits penals, administratius o disciplinaris és un dels límits al dret d’accés. Ara bé, l’aplicació dels límits ha de ser justificada i proporcionada al seu objecte i finalitat, i quan sigui possible s’ha de concedir accés parcial.',
       explainEs: 'La prevención, la investigación y la sanción de los ilícitos penales, administrativos o disciplinarios es uno de los límites al derecho de acceso. Ahora bien, la aplicación de los límites debe ser justificada y proporcionada a su objeto y finalidad, y cuando sea posible debe concederse acceso parcial.',
-      refs: [ref('llei-19-2013-transp', 'art. 14 i 16')],
+      refs: [refv('llei-19-2013-transp', 'art. 14 i 16', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -417,7 +417,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'Els principis són licitud, lleialtat i transparència; limitació de la finalitat; minimització de dades; exactitud; limitació del termini de conservació; integritat i confidencialitat; i responsabilitat proactiva. La gratuïtat no és un principi del tractament.',
       explainEs: 'Los principios son licitud, lealtad y transparencia; limitación de la finalidad; minimización de datos; exactitud; limitación del plazo de conservación; integridad y confidencialidad; y responsabilidad proactiva. La gratuidad no es un principio del tratamiento.',
-      refs: [ref('rgpd-2016-679', 'art. 5')],
+      refs: [refv('rgpd-2016-679', 'art. 5', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -437,7 +437,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'L’actuació policial es basa en el compliment d’una obligació legal i en el compliment d’una missió d’interès públic o l’exercici de poders públics. El consentiment no és una base vàlida quan hi ha un desequilibri clar de poder, com passa entre l’autoritat i la persona administrada.',
       explainEs: 'La actuación policial se basa en el cumplimiento de una obligación legal y en el cumplimiento de una misión de interés público o el ejercicio de poderes públicos. El consentimiento no es una base válida cuando hay un desequilibrio claro de poder, como ocurre entre la autoridad y la persona administrada.',
-      refs: [ref('rgpd-2016-679', 'art. 6'), ref('lo-3-2018-lopdgdd', 'tractaments per obligació legal')],
+      refs: [refv('rgpd-2016-679', 'art. 6', '2026-08-24'), refv('lo-3-2018-lopdgdd', 'tractaments per obligació legal', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -457,7 +457,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La Directiva (UE) 2016/680 estableix un règim propi per als tractaments amb finalitats policials i penals, transposat a l’ordenament espanyol per la Llei orgànica 7/2021. Confondre aquest règim amb el del Reglament general és un error habitual.',
       explainEs: 'La Directiva (UE) 2016/680 establece un régimen propio para los tratamientos con fines policiales y penales, traspuesto al ordenamiento español por la Ley orgánica 7/2021. Confundir este régimen con el del Reglamento general es un error habitual.',
-      refs: [ref('lo-7-2021-dades-policials', 'objecte i àmbit d’aplicació')],
+      refs: [refv('lo-7-2021-dades-policials', 'objecte i àmbit d’aplicació', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -477,7 +477,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La Constitució preveu a l’article 18.4 que la llei limitarà l’ús de la informàtica per garantir l’honor i la intimitat personal i familiar i el ple exercici dels drets. D’aquesta previsió n’ha derivat un dret fonamental autònom a la protecció de dades, diferent del dret a la intimitat.',
       explainEs: 'La Constitución prevé en el artículo 18.4 que la ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar y el pleno ejercicio de los derechos. De esta previsión se ha derivado un derecho fundamental autónomo a la protección de datos, distinto del derecho a la intimidad.',
-      refs: [ref('ce-1978', 'art. 18.4'), ref('lo-3-2018-lopdgdd', 'objecte')],
+      refs: [refv('ce-1978', 'art. 18.4', '2026-08-24'), refv('lo-3-2018-lopdgdd', 'objecte', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -497,7 +497,7 @@ export const QUESTIONS_16_20: Question[] = [
       },
       explainCa: 'La difusió pública és una finalitat distinta de la que va legitimar la captació. Sense una base legal específica per a aquesta nova finalitat, la publicació vulnera el principi de limitació de la finalitat i pot generar responsabilitat administrativa, disciplinària i, si escau, penal.',
       explainEs: 'La difusión pública es una finalidad distinta de la que legitimó la captación. Sin una base legal específica para esa nueva finalidad, la publicación vulnera el principio de limitación de la finalidad y puede generar responsabilidad administrativa, disciplinaria y, en su caso, penal.',
-      refs: [ref('rgpd-2016-679', 'art. 5.1.b'), ref('lo-7-2021-dades-policials', 'finalitats del tractament')],
+      refs: [refv('rgpd-2016-679', 'art. 5.1.b', '2026-08-24'), refv('lo-7-2021-dades-policials', 'finalitats del tractament', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),

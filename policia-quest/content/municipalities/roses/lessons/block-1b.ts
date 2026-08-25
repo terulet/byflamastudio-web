@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 6 a 10 (bloc Institucions i Administració). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, refv } from '../authoring.ts'
 
 export const LESSONS_6_10: Lesson[] = [
   lesson(
@@ -55,8 +55,8 @@ export const LESSONS_6_10: Lesson[] = [
       ),
     ],
     [
-      ref('llei-7-1985-lrbrl', 'art. 4.1.a, 21.1.e, 49, 70.2 i 84'),
-      ref('roses-ordenances-index', 'ordenances vigents de Roses'),
+      refv('llei-7-1985-lrbrl', 'art. 4.1.a, 21.1.e, 49, 70.2 i 84', '2026-08-24'),
+      refv('roses-ordenances-index', 'ordenances vigents de Roses', '2026-08-24'),
     ],
   ),
 
@@ -100,8 +100,8 @@ export const LESSONS_6_10: Lesson[] = [
       ),
     ],
     [
-      ref('ce-1978', 'títol VI (art. 117-127) i títol IX (art. 159-165)'),
-      ref('lo-6-2006-eac', 'el poder judicial a Catalunya i el TSJC'),
+      refv('ce-1978', 'títol VI (art. 117-127) i títol IX (art. 159-165)', '2026-08-24'),
+      refv('lo-6-2006-eac', 'el poder judicial a Catalunya i el TSJC', '2026-08-24'),
     ],
   ),
 
@@ -134,18 +134,18 @@ export const LESSONS_6_10: Lesson[] = [
         'Los principios éticos incluyen servir a los intereses generales con objetividad, respetar la Constitución y el resto del ordenamiento, actuar con lealtad y buena fe, abstenerse en los asuntos en que se tenga interés personal, no aceptar tratos de favor y guardar secreto de las materias reservadas. Los principios de conducta incluyen tratar con atención y respeto a la ciudadanía, cumplir la jornada, obedecer las instrucciones de los superiores salvo que constituyan una infracción manifiesta del ordenamiento, y administrar con austeridad los recursos públicos.',
       ),
       pitfall(
-        'El deure d’obediència no és absolut. No s’han d’obeir les instruccions que constitueixin una infracció manifesta, clara i terminant de l’ordenament jurídic. Aquesta excepció també apareix als principis bàsics d’actuació policial.',
-        'El deber de obediencia no es absoluto. No deben obedecerse las instrucciones que constituyan una infracción manifiesta, clara y terminante del ordenamiento jurídico. Esta excepción también aparece en los principios básicos de actuación policial.',
+        'El deure d’obediència no és absolut. No s’han d’obeir les instruccions que constitueixin una infracció manifesta de l’ordenament jurídic, i cal posar-les immediatament en coneixement dels òrgans d’inspecció. Aquesta excepció també apareix als principis bàsics d’actuació policial: l’obediència deguda no pot emparar ordres que constitueixin manifestament delicte o siguin contràries a la Constitució o a les lleis.',
+        'El deber de obediencia no es absoluto. No deben obedecerse las instrucciones que constituyan una infracción manifiesta del ordenamiento jurídico, y hay que ponerlas inmediatamente en conocimiento de los órganos de inspección. Esta excepción también aparece en los principios básicos de actuación policial: la obediencia debida no puede amparar órdenes que constituyan manifiestamente delito o sean contrarias a la Constitución o a las leyes.',
       ),
       checkpoint(
         'Quan es pot desobeir una instrucció d’un superior?',
         '¿Cuándo se puede desobedecer una instrucción de un superior?',
-        'Quan constitueixi una infracció manifesta, clara i terminant de l’ordenament jurídic.',
-        'Cuando constituya una infracción manifiesta, clara y terminante del ordenamiento jurídico.',
+        'Quan constitueixi una infracció manifesta de l’ordenament jurídic.',
+        'Cuando constituya una infracción manifiesta del ordenamiento jurídico.',
       ),
     ],
     [
-      ref('rdleg-5-2015-trebep', 'art. 8, 14, 15, 52, 53 i 54'),
+      refv('rdleg-5-2015-trebep', 'art. 8, 14, 15, 52, 53 i 54', '2026-08-24'),
     ],
   ),
 
@@ -193,7 +193,7 @@ export const LESSONS_6_10: Lesson[] = [
       ),
     ],
     [
-      ref('llei-53-1984-incompat', 'art. 1, 3, 11, 12, 14 i 16'),
+      refv('llei-53-1984-incompat', 'art. 1, 3, 11, 12, 14 i 16', '2026-08-24'),
     ],
   ),
 
@@ -249,7 +249,7 @@ export const LESSONS_6_10: Lesson[] = [
       ),
     ],
     [
-      ref('rdleg-2-2004-trlrhl', 'art. 2, 20, 41, 59, 162, 164, 168 i 169'),
+      refv('rdleg-2-2004-trlrhl', 'art. 2, 20, 41, 59, 162, 164, 168 i 169', '2026-08-24'),
     ],
   ),
 ]

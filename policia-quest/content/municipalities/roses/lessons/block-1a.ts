@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 1 a 5 (bloc Institucions i Administració). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, refv } from '../authoring.ts'
 
 export const LESSONS_1_5: Lesson[] = [
   lesson(
@@ -47,8 +47,8 @@ export const LESSONS_1_5: Lesson[] = [
       ),
     ],
     [
-      ref('ce-1978', 'art. 1, 2, 9 i títol X (art. 166-169)'),
-      ref('ce-1978', 'estructura general: títol preliminar i títols I a X'),
+      refv('ce-1978', 'art. 1, 2, 9 i títol X (art. 166-169)', '2026-08-24'),
+      refv('ce-1978', 'estructura general: títol preliminar i títols I a X', '2026-08-24'),
     ],
   ),
 
@@ -103,8 +103,8 @@ export const LESSONS_1_5: Lesson[] = [
       ),
     ],
     [
-      ref('ce-1978', 'títol I, art. 10 a 55'),
-      ref('ce-1978', 'art. 53 i 54 (garanties i Defensor del Poble)'),
+      refv('ce-1978', 'títol I, art. 10 a 55', '2026-08-24'),
+      refv('ce-1978', 'art. 53 i 54 (garanties i Defensor del Poble)', '2026-08-24'),
     ],
   ),
 
@@ -148,8 +148,8 @@ export const LESSONS_1_5: Lesson[] = [
       ),
     ],
     [
-      ref('lo-6-2006-eac', 'títol I (drets i deures) i capítol de govern local'),
-      ref('lo-6-2006-eac', 'competències en matèria de seguretat pública'),
+      refv('lo-6-2006-eac', 'títol I (drets i deures) i capítol de govern local', '2026-08-24'),
+      refv('lo-6-2006-eac', 'competències en matèria de seguretat pública', '2026-08-24'),
     ],
   ),
 
@@ -193,8 +193,8 @@ export const LESSONS_1_5: Lesson[] = [
       ),
     ],
     [
-      ref('lo-6-2006-eac', 'institucions de la Generalitat: Parlament, Presidència i Govern'),
-      ref('llei-4-2003-seguretat-publica', 'art. 1 a 10, sistema de seguretat pública de Catalunya'),
+      refv('lo-6-2006-eac', 'institucions de la Generalitat: Parlament, Presidència i Govern', '2026-08-24'),
+      refv('llei-4-2003-seguretat-publica', 'art. 1 a 10, sistema de seguretat pública de Catalunya', '2026-08-24'),
     ],
   ),
 
@@ -242,7 +242,7 @@ export const LESSONS_1_5: Lesson[] = [
       ),
     ],
     [
-      ref('llei-7-1985-lrbrl', 'art. 1, 4, 11, 12, 15, 16, 20 i 25'),
+      refv('llei-7-1985-lrbrl', 'art. 1, 4, 11, 12, 15, 16, 20 i 25', '2026-08-24'),
     ],
   ),
 ]

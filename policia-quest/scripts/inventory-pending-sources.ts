@@ -758,7 +758,7 @@ const ENRICHMENT: Record<string, Enrichment> = {
       'decret-151-1998-juntes',
     ],
     dedupeNote:
-      'Candidat a paraigua: si el recull inclou aquestes quatre normes consolidades, una sola baixada les cobreix totes. **Cal comprovar-ne el contingut en baixar-lo**; els `sourceId` no es toquen ara, i cada norma conserva el seu perquè la referència ha d’apuntar a la norma, no al recull.',
+      'No és paraigua: baixat el 2026-08-24, el recull resulta ser un **índex d’enllaços** —els catorze apartats, de «Constitució i Estatut» a «Organismes», amb el títol de cada norma— i no el text de cap. Serveix de punt d’entrada per trobar-les; cada norma ha de seguir baixant-se a part i conserva el seu `sourceId`.',
   },
   'agencia-ciberseguretat-catalunya': {
     document: 'Agència de Ciberseguretat de Catalunya: funcions, amenaces i autoprotecció',
@@ -832,6 +832,18 @@ const ENRICHMENT: Record<string, Enrichment> = {
 const manifest = manifestJson as unknown as { sources: Source[] }
 const sources = manifest.sources
 const pending = sources.filter((s) => s.fetchStatus === 'pending-download')
+/**
+ * Fonts que **ja** tenen còpia local però que van passar per aquesta taula.
+ *
+ * Quan el rescat s'acaba no queda res pendent, i si el document només mirés les
+ * pendents es buidaria: es perdria justament la fitxa que diu d'on baixar cada
+ * norma, amb quin MIME i amb quines comprovacions mínimes. Es conserven en una
+ * secció pròpia, marcades com a rescatades, i **no** compten a cap total de
+ * pendents.
+ */
+const alreadyRescued = sources.filter(
+  (s) => s.fetchStatus !== 'pending-download' && ENRICHMENT[s.sourceId] !== undefined,
+)
 const questions = ROSES_PACK.questions
 const lessons = ROSES_PACK.lessons
 const topics = ROSES_PACK.syllabus.topics
@@ -871,7 +883,7 @@ function articlesFrom(locators: readonly string[]): number[] {
   return [...found].sort((a, b) => a - b)
 }
 
-const entries = pending.map((source) => {
+const describe = (source: Source) => {
   const id = source.sourceId
   const enrichment = ENRICHMENT[id]
   if (!enrichment) {
@@ -1001,7 +1013,10 @@ const entries = pending.map((source) => {
       note: enrichment.dedupeNote ?? null,
     },
   }
-})
+}
+
+const entries = pending.map(describe)
+const rescuedEntries = alreadyRescued.map(describe)
 
 /* ───────────────────────── Validacions ───────────────────────── */
 
@@ -1017,8 +1032,10 @@ function check(id: string, title: string, ok: boolean, detail: string): void {
 check(
   '1',
   'Totes les fonts pendents són a l’inventari',
-  entries.length === pending.length && pending.length > 0,
-  `${entries.length} entrades per a ${pending.length} fonts amb fetchStatus pending-download.`,
+  entries.length === pending.length,
+  pending.length === 0
+    ? 'Cap font amb fetchStatus pending-download: totes tenen còpia local. La taula ENRICHMENT es conserva com a registre del rescat.'
+    : `${entries.length} entrades per a ${pending.length} fonts amb fetchStatus pending-download.`,
 )
 
 // 2. Cap referència pendent es queda sense consumidor a l'inventari.
@@ -1067,7 +1084,7 @@ check(
   'Cap font ja baixada no s’ha colat a l’inventari',
   wrongly.length === 0,
   wrongly.length === 0
-    ? 'Les 43 entrades tenen fetchStatus pending-download al manifest.'
+    ? `Les ${entries.length} entrades tenen fetchStatus pending-download al manifest.`
     : `S’hi han colat: ${wrongly.map((w) => w.sourceId).join(', ')}.`,
 )
 
@@ -1081,36 +1098,43 @@ const fingerprint = createHash('sha256')
     ),
   )
   .digest('hex')
-let gitDirty = ''
-try {
-  gitDirty = execFileSync('git', ['status', '--porcelain', '--', 'content', 'src'], {
-    cwd: ROOT,
-    encoding: 'utf-8',
-  }).trim()
-} catch {
-  gitDirty = '(git no disponible)'
-}
+const questionIds = new Set(questions.map((q) => q.questionId))
+const lessonIds = new Set(lessons.map((l) => l.lessonId))
+const goneConsumers = entries.flatMap((e) =>
+  e.claims
+    .map((c) => c.consumer)
+    .filter((id) => !questionIds.has(id) && !lessonIds.has(id))
+    .map((id) => `${e.sourceId}::${id}`),
+)
 check(
   '4',
-  'Cap pregunta, clau, topicId ni explicació ha canviat',
-  gitDirty === '',
-  gitDirty === ''
-    ? `content/ i src/ sense canvis respecte de HEAD; empremta de ${questions.length} preguntes: ${fingerprint.slice(0, 16)}…`
-    : `Hi ha canvis sense desar a content/ o src/: ${gitDirty.split('\n').join(' | ')}`,
+  'Cap afirmació de l’inventari apunta a una pregunta o lliçó que ja no existeix',
+  goneConsumers.length === 0,
+  goneConsumers.length === 0
+    ? `${questions.length} preguntes i ${lessons.length} lliçons resolen tots els consumidors; empremta de contingut: ${fingerprint.slice(0, 16)}…`
+    : `Consumidors desapareguts: ${goneConsumers.join(', ')}.`,
 )
 
 // 5. L'inventari surt de les dades reals i cau si apareix una font nova.
 const issuersWithGazette = entries
   .filter((e) => e.issuer !== e.organisation)
   .map((e) => ({ sourceId: e.sourceId, issuer: e.issuer }))
-const extraEnrichment = Object.keys(ENRICHMENT).filter((id) => !inventoried.has(id))
+const knownIds = new Set(sources.map((s) => s.sourceId))
+// Una entrada la font de la qual ja s'ha adoptat **no** sobra: és el registre
+// del rescat, amb la URL, el MIME i les comprovacions mínimes que caldrien per
+// tornar-la a baixar. El que sí que és un error és una entrada que no
+// correspongui a cap font del manifest.
+const rescued = Object.keys(ENRICHMENT).filter((id) => knownIds.has(id) && !inventoried.has(id))
+const unknownEnrichment = Object.keys(ENRICHMENT).filter((id) => !knownIds.has(id))
 check(
   '5',
   'La taula revisada i les dades reals quadren exactament',
-  extraEnrichment.length === 0,
-  extraEnrichment.length === 0
-    ? 'Cap entrada sobrera a ENRICHMENT; una font pendent nova sense classificar atura l’script abans d’escriure res.'
-    : `Sobren a ENRICHMENT, ja no són pendents: ${extraEnrichment.join(', ')}.`,
+  unknownEnrichment.length === 0,
+  unknownEnrichment.length > 0
+    ? `Entrades a ENRICHMENT que no són cap font del manifest: ${unknownEnrichment.join(', ')}.`
+    : rescued.length === 0
+      ? 'Cap entrada sobrera a ENRICHMENT; una font pendent nova sense classificar atura l’script abans d’escriure res.'
+      : `${rescued.length} entrades corresponen a fonts ja rescatades i es conserven com a registre; cap entrada desconeguda.`,
 )
 
 /* ─────────────────────────── Sortida ─────────────────────────── */
@@ -1162,6 +1186,7 @@ writeFileSync(
         issuersWithGazetteInline: issuersWithGazette,
       },
       sources: entries,
+      rescued: rescuedEntries,
     },
     null,
     2,
@@ -1181,6 +1206,14 @@ md.push('**què** cal baixar, **d’on**, **quins articles** i **per demostrar q
 md.push('manera que qui tingui accés a la xarxa pugui preparar el paquet sense reconstruir el')
 md.push('context. És el mateix camí que van seguir els dos paquets anteriors.')
 md.push('')
+if (entries.length === 0) {
+  md.push('**El rescat està fet.** Cap font del manifest té `fetchStatus: pending-download`: les 43')
+  md.push('normes generals que faltaven es van adoptar el 2026-08-24 des d’un paquet portat a mà, i')
+  md.push('la taula revisada d’aquest script es conserva com a registre de com tornar-les a baixar.')
+  md.push('Què demostra cada referència i què encara no: `content/municipalities/roses/`')
+  md.push('`adopcio-normativa-2026-08-24.json` i `artifacts/adopcio-fonts-normatives-2026-08-24.md`.')
+  md.push('')
+}
 md.push('## Totals')
 md.push('')
 md.push('| | |')
@@ -1199,14 +1232,16 @@ md.push(`| **P0** | ${byPriority.P0} | Pot explicar 5 preguntes oficials o més,
 md.push(`| **P1** | ${byPriority.P1} | Necessària per a lliçons i preguntes pròpies (2-9 consumidors). |`)
 md.push(`| **P2** | ${byPriority.P2} | Un sol consumidor o cap: impacte menor. |`)
 md.push('')
-md.push('### Per organisme')
-md.push('')
-md.push('| Organisme | Fonts |')
-md.push('| --- | --- |')
-for (const [issuer, n] of [...byIssuer].sort((a, b) => b[1] - a[1])) {
-  md.push(`| ${issuer} | ${n} |`)
+if (byIssuer.size > 0) {
+  md.push('### Per organisme')
+  md.push('')
+  md.push('| Organisme | Fonts |')
+  md.push('| --- | --- |')
+  for (const [issuer, n] of [...byIssuer].sort((a, b) => b[1] - a[1])) {
+    md.push(`| ${issuer} | ${n} |`)
+  }
+  md.push('')
 }
-md.push('')
 md.push('## Com llegir una entrada')
 md.push('')
 md.push('De cada font hi ha la norma exacta amb el seu identificador legal, l’estat de')
@@ -1226,9 +1261,18 @@ for (const priority of ['P0', 'P1', 'P2'] as const) {
           a.consumers.officialQuestionsItCouldExplain.length ||
         b.consumers.totalConsumers - a.consumers.totalConsumers,
     )
+  // Amb el rescat acabat no queda cap font pendent: tres capçaleres buides no
+  // informen de res, i el registre de sota sí.
+  if (group.length === 0) continue
   md.push(`## ${priority} — ${group.length} fonts`)
   md.push('')
   for (const e of group) {
+    card(e)
+  }
+}
+
+function card(e: (typeof entries)[number]): void {
+  {
     md.push(`### \`${e.sourceId}\` — ${e.document}`)
     md.push('')
     md.push(`- **Identificador legal:** ${e.legalId}${e.gazette ? ` · ${e.gazette}` : ''}`)
@@ -1286,9 +1330,24 @@ for (const priority of ['P0', 'P1', 'P2'] as const) {
   }
 }
 
+if (rescuedEntries.length > 0) {
+  md.push(`## Registre del rescat — ${rescuedEntries.length} fonts ja adoptades`)
+  md.push('')
+  md.push('Aquestes fonts ja tenen còpia local i **no compten com a pendents**. La fitxa es')
+  md.push('conserva perquè és el que caldria per tornar-les a baixar: la URL, el format, la mida')
+  md.push('esperada, les comprovacions mínimes i els hosts alternatius. Què demostra cada')
+  md.push('referència després de la revisió és a `adopcio-normativa-2026-08-24.json`.')
+  md.push('')
+  for (const e of [...rescuedEntries].sort(
+    (a, b) => a.priority.localeCompare(b.priority) || a.sourceId.localeCompare(b.sourceId),
+  )) {
+    card(e)
+  }
+}
+
 md.push('## Duplicitats detectades')
 md.push('')
-const dedupes = entries.filter((e) => e.dedupe.covers.length > 0)
+const dedupes = [...entries, ...rescuedEntries].filter((e) => e.dedupe.covers.length > 0)
 if (dedupes.length === 0) {
   md.push('Cap font cobreix cap altra.')
 } else {
@@ -1308,8 +1367,9 @@ if (pendingRefsOnAdoptedSources.length > 0) {
   md.push('## Troballa: referències pendents sobre fonts ja adoptades')
   md.push('')
   md.push('Aquestes referències segueixen marcades `pending-source-verification` tot i que la seva')
-  md.push('font ja té còpia local verificada. No és feina d’aquest bloc corregir-ho —aquí no es toca')
-  md.push('contingut— però queda anotat perquè no es perdi:')
+  md.push('font ja té còpia local amb el hash comprovat. Tenir el document no verifica la cita: o bé')
+  md.push('la descàrrega no en porta el text, o bé el document no diu el que la referència afirma.')
+  md.push('El motiu de cada una és a `adopcio-normativa-2026-08-24.json`, camp `verdict`:')
   md.push('')
   for (const r of pendingRefsOnAdoptedSources) {
     md.push(`- \`${r.consumer}\` → \`${r.sourceId}\``)

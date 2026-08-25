@@ -1,6 +1,6 @@
 /** Microlliçons dels temes 21 a 25 (bloc Seguretat, policia i dret penal). */
 import type { Lesson } from '../../../schemas/index.ts'
-import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref } from '../authoring.ts'
+import { checkpoint, compare, example, explain, idea, lesson, pitfall, ref, refv } from '../authoring.ts'
 
 export const LESSONS_21_25: Lesson[] = [
   lesson(
@@ -49,7 +49,7 @@ export const LESSONS_21_25: Lesson[] = [
       ),
     ],
     [
-      ref('lo-2-1986-fcs', 'art. 1, 2, 5, 9, 11 i 53'),
+      refv('lo-2-1986-fcs', 'art. 1, 2, 5, 9, 11 i 53', '2026-08-24'),
     ],
   ),
 
@@ -93,7 +93,7 @@ export const LESSONS_21_25: Lesson[] = [
       ),
     ],
     [
-      ref('llei-4-2003-seguretat-publica', 'sistema de seguretat pública, òrgans i planificació'),
+      refv('llei-4-2003-seguretat-publica', 'sistema de seguretat pública, òrgans i planificació', '2026-08-24'),
     ],
   ),
 
@@ -135,8 +135,8 @@ export const LESSONS_21_25: Lesson[] = [
       ),
     ],
     [
-      ref('llei-4-2003-seguretat-publica', 'juntes locals de seguretat'),
-      ref('decret-151-1998-juntes', 'composició, funcions i funcionament'),
+      refv('llei-4-2003-seguretat-publica', 'juntes locals de seguretat', '2026-08-24'),
+      refv('decret-151-1998-juntes', 'composició, funcions i funcionament', '2026-08-24'),
     ],
   ),
 
@@ -180,8 +180,8 @@ export const LESSONS_21_25: Lesson[] = [
       ),
     ],
     [
-      ref('llei-16-1991-policies-locals', 'naturalesa, dependència, escales, categories i funcions'),
-      ref('roses-bases-2026-interins', 'accés a la categoria d’agent, grup C1'),
+      refv('llei-16-1991-policies-locals', 'naturalesa, dependència, escales, categories i funcions', '2026-08-24'),
+      refv('roses-bases-2026-interins', 'capçalera de la convocatòria (grup de titulació C1)', '2026-08-24'),
     ],
   ),
 
@@ -229,9 +229,9 @@ export const LESSONS_21_25: Lesson[] = [
       ),
     ],
     [
-      ref('ddhh-1948', 'preàmbul i art. 1 a 30'),
-      ref('carta-drets-ue', 'títols I a VII'),
-      ref('codi-etic-policia-catalunya', 'Acord GOV/25/2015, principis i pautes de conducta'),
+      refv('ddhh-1948', 'preàmbul i art. 1 a 30', '2026-08-24'),
+      refv('carta-drets-ue', 'títols I a VII', '2026-08-24'),
+      refv('codi-etic-policia-catalunya', 'Acord GOV/25/2015, principis i pautes de conducta', '2026-08-24'),
     ],
   ),
 ]

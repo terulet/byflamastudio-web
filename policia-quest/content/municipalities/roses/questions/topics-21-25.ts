@@ -1,5 +1,5 @@
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, ref, refv } from '../authoring.ts'
 
 export const QUESTIONS_21_25: Question[] = [
   ...questionsFor(21, [
@@ -20,7 +20,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La llei estableix que els membres de les forces i cossos de seguretat només poden utilitzar les armes en situacions en què hi hagi un risc racionalment greu per a la seva vida o integritat física o per a la de terceres persones, o un risc greu per a la seguretat ciutadana, i sempre d’acord amb els principis de congruència, oportunitat i proporcionalitat.',
       explainEs: 'La ley establece que los miembros de las fuerzas y cuerpos de seguridad solo pueden utilizar las armas en situaciones en que exista un riesgo racionalmente grave para su vida o integridad física o para la de terceras personas, o un riesgo grave para la seguridad ciudadana, y siempre de acuerdo con los principios de congruencia, oportunidad y proporcionalidad.',
-      refs: [ref('lo-2-1986-fcs', 'art. 5.2.d')],
+      refs: [refv('lo-2-1986-fcs', 'art. 5.2.d', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -40,7 +40,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La llei imposa actuar amb la decisió necessària i sense demora quan d’això depengui evitar un dany greu, immediat i irreparable, regint-se en fer-ho pels principis de congruència, oportunitat i proporcionalitat en la utilització dels mitjans al seu abast.',
       explainEs: 'La ley impone actuar con la decisión necesaria y sin demora cuando de ello dependa evitar un daño grave, inmediato e irreparable, rigiéndose al hacerlo por los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance.',
-      refs: [ref('lo-2-1986-fcs', 'art. 5.2.c')],
+      refs: [refv('lo-2-1986-fcs', 'art. 5.2.c', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -60,7 +60,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'Entre les funcions de les policies locals, la llei inclou instruir atestats per accidents de circulació esdevinguts dins el nucli urbà. Això no eximeix d’assegurar el lloc i prestar auxili a qualsevol punt del terme quan s’hi arriba primer.',
       explainEs: 'Entre las funciones de las policías locales, la ley incluye instruir atestados por accidentes de circulación ocurridos dentro del casco urbano. Esto no exime de asegurar el lugar y prestar auxilio en cualquier punto del término cuando se llega primero.',
-      refs: [ref('lo-2-1986-fcs', 'art. 53.1')],
+      refs: [refv('lo-2-1986-fcs', 'art. 53.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -80,7 +80,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La llei configura el Cos Nacional de Policia com un institut armat de naturalesa civil i la Guàrdia Civil com un institut armat de naturalesa militar. Els cossos de policia local són també instituts armats de naturalesa civil.',
       explainEs: 'La ley configura el Cuerpo Nacional de Policía como un instituto armado de naturaleza civil y la Guardia Civil como un instituto armado de naturaleza militar. Los cuerpos de policía local son también institutos armados de naturaleza civil.',
-      refs: [ref('lo-2-1986-fcs', 'art. 9')],
+      refs: [refv('lo-2-1986-fcs', 'art. 9', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -100,7 +100,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'Els principis bàsics d’actuació s’estructuren en sis grups: adequació a l’ordenament jurídic, relacions amb la comunitat, tractament de detinguts, dedicació professional, secret professional i responsabilitat. El rendiment econòmic no hi figura.',
       explainEs: 'Los principios básicos de actuación se estructuran en seis grupos: adecuación al ordenamiento jurídico, relaciones con la comunidad, tratamiento de detenidos, dedicación profesional, secreto profesional y responsabilidad. El rendimiento económico no figura.',
-      refs: [ref('lo-2-1986-fcs', 'art. 5')],
+      refs: [refv('lo-2-1986-fcs', 'art. 5', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -123,7 +123,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La Llei 4/2003, de 7 d’abril, d’ordenació del sistema de seguretat pública de Catalunya, articula com es relacionen les administracions, els cossos policials i els serveis d’emergències dins un sistema integrat.',
       explainEs: 'La Ley 4/2003, de 7 de abril, de ordenación del sistema de seguridad pública de Cataluña, articula cómo se relacionan las administraciones, los cuerpos policiales y los servicios de emergencias dentro de un sistema integrado.',
-      refs: [ref('llei-4-2003-seguretat-publica', 'objecte de la llei')],
+      refs: [refv('llei-4-2003-seguretat-publica', 'objecte de la llei', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -143,7 +143,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'El Consell de Seguretat de Catalunya és l’òrgan consultiu i de participació superior en matèria de seguretat, on hi són representades les administracions, els cossos i la societat civil.',
       explainEs: 'El Consejo de Seguridad de Cataluña es el órgano consultivo y de participación superior en materia de seguridad, donde están representadas las administraciones, los cuerpos y la sociedad civil.',
-      refs: [ref('llei-4-2003-seguretat-publica', 'òrgans del sistema')],
+      refs: [refv('llei-4-2003-seguretat-publica', 'òrgans del sistema', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -163,7 +163,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'El pla local de seguretat és l’instrument que concreta al municipi els objectius del Pla general de seguretat de Catalunya, a partir de l’anàlisi de la realitat local, i l’aprova la junta local de seguretat.',
       explainEs: 'El plan local de seguridad es el instrumento que concreta en el municipio los objetivos del Plan general de seguridad de Cataluña, a partir del análisis de la realidad local, y lo aprueba la junta local de seguridad.',
-      refs: [ref('llei-4-2003-seguretat-publica', 'planificació de la seguretat')],
+      refs: [refv('llei-4-2003-seguretat-publica', 'planificació de la seguretat', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -183,7 +183,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'El sistema integra les administracions amb competències en seguretat, els cossos policials, els serveis de prevenció i extinció d’incendis i salvaments, els de protecció civil i els d’emergències mèdiques, a més de la seguretat privada en allò que la llei preveu. La inspecció tributària no hi pertany.',
       explainEs: 'El sistema integra las administraciones con competencias en seguridad, los cuerpos policiales, los servicios de prevención y extinción de incendios y salvamentos, los de protección civil y los de emergencias médicas, además de la seguridad privada en lo que la ley prevé. La inspección tributaria no pertenece a él.',
-      refs: [ref('llei-4-2003-seguretat-publica', 'integrants del sistema')],
+      refs: [refv('llei-4-2003-seguretat-publica', 'integrants del sistema', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -204,8 +204,8 @@ export const QUESTIONS_21_25: Question[] = [
       explainCa: 'Coordinar significa establir criteris comuns i homogeneïtzar mitjans tècnics, formació, uniformitat i sistemes d’informació, però no substituir la dependència jeràrquica de l’alcalde ni alterar la titularitat municipal del cos.',
       explainEs: 'Coordinar significa establecer criterios comunes y homogeneizar medios técnicos, formación, uniformidad y sistemas de información, pero no sustituir la dependencia jerárquica del alcalde ni alterar la titularidad municipal del cuerpo.',
       refs: [
-        ref('llei-4-2003-seguretat-publica', 'coordinació de policies locals'),
-        ref('llei-16-1991-policies-locals', 'dependència municipal'),
+        refv('llei-4-2003-seguretat-publica', 'coordinació de policies locals', '2026-08-24'),
+        refv('llei-16-1991-policies-locals', 'dependència municipal', '2026-08-24'),
       ],
       difficulty: 'dificil',
     },
@@ -229,7 +229,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La junta local de seguretat és un òrgan col·legiat presidit per l’alcalde o alcaldessa del municipi, on s’articula la coordinació entre l’ajuntament, els Mossos d’Esquadra i la policia local.',
       explainEs: 'La junta local de seguridad es un órgano colegiado presidido por el alcalde o alcaldesa del municipio, donde se articula la coordinación entre el ayuntamiento, los Mossos d’Esquadra y la policía local.',
-      refs: [ref('decret-151-1998-juntes', 'composició i presidència')],
+      refs: [refv('decret-151-1998-juntes', 'composició i presidència', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -249,7 +249,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La constitució de la junta local de seguretat és obligatòria en els municipis que tenen cos de policia local propi, precisament perquè hi conflueixen dos cossos policials que cal coordinar. Roses hi entra plenament.',
       explainEs: 'La constitución de la junta local de seguridad es obligatoria en los municipios que tienen cuerpo de policía local propio, precisamente porque en ellos confluyen dos cuerpos policiales que hay que coordinar. Roses entra plenamente.',
-      refs: [ref('decret-151-1998-juntes', 'àmbit d’aplicació')],
+      refs: [refv('llei-4-2003-seguretat-publica', 'art. 9.1', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -269,7 +269,15 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La junta local de seguretat analitza i valora la situació de seguretat del municipi, elabora i aprova el pla local de seguretat i en fa el seguiment, i estableix els criteris de coordinació i col·laboració entre els cossos que hi actuen.',
       explainEs: 'La junta local de seguridad analiza y valora la situación de seguridad del municipio, elabora y aprueba el plan local de seguridad y hace su seguimiento, y establece los criterios de coordinación y colaboración entre los cuerpos que actúan.',
-      refs: [ref('decret-151-1998-juntes', 'funcions')],
+      refs: [
+        refv(
+          'decret-151-1998-juntes',
+          'art. 2',
+          '2026-08-24',
+          'L’art. 2.b) diu «elaborar» plans; aprovar-los és de la Llei 4/2003, art. 10.b.',
+        ),
+        refv('llei-4-2003-seguretat-publica', 'art. 10.b', '2026-08-24'),
+      ],
       difficulty: 'mitjana',
     },
     {
@@ -289,7 +297,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'El Decret 151/1998, de 23 de juny, regula les juntes locals de seguretat, desenvolupant les previsions de la legislació catalana en matèria de seguretat pública.',
       explainEs: 'El Decreto 151/1998, de 23 de junio, regula las juntas locales de seguridad, desarrollando las previsiones de la legislación catalana en materia de seguridad pública.',
-      refs: [ref('decret-151-1998-juntes', 'norma reguladora')],
+      refs: [refv('decret-151-1998-juntes', 'norma reguladora', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -309,7 +317,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La junta local de seguretat és el lloc natural on es planifiquen i s’acorden els dispositius conjunts per a esdeveniments singulars: qui cobreix cada zona, amb quins efectius i sota quin comandament.',
       explainEs: 'La junta local de seguridad es el lugar natural donde se planifican y acuerdan los dispositivos conjuntos para eventos singulares: quién cubre cada zona, con qué efectivos y bajo qué mando.',
-      refs: [ref('decret-151-1998-juntes', 'coordinació de dispositius')],
+      refs: [refv('decret-151-1998-juntes', 'coordinació de dispositius', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -332,7 +340,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La Llei 16/1991 configura els cossos de policia local com a instituts armats de naturalesa civil, amb estructura i organització jerarquitzada, que depenen de l’alcalde o alcaldessa.',
       explainEs: 'La Ley 16/1991 configura los cuerpos de policía local como institutos armados de naturaleza civil, con estructura y organización jerarquizada, que dependen del alcalde o alcaldesa.',
-      refs: [ref('llei-16-1991-policies-locals', 'naturalesa dels cossos')],
+      refs: [refv('llei-16-1991-policies-locals', 'naturalesa dels cossos', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -348,8 +356,13 @@ export const QUESTIONS_21_25: Question[] = [
       explainCa: 'L’escala bàsica correspon a la categoria d’agent, que és la porta d’entrada al cos i la que convoca l’Ajuntament de Roses. Per damunt hi ha l’escala intermèdia, l’executiva i la superior.',
       explainEs: 'La escala básica corresponde a la categoría de agente, que es la puerta de entrada al cuerpo y la que convoca el Ayuntamiento de Roses. Por encima están la escala intermedia, la ejecutiva y la superior.',
       refs: [
-        ref('llei-16-1991-policies-locals', 'escales i categories'),
-        ref('roses-bases-2026-interins', 'categoria convocada'),
+        refv('llei-16-1991-policies-locals', 'art. 24.1.d i 24.2.d', '2026-08-24'),
+        refv(
+          'roses-bases-2026-interins',
+          'capçalera de la convocatòria',
+          '2026-08-24',
+          'Prova que la categoria convocada és agent, grup C1; l’escala és de la Llei 16/1991.',
+        ),
       ],
       difficulty: 'facil',
     },
@@ -370,7 +383,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'Els cossos de policia local només poden actuar dins el terme municipal, excepte en situacions d’emergència, quan exerceixen funcions de protecció d’autoritats de la corporació fora del terme, o quan una norma o un acord de col·laboració ho preveu expressament.',
       explainEs: 'Los cuerpos de policía local solo pueden actuar dentro del término municipal, salvo en situaciones de emergencia, cuando ejercen funciones de protección de autoridades de la corporación fuera del término, o cuando una norma o un acuerdo de colaboración lo prevé expresamente.',
-      refs: [ref('llei-16-1991-policies-locals', 'àmbit territorial')],
+      refs: [refv('llei-16-1991-policies-locals', 'àmbit territorial', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -390,7 +403,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'L’alcalde o alcaldessa és el cap superior del cos de policia local i n’exerceix la direcció, sens perjudici de les funcions de coordinació que corresponen a la Generalitat i de la dependència funcional dels jutges i del Ministeri Fiscal en funcions de policia judicial.',
       explainEs: 'El alcalde o alcaldesa es el jefe superior del cuerpo de policía local y ejerce su dirección, sin perjuicio de las funciones de coordinación que corresponden a la Generalitat y de la dependencia funcional de los jueces y del Ministerio Fiscal en funciones de policía judicial.',
-      refs: [ref('llei-16-1991-policies-locals', 'dependència'), ref('lo-2-1986-fcs', 'art. 51 i 53')],
+      refs: [refv('llei-16-1991-policies-locals', 'preàmbul III', '2026-08-24'), refv('llei-7-1985-lrbrl', 'art. 21.1.i', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -410,7 +423,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La Llei 16/1991 ha estat modificada en diverses ocasions al llarg dels anys, entre altres per la Llei 3/2023. Estudiar apunts antics sobre categories, requisits d’accés o segona activitat és una font habitual d’errors a l’examen.',
       explainEs: 'La Ley 16/1991 ha sido modificada en varias ocasiones a lo largo de los años, entre otras por la Ley 3/2023. Estudiar apuntes antiguos sobre categorías, requisitos de acceso o segunda actividad es una fuente habitual de errores en el examen.',
-      refs: [ref('llei-16-1991-policies-locals', 'text consolidat i modificacions')],
+      refs: [refv('llei-16-1991-policies-locals', 'text consolidat i modificacions', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -428,7 +441,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La Declaració Universal dels Drets Humans consta d’un preàmbul i trenta articles. Va ser adoptada i proclamada per l’Assemblea General de les Nacions Unides el 10 de desembre de 1948.',
       explainEs: 'La Declaración Universal de los Derechos Humanos consta de un preámbulo y treinta artículos. Fue adoptada y proclamada por la Asamblea General de las Naciones Unidas el 10 de diciembre de 1948.',
-      refs: [ref('ddhh-1948', 'preàmbul i art. 1 a 30')],
+      refs: [refv('ddhh-1948', 'preàmbul i art. 1 a 30', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -448,7 +461,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La Carta es va proclamar solemnement a Niça l’any 2000 sense caràcter vinculant. L’entrada en vigor del Tractat de Lisboa, el 2009, li va reconèixer el mateix valor jurídic que els Tractats.',
       explainEs: 'La Carta se proclamó solemnemente en Niza en el año 2000 sin carácter vinculante. La entrada en vigor del Tratado de Lisboa, en 2009, le reconoció el mismo valor jurídico que los Tratados.',
-      refs: [ref('carta-drets-ue', 'valor jurídic i proclamació')],
+      refs: [refv('carta-drets-ue', 'valor jurídic i proclamació', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -468,7 +481,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'El Codi d’ètica de la Policia de Catalunya va ser aprovat per l’Acord GOV/25/2015, de 24 de febrer, i s’aplica als Mossos d’Esquadra i a les policies locals, que en poden desenvolupar codis propis.',
       explainEs: 'El Código de ética de la Policía de Cataluña fue aprobado por el Acuerdo GOV/25/2015, de 24 de febrero, y se aplica a los Mossos d’Esquadra y a las policías locales, que pueden desarrollar códigos propios.',
-      refs: [ref('codi-etic-policia-catalunya', 'Acord GOV/25/2015')],
+      refs: [refv('codi-etic-policia-catalunya', 'Acord GOV/25/2015', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -488,7 +501,7 @@ export const QUESTIONS_21_25: Question[] = [
       },
       explainCa: 'La Declaració Universal és una resolució de l’Assemblea General de les Nacions Unides: té una enorme força moral i ha inspirat el dret internacional posterior, però no és per si mateixa un tractat vinculant. La Carta de la UE, en canvi, té el mateix valor jurídic que els Tractats.',
       explainEs: 'La Declaración Universal es una resolución de la Asamblea General de las Naciones Unidas: tiene una enorme fuerza moral y ha inspirado el derecho internacional posterior, pero no es por sí misma un tratado vinculante. La Carta de la UE, en cambio, tiene el mismo valor jurídico que los Tratados.',
-      refs: [ref('ddhh-1948', 'naturalesa jurídica'), ref('carta-drets-ue', 'valor jurídic')],
+      refs: [refv('ddhh-1948', 'naturalesa jurídica', '2026-08-24'), refv('carta-drets-ue', 'valor jurídic', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -509,8 +522,9 @@ export const QUESTIONS_21_25: Question[] = [
       explainCa: 'Els principis ètics prohibeixen expressament acceptar o atorgar tractes de favor. Alterar o suprimir una denúncia legítima pot ser una falta disciplinària molt greu i, segons les circumstàncies, un delicte de prevaricació o de falsedat documental.',
       explainEs: 'Los principios éticos prohíben expresamente aceptar u otorgar tratos de favor. Alterar o suprimir una denuncia legítima puede ser una falta disciplinaria muy grave y, según las circunstancias, un delito de prevaricación o de falsedad documental.',
       refs: [
-        ref('codi-etic-policia-catalunya', 'integritat i imparcialitat'),
-        ref('rdleg-5-2015-trebep', 'art. 53'),
+        refv('codi-etic-policia-catalunya', 'integritat i imparcialitat', '2026-08-24', 'Integritat i imparcialitat; la qualificació penal no surt del Codi d’ètica.'),
+        refv('rdleg-5-2015-trebep', 'art. 53', '2026-08-24', 'L’art. 53.7 prohibeix el tracte de favor; la qualificació penal no surt del TREBEP.'),
+        refv('lo-10-1995-cp', 'art. 404 i 390', '2026-08-24'),
       ],
       difficulty: 'mitjana',
     },

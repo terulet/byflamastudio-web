@@ -13,7 +13,7 @@
  * de manera explícita.
  */
 import type { Question } from '../../../schemas/index.ts'
-import { questionsFor, ref } from '../authoring.ts'
+import { questionsFor, ref, refv } from '../authoring.ts'
 
 const CG = { track: 'cultura-general' as const, tags: ['cultura-general'] }
 
@@ -140,7 +140,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { b: 'No és la denominació constitucional.', c: 'Les altres llengües són oficials a les respectives comunitats autònomes.', d: 'La Constitució sí que en designa una.' },
       explainCa: 'L’article 3 estableix que el castellà és la llengua espanyola oficial de l’Estat i que les altres llengües espanyoles seran també oficials a les respectives comunitats autònomes d’acord amb els seus estatuts.',
       explainEs: 'El artículo 3 establece que el castellano es la lengua española oficial del Estado y que las demás lenguas españolas serán también oficiales en las respectivas comunidades autónomas de acuerdo con sus estatutos.',
-      refs: [ref('ce-1978', 'art. 3')],
+      refs: [refv('ce-1978', 'art. 3', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),
@@ -154,7 +154,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'Proclama la dignitat de la persona com a fonament de l’ordre polític.', c: 'Reconeix el dret a la vida i a la integritat física i moral.', d: 'Reconeix la tutela judicial efectiva.' },
       explainCa: 'L’article 14 estableix que els espanyols són iguals davant la llei, sense que hi pugui prevaler cap discriminació per raó de naixement, raça, sexe, religió, opinió o qualsevol altra condició o circumstància personal o social.',
       explainEs: 'El artículo 14 establece que los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.',
-      refs: [ref('ce-1978', 'art. 14')],
+      refs: [refv('ce-1978', 'art. 14', '2026-08-24')],
       difficulty: 'facil',
     },
     {
@@ -170,7 +170,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'No està prevista per a cap delicte comú.', c: 'La Constitució en manté l’excepció militar en temps de guerra.', d: 'No és una matèria autonòmica.' },
       explainCa: 'L’article 15 de la Constitució aboleix la pena de mort, llevat del que puguin disposar les lleis penals militars per a temps de guerra. Aquesta excepció es va suprimir posteriorment per llei orgànica, però el text constitucional la conserva.',
       explainEs: 'El artículo 15 de la Constitución abole la pena de muerte, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra. Esta excepción se suprimió posteriormente por ley orgánica, pero el texto constitucional la conserva.',
-      refs: [ref('ce-1978', 'art. 15')],
+      refs: [refv('ce-1978', 'art. 15', '2026-08-24')],
       difficulty: 'dificil',
     },
   ]),
@@ -184,7 +184,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'El castellà també és oficial.', b: 'L’aranès també és oficial a Catalunya.', d: 'No n’hi ha quatre.' },
       explainCa: 'A Catalunya són oficials el català —llengua pròpia—, el castellà i l’aranès, que és la llengua pròpia de l’Aran i també és llengua oficial a Catalunya.',
       explainEs: 'En Cataluña son oficiales el catalán —lengua propia—, el castellano y el aranés, que es la lengua propia del Arán y también es lengua oficial en Cataluña.',
-      refs: [ref('lo-6-2006-eac', 'règim lingüístic')],
+      refs: [refv('lo-6-2006-eac', 'règim lingüístic', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -195,7 +195,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'És una llengua no indoeuropea sense relació amb l’aranès.', c: 'És una altra llengua romànica, diferent de l’occità.', d: 'És la llengua pròpia de Galícia.' },
       explainCa: 'L’aranès és la variant de l’occità parlada a la Vall d’Aran. L’Estatut la reconeix com a llengua pròpia de l’Aran i com a llengua oficial a tot Catalunya.',
       explainEs: 'El aranés es la variante del occitano hablada en el Valle de Arán. El Estatuto la reconoce como lengua propia del Arán y como lengua oficial en toda Cataluña.',
-      refs: [ref('lo-6-2006-eac', 'l’aranès')],
+      refs: [refv('lo-6-2006-eac', 'l’aranès', '2026-08-24')],
       difficulty: 'mitjana',
     },
   ]),
@@ -214,11 +214,19 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'L’Estatut de 1979 va ser substituït el 2006.', c: 'No s’ha reformat tres vegades.', d: 'No s’ha reformat cinc vegades.' },
       explainCa: 'Catalunya ha tingut dos estatuts d’autonomia des de la Transició: el de Sau, de 1979, i el vigent, aprovat el 2006 per la Llei orgànica 6/2006, que el va substituir.',
       explainEs: 'Cataluña ha tenido dos estatutos de autonomía desde la Transición: el de Sau, de 1979, y el vigente, aprobado en 2006 por la Ley orgánica 6/2006, que lo sustituyó.',
-      refs: [ref('lo-6-2006-eac', 'antecedents i norma aprovatòria')],
+      refs: [refv('lo-6-2006-eac', 'antecedents i norma aprovatòria', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
-      n: 102, ...CG,
+      // Retirada el 2026-08-24 en revisar-ne la font. Dues coses no quadren: cap
+      // dels 43 documents del paquet normatiu enumera les comarques de la
+      // província de Girona —l'Estatut no ho fa—, i la mateixa explicació que
+      // acompanyava la pregunta en llistava vuit mentre la resposta bona deia
+      // «set». No hi ha opció «Vuit» per corregir-ho amb el canvi mínim i aquí
+      // no s'inventa una divisió comarcal de memòria: es queda en draft fins
+      // que algú la contrasti amb la font oficial (IDESCAT o el Decret de
+      // divisió territorial), i mentrestant no la veu ningú.
+      n: 102, ...CG, status: 'draft',
       stem: 'Quantes comarques té la província de Girona a la qual pertany Roses?',
       options: [
         'Cinc',
@@ -246,7 +254,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'Dotze és el nombre de magistrats del Tribunal Constitucional.', b: 'No correspon a cap dada constitucional.', d: 'No correspon a cap dada constitucional.' },
       explainCa: 'El Consell General del Poder Judicial està integrat pel president del Tribunal Suprem, que el presideix, i per vint vocals nomenats pel Rei per un període de cinc anys.',
       explainEs: 'El Consejo General del Poder Judicial está integrado por el presidente del Tribunal Supremo, que lo preside, y por veinte vocales nombrados por el Rey por un período de cinco años.',
-      refs: [ref('ce-1978', 'art. 122.3')],
+      refs: [refv('ce-1978', 'art. 122.3', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -257,7 +265,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'És l’intèrpret suprem de la Constitució.', c: 'És el suprem òrgan consultiu del Govern.', d: 'És el suprem òrgan fiscalitzador de comptes.' },
       explainCa: 'L’article 54 crea el Defensor del Poble com a alt comissionat de les Corts Generals per a la defensa dels drets del títol I, amb la facultat de supervisar l’activitat de l’Administració.',
       explainEs: 'El artículo 54 crea al Defensor del Pueblo como alto comisionado de las Cortes Generales para la defensa de los derechos del título I, con la facultad de supervisar la actividad de la Administración.',
-      refs: [ref('ce-1978', 'art. 54')],
+      refs: [refv('ce-1978', 'art. 54', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),
@@ -271,7 +279,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'És la data d’entrada en vigor de la Carta de les Nacions Unides.', c: 'És la data del Conveni Europeu de Drets Humans.', d: 'És la data de signatura de la Carta de les Nacions Unides.' },
       explainCa: 'La Declaració Universal dels Drets Humans va ser adoptada i proclamada per l’Assemblea General de les Nacions Unides el 10 de desembre de 1948, a París, mitjançant la Resolució 217 A (III).',
       explainEs: 'La Declaración Universal de los Derechos Humanos fue adoptada y proclamada por la Asamblea General de las Naciones Unidas el 10 de diciembre de 1948, en París, mediante la Resolución 217 A (III).',
-      refs: [ref('ddhh-1948', 'proclamació')],
+      refs: [refv('ddhh-1948', 'proclamació', '2026-08-24')],
       difficulty: 'mitjana',
     },
     {
@@ -282,7 +290,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'És un nombre inferior al real.', b: 'Sis són els títols substantius; el setè conté les disposicions generals.', d: 'És un nombre superior al real.' },
       explainCa: 'La Carta s’organitza en set títols: dignitat, llibertats, igualtat, solidaritat, ciutadania, justícia i disposicions generals, amb un total de cinquanta-quatre articles.',
       explainEs: 'La Carta se organiza en siete títulos: dignidad, libertades, igualdad, solidaridad, ciudadanía, justicia y disposiciones generales, con un total de cincuenta y cuatro artículos.',
-      refs: [ref('carta-drets-ue', 'estructura')],
+      refs: [refv('carta-drets-ue', 'estructura', '2026-08-24')],
       difficulty: 'dificil',
     },
     {
@@ -298,7 +306,7 @@ export const QUESTIONS_CULTURA_GENERAL: Question[] = [
       whyWrong: { a: 'No és el contingut de l’article 1.', c: 'La propietat es reconeix en un altre article.', d: 'La nacionalitat es reconeix en un altre article.' },
       explainCa: 'L’article 1 de la Declaració estableix que tots els éssers humans neixen lliures i iguals en dignitat i drets i que, dotats com estan de raó i consciència, han de comportar-se fraternalment els uns amb els altres.',
       explainEs: 'El artículo 1 de la Declaración establece que todos los seres humanos nacen libres e iguales en dignidad y derechos y que, dotados como están de razón y conciencia, deben comportarse fraternalmente los unos con los otros.',
-      refs: [ref('ddhh-1948', 'art. 1')],
+      refs: [refv('ddhh-1948', 'art. 1', '2026-08-24')],
       difficulty: 'facil',
     },
   ]),

@@ -4,7 +4,7 @@
 > mitjançant `npm run content:report`. Per afegir o corregir una font, editeu el
 > manifest.
 
-Generat el 2026-08-24 · 98 fonts registrades.
+Generat el 2026-08-25 · 98 fonts registrades.
 
 ## Roses
 
@@ -38,10 +38,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Organisme**: Ajuntament de Roses
 - **Tipus**: pagina-institucional
 - **URL**: https://www.roses.cat/ajuntament/informacio-administrativa/oferta-publica-docupacio/examens-1
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `172d18d0c26051e4d6d77af8054b414b8bcce91f5a506678684bff73b3938395`)
 - **Notes**: Índex on es publiquen els quadernets i les respostes oficials de cada convocatòria.
 
 ### `roses-examen-2025-propietat-cg`
@@ -116,10 +115,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Organisme**: Ajuntament de Roses
 - **Tipus**: pagina-institucional
 - **URL**: https://www.roses.cat/ajuntament/informacio-administrativa/ordenances-i-bans-1
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `35eae04006593c73ba339e3e3ba63f12730352c4d29e52e23e4c88834cc1bb88`)
 
 ### `roses-web-municipi`
 
@@ -127,10 +125,10 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Organisme**: Ajuntament de Roses
 - **Tipus**: pagina-institucional
 - **URL**: https://www.roses.cat/
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `12ab22566302116885c013cf23dc561c02bc118baeb11b810d72d8dec2990777`)
+- **Nota de descàrrega**: La còpia del 2026-08-24 (133 kB) és només l’esquelet de navegació de www.roses.cat: 6 kB de text net, tot menús. El contingut del portal es carrega per JavaScript i no hi és; cerques de «Ciutadella», «Rhode», «Cap de Creus», «dolmen», «Santa Margarida» i «pesca» donen zero resultats. Cal una instantània de text de les pàgines concretes del municipi, com es va fer amb el paquet d’actualitat, no la portada.
 - **Notes**: Font per al tema 31 (coneixements generals de Roses). Contingut canviant: revisar periòdicament.
 
 ### `roses-tramits-animals`
@@ -139,10 +137,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Organisme**: Ajuntament de Roses
 - **Tipus**: pagina-institucional
 - **URL**: https://www.roses.cat/tramits/llicancia-per-a-la-tinenaa-i-conduccia-danimals
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `5b2e0e3514826364cc61ab8afe72c164cf6fa73d55ce66b2ecae3cf543e13570`)
 - **Notes**: Requisits municipals concrets de la llicència a Roses.
 
 ### `roses-ordenanca-circulacio-mod-2021`
@@ -572,10 +569,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://portaljuridic.gencat.cat/eli/es-ct/l/1991/07/10/16
 - **Publicació**: 1991-07-19
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `47d7b396ebba617de2d39c672e8397e1ded6b20cfa0a549e4a0068101e37d077`)
 - **Notes**: Modificada, entre altres, per la Llei 3/2023. Cal treballar sempre sobre el text consolidat.
 
 ### `llei-4-2003-seguretat-publica`
@@ -585,10 +581,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://portaljuridic.gencat.cat/eli/es-ct/l/2003/04/07/4
 - **Publicació**: 2003-04-24
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `b3ca023f11372262955dd691c03e039fefd31916aa88ae49e6474c3dbb199d8a`)
 
 ### `decret-179-2015-disciplinari`
 
@@ -597,10 +592,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: decret
 - **URL**: https://portaljuridic.gencat.cat/eli/es-ct/d/2015/08/04/179
 - **Publicació**: 2015-08-06
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `7f3bedbd57cecbd2c0a6c9143c4500359fa221cdfd07c0074befd80383d0b714`)
 
 ### `decret-151-1998-juntes`
 
@@ -609,10 +603,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: decret
 - **URL**: https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=194957
 - **Publicació**: 1998-06-30
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `995ce79f84f7a2b66832fc21f4cc116fa1df0dfc790a4700215fc3cf4ebd2808`)
 
 ### `llei-19-2014-transp-cat`
 
@@ -621,10 +614,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://portaljuridic.gencat.cat/eli/es-ct/l/2014/12/29/19
 - **Publicació**: 2014-12-31
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `7ca43416b69d36501255ef098bd6aa2cd7b570c2d30020826df71b989d48ec8e`)
 
 ### `codi-etic-policia-catalunya`
 
@@ -633,10 +625,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: codi-etic
 - **URL**: https://interior.gencat.cat/ca/arees_dactuacio/policia/comite-detica-de-la-policia-de-catalunya/codi-detica-de-la-policia-de-catalunya/
 - **Publicació**: 2015-02-26
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `3d481f263bdd5cabbc96c67b9363369676f806bd93402fd5b2f14f21abc9bb3a`)
 
 ### `codi-seguretat-catalunya`
 
@@ -644,10 +635,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Organisme**: Portal Jurídic de Catalunya
 - **Tipus**: pagina-institucional
 - **URL**: https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-de-Seguretat-Catalunya/
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `a094c26598b3684393a45149d4100676064e2241042955139e56bf6782a97087`)
 - **Notes**: Recull consolidat de tota la normativa de seguretat pública catalana. Punt d’entrada recomanat.
 
 ### `agencia-ciberseguretat-catalunya`
@@ -656,10 +646,10 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Organisme**: Generalitat de Catalunya
 - **Tipus**: pagina-institucional
 - **URL**: https://ciberseguretat.gencat.cat/
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `67f433f65b6c8e56078d8088e911dbf54f33e5c55f9e9a40930f1934cbf177ea`)
+- **Nota de descàrrega**: La còpia del 2026-08-24 (144 kB) és només l’esquelet de navegació de ciberseguretat.gencat.cat: 8 kB de text net, tot menús. El cos de les pàgines es carrega per JavaScript. Cal una instantània de text de les pàgines de ciberamenaces i d’autoprotecció, no la portada.
 
 ### `llei-10-1999-gossos-cat`
 
@@ -668,10 +658,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://portaljuridic.gencat.cat/eli/es-ct/l/1999/07/30/10
 - **Publicació**: 1999-08-09
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `8ca5fa907a3accde07ad244c73cabf96867ab49d16fb16216919d3f6dafd74de`)
 - **Notes**: La llista catalana de races difereix de l'estatal: cal comparar-les.
 
 ### `cat-carboni-2026-2030`
@@ -731,10 +720,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: constitucio
 - **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229
 - **Publicació**: 1978-12-29
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `1a6d7ae6ab092984eb9ba4d327b33184729e01f279b3fe785c523608168b2330`)
 
 ### `lo-6-2006-eac`
 
@@ -743,10 +731,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2006/07/19/6/con
 - **Publicació**: 2006-07-20
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `a0625d6103d6a5fe584b3e5405655f4b5fe472cb2f47c6f4cb10a4108a10fdc5`)
 
 ### `llei-7-1985-lrbrl`
 
@@ -755,10 +742,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/1985/04/02/7/con
 - **Publicació**: 1985-04-03
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `77bde9a18873cd4d85ac035825f15e7aacfa515f711bb9e96fba5151f342507f`)
 
 ### `rdleg-5-2015-trebep`
 
@@ -767,10 +753,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret-legislatiu
 - **URL**: https://www.boe.es/eli/es/rdlg/2015/10/30/5/con
 - **Publicació**: 2015-10-31
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `000e4de146fa3983e961dee11a36e11926890695d373e62a1f2fdae4d6497496`)
 
 ### `llei-53-1984-incompat`
 
@@ -779,10 +764,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/1984/12/26/53/con
 - **Publicació**: 1985-01-04
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `3a39e4ccc4040fbeb2096bf7c7b3bb0d2e8e12c59a93a100c392542bf664acec`)
 
 ### `rdleg-2-2004-trlrhl`
 
@@ -791,10 +775,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret-legislatiu
 - **URL**: https://www.boe.es/eli/es/rdlg/2004/03/05/2/con
 - **Publicació**: 2004-03-09
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `d2f0055ecc70de7bd385a3e49f928be4cf3ac753b0f77b708eadaf90600ae821`)
 
 ### `llei-39-2015-pac`
 
@@ -803,10 +786,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/2015/10/01/39/con
 - **Publicació**: 2015-10-02
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `f92d4402b820d2af2dcf115832706210e984a5946218bae4a66650a52271417c`)
 
 ### `llei-40-2015-rjsp`
 
@@ -815,10 +797,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/2015/10/01/40/con
 - **Publicació**: 2015-10-02
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `ac5ea378c0cf2e44fe7cfba8220576319c6422ff2448763997add27afaa5bf0a`)
 
 ### `llei-19-2013-transp`
 
@@ -827,10 +808,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/2013/12/09/19/con
 - **Publicació**: 2013-12-10
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `02b2b6728ffdb035c2e95598f4c157a5e31253a1facf249259c0233256bc8517`)
 
 ### `lo-3-2018-lopdgdd`
 
@@ -839,10 +819,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2018/12/05/3/con
 - **Publicació**: 2018-12-06
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `a736af56c1f5527a44d59ad1b26d34da04231e6d4ba4865dd26d2e20ac0ba924`)
 
 ### `lo-2-1986-fcs`
 
@@ -851,10 +830,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/1986/03/13/2/con
 - **Publicació**: 1986-03-14
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `133ac0ad5c98a28b98335d963d6a28701ecb65d17179e0558758ad59c81eb6d7`)
 
 ### `lo-4-2015-psc`
 
@@ -863,10 +841,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2015/03/30/4/con
 - **Publicació**: 2015-03-31
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `2aad2cd9935cd0ad5db712036574f1c7774bbb3f7df3423ca13e39a2c1c66f87`)
 
 ### `lo-10-1995-cp`
 
@@ -875,10 +852,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/1995/11/23/10/con
 - **Publicació**: 1995-11-24
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `c9f96007c9f2c3de1fc82c8834d2ccc9ae21625ffe20dee6dd042b35fe7e9fb5`)
 
 ### `lo-1-2015-reforma-cp`
 
@@ -887,10 +863,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2015/03/30/1/con
 - **Publicació**: 2015-03-31
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `d697bb8d907edcf1cca616bbc3531a62d643c637b6d4885c656c85b8a0e9f7b3`)
 
 ### `lecrim-1882`
 
@@ -899,10 +874,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036
 - **Publicació**: 1882-09-17
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `c65f5e92bd278f527926bfef44eed8fab263de9d24690d6689eef2cd29a29f4c`)
 
 ### `lo-6-1984-habeas`
 
@@ -911,10 +885,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/1984/05/24/6/con
 - **Publicació**: 1984-05-26
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `b6d285e576c5a484e76f472921170795a2dc01afef8601a6be480b3e44d142cf`)
 
 ### `rdleg-6-2015-ltsv`
 
@@ -923,10 +896,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret-legislatiu
 - **URL**: https://www.boe.es/eli/es/rdlg/2015/10/30/6/con
 - **Publicació**: 2015-10-31
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `dc46ae73a46469ce118f986ebd7707d7af0d800a36689f2cbb96e37c752d6bb4`)
 
 ### `rd-1428-2003-rgc`
 
@@ -935,10 +907,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret
 - **URL**: https://www.boe.es/eli/es/rd/2003/11/21/1428/con
 - **Publicació**: 2003-12-23
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `c912ee494e6061027f3ae8a2a2a9e2afaa2a7c1a8aa5480ca007f9503df6fb17`)
 
 ### `rd-818-2009-rgcond`
 
@@ -947,10 +918,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret
 - **URL**: https://www.boe.es/eli/es/rd/2009/05/08/818/con
 - **Publicació**: 2009-06-08
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `9138c10c43d96d707c37d1796739556e4779dbf66699eecd496f98e0d42402e5`)
 
 ### `rd-2822-1998-rgv`
 
@@ -959,10 +929,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret
 - **URL**: https://www.boe.es/eli/es/rd/1998/12/23/2822/con
 - **Publicació**: 1999-01-26
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `5b057269e2f49d619c41ea0191fe44daf034c3984418c8cc41a3e2f9aac2a0b5`)
 
 ### `llei-50-1999-app`
 
@@ -971,10 +940,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/1999/12/23/50/con
 - **Publicació**: 1999-12-24
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `c11a57159c24b8f8901f9d185c447f697690eedea77a326bfdd19a9548e67c4c`)
 
 ### `rd-287-2002-app`
 
@@ -983,10 +951,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: reial-decret
 - **URL**: https://www.boe.es/eli/es/rd/2002/03/22/287/con
 - **Publicació**: 2002-03-27
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `6d517b60cb5c49c5c77ac2971171db683b488865822e66c6556c75eb2c0cfbff`)
 
 ### `llei-27-2003-ordre-proteccio`
 
@@ -995,10 +962,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/2003/07/31/27/con
 - **Publicació**: 2003-08-01
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `1a86ba339f99a170fd10ddaa8ac39277c4082b61be4dc616ace1a0cb229c21b5`)
 
 ### `lo-3-2007-igualtat`
 
@@ -1007,10 +973,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2007/03/22/3/con
 - **Publicació**: 2007-03-23
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `aab1e0d9c3c4bf358ffc7e04a5c60d3606256d34e14f3839e896a886dc020465`)
 
 ### `lo-5-2000-menors`
 
@@ -1019,10 +984,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2000/01/12/5/con
 - **Publicació**: 2000-01-13
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `2f591ac24233298b9035527f61e24c9061970ff7fd90895089456c778f0c1245`)
 
 ### `lo-7-2021-dades-policials`
 
@@ -1031,10 +995,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei-organica
 - **URL**: https://www.boe.es/eli/es/lo/2021/05/26/7/con
 - **Publicació**: 2021-05-27
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `dc57f09b46811ddfed2403969502a9e910db946ec64d249d5a3b8fd6511ef154`)
 - **Notes**: Transposa la Directiva (UE) 2016/680. És el règim aplicable als tractaments amb finalitats policials.
 
 ### `llei-7-2023-benestar-animal`
@@ -1044,10 +1007,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://www.boe.es/eli/es/l/2023/03/28/7/con
 - **Publicació**: 2023-03-29
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `23147891ce17c77f65f681b4b30d0ade82fae985dd4b0e82a747cc83d2353776`)
 - **Notes**: Norma estatal posterior que afecta el règim de tinença d'animals de companyia. Cal contrastar-la amb la Llei 50/1999 i amb la normativa catalana.
 
 ### `es-bono-cultural-2026`
@@ -1119,10 +1081,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: tractat
 - **URL**: https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:12012P/TXT
 - **Publicació**: 2012-10-26
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `45c341f8d1d2b2599fcdca6000ae3accb1e900dc5db2b1fa685ced9c7b098c1b`)
 
 ### `rgpd-2016-679`
 
@@ -1131,10 +1092,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: llei
 - **URL**: https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:32016R0679
 - **Publicació**: 2016-05-04
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `a2fa3289de2f124c92748a181ad1499411b24ee3d26c74bd12781afa43cfa481`)
 
 ### `eu-presidencia-irlanda-2026`
 
@@ -1157,10 +1117,9 @@ Generat el 2026-08-24 · 98 fonts registrades.
 - **Tipus**: tractat
 - **URL**: https://www.un.org/es/about-us/universal-declaration-of-human-rights
 - **Publicació**: 1948-12-10
-- **Consulta**: 2026-08-23
+- **Consulta**: 2026-08-24
 - **Vigència**: vigent
-- **Còpia local**: pending-download
-- **Nota de descàrrega**: No descarregada: la política d’eixida de xarxa de l’entorn de construcció va denegar la connexió (CONNECT 403) a aquest amfitrió el 2026-08-23. Executeu `npm run sources:download` des d’una xarxa amb accés.
+- **Còpia local**: downloaded (SHA-256 `dac93023f48e98494a36f04caf33965ccfcf266c2194add7e5dc95ae11cb153a`)
 
 ### `eurovision-2026`
 

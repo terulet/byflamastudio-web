@@ -105,12 +105,32 @@ out('| Estat | Referències |')
 out('| --- | --- |')
 for (const [state, n] of [...refStates].sort()) out(`| ${state} | ${n} |`)
 out()
+const pendingRefs = [
+  ...questions.flatMap((q) => q.references.map((r) => ({ consumer: q.questionId, r }))),
+  ...lessons.flatMap((l) => l.references.map((r) => ({ consumer: l.lessonId, r }))),
+].filter((x) => x.r.reviewStatus === 'pending-source-verification')
 out(
-  '`pending-source-verification` vol dir que la referència apunta a una norma real i concreta, ' +
-  'però que encara no s’ha contrastat automàticament contra la còpia local del text consolidat. ' +
-  'Passarà a `verified` quan `npm run sources:download` i la validació s’executin amb accés a la xarxa.',
+  '`verified` vol dir que algú ha obert la còpia local del document i hi ha trobat la proposició ' +
+  'al lloc que diu el localitzador. Tenir el fitxer no verifica res per si sol.',
 )
 out()
+if (pendingSources.length === 0 && pendingRefs.length > 0) {
+  const bySource = new Map<string, number>()
+  for (const x of pendingRefs) bySource.set(x.r.sourceId, (bySource.get(x.r.sourceId) ?? 0) + 1)
+  out(
+    `Totes les fonts tenen còpia local, i tot i així queden **${pendingRefs.length} referències** en ` +
+    '`pending-source-verification`. No és un tràmit pendent: cada una té un motiu concret —o la ' +
+    'descàrrega no porta el text del document, o el document no diu el que la referència afirma—. ' +
+    'El motiu de cada una és a `content/municipalities/roses/adopcio-normativa-2026-08-24.json`.',
+  )
+  out()
+  out('| Font | Referències pendents |')
+  out('| --- | --- |')
+  for (const [sourceId, n] of [...bySource].sort((a, b) => b[1] - a[1])) {
+    out(`| \`${sourceId}\` | ${n} |`)
+  }
+  out()
+}
 
 /* ---------------- Exàmens oficials ---------------- */
 
@@ -207,6 +227,14 @@ if (pendingSources.length > 0) {
   todo.push(
     `Descarregar les ${pendingSources.length} fonts pendents i tornar a validar el contingut per passar ` +
     'les referències a `verified`.',
+  )
+}
+const brokenDownloads = sources.filter((s) => s.fetchStatus === 'downloaded' && s.fetchNote)
+if (brokenDownloads.length > 0) {
+  todo.push(
+    `Tornar a capturar ${brokenDownloads.length} pàgines web la còpia de les quals només porta el menú ` +
+    `(${brokenDownloads.map((s) => `\`${s.sourceId}\``).join(', ')}): el cos es carrega per JavaScript. ` +
+    'Cal una instantània de text de les pàgines concretes, com es va fer amb el paquet d’actualitat.',
   )
 }
 if (p0Pending.length > 0) {
