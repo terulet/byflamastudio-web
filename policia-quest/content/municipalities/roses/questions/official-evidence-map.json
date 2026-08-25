@@ -1,0 +1,1797 @@
+{
+  "_note": [
+    "Matriu probatòria de les 189 preguntes d'examen oficial: què en sabem i què",
+    "no, pregunta a pregunta. Revisada obrint el document i buscant-hi la",
+    "proposició, no per paraules clau.",
+    "",
+    "La plantilla del tribunal no es toca mai: aquest fitxer no la corregeix, la",
+    "situa. Hi ha tres coses que sovint es confonen i que aquí van separades:",
+    "  · que la pregunta estigui assignada a un tema,",
+    "  · que aquell tema tingui alguna font verificada,",
+    "  · que aquella font demostri la resposta concreta d'aquesta pregunta.",
+    "",
+    "Estats (vegeu OfficialEvidenceStatus a content/schemas):",
+    "  supported-current                        la plantilla quadra amb la norma i segueix bona avui.",
+    "  supported-at-exam-now-superseded         era bona el dia de l'examen; una reforma posterior la va canviar.",
+    "  official-key-conflicts-with-law-at-exam  la plantilla no quadra amb la norma que ja regia aquell dia.",
+    "  partially-supported                      la font en sosté una part.",
+    "  pending-evidence                         no hi ha prou evidència; «missing» diu què falta.",
+    "  historical-current-affairs               actualitat vàlida només el dia de l'examen.",
+    "  general-knowledge                        cultura general no jurídica.",
+    "  out-of-syllabus                          cap dels 40 temes la cobreix.",
+    "",
+    "La resta de dades de cada pregunta —convocatòria, data, secció, número",
+    "original, tema, clau oficial— viuen al banc i **no** es dupliquen aquí, perquè",
+    "duplicar-les és crear una divergència. `npm run content:matrix` les uneix i",
+    "escriu artifacts/matriu-oficials.{json,md}.",
+    "",
+    "tests/unit/matriu-oficials.test.ts comprova que hi són les 189, que cap clau",
+    "ni cap enunciat oficial ha canviat, i que el motor de vigència tracta cada",
+    "estat com toca."
+  ],
+  "reviewedOn": "2026-08-25",
+  "totals": {
+    "general-knowledge": 33,
+    "historical-current-affairs": 28,
+    "official-key-conflicts-with-law-at-exam": 2,
+    "out-of-syllabus": 2,
+    "pending-evidence": 8,
+    "supported-current": 116
+  },
+  "decisions": {
+    "q-of-roses-2025-interins-cg-001": {
+      "status": "general-knowledge",
+      "why": "matemàtiques de cultura general; cap tema del temari (percentatges)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-002": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (llacs de Covadonga)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-003": {
+      "status": "general-knowledge",
+      "why": "llengua de cultura general; cap tema del temari (accentuació)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-004": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (comarques i capitals)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-005": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (capitals d’Europa)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-006": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (bandera de Croàcia)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-007": {
+      "status": "general-knowledge",
+      "why": "art i cultura generals; cap tema del temari (música clàssica)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-008": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (comunitats autònomes limítrofes)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-009": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (el Kilimanjaro)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-010": {
+      "status": "general-knowledge",
+      "why": "art i cultura generals; cap tema del temari (Goya)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-011": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (succés escolar)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-012": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (premi Planeta 2024)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-013": {
+      "status": "historical-current-affairs",
+      "why": "El nom de qui ocupa la conselleria és un fet del dia de l’examen, no una proposició jurídica: cap font adoptada demostra qui hi és avui. Es conserva com a material històric de l’examen, amb la seva data.",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-014": {
+      "status": "general-knowledge",
+      "why": "història de cultura general; cap tema del temari (fundació de Microsoft)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-015": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (presidència de Rússia)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-016": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (ministeri d’Hisenda)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-017": {
+      "status": "historical-current-affairs",
+      "why": "El nom de qui ocupa el càrrec és un fet del dia de l’examen, no una proposició permanent: cap font adoptada demostra qui hi és avui. Es conserva com a material històric de l’examen, amb la seva data.",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-018": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (xarxes socials)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-019": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (Hezbol·là)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-020": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (Òscars 2025)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cg-021": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (capital d’Armènia)",
+      "citations": []
+    },
+    "q-of-roses-2025-interins-cp-001": {
+      "status": "supported-current",
+      "why": "Art. 9.3 CE, literal: l’opció c) reprodueix la llista sencera sense alterar-ne cap terme.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 9.3",
+          "quote": "La Constitución garantiza el principio de legalidad, la jerarquía normativa, la publicidad de las normas, la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-002": {
+      "status": "supported-current",
+      "why": "L’art. 17.1 CE diu que ningú pot ser privat de llibertat «sino con la observancia de lo establecido en este artículo y en los casos y en la forma previstos en la ley»: l’opció b), que ho fa absolut, és la falsa. Les altres tres són els apartats 1 i 2.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 17.1 i 17.2",
+          "quote": "1. Toda persona tiene derecho a la libertad y a la seguridad. Nadie puede ser privado de su libertad, sino con la observancia de lo establecido en este artículo y en los casos y en la forma previstos en la ley. 2. La detención preventiva no podrá durar más del tiempo estrictamente necesario… y, en todo caso, en el plazo máximo de setenta y dos horas"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-003": {
+      "status": "supported-current",
+      "why": "Art. 33.1 EAC, literal.",
+      "citations": [
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 33.1",
+          "quote": "En les relacions amb les institucions, les organitzacions i les administracions públiques a Catalunya, totes les persones tenen dret a utilitzar la llengua oficial que elegeixin."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-004": {
+      "status": "supported-current",
+      "why": "Les opcions a), b) i c) són literalment les lletres a), b) i c) de l’art. 164.1 EAC. La d) no és competència de la Generalitat sinó dels governs locals: és l’art. 84.2.e.",
+      "citations": [
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 164.1",
+          "quote": "a) La planificació i la regulació del sistema de seguretat pública de Catalunya i l’ordenació de les policies locals. b) La creació i l’organització de la Policia de la Generalitat - Mossos d’Esquadra. c) El control i la vigilància del trànsit."
+        },
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 84.2.e",
+          "quote": "La regulació de les condicions de seguretat en les activitats organitzades en espais públics i en locals de concurrència pública."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-005": {
+      "status": "supported-current",
+      "why": "Art. 11 LBRL: el municipi «tiene personalidad jurídica y plena capacidad», o sigui que la b) és la falsa. Les altres tres surten del mateix article i de l’art. 141.1 CE.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 11.1 i 11.2",
+          "quote": "1. El Municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. 2. Son elementos del Municipio el territorio, la población y la organización."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-006": {
+      "status": "supported-current",
+      "why": "Art. 22.2.d LBRL: aprovar el reglament orgànic i les ordenances correspon al Ple, i és competència indelegable.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 22.2.d",
+          "quote": "La aprobación del reglamento orgánico y de las ordenanzas."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-007": {
+      "status": "supported-current",
+      "why": "Art. 22.2.i LBRL: aprovar la plantilla i la relació de llocs de treball correspon al Ple.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 22.2.i",
+          "quote": "La aprobación de la plantilla de personal y de la relación de puestos de trabajo"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-008": {
+      "status": "supported-current",
+      "why": "Art. 159.3 CE, literal.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.3",
+          "quote": "Los miembros del Tribunal Constitucional serán designados por un período de nueve años"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-009": {
+      "status": "supported-current",
+      "why": "El codi de conducta és el capítol VI del títol III del TREBEP (arts. 52 a 54).",
+      "citations": [
+        {
+          "sourceId": "rdleg-5-2015-trebep",
+          "locator": "art. 52",
+          "quote": "…que inspiran el Código de Conducta de los empleados públicos configurado por los principios éticos y de conducta regulados en los artículos siguientes."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-010": {
+      "status": "supported-current",
+      "why": "L’opció b) descriu el règim disciplinari, no el d’incompatibilitats: la Llei 53/1984 no exigeix cap responsabilitat per infraccions, sinó que limita l’exercici d’activitats.",
+      "citations": [
+        {
+          "sourceId": "llei-53-1984-incompat",
+          "locator": "art. 1.1",
+          "quote": "El personal comprendido en el ámbito de aplicación de esta Ley no podrá compatibilizar sus actividades con el desempeño, por sí o mediante sustitución, de un segundo puesto de trabajo, cargo o actividad en el sector público"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-011": {
+      "status": "supported-current",
+      "why": "Art. 48.1.b de la Llei 16/1991: falta molt greu.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 48.1.b",
+          "quote": "Tota actuació que signifiqui discriminació per raó de raça, sexe, orientació sexual, religió, llengua, opinió, lloc de naixement, veïnatge o qualsevol altra condició o circumstància personal o social."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-012": {
+      "status": "supported-current",
+      "why": "L’art. 2.1 TRLRHL enumera els recursos i els ingressos de la Seguretat Social no hi són; les altres tres opcions són les lletres a), b) i c).",
+      "citations": [
+        {
+          "sourceId": "rdleg-2-2004-trlrhl",
+          "locator": "art. 2.1",
+          "quote": "a) Los ingresos procedentes de su patrimonio y demás de derecho privado. b) Los tributos propios clasificados en tasas, contribuciones especiales e impuestos… c) Las participaciones en los tributos del Estado y de las comunidades autónomas."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-013": {
+      "status": "supported-current",
+      "why": "Mateix fonament: el número de la llei estatal del procediment administratiu comú és el 39/2015.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "títol",
+          "quote": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-014": {
+      "status": "supported-current",
+      "why": "Mateix art. 35.1: les tres primeres opcions són les lletres a), c) i h); una cessió d’ús temporal de la via pública no hi encaixa.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 35.1",
+          "quote": "a) Los actos que limiten derechos subjetivos o intereses legítimos… c) Los actos que se separen del criterio seguido en actuaciones precedentes o del dictamen de órganos consultivos… h) Las propuestas de resolución en los procedimientos de carácter sancionador"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-015": {
+      "status": "supported-current",
+      "why": "Mateix art. 5.3.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 5.3",
+          "quote": "Para los actos y gestiones de mero trámite se presumirá aquella representación."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-016": {
+      "status": "supported-current",
+      "why": "Art. 21.3: si la norma reguladora no fixa termini màxim, és de tres mesos.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 21.3",
+          "quote": "Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de tres meses."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-017": {
+      "status": "supported-current",
+      "why": "El títol IV de la Llei 39/2015 té els capítols de garanties, iniciació, ordenació, instrucció i finalització. «Seguiment» no és cap fase.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "títol IV, capítols II a V",
+          "quote": "capítulo II. Iniciación del procedimiento… capítulo III. Ordenación… capítulo IV. Instrucción del procedimiento… capítulo V. Finalización del procedimiento"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-018": {
+      "status": "supported-current",
+      "why": "Art. 100.1: els mitjans d’execució forçosa són quatre i els requeriments i ordres d’actuació no hi són.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 100.1",
+          "quote": "a) Apremio sobre el patrimonio. b) Ejecución subsidiaria. c) Multa coercitiva. d) Compulsión sobre las personas."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-019": {
+      "status": "supported-current",
+      "why": "Art. 20.1 de la Llei 19/2013: un mes.",
+      "citations": [
+        {
+          "sourceId": "llei-19-2013-transp",
+          "locator": "art. 20.1",
+          "quote": "en el plazo máximo de un mes desde la recepción de la solicitud por el órgano competente para resolver"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-020": {
+      "status": "pending-evidence",
+      "why": "La còpia local de ciberseguretat.gencat.cat és un esquelet de navegació sense el cos de la pàgina: cap font adoptada demostra ni desmenteix aquesta resposta.",
+      "citations": [],
+      "missing": "Una instantània de text de les pàgines de l’Agència de Ciberseguretat de Catalunya (funcions i objectius), capturada amb navegador renderitzat."
+    },
+    "q-of-roses-2025-interins-cp-021": {
+      "status": "supported-current",
+      "why": "Art. 380.1 CP, literal.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 380.1",
+          "quote": "será castigado con las penas de prisión de seis meses a dos años y privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a uno y hasta seis años"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-022": {
+      "status": "pending-evidence",
+      "why": "La còpia local de www.roses.cat és un esquelet de navegació sense el cos de la pàgina: cap font adoptada ho demostra.",
+      "citations": [],
+      "missing": "Instantània de text de les pàgines de www.roses.cat (equipaments i serveis municipals), capturada amb navegador renderitzat."
+    },
+    "q-of-roses-2025-interins-cp-023": {
+      "status": "official-key-conflicts-with-law-at-exam",
+      "why": "La pregunta demana quina NO és competència del Consell de Política de Seguretat segons l’art. 48. Les opcions a), b) i **d)** hi són totes tres, literalment, a l’art. 48.2. La que no hi és és la **c)**: proposar programes de formació i perfeccionament és de l’art. 49.1, i correspon al Comitè d’Experts, no al Consell. La LO 2/1986 no ha modificat aquests dos articles des de 1986, o sigui que la redacció vigent el dia de l’examen ja era aquesta.",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 48.2",
+          "quote": "El Consejo de Política de Seguridad ejercerá las siguientes competencias: – Aprobar los planes de coordinación en materia de seguridad y de infraestructura policial. – Informar las plantillas de los Cuerpos de Policía de las Comunidades Autónomas y sus modificaciones… – Aprobar directivas y recomendaciones de carácter general."
+        },
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 49.1",
+          "quote": "Dentro del Consejo de Política de Seguridad funcionará un Comité de Expertos… y con carácter específico: – Elaborar y proponer fórmulas de coordinación. – Preparar acuerdos de cooperación. – Proponer programas de formación y perfeccionamiento de las Policías. – Elaborar planes de actuación conjunta."
+        }
+      ],
+      "lawAtExam": "Arts. 48.2 i 49.1 de la LO 2/1986, en la redacció original de 1986, vigent el 16-04-2025.",
+      "lawToday": "La mateixa.",
+      "currentLawAnswer": "c"
+    },
+    "q-of-roses-2025-interins-cp-024": {
+      "status": "supported-current",
+      "why": "Art. 4.4.f de la Llei 4/2003, literal. El comandament immediat del cos no és de l’alcalde (que en té el **superior**, lletra d), i les altres dues opcions són funcions del conseller (art. 4.3).",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 4.4.d i 4.4.f",
+          "quote": "d) Exercir el comandament superior de la policia local… f) Informar el Ple de l’ajuntament sobre el Pla local de seguretat, aprovat per la Junta Local de Seguretat."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-025": {
+      "status": "supported-current",
+      "why": "Art. 9.4 de la Llei 4/2003: les associacions i entitats veïnals. Les altres tres opcions són vocals permanents de l’art. 9.2.",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 9.4",
+          "quote": "Poden ésser també convidats a participar en la junta local de seguretat, amb veu però sense vot, les associacions i les entitats veïnals i ciutadanes del municipi, en el cas que puguin ésser afectades pels assumptes a tractar."
+        },
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 9.2",
+          "quote": "La Junta Local de Seguretat és integrada per l’alcalde o alcaldessa, que la presideix… b) El regidor o regidora delegat en matèria de seguretat ciutadana. c) El cap o la cap de la comissaria de la policia de la Generalitat-mossos d’esquadra… d) El cap o la cap de la policia local"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-026": {
+      "status": "supported-current",
+      "why": "Art. 25.3 de la Llei 16/1991, literal: superintendent només en municipis de més de dos-cents mil habitants.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 25.3",
+          "quote": "La categoria de superintendent només es pot crear en els municipis que tenen més de dos-cents mil habitants"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-027": {
+      "status": "supported-current",
+      "why": "És l’art. 36.10 (infracció greu) i l’art. 39.1 posa les greus a la forquilla de 601 a 30.000 €.",
+      "citations": [
+        {
+          "sourceId": "lo-4-2015-psc",
+          "locator": "art. 36.10",
+          "quote": "Son infracciones graves: … 10. Portar, exhibir o usar armas prohibidas, así como portar, exhibir o usar armas de modo negligente, temerario o intimidatorio, o fuera de los lugares habilitados para su uso"
+        },
+        {
+          "sourceId": "lo-4-2015-psc",
+          "locator": "art. 39.1",
+          "quote": "las graves, con multa de 601 a 30.000 euros"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-028": {
+      "status": "supported-current",
+      "why": "Art. 235.1.1r CP: el valor artístic, històric, cultural o científic és la primera circumstància que puja el furt a un a tres anys. L’opció c) inverteix l’art. 235.1.2n (cal que **es causi** desproveïment) i la d) és l’agreujament de l’art. 234.3, no del 235.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 235.1.1r",
+          "quote": "El hurto será castigado con la pena de prisión de uno a tres años: 1.º Cuando se sustraigan cosas de valor artístico, histórico, cultural o científico."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-029": {
+      "status": "pending-evidence",
+      "why": "La Llei orgànica 6/1985 del poder judicial no és entre les 98 fonts del manifest, i cap altra font adoptada organitza els òrgans jurisdiccionals.",
+      "citations": [],
+      "missing": "Text consolidat de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (arts. 65 i 82 i següents)."
+    },
+    "q-of-roses-2025-interins-cp-030": {
+      "status": "supported-current",
+      "why": "Art. 379.2 CP.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 379.2",
+          "quote": "el que condujere un vehículo de motor o ciclomotor bajo la influencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o de bebidas alcohólicas"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-031": {
+      "status": "supported-current",
+      "why": "Art. 33.4.a CP: la privació del dret a conduir de tres mesos a un any és pena lleu. Les altres tres opcions són greus (33.2.b) o menys greus (33.3.a i 33.3.h).",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 33.4.a",
+          "quote": "Son penas leves: a) La privación del derecho a conducir vehículos a motor y ciclomotores de tres meses a un año."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-032": {
+      "status": "supported-current",
+      "why": "Taula de l’art. 4.2, fila B: amb tres anys d’antiguitat el permís B habilita per a les motocicletes del permís A1 dins el territori nacional.",
+      "citations": [
+        {
+          "sourceId": "rd-818-2009-rgcond",
+          "locator": "art. 4.2, fila B",
+          "quote": "Se podrán conducir dentro del territorio nacional con el permiso de la clase B, con una antigüedad superior a tres años, las motocicletas cuya conducción autoriza el permiso de la clase A1"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-033": {
+      "status": "supported-current",
+      "why": "Les opcions a), c) i d) són els tres supòsits de l’art. 384 CP. La b) no ho és: l’art. 379.2 condemna en tot cas per damunt de 0,60 mg/l, i per sota només si es condueix **sota la influència**, cosa que l’opció no diu.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 384",
+          "quote": "El que condujere un vehículo de motor o ciclomotor en los casos de pérdida de vigencia del permiso o licencia por pérdida total de los puntos… tras haber sido privado cautelar o definitivamente del permiso o licencia por decisión judicial y al que condujere un vehículo de motor o ciclomotor sin haber obtenido nunca permiso o licencia"
+        },
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 379.2",
+          "quote": "En todo caso será condenado con dichas penas el que condujere con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-034": {
+      "status": "supported-current",
+      "why": "Art. 2.1 de la Llei 10/1999, literal: «en cap cas no poden ésser conduïts per menors de setze anys».",
+      "citations": [
+        {
+          "sourceId": "llei-10-1999-gossos-cat",
+          "locator": "art. 2.1",
+          "quote": "els gossos a què fa referència l’article 1 han d’anar lligats i proveïts del corresponent morrió, i en cap cas no poden ésser conduïts per menors de setze anys"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-035": {
+      "status": "supported-current",
+      "why": "És justament el text que va introduir la modificació de 2021 a l’art. 46.2, vigent el dia de l’examen i avui.",
+      "citations": [
+        {
+          "sourceId": "roses-ordenanca-circulacio-mod-2021",
+          "locator": "art. 46.2 (redacció de 2021)",
+          "quote": "Ha de dir: 2. Els únics vehicles autoritzats per circular pel carril bici són els cicles, les bicicletes i els vehicles de mobilitat personal."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-036": {
+      "status": "official-key-conflicts-with-law-at-exam",
+      "why": "La plantilla (greu, 750 €) és la qualificació del text de 2019. La modificació aprovada el 24-02-2021 i publicada al BOP de Girona núm. 54 de 19-03-2021 va rebaixar l’annex de l’art. 11.2 a lleu, 500 €, i va entrar en vigor quinze dies hàbils després: quatre anys abans de l’examen del 16-04-2025. Cap de les quatre opcions diu «lleu, 500 €», o sigui que sota la norma vigent aquell dia la pregunta no tenia resposta correcta.",
+      "citations": [
+        {
+          "sourceId": "roses-ordenanca-convivencia",
+          "locator": "annex, fila 11.2 (text de 2019)",
+          "quote": "11.2 Col·laborar en l’espai públic amb els venedors ambulants no autoritzats. G 750"
+        },
+        {
+          "sourceId": "roses-ordenanca-convivencia-mod-2021",
+          "locator": "modificació cinquena, punt 2",
+          "quote": "Ha de dir: … 11.2 Col·laborar en l’espai públic amb els venedors ambulants no autoritzats amb accions com ara facilitar el gènere o el seu transport, o vigilar i alertar sobre la presència dels agents de l'autoritat. LL 500"
+        },
+        {
+          "sourceId": "roses-ordenanca-convivencia-mod-2021",
+          "locator": "edicte d’aprovació definitiva",
+          "quote": "es publica el text íntegre de la modificació de l’Ordenança i entrarà en vigor transcorreguts 15 dies hàbils, a comptar des de l’endemà de la publicació en el Butlletí Oficial de la Província de Girona"
+        }
+      ],
+      "lawAtExam": "Annex de l’ordenança, fila 11.2, en la redacció de la modificació de 2021: infracció lleu, 500 €.",
+      "lawToday": "La mateixa: infracció lleu, 500 €.",
+      "changedOn": "2021-03-19",
+      "currentLawAnswer": "cap"
+    },
+    "q-of-roses-2025-interins-cp-037": {
+      "status": "supported-current",
+      "why": "Art. 17.2 de la LO 5/2000, literal.",
+      "citations": [
+        {
+          "sourceId": "lo-5-2000-menors",
+          "locator": "art. 17.2",
+          "quote": "El menor detenido tendrá derecho a la entrevista reservada con su abogado con anterioridad y al término de la práctica de la diligencia de toma de declaración."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-038": {
+      "status": "supported-current",
+      "why": "Art. 3r de la LO 6/1984: hi consten el privat de llibertat (a), el Ministeri Fiscal (b) i el Defensor del Poble (c).",
+      "citations": [
+        {
+          "sourceId": "lo-6-1984-habeas",
+          "locator": "art. 3r",
+          "quote": "Podrán instar el procedimiento de “Habeas Corpus”… a) El privado de libertad… b) El Ministerio Fiscal. c) El Defensor del Pueblo. d) El abogado defensor del privado de libertad."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-039": {
+      "status": "supported-current",
+      "why": "L’art. 28.4 de la Llei 4/2003 llista les tres funcions compartides i la resolució amistosa de conflictes privats n’és la b). Les altres tres opcions són funcions **pròpies** de la policia local o dels mossos (art. 28.2 i 28.3).",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 28.4",
+          "quote": "Són funcions compartides entre la policia de la Generalitat-mossos d’esquadra i les policies locals: a) Les de policia de proximitat, i l’auxili i l’assistència als ciutadans. b) La intervenció en la resolució amistosa de conflictes privats, si hi són requerides. c) La vigilància d’espais públics."
+        },
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 28.3",
+          "quote": "Són funcions pròpies de les policies locals: … b) Les de policia de trànsit urbà… e) Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-040": {
+      "status": "supported-current",
+      "why": "Art. 23.3, paràgraf segon: amb armes, artefactes explosius o objectes contundents, es pot dissoldre **sense previ avís**.",
+      "citations": [
+        {
+          "sourceId": "lo-4-2015-psc",
+          "locator": "art. 23.3",
+          "quote": "En caso de que se produzca una alteración de la seguridad ciudadana con armas, artefactos explosivos u objetos contundentes o de cualquier otro modo peligrosos, las Fuerzas y Cuerpos de Seguridad podrán disolver la reunión o manifestación o retirar los vehículos y obstáculos sin necesidad de previo aviso."
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-041": {
+      "status": "supported-current",
+      "why": "Assegurar la coordinació operativa és de la Mesa de Coordinació Operativa (art. 11.3.c), no de la Junta. Les altres tres opcions són les lletres c), g) i a) de l’art. 10.",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 11.3.c",
+          "quote": "La Mesa de Coordinació Operativa té les funcions següents: … c) Assegurar la coordinació operativa de les actuacions dels diversos cossos i serveis de seguretat al municipi"
+        },
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 10",
+          "quote": "a) Analitzar i valorar la situació de la seguretat pública en el municipi… c) Conèixer els plans d’emergències i els plans o les mesures de seguretat viària… g) Desplegar i executar, si escau, les actuacions establertes en el conveni subscrit"
+        }
+      ]
+    },
+    "q-of-roses-2025-interins-cp-042": {
+      "status": "supported-current",
+      "why": "Art. 10 CP, literal: accions **i omissions**, doloses **o imprudents**.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 10",
+          "quote": "Son delitos las acciones y omisiones dolosas o imprudentes penadas por la ley."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cg-001": {
+      "status": "general-knowledge",
+      "why": "matemàtiques de cultura general; cap tema del temari (potències)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-002": {
+      "status": "general-knowledge",
+      "why": "llengua de cultura general; cap tema del temari (antònims)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-003": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (oceans)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-004": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (presidència del BCE)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-005": {
+      "status": "pending-evidence",
+      "why": "La Constitució fixa el marc del títol VIII però no enumera les comunitats ni les ciutats autònomes: cap font adoptada demostra la xifra.",
+      "citations": [],
+      "missing": "Una font oficial que enumeri les 17 comunitats autònomes i les 2 ciutats autònomes (per exemple, els estatuts vigents o l’INE)."
+    },
+    "q-of-roses-2025-propietat-cg-006": {
+      "status": "pending-evidence",
+      "why": "Cap font adoptada enumera les comarques limítrofes amb l’Alt Empordà.",
+      "citations": [],
+      "missing": "Font oficial de divisió territorial (IDESCAT o el decret vigent de divisió comarcal)."
+    },
+    "q-of-roses-2025-propietat-cg-007": {
+      "status": "general-knowledge",
+      "why": "art i cultura generals; cap tema del temari (Van Gogh)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-008": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (capitals d’Europa)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-009": {
+      "status": "general-knowledge",
+      "why": "art i cultura generals; cap tema del temari (literatura catalana)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-010": {
+      "status": "general-knowledge",
+      "why": "matemàtiques de cultura general; cap tema del temari (temperatures)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-011": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (presidència de la Diputació de Girona)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-012": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (música)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-013": {
+      "status": "historical-current-affairs",
+      "why": "El nom de qui ocupa la conselleria és un fet del dia de l’examen, no una proposició jurídica: cap font adoptada demostra qui hi és avui. Es conserva com a material històric de l’examen, amb la seva data.",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-014": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (procés judicial a un expresident)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-015": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (premis Goya 2025)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-016": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (enquestes del CEO)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-017": {
+      "status": "historical-current-affairs",
+      "why": "El nom de qui ocupa el càrrec és un fet del dia de l’examen, no una proposició permanent: cap font adoptada demostra qui hi és avui. Es conserva com a material històric de l’examen, amb la seva data.",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-018": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (fiscalia general de l’Estat)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-019": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (Copa Davis 2025)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-020": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (Òscars 2025)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cg-021": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (capital de Costa d’Ivori)",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cp-001": {
+      "status": "supported-current",
+      "why": "L’art. 23.1 reconeix el dret als ciutadans i l’art. 13.2 l’estén als estrangers per a les eleccions municipals quan ho estableix un tractat o una llei.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 23.1",
+          "quote": "Los ciudadanos tienen el derecho a participar en los asuntos públicos"
+        },
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 13.2",
+          "quote": "salvo lo que, atendiendo a criterios de reciprocidad, pueda establecerse por tratado o ley para el derecho de sufragio activo y pasivo en las elecciones municipales"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-002": {
+      "status": "supported-current",
+      "why": "L’habitatge digne és l’art. 47, dins el capítol III (principis rectors), no la secció 1a del capítol II on són els drets fonamentals. Les altres tres opcions sí que hi són (arts. 17, 19 i 20.1.a).",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 47",
+          "quote": "Todos los españoles tienen derecho a disfrutar de una vivienda digna y adecuada."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-003": {
+      "status": "supported-current",
+      "why": "L’art. 32 EAC diu que els actes jurídics en qualsevol de les dues llengües oficials tenen validesa i eficàcia plenes, **sense** l’excepció davant dels òrgans judicials que afegeix l’opció b): per això b) és la falsa. Les altres tres reprodueixen els arts. 33.1 i 6.1.",
+      "citations": [
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 32",
+          "quote": "Els actes jurídics fets en qualsevol de les dues llengües oficials tenen, pel que fa a la llengua, validesa i eficàcia plenes."
+        },
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 33.2",
+          "quote": "Totes les persones, en les relacions amb l’Administració de justícia, el Ministeri Fiscal, el notariat i els registres públics, tenen dret a utilitzar la llengua oficial que elegeixin en totes les actuacions judicials, notarials i registrals"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-004": {
+      "status": "supported-current",
+      "why": "Les tres primeres opcions són literalment les lletres e) i f) de l’art. 84.2 EAC, o sigui que la bona és «totes».",
+      "citations": [
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 84.2.e i 84.2.f",
+          "quote": "e) La regulació de les condicions de seguretat en les activitats organitzades en espais públics i en locals de concurrència pública. La coordinació mitjançant la Junta de Seguretat dels diversos cossos i forces presents al municipi. f) La protecció civil i la prevenció d’incendis."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-005": {
+      "status": "supported-current",
+      "why": "Art. 26.2.c LBRL: als municipis de menys de 20.000 habitants la Diputació provincial coordina la neteja viària.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 26.2.c",
+          "quote": "En los municipios con población inferior a 20.000 habitantes será la Diputación provincial o entidad equivalente la que coordinará la prestación de los siguientes servicios: … c) Limpieza viaria."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-006": {
+      "status": "supported-current",
+      "why": "Art. 49.b LBRL: informació pública i audiència per un termini mínim de trenta dies.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 49.b",
+          "quote": "Información pública y audiencia a los interesados por el plazo mínimo de treinta días para la presentación de reclamaciones y sugerencias."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-007": {
+      "status": "supported-current",
+      "why": "Art. 159.3 CE, literal.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.3",
+          "quote": "Los miembros del Tribunal Constitucional serán designados por un período de nueve años y se renovarán por terceras partes cada tres."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-008": {
+      "status": "supported-current",
+      "why": "Art. 48.l TREBEP, literal.",
+      "citations": [
+        {
+          "sourceId": "rdleg-5-2015-trebep",
+          "locator": "art. 48.l",
+          "quote": "Por matrimonio o registro o constitución formalizada por documento público de pareja de hecho, quince días."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-009": {
+      "status": "supported-current",
+      "why": "Art. 14 de la Llei 53/1984: a l’Administració local la resolució correspon al Ple de la corporació.",
+      "citations": [
+        {
+          "sourceId": "llei-53-1984-incompat",
+          "locator": "art. 14",
+          "quote": "La resolución motivada reconociendo la compatibilidad o declarando la incompatibilidad… corresponde… al Pleno de la Corporación Local"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-010": {
+      "status": "supported-current",
+      "why": "Art. 49.a de la Llei 16/1991: falta greu.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 49.a",
+          "quote": "Són faltes greus: a) La desobediència als superiors en l’exercici de les funcions i l’incompliment de les ordres rebudes."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-011": {
+      "status": "supported-current",
+      "why": "Art. 169.2 TRLRHL: l’aprovació definitiva s’ha de fer abans del 31 de desembre de l’any anterior a l’exercici.",
+      "citations": [
+        {
+          "sourceId": "rdleg-2-2004-trlrhl",
+          "locator": "art. 169.2",
+          "quote": "La aprobación definitiva del presupuesto general por el Pleno de la corporación habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-012": {
+      "status": "supported-current",
+      "why": "La definició de l’opció a) és la de l’art. 10.1 de la Llei 40/2015; la b) descriu la delegació de competències (art. 9).",
+      "citations": [
+        {
+          "sourceId": "llei-40-2015-rjsp",
+          "locator": "art. 10.1",
+          "quote": "Los órganos superiores podrán avocar para sí el conocimiento de uno o varios asuntos cuya resolución corresponda ordinariamente o por delegación a sus órganos administrativos dependientes, cuando circunstancias de índole técnica, económica, social, jurídica o territorial lo hagan conveniente."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-013": {
+      "status": "supported-current",
+      "why": "L’art. 35.1 enumera els actes que s’han de motivar. Hi surten els que **limiten** drets (lletra a), els de recursos (b), les propostes sancionadores (h) i els discrecionals (i); els que **reconeixen** drets subjectius no hi són.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 35.1",
+          "quote": "Serán motivados… a) Los actos que limiten derechos subjetivos o intereses legítimos… h) Las propuestas de resolución en los procedimientos de carácter sancionador… i) Los actos que se dicten en el ejercicio de potestades discrecionales"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-014": {
+      "status": "supported-current",
+      "why": "Art. 5.3: per als actes i gestions de mer tràmit la representació es presumeix.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 5.3",
+          "quote": "Para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos… deberá acreditarse la representación. Para los actos y gestiones de mero trámite se presumirá aquella representación."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-015": {
+      "status": "supported-current",
+      "why": "Art. 25.1.b: en els procediments d’ofici sancionadors o d’intervenció desfavorable, vèncer el termini produeix la caducitat.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 25.1.b",
+          "quote": "En los procedimientos en que la Administración ejercite potestades sancionadoras o, en general, de intervención, susceptibles de producir efectos desfavorables o de gravamen, se producirá la caducidad."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-016": {
+      "status": "supported-current",
+      "why": "L’art. 80 és a la secció 3a («Instrucción del procedimiento») del capítol IV, títol IV.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 80, dins el capítol IV «Instrucción del procedimiento»",
+          "quote": "artículo 80. Emisión de informes."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-017": {
+      "status": "supported-current",
+      "why": "Art. 106.1: la revisió es pot fer «por iniciativa propia o a solicitud de interesado».",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 106.1",
+          "quote": "Las Administraciones Públicas, en cualquier momento, por iniciativa propia o a solicitud de interesado… declararán de oficio la nulidad de los actos administrativos"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-018": {
+      "status": "supported-current",
+      "why": "L’art. 17.2 enumera què ha de constar a la sol·licitud i la motivació no hi és; l’art. 17.3 ho diu expressament.",
+      "citations": [
+        {
+          "sourceId": "llei-19-2013-transp",
+          "locator": "art. 17.2 i 17.3",
+          "quote": "2. La solicitud podrá presentarse por cualquier medio que permita tener constancia de: a) La identidad del solicitante. b) La información que se solicita… 3. El solicitante no está obligado a motivar su solicitud de acceso a la información."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-019": {
+      "status": "pending-evidence",
+      "why": "La còpia local de ciberseguretat.gencat.cat és un esquelet de navegació sense el cos de la pàgina: cap font adoptada demostra ni desmenteix aquesta resposta.",
+      "citations": [],
+      "missing": "Una instantània de text de les pàgines de l’Agència de Ciberseguretat de Catalunya (funcions i objectius), capturada amb navegador renderitzat."
+    },
+    "q-of-roses-2025-propietat-cp-020": {
+      "status": "supported-current",
+      "why": "La lletra c) que cita l’enunciat és dins l’apartat 2 de l’art. 5è, encapçalat «Relaciones con la comunidad».",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 5è.2.c",
+          "quote": "2. Relaciones con la comunidad. Singularmente: … c) En el ejercicio de sus funciones deberán actuar con la decisión necesaria… rigiéndose al hacerlo por los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-021": {
+      "status": "supported-current",
+      "why": "Art. 8è.2 LOFCS, literal.",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 8è.2",
+          "quote": "El cumplimiento de la prisión preventiva y de las penas privativas de libertad por los miembros de las Fuerzas y Cuerpos de Seguridad, se realizarán en establecimientos penitenciarios ordinarios, con separación del resto de detenidos o presos."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-022": {
+      "status": "supported-current",
+      "why": "Art. 3.1 de la Llei 4/2003, literal: les tres lletres.",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 3.1",
+          "quote": "El sistema de seguretat de Catalunya és integrat per: a) Les autoritats de seguretat. b) Els cossos policials i altres serveis, públics o privats, de seguretat. c) Els òrgans de coordinació i participació en matèria de seguretat."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-023": {
+      "status": "supported-current",
+      "why": "Art. 6.1 de la Llei 4/2003, literal: consultiu i de participació, no executiu.",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 6.1",
+          "quote": "El Consell de Seguretat de Catalunya és l’òrgan consultiu i de participació superior a Catalunya en matèria de seguretat"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-024": {
+      "status": "supported-current",
+      "why": "Art. 12.2 de la Llei 16/1991, literal.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 12.2",
+          "quote": "Les funcions assenyalades per l’apartat 1 s’han de complir d’acord amb els principis de cooperació mútua i de col·laboració recíproca amb la resta de forces i cossos de seguretat."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-025": {
+      "status": "supported-current",
+      "why": "Art. 25.3 de la Llei 16/1991: intendent major i intendent en municipis de més de cent mil habitants, i excepcionalment en els de menys si els agents excedeixen de dos-cents cinquanta o de cent respectivament.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 25.3",
+          "quote": "les categories d’intendent major i d’intendent només es poden crear en els municipis que tenen més de cent mil habitants. En els municipis de menys de cent mil habitants es poden crear excepcionalment les categories d’intendent major i d’intendent, si el nombre d’agents hi excedeix de dos-cents cinquanta o de cent, respectivament"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-026": {
+      "status": "supported-current",
+      "why": "Art. 26.2 de la Llei 16/1991, literal. L’alcalde té el comandament superior, no la prefectura del cos.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 26.2",
+          "quote": "És cap del cos el membre de la plantilla de major graduació; en cas d’igualtat, correspon a l’alcalde de fer el nomenament"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-027": {
+      "status": "supported-current",
+      "why": "La manca de col·laboració amb altres forces i cossos és molt greu (art. 48.1); les altres tres opcions són faltes greus de l’art. 49 (lletres e, h i j).",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 48.1",
+          "quote": "Són faltes molt greus: … la manifesta manca de col·laboració amb els altres membres de les forces o cossos de seguretat"
+        },
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 49.e, 49.h i 49.j",
+          "quote": "e) El fet d’originar enfrontaments en el servei… h) La intervenció en un procediment administratiu si hi ha establerts legalment motius d’abstenció. j) El consum de begudes alcohòliques durant el servei i el fet de negar-se a les comprovacions tècniques pertinents."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-028": {
+      "status": "supported-current",
+      "why": "L’art. 20.2 dona la xifra literal i la modificació de 2021 només toca els arts. 19, 46, 46 bis i 49.",
+      "citations": [
+        {
+          "sourceId": "roses-ordenanca-circulacio",
+          "locator": "art. 20.2",
+          "quote": "podran estacionar a les voreres de més de 3´4 metres d’amplada, en una única fila, a una distància mínima d’un metre entre elles"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-029": {
+      "status": "supported-current",
+      "why": "L’art. 41 ho diu literalment i la modificació de 2021 no el toca.",
+      "citations": [
+        {
+          "sourceId": "roses-ordenanca-circulacio",
+          "locator": "art. 41",
+          "quote": "Llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades des de les 10 del vespre fins a les 8 del matí cada dia."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-030": {
+      "status": "supported-current",
+      "why": "Art. 17.4 de la LO 5/2000: el temps estrictament necessari i, en tot cas, un màxim de vint-i-quatre hores.",
+      "citations": [
+        {
+          "sourceId": "lo-5-2000-menors",
+          "locator": "art. 17.4",
+          "quote": "La detención de un menor por funcionarios de policía no podrá durar más tiempo del estrictamente necesario… y, en todo caso, dentro del plazo máximo de veinticuatro horas, el menor detenido deberá ser puesto en libertad o a disposición del Ministerio Fiscal."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-031": {
+      "status": "supported-current",
+      "why": "Art. 18.2 CE: els tres supòsits de l’enunciat són exactament les tres excepcions que permet.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 18.2",
+          "quote": "El domicilio es inviolable. Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-032": {
+      "status": "supported-current",
+      "why": "Art. 379.1 CP, literal: seixanta km/h per damunt en via urbana.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 379.1",
+          "quote": "El que condujere un vehículo de motor o un ciclomotor a velocidad superior en sesenta kilómetros por hora en vía urbana o en ochenta kilómetros por hora en vía interurbana a la permitida reglamentariamente"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-033": {
+      "status": "supported-current",
+      "why": "La discriminació és molt greu (art. 48.1.b). Els danys **greus** al patrimoni i la reincidència en faltes lleus són greus (art. 49.d i 49.m): només els danys **molt greus** són molt greus (art. 48.1.o).",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 48.1.b",
+          "quote": "Tota actuació que signifiqui discriminació per raó de raça, sexe, orientació sexual, religió, llengua, opinió, lloc de naixement, veïnatge o qualsevol altra condició o circumstància personal o social."
+        },
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 49.d i 49.m",
+          "quote": "d) El fet de causar, per negligència o per mala fe, danys greus en el patrimoni i els béns de la corporació. … m) La reincidència en la comissió de faltes lleus."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-034": {
+      "status": "supported-current",
+      "why": "Art. 24.1.b i 24.2.b de la Llei 16/1991: l’inspector és l’escala executiva, grup A, subgrup A2.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 24.1.b i 24.2.b",
+          "quote": "b) Escala executiva, que comprèn la categoria d’inspector… b) A l’escala executiva, el grup A, subgrup A2."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-035": {
+      "status": "supported-current",
+      "why": "Art. 51.2 de la Llei 16/1991, literal, i és l’article que cita l’enunciat.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 51.2",
+          "quote": "Els policies locals que encobreixin les faltes molt greus i greus consumades incorren en una falta d’un grau inferior."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-036": {
+      "status": "supported-current",
+      "why": "Art. 16.2 de la LO 4/2015: sis hores com a màxim.",
+      "citations": [
+        {
+          "sourceId": "lo-4-2015-psc",
+          "locator": "art. 16.2",
+          "quote": "que en ningún caso podrá superar las seis horas"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-037": {
+      "status": "out-of-syllabus",
+      "why": "estafa agreujada (art. 250.1 CP): delicte patrimonial fora de furts i robatoris; cap tema del temari el cobreix",
+      "citations": []
+    },
+    "q-of-roses-2025-propietat-cp-038": {
+      "status": "supported-current",
+      "why": "Art. 519 LECrim, literal.",
+      "citations": [
+        {
+          "sourceId": "lecrim-1882",
+          "locator": "art. 519",
+          "quote": "Todas las diligencias de prisión provisional se sustanciarán en pieza separada."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-039": {
+      "status": "supported-current",
+      "why": "Art. 7è.3 LOFCS, literal.",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 7è.3",
+          "quote": "La Guardia Civil sólo tendrá consideración de fuerza armada en el cumplimiento de las misiones de carácter militar que se le encomienden, de acuerdo con el ordenamiento jurídico."
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-040": {
+      "status": "supported-current",
+      "why": "0,61 mg/l supera el llindar de l’art. 379.2 CP, o sigui que és delicte i es denuncia penalment. La detenció no és automàtica: és una decisió de l’agent segons les circumstàncies, i l’enunciat no en dona cap que la justifiqui.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 379.2",
+          "quote": "En todo caso será condenado con dichas penas el que condujere con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-041": {
+      "status": "supported-current",
+      "why": "Art. 31.2.b, literal.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 31.2.b",
+          "quote": "la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil"
+        }
+      ]
+    },
+    "q-of-roses-2025-propietat-cp-042": {
+      "status": "supported-current",
+      "why": "L’art. 28.4 de la Llei 4/2003 llista les tres funcions compartides i la resolució amistosa de conflictes privats n’és la b). Les altres tres opcions són funcions **pròpies** de la policia local o dels mossos (art. 28.2 i 28.3).",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 28.4",
+          "quote": "Són funcions compartides entre la policia de la Generalitat-mossos d’esquadra i les policies locals: a) Les de policia de proximitat, i l’auxili i l’assistència als ciutadans. b) La intervenció en la resolució amistosa de conflictes privats, si hi són requerides. c) La vigilància d’espais públics."
+        },
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 28.3",
+          "quote": "Són funcions pròpies de les policies locals: … b) Les de policia de trànsit urbà… e) Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cg-001": {
+      "status": "general-knowledge",
+      "why": "matemàtiques de cultura general; cap tema del temari (percentatges)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-002": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (el Mulhacén)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-003": {
+      "status": "general-knowledge",
+      "why": "llengua de cultura general; cap tema del temari (accentuació)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-004": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (comarques i capitals)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-005": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (capitals d’Europa)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-006": {
+      "status": "general-knowledge",
+      "why": "història de cultura general; cap tema del temari (II Guerra Mundial)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-007": {
+      "status": "general-knowledge",
+      "why": "art i cultura generals; cap tema del temari (música clàssica)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-008": {
+      "status": "general-knowledge",
+      "why": "història de cultura general; cap tema del temari (bomba atòmica)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-009": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (la Pica d’Estats)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-010": {
+      "status": "general-knowledge",
+      "why": "art i cultura generals; cap tema del temari (Dalí)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-011": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (succés a la demarcació de Girona, març 2026)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-012": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (premi Planeta 2025)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-013": {
+      "status": "historical-current-affairs",
+      "why": "El nom de qui ocupa la conselleria és un fet del dia de l’examen, no una proposició jurídica: cap font adoptada demostra qui hi és avui. Es conserva com a material històric de l’examen, amb la seva data.",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-014": {
+      "status": "general-knowledge",
+      "why": "història de cultura general; cap tema del temari (fundació d’Amazon)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-015": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (presidència de Veneçuela)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-016": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (ministeri de Defensa)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-017": {
+      "status": "historical-current-affairs",
+      "why": "El nom de qui ocupa el càrrec és un fet del dia de l’examen, no una proposició permanent: cap font adoptada demostra qui hi és avui. Es conserva com a material històric de l’examen, amb la seva data.",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-018": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (esport)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-019": {
+      "status": "general-knowledge",
+      "why": "història de cultura general; cap tema del temari (ETA)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-020": {
+      "status": "historical-current-affairs",
+      "why": "actualitat del moment de l’examen; cap tema del temari (Òscars 2026)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cg-021": {
+      "status": "general-knowledge",
+      "why": "geografia de cultura general; cap tema del temari (capital de Costa d’Ivori)",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cp-001": {
+      "status": "supported-current",
+      "why": "Art. 2 CE, literal.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 2",
+          "quote": "reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-002": {
+      "status": "supported-current",
+      "why": "Art. 16.2 CE, literal. Les altres tres opcions les desmenteixen els apartats 1 i 3 del mateix article.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 16.2",
+          "quote": "Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-003": {
+      "status": "supported-current",
+      "why": "Art. 6.1 EAC, literal.",
+      "citations": [
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 6.1",
+          "quote": "La llengua pròpia de Catalunya és el català."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-004": {
+      "status": "supported-current",
+      "why": "Art. 132.1 EAC, literal: competència exclusiva de la Generalitat.",
+      "citations": [
+        {
+          "sourceId": "lo-6-2006-eac",
+          "locator": "art. 132.1",
+          "quote": "Correspon a la Generalitat la competència exclusiva en matèria de protecció civil"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-005": {
+      "status": "supported-current",
+      "why": "El transport col·lectiu urbà és de l’art. 26.1.d (més de 50.000 habitants); les altres tres són de les lletres a) i c), que sí que arriben a un municipi d’entre 20.000 i 50.000.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 26.1.c i 26.1.d",
+          "quote": "c) En los Municipios con población superior a 20.000 habitantes, además: protección civil… prevención y extinción de incendios… d) En los Municipios con población superior a 50.000 habitantes, además: transporte colectivo urbano de viajeros y medio ambiente urbano."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-006": {
+      "status": "supported-current",
+      "why": "Arts. 70.2 i 65.2 LBRL: les ordenances no entren en vigor fins que ha passat el termini de quinze dies hàbils de l’art. 65.2.",
+      "citations": [
+        {
+          "sourceId": "llei-7-1985-lrbrl",
+          "locator": "art. 70.2 i 65.2",
+          "quote": "no entrarán en vigor hasta que se haya publicado completamente su texto y haya transcurrido el plazo previsto en el artículo 65.2"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-007": {
+      "status": "supported-current",
+      "why": "Art. 159.1 CE, literal.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 159.1",
+          "quote": "El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-008": {
+      "status": "supported-current",
+      "why": "L’art. 52 TREBEP porta per títol «Deberes de los empleados públicos. Código de Conducta» i s’obre dient «Los empleados públicos deberán…»: no distingeix entre funcionaris i laborals.",
+      "citations": [
+        {
+          "sourceId": "rdleg-5-2015-trebep",
+          "locator": "art. 52",
+          "quote": "Deberes de los empleados públicos. Código de Conducta. Los empleados públicos deberán desempeñar con diligencia las tareas que tengan asignadas"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-009": {
+      "status": "supported-current",
+      "why": "És el nom de la mateixa llei i del règim que estableix el seu art. 1.1.",
+      "citations": [
+        {
+          "sourceId": "llei-53-1984-incompat",
+          "locator": "títol i art. 1.1",
+          "quote": "Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas… El personal comprendido en el ámbito de aplicación de esta Ley no podrá compatibilizar sus actividades con el desempeño… de un segundo puesto de trabajo, cargo o actividad en el sector público"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-010": {
+      "status": "supported-current",
+      "why": "L’art. 165.4 TRLRHL diu exactament el contrari de l’opció b): els pressupostos s’aproven **sense** dèficit inicial.",
+      "citations": [
+        {
+          "sourceId": "rdleg-2-2004-trlrhl",
+          "locator": "art. 165.4",
+          "quote": "Cada uno de los presupuestos que se integran en el presupuesto general deberá aprobarse sin déficit inicial."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-011": {
+      "status": "supported-current",
+      "why": "Art. 50.a i 50.b de la Llei 16/1991: totes dues conductes són faltes lleus.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 50.a i 50.b",
+          "quote": "Són faltes lleus: a) La incorrecció envers els superiors, els companys, els subordinats o els ciutadans. b) El retard, la negligència i el descuit en el compliment de les funcions o de les ordres rebudes."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-012": {
+      "status": "supported-current",
+      "why": "És el títol i l’objecte de la mateixa Llei 39/2015; la 40/2015 regula el règim jurídic del sector públic, no el procediment.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "títol i art. 1.1",
+          "quote": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-013": {
+      "status": "supported-current",
+      "why": "Art. 40.2, literal: deu dies des que es dicta l’acte.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 40.2",
+          "quote": "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-014": {
+      "status": "supported-current",
+      "why": "L’art. 4.1 dona les tres primeres opcions com a lletres a), b) i c). La condició de persona interessada no la té qui denuncia pel sol fet de denunciar.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 4.1",
+          "quote": "a) Quienes lo promuevan como titulares de derechos o intereses legítimos individuales o colectivos. b) Los que, sin haber iniciado el procedimiento, tengan derechos que puedan resultar afectados… c) Aquellos cuyos intereses legítimos… puedan resultar afectados por la resolución y se personen en el procedimiento"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-015": {
+      "status": "supported-current",
+      "why": "Art. 21.1, literal: dictar resolució expressa i **notificar-la**.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 21.1",
+          "quote": "La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos cualquiera que sea su forma de iniciación."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-016": {
+      "status": "supported-current",
+      "why": "Art. 69.2, literal: aquesta és la definició de comunicació, no la de declaració responsable.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 69.2",
+          "quote": "se entenderá por comunicación aquel documento mediante el que los interesados ponen en conocimiento de la Administración Pública competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-017": {
+      "status": "supported-current",
+      "why": "Art. 80.2: els informes s’emeten en el termini de deu dies llevat que una disposició en permeti o n’exigeixi un altre.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 80.2",
+          "quote": "Los informes serán emitidos… en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-018": {
+      "status": "supported-current",
+      "why": "És el supòsit típic de l’execució subsidiària: un acte que, per no ser personalíssim, el pot fer l’Administració a costa de l’obligat. Els altres mitjans de l’art. 100.1 no encaixen amb una ordre de netejar un solar.",
+      "citations": [
+        {
+          "sourceId": "llei-39-2015-pac",
+          "locator": "art. 100.1",
+          "quote": "La ejecución forzosa por las Administraciones Públicas se efectuará… por los siguientes medios: a) Apremio sobre el patrimonio. b) Ejecución subsidiaria. c) Multa coercitiva. d) Compulsión sobre las personas."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-019": {
+      "status": "supported-current",
+      "why": "Art. 20.1 de la Llei 19/2013: un mes des de la recepció de la sol·licitud.",
+      "citations": [
+        {
+          "sourceId": "llei-19-2013-transp",
+          "locator": "art. 20.1",
+          "quote": "La resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante y a los terceros afectados que así lo hayan solicitado en el plazo máximo de un mes desde la recepción de la solicitud"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-020": {
+      "status": "supported-current",
+      "why": "L’art. 9.1 RGPD enumera les categories especials i l’adreça no hi és; les altres tres opcions sí (origen ètnic o racial, dades biomètriques i dades genètiques).",
+      "citations": [
+        {
+          "sourceId": "rgpd-2016-679",
+          "locator": "art. 9.1",
+          "quote": "Quedan prohibidos el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas… y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-021": {
+      "status": "supported-current",
+      "why": "Col·locar obstacles a la via és l’art. 385.1a CP; les altres tres opcions són infraccions administratives de la LTSV, no delictes.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 385.1a",
+          "quote": "el que originare un grave riesgo para la circulación de alguna de las siguientes formas: 1.ª Colocando en la vía obstáculos imprevisibles, derramando sustancias deslizantes o inflamables o mutando, sustrayendo o anulando la señalización"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-022": {
+      "status": "supported-current",
+      "why": "Art. 58.1 de la Llei 16/1991, literal: les cinc causes.",
+      "citations": [
+        {
+          "sourceId": "llei-16-1991-policies-locals",
+          "locator": "art. 58.1",
+          "quote": "La responsabilitat disciplinària s’extingeix pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-023": {
+      "status": "supported-current",
+      "why": "Art. 1r LOFCS: l’apartat 1 diu que la seguretat pública és competència exclusiva de l’Estat i els apartats 2 i 3 que comunitats i corporacions locals hi participen. Les opcions a) i c) són totes dues certes.",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 1r",
+          "quote": "1. La Seguridad Pública es competencia exclusiva del Estado… 3. Las Corporaciones Locales participarán en el mantenimiento de la seguridad pública en los términos establecidos en la Ley Reguladora de las Bases de Régimen Local"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-024": {
+      "status": "supported-current",
+      "why": "Art. 39.1 de la LO 4/2015: lleus de 100 a 600 €. Les altres tres opcions canvien les xifres (molt greus fins a 600.000, no 300.000; greus fins a 30.000, no 3.000) o inventen una categoria de «menys greus» que la llei no té.",
+      "citations": [
+        {
+          "sourceId": "lo-4-2015-psc",
+          "locator": "art. 39.1",
+          "quote": "Las infracciones muy graves se sancionarán con multa de 30.001 a 600.000 euros; las graves, con multa de 601 a 30.000 euros, y las leves, con multa de 100 a 600 euros."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-025": {
+      "status": "supported-current",
+      "why": "L’art. 12.A.e) atribueix al Cos Nacional de Policia la investigació i persecució dels delictes de droga; les altres tres són de la Guàrdia Civil (art. 12.B.b, c i d).",
+      "citations": [
+        {
+          "sourceId": "lo-2-1986-fcs",
+          "locator": "art. 12.A.e i 12.B",
+          "quote": "A) …e) La investigación y persecución de los delitos relacionados con la droga. … B) Serán ejercidas por la Guardia Civil: … b) El resguardo fiscal del Estado… c) La vigilancia del tráfico, tránsito y transporte en las vías públicas interurbanas. d) La custodia de vías de comunicación terrestre, costas, fronteras…"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-026": {
+      "status": "supported-current",
+      "why": "L’art. 28.4 de la Llei 4/2003 llista les tres funcions compartides i la resolució amistosa de conflictes privats n’és la b). Les altres tres opcions són funcions **pròpies** de la policia local o dels mossos (art. 28.2 i 28.3).",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 28.4",
+          "quote": "Són funcions compartides entre la policia de la Generalitat-mossos d’esquadra i les policies locals: a) Les de policia de proximitat, i l’auxili i l’assistència als ciutadans. b) La intervenció en la resolució amistosa de conflictes privats, si hi són requerides. c) La vigilància d’espais públics."
+        },
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 28.3",
+          "quote": "Són funcions pròpies de les policies locals: … b) Les de policia de trànsit urbà… e) Les de policia comunitària en els àmbits de la convivència veïnal i dels serveis públics locals."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-027": {
+      "status": "supported-current",
+      "why": "Els convidats són els dels apartats 3 i 4 de l’art. 9: judicatura i fiscalia quan ho requereixin els assumptes, i associacions i entitats veïnals si en poden resultar afectades. El delegat territorial és vocal permanent (art. 9.2.a), no convidat.",
+      "citations": [
+        {
+          "sourceId": "llei-4-2003-seguretat-publica",
+          "locator": "art. 9.3 i 9.4",
+          "quote": "3. Quan ho requereixin els assumptes a tractar, han d’assistir també a la reunió de la junta local de seguretat, amb veu però sense vot, representants de la judicatura i de la fiscalia, si així ho acorda l’Administració de l’Estat. 4. Poden ésser també convidats a participar en la junta local de seguretat, amb veu però sense vot, les associacions i les entitats veïnals i ciutadanes del municipi"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-028": {
+      "status": "supported-current",
+      "why": "Art. 237 CP, literal: és la definició del robatori.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 237",
+          "quote": "Son reos del delito de robo los que, con ánimo de lucro, se apoderaren de las cosas muebles ajenas empleando fuerza en las cosas para acceder o abandonar el lugar donde éstas se encuentran o violencia o intimidación en las personas"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-029": {
+      "status": "pending-evidence",
+      "why": "La Llei orgànica 6/1985 del poder judicial no és entre les 98 fonts del manifest, i cap altra font adoptada organitza els òrgans jurisdiccionals.",
+      "citations": [],
+      "missing": "Text consolidat de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (arts. 65 i 82 i següents)."
+    },
+    "q-of-roses-2026-interins-cp-030": {
+      "status": "supported-current",
+      "why": "Art. 379.2 CP: conduir sota la influència de drogues o begudes alcohòliques és delicte contra la seguretat viària.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 379.2",
+          "quote": "Con las mismas penas será castigado el que condujere un vehículo de motor o ciclomotor bajo la influencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o de bebidas alcohólicas."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-031": {
+      "status": "pending-evidence",
+      "why": "La periodicitat de la ITV no és al Reglament general de vehicles: l’art. 10.1 remet a «la reglamentación que se recoge en el anexo I», i la norma que fixa el calendari (RD 920/2017) no és entre les 98 fonts.",
+      "citations": [
+        {
+          "sourceId": "rd-2822-1998-rgv",
+          "locator": "art. 10.1",
+          "quote": "Los vehículos matriculados o puestos en circulación deberán someterse a inspección técnica… en los casos y con la periodicidad, requisitos y excepciones que se establecen en la reglamentación que se recoge en el anexo I."
+        }
+      ],
+      "missing": "Reial decret 920/2017, de 23 d’octubre, pel qual es regula la inspecció tècnica de vehicles (annex I, periodicitat)."
+    },
+    "q-of-roses-2026-interins-cp-032": {
+      "status": "supported-current",
+      "why": "Taula de l’art. 4.2 del Reglament general de conductors, fila D1, columna d’excepcions.",
+      "citations": [
+        {
+          "sourceId": "rd-818-2009-rgcond",
+          "locator": "art. 4.2, fila D1",
+          "quote": "La edad mínima será 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria, si bien sólo podrán conducir estos vehículos dentro del territorio nacional hasta que el titular del permiso tenga 21 años cumplidos."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-033": {
+      "status": "supported-current",
+      "why": "Art. 20, paràgraf primer, del Reglament general de circulació, literal, i inclou expressament els conductors de bicicletes.",
+      "citations": [
+        {
+          "sourceId": "rd-1428-2003-rgc",
+          "locator": "art. 20",
+          "quote": "No podrán circular… los conductores de vehículos ni los conductores de bicicletas con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-034": {
+      "status": "supported-current",
+      "why": "Art. 7.2.a de la Llei 10/1999: no inscriure el gos al registre municipal és infracció lleu. Les altres tres són greus (7.3.b i 7.3.c) o molt greus (7.4.a).",
+      "citations": [
+        {
+          "sourceId": "llei-10-1999-gossos-cat",
+          "locator": "art. 7.2, 7.3 i 7.4",
+          "quote": "2. Són infraccions lleus: a) No inscriure el gos al registre específic del municipi corresponent… 3. Són infraccions greus: … b) No contractar l’assegurança de responsabilitat civil. c) Fer activitats d’ensinistrament sense acreditació professional oficial. 4. Són infraccions molt greus: a) Fer activitats d’ensinistrament d’atac no autoritzades."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-035": {
+      "status": "supported-current",
+      "why": "L’art. 17.2 dona el dret a l’entrevista reservada «amb anterioritat i al final» de la declaració: l’opció c), que la limita a abans, és la falsa. Les altres tres són els arts. 17.4 i 17.1.",
+      "citations": [
+        {
+          "sourceId": "lo-5-2000-menors",
+          "locator": "art. 17.2",
+          "quote": "El menor detenido tendrá derecho a la entrevista reservada con su abogado con anterioridad y al término de la práctica de la diligencia de toma de declaración."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-036": {
+      "status": "supported-current",
+      "why": "Art. 16.2 de la LO 4/2015: en cap cas pot superar les sis hores.",
+      "citations": [
+        {
+          "sourceId": "lo-4-2015-psc",
+          "locator": "art. 16.2",
+          "quote": "por el tiempo estrictamente necesario, que en ningún caso podrá superar las seis horas"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-037": {
+      "status": "out-of-syllabus",
+      "why": "prescripció de les infraccions de trànsit (LSV): cap tema del temari cobreix el règim sancionador general de trànsit",
+      "citations": []
+    },
+    "q-of-roses-2026-interins-cp-038": {
+      "status": "supported-current",
+      "why": "Art. 20, paràgraf tercer, del RGC: durant els dos anys següents a obtenir el permís no es pot superar 0,15 mg/l en aire espirat.",
+      "citations": [
+        {
+          "sourceId": "rd-1428-2003-rgc",
+          "locator": "art. 20",
+          "quote": "Los conductores de cualquier vehículo no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia que les habilita para conducir."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-039": {
+      "status": "supported-current",
+      "why": "Art. 3 de la LO 5/2000: al menor de catorze anys no se li exigeix responsabilitat penal, sinó que se li apliquen les normes de protecció de menors.",
+      "citations": [
+        {
+          "sourceId": "lo-5-2000-menors",
+          "locator": "art. 3",
+          "quote": "Cuando el autor de los hechos mencionados en los artículos anteriores sea menor de catorce años, no se le exigirá responsabilidad con arreglo a la presente Ley, sino que se le aplicará lo dispuesto en las normas sobre protección de menores previstas en el Código Civil"
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-040": {
+      "status": "supported-current",
+      "why": "L’art. 29.4 de l’ordenança ho diu literalment i la modificació de 2021 no toca aquest article.",
+      "citations": [
+        {
+          "sourceId": "roses-ordenanca-convivencia",
+          "locator": "art. 29.4",
+          "quote": "Una vegada dictada resolució ferma i transcorreguts dos mesos sense que el titular hagi recuperat l’objecte es procedirà a la seva destrucció o els lliurarà gratuïtament a entitats sense afany de lucre amb finalitats socials."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-041": {
+      "status": "supported-current",
+      "why": "Art. 140 CE, literal.",
+      "citations": [
+        {
+          "sourceId": "ce-1978",
+          "locator": "art. 140",
+          "quote": "Los Alcaldes serán elegidos por los Concejales o por los vecinos."
+        }
+      ]
+    },
+    "q-of-roses-2026-interins-cp-042": {
+      "status": "supported-current",
+      "why": "L’art. 11 prohibeix les tres conductes: vendre (11.1), col·laborar-hi (11.2) i comprar o adquirir el producte (11.3). La modificació de 2021 en reescriu la redacció però manté els tres punts.",
+      "citations": [
+        {
+          "sourceId": "roses-ordenanca-convivencia",
+          "locator": "art. 11.1, 11.2 i 11.3",
+          "quote": "1. Resta prohibida la venda ambulant sense autorització municipal… 2. Resta prohibit col·laborar en l’espai públic amb els venedors ambulants no autoritzats… 3. Resta prohibida la compra o l’adquisició en l’espai públic de qualsevol producte procedent de la venda ambulant no autoritzada."
+        },
+        {
+          "sourceId": "roses-ordenanca-convivencia-mod-2021",
+          "locator": "modificació segona",
+          "quote": "SEGONA. Modificar el punt 1 i 2 de l’article 11"
+        }
+      ]
+    }
+  }
+}

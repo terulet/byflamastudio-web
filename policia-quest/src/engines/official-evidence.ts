@@ -26,6 +26,7 @@
  * És un motor pur: el dia entra com a paràmetre i no crida `Date.now()`.
  */
 import type { OfficialEvidenceStatus, Question } from '../domain/types.ts'
+import { isCurrent } from './availability.ts'
 
 /** Avís que la correcció ha de mostrar, si n'ha de mostrar cap. */
 export type OfficialNotice =
@@ -90,12 +91,16 @@ const NOTICE_BY_STATUS: Readonly<Record<OfficialEvidenceStatus, OfficialNotice>>
  * camins.
  */
 export function officialVerdict(question: Question, todayIso: string): OfficialVerdict {
+  // La caducitat és l'altra meitat de la mateixa pregunta i no pot viure en un
+  // altre lloc: si una pantalla mirés el veredicte i una altra la data, cada una
+  // en diria una de diferent. Aquí es responen totes dues alhora.
+  const fresh = isCurrent(question, todayIso)
   const meta = question.officialExam
   if (!meta) {
     return {
-      usableForCurrentLearning: true,
-      countsForMastery: true,
-      canGenerateReview: true,
+      usableForCurrentLearning: fresh,
+      countsForMastery: fresh,
+      canGenerateReview: fresh,
       notice: 'none',
       scoringAnswer: question.correct,
       currentLawAnswer: null,
@@ -107,7 +112,7 @@ export function officialVerdict(question: Question, todayIso: string): OfficialV
   // matriu ha de tenir-les totes, i si en falta una val més que quedi fora de
   // l'aprenentatge vigent que no pas que s'hi coli sense revisar.
   const status: OfficialEvidenceStatus = evidence?.status ?? 'pending-evidence'
-  const safe = !UNSAFE_FOR_TODAY.has(status)
+  const safe = fresh && !UNSAFE_FOR_TODAY.has(status)
 
   return {
     usableForCurrentLearning: safe,
