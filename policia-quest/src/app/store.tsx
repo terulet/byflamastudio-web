@@ -28,7 +28,8 @@ import type {
 } from '../domain/types.ts'
 import { pack as packCore } from '../content/index.ts'
 import { applyOutcome, getOrInit } from '../engines/srs.ts'
-import { toEpochDay } from '../util/date.ts'
+import { officialVerdict } from '../engines/official-evidence.ts'
+import { epochDayToIso, toEpochDay } from '../util/date.ts'
 import {
   appendAnswers,
   clearAllProgress,
@@ -279,13 +280,21 @@ export function AppProvider({ children }: { children: ReactNode }): ReactNode {
         answeredAt: now,
       }
 
-      setReviews((current) => {
-        const nextState = applyOutcome(getOrInit(current, question.questionId), outcome, today)
-        const next = new Map(current)
-        next.set(question.questionId, nextState)
-        pendingReviews.current.push(nextState)
-        return next
-      })
+      // Fallar ensenya, i per això un error entra a la cua de repàs. Però en una
+      // pregunta on la plantilla del tribunal i la norma verificada no
+      // coincideixen, «error» no vol dir res: qui tria l'opció que sosté la
+      // norma no s'ha equivocat de dret. Programar-li un repàs seria
+      // ensenyar-li a respondre malament, així que aquestes preguntes no
+      // toquen la cua ni quan es fallen ni quan s'encerten.
+      if (officialVerdict(question, epochDayToIso(today)).canGenerateReview) {
+        setReviews((current) => {
+          const nextState = applyOutcome(getOrInit(current, question.questionId), outcome, today)
+          const next = new Map(current)
+          next.set(question.questionId, nextState)
+          pendingReviews.current.push(nextState)
+          return next
+        })
+      }
 
       setAnswers((current) => [...current, record])
       pendingAnswers.current.push(record)

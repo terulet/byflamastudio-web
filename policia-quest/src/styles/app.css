@@ -350,6 +350,8 @@ button {
 .option {
   display: flex;
   align-items: flex-start;
+  /* Perquè una marca ampla pugui baixar a línia pròpia sense escanyar el text. */
+  flex-wrap: wrap;
   gap: var(--sp-3);
   width: 100%;
   min-height: var(--tap);
@@ -406,6 +408,20 @@ button {
   font-size: var(--text-xs);
   font-weight: 700;
   padding-left: var(--sp-2);
+}
+
+/*
+ * Marca llarga: «Plantilla del tribunal» i «Normativa verificada» no caben al
+ * costat del text sense escanyar-lo. Passen a línia pròpia, sota l'opció, i
+ * l'opció recupera l'amplada sencera.
+ */
+.option__mark--wide {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: var(--sp-2);
+  flex-basis: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .option__why {

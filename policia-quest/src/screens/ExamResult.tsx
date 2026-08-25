@@ -6,7 +6,9 @@ import { dict, fill, pick, plural } from '../i18n/index.ts'
 import { Stat } from '../components/ui.tsx'
 import { formatMilli, scoreExam, type ScoreBreakdown, type ScoredItem } from '../engines/scoring.ts'
 import { sectionOffsets } from './ExamRunner.tsx'
-import { formatDuration } from '../util/date.ts'
+import { epochDayToIso, formatDuration } from '../util/date.ts'
+import { officialVerdict } from '../engines/official-evidence.ts'
+import { useToday } from '../app/selectors.ts'
 import type { Question } from '../domain/types.ts'
 
 export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
@@ -21,6 +23,21 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
   const composition = pack.compositions.find((c) => c.compositionId === attempt?.compositionId)
 
   const questionsById = useMemo(() => new Map(pack.questions.map((q) => [q.questionId, q])), [])
+  const today = useToday()
+
+  /**
+   * Preguntes del quadernet on la plantilla del tribunal i la normativa
+   * verificada no diuen el mateix. La nota no canvia —es calcula sempre segons
+   * la plantilla— però el resultat ho ha de dir.
+   */
+  const conflicts = useMemo(() => {
+    if (!attempt) return 0
+    const todayIso = epochDayToIso(today)
+    return attempt.questionIds.filter((id) => {
+      const q = questionsById.get(id)
+      return q ? officialVerdict(q, todayIso).notice === 'key-conflict' : false
+    }).length
+  }, [attempt, questionsById, today])
 
   const analysis = useMemo(() => {
     if (!attempt || attempt.sections.length === 0) return null
@@ -171,6 +188,11 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
               {breakdown.passed ? t.result.passed : t.result.failed}
             </span>
           </p>
+          {conflicts > 0 ? (
+            <p className="screen__subtitle" style={{ marginTop: 'var(--sp-2)' }} data-testid="score-by-key">
+              {t.study.scoreByOfficialKey}
+            </p>
+          ) : null}
           {isMultiSection ? (
             <p className="screen__subtitle" style={{ marginTop: 'var(--sp-2)' }}>
               {t.exams.completeVerdictNote}
@@ -187,6 +209,20 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
             label={t.result.time}
           />
         </section>
+
+        {/*
+         * Preguntes on la plantilla del tribunal i la normativa verificada no
+         * coincideixen. La nota es calcula segons la plantilla —és el que va
+         * passar aquell dia—, però qui la llegeix ha de saber que no totes les
+         * «fallades» ho són de dret.
+         */}
+        {conflicts > 0 ? (
+          <p className="notice notice--warn" data-testid="exam-conflicts">
+            {conflicts === 1
+              ? t.study.conflictCountOne
+              : fill(t.study.conflictCount, { n: conflicts })}
+          </p>
+        ) : null}
 
         {/* Si els comptadors no sumen el total del quadernet, cal dir per què. */}
         {breakdown.reserved > 0 ? (

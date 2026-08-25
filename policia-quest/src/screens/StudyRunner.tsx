@@ -13,6 +13,7 @@ import { dict, fill, pick } from '../i18n/index.ts'
 import { Meter } from '../components/ui.tsx'
 import { selectSession } from '../engines/selection.ts'
 import { applyOutcome, getOrInit, intervalDays, outcomeFor } from '../engines/srs.ts'
+import { officialVerdict } from '../engines/official-evidence.ts'
 import { playCorrect, playWrong, vibrate } from '../app/feedback.ts'
 import { epochDayToIso } from '../util/date.ts'
 import type { Confidence, OptionId, Outcome, Question, StudyMode } from '../domain/types.ts'
@@ -283,6 +284,7 @@ export function StudyRunner({
         ) : (
           <Correction
             question={question}
+            chosen={chosen}
             isCorrect={isCorrect}
             dontKnow={dontKnow}
             nextInterval={nextInterval}
@@ -314,7 +316,11 @@ function QuestionView({
   onChoose: (id: OptionId) => void
 }): ReactNode {
   const { settings } = useApp()
+  const today = useToday()
   const t = dict(settings.explanationLang)
+  const verdict = officialVerdict(question, epochDayToIso(today))
+  const conflict = verdict.notice === 'key-conflict'
+  const lawAnswer = verdict.currentLawAnswer
 
   return (
     <section
@@ -348,7 +354,22 @@ function QuestionView({
           let mark: string | null = null
 
           if (revealed) {
-            if (isRight) {
+            /*
+             * En una pregunta on la plantilla del tribunal i la normativa
+             * verificada no diuen el mateix, «correcte» i «incorrecte» no
+             * signifiquen res: hi ha dues respostes, cada una en el seu marc.
+             * Marcar-les amb ✓ i ✕ contradiria el bloc que ve just a sota, i
+             * seria l'app dient dues coses oposades a la mateixa pantalla.
+             */
+            if (conflict && isRight) {
+              className += ' option--correct'
+              mark = t.study.officialKeyLabel
+            } else if (conflict && option.optionId === lawAnswer) {
+              className += ' option--selected'
+              mark = t.study.lawLabel
+            } else if (conflict) {
+              // La resta d'opcions no porten marca: cap dels dos marcs les dona.
+            } else if (isRight) {
               className += ' option--correct'
               mark = `✓ ${t.study.correct}`
             } else if (isChosen) {
@@ -378,7 +399,9 @@ function QuestionView({
                   <span className="option__why">{option.whyWrong}</span>
                 ) : null}
               </span>
-              {mark ? <span className="option__mark">{mark}</span> : null}
+              {mark ? (
+                <span className={conflict ? 'option__mark option__mark--wide' : 'option__mark'}>{mark}</span>
+              ) : null}
             </button>
           )
         })}
@@ -392,6 +415,7 @@ function QuestionView({
 
 function Correction({
   question,
+  chosen,
   isCorrect,
   dontKnow,
   nextInterval,
@@ -402,6 +426,7 @@ function Correction({
   isLast,
 }: {
   question: Question
+  chosen: OptionId | null
   isCorrect: boolean
   dontKnow: boolean
   nextInterval: number
@@ -412,29 +437,56 @@ function Correction({
   isLast: boolean
 }): ReactNode {
   const t = dict(lang)
-  const verdictClass = dontKnow ? 'verdict verdict--unknown' : isCorrect ? 'verdict verdict--ok' : 'verdict verdict--wrong'
-  const verdictText = dontKnow ? t.study.unknown : isCorrect ? t.study.correct : t.study.wrong
+  const official = question.officialExam !== undefined
+  const today = useToday()
+  const verdict = officialVerdict(question, epochDayToIso(today))
+  const queues = verdict.canGenerateReview
+  const conflict = verdict.notice === 'key-conflict'
+
+  /*
+   * En una pregunta on la plantilla i la norma no diuen el mateix, un
+   * «Incorrecte» a dalt i un «has triat el que sosté la norma» a sota són dos
+   * missatges oposats a la mateixa pantalla. El titular diu llavors només què
+   * ha passat respecte de la plantilla, que és un fet, i el detall el donen els
+   * blocs de sota.
+   */
+  const verdictClass = dontKnow
+    ? 'verdict verdict--unknown'
+    : conflict
+      ? 'verdict verdict--unknown'
+      : isCorrect
+        ? 'verdict verdict--ok'
+        : 'verdict verdict--wrong'
+  const verdictText = dontKnow
+    ? t.study.unknown
+    : conflict
+      ? isCorrect
+        ? t.study.verdictByKeyMatch
+        : t.study.verdictByKeyMiss
+      : isCorrect
+        ? t.study.correct
+        : t.study.wrong
 
   return (
     <section className="stack fade-up" data-testid="correction">
       {/* El resultat no es comunica només amb color: hi ha símbol i text. */}
       <p className={verdictClass} role="status">
-        <span aria-hidden="true">{dontKnow ? '?' : isCorrect ? '✓' : '✕'}</span>
+        <span aria-hidden="true">{dontKnow ? '?' : conflict ? '≠' : isCorrect ? '✓' : '✕'}</span>
         {verdictText}
       </p>
+
+      {official ? <OfficialStatus question={question} chosen={chosen} lang={lang} /> : null}
 
       <div className="card">
         <div className="card__label">{t.study.why}</div>
         <p style={{ marginTop: 'var(--sp-2)', lineHeight: 1.6 }}>{pick(question.explanation, lang)}</p>
       </div>
 
+      {official ? <OfficialLawToday question={question} lang={lang} /> : null}
+
       {/*
-       * Avís de revisió d'una pregunta d'examen oficial.
-       *
-       * La resposta del tribunal es conserva sempre tal com es va publicar,
-       * però de vegades la norma ha canviat després de l'examen. Callar-ho
-       * seria ensenyar com a vigent una redacció derogada, que és pitjor que
-       * no oferir la pregunta.
+       * Nota tècnica de transcripció, quan n'hi ha. És una altra cosa que
+       * l'estat jurídic: aquí hi van les correccions d'extracció del quadernet.
        */}
       {question.officialExam?.transcriptionNotes ? (
         <div className="notice notice--warn" data-testid="official-note">
@@ -470,9 +522,15 @@ function Correction({
         })}
       </div>
 
-      <p className="notice">
-        {nextInterval === 1 ? t.study.scheduledOne : fill(t.study.scheduled, { n: nextInterval })}
-      </p>
+      {/*
+       * Prometre un repàs que no es programarà seria mentir sobre el que farà
+       * l'app demà. Les preguntes que no poden entrar a la cua no en porten.
+       */}
+      {queues ? (
+        <p className="notice">
+          {nextInterval === 1 ? t.study.scheduledOne : fill(t.study.scheduled, { n: nextInterval })}
+        </p>
+      ) : null}
 
       <div className="row">
         <button
@@ -573,6 +631,119 @@ function Stat({ value, label }: { value: ReactNode; label: string }): ReactNode 
     <div className="stat">
       <div className="stat__value">{value}</div>
       <div className="stat__label">{label}</div>
+    </div>
+  )
+}
+
+/**
+ * Estat jurídic d'una pregunta d'examen oficial, abans de l'explicació.
+ *
+ * L'ordre importa. Qui acaba de respondre vol saber, per aquest ordre: de quin
+ * examen era, què va marcar el tribunal, i si això segueix sent dret. Posar
+ * l'avís al final —on estava— feia que la persona memoritzés la resposta i
+ * llegís l'advertència després, si la llegia.
+ *
+ * Les dues veritats van amb etiqueta pròpia i separada: «Plantilla del
+ * tribunal» i «Normativa verificada». Mai un segon missatge d'«incorrecte» que
+ * contradigui el primer.
+ */
+function OfficialStatus({
+  question,
+  chosen,
+  lang,
+}: {
+  question: Question
+  chosen: OptionId | null
+  lang: 'ca' | 'es'
+}): ReactNode {
+  const t = dict(lang)
+  const today = useToday()
+  const verdict = officialVerdict(question, epochDayToIso(today))
+  const meta = question.officialExam!
+  const exam = pack.exams.find((e) => e.examId === meta.examId)
+
+  const noticeText: Record<string, { title: string; body: string } | null> = {
+    none: null,
+    superseded: { title: t.study.noticeSuperseded, body: t.study.noticeSupersededBody },
+    'key-conflict': { title: t.study.noticeConflict, body: t.study.noticeConflictBody },
+    pending: { title: t.study.officialNote, body: t.study.noticePending },
+    historical: { title: t.study.officialNote, body: t.study.noticeHistorical },
+  }
+  const notice = noticeText[verdict.notice]
+  const conflict = verdict.notice === 'key-conflict'
+
+  return (
+    <div className="stack stack--tight" data-testid="official-status">
+      {exam ? (
+        <p className="source__id" data-testid="official-held">
+          {fill(t.study.officialHeld, { date: exam.heldOn ?? '', exam: meta.examId })}
+        </p>
+      ) : null}
+
+      <div className="card">
+        <div className="card__label">{t.study.officialKeyLabel}</div>
+        <p style={{ marginTop: 'var(--sp-2)', fontWeight: 600 }} data-testid="official-key">
+          {verdict.scoringAnswer}){' '}
+          {question.options.find((o) => o.optionId === verdict.scoringAnswer)?.text}
+        </p>
+        {conflict && verdict.currentLawAnswer ? (
+          <>
+            <div className="card__label" style={{ marginTop: 'var(--sp-3)' }}>
+              {t.study.lawLabel}
+            </div>
+            <p style={{ marginTop: 'var(--sp-2)', fontWeight: 600 }} data-testid="law-answer">
+              {verdict.currentLawAnswer === 'cap'
+                ? t.study.lawSaysNone
+                : `${verdict.currentLawAnswer}) ${question.options.find((o) => o.optionId === verdict.currentLawAnswer)?.text ?? ''}`}
+            </p>
+          </>
+        ) : null}
+      </div>
+
+      {notice ? (
+        <div className={conflict ? 'notice notice--warn' : 'notice'} data-testid={`notice-${verdict.notice}`}>
+          <strong>{notice.title}</strong>
+          <p style={{ margin: 'var(--sp-2) 0 0', lineHeight: 1.6 }}>{notice.body}</p>
+        </div>
+      ) : null}
+
+      {/*
+       * Qui tria l'opció que sosté la norma no s'ha equivocat de dret. Dir-li
+       * només «incorrecte» seria ensenyar-li a respondre malament.
+       */}
+      {conflict && chosen !== null && chosen === verdict.currentLawAnswer ? (
+        <div className="notice" data-testid="chose-law">
+          {t.study.chosenMatchesLaw}
+        </div>
+      ) : null}
+    </div>
+  )
+}
+
+/** El dret vigent avui, quan difereix del que deia el dia de l'examen. */
+function OfficialLawToday({ question, lang }: { question: Question; lang: 'ca' | 'es' }): ReactNode {
+  const t = dict(lang)
+  const evidence = question.officialExam?.evidence
+  if (!evidence?.lawAtExam && !evidence?.lawToday) return null
+
+  return (
+    <div className="card" data-testid="law-today">
+      <div className="card__label">{t.study.lawLabel}</div>
+      {evidence.lawAtExam ? (
+        <p style={{ marginTop: 'var(--sp-2)', lineHeight: 1.6 }}>
+          <strong>{t.study.lawAtExamLabel}:</strong> {evidence.lawAtExam}
+        </p>
+      ) : null}
+      {evidence.lawToday ? (
+        <p style={{ marginTop: 'var(--sp-2)', lineHeight: 1.6 }}>
+          <strong>{t.study.lawTodayLabel}:</strong> {evidence.lawToday}
+        </p>
+      ) : null}
+      {evidence.changedOn ? (
+        <p className="source__id" style={{ marginTop: 'var(--sp-2)' }}>
+          {fill(t.study.lawChangedOn, { date: evidence.changedOn })}
+        </p>
+      ) : null}
     </div>
   )
 }

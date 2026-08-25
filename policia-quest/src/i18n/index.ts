@@ -168,6 +168,35 @@ const ca = {
     scheduledOne: 'Programada per repassar demà',
     officialNote: 'Nota de revisió sobre aquesta pregunta oficial',
     officialFrom: 'Examen oficial del {date}',
+    scoreByOfficialKey: 'segons la plantilla oficial',
+    verdictByKeyMatch: 'Coincideix amb la plantilla del tribunal',
+    verdictByKeyMiss: 'No coincideix amb la plantilla del tribunal',
+    conflictCount:
+      '{n} de les preguntes d’aquest quadernet tenen una discrepància jurídica: el que va marcar el tribunal no coincideix amb la normativa verificada. La nota es calcula segons la plantilla, i aquestes preguntes no afecten el domini ni la cua de repàs.',
+    conflictCountOne:
+      'Una pregunta d’aquest quadernet té una discrepància jurídica: el que va marcar el tribunal no coincideix amb la normativa verificada. La nota es calcula segons la plantilla, i aquesta pregunta no afecta el domini ni la cua de repàs.',
+    /* Estat jurídic d'una pregunta d'examen oficial. */
+    officialHeld: 'Examen del {date} · {exam}',
+    officialKeyLabel: 'Plantilla del tribunal',
+    lawLabel: 'Normativa verificada',
+    noticeSuperseded: 'Pregunta oficial històrica: la normativa ha canviat',
+    noticeSupersededBody:
+      'La resposta del tribunal era correcta el dia de l’examen. Una reforma posterior la va canviar, i per això aquesta pregunta no compta per al domini ni entra a la cua de repàs.',
+    noticeConflict:
+      'La resposta publicada pel tribunal no coincideix amb la normativa verificada vigent en la data de l’examen',
+    noticeConflictBody:
+      'Es conserva la plantilla tal com es va publicar, perquè és el que va passar aquell dia. Però la norma que ja regia deia una altra cosa, i per això aquesta pregunta no compta per al domini ni entra a la cua de repàs.',
+    noticePending:
+      'D’aquesta pregunta només en consta la procedència: cap font adoptada demostra la resposta.',
+    noticeHistorical:
+      'Actualitat del dia de l’examen. No afirma res sobre com són les coses avui.',
+    lawSaysNone: 'Cap de les quatre opcions',
+    lawSaysOption: 'L’opció {letter}',
+    lawChangedOn: 'Canvi efectiu: {date}',
+    lawAtExamLabel: 'Deia el dia de l’examen',
+    lawTodayLabel: 'Diu avui',
+    chosenMatchesLaw:
+      'Has triat el que sosté la normativa verificada. No coincideix amb la plantilla del tribunal, i per això surt com a fallada segons la plantilla, però no és un error de dret ni et programa cap repàs.',
     pendingVerification:
       'Referència encara no contrastada amb el document oficial. Comprova-la abans de donar-la per bona.',
   },
@@ -508,6 +537,34 @@ const es: Dict = {
     scheduledOne: 'Programada para repasar mañana',
     officialNote: 'Nota de revisión sobre esta pregunta oficial',
     officialFrom: 'Examen oficial del {date}',
+    scoreByOfficialKey: 'según la plantilla oficial',
+    verdictByKeyMatch: 'Coincide con la plantilla del tribunal',
+    verdictByKeyMiss: 'No coincide con la plantilla del tribunal',
+    conflictCount:
+      '{n} de las preguntas de este cuadernillo tienen una discrepancia jurídica: lo que marcó el tribunal no coincide con la normativa verificada. La nota se calcula según la plantilla, y esas preguntas no afectan al dominio ni a la cola de repaso.',
+    conflictCountOne:
+      'Una pregunta de este cuadernillo tiene una discrepancia jurídica: lo que marcó el tribunal no coincide con la normativa verificada. La nota se calcula según la plantilla, y esa pregunta no afecta al dominio ni a la cola de repaso.',
+    officialHeld: 'Examen del {date} · {exam}',
+    officialKeyLabel: 'Plantilla del tribunal',
+    lawLabel: 'Normativa verificada',
+    noticeSuperseded: 'Pregunta oficial histórica: la normativa ha cambiado',
+    noticeSupersededBody:
+      'La respuesta del tribunal era correcta el día del examen. Una reforma posterior la cambió, y por eso esta pregunta no cuenta para el dominio ni entra en la cola de repaso.',
+    noticeConflict:
+      'La respuesta publicada por el tribunal no coincide con la normativa verificada vigente en la fecha del examen',
+    noticeConflictBody:
+      'Se conserva la plantilla tal como se publicó, porque es lo que pasó aquel día. Pero la norma que ya regía decía otra cosa, y por eso esta pregunta no cuenta para el dominio ni entra en la cola de repaso.',
+    noticePending:
+      'De esta pregunta solo consta la procedencia: ninguna fuente adoptada demuestra la respuesta.',
+    noticeHistorical:
+      'Actualidad del día del examen. No afirma nada sobre cómo son las cosas hoy.',
+    lawSaysNone: 'Ninguna de las cuatro opciones',
+    lawSaysOption: 'La opción {letter}',
+    lawChangedOn: 'Cambio efectivo: {date}',
+    lawAtExamLabel: 'Decía el día del examen',
+    lawTodayLabel: 'Dice hoy',
+    chosenMatchesLaw:
+      'Has elegido lo que sostiene la normativa verificada. No coincide con la plantilla del tribunal, y por eso sale como fallo según la plantilla, pero no es un error de derecho ni te programa ningún repaso.',
     pendingVerification:
       'Referencia todavía no contrastada con el documento oficial. Compruébala antes de darla por buena.',
   },

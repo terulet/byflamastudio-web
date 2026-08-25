@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 import { pack, useApp } from './store.tsx'
 import { computeTopicMastery, globalMastery, type TopicMastery } from '../engines/mastery.ts'
 import { countDue, countFailed } from '../engines/selection.ts'
-import { isCurrent } from '../engines/availability.ts'
+import { officialVerdict } from '../engines/official-evidence.ts'
 import { daysStudied } from '../engines/activity.ts'
 import { epochDayToIso, toEpochDay } from '../util/date.ts'
 import type { AnswerRecord, Question, SyllabusTopic } from '../domain/types.ts'
@@ -41,8 +41,18 @@ export function useDashboard(): Dashboard {
   const active = useActiveQuestions()
 
   return useMemo(() => {
+    const todayIso = epochDayToIso(today)
+    // Una resposta a una pregunta que no compta per al domini tampoc no pot
+    // moure l'exactitud recent del tema. Si una pregunta on la plantilla i la
+    // norma no coincideixen sortís del denominador però es quedés al numerador,
+    // el domini baixaria per una pregunta que ningú pot encertar de dues
+    // maneres alhora.
+    const counting = new Set(
+      active.filter((q) => officialVerdict(q, todayIso).countsForMastery).map((q) => q.questionId),
+    )
     const answersByTopic = new Map<string, AnswerRecord[]>()
     for (const a of answers) {
+      if (!counting.has(a.questionId)) continue
       const list = answersByTopic.get(a.topicId) ?? []
       list.push(a)
       answersByTopic.set(a.topicId, list)
@@ -55,10 +65,14 @@ export function useDashboard(): Dashboard {
      * no hi compten: baixarien el domini d'un tema amb material que cap sessió
      * normal serveix.
      */
-    const todayIso = epochDayToIso(today)
     const questionsByTopic = new Map<string, string[]>()
     for (const q of active) {
-      if (!isCurrent(q, todayIso)) continue
+      // Mateixa decisió que la selecció: si una pregunta no es pot servir com a
+      // material vigent, tampoc no pot moure el domini. Les preguntes on la
+      // plantilla del tribunal i la norma no coincideixen en són el cas clar:
+      // ni la resposta del tribunal ni la de la norma diuen res sobre si qui
+      // estudia domina el tema.
+      if (!officialVerdict(q, todayIso).countsForMastery) continue
       const list = questionsByTopic.get(q.topicId) ?? []
       list.push(q.questionId)
       questionsByTopic.set(q.topicId, list)

@@ -14,7 +14,7 @@
 import { isDue, reviewPriority } from './srs.ts'
 import { makeRng, seedFromString, shuffle } from '../util/rng.ts'
 import type { Question, ReviewState, StudyMode } from '../domain/types.ts'
-import { isCurrent } from './availability.ts'
+import { officialVerdict } from './official-evidence.ts'
 
 export interface SelectionInput {
   mode: StudyMode
@@ -140,7 +140,13 @@ function applyFilters(input: SelectionInput): Question[] {
 
   return pool.filter((q) => {
     if (q.status !== 'active') return false
-    if (!wantsHistorical && todayIso !== undefined && !isCurrent(q, todayIso)) return false
+    // El motor de vigència respon dues coses alhora: si la pregunta ha caducat
+    // i si el que afirma segueix sent dret. Una plantilla oficial que ja no
+    // quadra amb la norma no pot entrar en una sessió d'estudi normal, encara
+    // que la pregunta no porti data de caducitat.
+    if (!wantsHistorical && todayIso !== undefined && !officialVerdict(q, todayIso).usableForCurrentLearning) {
+      return false
+    }
     if (topicSet && !topicSet.has(q.topicId)) return false
     if (filters?.track && q.track !== filters.track) return false
     if (filters?.difficulty && q.difficulty !== filters.difficulty) return false
@@ -311,7 +317,9 @@ export function buildExamPaper(opts: {
       q.status === 'active' &&
       q.track === opts.track &&
       !excluded?.has(q.questionId) &&
-      (today === undefined || isCurrent(q, today)),
+      // Un simulacre vigent no pot servir material jurídicament insegur, encara
+      // que la quota es quedi curta: si no es pot muntar, es bloqueja i es diu.
+      (today === undefined || officialVerdict(q, today).usableForCurrentLearning),
   )
   const rng = makeRng(seedFromString(opts.seed))
   const reserveCount = opts.reserveCount ?? 0
