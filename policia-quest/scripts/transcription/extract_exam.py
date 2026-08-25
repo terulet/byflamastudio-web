@@ -19,7 +19,11 @@ reporta com a ambigu i queda per a revisió visual.
 import re, collections, pymupdf
 from dataclasses import dataclass, field
 
-OPTION_RE = re.compile(r'^([a-d])\s*[\)\.]\s*(.*)$', re.S)
+# El punt no pot anar seguit d'un altre punt: un enunciat que acaba en
+# «…va nèixer a…» —un buit per completar, format habitual als quadernets
+# antics— es llegiria com «opció a) amb el text «..»» si el separador
+# acceptés qualsevol punt. Els punts suspensius no separen una opció.
+OPTION_RE = re.compile(r'^([a-d])\s*(?:\)|\.(?!\.))\s*(.*)$', re.S)
 QNUM_RE = re.compile(r'^(\d{1,2})\s*[\.\)]\s*(.*)$', re.S)
 BOLD_FLAG = 2 ** 4
 
@@ -153,8 +157,7 @@ def parse(path, force_stroke_marks=False):
     body_color, mark_colors, body_bold = document_profile(doc)
     boilerplate = repeated_lines(doc)
 
-    def is_boilerplate(text):
-        t = text.strip()
+    def is_boilerplate_part(t):
         if t in boilerplate:
             return True
         # El número de pàgina sol i les restes d'adreça que no es repeteixen
@@ -162,6 +165,21 @@ def parse(path, force_stroke_marks=False):
         if re.fullmatch(r'\d{1,3}', t):
             return True
         return any(t.startswith(b[:24]) for b in boilerplate if len(b) >= 24)
+
+    def is_boilerplate(text):
+        t = text.strip()
+        if is_boilerplate_part(t):
+            return True
+        # Capçaleres a dues columnes: «Exp.: ...» i «Ampliació...» cauen al
+        # mateix bucket vertical de `visual_lines()` i s'ajunten sense
+        # separador en una sola línia que no coincideix literalment amb cap
+        # entrada del repertori ni hi comença («Exp.: 2018/000391» és massa
+        # curt per al llindar de 24 caràcters). Sense això, la línia sencera
+        # es colava com a continuació de l'última opció de la pàgina
+        # anterior. Si totes les parts separades pel buit entre columnes són
+        # per separat capçalera coneguda, la línia sencera també ho és.
+        parts = [p for p in re.split(r'\s{2,}', t) if p.strip()]
+        return len(parts) > 1 and all(is_boilerplate_part(p.strip()) for p in parts)
     strokes = stroked_boxes(doc)
     stroked_total = sum(len(v) for v in strokes.values())
     all_spans = sum(1 for _ in visual_lines(doc))
@@ -296,6 +314,16 @@ def parse(path, force_stroke_marks=False):
                 current_opt.colored = True
         elif current is not None and not current.options:
             current.stem = (current.stem + ' ' + text).strip()
+
+    # Algun quadernet repeteix una lletra per una errata del propi tribunal
+    # («b) 10.000 habitants. / b) 15.000 habitants.», saltant-se la c). El
+    # text i la marca de cada opció es respecten íntegres; només es corregeix
+    # l'etiqueta perquè torni a ser a, b, c, d en l'ordre físic en què surten
+    # impreses, que és l'única manera de fer-les seleccionables a l'app.
+    for q in questions:
+        if len(q.options) == 4 and [o.letter for o in q.options] != ['a', 'b', 'c', 'd']:
+            for o, letter in zip(q.options, ['a', 'b', 'c', 'd']):
+                o.letter = letter
 
     doc.close()
     return questions, {'body_color': body_color, 'mark_colors': mark_colors, 'body_bold': body_bold}
