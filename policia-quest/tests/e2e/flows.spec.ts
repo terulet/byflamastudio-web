@@ -708,3 +708,49 @@ test('registra el service worker per funcionar sense connexió', async ({ page }
   await expect(page.getByTestId('route')).toBeVisible()
   await page.context().setOffline(false)
 })
+
+test('una pregunta on la plantilla i la norma no coincideixen ho diu tot', async ({ page }) => {
+  /*
+   * El tema 36 (ordenança de convivència de Roses) té tres preguntes d'examen
+   * oficial, i una d'elles és el cas dels venedors ambulants: el tribunal va
+   * marcar «greu, 750 €», que era la qualificació del text de 2019, però la
+   * modificació de 2021 ja havia rebaixat la fila a «lleu, 500 €» quatre anys
+   * abans de l'examen. Cap de les quatre opcions ho diu.
+   *
+   * L'app no pot corregir la plantilla —és un document— ni pot ensenyar dret
+   * derogat. Ha de dir les dues coses, i aquest test comprova que ho fa i que
+   * no diu res que les contradigui.
+   */
+  await skipOnboarding(page)
+  await page.goto('/#/train')
+  await page.getByTestId('filter-origin-official').click()
+  await page.getByTestId('select-topic-36').click()
+  await expect(page.getByTestId('start-topic-session')).toContainText('3')
+  await page.getByTestId('start-topic-session').click()
+  await expect(page.getByTestId('study-question')).toBeVisible()
+
+  // Recorre les tres preguntes fins a trobar la del conflicte.
+  let found = false
+  for (let i = 0; i < 3 && !found; i++) {
+    await page.getByTestId('option-a').click()
+    await page.getByTestId('check-answer').click()
+    await expect(page.getByTestId('correction')).toBeVisible()
+    found = (await page.getByTestId('notice-key-conflict').count()) > 0
+    if (!found) await page.getByTestId('next-question').click()
+  }
+  expect(found).toBe(true)
+
+  // Les dues capes, cadascuna amb el seu nom, i l'avís entremig.
+  await expect(page.getByTestId('official-key')).toContainText('b)')
+  await expect(page.getByTestId('law-answer')).toBeVisible()
+  await expect(page.getByTestId('notice-key-conflict')).toBeVisible()
+  await expect(page.getByTestId('law-today')).toContainText('2021-03-19')
+
+  // El titular no diu ni «correcte» ni «incorrecte»: cap de les dues seria
+  // certa alhora respecte de la plantilla i respecte de la norma.
+  const verdict = page.locator('.verdict')
+  await expect(verdict).toHaveClass(/verdict--unknown/)
+
+  // I com que no pot generar repàs, no pot prometre'n cap.
+  await expect(page.getByText(/Programada per repassar/)).toHaveCount(0)
+})

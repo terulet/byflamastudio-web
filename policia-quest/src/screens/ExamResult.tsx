@@ -29,6 +29,16 @@ export function ExamResult({ attemptId }: { attemptId: string }): ReactNode {
    * Preguntes del quadernet on la plantilla del tribunal i la normativa
    * verificada no diuen el mateix. La nota no canvia —es calcula sempre segons
    * la plantilla— però el resultat ho ha de dir.
+   *
+   * Avui cap simulacre nou en pot portar cap: `buildExamPaper` les deixa fora
+   * amb el mateix veredicte que ho fa aquí. Això no fa sobrer el comptador,
+   * perquè un intent no es torna a muntar quan es llegeix: les preguntes van
+   * quedar desades el dia que es va fer, i actualitzar contingut no esborra
+   * progrés. Si una revisió posterior descobreix que la plantilla d'una
+   * pregunta ja no quadrava amb la norma —que és exactament el que va passar
+   * amb el cas dels venedors ambulants de 2025—, els intents antics que la
+   * porten han de continuar dient-ho en lloc de comptar-la com una fallada
+   * qualsevol.
    */
   const conflicts = useMemo(() => {
     if (!attempt) return 0
