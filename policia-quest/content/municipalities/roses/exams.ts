@@ -387,11 +387,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2024_c1_prova-coneixements-professionals_03042024',
     sourceId: 'roses-examen-2024-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2024-interins-cp-001', 'q-of-roses-2024-interins-cp-002', 'q-of-roses-2024-interins-cp-003', 'q-of-roses-2024-interins-cp-004', 'q-of-roses-2024-interins-cp-005', 'q-of-roses-2024-interins-cp-006', 'q-of-roses-2024-interins-cp-007', 'q-of-roses-2024-interins-cp-008', 'q-of-roses-2024-interins-cp-009', 'q-of-roses-2024-interins-cp-010', 'q-of-roses-2024-interins-cp-011', 'q-of-roses-2024-interins-cp-012', 'q-of-roses-2024-interins-cp-013', 'q-of-roses-2024-interins-cp-014', 'q-of-roses-2024-interins-cp-015', 'q-of-roses-2024-interins-cp-016', 'q-of-roses-2024-interins-cp-017', 'q-of-roses-2024-interins-cp-018', 'q-of-roses-2024-interins-cp-020', 'q-of-roses-2024-interins-cp-021', 'q-of-roses-2024-interins-cp-022', 'q-of-roses-2024-interins-cp-023', 'q-of-roses-2024-interins-cp-024', 'q-of-roses-2024-interins-cp-025', 'q-of-roses-2024-interins-cp-026', 'q-of-roses-2024-interins-cp-027', 'q-of-roses-2024-interins-cp-028', 'q-of-roses-2024-interins-cp-029', 'q-of-roses-2024-interins-cp-030', 'q-of-roses-2024-interins-cp-031', 'q-of-roses-2024-interins-cp-032', 'q-of-roses-2024-interins-cp-033', 'q-of-roses-2024-interins-cp-034', 'q-of-roses-2024-interins-cp-035', 'q-of-roses-2024-interins-cp-036', 'q-of-roses-2024-interins-cp-037', 'q-of-roses-2024-interins-cp-038', 'q-of-roses-2024-interins-cp-039', 'q-of-roses-2024-interins-cp-040', 'q-of-roses-2024-interins-cp-041', 'q-of-roses-2024-interins-cp-042'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 40+2 preguntes amb marca de resposta llegible (ressaltat).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (ressaltat). La pregunta 19 no s’importa: el seu enunciat coincideix lletra a lletra amb una pregunta ja escrita a mà al banc (el dret a la protecció de dades personals) i el validador de duplicats no tolera repetir contingut entre una pregunta pròpia i una d’oficial.',
   },
   {
     examId: 'roses-2024-interins-cg',
@@ -403,11 +403,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2024_c1_prova-cultura-general_03042024',
     sourceId: 'roses-examen-2024-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2024-interins-cg-001', 'q-of-roses-2024-interins-cg-002', 'q-of-roses-2024-interins-cg-003', 'q-of-roses-2024-interins-cg-004', 'q-of-roses-2024-interins-cg-005', 'q-of-roses-2024-interins-cg-006', 'q-of-roses-2024-interins-cg-007', 'q-of-roses-2024-interins-cg-008', 'q-of-roses-2024-interins-cg-009', 'q-of-roses-2024-interins-cg-010', 'q-of-roses-2024-interins-cg-011', 'q-of-roses-2024-interins-cg-012', 'q-of-roses-2024-interins-cg-013', 'q-of-roses-2024-interins-cg-014', 'q-of-roses-2024-interins-cg-015', 'q-of-roses-2024-interins-cg-016', 'q-of-roses-2024-interins-cg-017', 'q-of-roses-2024-interins-cg-018', 'q-of-roses-2024-interins-cg-019', 'q-of-roses-2024-interins-cg-020', 'q-of-roses-2024-interins-cg-021'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+1 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2024-propietat-cp',
@@ -419,11 +419,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2024_c1_prova-coneixements-professionals_19062024',
     sourceId: 'roses-examen-2024-propietat-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2024-propietat-cp-001', 'q-of-roses-2024-propietat-cp-002', 'q-of-roses-2024-propietat-cp-003', 'q-of-roses-2024-propietat-cp-004', 'q-of-roses-2024-propietat-cp-005', 'q-of-roses-2024-propietat-cp-006', 'q-of-roses-2024-propietat-cp-007', 'q-of-roses-2024-propietat-cp-008', 'q-of-roses-2024-propietat-cp-009', 'q-of-roses-2024-propietat-cp-010', 'q-of-roses-2024-propietat-cp-011', 'q-of-roses-2024-propietat-cp-012', 'q-of-roses-2024-propietat-cp-013', 'q-of-roses-2024-propietat-cp-014', 'q-of-roses-2024-propietat-cp-015', 'q-of-roses-2024-propietat-cp-016', 'q-of-roses-2024-propietat-cp-017', 'q-of-roses-2024-propietat-cp-018', 'q-of-roses-2024-propietat-cp-019', 'q-of-roses-2024-propietat-cp-020', 'q-of-roses-2024-propietat-cp-021', 'q-of-roses-2024-propietat-cp-022', 'q-of-roses-2024-propietat-cp-023', 'q-of-roses-2024-propietat-cp-024', 'q-of-roses-2024-propietat-cp-025', 'q-of-roses-2024-propietat-cp-026', 'q-of-roses-2024-propietat-cp-027', 'q-of-roses-2024-propietat-cp-028', 'q-of-roses-2024-propietat-cp-029', 'q-of-roses-2024-propietat-cp-030', 'q-of-roses-2024-propietat-cp-031', 'q-of-roses-2024-propietat-cp-032', 'q-of-roses-2024-propietat-cp-033', 'q-of-roses-2024-propietat-cp-034', 'q-of-roses-2024-propietat-cp-035', 'q-of-roses-2024-propietat-cp-036', 'q-of-roses-2024-propietat-cp-037', 'q-of-roses-2024-propietat-cp-038', 'q-of-roses-2024-propietat-cp-039', 'q-of-roses-2024-propietat-cp-040', 'q-of-roses-2024-propietat-cp-041', 'q-of-roses-2024-propietat-cp-042'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 40+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2024-propietat-cg',
@@ -435,11 +435,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2024_c1_prova-cultura-general_19062024',
     sourceId: 'roses-examen-2024-propietat-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2024-propietat-cg-001', 'q-of-roses-2024-propietat-cg-002', 'q-of-roses-2024-propietat-cg-003', 'q-of-roses-2024-propietat-cg-004', 'q-of-roses-2024-propietat-cg-005', 'q-of-roses-2024-propietat-cg-006', 'q-of-roses-2024-propietat-cg-007', 'q-of-roses-2024-propietat-cg-008', 'q-of-roses-2024-propietat-cg-009', 'q-of-roses-2024-propietat-cg-010', 'q-of-roses-2024-propietat-cg-011', 'q-of-roses-2024-propietat-cg-012', 'q-of-roses-2024-propietat-cg-013', 'q-of-roses-2024-propietat-cg-014', 'q-of-roses-2024-propietat-cg-015', 'q-of-roses-2024-propietat-cg-016', 'q-of-roses-2024-propietat-cg-017', 'q-of-roses-2024-propietat-cg-018', 'q-of-roses-2024-propietat-cg-019', 'q-of-roses-2024-propietat-cg-020', 'q-of-roses-2024-propietat-cg-021'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+1 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2023-interins-cp',
@@ -451,11 +451,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2023_c2_-prova-coneixements-professionals_27032023',
     sourceId: 'roses-examen-2023-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2023-interins-cp-001', 'q-of-roses-2023-interins-cp-002', 'q-of-roses-2023-interins-cp-003', 'q-of-roses-2023-interins-cp-004', 'q-of-roses-2023-interins-cp-005', 'q-of-roses-2023-interins-cp-006', 'q-of-roses-2023-interins-cp-007', 'q-of-roses-2023-interins-cp-008', 'q-of-roses-2023-interins-cp-009', 'q-of-roses-2023-interins-cp-010', 'q-of-roses-2023-interins-cp-011', 'q-of-roses-2023-interins-cp-012', 'q-of-roses-2023-interins-cp-013', 'q-of-roses-2023-interins-cp-014', 'q-of-roses-2023-interins-cp-015', 'q-of-roses-2023-interins-cp-016', 'q-of-roses-2023-interins-cp-017', 'q-of-roses-2023-interins-cp-018', 'q-of-roses-2023-interins-cp-019', 'q-of-roses-2023-interins-cp-020', 'q-of-roses-2023-interins-cp-021'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+1 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2023-interins-cg',
@@ -467,11 +467,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2023_c2_prova-cultura-general_27032023',
     sourceId: 'roses-examen-2023-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2023-interins-cg-001', 'q-of-roses-2023-interins-cg-002', 'q-of-roses-2023-interins-cg-003', 'q-of-roses-2023-interins-cg-004', 'q-of-roses-2023-interins-cg-005', 'q-of-roses-2023-interins-cg-006', 'q-of-roses-2023-interins-cg-007', 'q-of-roses-2023-interins-cg-008', 'q-of-roses-2023-interins-cg-009', 'q-of-roses-2023-interins-cg-010', 'q-of-roses-2023-interins-cg-011', 'q-of-roses-2023-interins-cg-012', 'q-of-roses-2023-interins-cg-013', 'q-of-roses-2023-interins-cg-014', 'q-of-roses-2023-interins-cg-015', 'q-of-roses-2023-interins-cg-016', 'q-of-roses-2023-interins-cg-017', 'q-of-roses-2023-interins-cg-018', 'q-of-roses-2023-interins-cg-019', 'q-of-roses-2023-interins-cg-020', 'q-of-roses-2023-interins-cg-021'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+1 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2022-interins-cp',
@@ -483,11 +483,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2022_c2_prova-coneixements-professionals_19042022',
     sourceId: 'roses-examen-2022-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2022-interins-cp-001', 'q-of-roses-2022-interins-cp-002', 'q-of-roses-2022-interins-cp-003', 'q-of-roses-2022-interins-cp-004', 'q-of-roses-2022-interins-cp-005', 'q-of-roses-2022-interins-cp-006', 'q-of-roses-2022-interins-cp-007', 'q-of-roses-2022-interins-cp-008', 'q-of-roses-2022-interins-cp-009', 'q-of-roses-2022-interins-cp-010', 'q-of-roses-2022-interins-cp-011', 'q-of-roses-2022-interins-cp-012', 'q-of-roses-2022-interins-cp-013', 'q-of-roses-2022-interins-cp-014', 'q-of-roses-2022-interins-cp-015', 'q-of-roses-2022-interins-cp-016', 'q-of-roses-2022-interins-cp-017', 'q-of-roses-2022-interins-cp-018', 'q-of-roses-2022-interins-cp-019', 'q-of-roses-2022-interins-cp-020', 'q-of-roses-2022-interins-cp-021'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+1 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2022-interins-cg',
@@ -499,11 +499,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2022_c2_prova-cultura-general_19042022',
     sourceId: 'roses-examen-2022-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2022-interins-cg-001', 'q-of-roses-2022-interins-cg-002', 'q-of-roses-2022-interins-cg-003', 'q-of-roses-2022-interins-cg-004', 'q-of-roses-2022-interins-cg-005', 'q-of-roses-2022-interins-cg-006', 'q-of-roses-2022-interins-cg-007', 'q-of-roses-2022-interins-cg-008', 'q-of-roses-2022-interins-cg-009', 'q-of-roses-2022-interins-cg-010', 'q-of-roses-2022-interins-cg-011', 'q-of-roses-2022-interins-cg-012', 'q-of-roses-2022-interins-cg-013', 'q-of-roses-2022-interins-cg-014', 'q-of-roses-2022-interins-cg-015', 'q-of-roses-2022-interins-cg-016', 'q-of-roses-2022-interins-cg-017', 'q-of-roses-2022-interins-cg-018', 'q-of-roses-2022-interins-cg-019', 'q-of-roses-2022-interins-cg-020', 'q-of-roses-2022-interins-cg-021'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+1 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2021-interins-cp',
@@ -515,11 +515,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2021_c2_prova-coneixements-professionals_27042021',
     sourceId: 'roses-examen-2021-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2021-interins-cp-001', 'q-of-roses-2021-interins-cp-002', 'q-of-roses-2021-interins-cp-003', 'q-of-roses-2021-interins-cp-004', 'q-of-roses-2021-interins-cp-005', 'q-of-roses-2021-interins-cp-007', 'q-of-roses-2021-interins-cp-008', 'q-of-roses-2021-interins-cp-009', 'q-of-roses-2021-interins-cp-010', 'q-of-roses-2021-interins-cp-011', 'q-of-roses-2021-interins-cp-012', 'q-of-roses-2021-interins-cp-013', 'q-of-roses-2021-interins-cp-014', 'q-of-roses-2021-interins-cp-015', 'q-of-roses-2021-interins-cp-016', 'q-of-roses-2021-interins-cp-017'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 15+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc). La pregunta 6 no s’importa: el seu enunciat coincideix lletra a lletra amb una pregunta ja escrita a mà al banc (qui presideix la Junta Local de Seguretat) i el validador de duplicats no tolera repetir contingut entre una pregunta pròpia i una d’oficial.',
   },
   {
     examId: 'roses-2021-interins-cg',
@@ -531,11 +531,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2021_c2_prova-cultura-general_-27042021',
     sourceId: 'roses-examen-2021-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2021-interins-cg-001', 'q-of-roses-2021-interins-cg-002', 'q-of-roses-2021-interins-cg-003', 'q-of-roses-2021-interins-cg-004', 'q-of-roses-2021-interins-cg-005', 'q-of-roses-2021-interins-cg-006', 'q-of-roses-2021-interins-cg-007', 'q-of-roses-2021-interins-cg-008', 'q-of-roses-2021-interins-cg-009', 'q-of-roses-2021-interins-cg-010', 'q-of-roses-2021-interins-cg-011', 'q-of-roses-2021-interins-cg-012', 'q-of-roses-2021-interins-cg-013', 'q-of-roses-2021-interins-cg-014', 'q-of-roses-2021-interins-cg-015', 'q-of-roses-2021-interins-cg-016', 'q-of-roses-2021-interins-cg-017'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 15+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2021-propietat-cp',
@@ -547,11 +547,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2021_c2_prova-coneixements-professionals_13042021',
     sourceId: 'roses-examen-2021-propietat-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2021-propietat-cp-001', 'q-of-roses-2021-propietat-cp-002', 'q-of-roses-2021-propietat-cp-003', 'q-of-roses-2021-propietat-cp-004', 'q-of-roses-2021-propietat-cp-005', 'q-of-roses-2021-propietat-cp-006', 'q-of-roses-2021-propietat-cp-007', 'q-of-roses-2021-propietat-cp-008', 'q-of-roses-2021-propietat-cp-009', 'q-of-roses-2021-propietat-cp-010', 'q-of-roses-2021-propietat-cp-011', 'q-of-roses-2021-propietat-cp-012', 'q-of-roses-2021-propietat-cp-013', 'q-of-roses-2021-propietat-cp-014', 'q-of-roses-2021-propietat-cp-015', 'q-of-roses-2021-propietat-cp-016', 'q-of-roses-2021-propietat-cp-017', 'q-of-roses-2021-propietat-cp-018', 'q-of-roses-2021-propietat-cp-019', 'q-of-roses-2021-propietat-cp-020', 'q-of-roses-2021-propietat-cp-021', 'q-of-roses-2021-propietat-cp-022', 'q-of-roses-2021-propietat-cp-023', 'q-of-roses-2021-propietat-cp-024', 'q-of-roses-2021-propietat-cp-025', 'q-of-roses-2021-propietat-cp-026', 'q-of-roses-2021-propietat-cp-027'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 25+2 preguntes, 26 de les quals sense marca de resposta inequívoca al text. Aquestes exigeixen revisió visual pregunta per pregunta abans d’importar-les.',
+      'Transcrit del quadernet oficial. Cap marca de text al PDF (ni asterisc ni color): la resposta és negreta sintètica —el mateix text dibuixat dues vegades— i calia sumar la cobertura de totes les capses de traç per llegir-la, no una capsa sola. Totes les respostes són les que porta marcades el document.',
   },
   {
     examId: 'roses-2021-propietat-cg',
@@ -563,11 +563,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2021_c2_prova-cultura-general_13042021',
     sourceId: 'roses-examen-2021-propietat-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2021-propietat-cg-001', 'q-of-roses-2021-propietat-cg-002', 'q-of-roses-2021-propietat-cg-003', 'q-of-roses-2021-propietat-cg-004', 'q-of-roses-2021-propietat-cg-005', 'q-of-roses-2021-propietat-cg-006', 'q-of-roses-2021-propietat-cg-007', 'q-of-roses-2021-propietat-cg-008', 'q-of-roses-2021-propietat-cg-009', 'q-of-roses-2021-propietat-cg-010', 'q-of-roses-2021-propietat-cg-011', 'q-of-roses-2021-propietat-cg-012', 'q-of-roses-2021-propietat-cg-013', 'q-of-roses-2021-propietat-cg-014', 'q-of-roses-2021-propietat-cg-015', 'q-of-roses-2021-propietat-cg-016', 'q-of-roses-2021-propietat-cg-017', 'q-of-roses-2021-propietat-cg-018', 'q-of-roses-2021-propietat-cg-019', 'q-of-roses-2021-propietat-cg-020', 'q-of-roses-2021-propietat-cg-021', 'q-of-roses-2021-propietat-cg-022', 'q-of-roses-2021-propietat-cg-023', 'q-of-roses-2021-propietat-cg-024', 'q-of-roses-2021-propietat-cg-025', 'q-of-roses-2021-propietat-cg-026', 'q-of-roses-2021-propietat-cg-027'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 25+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2019-interins-cp',
@@ -579,11 +579,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins_prova-teorica-20052019',
     sourceId: 'roses-examen-2019-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2019-interins-cp-001', 'q-of-roses-2019-interins-cp-002', 'q-of-roses-2019-interins-cp-003', 'q-of-roses-2019-interins-cp-004', 'q-of-roses-2019-interins-cp-005', 'q-of-roses-2019-interins-cp-006', 'q-of-roses-2019-interins-cp-007', 'q-of-roses-2019-interins-cp-008', 'q-of-roses-2019-interins-cp-009', 'q-of-roses-2019-interins-cp-010', 'q-of-roses-2019-interins-cp-011', 'q-of-roses-2019-interins-cp-012', 'q-of-roses-2019-interins-cp-013', 'q-of-roses-2019-interins-cp-014', 'q-of-roses-2019-interins-cp-015', 'q-of-roses-2019-interins-cp-016', 'q-of-roses-2019-interins-cp-017', 'q-of-roses-2019-interins-cp-018', 'q-of-roses-2019-interins-cp-019', 'q-of-roses-2019-interins-cp-020', 'q-of-roses-2019-interins-cp-021', 'q-of-roses-2019-interins-cp-022'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+2 preguntes amb marca de resposta llegible (color).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (color); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2019-interins-cg',
@@ -595,11 +595,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins_prova-de-cultura-general-20052019',
     sourceId: 'roses-examen-2019-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2019-interins-cg-001', 'q-of-roses-2019-interins-cg-002', 'q-of-roses-2019-interins-cg-003', 'q-of-roses-2019-interins-cg-004', 'q-of-roses-2019-interins-cg-005', 'q-of-roses-2019-interins-cg-006', 'q-of-roses-2019-interins-cg-007', 'q-of-roses-2019-interins-cg-008', 'q-of-roses-2019-interins-cg-009', 'q-of-roses-2019-interins-cg-010', 'q-of-roses-2019-interins-cg-011', 'q-of-roses-2019-interins-cg-012', 'q-of-roses-2019-interins-cg-013', 'q-of-roses-2019-interins-cg-014', 'q-of-roses-2019-interins-cg-015', 'q-of-roses-2019-interins-cg-016', 'q-of-roses-2019-interins-cg-017', 'q-of-roses-2019-interins-cg-018', 'q-of-roses-2019-interins-cg-019', 'q-of-roses-2019-interins-cg-020', 'q-of-roses-2019-interins-cg-021', 'q-of-roses-2019-interins-cg-022'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+2 preguntes amb marca de resposta llegible (color).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (color); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2019-propietat-cp',
@@ -611,11 +611,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2019_c2_prova-coneixements-professionals_25062019',
     sourceId: 'roses-examen-2019-propietat-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'partial',
+    questionIds: ['q-of-roses-2019-propietat-cp-001', 'q-of-roses-2019-propietat-cp-002', 'q-of-roses-2019-propietat-cp-003', 'q-of-roses-2019-propietat-cp-004', 'q-of-roses-2019-propietat-cp-005', 'q-of-roses-2019-propietat-cp-006', 'q-of-roses-2019-propietat-cp-007', 'q-of-roses-2019-propietat-cp-008', 'q-of-roses-2019-propietat-cp-009', 'q-of-roses-2019-propietat-cp-010', 'q-of-roses-2019-propietat-cp-011', 'q-of-roses-2019-propietat-cp-012', 'q-of-roses-2019-propietat-cp-013', 'q-of-roses-2019-propietat-cp-014', 'q-of-roses-2019-propietat-cp-015', 'q-of-roses-2019-propietat-cp-016', 'q-of-roses-2019-propietat-cp-017', 'q-of-roses-2019-propietat-cp-018', 'q-of-roses-2019-propietat-cp-019', 'q-of-roses-2019-propietat-cp-020', 'q-of-roses-2019-propietat-cp-021', 'q-of-roses-2019-propietat-cp-022', 'q-of-roses-2019-propietat-cp-023', 'q-of-roses-2019-propietat-cp-024', 'q-of-roses-2019-propietat-cp-025', 'q-of-roses-2019-propietat-cp-026', 'q-of-roses-2019-propietat-cp-027', 'q-of-roses-2019-propietat-cp-028', 'q-of-roses-2019-propietat-cp-029', 'q-of-roses-2019-propietat-cp-030', 'q-of-roses-2019-propietat-cp-031', 'q-of-roses-2019-propietat-cp-032', 'q-of-roses-2019-propietat-cp-033', 'q-of-roses-2019-propietat-cp-034', 'q-of-roses-2019-propietat-cp-035', 'q-of-roses-2019-propietat-cp-036', 'q-of-roses-2019-propietat-cp-037', 'q-of-roses-2019-propietat-cp-038', 'q-of-roses-2019-propietat-cp-039', 'q-of-roses-2019-propietat-cp-040', 'q-of-roses-2019-propietat-cp-041', 'q-of-roses-2019-propietat-cp-042'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 40+2 preguntes, 1 de les quals sense marca de resposta inequívoca al text. Aquestes exigeixen revisió visual pregunta per pregunta abans d’importar-les.',
+      'Transcrit del quadernet oficial. 41 de les 42 preguntes porten la marca del tribunal. La pregunta 29 diu literalment al seu propi enunciat «pregunta anul·lada; en el seu lloc s’agafa la pregunta reserva número 42» i es queda sense clau: no és un buit de l’extracció, és el que el quadernet declara.',
   },
   {
     examId: 'roses-2019-propietat-cg',
@@ -627,11 +627,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat_prova-teorica-de-cultura-general-25062019',
     sourceId: 'roses-examen-2019-propietat-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2019-propietat-cg-001', 'q-of-roses-2019-propietat-cg-002', 'q-of-roses-2019-propietat-cg-003', 'q-of-roses-2019-propietat-cg-004', 'q-of-roses-2019-propietat-cg-005', 'q-of-roses-2019-propietat-cg-006', 'q-of-roses-2019-propietat-cg-007', 'q-of-roses-2019-propietat-cg-008', 'q-of-roses-2019-propietat-cg-009', 'q-of-roses-2019-propietat-cg-010', 'q-of-roses-2019-propietat-cg-011', 'q-of-roses-2019-propietat-cg-012', 'q-of-roses-2019-propietat-cg-013', 'q-of-roses-2019-propietat-cg-014', 'q-of-roses-2019-propietat-cg-015', 'q-of-roses-2019-propietat-cg-016', 'q-of-roses-2019-propietat-cg-017', 'q-of-roses-2019-propietat-cg-018', 'q-of-roses-2019-propietat-cg-019', 'q-of-roses-2019-propietat-cg-020', 'q-of-roses-2019-propietat-cg-021', 'q-of-roses-2019-propietat-cg-022', 'q-of-roses-2019-propietat-cg-023', 'q-of-roses-2019-propietat-cg-024', 'q-of-roses-2019-propietat-cg-025', 'q-of-roses-2019-propietat-cg-026', 'q-of-roses-2019-propietat-cg-027', 'q-of-roses-2019-propietat-cg-028', 'q-of-roses-2019-propietat-cg-029', 'q-of-roses-2019-propietat-cg-030', 'q-of-roses-2019-propietat-cg-031', 'q-of-roses-2019-propietat-cg-032', 'q-of-roses-2019-propietat-cg-033', 'q-of-roses-2019-propietat-cg-034', 'q-of-roses-2019-propietat-cg-035', 'q-of-roses-2019-propietat-cg-036', 'q-of-roses-2019-propietat-cg-037', 'q-of-roses-2019-propietat-cg-038', 'q-of-roses-2019-propietat-cg-039', 'q-of-roses-2019-propietat-cg-040', 'q-of-roses-2019-propietat-cg-041', 'q-of-roses-2019-propietat-cg-042'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 40+2 preguntes amb marca de resposta llegible (color).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (color); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2018-interins-cp',
@@ -643,11 +643,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2018_c2_prova-coneixements-professionals_09052018',
     sourceId: 'roses-examen-2018-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2018-interins-cp-001', 'q-of-roses-2018-interins-cp-002', 'q-of-roses-2018-interins-cp-003', 'q-of-roses-2018-interins-cp-004', 'q-of-roses-2018-interins-cp-005', 'q-of-roses-2018-interins-cp-006', 'q-of-roses-2018-interins-cp-007', 'q-of-roses-2018-interins-cp-008', 'q-of-roses-2018-interins-cp-009', 'q-of-roses-2018-interins-cp-010', 'q-of-roses-2018-interins-cp-011', 'q-of-roses-2018-interins-cp-012', 'q-of-roses-2018-interins-cp-013', 'q-of-roses-2018-interins-cp-014', 'q-of-roses-2018-interins-cp-015', 'q-of-roses-2018-interins-cp-016', 'q-of-roses-2018-interins-cp-017', 'q-of-roses-2018-interins-cp-018', 'q-of-roses-2018-interins-cp-019', 'q-of-roses-2018-interins-cp-020', 'q-of-roses-2018-interins-cp-001r', 'q-of-roses-2018-interins-cp-002r'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+0 preguntes, 1 de les quals sense marca de resposta inequívoca al text. Aquestes exigeixen revisió visual pregunta per pregunta abans d’importar-les.',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2018-interins-cg',
@@ -659,11 +659,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2018_c2_prova-cultura-general_09052018',
     sourceId: 'roses-examen-2018-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2018-interins-cg-001', 'q-of-roses-2018-interins-cg-002', 'q-of-roses-2018-interins-cg-003', 'q-of-roses-2018-interins-cg-004', 'q-of-roses-2018-interins-cg-005', 'q-of-roses-2018-interins-cg-006', 'q-of-roses-2018-interins-cg-007', 'q-of-roses-2018-interins-cg-008', 'q-of-roses-2018-interins-cg-009', 'q-of-roses-2018-interins-cg-010', 'q-of-roses-2018-interins-cg-011', 'q-of-roses-2018-interins-cg-012', 'q-of-roses-2018-interins-cg-013', 'q-of-roses-2018-interins-cg-014', 'q-of-roses-2018-interins-cg-015', 'q-of-roses-2018-interins-cg-016', 'q-of-roses-2018-interins-cg-017', 'q-of-roses-2018-interins-cg-018', 'q-of-roses-2018-interins-cg-019', 'q-of-roses-2018-interins-cg-020', 'q-of-roses-2018-interins-cg-001r', 'q-of-roses-2018-interins-cg-002r'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2018-propietat-cp',
@@ -675,11 +675,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2018_c2_prova-coneixements-professionals_31072018',
     sourceId: 'roses-examen-2018-propietat-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2018-propietat-cp-001', 'q-of-roses-2018-propietat-cp-002', 'q-of-roses-2018-propietat-cp-003', 'q-of-roses-2018-propietat-cp-004', 'q-of-roses-2018-propietat-cp-005', 'q-of-roses-2018-propietat-cp-006', 'q-of-roses-2018-propietat-cp-007', 'q-of-roses-2018-propietat-cp-008', 'q-of-roses-2018-propietat-cp-009', 'q-of-roses-2018-propietat-cp-010', 'q-of-roses-2018-propietat-cp-011', 'q-of-roses-2018-propietat-cp-012', 'q-of-roses-2018-propietat-cp-013', 'q-of-roses-2018-propietat-cp-014', 'q-of-roses-2018-propietat-cp-015', 'q-of-roses-2018-propietat-cp-016', 'q-of-roses-2018-propietat-cp-017', 'q-of-roses-2018-propietat-cp-018', 'q-of-roses-2018-propietat-cp-019', 'q-of-roses-2018-propietat-cp-020', 'q-of-roses-2018-propietat-cp-021', 'q-of-roses-2018-propietat-cp-022', 'q-of-roses-2018-propietat-cp-023', 'q-of-roses-2018-propietat-cp-024', 'q-of-roses-2018-propietat-cp-025', 'q-of-roses-2018-propietat-cp-026', 'q-of-roses-2018-propietat-cp-027', 'q-of-roses-2018-propietat-cp-028', 'q-of-roses-2018-propietat-cp-029', 'q-of-roses-2018-propietat-cp-030', 'q-of-roses-2018-propietat-cp-031', 'q-of-roses-2018-propietat-cp-032', 'q-of-roses-2018-propietat-cp-033', 'q-of-roses-2018-propietat-cp-034', 'q-of-roses-2018-propietat-cp-035', 'q-of-roses-2018-propietat-cp-036', 'q-of-roses-2018-propietat-cp-037', 'q-of-roses-2018-propietat-cp-038', 'q-of-roses-2018-propietat-cp-039', 'q-of-roses-2018-propietat-cp-040', 'q-of-roses-2018-propietat-cp-001r', 'q-of-roses-2018-propietat-cp-002r'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 40+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2018-propietat-cg',
@@ -691,11 +691,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-en-propietat-2018_c2_prova-cultura-general_31072018',
     sourceId: 'roses-examen-2018-propietat-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'partial',
+    questionIds: ['q-of-roses-2018-propietat-cg-001', 'q-of-roses-2018-propietat-cg-002', 'q-of-roses-2018-propietat-cg-003', 'q-of-roses-2018-propietat-cg-004', 'q-of-roses-2018-propietat-cg-005', 'q-of-roses-2018-propietat-cg-006', 'q-of-roses-2018-propietat-cg-007', 'q-of-roses-2018-propietat-cg-008', 'q-of-roses-2018-propietat-cg-009', 'q-of-roses-2018-propietat-cg-010', 'q-of-roses-2018-propietat-cg-011', 'q-of-roses-2018-propietat-cg-012', 'q-of-roses-2018-propietat-cg-013', 'q-of-roses-2018-propietat-cg-014', 'q-of-roses-2018-propietat-cg-015', 'q-of-roses-2018-propietat-cg-016', 'q-of-roses-2018-propietat-cg-017', 'q-of-roses-2018-propietat-cg-018', 'q-of-roses-2018-propietat-cg-019', 'q-of-roses-2018-propietat-cg-020', 'q-of-roses-2018-propietat-cg-021', 'q-of-roses-2018-propietat-cg-022', 'q-of-roses-2018-propietat-cg-023', 'q-of-roses-2018-propietat-cg-024', 'q-of-roses-2018-propietat-cg-025', 'q-of-roses-2018-propietat-cg-026', 'q-of-roses-2018-propietat-cg-027', 'q-of-roses-2018-propietat-cg-028', 'q-of-roses-2018-propietat-cg-029', 'q-of-roses-2018-propietat-cg-030', 'q-of-roses-2018-propietat-cg-031', 'q-of-roses-2018-propietat-cg-032', 'q-of-roses-2018-propietat-cg-033', 'q-of-roses-2018-propietat-cg-034', 'q-of-roses-2018-propietat-cg-035', 'q-of-roses-2018-propietat-cg-036', 'q-of-roses-2018-propietat-cg-037', 'q-of-roses-2018-propietat-cg-038', 'q-of-roses-2018-propietat-cg-039', 'q-of-roses-2018-propietat-cg-040', 'q-of-roses-2018-propietat-cg-001r', 'q-of-roses-2018-propietat-cg-002r'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 40+2 preguntes, 1 de les quals sense marca de resposta inequívoca al text. Aquestes exigeixen revisió visual pregunta per pregunta abans d’importar-les.',
+      'Transcrit del quadernet oficial. 41 de les 42 preguntes porten la marca del tribunal (asterisc); la pregunta de reserva 2 («La maja desnuda») porta dos asteriscos —Frank Kafka i Francisco de Goya— i es queda sense clau perquè el document mateix és ambigu: no se n’ha triat cap opció sense inventar-la.',
   },
   {
     examId: 'roses-2017-interins-cp',
@@ -707,11 +707,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2017_c2_prova-coneixements-professionals_22052017',
     sourceId: 'roses-examen-2017-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2017-interins-cp-001', 'q-of-roses-2017-interins-cp-002', 'q-of-roses-2017-interins-cp-003', 'q-of-roses-2017-interins-cp-004', 'q-of-roses-2017-interins-cp-005', 'q-of-roses-2017-interins-cp-006', 'q-of-roses-2017-interins-cp-007', 'q-of-roses-2017-interins-cp-008', 'q-of-roses-2017-interins-cp-009', 'q-of-roses-2017-interins-cp-010', 'q-of-roses-2017-interins-cp-011', 'q-of-roses-2017-interins-cp-012', 'q-of-roses-2017-interins-cp-013', 'q-of-roses-2017-interins-cp-014', 'q-of-roses-2017-interins-cp-015', 'q-of-roses-2017-interins-cp-016', 'q-of-roses-2017-interins-cp-017', 'q-of-roses-2017-interins-cp-018', 'q-of-roses-2017-interins-cp-019', 'q-of-roses-2017-interins-cp-020', 'q-of-roses-2017-interins-cp-001r', 'q-of-roses-2017-interins-cp-002r'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+0 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2017-interins-cg',
@@ -723,11 +723,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2017_c2_prova-cultura-general_22052017',
     sourceId: 'roses-examen-2017-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2017-interins-cg-001', 'q-of-roses-2017-interins-cg-002', 'q-of-roses-2017-interins-cg-003', 'q-of-roses-2017-interins-cg-004', 'q-of-roses-2017-interins-cg-005', 'q-of-roses-2017-interins-cg-006', 'q-of-roses-2017-interins-cg-007', 'q-of-roses-2017-interins-cg-008', 'q-of-roses-2017-interins-cg-009', 'q-of-roses-2017-interins-cg-010', 'q-of-roses-2017-interins-cg-011', 'q-of-roses-2017-interins-cg-012', 'q-of-roses-2017-interins-cg-013', 'q-of-roses-2017-interins-cg-014', 'q-of-roses-2017-interins-cg-015', 'q-of-roses-2017-interins-cg-016', 'q-of-roses-2017-interins-cg-017', 'q-of-roses-2017-interins-cg-018', 'q-of-roses-2017-interins-cg-019', 'q-of-roses-2017-interins-cg-020', 'q-of-roses-2017-interins-cg-001r', 'q-of-roses-2017-interins-cg-002r'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
   {
     examId: 'roses-2016-interins-cp',
@@ -739,11 +739,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2016_c2_prova-coneixements-professionals_15042016',
     sourceId: 'roses-examen-2016-interins-cp',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2016-interins-cp-001', 'q-of-roses-2016-interins-cp-002', 'q-of-roses-2016-interins-cp-003', 'q-of-roses-2016-interins-cp-004', 'q-of-roses-2016-interins-cp-005', 'q-of-roses-2016-interins-cp-006', 'q-of-roses-2016-interins-cp-007', 'q-of-roses-2016-interins-cp-008', 'q-of-roses-2016-interins-cp-009', 'q-of-roses-2016-interins-cp-010', 'q-of-roses-2016-interins-cp-001r', 'q-of-roses-2016-interins-cp-002r'],
     expectedQuestionCount: 42,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 9+0 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Només conté 12 preguntes (10 ordinàries + 2 de reserva): el document adoptat és una còpia més curta que la resta de convocatòries, no un extracte. Totes les respostes són les que porta marcades el document (asterisc).',
   },
   {
     examId: 'roses-2016-interins-cg',
@@ -755,11 +755,11 @@ const ROSES_EXAM_REGISTRY: OfficialExam[] = [
     url: 'https://www.roses.cat/fitxers/RRHH/proves-opos/agents-interins-2016_c2_prova-cultura-general_15042016',
     sourceId: 'roses-examen-2016-interins-cg',
     priority: 'P1',
-    importStatus: 'pending-source',
-    questionIds: [],
+    importStatus: 'imported',
+    questionIds: ['q-of-roses-2016-interins-cg-001', 'q-of-roses-2016-interins-cg-002', 'q-of-roses-2016-interins-cg-003', 'q-of-roses-2016-interins-cg-004', 'q-of-roses-2016-interins-cg-005', 'q-of-roses-2016-interins-cg-006', 'q-of-roses-2016-interins-cg-007', 'q-of-roses-2016-interins-cg-008', 'q-of-roses-2016-interins-cg-009', 'q-of-roses-2016-interins-cg-010', 'q-of-roses-2016-interins-cg-011', 'q-of-roses-2016-interins-cg-012', 'q-of-roses-2016-interins-cg-013', 'q-of-roses-2016-interins-cg-014', 'q-of-roses-2016-interins-cg-015', 'q-of-roses-2016-interins-cg-016', 'q-of-roses-2016-interins-cg-017', 'q-of-roses-2016-interins-cg-018', 'q-of-roses-2016-interins-cg-019', 'q-of-roses-2016-interins-cg-020', 'q-of-roses-2016-interins-cg-001r', 'q-of-roses-2016-interins-cg-002r'],
     expectedQuestionCount: 21,
     note:
-      'Quadernet oficial adoptat i verificat pel seu SHA-256. Pendent de transcriure: prioritat P1. L’extracció detecta 20+2 preguntes amb marca de resposta llegible (asterisc).',
+      'Transcrit del quadernet oficial. Totes les respostes són les que porta marcades el document (asterisc); no se n’ha deduït cap.',
   },
 ]
 
