@@ -35,6 +35,12 @@ MARKS_ES = {
 }
 
 # Quadernets a importar: sourceId → metadades de l'examen.
+#
+# Els sis primers són els vigents (2025-2026); la resta, els 24 històrics
+# (2016-2024), adoptats amb còpia local i SHA-256 comprovat però pendents de
+# transcriure fins ara. Cap resposta s'hi ha deduït: surt sempre de la marca
+# del quadernet, i on l'extractor no en troba cap d'inequívoca, la pregunta
+# s'importa sense clau (`status: 'draft'`).
 EXAMS = [
     ('roses-examen-2026-interins-cg', 'roses-2026-interins-cg', 2026, 'interina', 'cultura-general', '2026-04-15'),
     ('roses-examen-2026-interins-cp', 'roses-2026-interins-cp', 2026, 'interina', 'coneixements-professionals', '2026-04-15'),
@@ -42,6 +48,30 @@ EXAMS = [
     ('roses-examen-2025-propietat-cp', 'roses-2025-propietat-cp', 2025, 'propietat', 'coneixements-professionals', '2025-12-03'),
     ('roses-examen-2025-interins-cg', 'roses-2025-interins-cg', 2025, 'interina', 'cultura-general', '2025-04-16'),
     ('roses-examen-2025-interins-cp', 'roses-2025-interins-cp', 2025, 'interina', 'coneixements-professionals', '2025-04-16'),
+    ('roses-examen-2024-propietat-cg', 'roses-2024-propietat-cg', 2024, 'propietat', 'cultura-general', '2024-06-19'),
+    ('roses-examen-2024-propietat-cp', 'roses-2024-propietat-cp', 2024, 'propietat', 'coneixements-professionals', '2024-06-19'),
+    ('roses-examen-2024-interins-cg', 'roses-2024-interins-cg', 2024, 'interina', 'cultura-general', '2024-04-03'),
+    ('roses-examen-2024-interins-cp', 'roses-2024-interins-cp', 2024, 'interina', 'coneixements-professionals', '2024-04-03'),
+    ('roses-examen-2023-interins-cg', 'roses-2023-interins-cg', 2023, 'interina', 'cultura-general', '2023-03-27'),
+    ('roses-examen-2023-interins-cp', 'roses-2023-interins-cp', 2023, 'interina', 'coneixements-professionals', '2023-03-27'),
+    ('roses-examen-2022-interins-cg', 'roses-2022-interins-cg', 2022, 'interina', 'cultura-general', '2022-04-19'),
+    ('roses-examen-2022-interins-cp', 'roses-2022-interins-cp', 2022, 'interina', 'coneixements-professionals', '2022-04-19'),
+    ('roses-examen-2021-propietat-cg', 'roses-2021-propietat-cg', 2021, 'propietat', 'cultura-general', '2021-04-13'),
+    ('roses-examen-2021-propietat-cp', 'roses-2021-propietat-cp', 2021, 'propietat', 'coneixements-professionals', '2021-04-13'),
+    ('roses-examen-2021-interins-cg', 'roses-2021-interins-cg', 2021, 'interina', 'cultura-general', '2021-04-27'),
+    ('roses-examen-2021-interins-cp', 'roses-2021-interins-cp', 2021, 'interina', 'coneixements-professionals', '2021-04-27'),
+    ('roses-examen-2019-propietat-cg', 'roses-2019-propietat-cg', 2019, 'propietat', 'cultura-general', '2019-06-25'),
+    ('roses-examen-2019-propietat-cp', 'roses-2019-propietat-cp', 2019, 'propietat', 'coneixements-professionals', '2019-06-25'),
+    ('roses-examen-2019-interins-cg', 'roses-2019-interins-cg', 2019, 'interina', 'cultura-general', '2019-05-20'),
+    ('roses-examen-2019-interins-cp', 'roses-2019-interins-cp', 2019, 'interina', 'coneixements-professionals', '2019-05-20'),
+    ('roses-examen-2018-propietat-cg', 'roses-2018-propietat-cg', 2018, 'propietat', 'cultura-general', '2018-07-31'),
+    ('roses-examen-2018-propietat-cp', 'roses-2018-propietat-cp', 2018, 'propietat', 'coneixements-professionals', '2018-07-31'),
+    ('roses-examen-2018-interins-cg', 'roses-2018-interins-cg', 2018, 'interina', 'cultura-general', '2018-05-09'),
+    ('roses-examen-2018-interins-cp', 'roses-2018-interins-cp', 2018, 'interina', 'coneixements-professionals', '2018-05-09'),
+    ('roses-examen-2017-interins-cg', 'roses-2017-interins-cg', 2017, 'interina', 'cultura-general', '2017-05-22'),
+    ('roses-examen-2017-interins-cp', 'roses-2017-interins-cp', 2017, 'interina', 'coneixements-professionals', '2017-05-22'),
+    ('roses-examen-2016-interins-cg', 'roses-2016-interins-cg', 2016, 'interina', 'cultura-general', '2016-04-15'),
+    ('roses-examen-2016-interins-cp', 'roses-2016-interins-cp', 2016, 'interina', 'coneixements-professionals', '2016-04-15'),
 ]
 
 # Notes de revisió humana, per questionId.
@@ -53,6 +83,21 @@ EXAMS = [
 # en un quart lloc no informava més; només deia dues vegades el mateix amb
 # paraules diferents.
 REVIEW_NOTES: dict[str, str] = {}
+
+# Preguntes que no s'importen, amb el motiu.
+#
+# No és «el tribunal es va equivocar»: és que el seu enunciat coincideix
+# lletra a lletra amb una pregunta ja escrita a mà al banc, i el validador de
+# duplicats —que tolera que dos exàmens oficials repeteixin la mateixa
+# pregunta, però no que una d'oficial dupliqui una de pròpia— té raó de
+# fer-ho fallar: la persona que estudia la veuria dues vegades com si fossin
+# diferents. No es pot arreglar canviant l'enunciat oficial (mai s'inventa
+# ni es retoca) ni el de la lliçó (és contingut previ i verificat pel seu
+# compte); l'única sortida honesta és no duplicar-la.
+SKIP = {
+    ('roses-2024-interins-cp', 19): 'mateix enunciat que q-roses-t20-004 (dret a la protecció de dades personals)',
+    ('roses-2021-interins-cp', 6): 'mateix enunciat que q-roses-t23-001 (presidència de la Junta Local de Seguretat)',
+}
 
 # El tribunal no etiqueta les preguntes per tema. La classificació que porta
 # cada pregunta és **editorial**: viu a `official-topic-map.json`, revisada
@@ -173,15 +218,26 @@ def main():
     blocks, stats, rows_for_report = [], [], []
     for source_id, exam_id, year, place, test, held in EXAMS:
         pdf = CACHE / f'{source_id}.pdf'
-        questions, _ = E.parse(pdf)
+        questions, _ = E.parse_with_fallback(pdf)
         full = [q for q in questions if len(q.options) == 4]
+        # Una reserva pot reprendre la numeració de l'examen o reiniciar-la
+        # des d'1. Quan la reinicia, el seu número xoca amb el de la
+        # pregunta ordinària homònima; quan la continua (21, 41…), no
+        # col·lideix mai i l'identificador que ja porten els sis exàmens
+        # vigents no s'ha de tocar. Només es distingeix amb un sufix «r»
+        # —el mateix que `topic_key`, no un prefix— quan la col·lisió és
+        # real, un examen a la vegada.
+        regular_nums = {q.number for q in full if not q.reserve}
         kept = blocked = 0
         for q in full:
+            if (exam_id, q.number) in SKIP and not q.reserve:
+                continue
             answer = q.answer
             stem = clean(q.stem)
             if len(stem) < 8:
                 continue
-            qid = f'q-of-{exam_id}-{q.number:03d}'
+            colliding_reserve = q.reserve and q.number in regular_nums
+            qid = f'q-of-{exam_id}-{q.number:03d}r' if colliding_reserve else f'q-of-{exam_id}-{q.number:03d}'
             opts = ',\n      '.join(
                 '{ optionId: %s, text: %s }' % (ts(o.letter), ts(clean(o.text)))
                 for o in q.options
