@@ -113,6 +113,12 @@ def repeated_lines(doc, min_share=0.5):
     pages = doc.page_count
     for pno in range(pages):
         for line in {l.strip() for l in doc[pno].get_text().split('\n') if l.strip()}:
+            # Una lletra d'opció sola («a)», «b)»…) es repeteix legítimament
+            # moltes vegades quan un quadernet posa el text de l'opció a la
+            # línia següent: no és mai capçalera ni peu, i comptar-la aquí
+            # l'esborraria abans que la lògica de `pending_letter` la vegi.
+            if re.fullmatch(r'[a-d]\s*[\)\.]', line):
+                continue
             seen[line] = seen.get(line, 0) + 1
     return {line for line, n in seen.items() if n >= max(2, pages * min_share)}
 
@@ -142,7 +148,7 @@ def document_profile(doc):
     return body_color, mark_colors, body_bold
 
 
-def parse(path):
+def parse(path, force_stroke_marks=False):
     doc = pymupdf.open(path)
     body_color, mark_colors, body_bold = document_profile(doc)
     boilerplate = repeated_lines(doc)
@@ -160,18 +166,37 @@ def parse(path):
     stroked_total = sum(len(v) for v in strokes.values())
     all_spans = sum(1 for _ in visual_lines(doc))
     # Si tot el document va resseguit, el traç no marca res.
-    strokes_are_marks = 0 < stroked_total < max(4, all_spans * 0.5)
+    # Alguns quadernets marquen la resposta amb negreta sintètica (el mateix
+    # text dibuixat dues vegades) però amb tanta densitat de traç a tota la
+    # pàgina que el recompte total ja no distingeix res: aleshores es descarta
+    # aquest senyal, perquè un document tot resseguit no marca res en concret.
+    # `force_stroke_marks` el torna a activar quan `parse_with_fallback` ha
+    # comprovat que, sense ell, el document no dona ni una sola resposta.
+    strokes_are_marks = force_stroke_marks or (0 < stroked_total < max(4, all_spans * 0.5))
 
     def is_stroked(parts):
+        """Si el text d'una opció està resseguit: negreta sintètica.
+
+        No n'hi ha prou de mirar si **una** capsa de traç cobreix la part: en
+        alguns quadernets el traç ve trossejat per glif —una capsa minúscula
+        per lletra—, i cap d'elles sola arriba mai al 40% d'una paraula
+        sencera encara que la paraula estigui resseguida de cap a cap. Per
+        això se suma la cobertura de totes les capses que hi solapen i es
+        compara la suma amb l'àrea de la part, no cada capsa per separat.
+        """
         if not strokes_are_marks:
             return False
+        total_area = sum(pymupdf.Rect(p['bbox']).get_area() for p in parts)
+        if total_area == 0:
+            return False
+        covered = 0.0
         for p in parts:
             rect = pymupdf.Rect(p['bbox'])
             for box in strokes.get(p['page'], ()):  # solapament real, no proximitat
                 inter = rect & box
-                if not inter.is_empty and inter.get_area() > rect.get_area() * 0.4:
-                    return True
-        return False
+                if not inter.is_empty:
+                    covered += inter.get_area()
+        return covered > total_area * 0.4
 
     questions, current, current_opt = [], None, None
     pending_letter = None
@@ -179,7 +204,12 @@ def parse(path):
     # numerar des d'1**. Sense detectar-ho, la darrera pregunta del cos
     # s'empassava tota la reserva i semblava tenir dues respostes marcades.
     in_reserve = False
-    reserve_re = re.compile(r'^\s*PREGUNT\w*\s+(DE\s+)?RESERVA', re.I)
+    # «RESERVA» a seques es queda curt: alguns quadernets diuen «PREGUNTES
+    # RESERVES» (plural-plural), no «PREGUNTA DE RESERVA». Sense aquesta
+    # variant, la capçalera no es reconeix com a frontera i tota la secció de
+    # reserva —amb el seu propi asterisc— s'envola cap a l'última opció de
+    # l'última pregunta ordinària.
+    reserve_re = re.compile(r'^\s*PREGUNT\w*\s+(DE\s+)?RESERV\w*', re.I)
     just_entered_reserve = False
     # Després de l'última opció, els quadernets de cultura general reprodueixen
     # el text de les bases («El primer exercici és obligatori i eliminatori…»).
@@ -195,7 +225,13 @@ def parse(path):
             letter=letter,
             text=body.rstrip().rstrip('*').strip(),
             asterisk=body.rstrip().endswith('*'),
-            colored=any(p['color'] in mark_colors for p in content),
+            # Majoria de caràcters, no «n'hi ha prou amb un». Un sol
+            # caràcter perdut amb el color de marca —una resta d'edició, un
+            # glifo mal llegit— no converteix tota l'opció en marcada.
+            colored=(
+                sum(len(p['text']) for p in content if p['color'] in mark_colors)
+                > sum(len(p['text']) for p in content) * 0.5
+            ),
             bold=(not body_bold) and any(p['bold'] for p in content),
             stroked=is_stroked(content),
         )
@@ -263,3 +299,28 @@ def parse(path):
 
     doc.close()
     return questions, {'body_color': body_color, 'mark_colors': mark_colors, 'body_bold': body_bold}
+
+
+def parse_with_fallback(path):
+    """Com `parse`, però amb un segon intent quan el primer no troba res.
+
+    Alguns quadernets antics no porten cap asterisc ni cap color de marca: la
+    resposta hi és només per negreta sintètica, i el llindar de
+    `strokes_are_marks` la descarta perquè el document sencer és dens de traç.
+    Quan això deixa gairebé **totes** les preguntes sense resposta es torna a
+    intentar forçant el senyal de traç. El llindar és baix a propòsit —una de
+    cada cinc, com a molt— perquè un document que ja funciona per un altre
+    mètode i només en té una o dues de dubtoses no ha de passar mai per aquí:
+    forçar el traç allà podria confondre soroll de renderització amb una marca
+    de veritat i espatllar respostes que ja eren bones.
+    """
+    questions, meta = parse(path)
+    answered = sum(1 for q in questions if q.answer)
+    if questions and answered / len(questions) >= 0.2:
+        return questions, meta
+    retry, retry_meta = parse(path, force_stroke_marks=True)
+    retry_answered = sum(1 for q in retry if q.answer)
+    if retry_answered > answered:
+        retry_meta['stroke_fallback'] = True
+        return retry, retry_meta
+    return questions, meta
