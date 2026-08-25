@@ -243,7 +243,11 @@ if (p0Pending.length > 0) {
     'cultura general i coneixements professionals), amb les respostes publicades pel tribunal.',
   )
 }
-const p1Pending = exams.filter((e) => e.priority === 'P1' && e.importStatus !== 'imported')
+// `partial` no és «falta la font»: el quadernet ja s'ha transcrit i només hi
+// queda una pregunta genuïnament irresoluble (ambigüitat pròpia del document
+// o anul·lació pel propi tribunal), documentada a la seva nota. Només
+// `pending-source` —cap còpia accessible— demana localitzar una URL.
+const p1Pending = exams.filter((e) => e.priority === 'P1' && e.importStatus === 'pending-source')
 if (p1Pending.length > 0) {
   todo.push(
     `Localitzar la URL directa dels ${p1Pending.length} quadernets de prioritat P1 a l’arxiu municipal i importar-los.`,

@@ -148,10 +148,20 @@ verificats pel seu SHA-256, document a document.
   189/189 coincideixen. L'auditoria va trobar una resposta oficial que ja no
   reflecteix el dret vigent; es conserva tal com es va publicar i porta una nota
   visible a l'app.
-- **Els 24 exàmens històrics** (2016–2024) estan adoptats i registrats amb la
-  seva URL i data reals, però **pendents de transcriure**. La nota de cada un
-  diu si la marca de resposta és llegible al document; sis no en tenen cap de
-  clara al text i exigeixen revisió visual pregunta per pregunta.
+- **Els 24 exàmens històrics** (2016–2024) estan transcrits: 630 preguntes
+  noves, amb la resposta que hi va marcar el tribunal —mai deduïda— i
+  classificades per tema amb la mateixa disciplina editorial que les 189
+  vigents (`official-topic-map.json`, un motiu per decisió). 22 quadernets
+  són `imported` i 2 `partial`, amb una nota que diu quina marca fa servir
+  el document i, si escau, quina pregunta no s'importa i per què. Només dues
+  preguntes de 821 queden sense clau: una porta dos asteriscos reals al PDF
+  —ambigüitat pròpia del document, no de l'extractor— i l'altra diu
+  literalment «pregunta anul·lada» al seu propi enunciat; totes dues
+  s'importen igualment en `draft`, mai s'omplen amb una resposta plausible.
+  Sense evidència pròpia —la matriu i les explicacions són feina posterior i
+  deliberadament separada—, aquestes 630 no compten per al domini ni surten
+  a l'entrenament normal, però es poden consultar quadernet a quadernet com
+  a material d'examen oficial històric.
 - **Els temes 35 i 36** estan escrits sobre l'articulat real de les ordenances
   de circulació i de convivència, amb la modificació de 2021 consolidada i
   referències amb article i pàgina del PDF.
@@ -307,6 +317,9 @@ La feina que queda, en aquest ordre:
    `artifacts/adopcio-fonts-normatives-2026-08-24.md` i a la secció 7 d'
    `artifacts/matriu-i-explicacions-2026-08-25.md`. Cap es dona per verificada
    fins que algú obri el document i hi busqui la proposició concreta.
-3. Transcriure els 24 exàmens històrics. Els sis sense marca llegible al text
-   exigeixen revisió visual; no se'n pot deduir cap resposta per densitat de
-   tinta, freqüència ni coneixement general.
+3. Construir la matriu probatòria i les explicacions de les 630 preguntes
+   històriques, amb el mateix rigor que les 189 vigents (citació literal
+   contra la còpia local, mai una explicació inventada). Fins que això no
+   passi, es queden en `pending-evidence`: no compten per al domini ni surten
+   a l'entrenament normal, encara que ja es puguin consultar quadernet a
+   quadernet com a material d'examen oficial històric.

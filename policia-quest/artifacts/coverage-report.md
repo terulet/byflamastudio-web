@@ -143,6 +143,5 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 ## Què necessita revisió humana
 
 1. Tornar a capturar 2 pàgines web la còpia de les quals només porta el menú (`roses-web-municipi`, `agencia-ciberseguretat-catalunya`): el cos es carrega per JavaScript. Cal una instantània de text de les pàgines concretes, com es va fer amb el paquet d’actualitat.
-2. Localitzar la URL directa dels 2 quadernets de prioritat P1 a l’arxiu municipal i importar-los.
-3. Contrastar contra el text vigent les 18 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
+2. Contrastar contra el text vigent les 18 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
 
