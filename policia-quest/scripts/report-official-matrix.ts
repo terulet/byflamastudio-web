@@ -25,10 +25,10 @@
  * Els punts 3 a 6 no són comprovacions decoratives: cada un correspon a una
  * manera concreta d'espatllar això sense adonar-se'n.
  */
-import { createHash } from 'node:crypto'
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { ROSES_PACK } from '../content/municipalities/roses/index.ts'
 import evidenceMap from '../content/municipalities/roses/questions/official-evidence-map.json' with { type: 'json' }
+import { SEALED, officialFingerprint } from './lib/official-seal.ts'
 import { officialVerdict } from '../src/engines/official-evidence.ts'
 import type { OfficialEvidenceStatus, Question } from '../src/domain/types.ts'
 
@@ -60,19 +60,6 @@ if (orphan.length > 0) failures.push(`el mapa jutja preguntes que no existeixen:
  * canvia, o algú ha «corregit» un document oficial o la transcripció s'ha
  * trencat, i les dues coses s'han de mirar a mà.
  */
-const SEALED = '9f762a38733dd48a34fdb714b1d3f75b1492138cf12414c6dd9304e96d1b3576'
-function officialFingerprint(questions: readonly Question[]): string {
-  const rows = [...questions]
-    .sort((a, b) => a.questionId.localeCompare(b.questionId))
-    .map((q) => [
-      q.questionId,
-      q.officialExam!.originalNumber,
-      q.officialExam!.officialAnswer,
-      q.stem,
-      ...q.options.map((o) => o.text),
-    ])
-  return createHash('sha256').update(JSON.stringify(rows)).digest('hex')
-}
 const fingerprint = officialFingerprint(official)
 const sealCheck = process.argv.includes('--seal')
   ? `segell nou: ${fingerprint}`
