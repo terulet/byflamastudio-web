@@ -19,21 +19,18 @@
  * És pur: el dia entra com a paràmetre. L'actualitat caduca, i una prova que
  * avui es pot muntar pot deixar de poder-se muntar d'aquí a tres mesos sense
  * que ningú toqui una línia de codi. Això és intencionat.
+ *
+ * Una pregunta oficial amb discrepància tampoc hi compta: `official-evidence.ts`
+ * ja decideix qui es pot servir com a material vigent, i aquest mòdul li fa
+ * la mateixa pregunta en lloc de tornar a mirar només `isCurrent`. Sense
+ * això, un simulacre podria dir-se «disponible» amb preguntes que la
+ * selecció real ja descarta.
  */
 import type { ExamBlueprint, Question } from '../domain/types.ts'
+import { isCurrent } from './freshness.ts'
+import { officialVerdict } from './official-evidence.ts'
 
-/**
- * Una pregunta és vigent si no caduca o si encara no ha caducat.
- *
- * El contingut dinàmic (càrrecs, xifres, actualitat) porta `reviewBy`. Passada
- * aquesta data no es pot donar per bo: no és que sigui fals, és que ningú
- * n'ha respost. Una prova d'actualitat muntada amb preguntes caducades és
- * pitjor que no oferir-la.
- */
-export function isCurrent(question: Question, todayIso: string): boolean {
-  if (!question.dynamic) return true
-  return question.reviewBy !== undefined && question.reviewBy >= todayIso
-}
+export { isCurrent }
 
 /** Estat d'una de les quotes que fixa el plànol (p. ex. 10 d'actualitat). */
 export interface QuotaStatus {
@@ -72,7 +69,10 @@ export function examAvailability(
   todayIso: string,
 ): ExamAvailability {
   const eligible = pool.filter(
-    (q) => q.status === 'active' && q.track === blueprint.track && isCurrent(q, todayIso),
+    (q) =>
+      q.status === 'active' &&
+      q.track === blueprint.track &&
+      officialVerdict(q, todayIso).usableForCurrentLearning,
   )
 
   if (!blueprint.composition || blueprint.composition.length === 0) {

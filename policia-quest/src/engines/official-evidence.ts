@@ -26,7 +26,7 @@
  * És un motor pur: el dia entra com a paràmetre i no crida `Date.now()`.
  */
 import type { OfficialEvidenceStatus, Question } from '../domain/types.ts'
-import { isCurrent } from './availability.ts'
+import { isCurrent } from './freshness.ts'
 
 /** Avís que la correcció ha de mostrar, si n'ha de mostrar cap. */
 export type OfficialNotice =

@@ -35,7 +35,15 @@ import type { OfficialEvidenceStatus, Question } from '../src/domain/types.ts'
 const ROOT = new URL('..', import.meta.url).pathname
 const TODAY = new Date().toISOString().slice(0, 10)
 
-const official = ROSES_PACK.questions.filter((q) => q.origin === 'official')
+// Aquest informe és de les 189 dels exàmens vigents (2025-2026), que és on
+// viu el segell i l'auditoria línia a línia. Els 24 quadernets històrics
+// (2016-2024) tenen la seva pròpia matriu de 630 decisions al mateix
+// `official-evidence-map.json`, però es comproven a `tests/content/content.test.ts`,
+// no aquí: repetir-hi la mateixa auditoria exhaustiva seria una feina a part.
+const CURRENT_YEARS = new Set([2025, 2026])
+const official = ROSES_PACK.questions.filter(
+  (q) => q.origin === 'official' && CURRENT_YEARS.has(q.officialExam!.year),
+)
 const exams = new Map(ROSES_PACK.exams.map((e) => [e.examId, e]))
 const decisions = evidenceMap.decisions as Record<string, { status: string; why: string; citations: { sourceId: string; locator: string; quote: string }[]; lawAtExam?: string; lawToday?: string; changedOn?: string; currentLawAnswer?: string; missing?: string }>
 
@@ -49,7 +57,13 @@ const duplicates = ids.filter((id, i) => ids.indexOf(id) !== i)
 if (duplicates.length > 0) failures.push(`identificadors duplicats al banc: ${duplicates.join(', ')}`)
 const missing = ids.filter((id) => !decisions[id])
 if (missing.length > 0) failures.push(`${missing.length} preguntes sense decisió: ${missing.slice(0, 5).join(', ')}…`)
-const orphan = Object.keys(decisions).filter((id) => !ids.includes(id))
+// Un orfe de debò és una decisió que no pertany a cap pregunta oficial, ni
+// vigent ni històrica; les 630 dels quadernets 2016-2024 tenen la seva
+// pròpia decisió legítima i no compten aquí.
+const allOfficialIds = new Set(
+  ROSES_PACK.questions.filter((q) => q.origin === 'official').map((q) => q.questionId),
+)
+const orphan = Object.keys(decisions).filter((id) => !allOfficialIds.has(id))
 if (orphan.length > 0) failures.push(`el mapa jutja preguntes que no existeixen: ${orphan.join(', ')}`)
 
 /**

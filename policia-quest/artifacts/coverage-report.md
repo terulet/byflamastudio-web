@@ -71,7 +71,7 @@ Generat el 2026-08-25 · versió de contingut 1
 | Estat | Referències |
 | --- | --- |
 | pending-source-verification | 28 |
-| verified | 1290 |
+| verified | 1872 |
 
 `verified` vol dir que algú ha obert la còpia local del document i hi ha trobat la proposició al lloc que diu el localitzador. Tenir el fitxer no verifica res per si sol.
 
@@ -137,11 +137,11 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 | Simulacre de cultura general | Cultura general | 10 | 21 | ✓ |
 | Simulacre de cultura general | Actualitat social, cultural i política | 10 | 25 | ✓ |
 | Simulacre de cultura general | Reserva | 1 | 1 | ✓ |
-| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 658 | ✓ |
+| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 594 | ✓ |
 | Simulacre de coneixements professionals | Reserva | 2 | 2 | ✓ |
 
 ## Què necessita revisió humana
 
 1. Tornar a capturar 2 pàgines web la còpia de les quals només porta el menú (`roses-web-municipi`, `agencia-ciberseguretat-catalunya`): el cos es carrega per JavaScript. Cal una instantània de text de les pàgines concretes, com es va fer amb el paquet d’actualitat.
-2. Contrastar contra el text vigent les 18 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
+2. Contrastar contra el text vigent les 34 preguntes que citen les ordenances municipals de Roses (temes 35 i 36). Ara es basen en el marc legal general perquè les ordenances no eren accessibles.
 
