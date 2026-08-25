@@ -15,6 +15,7 @@
     "test:a11y": "playwright test accessibility",
     "content:validate": "tsx scripts/validate-content.ts",
     "content:report": "tsx scripts/report-coverage.ts",
+    "content:matrix": "tsx scripts/report-official-matrix.ts",
     "sources:inventory": "tsx scripts/inventory-pending-sources.ts",
     "sources:download": "tsx scripts/download-sources.ts",
     "sources:adopt": "tsx scripts/adopt-sources.ts",

@@ -1163,8 +1163,14 @@
     },
     "q-of-roses-2025-propietat-cp-037": {
       "status": "out-of-syllabus",
-      "why": "estafa agreujada (art. 250.1 CP): delicte patrimonial fora de furts i robatoris; cap tema del temari el cobreix",
-      "citations": []
+      "why": "La resposta és correcta i demostrable —art. 250.1.5è CP—, però l’estafa agreujada és un delicte patrimonial fora de furts i robatoris i cap dels 40 temes el cobreix.",
+      "citations": [
+        {
+          "sourceId": "lo-10-1995-cp",
+          "locator": "art. 250.1.5è",
+          "quote": "El delito de estafa será castigado con las penas de prisión de uno a seis años y multa de seis a doce meses, cuando: … 5.º El valor de la defraudación supere los 50.000 euros, o afecte a un elevado número de personas."
+        }
+      ]
     },
     "q-of-roses-2025-propietat-cp-038": {
       "status": "supported-current",
@@ -1730,8 +1736,14 @@
     },
     "q-of-roses-2026-interins-cp-037": {
       "status": "out-of-syllabus",
-      "why": "prescripció de les infraccions de trànsit (LSV): cap tema del temari cobreix el règim sancionador general de trànsit",
-      "citations": []
+      "why": "La resposta és correcta i demostrable —l’art. 112.1 LTSV dona sis mesos per a les greus—, però cap dels 40 temes cobreix el règim sancionador general de trànsit: la pregunta es queda al contenidor per decisió editorial, no per manca de font.",
+      "citations": [
+        {
+          "sourceId": "rdleg-6-2015-ltsv",
+          "locator": "art. 112.1",
+          "quote": "El plazo de prescripción de las infracciones previstas en esta ley será de tres meses para las infracciones leves y de seis meses para las infracciones graves y muy graves."
+        }
+      ]
     },
     "q-of-roses-2026-interins-cp-038": {
       "status": "supported-current",
