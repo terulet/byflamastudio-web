@@ -229,6 +229,77 @@ export const QuestionStatus = z.enum(['active', 'draft', 'historical', 'archived
 
 export const QuestionTrack = z.enum(['cultura-general', 'coneixements-professionals'])
 
+/**
+ * Estat probatori i temporal d'una pregunta d'examen oficial.
+ *
+ * La plantilla del tribunal és un fet històric i no es toca mai. Però l'app
+ * tampoc pot ensenyar com a dret vigent una resposta que ha deixat de ser-ho,
+ * ni tapar que una plantilla no quadra amb la norma. Són dues veritats
+ * diferents i cal poder dir-les totes dues sense barrejar-les.
+ *
+ *  - `supported-current`: la plantilla quadra amb la norma verificada i segueix
+ *    sent correcta avui.
+ *  - `supported-at-exam-now-superseded`: era correcta el dia de l'examen i una
+ *    reforma posterior va canviar la resposta.
+ *  - `official-key-conflicts-with-law-at-exam`: la plantilla no quadra amb la
+ *    norma que **ja era vigent** el dia de l'examen. Només es pot afirmar amb
+ *    evidència temporal inequívoca: norma, modificació, publicació i entrada
+ *    en vigor.
+ *  - `partially-supported`: la font en sosté una part.
+ *  - `pending-evidence`: no hi ha prou evidència. No es dedueix ni s'omple.
+ *  - `historical-current-affairs`: actualitat vàlida només el dia de l'examen.
+ *  - `general-knowledge`: cultura general no jurídica.
+ *  - `out-of-syllabus`: cap dels 40 temes la cobreix honestament.
+ */
+export const OfficialEvidenceStatus = z.enum([
+  'supported-current',
+  'supported-at-exam-now-superseded',
+  'official-key-conflicts-with-law-at-exam',
+  'partially-supported',
+  'pending-evidence',
+  'historical-current-affairs',
+  'general-knowledge',
+  'out-of-syllabus',
+])
+export type OfficialEvidenceStatus = z.infer<typeof OfficialEvidenceStatus>
+
+/** Una norma citada amb la seva situació temporal. */
+export const EvidenceCitation = z.object({
+  sourceId: Slug,
+  /** Article, apartat, pàgina o encapçalament HTML. */
+  locator: z.string().min(1),
+  /** Fragment literal que sosté l'afirmació. */
+  quote: z.string().min(3),
+})
+export type EvidenceCitation = z.infer<typeof EvidenceCitation>
+
+/**
+ * El judici probatori d'una pregunta oficial, pregunta a pregunta.
+ *
+ * `currentLawAnswer` és la lletra que sosté la norma vigent quan difereix de la
+ * plantilla. Pot ser `cap`: passa quan la reforma va deixar la resposta correcta
+ * **fora de les quatre opcions**, i llavors dir «la bona és una altra lletra»
+ * seria fals.
+ */
+export const OfficialEvidence = z.object({
+  status: OfficialEvidenceStatus,
+  /** Per què s'ha decidit això, en una frase. */
+  why: z.string().min(10),
+  /** Normes que sostenen la decisió, amb el fragment literal. */
+  citations: z.array(EvidenceCitation).default([]),
+  /** Redacció aplicable el dia de l'examen, quan difereix de la d'avui. */
+  lawAtExam: z.string().optional(),
+  /** Redacció vigent avui, quan difereix de la del dia de l'examen. */
+  lawToday: z.string().optional(),
+  /** Data en què el canvi va tenir efecte. */
+  changedOn: IsoDate.optional(),
+  /** Lletra que sosté la norma, o `cap` si no n'hi ha entre les opcions. */
+  currentLawAnswer: z.enum(['a', 'b', 'c', 'd', 'cap']).optional(),
+  /** Què falta exactament, quan l'estat és `pending-evidence`. */
+  missing: z.string().optional(),
+})
+export type OfficialEvidence = z.infer<typeof OfficialEvidence>
+
 export const OfficialExamMeta = z.object({
   examId: Slug,
   year: z.number().int().min(2000).max(2100),
@@ -242,6 +313,11 @@ export const OfficialExamMeta = z.object({
   reserve: z.boolean().default(false),
   /** Correccions tècniques d'extracció aplicades a la transcripció. */
   transcriptionNotes: z.string().optional(),
+  /**
+   * Judici probatori i temporal, adjuntat en muntar el paquet des de la matriu
+   * canònica `official-evidence-map.json`. No s'escriu a mà aquí.
+   */
+  evidence: OfficialEvidence.optional(),
 })
 export type OfficialExamMeta = z.infer<typeof OfficialExamMeta>
 
