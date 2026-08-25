@@ -49,7 +49,7 @@ interface Decision {
   explain?: { ca: string; es: string }
 }
 
-const DECISIONS = evidenceMap.decisions as unknown as Record<string, Decision>
+const ALL_DECISIONS = evidenceMap.decisions as unknown as Record<string, Decision>
 
 /*
  * Aquesta matriu és de les 189 dels exàmens **vigents** (2025-2026): és on
@@ -64,6 +64,11 @@ const CURRENT_YEARS = new Set([2025, 2026])
 const ALL_OFFICIAL = ROSES_PACK.questions.filter((q) => q.officialExam !== undefined)
 const OFFICIAL = ALL_OFFICIAL.filter((q) => CURRENT_YEARS.has(q.officialExam!.year))
 const byId = new Map(OFFICIAL.map((q) => [q.questionId, q]))
+// El mateix filtre per any: `evidenceMap.decisions` ara en porta 819 (189 +
+// 630 històriques) i aquest fitxer només audita les 189 vigents.
+const DECISIONS = Object.fromEntries(
+  Object.entries(ALL_DECISIONS).filter(([id]) => byId.has(id)),
+) as Record<string, Decision>
 
 /** Un dia qualsevol posterior a l'últim examen, per a les proves de vigència. */
 const AVUI = '2026-08-25'

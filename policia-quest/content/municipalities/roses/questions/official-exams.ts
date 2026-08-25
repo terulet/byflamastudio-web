@@ -9049,14 +9049,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 1.1 de la Constitució enumera els quatre valors superiors de l\'ordenament jurídic: la llibertat, la justícia, la igualtat i el pluralisme polític, que és exactament la llista de l\'opció d). Les altres tres n\'alteren termes: la a) substitueix la justícia per la «imparcialitat», la igualtat per l\'«equitat» i el pluralisme polític pel «social»; la b) hi introdueix «l\'autonomia» —que a la Constitució no és un valor superior sinó un dret reconegut a l\'article 2— i repeteix «equitat» i «pluralisme social»; la c) manté la igualtat i el pluralisme polític però posa «autonomia» i «imparcialitat» on l\'article diu llibertat i justícia. N\'hi ha prou de confrontar cada llista amb la de l\'article per resoldre-la.',
+      es: 'El artículo 1.1 de la Constitución enumera los cuatro valores superiores del ordenamiento jurídico: la libertad, la justicia, la igualdad y el pluralismo político, que es exactamente la lista de la opción d). Las otras tres alteran términos: la a) sustituye la justicia por la «imparcialidad», la igualdad por la «equidad» y el pluralismo político por el «social»; la b) introduce «la autonomía» —que en la Constitución no es un valor superior sino un derecho reconocido en el artículo 2— y repite «equidad» y «pluralismo social»; la c) mantiene la igualdad y el pluralismo político pero pone «autonomía» e «imparcialidad» donde el artículo dice libertad y justicia. Basta confrontar cada lista con la del artículo para resolverla.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9088,14 +9094,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2 de la Constitució diu que aquesta «reconeix i garanteix el dret a l\'autonomia de les nacionalitats i regions que la integren», exactament el que afirma l\'opció b). La a) diu el contrari del text («no reconeix»). La c) i la d) canvien els subjectes del dret: l\'article parla de «nacionalitats i regions», no de «comunitats i regions» ni de «comunitats i municipis»; les comunitats autònomes són el resultat de l\'exercici d\'aquell dret (títol VIII), no el subjecte que l\'article 2 anomena, i els municipis no hi apareixen. La comparació amb la lletra de l\'article descarta les tres opcions incorrectes.',
+      es: 'El artículo 2 de la Constitución dice que esta «reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran», exactamente lo que afirma la opción b). La a) dice lo contrario del texto («no reconoce»). La c) y la d) cambian los sujetos del derecho: el artículo habla de «nacionalidades y regiones», no de «comunidades y regiones» ni de «comunidades y municipios»; las comunidades autónomas son el resultado del ejercicio de aquel derecho (título VIII), no el sujeto que el artículo 2 nombra, y los municipios no aparecen en él. La comparación con la letra del artículo descarta las tres opciones incorrectas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9127,14 +9139,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La igualtat davant la llei és l\'article 14: «els espanyols són iguals davant la llei, sense que pugui prevaler cap discriminació» per raó de naixement, raça, sexe, religió, opinió o qualsevol altra condició o circumstància personal o social. És l\'article que obre el capítol II del títol I, just abans de la secció primera. Les altres opcions corresponen a preceptes ben identificables: l\'article 10 proclama la dignitat de la persona com a fonament de l\'ordre polític, l\'article 11 regula l\'adquisició, conservació i pèrdua de la nacionalitat, i l\'article 15 reconeix el dret a la vida i a la integritat física i moral. La resposta correcta és la c).',
+      es: 'La igualdad ante la ley es el artículo 14: «los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna» por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social. Es el artículo que abre el capítulo II del título I, justo antes de la sección primera. Las otras opciones corresponden a preceptos bien identificables: el artículo 10 proclama la dignidad de la persona como fundamento del orden político, el artículo 11 regula la adquisición, conservación y pérdida de la nacionalidad, y el artículo 15 reconoce el derecho a la vida y a la integridad física y moral. La respuesta correcta es la c).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 14',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 10.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 11.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 15',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9166,14 +9202,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 17.3, segon incís, ho diu amb la fórmula exacta de l\'opció c): l\'assistència d\'advocat al detingut es garanteix «en les diligències policials i judicials, en els termes que la llei estableixi». Les opcions a) i b) retallen l\'àmbit a un sol tipus de diligències («judicials exclusivament» o «policials exclusivament»), quan el precepte n\'esmenta expressament els dos. La d) peca del contrari: amplia la garantia a «qualsevol diligència» i suprimeix la remissió a la llei, quan el text constitucional acota la garantia a les diligències policials i judicials i deixa que la llei en fixi els termes. Només la c) coincideix amb la lletra de l\'article.',
+      es: 'El artículo 17.3, segundo inciso, lo dice con la fórmula exacta de la opción c): la asistencia de abogado al detenido se garantiza «en las diligencias policiales y judiciales, en los términos que la ley establezca». Las opciones a) y b) recortan el ámbito a un solo tipo de diligencias («judiciales exclusivamente» o «policiales exclusivamente»), cuando el precepto menciona expresamente los dos. La d) peca de lo contrario: amplía la garantía a «cualquier diligencia» y suprime la remisión a la ley, cuando el texto constitucional acota la garantía a las diligencias policiales y judiciales y deja que la ley fije sus términos. Solo la c) coincide con la letra del artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9205,14 +9247,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 1 de l’Estatut defineix Catalunya com a nacionalitat que exerceix el seu autogovern constituïda en comunitat autònoma d’acord amb la Constitució i amb l’Estatut, «que és la seva norma institucional bàsica»: l’opció a n’és la formulació exacta. La b) ho capgira: la norma institucional bàsica de l’Estat és la Constitució, i l’Estatut ho és de Catalunya. La c) xoca amb el rang de la norma: l’Estatut vigent es conté en la Llei orgànica 6/2006, del 19 de juliol, no en una llei ordinària. I la d) també cau: precisament perquè és una llei orgànica aprovada per les Corts Generals, l’Estatut forma part de l’ordenament jurídic estatal, del qual és alhora la peça capçalera de l’ordenament català.',
+      es: 'El artículo 1 del Estatuto define Cataluña como nacionalidad que ejerce su autogobierno constituida en comunidad autónoma de acuerdo con la Constitución y con el Estatuto, «que es su norma institucional básica»: la opción a es su formulación exacta. La b) lo invierte: la norma institucional básica del Estado es la Constitución, y el Estatuto lo es de Cataluña. La c) choca con el rango de la norma: el Estatuto vigente se contiene en la Ley Orgánica 6/2006, de 19 de julio, no en una ley ordinaria. Y la d) también cae: precisamente por ser una ley orgánica aprobada por las Cortes Generales, el Estatuto forma parte del ordenamiento jurídico estatal, del que es a la vez la pieza de cabecera del ordenamiento catalán.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'portada i tramitació (pàg. 5)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9244,14 +9298,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 2.2 de l’Estatut respon literalment: «La Generalitat és integrada pel Parlament, la Presidència de la Generalitat, el Govern i les altres institucions que estableix el capítol V del títol II», que és l’opció c paraula per paraula. La a) es queda amb una part de l’executiu (Govern i departaments) i deixa fora el Parlament i la Presidència. La b) barreja la Presidència amb «la intervenció de la Generalitat», que és un òrgan de control intern de la gestió econòmica, no una de les institucions que l’article 2 enumera. La d) descriu l’estructura administrativa (departaments i sector públic institucional), no el sistema institucional: l’article 2.1 defineix la Generalitat com el sistema institucional en què s’organitza políticament l’autogovern de Catalunya.',
+      es: 'El artículo 2.2 del Estatuto responde literalmente: «la Generalitat está integrada por el Parlamento, la Presidencia de la Generalitat, el Gobierno y las demás instituciones que establece el capítulo V del título II», que es la opción c palabra por palabra. La a) se queda con una parte del ejecutivo (Gobierno y departamentos) y deja fuera el Parlamento y la Presidencia. La b) mezcla la Presidencia con «la intervención de la Generalitat», que es un órgano de control interno de la gestión económica, no una de las instituciones que el artículo 2 enumera. La d) describe la estructura administrativa (departamentos y sector público institucional), no el sistema institucional: el artículo 2.1 define la Generalitat como el sistema institucional en que se organiza políticamente el autogobierno de Cataluña.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 2.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9283,14 +9343,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 80.2 de l’Estatut ho diu de manera literal: «La Sindicatura de Comptes depèn orgànicament del Parlament, exerceix les seves funcions per delegació d’aquest i amb plena autonomia organitzativa, funcional i pressupostària». La resposta és, doncs, la b). La a) és incompatible amb la seva funció: la Sindicatura és l’òrgan fiscalitzador extern dels comptes i de la gestió econòmica de la Generalitat, dels ens locals i del sector públic (art. 80.1), i per això no pot dependre del Govern que precisament controla. La c) inverteix la relació institucional: l’Oficina Antifrau és una altra institució vinculada al Parlament, no l’òrgan del qual depengui la Sindicatura. I la d) la faria dependre d’un departament del Govern, exactament el que l’article 80.2 exclou.',
+      es: 'El artículo 80.2 del Estatuto lo dice de manera literal: «la Sindicatura de Cuentas depende orgánicamente del Parlamento, ejerce sus funciones por delegación de este y con plena autonomía organizativa, funcional y presupuestaria». La respuesta es, pues, la b). La a) es incompatible con su función: la Sindicatura es el órgano fiscalizador externo de las cuentas y de la gestión económica de la Generalitat, de los entes locales y del sector público (art. 80.1), y por eso no puede depender del Gobierno al que precisamente controla. La c) invierte la relación institucional: la Oficina Antifraude es otra institución vinculada al Parlamento, no el órgano del que dependa la Sindicatura. Y la d) la haría depender de un departamento del Gobierno, exactamente lo que el artículo 80.2 excluye.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 80.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9322,14 +9388,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20.1.b de la Llei 7/1985 diu que la Junta de Govern Local existeix en tots els municipis amb població superior a 5.000 habitants, i en els de menys quan ho disposi el reglament orgànic o ho acordi el Ple. La xifra que fixa la llei és, doncs, 5.000: l’opció a). Les opcions b), c) i d) (10.000, 20.000 i 30.000) no apareixen enlloc de l’article 20; el llindar de 20.000 habitants pertany a altres preceptes (per exemple, als serveis mínims de l’article 26), no a l’existència de la Junta de Govern Local. Nota de matís: el text legal diu «població superior a 5.000», mentre que l’enunciat diu «a partir de», però la xifra que decideix la pregunta és inequívocament 5.000.',
+      es: 'El artículo 20.1.b de la Ley 7/1985 dice que la Junta de Gobierno Local existe en todos los municipios con población superior a 5.000 habitantes, y en los de menos cuando así lo disponga el reglamento orgánico o lo acuerde el Pleno. La cifra que fija la ley es, por tanto, 5.000: la opción a). Las opciones b), c) y d) (10.000, 20.000 y 30.000) no aparecen en ningún lugar del artículo 20; el umbral de 20.000 habitantes pertenece a otros preceptos (por ejemplo, a los servicios mínimos del artículo 26), no a la existencia de la Junta de Gobierno Local. Matiz: el texto legal dice «población superior a 5.000», mientras que el enunciado dice «a partir de», pero la cifra que decide la pregunta es inequívocamente 5.000.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9361,14 +9433,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 22.2 de la Llei 7/1985 enumera les atribucions que corresponen «en tot cas» al Ple municipal, i la lletra d) hi inclou expressament «l’aprovació del reglament orgànic i de les ordenances». Per tant, la resposta correcta és c), el Ple. L’alcalde (opció a) no té aquesta atribució a l’article 21, i a més l’article 22.4 la fa indelegable: el Ple no pot delegar la lletra d) ni en l’alcalde ni en la Junta de Govern Local (opció b), que només assisteix l’alcalde i exerceix les atribucions que li deleguin. La Comissió Especial de Comptes (opció d) és un òrgan d’examen dels comptes anuals (art. 116), sense cap competència normativa.',
+      es: 'El artículo 22.2 de la Ley 7/1985 enumera las atribuciones que corresponden «en todo caso» al Pleno municipal, y la letra d) incluye expresamente «la aprobación del reglamento orgánico y de las ordenanzas». Por tanto, la respuesta correcta es c), el Pleno. El alcalde (opción a) no tiene esta atribución en el artículo 21, y además el artículo 22.4 la hace indelegable: el Pleno no puede delegar la letra d) ni en el alcalde ni en la Junta de Gobierno Local (opción b), que solo asiste al alcalde y ejerce las atribuciones que se le deleguen. La Comisión Especial de Cuentas (opción d) es un órgano de examen de las cuentas anuales (art. 116), sin competencia normativa alguna.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9400,14 +9484,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21.1 de la Llei 7/1985 enumera les atribucions de l’alcalde com a president de la corporació, i la lletra e) és, literalment, «dictar bans». La resposta correcta és, doncs, la a). El ban és l’instrument propi i personal de l’alcaldia; ni el Ple ni la Junta de Govern Local el dicten: el Ple aprova el reglament orgànic i les ordenances (art. 22.2.d), que són les normes municipals de debò, i la Junta assisteix l’alcalde i exerceix les atribucions que li deleguin (art. 23.2). El secretari general (opció b) és un funcionari amb funcions de fe pública i assessorament legal, sense cap potestat per dictar normes ni bans. A més, dictar bans és de les atribucions que l’alcalde no pot delegar (art. 21.3).',
+      es: 'El artículo 21.1 de la Ley 7/1985 enumera las atribuciones del alcalde como presidente de la corporación, y la letra e) es, literalmente, «dictar bandos». La respuesta correcta es, pues, la a). El bando es el instrumento propio y personal de la alcaldía; ni el Pleno ni la Junta de Gobierno Local lo dictan: el Pleno aprueba el reglamento orgánico y las ordenanzas (art. 22.2.d), que son las verdaderas normas municipales, y la Junta asiste al alcalde y ejerce las atribuciones que se le deleguen (art. 23.2). El secretario general (opción b) es un funcionario con funciones de fe pública y asesoramiento legal, sin potestad alguna para dictar normas ni bandos. Además, dictar bandos es de las atribuciones que el alcalde no puede delegar (art. 21.3).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.e',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9439,14 +9535,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 22.2.f de la Llei 7/1985 atribueix al Ple, «en tot cas», «l’aprovació de les formes de gestió dels serveis i dels expedients de municipalització»: l’enunciat reprodueix gairebé literalment aquesta lletra, i per això la resposta és d), el Ple. L’alcalde (opció a) té les atribucions de l’article 21, entre les quals no figura aquesta; la Junta de Govern Local (opció c) només assisteix l’alcalde i exerceix atribucions delegades (art. 23.2), i l’interventor (opció b) és personal funcionari amb funcions de control intern de la gestió econòmica, no un òrgan de govern amb potestat per decidir com es gestionen els serveis municipals.',
+      es: 'El artículo 22.2.f de la Ley 7/1985 atribuye al Pleno, «en todo caso», «la aprobación de las formas de gestión de los servicios y de los expedientes de municipalización»: el enunciado reproduce casi literalmente esta letra, y por eso la respuesta es d), el Pleno. El alcalde (opción a) tiene las atribuciones del artículo 21, entre las que no figura esta; la Junta de Gobierno Local (opción c) solo asiste al alcalde y ejerce atribuciones delegadas (art. 23.2), y el interventor (opción b) es personal funcionario con funciones de control interno de la gestión económica, no un órgano de gobierno con potestad para decidir cómo se gestionan los servicios municipales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.f',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9478,14 +9586,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 26.1.a de la Llei 7/1985 enumera els serveis que tots els municipis han de prestar: enllumenat públic, cementiri, recollida de residus, neteja viària, abastament domiciliari d’aigua potable, clavegueram, accés als nuclis de població i pavimentació de les vies públiques. Les opcions b), c) i d) —enllumenat, cementiri i accés als nuclis— hi són totes tres, de manera que sí que són obligatòries a tot arreu. En canvi, la protecció civil (opció a) apareix a la lletra c) del mateix article: només és obligatòria, «a més», als municipis amb població superior a 20.000 habitants. Per això la resposta correcta és a): no és una obligació de tots els municipis.',
+      es: 'El artículo 26.1.a de la Ley 7/1985 enumera los servicios que todos los municipios deben prestar: alumbrado público, cementerio, recogida de residuos, limpieza viaria, abastecimiento domiciliario de agua potable, alcantarillado, acceso a los núcleos de población y pavimentación de las vías públicas. Las opciones b), c) y d) —alumbrado, cementerio y acceso a los núcleos— figuran las tres, de modo que sí son obligatorias en todos los municipios. En cambio, la protección civil (opción a) aparece en la letra c) del mismo artículo: solo es obligatoria, «además», en los municipios con población superior a 20.000 habitantes. Por eso la respuesta correcta es a): no es una obligación de todos los municipios.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 26.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 26.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9517,14 +9637,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 58.2 de la Llei 16/1991 fixa els terminis de prescripció de les faltes, sempre a comptar de la data de la comissió: les molt greus prescriuen al cap de sis anys, les greus al cap de dos anys i les lleus al cap de tres mesos en la redacció vigent. Per a una falta greu, doncs, el termini és de dos anys: opció c. La a) (un mes) no és el termini de prescripció de cap falta en el text vigent; la b) (un any) no apareix a l\'article; i la d) (sis anys) és el termini de les faltes molt greus, no de les greus. L\'apartat va ser retocat per la Llei 11/2026, però el termini de dos anys per a les faltes greus es manté igual en el text vigent, així que la resposta segueix sent correcta avui.',
+      es: 'El artículo 58.2 de la Ley 16/1991 fija los plazos de prescripción de las faltas, siempre a contar desde la fecha de comisión: las muy graves prescriben a los seis años, las graves a los dos años y las leves a los tres meses en la redacción vigente. Para una falta grave, por tanto, el plazo es de dos años: opción c. La a) (un mes) no es el plazo de prescripción de ninguna falta en el texto vigente; la b) (un año) no aparece en el artículo; y la d) (seis años) es el plazo de las faltas muy graves, no de las graves. El apartado fue retocado por la Ley 11/2026, pero el plazo de dos años para las faltas graves se mantiene igual en el texto vigente, así que la respuesta sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9556,14 +9682,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 169.1 del text refós de la Llei reguladora de les hisendes locals (RDL 2/2004) diu que, un cop aprovat inicialment el pressupost general, «se expondrá al público, previo anuncio en el boletín oficial de la provincia..., por 15 días», durant els quals es poden presentar reclamacions. Això coincideix exactament amb l\'opció a). Les opcions b) i c) allarguen el termini a 30 dies o 1 mes: aquesta darrera xifra és, de fet, el termini que té el Ple per resoldre les reclamacions un cop presentades, no el termini d\'exposició pública. L\'opció d) és directament falsa, perquè la llei exigeix expressament l\'exposició pública prèvia amb anunci al BOP.',
+      es: 'El artículo 169.1 del texto refundido de la Ley reguladora de las haciendas locales (RDL 2/2004) dice que, una vez aprobado inicialmente el presupuesto general, «se expondrá al público, previo anuncio en el boletín oficial de la provincia..., por 15 días», durante los cuales se pueden presentar reclamaciones. Esto coincide exactamente con la opción a). Las opciones b) y c) alargan el plazo a 30 días o 1 mes: esta última cifra es, de hecho, el plazo que tiene el Pleno para resolver las reclamaciones una vez presentadas, no el plazo de exposición pública. La opción d) es directamente falsa, porque la ley exige expresamente la exposición pública previa con anuncio en el BOP.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-2-2004-trlrhl',
+        locator: 'art. 169.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9595,14 +9727,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 82.2 de la Llei 39/2015 fixa que, en el tràmit d\'audiència, els interessats disposen d\'un termini «no inferior a deu dies ni superior a quinze» per al·legar i presentar els documents i justificacions que estimin pertinents. L\'opció a) reprodueix exactament aquesta forquilla: mínim 10 dies, màxim 15. La b) desplaça els dos límits a 15 i 20 dies, xifres que no són al text; la c) imposa que el termini sigui sempre inferior a 10 dies, és a dir, per sota del mínim legal; i la d) l\'obliga a superar sempre els 20 dies, per sobre del màxim de quinze. Amb la lletra de l\'article n\'hi ha prou per validar la a) i descartar les altres tres, perquè totes contradiuen directament algun dels dos límits que fixa la norma.',
+      es: 'El artículo 82.2 de la Ley 39/2015 fija que, en el trámite de audiencia, los interesados disponen de un plazo «no inferior a diez días ni superior a quince» para alegar y presentar los documentos y justificaciones que estimen pertinentes. La opción a) reproduce exactamente esa horquilla: mínimo 10 días, máximo 15. La b) desplaza ambos límites a 15 y 20 días, cifras que no están en el texto; la c) impone que el plazo sea siempre inferior a 10 días, es decir, por debajo del mínimo legal; y la d) lo obliga a superar siempre los 20 días, por encima del máximo de quince. Con la letra del artículo basta para validar la a) y descartar las otras tres, porque todas contradicen directamente alguno de los dos límites que fija la norma.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 82.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9634,14 +9772,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 95.1 de la Llei 39/2015 regula la caducitat en els procediments iniciats a sol·licitud de l\'interessat: quan es paralitzen per causa imputable a ell, l\'Administració l\'ha d\'advertir que, transcorreguts tres mesos, «es produirà la caducitat del procediment». L\'opció b) reprodueix la conseqüència legal exacta, amb el mateix supòsit de fet i el mateix termini. La «fallida» del procediment (a) no és cap figura de la llei. La renúncia (d) és una forma de terminació que depèn de la voluntat expressa de l\'interessat, no un efecte automàtic del transcurs de tres mesos de paralització. I el silenci administratiu (c) és la conseqüència de la manca de resolució expressa de l\'Administració dins el termini màxim, no de la inactivitat imputable a l\'interessat que aquí es pregunta.',
+      es: 'El artículo 95.1 de la Ley 39/2015 regula la caducidad en los procedimientos iniciados a solicitud del interesado: cuando se paralizan por causa imputable a él, la Administración le advertirá que, transcurridos tres meses, «se producirá la caducidad del procedimiento». La opción b) reproduce la consecuencia legal exacta, con el mismo supuesto de hecho y el mismo plazo. La «quiebra» del procedimiento (a) no es figura alguna de la ley. La renuncia (d) es una forma de terminación que depende de la voluntad expresa del interesado, no un efecto automático del transcurso de tres meses de paralización. Y el silencio administrativo (c) es la consecuencia de la falta de resolución expresa de la Administración dentro del plazo máximo, no de la inactividad imputable al interesado por la que aquí se pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 95.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9673,14 +9817,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.1 de la Llei 39/2015 obliga les administracions públiques a verificar la identitat dels interessats en el procediment administratiu comprovant el nom i cognoms, o la denominació o raó social, que constin «al Document Nacional d\'Identitat o document identificatiu equivalent». Aquesta és la regla general, aplicable a qui compareix presencialment (la identificació electrònica es regula a part, a l\'apartat 2 del mateix article). L\'opció a) coincideix amb el precepte: DNI o document identificatiu equivalent. La b) i la c) queden descartades perquè el text imposa una obligació («están obligadas a verificar la identidad»), de manera que la identificació ni és innecessària ni opcional. I la d) també falla: no serveix qualsevol document amb fotografia, sinó el DNI o un document identificatiu equivalent.',
+      es: 'El artículo 9.1 de la Ley 39/2015 obliga a las administraciones públicas a verificar la identidad de los interesados en el procedimiento administrativo comprobando el nombre y apellidos, o la denominación o razón social, que consten «en el Documento Nacional de Identidad o documento identificativo equivalente». Esa es la regla general, aplicable a quien comparece presencialmente (la identificación electrónica se regula aparte, en el apartado 2 del mismo artículo). La opción a) coincide con el precepto: DNI o documento identificativo equivalente. La b) y la c) quedan descartadas porque el texto impone una obligación («están obligadas a verificar la identidad»), de modo que la identificación ni es innecesaria ni opcional. Y la d) también falla: no sirve cualquier documento con fotografía, sino el DNI o un documento identificativo equivalente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 17, pàgina 5 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 9.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9712,14 +9862,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 80.1 de la Llei 39/2015 estableix la regla general sobre els informes: «llevat de disposició expressa en contra, els informes seran facultatius i no vinculants». L\'opció d) reprodueix exactament aquesta doble qualificació. La a) i la b) afirmen com a regla general justament el que la llei configura com a excepció: un informe només és preceptiu o vinculant quan una disposició expressa ho estableix. I la c) encerta la primera meitat («facultatius») però hi afegeix «excepcionals», un qualificatiu que l\'article no conté: la parella legal és «facultatius i no vinculants», no «facultatius i excepcionals». N\'hi ha prou de comparar les quatre opcions amb la frase literal de l\'article per veure que només la d) hi coincideix paraula per paraula.',
+      es: 'El artículo 80.1 de la Ley 39/2015 establece la regla general sobre los informes: «salvo disposición expresa en contrario, los informes serán facultativos y no vinculantes». La opción d) reproduce exactamente esa doble calificación. La a) y la b) afirman como regla general justamente lo que la ley configura como excepción: un informe solo es preceptivo o vinculante cuando una disposición expresa lo establece. Y la c) acierta la primera mitad («facultativos») pero añade «excepcionales», un calificativo que el artículo no contiene: la pareja legal es «facultativos y no vinculantes», no «facultativos y excepcionales». Basta comparar las cuatro opciones con la frase literal del artículo para ver que solo la d) coincide palabra por palabra.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 18, pàgina 5 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 80.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9790,14 +9946,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 4.14 del RGPD defineix les dades biomètriques com les dades personals obtingudes a partir d\'un tractament tècnic específic relatives a característiques físiques, fisiològiques o conductuals que permeten identificar una persona, i posa com a exemple explícit les \'imágenes faciales o datos dactiloscópicos\' (empremtes dactilars), cosa que confirma l\'opció d). En canvi, el considerand 51 del mateix reglament diu expressament que \'el tratamiento de fotografías no debe considerarse\' sistemàticament tractament de categories especials —només ho és quan es tracta amb mitjans tècnics que permetin identificació unívoca—, descartant b) com a resposta automàtica. Ni el nom i cognoms (a) ni el número del DNI (c) són característiques físiques, fisiològiques o conductuals obtingudes per un tractament tècnic: són dades identificatives directes, no biomètriques segons la definició de l\'article 4.14. Per això només d) és una dada biomètrica en sentit estricte.',
+      es: 'El artículo 4.14 del RGPD define los datos biométricos como los datos personales obtenidos a partir de un tratamiento técnico específico relativos a características físicas, fisiológicas o conductuales que permiten identificar a una persona, y pone como ejemplo explícito las \'imágenes faciales o datos dactiloscópicos\' (huellas dactilares), lo que confirma la opción d). En cambio, el considerando 51 del mismo reglamento dice expresamente que \'el tratamiento de fotografías no debe considerarse\' sistemáticamente tratamiento de categorías especiales —solo lo es cuando se trata con medios técnicos que permitan la identificación unívoca—, descartando b) como respuesta automática. Ni el nombre y apellidos (a) ni el número del DNI (c) son características físicas, fisiológicas o conductuales obtenidas mediante un tratamiento técnico: son datos identificativos directos, no biométricos según la definición del artículo 4.14. Por eso solo d) es un dato biométrico en sentido estricto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 20, pàgina 5 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rgpd-2016-679',
+        locator: 'art. 4.14',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rgpd-2016-679',
+        locator: 'considerando 51',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9829,14 +9997,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.a de la LO 2/1986 defineix el Cos Nacional de Policia com un institut armat de naturalesa civil, dependent del ministre de l\'Interior. L\'opció b) reprodueix exactament aquesta triple caracterització. Les altres tres alteren un o dos elements: la a) canvia el ministeri a Defensa mantenint civil; la c) canvia la naturalesa a militar mantenint Interior; la d) combina militar i Defensa, que tampoc coincideix amb la Guàrdia Civil, ja que la mateixa llei la fa dependre principalment del ministre de l\'Interior i només de Defensa per a missions de caràcter militar. Només la lletra b) reprodueix sense alteracions el text legal, cosa que confirma que és l\'opció correcta i permet descartar les altres tres amb el mateix article.',
+      es: 'El artículo 9.a de la LO 2/1986 define el Cuerpo Nacional de Policía como un instituto armado de naturaleza civil, dependiente del ministro del Interior. La opción b) reproduce exactamente esta triple caracterización. Las otras tres alteran uno o dos elementos: la a) cambia el ministerio a Defensa manteniendo civil; la c) cambia la naturaleza a militar manteniendo Interior; la d) combina militar y Defensa, que tampoco coincide con la Guardia Civil, ya que la misma ley la hace depender principalmente del ministro del Interior y solo de Defensa para misiones de carácter militar. Solo la letra b) reproduce sin alteraciones el texto legal, lo que confirma que es la opción correcta y permite descartar las otras tres con el mismo artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 21, pàgina 6 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 9.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9868,14 +10042,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El text de la llei situa la rúbrica «Principios básicos de actuación» del Capítol II immediatament abans de l\'«Artículo quinto», confirmant que és l\'article 5 (opció b) el que recull aquests principis. Els altres números que ofereixen les opcions corresponen a matèries diferents dins la mateixa llei: l\'article 2 defineix qui són les forces i cossos de seguretat (estatals, autonòmiques, locals), no els principis d\'actuació; i l\'article 53 regula les funcions dels cossos de policia local, també allunyat dels principis bàsics. Cap d\'aquests dos porta la rúbrica «Principios básicos de actuación». Per tant, només la lletra b) coincideix amb l\'estructura real de la norma.',
+      es: 'El texto de la ley sitúa la rúbrica «Principios básicos de actuación» del Capítulo II inmediatamente antes del «Artículo quinto», confirmando que es el artículo 5 (opción b) el que recoge estos principios. Los otros números que ofrecen las opciones corresponden a materias distintas dentro de la misma ley: el artículo 2 define quiénes son las fuerzas y cuerpos de seguridad (estatales, autonómicas, locales), no los principios de actuación; y el artículo 53 regula las funciones de los cuerpos de policía local, también alejado de los principios básicos. Ninguno de los dos lleva la rúbrica «Principios básicos de actuación». Por tanto, solo la letra b) coincide con la estructura real de la norma.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 22, pàgina 6 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'capítol II, encapçalament',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5, encapçalament',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9907,14 +10093,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2 de la Llei 4/2003 enumera els principis que inspiren el sistema general de seguretat pública de Catalunya, i les tres primeres opcions hi són totes: la lletra a) del precepte recull la «prevenció dels riscs i de les amenaces» (opció c), la lletra b) l\'«adequació del servei públic a la demanda social» (opció b) i la lletra f) la «proporcionalitat de la intervenció pública» (opció a). Cap de les tres afirmacions altera el text legal —l\'opció c només modernitza «riscs» per «riscos»—, així que l\'única resposta completa és la d): totes les anteriors són correctes. La plantilla del tribunal coincideix amb la redacció vigent, que no consta modificada des de l\'aprovació de la Llei.',
+      es: 'El artículo 2 de la Ley 4/2003 enumera los principios que inspiran el sistema general de seguridad pública de Cataluña, y las tres primeras opciones están todas: la letra a) del precepto recoge la «prevención de los riesgos y de las amenazas» (opción c), la letra b) la «adecuación del servicio público a la demanda social» (opción b) y la letra f) la «proporcionalidad de la intervención pública» (opción a). Ninguna de las tres afirmaciones altera el texto legal, así que la única respuesta completa es la d): todas las anteriores son correctas. La plantilla del tribunal coincide con la redacción vigente, que no consta modificada desde la aprobación de la Ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 23, pàgina 6 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 2, lletres a) i b)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 2.f',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9946,14 +10144,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.1 de la Llei 4/2003 defineix la junta local de seguretat com a «òrgan col·legiat de col·laboració i coordinació general dels diversos cossos de policia i altres serveis de seguretat que operen en llur territori i de participació ciutadana en el sistema de seguretat»: l\'opció d) la reprodueix, canviant només «llur territori» per «el territori d\'un municipi». Cada distractor descriu un altre òrgan de la mateixa Llei: la a) és el Consell de Seguretat de Catalunya, l\'òrgan consultiu i de participació superior (art. 6.1); la b) és la Comissió de Policia de Catalunya (art. 8.1); i la c) és la Mesa de Coordinació Operativa, l\'òrgan permanent i estable de coordinació i cooperació al municipi (art. 11.1).',
+      es: 'El artículo 9.1 de la Ley 4/2003 define la junta local de seguridad como «órgano colegiado de colaboración y coordinación general de los diversos cuerpos de policía y otros servicios de seguridad que operan en su territorio y de participación ciudadana en el sistema de seguridad»: la opción d) lo reproduce, cambiando solo «su territorio» por «el territorio de un municipio». Cada distractor describe otro órgano de la misma Ley: la a) es el Consejo de Seguridad de Cataluña, el órgano consultivo y de participación superior (art. 6.1); la b) es la Comisión de Policía de Cataluña (art. 8.1); y la c) es la Mesa de Coordinación Operativa, el órgano permanente y estable de coordinación y cooperación en el municipio (art. 11.1).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 24, pàgina 7 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 11.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -9985,14 +10207,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 49.e tipifica com a falta greu «el fet d\'originar enfrontaments en el servei o en el lloc de treball i el fet de prendre-hi part», que és el que recull l\'opció a. Les altres tres opcions són faltes reals, però d\'una altra gravetat: la manca notòria de rendiment que comporti inhibició en el compliment de les tasques encomanades (opció b) és falta molt greu segons l\'article 48.1.m; la descurança en la presentació personal (opció c) i les faltes repetides de puntualitat dins un mateix mes sense causa justificada (opció d) són faltes lleus de les lletres c i h de l\'article 50. Només l\'opció a pertany, doncs, al catàleg de faltes greus de l\'article 49.',
+      es: 'El artículo 49.e tipifica como falta grave «originar enfrentamientos en el servicio o en el lugar de trabajo y tomar parte en ellos», que es lo que recoge la opción a. Las otras tres opciones son faltas reales, pero de otra gravedad: la falta notoria de rendimiento que comporte inhibición en el cumplimiento de las tareas encomendadas (opción b) es falta muy grave según el artículo 48.1.m; el descuido en la presentación personal (opción c) y las faltas repetidas de puntualidad dentro de un mismo mes sin causa justificada (opción d) son faltas leves de las letras c y h del artículo 50. Solo la opción a pertenece, pues, al catálogo de faltas graves del artículo 49.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 25, pàgina 7 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.m',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.h',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10024,14 +10270,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 52.3 diu que per una falta greu s\'ha d\'imposar la suspensió de funcions «per més de quinze dies i menys d\'un any, amb pèrdua de les retribucions» o bé el trasllat a un altre lloc de treball: l\'opció c reprodueix la primera. La separació del servei (opció a) està reservada a les faltes molt greus (art. 52.2.a); l\'amonestació (opció b) i la suspensió de funcions d\'un a quinze dies (opció d) són sancions per faltes lleus (art. 52.4, lletres d i a). Convé retenir l\'escala: fins a quinze dies per a les lleus, de quinze dies a un any per a les greus, i de més d\'un any fins a sis —o la separació del servei— per a les molt greus.',
+      es: 'El artículo 52.3 dice que por una falta grave debe imponerse la suspensión de funciones «por más de quince días y menos de un año, con pérdida de las retribuciones» o bien el traslado a otro puesto de trabajo: la opción c reproduce la primera. La separación del servicio (opción a) está reservada a las faltas muy graves (art. 52.2.a); la amonestación (opción b) y la suspensión de funciones de uno a quince días (opción d) son sanciones por faltas leves (art. 52.4, letras d y a). Conviene retener la escala: hasta quince días para las leves, de quince días a un año para las graves, y de más de un año hasta seis —o la separación del servicio— para las muy graves.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 26, pàgina 8 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.3.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.2.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10063,14 +10339,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'Acord GOV/25/2015, de 24 de febrer, del Govern de la Generalitat és el text que aprova formalment el Codi d\'ètica de la Policia de Catalunya, tal com diu el seu propi títol i la data de signatura a Barcelona. Això fixa sense ambigüitat l\'any 2015 com a resposta correcta (opció d). Les altres dates que apareixen al preàmbul corresponen a fets diferents: el 2004 és l\'any de la Resolució INT/1828/2004, que va incorporar el Codi europeu d\'ètica de la policia (no el Codi català), i el 2010 va ser un primer Codi d\'ètica previ, substituït pel de 2015. Ni 1970 ni 1981 apareixen enlloc del text com a data d\'aprovació de cap Codi d\'ètica relacionat amb la Policia de Catalunya, de manera que no tenen cap suport documental. Per tant, l\'única data que el propi acord verifica com a any d\'aprovació és 2015.',
+      es: 'El Acuerdo GOV/25/2015, de 24 de febrero, del Gobierno de la Generalitat es el texto que aprueba formalmente el Código de ética de la Policía de Cataluña, tal como indica su propio título y la fecha de la firma en Barcelona. Esto fija sin ambigüedad el año 2015 como respuesta correcta (opción d). Las otras fechas que aparecen en el preámbulo corresponden a hechos distintos: el 2004 es el año de la Resolución INT/1828/2004, que incorporó el Código europeo de ética de la policía (no el Código catalán), y el 2010 fue un primer Código de ética previo, sustituido por el de 2015. Ni 1970 ni 1981 aparecen en ningún lugar del texto como fecha de aprobación de ningún Código de ética relacionado con la Policía de Cataluña, por lo que carecen de apoyo documental. Por tanto, la única fecha que el propio acuerdo verifica como año de aprobación es 2015.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 27, pàgina 8 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-etic-policia-catalunya',
+        locator: 'capçalera de l\'Acord',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-etic-policia-catalunya',
+        locator: 'exposició de motius',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10141,14 +10429,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 32.3 de la LO 4/2015 diu literalment que els alcaldes podran imposar les sancions i adoptar les mesures previstes a la llei quan les infraccions es cometin en espais públics municipals o afectin béns de titularitat local, sempre que ostentin competència segons la legislació específica. L\'opció a) reprodueix aquest text sencer. La b) l\'altera canviant «espais públics» per «espais privats», que la llei no diu. La c) inventa un límit de 3.000 € que l\'article no fixa (les quanties les regula l\'article 39, no el 32). La d) contradiu directament l\'article, que sí atribueix competència als alcaldes en aquests supòsits.',
+      es: 'El artículo 32.3 de la LO 4/2015 dice literalmente que los alcaldes podrán imponer las sanciones y adoptar las medidas previstas en la ley cuando las infracciones se cometan en espacios públicos municipales o afecten a bienes de titularidad local, siempre que ostenten competencia según la legislación específica. La opción a) reproduce ese texto entero. La b) lo altera cambiando «espacios públicos» por «espacios privados», que la ley no dice. La c) inventa un límite de 3.000 € que el artículo no fija (las cuantías las regula el artículo 39, no el 32). La d) contradice directamente el artículo, que sí atribuye competencia a los alcaldes en esos supuestos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 29, pàgina 9 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 32.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10180,14 +10474,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 237 del Codi Penal és el que defineix el robatori: hi són «reos del delito de robo» els qui, amb ànim de lucre, s\'apoderen de coses mobles alienes emprant força en les coses o violència o intimidació en les persones. Per això la bona és la b). L\'opció a) confon el robatori amb el furt: l\'article 234 castiga «como reo de hurto» qui pren les coses mobles alienes sense força ni violència. L\'opció c) tampoc: l\'article 400 bis pertany a les falsedats documentals (ús de documents autèntics per qui no hi està legitimat), no als delictes patrimonials d\'apoderament. Com que la b) és certa, la d) («cap de les anteriors») queda descartada.',
+      es: 'El artículo 237 del Código Penal es el que define el robo: son «reos del delito de robo» quienes, con ánimo de lucro, se apoderan de cosas muebles ajenas empleando fuerza en las cosas o violencia o intimidación en las personas. Por eso la correcta es la b). La opción a) confunde el robo con el hurto: el artículo 234 castiga «como reo de hurto» a quien toma las cosas muebles ajenas sin fuerza ni violencia. La opción c) tampoco: el artículo 400 bis pertenece a las falsedades documentales (uso de documentos auténticos por quien no está legitimado), no a los delitos patrimoniales de apoderamiento. Como la b) es cierta, la d) («ninguna de las anteriores») queda descartada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 30, pàgina 9 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 237',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 234.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10219,14 +10525,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció c) és materialment certa: l\'article segon de la LO 6/1984 atribueix el coneixement de la sol·licitud d\'habeas corpus al jutge d\'instrucció del lloc on es troba la persona privada de llibertat, la mateixa competència que l\'art. 87.1 LOPJ recull per als jutjats d\'instrucció. L\'opció a) és falsa perquè l\'art. 87 LOPJ atribueix la instrucció de les causes l\'enjudiciament de les quals correspon tant a les audiències provincials com als jutjats penals, no «únicament» a aquests; i la b) parla de «judicis de faltes», categoria desapareguda l\'1 de juliol de 2015, quan la LO 1/2015 les va convertir en delictes lleus. Ara bé, el text de l\'art. 87 LOPJ no és entre les fonts extretes (falta la LO 6/1985), així que aquests dos descarts no es poden acreditar amb cita literal, només el nucli de la resposta bona.',
+      es: 'La opción c) es materialmente cierta: el artículo segundo de la LO 6/1984 atribuye el conocimiento de la solicitud de habeas corpus al juez de instrucción del lugar donde se encuentra la persona privada de libertad, la misma competencia que el art. 87.1 LOPJ recoge para los juzgados de instrucción. La opción a) es falsa porque el art. 87 LOPJ atribuye la instrucción de las causas cuyo enjuiciamiento corresponde tanto a las audiencias provinciales como a los juzgados de lo penal, no «únicamente» a estos; y la b) habla de «juicios de faltas», categoría desaparecida el 1 de julio de 2015, cuando la LO 1/2015 las convirtió en delitos leves. Ahora bien, el texto del art. 87 LOPJ no está entre las fuentes extraídas (falta la LO 6/1985), así que esos dos descartes no pueden acreditarse con cita literal, solo el núcleo de la respuesta buena.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 31, pàgina 10 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1984-habeas',
+        locator: 'art. segon',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'nota de consolidació (disp. add. 2a LO 1/2015)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10258,14 +10576,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Conduir «sin haber obtenido nunca permiso o licencia de conducción» és el supòsit del paràgraf segon de l\'article 384 del Codi Penal, que castiga amb «la misma pena» que el primer paràgraf: presó de tres a sis mesos, o multa de dotze a vint-i-quatre mesos, o treballs en benefici de la comunitat de trenta-un a noranta dies. És exactament l\'opció c), amb les tres penes alternatives i les forquilles correctes. La a) retalla els treballs a 1-30 dies quan el text diu de 31 a 90; la b) redueix la multa a 1-3 mesos quan és de 12 a 24; i la d) inventa una presó de 6 a 12 mesos que no correspon a aquest article.',
+      es: 'Conducir «sin haber obtenido nunca permiso o licencia de conducción» es el supuesto del párrafo segundo del artículo 384 del Código Penal, que castiga con «la misma pena» que el primer párrafo: prisión de tres a seis meses, o multa de doce a veinticuatro meses, o trabajos en beneficio de la comunidad de treinta y uno a noventa días. Es exactamente la opción c), con las tres penas alternativas y las horquillas correctas. La a) recorta los trabajos a 1-30 días cuando el texto dice de 31 a 90; la b) reduce la multa a 1-3 meses cuando es de 12 a 24; y la d) inventa una prisión de 6 a 12 meses que no corresponde a este artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 32, pàgina 10 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 384, paràgraf primer',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 384, paràgraf segon',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10336,14 +10666,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El quadre de l’article 4.2 del Reglament general de conductors defineix el permís B amb els dos límits exactes de l’enunciat: automòbils la massa màxima autoritzada dels quals no excedeixi els 3.500 kg, dissenyats i construïts per transportar no més de vuit passatgers a més del conductor. Per això la a) és la bona. La b) no serveix: el B+E és per a conjunts de vehicle tractor amb remolc o semiremolc, no per a un automòbil sol. La c) i la d) cauen amb el mateix quadre: tant el C com el C1 exigeixen que la massa màxima autoritzada excedeixi els 3.500 kg (el C1, a més, sense sobrepassar els 7.500 kg), de manera que un automòbil que no hi arriba no pertany a cap de les dues classes.',
+      es: 'El cuadro del artículo 4.2 del Reglamento general de conductores define el permiso B con los dos límites exactos del enunciado: automóviles cuya masa máxima autorizada no exceda de 3.500 kg, diseñados y construidos para el transporte de no más de ocho pasajeros además del conductor. Por eso la a) es la buena. La b) no sirve: el B+E es para conjuntos de vehículo tractor con remolque o semirremolque, no para un automóvil solo. La c) y la d) caen con el mismo cuadro: tanto el C como el C1 exigen que la masa máxima autorizada exceda de 3.500 kg (el C1, además, sin sobrepasar los 7.500 kg), de modo que un automóvil que no llega a esa cifra no pertenece a ninguna de las dos clases.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 34, pàgina 11 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe B)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe C1)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10375,14 +10717,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 379.2 del Codi penal castiga qui condueixi sota la influència de begudes alcohòliques i afegeix que «en todo caso será condenado con dichas penas el que condujere con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro o con una tasa de alcohol en sangre superior a 1,2 gramos por litro»: superar 0,60 mg/l és, doncs, sempre delicte contra la seguretat viària de l’article 379.2, com diu la b). La c) confon l’article: el 383 castiga el conductor que es nega a sotmetre’s a les proves de detecció, no el que supera una taxa. La a) descriu una conseqüència administrativa, però l’enunciat demana la qualificació «segons el Codi Penal», i amb aquesta taxa el fet és penal. Si la b) és certa, la d) cau tota sola.',
+      es: 'El artículo 379.2 del Código penal castiga a quien conduzca bajo la influencia de bebidas alcohólicas y añade que «en todo caso será condenado con dichas penas el que condujere con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro o con una tasa de alcohol en sangre superior a 1,2 gramos por litro»: superar 0,60 mg/l es, por tanto, siempre delito contra la seguridad vial del artículo 379.2, como dice la b). La c) confunde el artículo: el 383 castiga al conductor que se niega a someterse a las pruebas de detección, no al que supera una tasa. La a) describe una consecuencia administrativa, pero el enunciado pide la calificación «según el Código Penal», y con esa tasa el hecho es penal. Si la b) es cierta, la d) cae por sí sola.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 35, pàgina 11 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 383',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10453,14 +10807,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 41 de l’ordenança de circulació de Roses, sota la rúbrica «Horari», fixa que, llevat d’autorització especial, les operacions de càrrega i descàrrega de mercaderies, materials o coses no estan autoritzades «des de les 10 del vespre fins a les 8 del matí cada dia». L’opció c) reprodueix exactament aquests dos límits horaris. Les altres tres n’alteren almenys un: la a) i la b) avancen l’inici a les 9 del vespre, i la b) i la d) allarguen la franja fins a les 9 del matí. La modificació de l’ordenança de 2021 (BOP de Girona núm. 42, de 03-03-2021) només va afectar els articles 19, 46, 46 bis, 49 i l’annex 1, de manera que l’article 41 conserva avui la mateixa redacció.',
+      es: 'El artículo 41 de la ordenanza de circulación de Roses, bajo la rúbrica «Horario», fija que, salvo autorización especial, las operaciones de carga y descarga de mercancías, materiales o cosas no están autorizadas «desde las 10 de la noche hasta las 8 de la mañana cada día». La opción c) reproduce exactamente esos dos límites horarios. Las otras tres alteran al menos uno: la a) y la b) adelantan el inicio a las 9 de la noche, y la b) y la d) alargan la franja hasta las 9 de la mañana. La modificación de la ordenanza de 2021 (BOP de Girona núm. 42, de 03-03-2021) solo afectó a los artículos 19, 46, 46 bis, 49 y al anexo 1, por lo que el artículo 41 conserva hoy la misma redacción.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 37, pàgina 12 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 41',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10492,14 +10852,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 16.18 de l’ordenança de circulació prohibeix estacionar a les zones senyalitzades com a reserva de càrrega i descàrrega de mercaderies, materials o coses, llevat dels vehicles autoritzats o els autoritzats sense realitzar la tasca, i l’annex 1 qualifica aquest fet (fila 16.18) com a infracció lleu amb un import de 100 euros (50 amb bonificació). Això és exactament l’opció a). La b) infla l’import fins a 200 euros, i la c) i la d) converteixen la infracció en greu, cosa que l’annex no fa. La modificació de 2021 de l’annex només va afegir les files dels vehicles de mobilitat personal (art. 46 bis) i retocar les dels patins (art. 49), de manera que la fila 16.18 continua vigent amb la mateixa qualificació i import.',
+      es: 'El artículo 16.18 de la ordenanza de circulación prohíbe estacionar en las zonas señalizadas como reserva de carga y descarga de mercancías, materiales o cosas, salvo los vehículos autorizados o los autorizados sin realizar la tarea, y el anexo 1 califica ese hecho (fila 16.18) como infracción leve con un importe de 100 euros (50 con bonificación). Eso es exactamente la opción a). La b) infla el importe hasta 200 euros, y la c) y la d) convierten la infracción en grave, cosa que el anexo no hace. La modificación de 2021 del anexo solo añadió las filas de los vehículos de movilidad personal (art. 46 bis) y retocó las de los patines (art. 49), de modo que la fila 16.18 sigue vigente con la misma calificación e importe.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 38, pàgina 12 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 16.18',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'annex 1, fila 16.18',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10531,14 +10903,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’annex de l’ordenança de convivència de Roses qualifica cada conducta. Sol·licitar o acceptar serveis sexuals retribuïts en les zones de trànsit públic (fila 8.1) hi consta com a infracció greu, amb 1.200 euros: és l’única greu de les quatre opcions, i per això la b) és la bona. Oferir la cerca d’estacionament als conductors a canvi d’almoina (fila 7.4) és lleu, amb 500 euros; exercir a l’espai públic violència física o psíquica entre persones o col·lectius (fila 3.1) i practicar sota l’aparença de mendicitat actituds coactives o d’assetjament (fila 7.1) són totes dues molt greus, amb 1.750 euros. La modificació de 2021 només va tocar les files 10.4, 11.1, 11.2 i 16 de l’annex, cap de les quatre citades, de manera que aquestes qualificacions continuen vigents.',
+      es: 'El anexo de la ordenanza de convivencia de Roses califica cada conducta. Solicitar o aceptar servicios sexuales retribuidos en las zonas de tránsito público (fila 8.1) consta como infracción grave, con 1.200 euros: es la única grave de las cuatro opciones, y por eso la b) es la correcta. Ofrecer la búsqueda de estacionamiento a los conductores a cambio de limosna (fila 7.4) es leve, con 500 euros; ejercer en el espacio público violencia física o psíquica entre personas o colectivos (fila 3.1) y practicar bajo la apariencia de mendicidad actitudes coactivas o de acoso (fila 7.1) son ambas muy graves, con 1.750 euros. La modificación de 2021 solo tocó las filas 10.4, 11.1, 11.2 y 16 del anexo, ninguna de las cuatro citadas, de modo que esas calificaciones siguen vigentes.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 39, pàgina 12 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 8.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 7.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 3.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 7.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10570,14 +10966,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 17.2 fixa la doble regla de la detenció preventiva: no pot durar més del temps estrictament necessari per a les indagacions d\'esclariment dels fets i, «en tot cas, en el termini màxim de setanta-dues hores», el detingut ha de ser posat en llibertat o a disposició de l\'autoritat judicial. L\'opció a), amb les 72 hores, és l\'única que coincideix amb el text; la b) i la d) retallen el termini a 48 i 24 hores, xifres que el precepte no conté. La c), a més de correspondre a l\'apartat 3 i no al 2, el capgira: l\'article 17.3 diu que la persona detinguda «no pot ser obligada a declarar», no que hi estigui obligada.',
+      es: 'El artículo 17.2 fija la doble regla de la detención preventiva: no puede durar más del tiempo estrictamente necesario para las averiguaciones de esclarecimiento de los hechos y, «en todo caso, en el plazo máximo de setenta y dos horas», el detenido debe ser puesto en libertad o a disposición de la autoridad judicial. La opción a), con las 72 horas, es la única que coincide con el texto; la b) y la d) recortan el plazo a 48 y 24 horas, cifras que el precepto no contiene. La c), además de corresponder al apartado 3 y no al 2, lo invierte: el artículo 17.3 dice que la persona detenida «no puede ser obligada a declarar», no que esté obligada a ello.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 40, pàgina 13 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10609,14 +11017,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.8 de la Llei 4/2003 resol la pregunta amb una sola frase: «Els acords de la junta local de seguretat s\'han de prendre per unanimitat i tenen caràcter executiu». L\'opció d) combina exactament els dos elements. Les altres tres fallen almenys en un: la a) parla de majoria simple i de caràcter merament informatiu; la b), de majoria absoluta i nega el caràcter executiu; i la c), tot i encertar la unanimitat, atribueix als acords un inexistent «caràcter judicial». La redacció de l\'article no consta modificada i continua vigent, de manera que la plantilla del tribunal segueix sent correcta avui.',
+      es: 'El artículo 9.8 de la Ley 4/2003 resuelve la pregunta con una sola frase: «Los acuerdos de la junta local de seguridad se han de tomar por unanimidad y tienen carácter ejecutivo». La opción d) combina exactamente los dos elementos. Las otras tres fallan al menos en uno: la a) habla de mayoría simple y de carácter meramente informativo; la b), de mayoría absoluta y niega el carácter ejecutivo; y la c), aun acertando la unanimidad, atribuye a los acuerdos un inexistente «carácter judicial». La redacción del artículo no consta modificada y sigue vigente, de modo que la plantilla del tribunal sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 41, pàgina 13 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.8',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10648,14 +11062,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 234.1 del Codi Penal fixa per al furt «la pena de prisión de seis a dieciocho meses si la cuantía de lo sustraído excediese de 400 euros»: exactament el que diu l\'opció c). La a) inventa una presó d\'1 a 3 mesos que no existeix (la multa d\'un a tres mesos de l\'article 234.2 és per quan la quantia no excedeix de 400 euros, i és multa, no presó). La b) escurça la forquilla a 6-12 mesos, que no és la del text. La d) aplica la presó de 6 a 18 mesos al supòsit contrari (quantia que no excedeix de 400 euros), que el 234.2 castiga amb multa, i a més arrossega un text aliè de les bases de la convocatòria.',
+      es: 'El artículo 234.1 del Código Penal fija para el hurto «la pena de prisión de seis a dieciocho meses si la cuantía de lo sustraído excediese de 400 euros»: exactamente lo que dice la opción c). La a) inventa una prisión de 1 a 3 meses que no existe (la multa de uno a tres meses del artículo 234.2 es para cuando la cuantía no excede de 400 euros, y es multa, no prisión). La b) acorta la horquilla a 6-12 meses, que no es la del texto. La d) aplica la prisión de 6 a 18 meses al supuesto contrario (cuantía que no excede de 400 euros), que el 234.2 castiga con multa, y además arrastra un texto ajeno de las bases de la convocatoria.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 42, pàgina 14 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 234.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 234.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11506,14 +11932,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 1.1 de la Constitució comença dient que «Espanya es constitueix en un Estat social i democràtic de Dret», que és exactament l\'opció b). La a) («estat de dret democràtic») escurça la fórmula i en suprimeix el terme «social», que és part essencial de la definició constitucional. La c) («estat polític i democràtic») i la d) («estat de dret polític i pluricultural») introdueixen adjectius que l\'article no conté: ni «polític» com a qualificatiu de l\'Estat ni «pluricultural» apareixen al precepte. És una pregunta de literalitat pura: només una opció coincideix paraula per paraula amb la fórmula de l\'article.',
+      es: 'El artículo 1.1 de la Constitución comienza diciendo que «España se constituye en un Estado social y democrático de Derecho», que es exactamente la opción b). La a) («estado de derecho democrático») acorta la fórmula y suprime el término «social», que es parte esencial de la definición constitucional. La c) («estado político y democrático») y la d) («estado de derecho político y pluricultural») introducen adjetivos que el artículo no contiene: ni «político» como calificativo del Estado ni «pluricultural» aparecen en el precepto. Es una pregunta de literalidad pura: solo una opción coincide palabra por palabra con la fórmula del artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11584,14 +12016,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Els drets fonamentals en sentit estricte són els de la secció 1a del capítol II del títol I (articles 15 a 29): allà hi ha el dret a la vida i a la integritat física i moral (art. 15, opció a), el dret a l\'honor, a la intimitat i a la pròpia imatge (art. 18.1, opció c) i el dret a triar lliurement la residència i circular pel territori nacional (art. 19, opció d). En canvi, contribuir al sosteniment de la despesa pública segons la capacitat econòmica és l\'article 31.1, que és a la secció 2a («Dels drets i deures dels ciutadans») i que, a més, el text formula com un deure —«tots contribuiran»—, no com un dret. Per això la b) és la que no és un dret fonamental.',
+      es: 'Los derechos fundamentales en sentido estricto son los de la sección 1.ª del capítulo II del título I (artículos 15 a 29): allí están el derecho a la vida y a la integridad física y moral (art. 15, opción a), el derecho al honor, a la intimidad y a la propia imagen (art. 18.1, opción c) y el derecho a elegir libremente la residencia y circular por el territorio nacional (art. 19, opción d). En cambio, contribuir al sostenimiento del gasto público según la capacidad económica es el artículo 31.1, que está en la sección 2.ª («De los derechos y deberes de los ciudadanos») y que, además, el texto formula como un deber —«todos contribuirán»—, no como un derecho. Por eso la b) es la que no es un derecho fundamental.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 31.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, capítol II, rúbrica de la secció 1a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 15',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 18.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 19',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11623,14 +12085,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 2.2 de l’Estatut integra en la Generalitat el Parlament, la Presidència, el Govern «i les altres institucions que estableix el capítol V del títol II». Aquell capítol, «Altres institucions de la Generalitat», té exactament quatre seccions: el Consell de Garanties Estatutàries, el Síndic de Greuges, la Sindicatura de Comptes i el Consell de l’Audiovisual de Catalunya. Les opcions a), b) i c) hi apareixen, doncs, totes tres amb secció pròpia: són institucions estatutàries de la Generalitat. En canvi, cap article de l’Estatut no crea cap «Consell de política pacífica»: és un nom que no correspon a cap institució de l’Estatut ni del capítol V, i per això la resposta correcta és la d).',
+      es: 'El artículo 2.2 del Estatuto integra en la Generalitat el Parlamento, la Presidencia, el Gobierno «y las demás instituciones que establece el capítulo V del título II». Ese capítulo, «Otras instituciones de la Generalitat», tiene exactamente cuatro secciones: el Consell de Garanties Estatutàries, el Síndic de Greuges, la Sindicatura de Comptes y el Consell de l’Audiovisual de Catalunya. Las opciones a), b) y c) aparecen, pues, las tres con sección propia: son instituciones estatutarias de la Generalitat. En cambio, ningún artículo del Estatuto crea ningún «Consejo de política pacífica»: es un nombre que no corresponde a ninguna institución del Estatuto ni del capítulo V, y por eso la respuesta correcta es la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 2.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'títol II, capítol V, rúbrica i secció primera',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'títol II, capítol V, secció segona',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'títol II, capítol V, secció tercera',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'títol II, capítol V, secció quarta',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11662,14 +12154,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’Estatut vigent es conté en la Llei orgànica 6/2006, sancionada el 19 de juliol de 2006 i publicada al DOGC i al BOE: té, doncs, rang de llei orgànica, que és el vehicle que la Constitució reserva als estatuts d’autonomia. La mateixa lògica es veu a la disposició derogatòria, que deroga l’Estatut anterior, també aprovat per llei orgànica (la 4/1979). La b) és falsa perquè una llei ordinària no pot aprovar ni reformar un estatut. La c) no és cap rang normatiu: «carta magna» és una manera informal d’anomenar la Constitució, no una categoria de fonts del dret. I la d) queda per sota de tot el sistema: un reglament és una norma administrativa subordinada a la llei, no una norma aprovada per les Corts Generals.',
+      es: 'El Estatuto vigente se contiene en la Ley Orgánica 6/2006, sancionada el 19 de julio de 2006 y publicada en el DOGC y en el BOE: tiene, pues, rango de ley orgánica, que es el vehículo que la Constitución reserva a los estatutos de autonomía. La misma lógica se ve en la disposición derogatoria, que deroga el Estatuto anterior, también aprobado por ley orgánica (la 4/1979). La b) es falsa porque una ley ordinaria no puede aprobar ni reformar un estatuto. La c) no es ningún rango normativo: «carta magna» es una manera informal de llamar a la Constitución, no una categoría de fuentes del derecho. Y la d) queda por debajo de todo el sistema: un reglamento es una norma administrativa subordinada a la ley, no una norma aprobada por las Cortes Generales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'portada i tramitació (pàg. 5)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'disposició derogatòria',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11740,14 +12244,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 11.2 de la Llei 7/1985 ho diu amb una sola frase: «són elements del municipi el territori, la població i l’organització». L’opció b) reprodueix exactament aquesta tríada. Les altres tres opcions barregen persones i càrrecs que no són elements del municipi sinó parts de la seva organització o del seu personal: els regidors formen part de l’ajuntament com a òrgan de govern (art. 19), i el secretari, l’interventor i la resta de funcionaris són personal al servei de la corporació. L’opció d) sembla acostar-s’hi però substitueix l’organització per «funcionaris», i la c) confon els veïns empadronats —que constitueixen la població (art. 15)— amb l’enumeració legal completa dels tres elements.',
+      es: 'El artículo 11.2 de la Ley 7/1985 lo dice en una sola frase: «son elementos del Municipio el territorio, la población y la organización». La opción b) reproduce exactamente esa tríada. Las otras tres opciones mezclan personas y cargos que no son elementos del municipio sino partes de su organización o de su personal: los concejales integran el ayuntamiento como órgano de gobierno (art. 19), y el secretario, el interventor y los demás funcionarios son personal al servicio de la corporación. La opción d) parece acercarse pero sustituye la organización por «funcionarios», y la c) confunde a los vecinos empadronados —que constituyen la población (art. 15)— con la enumeración legal completa de los tres elementos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 11.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11779,14 +12289,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 49 de la Llei 7/1985 fixa el procediment d’aprovació de les ordenances locals: aprovació inicial pel Ple (lletra a), informació pública i audiència als interessats per un mínim de trenta dies (lletra b) i, resoltes les reclamacions i els suggeriments, «aprovació definitiva pel Ple» (lletra c). La resposta correcta és, doncs, la d). Això lliga amb l’article 22.2.d, que reserva al Ple «en tot cas» l’aprovació del reglament orgànic i de les ordenances, atribució que a més és indelegable (art. 22.4): ni l’alcalde president (a), ni un regidor delegat (b), ni la Junta de Govern Local (c) poden aprovar definitivament una ordenança, perquè cap delegació no pot abastar aquesta matèria.',
+      es: 'El artículo 49 de la Ley 7/1985 fija el procedimiento de aprobación de las ordenanzas locales: aprobación inicial por el Pleno (letra a), información pública y audiencia a los interesados por un mínimo de treinta días (letra b) y, resueltas las reclamaciones y sugerencias, «aprobación definitiva por el Pleno» (letra c). La respuesta correcta es, pues, la d). Esto enlaza con el artículo 22.2.d, que reserva al Pleno «en todo caso» la aprobación del reglamento orgánico y de las ordenanzas, atribución que además es indelegable (art. 22.4): ni el alcalde presidente (a), ni un concejal delegado (b), ni la Junta de Gobierno Local (c) pueden aprobar definitivamente una ordenanza, porque ninguna delegación puede alcanzar esta materia.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 49',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11818,14 +12340,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21.1.b de la Llei 7/1985 atribueix a l’alcalde, com a president de la corporació, «representar l’ajuntament»: és l’opció a). Les altres tres opcions són, totes, atribucions del Ple segons l’article 22.2: el control i la fiscalització dels òrgans de govern és la lletra a), l’aprovació del reglament orgànic i de les ordenances és la lletra d), i la declaració de lesivitat dels actes de l’ajuntament és la lletra k). La pregunta, doncs, es resol contrastant les dues llistes: només la representació de l’ajuntament figura a la llista de l’alcalde, i les tres restants figuren literalment a la del Ple.',
+      es: 'El artículo 21.1.b de la Ley 7/1985 atribuye al alcalde, como presidente de la corporación, «representar al ayuntamiento»: es la opción a). Las otras tres opciones son, todas, atribuciones del Pleno según el artículo 22.2: el control y la fiscalización de los órganos de gobierno es la letra a), la aprobación del reglamento orgánico y de las ordenanzas es la letra d), y la declaración de lesividad de los actos del ayuntamiento es la letra k). La pregunta se resuelve, pues, contrastando las dos listas: solo la representación del ayuntamiento figura en la lista del alcalde, y las tres restantes figuran literalmente en la del Pleno.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.a i b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.k',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11857,14 +12403,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21.1.g de la Llei 7/1985 atribueix a l’alcalde «aprovar l’oferta d’ocupació pública d’acord amb el pressupost i la plantilla aprovats pel Ple». La resposta correcta és, doncs, a): l’alcalde president. El Ple (opció b) hi intervé abans —aprova el pressupost i la plantilla que emmarquen l’oferta (art. 22.2.e i i)—, però l’acte d’aprovar l’oferta és de l’alcalde. La trampa habitual d’aquesta pregunta és precisament aquesta: confondre el marc (Ple) amb l’aprovació de l’oferta (alcalde). Les opcions c) i d) no són òrgans de govern municipal: la mesa de contractació és un òrgan d’assistència en els procediments contractuals i el comitè d’empresa és un òrgan de representació del personal laboral.',
+      es: 'El artículo 21.1.g de la Ley 7/1985 atribuye al alcalde «aprobar la oferta de empleo público de acuerdo con el Presupuesto y la plantilla aprobados por el Pleno». La respuesta correcta es, pues, a): el alcalde presidente. El Pleno (opción b) interviene antes —aprueba el presupuesto y la plantilla que enmarcan la oferta (art. 22.2.e e i)—, pero el acto de aprobar la oferta es del alcalde. La trampa habitual de esta pregunta es precisamente esa: confundir el marco (Pleno) con la aprobación de la oferta (alcalde). Las opciones c) y d) no son órganos de gobierno municipal: la mesa de contratación es un órgano de asistencia en los procedimientos contractuales y el comité de empresa es un órgano de representación del personal laboral.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.g',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11896,14 +12454,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 22.2.i de la Llei 7/1985 atribueix al Ple, «en tot cas», «l’aprovació de la plantilla de personal i de la relació de llocs de treball», a més de la fixació de les retribucions complementàries fixes i periòdiques dels funcionaris i del nombre i règim del personal eventual. La resposta correcta és, doncs, c), el Ple. Cap de les altres opcions és un òrgan amb aquesta atribució legal: el cap de Recursos Humans (a) i el gerent (b) són personal al servei de la corporació, no òrgans de govern, i el comitè d’empresa (d) és un òrgan de representació dels treballadors laborals, que pot ser consultat però no aprova la plantilla. Aquesta pregunta fa parella amb la de l’oferta pública d’ocupació: l’oferta l’aprova l’alcalde (art. 21.1.g), la plantilla i la relació de llocs, el Ple.',
+      es: 'El artículo 22.2.i de la Ley 7/1985 atribuye al Pleno, «en todo caso», «la aprobación de la plantilla de personal y de la relación de puestos de trabajo», además de la fijación de las retribuciones complementarias fijas y periódicas de los funcionarios y del número y régimen del personal eventual. La respuesta correcta es, pues, c), el Pleno. Ninguna de las otras opciones es un órgano con esta atribución legal: el jefe de Recursos Humanos (a) y el gerente (b) son personal al servicio de la corporación, no órganos de gobierno, y el comité de empresa (d) es un órgano de representación de los trabajadores laborales, que puede ser consultado pero no aprueba la plantilla. Esta pregunta forma pareja con la de la oferta de empleo público: la oferta la aprueba el alcalde (art. 21.1.g); la plantilla y la relación de puestos, el Pleno.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.i',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11935,14 +12505,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 58.2 de la Llei 16/1991 fixa la prescripció de les faltes a comptar de la data de la comissió: les molt greus prescriuen al cap de sis anys, les greus al cap de dos anys i les lleus al cap de tres mesos en la redacció vigent. Per a una falta molt greu el termini és, doncs, de sis anys: opció c. Un any (a) i sis mesos (b) no corresponen a cap falta d\'aquest article, i deu anys (d) no apareix enlloc de la llei. L\'apartat va ser modificat per la Llei 11/2026, però el termini de sis anys per a les faltes molt greus es manté idèntic en el text vigent, de manera que la plantilla segueix sent correcta avui.',
+      es: 'El artículo 58.2 de la Ley 16/1991 fija la prescripción de las faltas a contar desde la fecha de comisión: las muy graves prescriben a los seis años, las graves a los dos años y las leves a los tres meses en la redacción vigente. Para una falta muy grave el plazo es, pues, de seis años: opción c. Un año (a) y seis meses (b) no corresponden a ninguna falta de este artículo, y diez años (d) no aparece en ningún lugar de la ley. El apartado fue modificado por la Ley 11/2026, pero el plazo de seis años para las faltas muy graves se mantiene idéntico en el texto vigente, de modo que la plantilla sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -11974,14 +12550,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 168.4 del RDL 2/2004 diu que, a partir dels pressupostos i estats de previsió, «el presidente de la entidad formará el presupuesto general y lo remitirá... al Pleno de la corporación... para su aprobación, enmienda o devolución». En un ajuntament, el president de l\'entitat és l\'alcalde president, que coincideix amb l\'opció a). El secretari (b) i l\'interventor (c) intervenen informant i donant fe del procediment, però l\'article no els atribueix la funció de formar el pressupost. El Ple (d) és qui l\'aprova, l\'esmena o el retorna, una funció clarament diferent de formar-lo, segons el mateix apartat. Per tant, només l\'opció a) recull correctament qui forma el pressupost.',
+      es: 'El artículo 168.4 del RDL 2/2004 dice que, a partir de los presupuestos y estados de previsión, «el presidente de la entidad formará el presupuesto general y lo remitirá... al Pleno de la corporación... para su aprobación, enmienda o devolución». En un ayuntamiento, el presidente de la entidad es el alcalde presidente, lo que coincide con la opción a). El secretario (b) y el interventor (c) intervienen informando y dando fe del procedimiento, pero el artículo no les atribuye la función de formar el presupuesto. El Pleno (d) es quien lo aprueba, enmienda o devuelve, una función claramente distinta de formarlo, según el mismo apartado. Por tanto, solo la opción a) recoge correctamente quién forma el presupuesto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-2-2004-trlrhl',
+        locator: 'art. 168.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12013,14 +12595,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Dins el títol IV de la Llei 39/2015, el procediment administratiu comú s\'estructura per capítols que es corresponen amb les seves fases: iniciació (capítol II), ordenació (capítol III), instrucció (capítol IV) i finalització (capítol V). La resolució és, precisament, la secció 2a del capítol V, «Finalización del procedimiento», i l\'article 84.1, que obre aquest capítol, l\'enumera com la primera de les formes de posar fi al procediment, al costat del desistiment, la renúncia i la declaració de caducitat. Per això la resposta bona és la d): la resolució pertany a la fase de finalització, no a la iniciació (sol·licitud o acord d\'inici), ni a l\'ordenació (impuls i tramitació de l\'expedient), ni a la instrucció (al·legacions, prova, informes i audiència).',
+      es: 'Dentro del título IV de la Ley 39/2015, el procedimiento administrativo común se estructura en capítulos que se corresponden con sus fases: iniciación (capítulo II), ordenación (capítulo III), instrucción (capítulo IV) y finalización (capítulo V). La resolución es, precisamente, la sección 2.ª del capítulo V, «Finalización del procedimiento», y el artículo 84.1, que abre ese capítulo, la enumera como la primera de las formas de poner fin al procedimiento, junto al desistimiento, la renuncia y la declaración de caducidad. Por eso la respuesta buena es la d): la resolución pertenece a la fase de finalización, no a la iniciación (solicitud o acuerdo de inicio), ni a la ordenación (impulso y tramitación del expediente), ni a la instrucción (alegaciones, prueba, informes y audiencia).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'títol IV, capítol V (rúbrica)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 84.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'títol IV, capítol V, secció 2a (rúbrica)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12052,14 +12652,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 40.1 de la Llei 39/2015 ordena a l\'òrgan que dicti «les resolucions i actes administratius» notificar-los als interessats «els drets i interessos dels quals siguin afectats per aquells». El criteri legal per notificar un acte —també un acte de tràmit— és, doncs, l\'afectació de drets o interessos de l\'interessat, exactament el que diu l\'opció c). La a) («sempre») i la b) («mai») són absoluts que el text no conté: ni s\'ha de notificar tot acte de tràmit amb independència del seu efecte, ni es pot deixar de notificar el que afecti l\'interessat. I la d) restringeix el deure de notificar als actes de tràmit qualificats, una condició que l\'article 40.1 no imposa: aquesta categoria és rellevant per a la seva impugnació autònoma, no per al deure de notificar.',
+      es: 'El artículo 40.1 de la Ley 39/2015 ordena al órgano que dicte «las resoluciones y actos administrativos» notificarlos a los interesados «cuyos derechos e intereses sean afectados por aquéllos». El criterio legal para notificar un acto —también un acto de trámite— es, pues, la afectación de derechos o intereses del interesado, exactamente lo que dice la opción c). La a) («siempre») y la b) («nunca») son absolutos que el texto no contiene: ni hay que notificar todo acto de trámite con independencia de su efecto, ni cabe dejar de notificar el que afecte al interesado. Y la d) restringe el deber de notificar a los actos de trámite cualificados, una condición que el artículo 40.1 no impone: esa categoría es relevante para su impugnación autónoma, no para el deber de notificar.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 40.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12091,14 +12697,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 80.1 de la Llei 39/2015 estableix la regla general sobre els informes: «llevat de disposició expressa en contra, els informes seran facultatius i no vinculants». Només l\'opció d) reprodueix aquesta doble qualificació. Les altres tres n\'inverteixen una part o totes dues: la a) manté «facultatius» però els fa «vinculants»; la b) els fa «preceptius» tot i encertar el «no vinculants»; i la c) inverteix les dues qualificacions alhora («preceptius i vinculants»). Que un informe sigui preceptiu o vinculant és, en el sistema de la llei, l\'excepció que requereix una disposició expressa que ho estableixi, mai la regla general per la qual pregunta l\'enunciat. N\'hi ha prou de confrontar cada opció amb la frase literal de l\'article per quedar-se només amb la d).',
+      es: 'El artículo 80.1 de la Ley 39/2015 establece la regla general sobre los informes: «salvo disposición expresa en contrario, los informes serán facultativos y no vinculantes». Solo la opción d) reproduce esa doble calificación. Las otras tres invierten una parte o ambas: la a) mantiene «facultativos» pero los hace «vinculantes»; la b) los hace «preceptivos» aun acertando el «no vinculantes»; y la c) invierte las dos calificaciones a la vez («preceptivos y vinculantes»). Que un informe sea preceptivo o vinculante es, en el sistema de la ley, la excepción que requiere una disposición expresa que lo establezca, nunca la regla general por la que pregunta el enunciado. Basta confrontar cada opción con la frase literal del artículo para quedarse solo con la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 80.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12130,14 +12742,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 53.1.a) de la Llei 39/2015 reconeix a l\'interessat el dret a conèixer, en qualsevol moment, l\'estat de tramitació dels procediments en què tingui aquesta condició i, a més, «a accedir i obtenir còpia dels documents» que contenen, sense esperar que el procediment finalitzi: això valida la b) i descarta la a), que ajorna la còpia fins al final. La lletra f) del mateix apartat estén el dret d\'informació i orientació als requisits «jurídics o tècnics» que les disposicions vigents imposin als projectes, actuacions o sol·licituds, de manera que la c), que n\'exclou els tècnics, contradiu el text. I la lletra g) reconeix el dret «a actuar assistits d\'assessor quan ho considerin convenient», exactament el contrari del «en cap cas assistits d\'un assessor» que afirma la d).',
+      es: 'El artículo 53.1.a) de la Ley 39/2015 reconoce al interesado el derecho a conocer, en cualquier momento, el estado de la tramitación de los procedimientos en los que tenga esa condición y, además, «a acceder y a obtener copia de los documentos» que contienen, sin esperar a que el procedimiento finalice: eso valida la b) y descarta la a), que aplaza la copia hasta el final. La letra f) del mismo apartado extiende el derecho de información y orientación a los requisitos «jurídicos o técnicos» que las disposiciones vigentes impongan a los proyectos, actuaciones o solicitudes, de modo que la c), que excluye los técnicos, contradice el texto. Y la letra g) reconoce el derecho «a actuar asistidos de asesor cuando lo consideren conveniente», exactamente lo contrario del «en ningún caso asistidos de un asesor» que afirma la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 17, pàgina 5 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 53.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 53.1.f',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 53.1.g',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12208,14 +12838,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 11.2 de la Llei 39/2015 conté una llista tancada de les úniques actuacions per a les quals les administracions públiques poden exigir a l\'interessat l\'ús obligatori de signatura: formular sol·licituds, presentar declaracions responsables o comunicacions, interposar recursos, desistir d\'accions i renunciar a drets. Formular una sol·licitud (opció a), presentar una declaració responsable (opció b) i interposar un recurs (opció d) hi figuren literalment com a lletres a), b) i c) de la llista, així que per a totes tres la signatura és obligatòria. Aportar documentació complementària a l\'expedient, en canvi, no apareix a la llista: per a la resta d\'actuacions del procediment, l\'apartat 1 del mateix article diu que n\'hi ha prou que l\'interessat acrediti prèviament la seva identitat. Per això la resposta bona és la c).',
+      es: 'El artículo 11.2 de la Ley 39/2015 contiene una lista cerrada de las únicas actuaciones para las que las administraciones públicas pueden exigir al interesado el uso obligatorio de firma: formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos. Formular una solicitud (opción a), presentar una declaración responsable (opción b) e interponer un recurso (opción d) figuran literalmente como letras a), b) y c) de la lista, así que para las tres la firma es obligatoria. Aportar documentación complementaria al expediente, en cambio, no aparece en la lista: para el resto de actuaciones del procedimiento, el apartado 1 del mismo artículo dice que basta con que el interesado acredite previamente su identidad. Por eso la respuesta buena es la c).',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 20, pàgina 6 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-39-2015-pac',
+        locator: 'art. 11.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12247,14 +12883,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 1.1 de la LO 2/1986 diu literalment que la Seguretat Pública és competència exclusiva de l\'Estat i que el seu manteniment correspon al Govern de la Nació, exactament el que diu l\'opció a). L\'opció b) parla de competència «compartida» amb les comunitats autònomes, cosa que contradiu el terme «exclusiva» de l\'article; de fet, l\'apartat 2 del mateix article només preveu que les comunitats autònomes «participin» en el manteniment, no que en comparteixin la competència. L\'opció c) atribueix la competència a un ministre concret, quan el text parla de l\'Estat i del Govern de la Nació en conjunt, no d\'un ministeri. La d) és incorrecta perquè la a) sí que coincideix amb el text.',
+      es: 'El artículo 1.1 de la LO 2/1986 dice literalmente que la Seguridad Pública es competencia exclusiva del Estado y que su mantenimiento corresponde al Gobierno de la Nación, exactamente lo que dice la opción a). La opción b) habla de competencia «compartida» con las comunidades autónomas, lo que contradice el término «exclusiva» del artículo; de hecho, el apartado 2 del mismo artículo solo prevé que las comunidades autónomas «participen» en el mantenimiento, no que compartan la competencia. La opción c) atribuye la competencia a un ministro concreto, cuando el texto habla del Estado y del Gobierno de la Nación en conjunto, no de un ministerio. La d) es incorrecta porque la a) sí coincide con el texto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 21, pàgina 6 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12286,14 +12928,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 4.4 de la Llei 4/2003 llista les funcions dels alcaldes i la lletra d) diu literalment «Exercir el comandament superior de la policia local»: l\'opció c) és la bona. Les altres dues funcions existeixen a la Llei, però pertanyen a una altra autoritat: segons l\'article 4.3, corresponen al conseller o consellera del departament amb competències en matèria de seguretat pública «Coordinar les policies locals de Catalunya» (lletra d) i «Presidir el Consell de Seguretat de Catalunya» (lletra e). Per això a) i b) són falses referides als alcaldes, i la d) («cap») queda descartada perquè la c) sí que és correcta. L\'enunciat diu «LO 4/2003» per error del tribunal: és una llei ordinària catalana, no una llei orgànica.',
+      es: 'El artículo 4.4 de la Ley 4/2003 lista las funciones de los alcaldes y la letra d) dice literalmente «ejercer el mando superior de la policía local»: la opción c) es la buena. Las otras dos funciones existen en la Ley, pero pertenecen a otra autoridad: según el artículo 4.3, corresponden al consejero o consejera del departamento con competencias en materia de seguridad pública «coordinar las policías locales de Cataluña» (letra d) y «presidir el Consejo de Seguridad de Cataluña» (letra e). Por eso a) y b) son falsas referidas a los alcaldes, y la d) («ninguna») queda descartada porque la c) sí es correcta. El enunciado dice «LO 4/2003» por error del tribunal: es una ley ordinaria catalana, no una ley orgánica.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 22, pàgina 6 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.4, lletres a)-d)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.3 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.3, lletres d) i e)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12325,14 +12985,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les opcions a), b) i c) figuren literalment entre les funcions de les juntes locals de seguretat de l\'article 10 de la Llei 4/2003 (lletres a, d i f, respectivament). En canvi, «conèixer i debatre les qüestions de caràcter organitzatiu i operatiu que afectin la coordinació entre els cossos de la policia de la Generalitat-mossos d\'esquadra i de les policies locals de Catalunya» és una funció de la Comissió de Policia de Catalunya, segons l\'article 8.3.b). Per això l\'opció d) és la que «no correspon» a les juntes locals, tal com va marcar el tribunal, i les altres tres queden descartades com a resposta precisament perquè sí que són funcions pròpies d\'aquests òrgans.',
+      es: 'Las opciones a), b) y c) figuran literalmente entre las funciones de las juntas locales de seguridad del artículo 10 de la Ley 4/2003 (letras a, d y f, respectivamente). En cambio, «conocer y debatir las cuestiones de carácter organizativo y operativo que afecten a la coordinación entre los cuerpos de la policía de la Generalitat-mossos d\'esquadra y de las policías locales de Cataluña» es una función de la Comisión de Policía de Cataluña, según el artículo 8.3.b). Por eso la opción d) es la que «no corresponde» a las juntas locales, tal como marcó el tribunal, y las otras tres quedan descartadas como respuesta precisamente porque sí son funciones propias de estos órganos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 23, pàgina 7 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.f',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.3 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.3.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12364,14 +13054,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.2 de la Llei 4/2003 diu que la Junta Local de Seguretat «és integrada per l\'alcalde o alcaldessa, que la presideix», i l\'article 4.4.b) confirma que presidir la junta local de seguretat és funció dels alcaldes: l\'opció a) és la correcta. El regidor de seguretat ciutadana n\'és vocal permanent, i només pot presidir-ne les sessions per delegació excepcional de l\'alcalde (art. 9.6), de manera que la b) no descriu la presidència ordinària que demana l\'enunciat. El delegat territorial del Govern és un altre dels vocals permanents (art. 9.2.a) i el conseller d\'Interior no forma part de la junta, així que les opcions c) i d) tampoc no tenen cap suport al text.',
+      es: 'El artículo 9.2 de la Ley 4/2003 dice que la Junta Local de Seguridad «está integrada por el alcalde o alcaldesa, que la preside», y el artículo 4.4.b) confirma que presidir la junta local de seguridad es función de los alcaldes: la opción a) es la correcta. El concejal de seguridad ciudadana es vocal permanente, y solo puede presidir sus sesiones por delegación excepcional del alcalde (art. 9.6), de modo que la b) no describe la presidencia ordinaria que pide el enunciado. El delegado territorial del Gobierno es otro de los vocales permanentes (art. 9.2.a) y el consejero de Interior no forma parte de la junta, así que las opciones c) y d) tampoco tienen ningún apoyo en el texto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 24, pàgina 7 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.4.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.6',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12403,14 +13111,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 38 de la Llei 16/1991 és taxatiu: els policies locals no poden exercir el dret de vaga, ni participar en accions substitutives d\'aquest, ni en actuacions concertades amb la finalitat d\'alterar el funcionament normal dels serveis. No hi ha cap supòsit habilitant, i per això la bona és la a). Les opcions b) i c) fallen perquè condicionen o permeten la vaga, possibilitats que el text exclou d\'arrel. La d) contradiu l\'article 37: la condició de policia local és incompatible amb l\'exercici de cap altra activitat pública o privada, amb l\'única excepció de les activitats no incloses en la legislació reguladora de les incompatibilitats, que és el contrari de «compatible amb qualsevol altra activitat».',
+      es: 'El artículo 38 de la Ley 16/1991 es taxativo: los policías locales no pueden ejercer el derecho de huelga, ni participar en acciones sustitutivas de esta, ni en actuaciones concertadas con la finalidad de alterar el funcionamiento normal de los servicios. No hay ningún supuesto habilitante, y por eso la buena es la a). Las opciones b) y c) fallan porque condicionan o permiten la huelga, posibilidades que el texto excluye de raíz. La d) contradice el artículo 37: la condición de policía local es incompatible con el ejercicio de cualquier otra actividad pública o privada, con la única excepción de las actividades no incluidas en la legislación reguladora de las incompatibilidades, que es lo contrario de «compatible con cualquier otra actividad».',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 25, pàgina 7 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 38',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 37',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12481,14 +13201,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 16.1 de la LO 4/2015 estableix que els agents podran requerir la identificació de les persones en dos supòsits: quan existeixin indicis que han pogut participar en la comissió d\'una infracció (lletra a) de l\'article, igual que l\'opció a de la pregunta) i quan es consideri raonablement necessari per prevenir la comissió d\'un delicte (lletra b), igual que l\'opció b). Com que l\'article recull totes dues situacions com a supòsits independents i vàlids, l\'opció c) («les respostes a i b són correctes») és la que reprodueix fidelment la norma. La d) inventa un requeriment «sempre» que l\'article no preveu: la identificació només es pot exigir en aquests dos supòsits taxats, no en qualsevol moment.',
+      es: 'El artículo 16.1 de la LO 4/2015 establece que los agentes podrán requerir la identificación de las personas en dos supuestos: cuando existan indicios de que han podido participar en la comisión de una infracción (letra a) del artículo, igual que la opción a de la pregunta) y cuando se considere razonablemente necesario para prevenir la comisión de un delito (letra b), igual que la opción b). Como el artículo recoge ambas situaciones como supuestos independientes y válidos, la opción c) («las respuestas a y b son correctas») es la que reproduce fielmente la norma. La d) inventa un requerimiento «siempre» que el artículo no prevé: la identificación solo puede exigirse en esos dos supuestos tasados, no en cualquier momento.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 27, pàgina 8 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 16.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 16.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12520,14 +13252,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La pregunta demana quina conducta NO és una infracció lleu de l\'article 37. L\'opció a) coincideix amb l\'apartat 14 de l\'article 37, la b) amb l\'apartat 17 i la d) amb l\'apartat 4: totes tres són infraccions lleus tipificades literalment en aquest article. En canvi, la desobediència o resistència a l\'autoritat o als seus agents (opció c) no apareix a l\'article 37: la llei la tipifica a l\'article 36.6 com a infracció GREU. Per això c) és la resposta correcta: és l\'única de les quatre que no és una infracció lleu.',
+      es: 'La pregunta pide qué conducta NO es una infracción leve del artículo 37. La opción a) coincide con el apartado 14 del artículo 37, la b) con el apartado 17 y la d) con el apartado 4: las tres son infracciones leves tipificadas literalmente en ese artículo. En cambio, la desobediencia o resistencia a la autoridad o a sus agentes (opción c) no aparece en el artículo 37: la ley la tipifica en el artículo 36.6 como infracción GRAVE. Por eso c) es la respuesta correcta: es la única de las cuatro que no es una infracción leve.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 28, pàgina 8 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 36.6',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.14',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.17',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37 (títol)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12559,14 +13321,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'enunciat és la definició literal de l\'article 234.1 del Codi Penal: qui, amb ànim de lucre, pren les coses mobles alienes sense la voluntat del seu amo és castigat «como reo de hurto». Per això la bona és la c), delicte de furt, sense més qualificatius. La a) falla perquè el robatori amb força exigeix, segons l\'article 237, apoderar-se\'n «empleando fuerza en las cosas» (o violència o intimidació), element que l\'enunciat no conté. La b) afegeix un qualificatiu («delicte greu») que el Codi no fa servir per al furt: segons la quantia és delicte menys greu o lleu, mai greu. La d), receptació, és una figura diferent, que pressuposa aprofitar-se dels efectes d\'un delicte comès per un altre, no prendre la cosa directament.',
+      es: 'El enunciado es la definición literal del artículo 234.1 del Código Penal: quien, con ánimo de lucro, toma las cosas muebles ajenas sin la voluntad de su dueño es castigado «como reo de hurto». Por eso la correcta es la c), delito de hurto, sin más calificativos. La a) falla porque el robo con fuerza exige, según el artículo 237, apoderarse de ellas «empleando fuerza en las cosas» (o violencia o intimidación), elemento que el enunciado no contiene. La b) añade un calificativo («delito grave») que el Código no emplea para el hurto: según la cuantía es delito menos grave o leve, nunca grave. La d), receptación, es una figura distinta, que presupone aprovecharse de los efectos de un delito cometido por otro, no tomar la cosa directamente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 29, pàgina 9 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 234.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 237',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12598,14 +13372,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La resposta d) exigeix acreditar que els tres òrgans exerceixen jurisdicció penal. Amb la LECrim se\'n demostren dos: l\'art. 14.3 atribueix el coneixement i decisió de causes penals a la secció penal (l\'antic jutjat penal) i l\'art. 14.5.a atribueix la instrucció de processos penals a les seccions de violència sobre la dona (els antics jutjats de violència sobre la dona); la nota de consolidació de la LO 1/2025 confirma que les mencions als antics jutjats —inclosos els de menors— s\'entenen fetes avui a les seccions corresponents dels tribunals d\'instància. Però la competència penal dels jutjats de menors la fixen l\'art. 96 LOPJ i la LO 5/2000, que no són entre les fonts extretes: aquella tercera pota, i per tant la lletra d) sencera, no es pot citar literalment.',
+      es: 'La respuesta d) exige acreditar que los tres órganos ejercen jurisdicción penal. Con la LECrim se demuestran dos: el art. 14.3 atribuye el conocimiento y fallo de causas penales a la sección de lo penal (el antiguo juzgado de lo penal) y el art. 14.5.a atribuye la instrucción de procesos penales a las secciones de violencia sobre la mujer (los antiguos juzgados de violencia sobre la mujer); la nota de consolidación de la LO 1/2025 confirma que las menciones a los antiguos juzgados —incluidos los de menores— se entienden hechas hoy a las secciones correspondientes de los tribunales de instancia. Pero la competencia penal de los juzgados de menores la fijan el art. 96 LOPJ y la LO 5/2000, que no están entre las fuentes extraídas: esa tercera pata, y por tanto la letra d) entera, no puede citarse literalmente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 30, pàgina 9 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 14.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 14.5.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'nota de consolidació (disp. add. 1a LO 1/2025)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12637,14 +13429,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Els tres supòsits estan tipificats al capítol de delictes contra la seguretat viària del Codi Penal, i per això la bona és la d). Conduir sense haver obtingut mai permís o llicència és el paràgraf segon de l\'article 384. Conduir amb una taxa d\'alcohol en aire espirat superior a 0,60 mil·ligrams per litre és delicte «en todo caso» segons l\'article 379.2, sense necessitat de provar cap afectació. I negar-se a sotmetre\'s a les proves de detecció alcohòlica quan ho requereix un agent de l\'autoritat és l\'article 383. Com que la a), la b) i la c) descriuen cadascuna un delicte real, l\'única resposta completa és que totes són correctes.',
+      es: 'Los tres supuestos están tipificados en el capítulo de delitos contra la seguridad vial del Código Penal, y por eso la correcta es la d). Conducir sin haber obtenido nunca permiso o licencia es el párrafo segundo del artículo 384. Conducir con una tasa de alcohol en aire espirado superior a 0,60 miligramos por litro es delito «en todo caso» según el artículo 379.2, sin necesidad de probar afectación alguna. Y negarse a someterse a las pruebas de detección alcohólica cuando lo requiere un agente de la autoridad es el artículo 383. Como la a), la b) y la c) describen cada una un delito real, la única respuesta completa es que todas son correctas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 31, pàgina 9 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 384, paràgraf segon',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 383',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12715,14 +13525,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Al quadre de l’article 4.2 del Reglament general de conductors, la fila del permís A2 (motocicletes amb una potència màxima de 35 kW i una relació potència/pes màxima de 0,2 kW/kg) fixa com a edat mínima els 18 anys complerts. Les altres tres xifres corresponen a altres permisos del mateix quadre: els 16 anys són l’edat mínima de l’A1, els 20 la de l’A (que fins als 21 no autoritza tricicles de més de 15 kW), i els 21 anys és l’edat general de permisos com el C o el D1, no de cap permís de motocicleta. La resposta b) és, doncs, l’única que quadra amb el text vigent, que no ha canviat en aquest punt des del 2009.',
+      es: 'En el cuadro del artículo 4.2 del Reglamento general de conductores, la fila del permiso A2 (motocicletas con una potencia máxima de 35 kW y una relación potencia/peso máxima de 0,2 kW/kg) fija como edad mínima los 18 años cumplidos. Las otras tres cifras corresponden a otros permisos del mismo cuadro: los 16 años son la edad mínima del A1, los 20 la del A (que hasta los 21 no autoriza triciclos de más de 15 kW), y los 21 años es la edad general de permisos como el C o el D1, no de ningún permiso de motocicleta. La respuesta b) es, pues, la única que cuadra con el texto vigente, que no ha cambiado en este punto desde 2009.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 33, pàgina 10 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe A2)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12754,14 +13570,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 14.1 del text refós de la Llei de trànsit (RDLeg 6/2015), en la redacció donada per la Llei 18/2021, estableix que «en ningún caso el conductor menor de edad podrá circular por las vías con una tasa de alcohol en sangre superior a 0 gramos por litro o de alcohol en aire espirado superior a 0 miligramos por litro». La taxa permesa als menors, sigui quin sigui el vehicle (bicicleta, patinet, ciclomotor o motocicleta), és per tant zero: la a) és la bona. Les altres tres opcions repeteixen llindars que corresponen a altres col·lectius del Reglament general de circulació: 0,15 mg/l és el límit dels conductors novells i professionals i 0,25 mg/l el general, i cap norma no fixa un límit de 0,10 mg/l. Aquesta regla ja era vigent el dia de l’examen de 2024 i ho segueix sent.',
+      es: 'El artículo 14.1 del texto refundido de la Ley de tráfico (RDLeg 6/2015), en la redacción dada por la Ley 18/2021, establece que «en ningún caso el conductor menor de edad podrá circular por las vías con una tasa de alcohol en sangre superior a 0 gramos por litro o de alcohol en aire espirado superior a 0 miligramos por litro». La tasa permitida a los menores, sea cual sea el vehículo (bicicleta, patinete, ciclomotor o motocicleta), es por tanto cero: la a) es la buena. Las otras tres opciones repiten umbrales que corresponden a otros colectivos del Reglamento general de circulación: 0,15 mg/l es el límite de los conductores noveles y profesionales y 0,25 mg/l el general, y ninguna norma fija un límite de 0,10 mg/l. Esta regla ya estaba vigente el día del examen de 2024 y lo sigue estando.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 34, pàgina 10 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-6-2015-ltsv',
+        locator: 'art. 14.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12793,14 +13615,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres opcions a), b) i c) reprodueixen, gairebé paraula per paraula, les lletres a), b) i c) del segon paràgraf de l’article 21 del Reglament general de circulació, que enumera a qui poden sotmetre a les proves de detecció alcohòlica els agents encarregats de la vigilància del trànsit: qualsevol usuari de la via o conductor implicat directament com a possible responsable en un accident de circulació; els qui condueixin qualsevol vehicle amb símptomes evidents, manifestacions o fets que permetin presumir raonablement que ho fan sota la influència de begudes alcohòliques; i els conductors denunciats per alguna infracció de les normes del reglament (l’article hi afegeix encara una lletra d, els controls preventius). Com que les tres afirmacions són al text, la resposta correcta és la d): totes les anteriors són certes.',
+      es: 'Las tres opciones a), b) y c) reproducen, casi palabra por palabra, las letras a), b) y c) del segundo párrafo del artículo 21 del Reglamento general de circulación, que enumera a quiénes pueden someter a las pruebas de detección alcohólica los agentes encargados de la vigilancia del tráfico: cualquier usuario de la vía o conductor implicado directamente como posible responsable en un accidente de circulación; quienes conduzcan cualquier vehículo con síntomas evidentes, manifestaciones o hechos que permitan presumir razonablemente que lo hacen bajo la influencia de bebidas alcohólicas; y los conductores denunciados por alguna infracción de las normas del reglamento (el artículo añade aún una letra d, los controles preventivos). Como las tres afirmaciones están en el texto, la respuesta correcta es la d): todas las anteriores son ciertas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 35, pàgina 10 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 21, lletres a) a c)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12832,14 +13660,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 1 de la Llei 10/1999 defineix els gossos potencialment perillosos amb tres circumstàncies alternatives. La lletra a) de la llei diu que ho són els gossos que han tingut episodis d\'agressions «a persones o a altres gossos», no «únicament a persones» com diu l\'opció a) de l\'enunciat, que per tant és incorrecta i incompleta. La lletra b) de la llei diu que ho són els ensinistrats «per a l\'atac i la defensa», que coincideix exactament amb l\'opció c). Com que l\'opció b) de l\'enunciat («agressions a persones o altres gossos») reprodueix la lletra a) de la llei i l\'opció c) reprodueix la lletra b) de la llei, totes dues són certes alhora, cosa que fa correcta l\'opció d), que diu que b) i c) ho són. L\'opció c) de la llei (races concretes) no apareix a cap opció de l\'enunciat.',
+      es: 'El artículo 1 de la Ley 10/1999 define los perros potencialmente peligrosos con tres circunstancias alternativas. La letra a) de la ley dice que lo son los perros que han tenido episodios de agresiones «a personas o a otros perros», no «únicamente a personas» como dice la opción a) del enunciado, que por tanto es incorrecta e incompleta. La letra b) de la ley dice que lo son los adiestrados «para el ataque y la defensa», que coincide exactamente con la opción c). Como la opción b) del enunciado («agresiones a personas u otros perros») reproduce la letra a) de la ley y la opción c) reproduce la letra b) de la ley, ambas son ciertas a la vez, lo que hace correcta la opción d), que dice que b) y c) lo son. La opción c) de la ley (razas concretas) no aparece en ninguna opción del enunciado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 36, pàgina 11 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-10-1999-gossos-cat',
+        locator: 'art. 1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12871,14 +13705,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 46 bis, incorporat per la modificació de 2021 de l’ordenança de circulació, estableix al punt 2 que els vehicles de mobilitat personal podran circular per la calçada en vies urbanes sempre que la velocitat permesa no superi els 30 km/h (lletra a) i pels carrils bici adequadament senyalitzats i les zones de vianants expressament autoritzades, amb un límit de 10 km/h (lletra b). Com que les opcions a) i b) de la pregunta reprodueixen aquestes dues lletres, la resposta correcta és la d). L’opció c) diu justament el contrari del que permet la norma: el punt 3.b prohibeix als VMP circular per la calçada quan la via tingui una velocitat permesa superior a 30 km/h o disposi de més d’un carril per sentit de circulació. Aquesta redacció continua vigent avui.',
+      es: 'El artículo 46 bis, incorporado por la modificación de 2021 de la ordenanza de circulación, establece en su punto 2 que los vehículos de movilidad personal podrán circular por la calzada en vías urbanas siempre que la velocidad permitida no supere los 30 km/h (letra a) y por los carriles bici adecuadamente señalizados y las zonas peatonales expresamente autorizadas, con un límite de 10 km/h (letra b). Como las opciones a) y b) de la pregunta reproducen esas dos letras, la respuesta correcta es la d). La opción c) dice justo lo contrario de lo que permite la norma: el punto 3.b prohíbe a los VMP circular por la calzada cuando la vía tenga una velocidad permitida superior a 30 km/h o disponga de más de un carril por sentido de circulación. Esa redacción sigue vigente hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 37, pàgina 11 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio-mod-2021',
+        locator: 'art. 46 bis.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio-mod-2021',
+        locator: 'art. 46 bis.3.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12910,14 +13756,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 11.3 de l’ordenança de convivència prohibeix «la compra o l’adquisició en l’espai públic de qualsevol producte procedent de la venda ambulant no autoritzada», i l’annex qualifica aquest fet (fila 11.3) com a infracció lleu amb un import de 300 euros: exactament l’opció b). La a) rebaixa l’import a 100 euros, i la c) i la d) converteixen la infracció en greu amb imports (300 i 500 euros) que tampoc no responen a cap fila de l’annex per a aquesta conducta. La modificació de 2021 de l’ordenança va retocar les files 11.1 i 11.2 (venda ambulant i col·laboració amb els venedors no autoritzats), però no la 11.3, que conserva la qualificació i l’import originals de 2019.',
+      es: 'El artículo 11.3 de la ordenanza de convivencia prohíbe «la compra o la adquisición en el espacio público de cualquier producto procedente de la venta ambulante no autorizada», y el anexo califica ese hecho (fila 11.3) como infracción leve con un importe de 300 euros: exactamente la opción b). La a) rebaja el importe a 100 euros, y la c) y la d) convierten la infracción en grave con importes (300 y 500 euros) que tampoco responden a ninguna fila del anexo para esta conducta. La modificación de 2021 de la ordenanza retocó las filas 11.1 y 11.2 (venta ambulante y colaboración con los vendedores no autorizados), pero no la 11.3, que conserva la calificación y el importe originales de 2019.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 38, pàgina 11 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 11.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 11.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12949,14 +13807,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 28 de l’ordenança de convivència («De la sanció i el seu import») fixa el sostre de les multes: les infraccions molt greus se sancionen amb una multa de fins a 3.000 euros, les greus fins a 1.500 i les lleus fins a 750. L’opció c) coincideix amb el text; la a) (1.000 euros), la b) (2.500) i la d) (3.500) donen xifres que no apareixen enlloc de l’article. La modificació de 2021 va afegir a l’article 28 una bonificació del 20% per pagament voluntari abans de la resolució sancionadora, però no va alterar els imports màxims de cada categoria, de manera que la resposta del tribunal continua sent correcta avui.',
+      es: 'El artículo 28 de la ordenanza de convivencia («De la sanción y su importe») fija el techo de las multas: las infracciones muy graves se sancionan con una multa de hasta 3.000 euros, las graves hasta 1.500 y las leves hasta 750. La opción c) coincide con el texto; la a) (1.000 euros), la b) (2.500) y la d) (3.500) dan cifras que no aparecen en ningún punto del artículo. La modificación de 2021 añadió al artículo 28 una bonificación del 20% por pago voluntario antes de la resolución sancionadora, pero no alteró los importes máximos de cada categoría, de modo que la respuesta del tribunal sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 39, pàgina 12 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 28',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12988,14 +13852,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 520.2 LECrim enumera els drets de què s\'ha d\'informar tota persona detinguda, i les tres opcions de la pregunta en són còpia literal: la a) és la lletra b) del precepte (dret a no declarar contra si mateix i a no confessar-se culpable), la b) és la lletra g) (dret a ser visitat per les autoritats consulars del seu país, a comunicar-s\'hi i a mantenir-hi correspondència) i la c) és la lletra d) (dret a accedir als elements de les actuacions essencials per impugnar la legalitat de la detenció). Com que les tres afirmacions són certes alhora i la pregunta només admet una resposta, l\'única lletra defensable és la d): totes les anteriors són correctes.',
+      es: 'El artículo 520.2 LECrim enumera los derechos de los que debe informarse a toda persona detenida, y las tres opciones de la pregunta son copia literal: la a) es la letra b) del precepto (derecho a no declarar contra sí mismo y a no confesarse culpable), la b) es la letra g) (derecho a ser visitado por las autoridades consulares de su país, a comunicarse y a mantener correspondencia con ellas) y la c) es la letra d) (derecho a acceder a los elementos de las actuaciones esenciales para impugnar la legalidad de la detención). Como las tres afirmaciones son ciertas a la vez y la pregunta solo admite una respuesta, la única letra defendible es la d): todas las anteriores son correctas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 40, pàgina 12 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.2.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.2.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -13027,14 +13909,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Llei 27/2003 va introduir l\'article 544 ter a la LECrim i el seu apartat 10 ordena inscriure l\'ordre de protecció en un únic registre estatal de caràcter central: el Registre Central per a la Protecció de les Víctimes de la Violència Domèstica, que la redacció vigent de l\'art. 544 ter.10 LECrim anomena «... de la Violencia Doméstica y de Género». Per això la resposta bona és la a), l\'única que situa la inscripció en un registre central —encara que el nom que usa l\'opció sigui aproximat—. Les altres tres són invencions: ni la Llei 27/2003 ni la LECrim no preveuen la inscripció de l\'ordre en registres autonòmics, locals ni de la Unió Europea; la disposició addicional primera de la llei encarrega al Govern estatal la regulació d\'aquell registre central únic.',
+      es: 'La Ley 27/2003 introdujo el artículo 544 ter en la LECrim y su apartado 10 ordena inscribir la orden de protección en un único registro estatal de carácter central: el Registro Central para la Protección de las Víctimas de la Violencia Doméstica, que la redacción vigente del art. 544 ter.10 LECrim denomina «... de la Violencia Doméstica y de Género». Por eso la respuesta buena es la a), la única que sitúa la inscripción en un registro central —aunque el nombre que usa la opción sea aproximado—. Las otras tres son invenciones: ni la Ley 27/2003 ni la LECrim prevén la inscripción de la orden en registros autonómicos, locales ni de la Unión Europea; la disposición adicional primera de la ley encarga al Gobierno estatal la regulación de ese registro central único.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 41, pàgina 12 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 10',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 544 ter.10',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -13066,14 +13960,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 17.4 de la LO 5/2000 diu que la detenció d\'un menor per funcionaris de policia no pot durar més temps de l\'estrictament necessari per fer les investigacions tendents a l\'aclariment dels fets i, en tot cas, dins el termini màxim de vint-i-quatre hores el menor ha de ser posat en llibertat o a disposició del Ministeri Fiscal. L\'opció a) reprodueix exactament aquest límit de 24 hores. La b) (48 hores) confon la durada màxima de la detenció policial amb el termini de l\'article 17.5, que és el que té el Ministeri Fiscal per resoldre un cop el detingut és a la seva disposició. La c) (72 hores) és el límit constitucional per a adults, que la llei del menor no aplica aquí. La d) és text aliè a la matèria i no descriu cap regla de la llei.',
+      es: 'El artículo 17.4 de la LO 5/2000 dice que la detención de un menor por funcionarios de policía no podrá durar más tiempo del estrictamente necesario para la realización de las averiguaciones tendentes al esclarecimiento de los hechos y, en todo caso, dentro del plazo máximo de veinticuatro horas el menor deberá ser puesto en libertad o a disposición del Ministerio Fiscal. La opción a) reproduce exactamente ese límite de 24 horas. La b) (48 horas) confunde la duración máxima de la detención policial con el plazo del artículo 17.5, que es el que tiene el Ministerio Fiscal para resolver una vez el detenido está a su disposición. La c) (72 horas) es el límite constitucional para adultos, que la ley del menor no aplica aquí. La d) es texto ajeno a la materia y no describe ninguna regla de la ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 42, pàgina 13 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.5',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -13924,14 +14830,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 149.1 obre dient que «l\'Estat té competència exclusiva» sobre les matèries que enumera, i la regla 29a és, literalment, la «seguretat pública»: l\'opció a) és la bona. La c) contradiu el text: la clàusula «sin perjuicio» permet que les comunitats autònomes creïn policies pròpies, però no converteix la competència en «compartida»; el precepte la qualifica d\'exclusiva. La b) cita un article inexistent: l\'article 169 tracta els límits temporals de la reforma constitucional i no té apartats, de manera que no hi ha cap «169.3». La d) cau perquè la a) és correcta.',
+      es: 'El artículo 149.1 abre diciendo que «el Estado tiene competencia exclusiva» sobre las materias que enumera, y la regla 29.ª es, literalmente, la «seguridad pública»: la opción a) es la buena. La c) contradice el texto: la cláusula «sin perjuicio» permite que las comunidades autónomas creen policías propias, pero no convierte la competencia en «compartida»; el precepto la califica de exclusiva. La b) cita un artículo inexistente: el artículo 169 trata los límites temporales de la reforma constitucional y no tiene apartados, de modo que no hay ningún «169.3». La d) cae porque la a) es correcta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 149.1, encapçalament',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 149.1.29a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -13963,14 +14881,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1 estructura els cossos de policia local en quatre escales i assigna cada categoria a una de sola. L\'escala superior comprèn les categories de superintendent, d\'intendent major i d\'intendent; la categoria d\'inspector és l\'única de l\'escala executiva. Per tant, l\'intendent (a) i l\'intendent major (c) sí que formen part de l\'escala superior, i la categoria que no en forma part és la d\'inspector: la resposta correcta és la b). La d) («totes les respostes anteriors són correctes») cau perquè dues de les tres categories llistades sí que pertanyen a l\'escala superior, de manera que no totes poden ser la resposta a «quina no hi pertany».',
+      es: 'El artículo 24.1 estructura los cuerpos de policía local en cuatro escalas y asigna cada categoría a una sola. La escala superior comprende las categorías de superintendente, intendente mayor e intendente; la categoría de inspector es la única de la escala ejecutiva. Por tanto, el intendente (a) y el intendente mayor (c) sí forman parte de la escala superior, y la categoría que no forma parte de ella es la de inspector: la respuesta correcta es la b). La d) («todas las respuestas anteriores son correctas») cae porque dos de las tres categorías listadas sí pertenecen a la escala superior, de modo que no todas pueden ser la respuesta a «cuál no pertenece».',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14002,14 +14932,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 162.1.b enumera tres legitimats per interposar el recurs d\'empara: «tota persona natural o jurídica que invoqui un interès legítim, així com el Defensor del Poble i el Ministeri Fiscal». L\'opció a) (les persones amb interès legítim) i l\'opció b) (el Defensor del Poble i el Ministeri Fiscal) recullen cadascuna una part de la llista, i totes dues són certes; per això la resposta bona és la c), que les suma. La d) («únicament el Defensor del Poble») contradiu el precepte per partida doble: exclou les persones amb interès legítim i el Ministeri Fiscal, que hi són expressament.',
+      es: 'El artículo 162.1.b enumera tres legitimados para interponer el recurso de amparo: «toda persona natural o jurídica que invoque un interés legítimo, así como el Defensor del Pueblo y el Ministerio Fiscal». La opción a) (las personas con interés legítimo) y la opción b) (el Defensor del Pueblo y el Ministerio Fiscal) recogen cada una una parte de la lista, y ambas son ciertas; por eso la respuesta buena es la c), que las suma. La d) («únicamente el Defensor del Pueblo») contradice el precepto por partida doble: excluye a las personas con interés legítimo y al Ministerio Fiscal, que están en él expresamente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 162.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14080,14 +15016,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 79.1 de l’Estatut ho resol literalment: «El síndic o síndica de greuges és elegit pel Parlament per majoria de tres cinquenes parts dels seus membres», que és exactament l’opció a. La b) és doblement falsa: l’òrgan que elegeix és el Parlament de Catalunya, no el Senat, i la majoria exigida és de tres cinquenes parts, no l’absoluta. La c) confon una elecció parlamentària reforçada amb un nomenament governamental: el Govern de la Generalitat no hi intervé, precisament perquè el Síndic supervisa l’activitat de l’Administració de la Generalitat i ho ha de fer amb imparcialitat i independència (art. 79.2). I, com que la a) és certa, la d) («cap de les anteriors») queda automàticament descartada.',
+      es: 'El artículo 79.1 del Estatuto lo resuelve literalmente: «el síndic de greuges es elegido por el Parlamento por mayoría de tres quintas partes de sus miembros», que es exactamente la opción a. La b) es doblemente falsa: el órgano que elige es el Parlamento de Cataluña, no el Senado, y la mayoría exigida es de tres quintas partes, no la absoluta. La c) confunde una elección parlamentaria reforzada con un nombramiento gubernamental: el Govern de la Generalitat no interviene, precisamente porque el Síndic supervisa la actividad de la Administración de la Generalitat y debe hacerlo con imparcialidad e independencia (art. 79.2). Y, siendo cierta la a), la d) («ninguna de las anteriores») queda automáticamente descartada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 5, pàgina 1 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 79.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14119,14 +15061,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres funcions enunciades apareixen, gairebé paraula per paraula, a l\'article 10 de la Llei 4/2003: la lletra a) («analitzar i valorar la situació de la seguretat pública en el municipi i concretar les polítiques de seguretat corresponents en l\'àmbit respectiu»), la lletra d) («conèixer els serveis de seguretat privada que tenen autorització per operar en el municipi») i la lletra e) («concretar en l\'àmbit respectiu els mitjans i els procediments establerts de col·laboració, coordinació i cooperació dels cossos i els serveis de seguretat que actuen en el municipi, en el marc del conveni existent»). Com que les tres afirmacions són certes contra el mateix precepte, la resposta bona és la d), tal com va marcar el tribunal, i cap de les tres primeres pot ser-ho aïlladament.',
+      es: 'Las tres funciones enunciadas aparecen, casi palabra por palabra, en el artículo 10 de la Ley 4/2003: la letra a) («analizar y valorar la situación de la seguridad pública en el municipio y concretar las políticas de seguridad correspondientes en el ámbito respectivo»), la letra d) («conocer los servicios de seguridad privada que tienen autorización para operar en el municipio») y la letra e) («concretar en el ámbito respectivo los medios y los procedimientos establecidos de colaboración, coordinación y cooperación de los cuerpos y los servicios de seguridad que actúan en el municipio, en el marco del convenio existente»). Como las tres afirmaciones son ciertas contra el mismo precepto, la respuesta buena es la d), tal como marcó el tribunal, y ninguna de las tres primeras puede serlo aisladamente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.e',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14158,14 +15118,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 58.3 regula la prescripció de les sancions: les imposades per faltes molt greus prescriuen al cap de sis anys, les imposades per faltes greus al cap de dos anys i les imposades per faltes lleus al cap d\'un mes, a comptar de la data de notificació de les sancions. Per a les greus, doncs, dos anys: opció c. Un any (a) i quinze dies (b) no apareixen a l\'article, i la d) és falsa perquè totes les sancions prescriuen. La llista d\'afectacions del text consolidat mostra que l\'única reforma de l\'article 58 (Llei 11/2026) va tocar només l\'apartat 2, no aquest apartat 3, així que la resposta segueix sent vàlida avui.',
+      es: 'El artículo 58.3 regula la prescripción de las sanciones: las impuestas por faltas muy graves prescriben a los seis años, las impuestas por faltas graves a los dos años y las impuestas por faltas leves al mes, a contar desde la fecha de notificación de las sanciones. Para las graves, por tanto, dos años: opción c. Un año (a) y quince días (b) no aparecen en el artículo, y la d) es falsa porque todas las sanciones prescriben. La lista de afectaciones del texto consolidado muestra que la única reforma del artículo 58 (Ley 11/2026) tocó solo el apartado 2, no este apartado 3, así que la respuesta sigue siendo válida hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14197,14 +15163,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 12.1 de la Llei 16/1991 enumera exactament dues funcions de policia judicial: la lletra a), auxiliar els jutges, els tribunals i el ministeri fiscal en la investigació dels delictes i en el descobriment i la detenció dels delinqüents, quan siguin requerides a fer-ho; i la lletra b), practicar, per iniciativa pròpia o a requeriment de l\'autoritat judicial, del ministeri fiscal o dels superiors jeràrquics, les primeres diligències de prevenció i de custòdia de detinguts. Les opcions a) i b) de la pregunta reprodueixen aquestes dues lletres, i per això la bona és la c). La d) falla dues vegades: afegeix «les corporacions locals», que el precepte no esmenta, i canvia «quan siguin requerides» per «en tot cas».',
+      es: 'El artículo 12.1 de la Ley 16/1991 enumera exactamente dos funciones de policía judicial: la letra a), auxiliar a los jueces, los tribunales y el ministerio fiscal en la investigación de los delitos y en el descubrimiento y la detención de los delincuentes, cuando sean requeridas para ello; y la letra b), practicar, por iniciativa propia o a requerimiento de la autoridad judicial, del ministerio fiscal o de los superiores jerárquicos, las primeras diligencias de prevención y de custodia de detenidos. Las opciones a) y b) de la pregunta reproducen esas dos letras, y por eso la buena es la c). La d) falla dos veces: añade «las corporaciones locales», que el precepto no menciona, y cambia «cuando sean requeridas» por «en todo caso».',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 12.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 12.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14236,14 +15214,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El quadre de l’article 4.2 del Reglament general de conductors fixa per al permís C l’edat general de 21 anys i, com a excepció, diu literalment que «la edad mínima será de 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria»: exactament el que afirma la c). Les altres cauen amb el mateix quadre: la a) (24 anys) és l’edat del permís D, no del C; la d) (23 anys) és la de la qualificació inicial accelerada del D; i la b) és falsa perquè el permís C sí que habilita a conduir camions de més de 3.500 kg. Ara bé, la còpia local del text consolidat no identifica quina norma va introduir l’excepció, així que l’atribució al Reial decret 971/2020 que fa l’opció no es pot contrastar amb aquesta font.',
+      es: 'El cuadro del artículo 4.2 del Reglamento general de conductores fija para el permiso C la edad general de 21 años y, como excepción, dice literalmente que «la edad mínima será de 18 años cumplidos para los titulares del certificado de aptitud profesional (CAP) que lo hayan obtenido realizando la modalidad de cualificación inicial ordinaria»: exactamente lo que afirma la c). Las demás caen con el mismo cuadro: la a) (24 años) es la edad del permiso D, no del C; la d) (23 años) es la de la cualificación inicial acelerada del D; y la b) es falsa porque el permiso C sí habilita para conducir camiones de más de 3.500 kg. Ahora bien, la copia local del texto consolidado no identifica qué norma introdujo la excepción, así que la atribución al Real Decreto 971/2020 que hace la opción no puede contrastarse con esta fuente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 9, pàgina 2 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe C)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14275,14 +15259,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 37.2 de la LO 4/2015 tipifica com a infracció lleu «l\'exhibició d\'objectes perillosos per a la vida i la integritat física de les persones amb ànim intimidatori, sempre que no constitueixin delicte o infracció greu», que coincideix paraula per paraula amb l\'opció a). En canvi, el consum o tinença de drogues (opció b) i portar o exhibir armes prohibides (opció c) no estan a l\'article 37: la llei els tipifica als apartats 16 i 10 de l\'article 36 com a infraccions GREUS, no lleus. Per tant, la d) («totes són correctes») també és falsa, i l\'única resposta certa és a).',
+      es: 'El artículo 37.2 de la LO 4/2015 tipifica como infracción leve «la exhibición de objetos peligrosos para la vida e integridad física de las personas con ánimo intimidatorio, siempre que no constituya delito o infracción grave», que coincide palabra por palabra con la opción a). En cambio, el consumo o tenencia de drogas (opción b) y portar o exhibir armas prohibidas (opción c) no están en el artículo 37: la ley los tipifica en los apartados 16 y 10 del artículo 36 como infracciones GRAVES, no leves. Por tanto, la d) («todas son correctas») también es falsa, y la única respuesta cierta es a).',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 36.16',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 36.10',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14314,14 +15316,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 8.2 de la Llei 4/2003 estableix que la Comissió de Policia de Catalunya s\'adscriu al departament titular de les competències en matèria de seguretat pública i és integrada pel conseller o consellera d\'aquest departament, que la presideix, cinc vocals en representació dels ajuntaments i cinc vocals en representació del Govern. És exactament el que descriu l\'opció a), amb «membres» per «vocals». La b) infla les xifres fins a 20 i 10, que no apareixen enlloc del precepte; la c) atribueix la presidència al delegat territorial del Govern i parla de deu vocals permanents, composició que la Llei no preveu per a aquest òrgan; i la d) cau perquè la a) sí que és correcta. La redacció no consta modificada i continua vigent.',
+      es: 'El artículo 8.2 de la Ley 4/2003 establece que la Comisión de Policía de Cataluña se adscribe al departamento titular de las competencias en materia de seguridad pública y está integrada por el consejero o consejera de ese departamento, que la preside, cinco vocales en representación de los ayuntamientos y cinco vocales en representación del Gobierno. Es exactamente lo que describe la opción a), con «miembros» por «vocales». La b) infla las cifras hasta 20 y 10, que no aparecen en ningún lugar del precepto; la c) atribuye la presidencia al delegado territorial del Gobierno y habla de diez vocales permanentes, composición que la Ley no prevé para este órgano; y la d) cae porque la a) sí es correcta. La redacción no consta modificada y sigue vigente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14353,14 +15361,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'apartat 1 de l\'article 5 de la LOFCS («Adecuación al ordenamiento jurídico») enumera, entre altres, tres principis que reprodueixen literalment les opcions de la pregunta: la lletra c) de l\'article correspon a «actuar amb integritat i dignitat» (opció a), la lletra b) a «neutralitat política i imparcialitat, sense discriminació per raó de raça, religió o opinió» (opció b), i la lletra e) a «col·laborar amb l\'Administració de Justícia i auxiliar-la» (opció c). Com que les tres frases apareixen literalment dins el mateix apartat de l\'article 5, cap de les tres és falsa individualment, i per tant l\'opció correcta és la d), que afirma que totes tres són principis bàsics d\'actuació.',
+      es: 'El apartado 1 del artículo 5 de la LOFCS («Adecuación al ordenamiento jurídico») enumera, entre otros, tres principios que reproducen literalmente las opciones de la pregunta: la letra c) del artículo corresponde a «actuar con integridad y dignidad» (opción a), la letra b) a «neutralidad política e imparcialidad, sin discriminación por razón de raza, religión u opinión» (opción b), y la letra e) a «colaborar con la Administración de Justicia y auxiliarla» (opción c). Como las tres frases aparecen literalmente dentro del mismo apartado del artículo 5, ninguna de las tres es falsa individualmente, y por tanto la opción correcta es la d), que afirma que las tres son principios básicos de actuación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.1.e',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14431,14 +15457,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 52.4 enumera les sancions imposables per una falta lleu: la suspensió de funcions per un període d\'un a quinze dies amb pèrdua de les retribucions (lletra a), el trasllat a un altre lloc de treball, la deducció proporcional de les retribucions i l\'amonestació (lletra d). Les opcions b (amonestació) i c (suspensió d\'un a quinze dies) hi figuren totes dues, de manera que la resposta correcta és la d. L\'opció a no existeix a la llei: la suspensió per més de quinze dies correspon a les faltes greus i té com a sostre un any (art. 52.3.a), no tres anys.',
+      es: 'El artículo 52.4 enumera las sanciones imponibles por una falta leve: la suspensión de funciones por un periodo de uno a quince días con pérdida de las retribuciones (letra a), el traslado a otro puesto de trabajo, la deducción proporcional de las retribuciones y la amonestación (letra d). Las opciones b (amonestación) y c (suspensión de uno a quince días) figuran ambas, de manera que la respuesta correcta es la d. La opción a no existe en la ley: la suspensión por más de quince días corresponde a las faltas graves y tiene como techo un año (art. 52.3.a), no tres años.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.3.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14509,14 +15559,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les dues afirmacions bones es troben a la mateixa Llei 7/1985. L’opció b) és l’article 11.1: «el municipi és l’entitat local bàsica de l’organització territorial de l’Estat». L’opció c) surt de l’article 4.1: als municipis els corresponen «en tot cas» les potestats reglamentària i d’autoorganització (lletra a) —potestats normatives de tipus reglamentari— i també l’executivitat dels seus actes i les potestats d’execució forçosa i sancionadora (lletres e i f) —potestats executives—. Com que b) i c) són certes alhora, la resposta és d). L’opció a) és falsa: el mateix article 11.1 diu que el municipi té personalitat jurídica i plena capacitat per al compliment dels seus fins, de manera que no és una entitat jurídicament dependent del consell comarcal ni de la diputació.',
+      es: 'Las dos afirmaciones buenas están en la misma Ley 7/1985. La opción b) es el artículo 11.1: «el Municipio es la entidad local básica de la organización territorial del Estado». La opción c) sale del artículo 4.1: a los municipios les corresponden «en todo caso» las potestades reglamentaria y de autoorganización (letra a) —potestades normativas de tipo reglamentario— y también la ejecutividad de sus actos y las potestades de ejecución forzosa y sancionadora (letras e y f) —potestades ejecutivas—. Como b) y c) son ciertas a la vez, la respuesta es d). La opción a) es falsa: el propio artículo 11.1 dice que el municipio tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines, de modo que no es una entidad jurídicamente dependiente del consejo comarcal ni de la diputación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 11.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 4.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 4.1.e i f',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14548,14 +15616,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El tercer paràgraf de l’article 20 del Reglament general de circulació fixa el límit dels conductors novells: «los conductores de cualquier vehículo no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia que les habilita para conducir». La taxa en aire expirat sancionable per a un conductor novell comença, doncs, en superar els 0,15 mg/l. Els 0,25 mg/l són el límit general dels conductors amb més de dos anys de permís, i els 0,50 i 0,30 no corresponen a cap llindar en aire expirat del reglament (el 0,5 i el 0,3 són límits en sang, en g/l). Aquest article no ha canviat des de l’examen.',
+      es: 'El tercer párrafo del artículo 20 del Reglamento general de circulación fija el límite de los conductores noveles: «los conductores de cualquier vehículo no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia que les habilita para conducir». La tasa en aire espirado sancionable para un conductor novel empieza, pues, al superar los 0,15 mg/l. Los 0,25 mg/l son el límite general de los conductores con más de dos años de permiso, y los 0,50 y 0,30 no corresponden a ningún umbral en aire espirado del reglamento (el 0,5 y el 0,3 son límites en sangre, en g/l). Este artículo no ha cambiado desde el examen.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 17, pàgina 4 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 20, paràgraf tercer',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14587,14 +15661,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El precepte que obre el capítol dels principis d\'actuació és l\'article 10, i el seu apartat 1 comença dient literalment que «els principis bàsics d\'actuació dels policies locals són els següents», amb la llista completa agrupada en cinc blocs: adequació a l\'ordenament jurídic, relacions amb la comunitat, tractament de detinguts, dedicació professional i secret professional. Per això la bona és la a). L\'article 35 regula una matèria diferent, el dret a una remuneració justa, i l\'article 8, l\'armament reglamentari. La d) és falsa d\'arrel perquè la Llei 16/1991 sí que regula els principis bàsics d\'actuació, i ho fa de manera extensa i detallada.',
+      es: 'El precepto que abre el capítulo de los principios de actuación es el artículo 10, y su apartado 1 empieza diciendo literalmente que «los principios básicos de actuación de los policías locales son los siguientes», con la lista completa agrupada en cinco bloques: adecuación al ordenamiento jurídico, relaciones con la comunidad, tratamiento de detenidos, dedicación profesional y secreto profesional. Por eso la buena es la a). El artículo 35 regula una materia distinta, el derecho a una remuneración justa, y el artículo 8, el armamento reglamentario. La d) es falsa de raíz porque la Ley 16/1991 sí regula los principios básicos de actuación, y lo hace de manera extensa y detallada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 18, pàgina 4 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 35.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 8.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14626,14 +15718,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.1 de la LO 4/2015 diu literalment que «el Document Nacional d\'Identitat és obligatori a partir dels catorze anys». Això fa correcta l\'opció c) i descarta directament les altres edats (a: quinze, b: setze) i la d), que nega que hi hagi una edat mínima quan la llei sí que en fixa una de manera explícita.',
+      es: 'El artículo 9.1 de la LO 4/2015 dice literalmente que «el Documento Nacional de Identidad es obligatorio a partir de los catorce años». Esto hace correcta la opción c) y descarta directamente las demás edades (a: quince, b: dieciséis) y la d), que niega que exista una edad mínima cuando la ley sí fija una de forma explícita.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 19, pàgina 5 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 9.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14665,14 +15763,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’Estatut vigent es conté en la Llei orgànica 6/2006, del 19 de juliol, de reforma de l’Estatut d’autonomia de Catalunya, sancionada el 19 de juliol de 2006: una llei orgànica, com també ho era la que la disposició derogatòria deroga (la Llei orgànica 4/1979, l’Estatut del 1979). Per això la a) és la correcta. La b) falla perquè els estatuts d’autonomia s’aproven i es reformen per llei orgànica, no per llei ordinària. La c) i la d) confonen l’Estatut amb normes de l’executiu: el reial decret legislatiu i el decret llei són normes amb rang de llei dictades pel Govern, mentre que l’Estatut és obra de les Corts Generals, amb referèndum previ del cos electoral de Catalunya en el cas del 2006.',
+      es: 'El Estatuto vigente se contiene en la Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de autonomía de Cataluña, sancionada el 19 de julio de 2006: una ley orgánica, como también lo era la que la disposición derogatoria deroga (la Ley Orgánica 4/1979, el Estatuto de 1979). Por eso la a) es la correcta. La b) falla porque los estatutos de autonomía se aprueban y se reforman por ley orgánica, no por ley ordinaria. La c) y la d) confunden el Estatuto con normas del ejecutivo: el real decreto legislativo y el decreto ley son normas con rango de ley dictadas por el Gobierno, mientras que el Estatuto es obra de las Cortes Generales, con referéndum previo del cuerpo electoral de Cataluña en el caso de 2006.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 20, pàgina 5 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'portada i tramitació (pàg. 5)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'disposició derogatòria',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15562,14 +16672,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'estructura de la Constitució es pot recomptar sobre el text mateix: l\'articulat acaba a l\'article 169 (el de la reforma en temps de guerra), les disposicions addicionals arriben fins a la «cuarta» (quatre), les transitòries fins a la «novena» (nou), i hi ha una única «Disposición derogatoria» —amb tres apartats, però una de sola— i una única «Disposición final». Això és exactament l\'opció a). Les altres tres inflen o retallen l\'articulat (178, 196 o 150 articles) i la b) i la d) alteren també el nombre de disposicions finals o n\'ometen la derogatòria; cap no quadra amb el recompte del document.',
+      es: 'La estructura de la Constitución puede recontarse sobre el propio texto: el articulado termina en el artículo 169 (el de la reforma en tiempo de guerra), las disposiciones adicionales llegan hasta la «cuarta» (cuatro), las transitorias hasta la «novena» (nueve), y hay una única «Disposición derogatoria» —con tres apartados, pero una sola— y una única «Disposición final». Eso es exactamente la opción a). Las otras tres inflan o recortan el articulado (178, 196 o 150 artículos) y la b) y la d) alteran también el número de disposiciones finales u omiten la derogatoria; ninguna cuadra con el recuento del documento.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 169 (darrer article)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'disposició addicional quarta (la darrera)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'disposició transitòria novena (la darrera)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'disposició derogatòria',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'disposició final',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15601,14 +16741,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 58.1 de l’Estatut estableix que «El Parlament gaudeix d’autonomia organitzativa, financera, administrativa i disciplinària»: l’opció b el reprodueix exactament. La a) és falsa pel seu «exclusivament»: a banda d’exercir la potestat legislativa (art. 55.2), el Parlament té precisament aquestes quatre autonomies de funcionament, de manera que no es pot reduir la seva posició a una «autonomia legislativa» única. La c) falla en el sostre: l’article 56.1 fixa la composició en «un mínim de cent diputats i un màxim de cent cinquanta», no de dos-cents. I com que la a) i la c) són falses, la d) («les respostes a i c són correctes») cau per força amb elles.',
+      es: 'El artículo 58.1 del Estatuto establece que «el Parlamento goza de autonomía organizativa, financiera, administrativa y disciplinaria»: la opción b lo reproduce exactamente. La a) es falsa por su «exclusivamente»: además de ejercer la potestad legislativa (art. 55.2), el Parlamento tiene precisamente estas cuatro autonomías de funcionamiento, de modo que no puede reducirse su posición a una «autonomía legislativa» única. La c) falla en el techo: el artículo 56.1 fija la composición en «un mínimo de cien diputados y un máximo de ciento cincuenta», no de doscientos. Y siendo falsas la a) y la c), la d) («las respuestas a y c son correctas») cae por fuerza con ellas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 58.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 56.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15640,14 +16792,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 18.2 proclama la inviolabilitat del domicili i n\'admet exactament tres títols d\'entrada: el consentiment del titular, la resolució judicial i el cas de delicte flagrant. Les opcions a), b) i c) recullen cadascuna un d\'aquests tres supòsits, i totes tres són certes per separat; cap d\'elles, sola, no esgota el precepte. Per això la resposta bona és la d): «totes les respostes anteriors són correctes». La pregunta és una comprovació de memòria de la tríada de l\'article; el parany seria quedar-se amb un sol supòsit i oblidar que el text n\'enumera tres.',
+      es: 'El artículo 18.2 proclama la inviolabilidad del domicilio y admite exactamente tres títulos de entrada: el consentimiento del titular, la resolución judicial y el caso de flagrante delito. Las opciones a), b) y c) recogen cada una uno de esos tres supuestos, y las tres son ciertas por separado; ninguna de ellas, sola, agota el precepto. Por eso la respuesta buena es la d): «todas las respuestas anteriores son correctas». La pregunta es una comprobación de memoria de la tríada del artículo; la trampa sería quedarse con un solo supuesto y olvidar que el texto enumera tres.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 18.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15718,14 +16876,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 164.1 de l’Estatut atribueix a la Generalitat, en matèria de seguretat pública i d’acord amb la legislació estatal, «La planificació i la regulació del sistema de seguretat pública de Catalunya i l’ordenació de les policies locals» (lletra a) i «El control i la vigilància del trànsit» (lletra c). Les opcions a) i b) de la pregunta reprodueixen aquestes dues lletres, de manera que la resposta bona és la c), que les declara totes dues correctes: marcar-ne només una deixaria fora una atribució igualment literal. La d) no té cap base a l’article 164: la potestat sancionadora sobre els membres de les Forces i Cossos de Seguretat de l’Estat correspon a l’Estat, del qual depenen aquests cossos, i cap lletra de l’article no l’atribueix a la Generalitat.',
+      es: 'El artículo 164.1 del Estatuto atribuye a la Generalitat, en materia de seguridad pública y de acuerdo con la legislación estatal, «la planificación y la regulación del sistema de seguridad pública de Cataluña y la ordenación de las policías locales» (letra a) y «el control y la vigilancia del tráfico» (letra c). Las opciones a) y b) de la pregunta reproducen esas dos letras, de modo que la respuesta buena es la c), que las declara ambas correctas: marcar solo una dejaría fuera una atribución igualmente literal. La d) no tiene base alguna en el artículo 164: la potestad sancionadora sobre los miembros de las Fuerzas y Cuerpos de Seguridad del Estado corresponde al Estado, del que dependen esos cuerpos, y ninguna letra del artículo se la atribuye a la Generalitat.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15757,14 +16927,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció a) reprodueix l\'article 8.1 de la Llei 4/2003: la Comissió de Policia de Catalunya «és l\'òrgan col·legiat consultiu superior en matèria de coordinació entre la policia de la Generalitat-mossos d\'esquadra i les policies locals a Catalunya». La b) canvia l\'altre pol de la coordinació: amb les forces i cossos de seguretat de l\'Estat qui es coordina en el nivell superior és la Junta de Seguretat de Catalunya (art. 3.3), no aquesta Comissió. La c) falla dues vegades contra l\'article 8.2: la Comissió s\'adscriu al departament titular de les competències en seguretat pública, no al de benestar i acció social, i els vocals són cinc i cinc, no deu i deu. En caure la c), també cau la d), que exigia que a) i c) fossin certes alhora.',
+      es: 'La opción a) reproduce el artículo 8.1 de la Ley 4/2003: la Comisión de Policía de Cataluña «es el órgano colegiado consultivo superior en materia de coordinación entre la policía de la Generalitat-mossos d\'esquadra y las policías locales en Cataluña». La b) cambia el otro polo de la coordinación: con las fuerzas y cuerpos de seguridad del Estado quien se coordina en el nivel superior es la Junta de Seguridad de Cataluña (art. 3.3), no esta Comisión. La c) falla dos veces contra el artículo 8.2: la Comisión se adscribe al departamento titular de las competencias en seguridad pública, no al de bienestar y acción social, y los vocales son cinco y cinco, no diez y diez. Al caer la c), también cae la d), que exigía que a) y c) fueran ciertas a la vez.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 3.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15796,14 +16984,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 16.1 de la LO 4/2015 recull dos supòsits, no un de sol, en què els agents poden requerir la identificació: indicis de participació en una infracció (opció a) i necessitat raonable de prevenir un delicte (opció b). Com que ambdós són vàlids i independents, l\'opció d) («les respostes a i b són correctes») és la fidel a la llei. La c) inventa una fórmula («sempre que ho considerin oportú, amb proporcionalitat, congruència i oportunitat») que no apareix a l\'article: la identificació no es pot requerir «sempre», només en els dos supòsits taxats.',
+      es: 'El artículo 16.1 de la LO 4/2015 recoge dos supuestos, no uno solo, en los que los agentes pueden requerir la identificación: indicios de participación en una infracción (opción a) y necesidad razonable de prevenir un delito (opción b). Como ambos son válidos e independientes, la opción d) («las respuestas a y b son correctas») es la fiel a la ley. La c) inventa una fórmula («siempre que lo consideren oportuno, con proporcionalidad, congruencia y oportunidad») que no aparece en el artículo: la identificación no puede requerirse «siempre», solo en los dos supuestos tasados.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 16.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 16.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15835,14 +17035,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 53.1 de la LOFCS enumera les funcions dels Cossos de Policia Local. La lletra c) de l\'article diu «instruir atestados por accidentes de circulación dentro del casco urbano», que coincideix amb l\'opció a). La lletra b) diu «ordenar, señalizar y dirigir el tráfico en el casco urbano, de acuerdo con lo establecido en las normas de circulación», que coincideix amb l\'opció c). I la lletra i) diu «cooperar en la resolución de los conflictos privados cuando sean requeridos para ello», que coincideix amb l\'opció b) (inclosa la condició «quan siguin requerits»). Com que les tres afirmacions es corresponen literalment amb tres apartats reals de l\'article 53.1, l\'opció correcta és la d), que les dona totes per certes.',
+      es: 'El artículo 53.1 de la LOFCS enumera las funciones de los Cuerpos de Policía Local. La letra c) del artículo dice «instruir atestados por accidentes de circulación dentro del casco urbano», que coincide con la opción a). La letra b) dice «ordenar, señalizar y dirigir el tráfico en el casco urbano, de acuerdo con lo establecido en las normas de circulación», que coincide con la opción c). Y la letra i) dice «cooperar en la resolución de los conflictos privados cuando sean requeridos para ello», que coincide con la opción b) (incluida la condición «cuando sean requeridos»). Como las tres afirmaciones se corresponden literalmente con tres apartados reales del artículo 53.1, la opción correcta es la d), que las recoge todas como ciertas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 8, pàgina 3 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.i',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15874,14 +17092,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 48.1 inclou entre les faltes molt greus l\'abandonament del servei (lletra g) i la manca notòria de rendiment que comporti inhibició en el compliment de les tasques encomanades (lletra m): les opcions b i c són totes dues correctes, i per això la resposta bona és la d. L\'opció a és el parany: la reincidència en la comissió de faltes lleus és falta greu segons l\'article 49.m; el que sí que és falta molt greu és la reincidència en la comissió de faltes greus (art. 48.1.u). Aquest joc entre reincidències de grau diferent és un dels matisos més repetits d\'aquest bloc.',
+      es: 'El artículo 48.1 incluye entre las faltas muy graves el abandono del servicio (letra g) y la falta notoria de rendimiento que comporte inhibición en el cumplimiento de las tareas encomendadas (letra m): las opciones b y c son ambas correctas, y por eso la respuesta buena es la d. La opción a es la trampa: la reincidencia en la comisión de faltas leves es falta grave según el artículo 49.m; lo que sí es falta muy grave es la reincidencia en la comisión de faltas graves (art. 48.1.u). Este juego entre reincidencias de distinto grado es uno de los matices más repetidos de este bloque.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.m',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.m',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15913,14 +17155,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La fila del permís A2 al quadre de l’article 4.2 del Reglament general de conductors (motocicletes amb una potència màxima de 35 kW i una relació potència/pes màxima de 0,2 kW/kg) fixa l’edat mínima en 18 anys complerts: la c) és la bona. Les altres xifres no corresponen a l’A2 en cap moment de la vigència del reglament: els 14 anys no habiliten cap permís de motocicleta (els 15 són l’edat de l’AM per a ciclomotors), els 16 anys són l’edat mínima de l’A1 (motocicletes fins a 125 cm³ i 11 kW) i els 20 anys són l’edat del permís A. El text no ha canviat en aquest punt des del 2009, així que la resposta segueix sent correcta avui.',
+      es: 'La fila del permiso A2 en el cuadro del artículo 4.2 del Reglamento general de conductores (motocicletas con una potencia máxima de 35 kW y una relación potencia/peso máxima de 0,2 kW/kg) fija la edad mínima en 18 años cumplidos: la c) es la buena. Las otras cifras no corresponden al A2 en ningún momento de la vigencia del reglamento: los 14 años no habilitan ningún permiso de motocicleta (los 15 son la edad del AM para ciclomotores), los 16 años son la edad mínima del A1 (motocicletas hasta 125 cm³ y 11 kW) y los 20 años son la edad del permiso A. El texto no ha cambiado en este punto desde 2009, así que la respuesta sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe A2)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15991,14 +17239,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Segons l\'article 52.3, per una falta greu s\'ha d\'imposar o bé la suspensió de funcions «per més de quinze dies i menys d\'un any, amb pèrdua de les retribucions», o bé el trasllat a un altre lloc de treball. L\'opció b reprodueix la primera d\'aquestes sancions i és la correcta. L\'amonestació (opció a) i la suspensió de funcions d\'un a quinze dies (opció c) són sancions previstes per a les faltes lleus a l\'article 52.4 (lletres d i a), no per a les greus; i com que a i c són falses, la d («a i c són correctes») també ho és.',
+      es: 'Según el artículo 52.3, por una falta grave debe imponerse o bien la suspensión de funciones «por más de quince días y menos de un año, con pérdida de las retribuciones», o bien el traslado a otro puesto de trabajo. La opción b reproduce la primera de estas sanciones y es la correcta. La amonestación (opción a) y la suspensión de funciones de uno a quince días (opción c) son sanciones previstas para las faltas leves en el artículo 52.4 (letras d y a), no para las graves; y como a y c son falsas, la d («a y c son correctas») también lo es.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 12, pàgina 4 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.3.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.4.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16030,14 +17302,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El primer paràgraf de l’article 20 del Reglament general de circulació prohibeix circular als conductors de vehicles i de bicicletes «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». La a) és l’única opció que recull tots dos llindars generals, i per això és la bona. La b) (0,60 mg/l) no és el límit administratiu general sinó la taxa a partir de la qual el fet és sempre delicte de l’article 379.2 del Codi penal. La c) (0,50 mg/l) barreja la xifra del límit en sang (0,5 g/l) amb la unitat de l’aire expirat. I la d) (0,15 mg/l) és el límit especial dels conductors novells i professionals, no el dels conductors en general.',
+      es: 'El primer párrafo del artículo 20 del Reglamento general de circulación prohíbe circular a los conductores de vehículos y de bicicletas «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». La a) es la única opción que recoge ambos umbrales generales, y por eso es la buena. La b) (0,60 mg/l) no es el límite administrativo general sino la tasa a partir de la cual el hecho es siempre delito del artículo 379.2 del Código penal. La c) (0,50 mg/l) mezcla la cifra del límite en sangre (0,5 g/l) con la unidad del aire espirado. Y la d) (0,15 mg/l) es el límite especial de los conductores noveles y profesionales, no el de los conductores en general.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 20, paràgraf primer',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16069,14 +17347,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'única taxa objectiva que el Codi Penal castiga «en todo caso» és la superior a 0,60 mil·ligrams per litre d\'aire espirat (o 1,2 grams per litre en sang), a l\'article 379.2. Conduir amb més de 0,50 mg/l, per si sol, no és cap dels delictes dels articles 379 a 385: és una infracció administrativa, i només seria delicte si a més es provés que es condueix sota la influència de begudes alcohòliques. Per això la bona és la c). La a) sí que és delicte (article 384, paràgraf segon: conduir sense haver obtingut mai permís) i la b) també (la taxa supera el llindar penal de 0,60), de manera que la d), que negaria el caràcter delictiu de totes dues, queda descartada.',
+      es: 'La única tasa objetiva que el Código Penal castiga «en todo caso» es la superior a 0,60 miligramos por litro de aire espirado (o 1,2 gramos por litro en sangre), en el artículo 379.2. Conducir con más de 0,50 mg/l, por sí solo, no es ninguno de los delitos de los artículos 379 a 385: es una infracción administrativa, y solo sería delito si además se probara que se conduce bajo la influencia de bebidas alcohólicas. Por eso la correcta es la c). La a) sí es delito (artículo 384, párrafo segundo: conducir sin haber obtenido nunca permiso) y la b) también (la tasa supera el umbral penal de 0,60), de modo que la d), que negaría el carácter delictivo de ambas, queda descartada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 379.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 384, paràgraf segon',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16147,14 +17437,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2 de la LOFCS respon directament a la pregunta amb la frase «Son Fuerzas y Cuerpos de Seguridad:», seguida de tres lletres que coincideixen exactament amb les tres primeres opcions: a) les de l\'Estat dependents del Govern de la Nació, b) els cossos de policia de les comunitats autònomes, i c) els de les corporacions locals. Com que cap de les tres afirmacions afegeix ni altera res respecte del text legal, totes tres són certes de manera literal, i per tant l\'opció correcta és la d), que les recull totes tres com a forces i cossos de seguretat.',
+      es: 'El artículo 2 de la LOFCS responde directamente a la pregunta con la frase «Son Fuerzas y Cuerpos de Seguridad:», seguida de tres letras que coinciden exactamente con las tres primeras opciones: a) las del Estado dependientes del Gobierno de la Nación, b) los cuerpos de policía de las comunidades autónomas, y c) los de las corporaciones locales. Como ninguna de las tres afirmaciones añade ni altera nada respecto del texto legal, las tres son ciertas de manera literal, y por tanto la opción correcta es la d), que las recoge todas como fuerzas y cuerpos de seguridad.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 16, pàgina 5 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 2.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 2.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 2.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16225,14 +17539,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 40.1 de la LO 4/2015 fixa tres terminis diferents per a la prescripció de les sancions ja imposades: tres anys per a les molt greus, dos anys per a les greus i un any per a les lleus. L\'opció c) («al cap de tres anys») és l\'única que coincideix amb el termini fixat per a les infraccions molt greus; les altres opcions (sis mesos, dos anys, quinze anys) no apareixen enlloc de l\'article per a aquesta categoria.',
+      es: 'El artículo 40.1 de la LO 4/2015 fija tres plazos distintos para la prescripción de las sanciones ya impuestas: tres años para las muy graves, dos años para las graves y un año para las leves. La opción c) («al cabo de tres años») es la única que coincide con el plazo fijado para las infracciones muy graves; las demás opciones (seis meses, dos años, quince años) no aparecen en ningún punto del artículo para esta categoría.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 18, pàgina 5 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 40.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16264,14 +17584,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres opcions a), b) i c) reprodueixen, gairebé paraula per paraula, les lletres a), b) i c) del segon paràgraf de l’article 21 del Reglament general de circulació, que enumera a qui poden sotmetre a les proves de detecció alcohòlica els agents encarregats de la vigilància del trànsit: qualsevol usuari de la via o conductor implicat directament com a possible responsable en un accident de circulació; els qui condueixin qualsevol vehicle amb símptomes evidents, manifestacions o fets que permetin presumir raonablement que ho fan sota la influència de begudes alcohòliques; i els conductors denunciats per alguna infracció de les normes del reglament (l’article hi afegeix encara una lletra d, els controls preventius). Com que les tres afirmacions són al text, la resposta correcta és la d): totes les anteriors són certes.',
+      es: 'Las tres opciones a), b) y c) reproducen, casi palabra por palabra, las letras a), b) y c) del segundo párrafo del artículo 21 del Reglamento general de circulación, que enumera a quiénes pueden someter a las pruebas de detección alcohólica los agentes encargados de la vigilancia del tráfico: cualquier usuario de la vía o conductor implicado directamente como posible responsable en un accidente de circulación; quienes conduzcan cualquier vehículo con síntomas evidentes, manifestaciones o hechos que permitan presumir razonablemente que lo hacen bajo la influencia de bebidas alcohólicas; y los conductores denunciados por alguna infracción de las normas del reglamento (el artículo añade aún una letra d, los controles preventivos). Como las tres afirmaciones están en el texto, la respuesta correcta es la d): todas las anteriores son ciertas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 19, pàgina 5 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 21, lletres a) a c)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16303,14 +17629,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 39.1 de la LO 4/2015 fixa les multes per a cada categoria d\'infracció: molt greus de 30.001 a 600.000 €, greus de 601 a 30.000 € i lleus de 100 a 600 €. L\'opció a) reprodueix exactament el tram de les lleus. Les altres opcions inventen quanties (300-600 €, 500 € fixos, 100-200 €) que no apareixen a l\'article per a aquesta categoria.',
+      es: 'El artículo 39.1 de la LO 4/2015 fija las multas para cada categoría de infracción: muy graves de 30.001 a 600.000 €, graves de 601 a 30.000 € y leves de 100 a 600 €. La opción a) reproduce exactamente el tramo de las leves. Las demás opciones inventan cuantías (300-600 €, 500 € fijos, 100-200 €) que no aparecen en el artículo para esta categoría.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 20, pàgina 6 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 39.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17434,14 +18766,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 104.1 defineix la missió de les forces i cossos de seguretat amb dos elements: «protegir el lliure exercici dels drets i llibertats» —que encapçala la frase— i «garantir la seguretat ciutadana». De les quatre opcions, l\'única que figura al precepte és la b): ni «l\'ordre» a seques (a), ni cap referència al codi penal (c), ni «l\'aplicació de les lleis» (d) no apareixen a l\'article. La Constitució de 1978 va substituir deliberadament la vella clàusula d\'ordre públic per aquesta formulació centrada en els drets, i per això la lectura habitual del precepte —la que recull la plantilla— és que la protecció dels drets i llibertats dels ciutadans hi té la prioritat.',
+      es: 'El artículo 104.1 define la misión de las fuerzas y cuerpos de seguridad con dos elementos: «proteger el libre ejercicio de los derechos y libertades» —que encabeza la frase— y «garantizar la seguridad ciudadana». De las cuatro opciones, la única que figura en el precepto es la b): ni «el orden» a secas (a), ni referencia alguna al código penal (c), ni «la aplicación de las leyes» (d) aparecen en el artículo. La Constitución de 1978 sustituyó deliberadamente la vieja cláusula de orden público por esta formulación centrada en los derechos, y por eso la lectura habitual del precepto —la que recoge la plantilla— es que la protección de los derechos y libertades de los ciudadanos tiene en él la prioridad.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 104.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17473,14 +18811,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El preàmbul del Codi d\'ètica de la Policia de Catalunya cita explícitament l\'instrument europeu que en va inspirar el contingut: la \'Recomanació REC (2001)10 del Comitè de Ministres del Consell d\'Europa\', de 19 de setembre de 2001, sobre el Codi europeu d\'ètica de la policia. El propi nom de l\'instrument, amb l\'acrònim REC de \'Recomanació\', estableix directament el seu format legal, cosa que confirma l\'opció b). El mateix text distingeix aquest instrument d\'un altre de naturalesa diferent: la Resolució INT/1828/2004, que va aprovar una \'Instrucció\' catalana per incorporar-lo, cosa que descarta que el propi Codi europeu sigui una instrucció (opció a). Els actes del Consell d\'Europa no tenen forma de directiva ni de llei (opcions c i d), reservades a altres organitzacions com la Unió Europea; el text sempre en parla com a \'Recomanació\' i mai amb cap altra denominació legal per a aquest instrument de 2001.',
+      es: 'El preámbulo del Código de ética de la Policía de Cataluña cita explícitamente el instrumento europeo que inspiró su contenido: la \'Recomanació REC (2001)10 del Comitè de Ministres del Consell d\'Europa\', de 19 de septiembre de 2001, sobre el Código europeo de ética de la policía. El propio nombre del instrumento, con el acrónimo REC de \'Recomendación\', establece directamente su formato legal, lo que confirma la opción b). El mismo texto distingue este instrumento de otro de naturaleza distinta: la Resolución INT/1828/2004, que aprobó una \'Instrucción\' catalana para incorporarlo, lo que descarta que el propio Código europeo sea una instrucción (opción a). Los actos del Consejo de Europa no tienen forma de directiva ni de ley (opciones c y d), reservadas a otras organizaciones como la Unión Europea; el texto siempre habla de él como \'Recomendación\' y nunca con otra denominación legal para este instrumento de 2001.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-etic-policia-catalunya',
+        locator: 'exposició de motius',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17551,14 +18895,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El punt 4 de l’article 46 bis, afegit per la modificació de 2021 de l’ordenança de circulació de Roses, enumera els requisits per circular amb un vehicle de mobilitat personal per les zones permeses, i el primer (lletra a) és «Tenir una edat mínima de 15 anys». Això valida l’opció b) i descarta d’un sol cop la a) (14 anys) i la c) (16 anys). L’opció d) també cau: la modificació sí que estableix una edat mínima, i l’annex 1 fins i tot tipifica com a infracció lleu de 100 euros el fet de circular amb edat inferior a 15 anys. Aquesta redacció, publicada al BOP de Girona núm. 42 de 03-03-2021, continua vigent avui sense canvis posteriors coneguts.',
+      es: 'El punto 4 del artículo 46 bis, añadido por la modificación de 2021 de la ordenanza de circulación de Roses, enumera los requisitos para circular con un vehículo de movilidad personal por las zonas permitidas, y el primero (letra a) es «Tener una edad mínima de 15 años». Eso valida la opción b) y descarta de un solo golpe la a) (14 años) y la c) (16 años). La opción d) también cae: la modificación sí establece una edad mínima, y el anexo 1 incluso tipifica como infracción leve de 100 euros circular con edad inferior a 15 años. Esa redacción, publicada en el BOP de Girona núm. 42 de 03-03-2021, sigue vigente hoy sin cambios posteriores conocidos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio-mod-2021',
+        locator: 'art. 46 bis.4.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17629,14 +18979,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El Codi d\'ètica de la Policia de Catalunya diu literalment que \'els valors, les actituds i les competències s\'agrupen en cinc àrees: la funció pública, la professió, l\'orientació a les persones, les relacions institucionals i l\'entorn\'. Aquesta llista tancada de cinc àrees permet descartar directament tres opcions: la funció pública (a) i l\'orientació a les persones (b) hi apareixen citades expressament com a àrees, i l\'entorn (c) també hi figura com la cinquena. En canvi, \'l\'adhesió directa als tractats internacionals per part de la policia de Catalunya\' (d) no apareix enlloc d\'aquesta enumeració, ni com a àrea ni com un dels seus valors o competències associades; el Codi es limita a dir que s\'inspira en textos internacionals, però no ho presenta com una de les cinc àrees. Per això l\'opció d) és la que no en forma part, coincidint amb la resposta oficial.',
+      es: 'El Código de ética de la Policía de Cataluña dice literalmente que \'los valores, las actitudes y las competencias se agrupan en cinco áreas: la función pública, la profesión, la orientación a las personas, las relaciones institucionales y el entorno\'. Esta lista cerrada de cinco áreas permite descartar directamente tres opciones: la función pública (a) y la orientación a las personas (b) aparecen citadas expresamente como áreas, y el entorno (c) también figura como la quinta. En cambio, \'la adhesión directa a los tratados internacionales por parte de la policía de Cataluña\' (d) no aparece en ningún lugar de esta enumeración, ni como área ni como uno de sus valores o competencias asociadas; el Código se limita a decir que se inspira en textos internacionales, pero no lo presenta como una de las cinco áreas. Por eso la opción d) es la que no forma parte, coincidiendo con la respuesta oficial.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 6, pàgina 1 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-etic-policia-catalunya',
+        locator: 'Annex, I. Principis, valors i competències',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17668,14 +19024,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21.1 de l’ordenança de circulació enumera els casos en què la Policia Local pot retirar el vehicle de la via i dipositar-lo si l’obligat no ho fa. L’opció c) reprodueix literalment la lletra d): «Quan, immobilitzat un vehicle, no cessin les causes que van motivar la immobilització». L’opció a) falseja la lletra a) de l’article, que exigeix que el vehicle constitueixi perill o causi «greus pertorbacions» a la circulació, no «lleus». La b) també amplia indegudament el text: la retirada no procedeix «en qualsevol accident», sinó en cas d’accident «que impedeixi continuar la marxa». I la d) de la pregunta cau perquè arrossega l’error de la a). La modificació de 2021 no va tocar l’article 21, de manera que la resposta continua sent correcta avui.',
+      es: 'El artículo 21.1 de la ordenanza de circulación enumera los casos en que la Policía Local puede retirar el vehículo de la vía y depositarlo si el obligado no lo hace. La opción c) reproduce literalmente la letra d): «Cuando, inmovilizado un vehículo, no cesen las causas que motivaron la inmovilización». La opción a) falsea la letra a) del artículo, que exige que el vehículo constituya peligro o cause «graves perturbaciones» a la circulación, no «leves». La b) también amplía indebidamente el texto: la retirada no procede «en cualquier accidente», sino en caso de accidente «que impida continuar la marcha». Y la d) de la pregunta cae porque arrastra el error de la a). La modificación de 2021 no tocó el artículo 21, por lo que la respuesta sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 21.1.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 21.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 21.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17746,14 +19120,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 10.1 de l’ordenança de convivència prohibeix el consum de begudes alcohòliques en els espais públics «quan com a conseqüència d’aquest consum resulti alterada la convivència ciutadana», i l’annex qualifica aquest fet (fila 10.1) com a infracció lleu, amb 600 euros. Per això la a) és la bona i la b) i la c) queden descartades. L’opció d) és directament falsa: la conducta figura a l’ordenança des del text original de 2019. La modificació de 2021 hi va afegir l’article 10.4, que prohibeix el consum encara que no es pertorbi la convivència (també lleu, 100 euros), però no va tocar ni l’article 10.1 ni la seva fila de l’annex, de manera que la qualificació de lleu continua vigent avui.',
+      es: 'El artículo 10.1 de la ordenanza de convivencia prohíbe el consumo de bebidas alcohólicas en los espacios públicos «cuando como consecuencia de ese consumo resulte alterada la convivencia ciudadana», y el anexo califica ese hecho (fila 10.1) como infracción leve, con 600 euros. Por eso la a) es la correcta y la b) y la c) quedan descartadas. La opción d) es directamente falsa: la conducta figura en la ordenanza desde el texto original de 2019. La modificación de 2021 añadió el artículo 10.4, que prohíbe el consumo aunque no se perturbe la convivencia (también leve, 100 euros), pero no tocó ni el artículo 10.1 ni su fila del anexo, de modo que la calificación de leve sigue vigente hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 9, pàgina 2 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 10.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 10.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17785,14 +19171,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 28 de l’ordenança de convivència diu literalment que «les infraccions molt greus se sancionaran amb una multa fins a 3.000€, les greus amb una multa fins a 1.500€, i les lleus amb multa fins a 750€». És exactament l’escala de l’opció d). Les altres tres inventen combinacions que no consten enlloc del text: la a) retalla tots els imports (2.000/1.000/500), la b) els infla (6.000/3.000/1.000) i la c) també (5.000/2.500/1.500). La modificació de 2021 va afegir a aquest article una bonificació del 20% per pagament voluntari, sense tocar els imports màxims de cada categoria, de manera que la resposta del tribunal continua sent vàlida avui.',
+      es: 'El artículo 28 de la ordenanza de convivencia dice literalmente que «las infracciones muy graves se sancionarán con una multa de hasta 3.000€, las graves con una multa de hasta 1.500€, y las leves con multa de hasta 750€». Es exactamente la escala de la opción d). Las otras tres inventan combinaciones que no constan en ningún punto del texto: la a) recorta todos los importes (2.000/1.000/500), la b) los infla (6.000/3.000/1.000) y la c) también (5.000/2.500/1.500). La modificación de 2021 añadió a este artículo una bonificación del 20% por pago voluntario, sin tocar los importes máximos de cada categoría, de modo que la respuesta del tribunal sigue siendo válida hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 10, pàgina 2 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 28',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17824,14 +19216,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El quadre de l’article 4.2 del Reglament general de conductors defineix el permís D1 exactament amb els dos paràmetres de l’enunciat: automòbils dissenyats i construïts per transportar no més de setze passatgers a més del conductor i amb una longitud màxima que no excedeixi els vuit metres. Per això la a) és la correcta. Les classes C i C1 queden descartades amb el mateix quadre: totes dues es limiten a automòbils «distintos de los que autoriza a conducir el permiso de las clases D1 o D» i dissenyats per a no més de vuit passatgers, o sigui que un vehicle de setze passatgers no hi cap. I el «B-1» de la c) ni tan sols existeix com a classe de permís en la classificació vigent de l’article 4.2.',
+      es: 'El cuadro del artículo 4.2 del Reglamento general de conductores define el permiso D1 exactamente con los dos parámetros del enunciado: automóviles diseñados y construidos para el transporte de no más de dieciséis pasajeros además del conductor y cuya longitud máxima no exceda de ocho metros. Por eso la a) es la correcta. Las clases C y C1 quedan descartadas con el mismo cuadro: ambas se limitan a automóviles «distintos de los que autoriza a conducir el permiso de las clases D1 o D» y diseñados para no más de ocho pasajeros, de modo que un vehículo de dieciséis pasajeros no cabe en ellas. Y el «B-1» de la c) ni siquiera existe como clase de permiso en la clasificación vigente del artículo 4.2.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe D1)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe C1)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17863,14 +19267,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 4.1 de la LO 4/2015 enumera tancadament els principis rectors de l\'acció dels poders públics en matèria de seguretat ciutadana: legalitat, igualtat de tracte i no discriminació, oportunitat, proporcionalitat, eficàcia, eficiència i responsabilitat. L\'oportunitat (opció a) i la proporcionalitat (opció b) hi són explícitament, però la congruència (opció c) no apareix enlloc d\'aquesta llista. Per això c) és la resposta correcta i la d) («tots són principis rectors») queda descartada.',
+      es: 'El artículo 4.1 de la LO 4/2015 enumera de forma cerrada los principios rectores de la acción de los poderes públicos en materia de seguridad ciudadana: legalidad, igualdad de trato y no discriminación, oportunidad, proporcionalidad, eficacia, eficiencia y responsabilidad. La oportunidad (opción a) y la proporcionalidad (opción b) están explícitamente, pero la congruencia (opción c) no aparece en ningún punto de esa lista. Por eso c) es la respuesta correcta y la d) («todos son principios rectores») queda descartada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 4.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17902,14 +19312,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La ubicació es llegeix a les mateixes rúbriques del text: dins el títol I («Dels drets i deures fonamentals»), el capítol II es titula «Drets i llibertats» i la seva secció 1a, «Dels drets fonamentals i de les llibertats públiques» (articles 15 a 29). És exactament l\'opció a): títol I, secció primera del capítol II. La b) apunta a la secció segona, que es titula «Dels drets i deures dels ciutadans» i no conté els drets fonamentals en sentit estricte; la c) apunta al capítol I, que tracta «Dels espanyols i els estrangers» (nacionalitat, majoria d\'edat, estrangeria); i la d) situa els drets al títol II, que és el de la Corona.',
+      es: 'La ubicación se lee en las propias rúbricas del texto: dentro del título I («De los derechos y deberes fundamentales»), el capítulo II se titula «Derechos y libertades» y su sección 1.ª, «De los derechos fundamentales y de las libertades públicas» (artículos 15 a 29). Es exactamente la opción a): título I, sección primera del capítulo II. La b) apunta a la sección segunda, que se titula «De los derechos y deberes de los ciudadanos» y no contiene los derechos fundamentales en sentido estricto; la c) apunta al capítulo I, que trata «De los españoles y los extranjeros» (nacionalidad, mayoría de edad, extranjería); y la d) sitúa los derechos en el título II, que es el de la Corona.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 13, pàgina 3 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'rúbrica del títol I',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, rúbrica del capítol II',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, capítol II, rúbrica de la secció 1a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17941,14 +19369,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 53.1.f de la LOFCS diu literalment «la prestación de auxilio, en los casos de accidente, catástrofe o calamidad pública, participando, en la forma prevista en las Leyes, en la ejecución de los planes de Protección Civil», frase que l\'opció b) reprodueix sencera. En canvi, l\'opció a) atribueix la participació en funcions de Policia Judicial a l\'«article 34.5», quan l\'article 53.1.e remet expressament a l\'article 29.2 d\'aquesta llei: una referència equivocada que la invalida. L\'opció c), sobre diligències de prevenció, parla de «Juntes Locals de Seguretat», mentre que el text de l\'article 53.1.g només parla de «Juntas de Seguridad», sense l\'afegit «Locales». Com que la a) és demostrablement falsa, la d) («totes») també ho és, i queda la b) com a única opció íntegrament literal.',
+      es: 'El artículo 53.1.f de la LOFCS dice literalmente «la prestación de auxilio, en los casos de accidente, catástrofe o calamidad pública, participando, en la forma prevista en las Leyes, en la ejecución de los planes de Protección Civil», frase que la opción b) reproduce entera. En cambio, la opción a) atribuye la participación en funciones de Policía Judicial al «artículo 34.5», cuando el artículo 53.1.e remite expresamente al artículo 29.2 de esta ley: una referencia equivocada que la invalida. La opción c), sobre diligencias de prevención, habla de «Juntas Locales de Seguridad», mientras que el texto del artículo 53.1.g solo habla de «Juntas de Seguridad», sin el añadido «Locales». Como la a) es demostrablemente falsa, la d) («todas») también lo es, y queda la b) como única opción íntegramente literal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 14, pàgina 3 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.f',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.g',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17980,14 +19426,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 8.2 ho diu amb totes les lletres: «L\'alcalde ha de determinar, en forma motivada, les circumstàncies i els serveis en què no s\'han de dur armes de foc». L\'opció a) el reprodueix. La b) inventa una delegació al regidor de seguretat ciutadana que aquest apartat no preveu enlloc; la c) atribueix la decisió al cap de la policia local, quan la Llei la reserva a l\'alcalde; i la d) l\'atribueix al conseller d\'Interior, que tampoc no hi apareix. La clau de la pregunta és doble i el precepte respon les dues parts: qui decideix (l\'alcalde) i com ho ha de fer (en forma motivada).',
+      es: 'El artículo 8.2 lo dice con todas las letras: «El alcalde debe determinar, de forma motivada, las circunstancias y los servicios en que no se deben llevar armas de fuego». La opción a) lo reproduce. La b) inventa una delegación en el concejal de seguridad ciudadana que este apartado no prevé en ningún sitio; la c) atribuye la decisión al jefe de la policía local, cuando la Ley la reserva al alcalde; y la d) la atribuye al consejero de Interior, que tampoco aparece. La clave de la pregunta es doble y el precepto responde a ambas partes: quién decide (el alcalde) y cómo debe hacerlo (de forma motivada).',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 8.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18019,14 +19471,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 18.1 del Decret 179/2015 estableix que són òrgans competents per a la imposició de sancions disciplinàries el Ple de l\'ajuntament, per imposar la sanció molt greu de separació del servei (lletra a), i l\'alcalde o persona en qui delegui, per imposar les sancions per faltes molt greus, greus i lleus (lletra b). Les opcions a i b reprodueixen exactament aquestes dues lletres, així que la resposta correcta és la d. L\'opció c és falsa per partida doble: l\'alcalde no és l\'únic òrgan competent (el Ple imposa la separació del servei) i, a més, l\'article 18.2 li permet delegar la competència sancionadora.',
+      es: 'El artículo 18.1 del Decreto 179/2015 establece que son órganos competentes para la imposición de sanciones disciplinarias el Pleno del ayuntamiento, para imponer la sanción muy grave de separación del servicio (letra a), y el alcalde o persona en quien delegue, para imponer las sanciones por faltas muy graves, graves y leves (letra b). Las opciones a y b reproducen exactamente estas dos letras, así que la respuesta correcta es la d. La opción c es falsa por partida doble: el alcalde no es el único órgano competente (el Pleno impone la separación del servicio) y, además, el artículo 18.2 le permite delegar la competencia sancionadora.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-179-2015-disciplinari',
+        locator: 'art. 18.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-179-2015-disciplinari',
+        locator: 'art. 18.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-179-2015-disciplinari',
+        locator: 'art. 18.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-179-2015-disciplinari',
+        locator: 'art. 18.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18058,14 +19534,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Cap de les tres conductes proposades figura al catàleg de faltes greus de l\'article 49, i per això la resposta correcta és la d. La reincidència en la comissió de faltes greus (opció a) i l\'incompliment de les normes sobre incompatibilitats (opció b) són faltes molt greus, tipificades a les lletres u i n de l\'article 48.1. I el retard, la negligència i el descuit en el compliment de les funcions o de les ordres rebudes (opció c) és falta lleu, tipificada a l\'article 50.b. La pregunta obliga a situar cada conducta al seu article: 48 (molt greus), 49 (greus) o 50 (lleus).',
+      es: 'Ninguna de las tres conductas propuestas figura en el catálogo de faltas graves del artículo 49, y por eso la respuesta correcta es la d. La reincidencia en la comisión de faltas graves (opción a) y el incumplimiento de las normas sobre incompatibilidades (opción b) son faltas muy graves, tipificadas en las letras u y n del artículo 48.1. Y el retraso, la negligencia y el descuido en el cumplimiento de las funciones o de las órdenes recibidas (opción c) es falta leve, tipificada en el artículo 50.b. La pregunta obliga a situar cada conducta en su artículo: 48 (muy graves), 49 (graves) o 50 (leves).',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 17, pàgina 4 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.u',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.n',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18097,14 +19591,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les funcions de la policia local són a l\'article 11: «Corresponen a les policies locals, en llur àmbit d\'actuació, les funcions següents», amb un catàleg de tretze lletres, de la a) a la m). Per això la bona és la a). L\'article 12 no conté el catàleg general, sinó únicament les funcions de policia judicial a què remet la lletra e) de l\'article 11. L\'article 6 regula el jurament o promesa d\'acatar la Constitució i de respectar l\'Estatut abans de prendre possessió del càrrec, i l\'article 53, ja dins del règim disciplinari, els criteris per graduar les sancions. Cap d\'aquests tres preceptes no estableix les funcions generals del cos.',
+      es: 'Las funciones de la policía local están en el artículo 11: «Corresponden a las policías locales, en su ámbito de actuación, las siguientes funciones», con un catálogo de trece letras, de la a) a la m). Por eso la buena es la a). El artículo 12 no contiene el catálogo general, sino únicamente las funciones de policía judicial a las que remite la letra e) del artículo 11. El artículo 6 regula el juramento o promesa de acatar la Constitución y de respetar el Estatuto antes de tomar posesión del cargo, y el artículo 53, ya dentro del régimen disciplinario, los criterios para graduar las sanciones. Ninguno de estos tres preceptos establece las funciones generales del cuerpo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 18, pàgina 4 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 12.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 6',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18136,14 +19654,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 383 del Codi penal castiga el conductor que, requerit per un agent de l’autoritat, es nega a sotmetre’s a les proves de comprovació de les taxes d’alcoholèmia i de presència de drogues «con la penas de prisión de seis meses a un año y privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a uno y hasta cuatro años». La a) reprodueix exactament aquestes dues penes, que són acumulatives («i»). La b) falla dues vegades: les presenta com a alternatives («o») i allarga la privació fins a sis anys, que és el sostre d’altres delictes com el de l’article 380, no d’aquest. La c) rebaixa la presó a un marge (tres a sis mesos) que el text no preveu. I la d) és falsa d’arrel: el 383 porta pena de presó, o sigui que no és cap delicte lleu sense presó.',
+      es: 'El artículo 383 del Código penal castiga al conductor que, requerido por un agente de la autoridad, se niega a someterse a las pruebas de comprobación de las tasas de alcoholemia y de presencia de drogas «con la penas de prisión de seis meses a un año y privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a uno y hasta cuatro años». La a) reproduce exactamente esas dos penas, que son acumulativas («y»). La b) falla dos veces: las presenta como alternativas («o») y alarga la privación hasta seis años, que es el techo de otros delitos como el del artículo 380, no de este. La c) rebaja la prisión a un margen (tres a seis meses) que el texto no prevé. Y la d) es falsa de raíz: el 383 lleva pena de prisión, así que no es ningún delito leve sin prisión.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 19, pàgina 4 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 383',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18175,14 +19699,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 16.1 de la LO 5/2000 ho diu de manera literal: correspon al Ministeri Fiscal la instrucció dels procediments pels fets a què es refereix l\'article 1 de la llei. Aquesta és una de les singularitats de la justícia de menors respecte del procés penal d\'adults, on la instrucció és judicial. Per això l\'opció b) és la correcta. El Jutjat de Menors (opció a) no instrueix: segons l\'article 2.1, coneix dels fets —és a dir, jutja— i fa executar les sentències. El Jutjat Penal (opció c) i el Jutjat d\'Instrucció en funcions de guàrdia (opció d) pertanyen a la jurisdicció ordinària d\'adults i no tenen atribuïda cap funció instructora en aquesta llei.',
+      es: 'El artículo 16.1 de la LO 5/2000 lo dice de manera literal: corresponde al Ministerio Fiscal la instrucción de los procedimientos por los hechos a los que se refiere el artículo 1 de la ley. Esta es una de las singularidades de la justicia de menores respecto del proceso penal de adultos, donde la instrucción es judicial. Por eso la opción b) es la correcta. El Juzgado de Menores (opción a) no instruye: según el artículo 2.1, conoce de los hechos —es decir, enjuicia— y hace ejecutar las sentencias. El Juzgado de lo Penal (opción c) y el Juzgado de Instrucción en funciones de guardia (opción d) pertenecen a la jurisdicción ordinaria de adultos y no tienen atribuida ninguna función instructora en esta ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 20, pàgina 5 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 16.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 2.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18214,14 +19750,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 15.1 de la LO 5/2000 fixa els terminis de prescripció dels fets delictius comesos per menors, i les tres primeres opcions en reprodueixen cadascuna una regla: la a) coincideix amb la regla 2a (cinc anys per al delicte greu sancionat al Codi Penal amb pena superior a deu anys), la c) amb la regla 3a (tres anys per a qualsevol altre delicte greu) i la b) amb la regla 4a (un any per al delicte menys greu). Com que les tres afirmacions són certes alhora contra el mateix article, la resposta correcta és la d), «totes les respostes anteriors són correctes». L\'article també conté una regla 1a (remissió al Codi Penal per als delictes més greus) que cap opció contradiu.',
+      es: 'El artículo 15.1 de la LO 5/2000 fija los plazos de prescripción de los hechos delictivos cometidos por menores, y las tres primeras opciones reproducen cada una una regla: la a) coincide con la regla 2.ª (cinco años para el delito grave sancionado en el Código Penal con pena superior a diez años), la c) con la regla 3.ª (tres años para cualquier otro delito grave) y la b) con la regla 4.ª (un año para el delito menos grave). Como las tres afirmaciones son ciertas a la vez contra el mismo artículo, la respuesta correcta es la d), «todas las respuestas anteriores son correctas». El artículo también contiene una regla 1.ª (remisión al Código Penal para los delitos más graves) que ninguna opción contradice.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 21, pàgina 5 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 15.1.2.º',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 15.1.3.º',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 15.1.4.º',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18253,14 +19807,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 25.1 de l’ordenança de convivència prohibeix «regar les plantes col·locades a l’exterior dels edificis produint abocaments als veïns», i l’annex qualifica aquest fet (fila 25.1) com a infracció lleu amb un import de 400 euros. Això valida l’opció a) i descarta les altres tres: la b) converteix la infracció en greu, cosa que l’annex no fa, i la c) i la d) li assignen imports (100 i 300 euros) que no són els de la fila. La modificació de 2021 de l’ordenança només va tocar els articles 10, 11, 20 i 28 i les files 10.4, 11.1, 11.2 i 16 de l’annex, de manera que la fila 25.1 conserva la redacció i l’import originals de 2019.',
+      es: 'El artículo 25.1 de la ordenanza de convivencia prohíbe «regar las plantas colocadas en el exterior de los edificios produciendo vertidos a los vecinos», y el anexo califica ese hecho (fila 25.1) como infracción leve con un importe de 400 euros. Eso valida la opción a) y descarta las otras tres: la b) convierte la infracción en grave, cosa que el anexo no hace, y la c) y la d) le asignan importes (100 y 300 euros) que no son los de la fila. La modificación de 2021 de la ordenanza solo tocó los artículos 10, 11, 20 y 28 y las filas 10.4, 11.1, 11.2 y 16 del anexo, de modo que la fila 25.1 conserva la redacción y el importe originales de 2019.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 22, pàgina 5 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'art. 25.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 25.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18331,14 +19897,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Aquesta pregunta té dues capes. L\'annex de l\'Ordenança de convivència de Roses, en el text de 2019, qualificava la fila 11.1 —realitzar venda ambulant sense autorització municipal, fora del mercat municipal— com a greu amb 1.500 €. La modificació publicada al BOP de Girona núm. 54 del 19 de març de 2021, en vigor quinze dies hàbils després, va reescriure aquesta fila: passa a **lleu, 600 €**, i suprimeix el matís «fora de l\'àmbit del mercat municipal». L\'examen es va celebrar el 13 d\'abril de 2021, quan la modificació ja portava dies en vigor, i cap de les quatre opcions deia «lleu, 600 €». Per reproduir l\'examen puntua la lletra que va publicar el tribunal (a), que és un fet històric i no es toca; el que has d\'endur-te per estudiar és la qualificació vigent.',
+      es: 'Esta pregunta tiene dos capas. El anexo de la Ordenanza de convivencia de Roses, en el texto de 2019, calificaba la fila 11.1 —realizar venta ambulante sin autorización municipal, fuera del mercado municipal— como grave con 1.500 €. La modificación publicada en el BOP de Girona núm. 54 del 19 de marzo de 2021, en vigor quince días hábiles después, reescribió esa fila: pasa a **leve, 600 €**, y suprime el matiz «fuera del ámbito del mercado municipal». El examen se celebró el 13 de abril de 2021, cuando la modificación ya llevaba días en vigor, y ninguna de las cuatro opciones decía «leve, 600 €». Para reproducir el examen puntúa la letra que publicó el tribunal (a), que es un hecho histórico y no se toca; lo que debes llevarte para estudiar es la calificación vigente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 24, pàgina 5 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia',
+        locator: 'annex, fila 11.1 (text de 2019)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia-mod-2021',
+        locator: 'modificació segona, punt 1 (on diu)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia-mod-2021',
+        locator: 'modificació segona, punt 1 (ha de dir)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-convivencia-mod-2021',
+        locator: 'edicte d’aprovació definitiva',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18370,14 +19960,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La conducta que cita l\'enunciat és, paraula per paraula, l\'article 202.1 del Codi Penal, dins el capítol que el mateix Codi titula «Del allanamiento de morada»: allanament de morada, no cap altra figura. La a) encerta el número d\'article (202) però l\'anomena «usurpació», que és un delicte patrimonial diferent, el de l\'article 245 (ocupar immobles que no constitueixen morada). La b) s\'equivoca dues vegades: ni la rúbrica legal és «violació de domicili» ni la conducta és a l\'article 245. La c) tampoc: no és cap delicte lleu, sinó que es castiga amb presó de sis mesos a dos anys. Com que les tres primeres fallen, la resposta correcta és la d), cap de les anteriors.',
+      es: 'La conducta que cita el enunciado es, palabra por palabra, el artículo 202.1 del Código Penal, dentro del capítulo que el propio Código titula «Del allanamiento de morada»: allanamiento de morada, no otra figura. La a) acierta el número de artículo (202) pero lo llama «usurpación», que es un delito patrimonial distinto, el del artículo 245 (ocupar inmuebles que no constituyen morada). La b) se equivoca dos veces: ni la rúbrica legal es «violación de domicilio» ni la conducta está en el artículo 245. La c) tampoco: no es un delito leve, sino que se castiga con prisión de seis meses a dos años. Como las tres primeras fallan, la respuesta correcta es la d), ninguna de las anteriores.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 25, pàgina 6 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'llibre II, títol X, capítol II, rúbrica',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 202.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 245.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18409,14 +20017,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La planificació i la regulació del sistema de seguretat pública de Catalunya i l’ordenació de les policies locals figuren, literalment, a la lletra a de l’apartat 1 de l’article 164 de l’Estatut, dins el títol IV, dedicat a les competències. Cap de les tres opcions numèriques no l’encerta: ni l’article 104, ni el 126, ni el 146 contenen aquesta atribució, que és pròpia de l’article 164, l’article de la seguretat pública. Per això la resposta correcta és la d), «cap de les respostes anteriors»: la seu correcta, l’article 164.1.a, no apareix entre les tres opcions ofertes, i qui coneix l’article pot descartar-les totes tres d’un sol cop.',
+      es: 'La planificación y la regulación del sistema de seguridad pública de Cataluña y la ordenación de las policías locales figuran, literalmente, en la letra a del apartado 1 del artículo 164 del Estatuto, dentro del título IV, dedicado a las competencias. Ninguna de las tres opciones numéricas acierta: ni el artículo 104, ni el 126, ni el 146 contienen esa atribución, que es propia del artículo 164, el artículo de la seguridad pública. Por eso la respuesta correcta es la d), «ninguna de las respuestas anteriores»: la sede correcta, el artículo 164.1.a, no aparece entre las tres opciones ofrecidas, y quien conoce el artículo puede descartarlas las tres de una sola vez.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 26, pàgina 6 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -18448,14 +20062,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 3.1 de la Llei 4/2003 diu que el sistema de seguretat de Catalunya és integrat per les autoritats de seguretat (lletra a), els cossos policials i altres serveis, públics o privats, de seguretat (lletra b) i els òrgans de coordinació i participació en matèria de seguretat (lletra c). Les tres primeres opcions reprodueixen aquestes tres lletres, de manera que la resposta completa és la d), tal com va marcar el tribunal. El text llarg que arrossega l\'opció d) després de «Totes són correctes» són instruccions del quadernet d\'examen enganxades per l\'extracció del PDF: no formen part de la resposta ni afecten el fons jurídic de la pregunta, que la redacció vigent del precepte continua sostenint.',
+      es: 'El artículo 3.1 de la Ley 4/2003 dice que el sistema de seguridad de Cataluña está integrado por las autoridades de seguridad (letra a), los cuerpos policiales y otros servicios, públicos o privados, de seguridad (letra b) y los órganos de coordinación y participación en materia de seguridad (letra c). Las tres primeras opciones reproducen esas tres letras, de manera que la respuesta completa es la d), tal como marcó el tribunal. El texto largo que arrastra la opción d) después de «Todas son correctas» son instrucciones del cuadernillo de examen pegadas por la extracción del PDF: no forman parte de la respuesta ni afectan al fondo jurídico de la pregunta, que la redacción vigente del precepto sigue sosteniendo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 27, pàgina 6 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 3.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19150,14 +20770,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres conductes figuren literalment al catàleg de faltes greus de l\'article 49: els actes i les conductes que atempten contra el decor i la dignitat dels funcionaris, contra la imatge del cos i contra el prestigi i la consideració deguts a la corporació (lletra c); el fet d\'originar enfrontaments en el servei o en el lloc de treball i el fet de prendre-hi part (lletra e); i la intervenció en un procediment administratiu si hi ha establerts legalment motius d\'abstenció (lletra h). Com que les opcions a, b i c són totes tres certes, la resposta correcta és la d, «totes les respostes anteriors són correctes».',
+      es: 'Las tres conductas figuran literalmente en el catálogo de faltas graves del artículo 49: los actos y conductas que atentan contra el decoro y la dignidad de los funcionarios, contra la imagen del cuerpo y contra el prestigio y la consideración debidos a la corporación (letra c); originar enfrentamientos en el servicio o en el lugar de trabajo y tomar parte en ellos (letra e); y la intervención en un procedimiento administrativo cuando existen legalmente motivos de abstención (letra h). Como las opciones a, b y c son las tres ciertas, la respuesta correcta es la d, «todas las respuestas anteriores son correctas».',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.h',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19189,14 +20833,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Segons el primer paràgraf de l’article 20 del Reglament general de circulació, els conductors de vehicles i de bicicletes no poden circular «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». Per als conductors en general, la taxa en aire expirat esdevé sancionable en superar els 0,25 mg/l: la c) és la bona i la d) («cap de les anteriors») queda automàticament descartada. Els 0,15 mg/l de la a) són el límit especial dels conductors novells (dos primers anys de permís) i dels professionals de l’article 20, paràgraf segon, i els 0,20 mg/l de la b) no apareixen com a llindar administratiu a cap paràgraf de l’article. La redacció és la mateixa avui que el dia de l’examen.',
+      es: 'Según el primer párrafo del artículo 20 del Reglamento general de circulación, los conductores de vehículos y de bicicletas no pueden circular «con una tasa de alcohol en sangre superior a 0,5 gramos por litro, o de alcohol en aire espirado superior a 0,25 miligramos por litro». Para los conductores en general, la tasa en aire espirado pasa a ser sancionable al superar los 0,25 mg/l: la c) es la buena y la d) («ninguna de las anteriores») queda automáticamente descartada. Los 0,15 mg/l de la a) son el límite especial de los conductores noveles (dos primeros años de permiso) y de los profesionales del artículo 20, párrafo segundo, y los 0,20 mg/l de la b) no aparecen como umbral administrativo en ningún párrafo del artículo. La redacción es la misma hoy que el día del examen.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 20, paràgraf primer',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19228,14 +20878,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El títol VIII de la Constitució (articles 137 a 158) porta per rúbrica «De la Organización Territorial del Estado», i el seu primer article, el 137, obre precisament dient que l\'Estat s\'organitza territorialment en municipis, províncies i comunitats autònomes: la resposta és la a). Les altres opcions assenyalen títols amb un contingut ben diferent: el títol V regula les relacions entre el Govern i les Corts Generals, el títol III les Corts Generals i el títol VI el poder judicial. Recordar l\'esquema de títols de la Constitució —o simplement la rúbrica del VIII— resol la pregunta sense ambigüitat.',
+      es: 'El título VIII de la Constitución (artículos 137 a 158) lleva por rúbrica «De la Organización Territorial del Estado», y su primer artículo, el 137, abre precisamente diciendo que el Estado se organiza territorialmente en municipios, provincias y comunidades autónomas: la respuesta es la a). Las otras opciones señalan títulos con un contenido bien distinto: el título V regula las relaciones entre el Gobierno y las Cortes Generales, el título III las Cortes Generales y el título VI el poder judicial. Recordar el esquema de títulos de la Constitución —o simplemente la rúbrica del VIII— resuelve la pregunta sin ambigüedad.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'rúbrica del títol VIII',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 137',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19267,14 +20929,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 38.1 de la LO 4/2015 fixa la prescripció de les infraccions (no de les sancions ja imposades, que és l\'article 40) en sis mesos per a les lleus, un any per a les greus i dos anys per a les molt greus. L\'opció a) reprodueix exactament aquesta seqüència. Les opcions b) i c) inverteixen o alteren els terminis, i la d) nega que cap sigui correcta quan a) sí que ho és.',
+      es: 'El artículo 38.1 de la LO 4/2015 fija la prescripción de las infracciones (no de las sanciones ya impuestas, que es el artículo 40) en seis meses para las leves, un año para las graves y dos años para las muy graves. La opción a) reproduce exactamente esa secuencia. Las opciones b) y c) invierten o alteran los plazos, y la d) niega que ninguna sea correcta cuando a) sí lo es.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 38.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19306,14 +20974,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les dues afirmacions bones es comproven a l\'article 8 de la Llei 4/2003. L\'apartat 1 defineix la Comissió de Policia de Catalunya com «l\'òrgan col·legiat consultiu superior en matèria de coordinació entre la policia de la Generalitat-mossos d\'esquadra i les policies locals a Catalunya», que és l\'opció a). L\'apartat 2 la fa integrada pel conseller o consellera del departament amb competències en matèria de seguretat pública, que la presideix, cinc vocals en representació dels ajuntaments i cinc en representació del Govern, que és l\'opció c). La b) és falsa perquè la coordinació superior amb les forces i cossos de seguretat de l\'Estat correspon a la Junta de Seguretat de Catalunya (art. 3.3). Sent certes a) i c) alhora, la resposta és la d).',
+      es: 'Las dos afirmaciones buenas se comprueban en el artículo 8 de la Ley 4/2003. El apartado 1 define la Comisión de Policía de Cataluña como «el órgano colegiado consultivo superior en materia de coordinación entre la policía de la Generalitat-mossos d\'esquadra y las policías locales en Cataluña», que es la opción a). El apartado 2 la integra por el consejero o consejera del departamento con competencias en materia de seguridad pública, que la preside, cinco vocales en representación de los ayuntamientos y cinco en representación del Gobierno, que es la opción c). La b) es falsa porque la coordinación superior con las fuerzas y cuerpos de seguridad del Estado corresponde a la Junta de Seguridad de Cataluña (art. 3.3). Siendo ciertas a) y c) a la vez, la respuesta es la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 8.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 3.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19423,14 +21109,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres primeres opcions són literals de l\'article 10.1. La a) és la lletra a) del punt primer: exercir llurs funcions amb respecte absolut a la Constitució, a l\'Estatut d\'Autonomia i a la resta de l\'ordenament jurídic. La b) és la lletra c) del mateix punt: actuar amb integritat i dignitat i, en particular, abstenir-se de participar en qualsevol acte de corrupció i oposar-s\'hi amb fermesa. I la c) és la lletra a) del punt segon: impedir qualsevol pràctica abusiva, arbitrària o discriminatòria que comporti violència física o moral. Com que totes tres figuren dins del mateix article com a principis bàsics d\'actuació, la resposta correcta és la d).',
+      es: 'Las tres primeras opciones son literales del artículo 10.1. La a) es la letra a) del punto primero: ejercer sus funciones con respeto absoluto a la Constitución, al Estatuto de Autonomía y al resto del ordenamiento jurídico. La b) es la letra c) del mismo punto: actuar con integridad y dignidad y, en particular, abstenerse de participar en cualquier acto de corrupción y oponerse a él con firmeza. Y la c) es la letra a) del punto segundo: impedir cualquier práctica abusiva, arbitraria o discriminatoria que comporte violencia física o moral. Como las tres figuran dentro del mismo artículo como principios básicos de actuación, la respuesta correcta es la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, a)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, c)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, segon, a)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, segon, a) (continuació)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19462,14 +21172,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La secció 1a del capítol II del títol I comprèn els articles 15 a 29, i allà hi ha les opcions a), b) i c): el dret a l\'honor, a la intimitat personal i familiar i a la pròpia imatge (art. 18.1), el dret a la llibertat i a la seguretat (art. 17.1) i el dret de vaga (art. 28.2). El dret a la propietat privada i a l\'herència, en canvi, és l\'article 33, que ja pertany a la secció 2a («Dels drets i deures dels ciutadans», articles 30 a 38): no és, doncs, un dret fonamental de la secció primera i no gaudeix de les seves garanties reforçades, com el recurs d\'empara. La resposta és la d).',
+      es: 'La sección 1.ª del capítulo II del título I comprende los artículos 15 a 29, y allí están las opciones a), b) y c): el derecho al honor, a la intimidad personal y familiar y a la propia imagen (art. 18.1), el derecho a la libertad y a la seguridad (art. 17.1) y el derecho de huelga (art. 28.2). El derecho a la propiedad privada y a la herencia, en cambio, es el artículo 33, que ya pertenece a la sección 2.ª («De los derechos y deberes de los ciudadanos», artículos 30 a 38): no es, pues, un derecho fundamental de la sección primera y no goza de sus garantías reforzadas, como el recurso de amparo. La respuesta es la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 33.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, capítol II, rúbrica de la secció 2a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, capítol II, rúbrica de la secció 1a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 28.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19501,14 +21235,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 11.2 de la Llei 7/1985 enumera exactament tres elements del municipi: el territori, la població i l’organització. Les opcions a), b) i c) en recullen un cadascuna, i totes tres són certes; per això la resposta correcta és la d), «totes les respostes anteriors són correctes». Cap element de la llista legal queda fora de les opcions ni cap opció afegeix res que no hi sigui. És la mateixa enumeració que el tribunal ha preguntat altres anys en positiu («quins són els elements del municipi?»): aquí simplement es fragmenta en tres opcions parcials i es demana reconèixer que la resposta completa és la suma de les tres.',
+      es: 'El artículo 11.2 de la Ley 7/1985 enumera exactamente tres elementos del municipio: el territorio, la población y la organización. Las opciones a), b) y c) recogen uno cada una, y las tres son ciertas; por eso la respuesta correcta es la d), «todas las respuestas anteriores son correctas». Ningún elemento de la lista legal queda fuera de las opciones ni ninguna opción añade nada que no esté. Es la misma enumeración que el tribunal ha preguntado otros años en positivo («¿cuáles son los elementos del municipio?»): aquí simplemente se fragmenta en tres opciones parciales y se pide reconocer que la respuesta completa es la suma de las tres.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 11.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19618,14 +21358,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres opcions substantives reprodueixen les tres lletres de l’article 164.1 de l’Estatut: la a) és la lletra a («La planificació i la regulació del sistema de seguretat pública de Catalunya i l’ordenació de les policies locals»), la b) és la lletra b («La creació i l’organització de la Policia de la Generalitat - Mossos d’Esquadra») i la c) és la lletra c («El control i la vigilància del trànsit»). Totes tres corresponen a la Generalitat, en matèria de seguretat pública, d’acord amb el que disposa la legislació estatal, tal com diu el mateix encapçalament de l’apartat que la pregunta reprodueix. La resposta correcta és, doncs, la d): totes les respostes anteriors són correctes, i marcar-ne només una deixaria fora dues atribucions igualment literals.',
+      es: 'Las tres opciones sustantivas reproducen las tres letras del artículo 164.1 del Estatuto: la a) es la letra a («la planificación y la regulación del sistema de seguridad pública de Cataluña y la ordenación de las policías locales»), la b) es la letra b («la creación y la organización de la Policía de la Generalitat - Mossos d’Esquadra») y la c) es la letra c («el control y la vigilancia del tráfico»). Las tres corresponden a la Generalitat, en materia de seguridad pública, de acuerdo con lo que dispone la legislación estatal, tal como dice el propio encabezamiento del apartado que la pregunta reproduce. La respuesta correcta es, pues, la d): todas las respuestas anteriores son correctas, y marcar solo una dejaría fuera dos atribuciones igualmente literales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19657,14 +21415,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1.d) diu que l\'escala bàsica «comprèn les categories de caporal i d\'agent»: l\'opció b) és l\'única que recull totes dues. La a) falla perquè no és «únicament» la categoria d\'agent: el caporal també pertany a l\'escala bàsica. La c) barreja el caporal amb el sergent, però el sergent pertany a l\'escala intermèdia, juntament amb el sots-inspector, com diu la lletra c) del mateix apartat. I la d) inventa una «categoria d\'interí» que la Llei no recull enlloc: la interinitat és un règim d\'ocupació del funcionari, no una categoria de l\'estructura d\'escales de l\'article 24.',
+      es: 'El artículo 24.1.d) dice que la escala básica «comprende las categorías de cabo y de agente»: la opción b) es la única que recoge ambas. La a) falla porque no es «únicamente» la categoría de agente: el cabo también pertenece a la escala básica. La c) mezcla al cabo con el sargento, pero el sargento pertenece a la escala intermedia, junto con el subinspector, como dice la letra c) del mismo apartado. Y la d) inventa una «categoría de interino» que la Ley no recoge en ningún sitio: la interinidad es un régimen de empleo del funcionario, no una categoría de la estructura de escalas del artículo 24.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19696,14 +21466,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Segons el quadre de l’article 4.2 del Reglament general de conductors, el permís A1 autoritza a conduir motocicletes amb una cilindrada màxima de 125 cm³, una potència màxima d’11 kW i una relació potència/pes màxima de 0,1 kW/kg, i tricicles de motor de fins a 15 kW. Això desmenteix clarament la b) —els 45 kW no corresponen a cap permís; l’A2 arriba a 35 kW i 0,2 kW/kg—, la c) que en depèn, i la d), perquè l’A1 empara tricicles fins a 15 kW, no de potència superior. La a) és l’única defensable i coincideix amb el límit de 125 cm³, però la seva redacció («motocicletes lleugeres», «amb sidecar o sense») ve de la terminologia antiga i omet els límits d’11 kW i 0,1 kW/kg del text vigent, per això el suport és parcial.',
+      es: 'Según el cuadro del artículo 4.2 del Reglamento general de conductores, el permiso A1 autoriza a conducir motocicletas con una cilindrada máxima de 125 cm³, una potencia máxima de 11 kW y una relación potencia/peso máxima de 0,1 kW/kg, y triciclos de motor de hasta 15 kW. Esto desmiente claramente la b) —los 45 kW no corresponden a ningún permiso; el A2 llega a 35 kW y 0,2 kW/kg—, la c) que depende de ella, y la d), porque el A1 ampara triciclos de hasta 15 kW, no de potencia superior. La a) es la única defendible y coincide con el límite de 125 cm³, pero su redacción («motocicletas ligeras», «con sidecar o sin él») procede de la terminología antigua y omite los límites de 11 kW y 0,1 kW/kg del texto vigente, por eso el apoyo es parcial.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 16, pàgina 5 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe A1)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19735,14 +21511,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 104.1 diu que les forces i cossos de seguretat, sota la dependència del Govern, tenen com a missió «protegir el lliure exercici dels drets i llibertats i garantir la seguretat ciutadana». De les opcions, l\'única que apareix al precepte és la b): la protecció dels drets i llibertats dels ciutadans, que a més encapçala la frase i és el tret amb què la Constitució de 1978 va desplaçar la vella clàusula d\'ordre públic. Ni «l\'ordre públic» (a), ni «l\'obediència institucional» (c), ni «l\'aplicació de les lleis i dels reglaments» (d) no hi surten. L\'opció d), a més, arrossega enganxat un fragment de les bases de la convocatòria que no forma part de cap resposta.',
+      es: 'El artículo 104.1 dice que las fuerzas y cuerpos de seguridad, bajo la dependencia del Gobierno, tienen como misión «proteger el libre ejercicio de los derechos y libertades y garantizar la seguridad ciudadana». De las opciones, la única que aparece en el precepto es la b): la protección de los derechos y libertades de los ciudadanos, que además encabeza la frase y es el rasgo con el que la Constitución de 1978 desplazó la vieja cláusula de orden público. Ni «el orden público» (a), ni «la obediencia institucional» (c), ni «la aplicación de las leyes y de los reglamentos» (d) figuran en él. La opción d), además, arrastra pegado un fragmento de las bases de la convocatoria que no forma parte de ninguna respuesta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 17, pàgina 5 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 104.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21412,14 +23194,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 167.1 estableix la regla general de la reforma constitucional: «els projectes de reforma constitucional hauran de ser aprovats per una majoria de tres cinquens de cada una de les Cambres», que és l\'opció a). Les altres opcions barregen peces reals del procediment en llocs equivocats: la majoria de dos terços de cada cambra (b) és la del procediment agreujat de l\'article 168, reservat a la revisió total o a la que afecti el títol preliminar, la secció primera del capítol II del títol I o el títol II; i la combinació de dos terços del Congrés amb la majoria absoluta del Senat (d) és la via subsidiària de l\'article 167.2, quan no hi ha acord entre cambres. La c) inventa una aprovació només pel Congrés que cap dels dos articles no preveu.',
+      es: 'El artículo 167.1 establece la regla general de la reforma constitucional: «los proyectos de reforma constitucional deberán ser aprobados por una mayoría de tres quintos de cada una de las Cámaras», que es la opción a). Las demás opciones mezclan piezas reales del procedimiento en lugares equivocados: la mayoría de dos tercios de cada cámara (b) es la del procedimiento agravado del artículo 168, reservado a la revisión total o a la que afecte al título preliminar, la sección primera del capítulo II del título I o el título II; y la combinación de dos tercios del Congreso con la mayoría absoluta del Senado (d) es la vía subsidiaria del artículo 167.2, cuando no hay acuerdo entre cámaras. La c) inventa una aprobación solo por el Congreso que ninguno de los dos artículos prevé.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 167.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 167.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 168.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21451,14 +23251,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La secció 1a del capítol II del títol I va de l\'article 15 al 29, i les opcions a), b) i d) hi tenen article propi: la vida i la integritat física i moral (art. 15), l\'honor, la intimitat i la pròpia imatge (art. 18.1) i la reunió pacífica i sense armes (art. 21.1). El dret a la propietat privada i a l\'herència és l\'article 33 i pertany a la secció 2a, «Dels drets i deures dels ciutadans»: queda fora del bloc de drets fonamentals en sentit estricte i de les seves garanties reforçades (procediment preferent i sumari i recurs d\'empara, art. 53.2). La que «no és» de la secció primera és, doncs, la c).',
+      es: 'La sección 1.ª del capítulo II del título I va del artículo 15 al 29, y las opciones a), b) y d) tienen artículo propio en ella: la vida y la integridad física y moral (art. 15), el honor, la intimidad y la propia imagen (art. 18.1) y la reunión pacífica y sin armas (art. 21.1). El derecho a la propiedad privada y a la herencia es el artículo 33 y pertenece a la sección 2.ª, «De los derechos y deberes de los ciudadanos»: queda fuera del bloque de derechos fundamentales en sentido estricto y de sus garantías reforzadas (procedimiento preferente y sumario y recurso de amparo, art. 53.2). La que «no es» de la sección primera es, pues, la c).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 33.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, capítol II, rúbrica de la secció 2a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 15',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 18.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 21.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21490,14 +23320,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La tramitació recollida a l’edició oficial identifica la norma: «Llei orgànica 6/2006, de reforma de l’Estatut d’autonomia de Catalunya», sancionada el 19 de juliol de 2006 i publicada al DOGC i al BOE el 20.07.2006. L’opció d és, doncs, la correcta. La a) apunta a l’Estatut anterior, el del 1979: la disposició derogatòria de l’Estatut vigent deroga expressament la Llei orgànica 4/1979, del 18 de desembre, de manera que aquella norma ja no pot recollir l’Estatut vigent. La b) encerta l’any però falla el rang: una «llei ordinària» no pot contenir un estatut d’autonomia, que exigeix llei orgànica. I la c) s’equivoca de número: la llei de l’Estatut és la 6/2006, no la 8/2006.',
+      es: 'La tramitación recogida en la edición oficial identifica la norma: «Ley Orgánica 6/2006, de reforma del Estatuto de autonomía de Cataluña», sancionada el 19 de julio de 2006 y publicada en el DOGC y en el BOE el 20.07.2006. La opción d es, pues, la correcta. La a) apunta al Estatuto anterior, el de 1979: la disposición derogatoria del Estatuto vigente deroga expresamente la Ley Orgánica 4/1979, de 18 de diciembre, de manera que aquella norma ya no puede recoger el Estatuto vigente. La b) acierta el año pero falla el rango: una «ley ordinaria» no puede contener un estatuto de autonomía, que exige ley orgánica. Y la c) se equivoca de número: la ley del Estatuto es la 6/2006, no la 8/2006.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'portada i tramitació (pàg. 5)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'tramitació (pàg. 5), publicació',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'disposició derogatòria',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21529,14 +23377,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció c) reprodueix l\'article 138.2: les diferències entre els estatuts de les comunitats autònomes «no podran implicar, en cap cas, privilegis econòmics o socials». Les altres tres cauen amb el mateix text a la mà: la a) afegeix les «comarques» a la llista de l\'article 137, que només anomena municipis, províncies i comunitats autònomes; la b) diu que l\'Estat vetlla per un equilibri econòmic «adequat i injust», quan l\'article 138.1 diu «adequat i just» —un sol adjectiu capgirat la fa falsa—; i la d) contradiu l\'article 139.1, segons el qual tots els espanyols tenen els mateixos drets i obligacions a qualsevol part del territori de l\'Estat, no els de la comunitat d\'on provenen.',
+      es: 'La opción c) reproduce el artículo 138.2: las diferencias entre los estatutos de las comunidades autónomas «no podrán implicar, en ningún caso, privilegios económicos o sociales». Las otras tres caen con el mismo texto en la mano: la a) añade las «comarcas» a la lista del artículo 137, que solo nombra municipios, provincias y comunidades autónomas; la b) dice que el Estado vela por un equilibrio económico «adecuado e injusto», cuando el artículo 138.1 dice «adecuado y justo» —un solo adjetivo invertido la hace falsa—; y la d) contradice el artículo 139.1, según el cual todos los españoles tienen los mismos derechos y obligaciones en cualquier parte del territorio del Estado, no los de la comunidad de la que provienen.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 4, pàgina 2 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 138.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 137',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 138.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 139.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21685,14 +23557,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Tres de les quatre opcions figuren literalment a la llista d’atribucions de l’alcalde de l’article 21.1 de la Llei 7/1985: dictar bans és la lletra e), dirigir, inspeccionar i impulsar els serveis i les obres municipals és la lletra d), i exercir la prefectura de la Policia Municipal és la lletra i). En canvi, l’aprovació de la plantilla de personal no hi és: l’article 22.2.i l’atribueix «en tot cas» al Ple, juntament amb la relació de llocs de treball. Per això la resposta correcta és c). L’única intervenció de l’alcalde en matèria de personal que s’hi assembla és aprovar l’oferta d’ocupació pública (art. 21.1.g), però sempre «d’acord amb el pressupost i la plantilla aprovats pel Ple», cosa que confirma de qui és la plantilla.',
+      es: 'Tres de las cuatro opciones figuran literalmente en la lista de atribuciones del alcalde del artículo 21.1 de la Ley 7/1985: dictar bandos es la letra e), dirigir, inspeccionar e impulsar los servicios y obras municipales es la letra d), y ejercer la jefatura de la Policía Municipal es la letra i). En cambio, la aprobación de la plantilla de personal no está: el artículo 22.2.i la atribuye «en todo caso» al Pleno, junto con la relación de puestos de trabajo. Por eso la respuesta correcta es c). La única intervención del alcalde en materia de personal que se le parece es aprobar la oferta de empleo público (art. 21.1.g), pero siempre «de acuerdo con el Presupuesto y la plantilla aprobados por el Pleno», lo que confirma de quién es la plantilla.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 8, pàgina 3 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.i',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.i',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21724,14 +23620,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 11.2 de la Llei 7/1985 fixa una enumeració tancada de tres elements: «són elements del municipi el territori, la població i l’organització». L’opció c) la reprodueix exactament. La b) i la d) són incompletes perquè n’ometen un (el territori i la població, respectivament). La trampa és l’opció a), que afegeix «el terme municipal» com si fos un quart element: el terme municipal no és un element addicional, sinó la concreció del territori —l’article 12.1 el defineix com «el territori en què l’ajuntament exerceix les seves competències»—, de manera que enumerar-lo al costat del territori és duplicar el mateix element. La resposta correcta és, doncs, la c).',
+      es: 'El artículo 11.2 de la Ley 7/1985 fija una enumeración cerrada de tres elementos: «son elementos del Municipio el territorio, la población y la organización». La opción c) la reproduce exactamente. La b) y la d) son incompletas porque omiten uno (el territorio y la población, respectivamente). La trampa es la opción a), que añade «el término municipal» como si fuera un cuarto elemento: el término municipal no es un elemento adicional, sino la concreción del territorio —el artículo 12.1 lo define como «el territorio en que el ayuntamiento ejerce sus competencias»—, de modo que enumerarlo junto al territorio es duplicar el mismo elemento. La respuesta correcta es, pues, la c).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 11.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21763,14 +23665,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 8.2 del TREBEP (RDL 5/2015) diu que els empleats públics es classifiquen en quatre categories: funcionaris de carrera, funcionaris interins, personal laboral (fix, per temps indefinit o temporal) i personal eventual. L\'opció c) reprodueix exactament aquesta llista de quatre elements, amb el matís complet sobre el personal laboral. Les altres opcions l\'alteren: la a) omet el personal laboral; la b) hi afegeix un «personal administratiu» que la llei no esmenta enlloc; la d) omet el personal eventual. Com que l\'article només reconeix aquestes quatre categories i cap altra, únicament l\'opció c) és fidel al text legal.',
+      es: 'El artículo 8.2 del TREBEP (RDL 5/2015) dice que los empleados públicos se clasifican en cuatro categorías: funcionarios de carrera, funcionarios interinos, personal laboral (fijo, por tiempo indefinido o temporal) y personal eventual. La opción c) reproduce exactamente esta lista de cuatro elementos, con el matiz completo sobre el personal laboral. Las demás opciones la alteran: la a) omite el personal laboral; la b) añade un «personal administrativo» que la ley no menciona en ningún sitio; la d) omite el personal eventual. Como el artículo solo reconoce estas cuatro categorías y ninguna más, únicamente la opción c) es fiel al texto legal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 8.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 8.2.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 8.2.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 8.2.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 8.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21802,14 +23734,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 12.1 del TREBEP defineix el personal eventual com aquell que, «en virtud de nombramiento y con carácter no permanente, sólo realiza funciones expresamente calificadas como de confianza o asesoramiento especial». Aquesta definició coincideix literalment amb l\'enunciat. Els funcionaris de carrera (art. 9) tenen relació estatutària permanent; els funcionaris interins (art. 10) cobreixen necessitats temporals de places pròpies de carrera; i el personal laboral (art. 11) es vincula per contracte de treball. Cap d\'aquests tres perfils es defineix per exercir funcions «de confiança o assessorament especial» amb caràcter no permanent: aquest tret és exclusiu del personal eventual, opció b).',
+      es: 'El artículo 12.1 del TREBEP define al personal eventual como aquel que, «en virtud de nombramiento y con carácter no permanente, sólo realiza funciones expresamente calificadas como de confianza o asesoramiento especial». Esta definición coincide literalmente con el enunciado. Los funcionarios de carrera (art. 9) tienen relación estatutaria permanente; los funcionarios interinos (art. 10) cubren necesidades temporales de plazas propias de carrera; y el personal laboral (art. 11) se vincula por contrato de trabajo. Ninguno de estos tres perfiles se define por ejercer funciones «de confianza o asesoramiento especial» con carácter no permanente: ese rasgo es exclusivo del personal eventual, opción b).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 11, pàgina 4 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 12.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21841,14 +23779,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 8.1, segon paràgraf, de la LOFCS diu que quan un jutge d\'instrucció apreciï indicis racionals de criminalitat en la conducta de membres de les forces i cossos de seguretat, «suspenderán sus actuaciones y las remitirán a la Audiencia Provincial correspondiente», exactament el que diu l\'opció a). El text conté una nota que adverteix que la STC 55/1990 va declarar nul·la la part del mateix paràgraf que atribuïa a l\'Audiència la competència per «seguir la instrucción y ordenar... el procesamiento», però aquesta nul·litat no afecta el deure previ de suspendre i remetre, que continua vigent. Les opcions b), c) i d) afegeixen elements que el text no conté: negar la suspensió, imposar una mesura cautelar automàtica o condicionar-ho al tipus de delicte.',
+      es: 'El artículo 8.1, segundo párrafo, de la LOFCS dice que cuando un juez de instrucción aprecie indicios racionales de criminalidad en la conducta de miembros de las fuerzas y cuerpos de seguridad, «suspenderán sus actuaciones y las remitirán a la Audiencia Provincial correspondiente», exactamente lo que dice la opción a). El texto contiene una nota que advierte que la STC 55/1990 declaró nula la parte del mismo párrafo que atribuía a la Audiencia la competencia para «seguir la instrucción y ordenar... el procesamiento», pero esa nulidad no afecta al deber previo de suspender y remitir, que sigue vigente. Las opciones b), c) y d) añaden elementos que el texto no contiene: negar la suspensión, imponer una medida cautelar automática o condicionarlo al tipo de delito.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 12, pàgina 4 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 8.1, paràgraf 2n',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 8.1, nota del legislador (STC 55/1990)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21880,14 +23830,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El text de la llei situa la rúbrica «Principios básicos de actuación» del Capítol II immediatament abans de l\'«Artículo quinto», confirmant que és l\'article 5 (opció a) el que recull aquests principis. Els altres números que ofereixen les opcions (15, 25, 10) corresponen a matèries diferents en aquesta mateixa llei: per exemple, l\'article 10 regula les funcions del CNP i la Guàrdia Civil, allunyat dels principis d\'actuació. Cap d\'aquests altres articles porta la rúbrica «Principios básicos de actuación», que apareix una única vegada al text i precedeix exactament l\'article cinquè. Per tant, només la lletra a) coincideix amb l\'estructura real de la norma.',
+      es: 'El texto de la ley sitúa la rúbrica «Principios básicos de actuación» del Capítulo II inmediatamente antes del «Artículo quinto», confirmando que es el artículo 5 (opción a) el que recoge estos principios. Los otros números que ofrecen las opciones (15, 25, 10) corresponden a materias distintas en esta misma ley: por ejemplo, el artículo 10 regula las funciones del CNP y la Guardia Civil, alejado de los principios de actuación. Ninguno de estos otros artículos lleva la rúbrica «Principios básicos de actuación», que aparece una única vez en el texto y precede exactamente al artículo quinto. Por tanto, solo la letra a) coincide con la estructura real de la norma.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'capítol II, encapçalament',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5, encapçalament',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21919,14 +23881,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9 de la Llei 4/2003 sosté l\'opció d): la junta la presideix l\'alcalde o alcaldessa (apartat 2) i, segons l\'apartat 6, «l\'alcalde o alcaldessa pot delegar excepcionalment la presidència de les sessions de la junta local de seguretat al regidor o regidora de seguretat ciutadana». Cap altre supòsit de substitució apareix al precepte: ni el cap de la policia de la Generalitat-mossos d\'esquadra (opció a) ni el cap de la policia municipal (opció b) poden assumir la presidència, i tampoc no hi ha cap previsió que permeti al conseller d\'Interior presidir-la «excepcionalment» (opció c). La delegació en el regidor delegat de seguretat és, doncs, l\'única que la Llei preveu, i la redacció continua vigent.',
+      es: 'El artículo 9 de la Ley 4/2003 sostiene la opción d): la junta la preside el alcalde o alcaldesa (apartado 2) y, según el apartado 6, «el alcalde o alcaldesa puede delegar excepcionalmente la presidencia de las sesiones de la junta local de seguridad en el concejal o concejala de seguridad ciudadana». Ningún otro supuesto de sustitución aparece en el precepto: ni el jefe de la policía de la Generalitat-mossos d\'esquadra (opción a) ni el jefe de la policía municipal (opción b) pueden asumir la presidencia, y tampoco hay previsión alguna que permita al consejero de Interior presidirla «excepcionalmente» (opción c). La delegación en el concejal delegado de seguridad es, pues, la única que la Ley prevé, y la redacción sigue vigente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 14, pàgina 5 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.6',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21958,14 +23932,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La proposició que decideix la pregunta és a l\'article 3.3 de la Llei 4/2003: «La Junta de Seguretat de Catalunya és l\'òrgan superior de coordinació entre la Policia de la Generalitat i les forces i cossos de seguretat de l\'Estat, d\'acord amb l\'article 13 de l\'Estatut d\'autonomia», i l\'article 5.6 ho reitera. L\'enunciat cita «l\'art 13», que dins la Llei regula la reglamentació de les juntes: la referència que quadra és l\'article 13 de l\'Estatut d\'autonomia, esmentat dins el mateix article 3.3, però el contingut preguntat és inequívoc. La b) inventa una «Junta Local de Seguretat de Catalunya», la c) una «Comissió de Seguretat de Catalunya» inexistent, i la d) confon el Consell de Seguretat de Catalunya, que és l\'òrgan consultiu i de participació superior (art. 6.1), no el de coordinació amb l\'Estat.',
+      es: 'La proposición que decide la pregunta está en el artículo 3.3 de la Ley 4/2003: «La Junta de Seguridad de Cataluña es el órgano superior de coordinación entre la Policía de la Generalitat y las fuerzas y cuerpos de seguridad del Estado, de acuerdo con el artículo 13 del Estatuto de autonomía», y el artículo 5.6 lo reitera. El enunciado cita «el art. 13», que dentro de la Ley regula la reglamentación de las juntas: la referencia que encaja es el artículo 13 del Estatuto de autonomía, mencionado dentro del propio artículo 3.3, pero el contenido preguntado es inequívoco. La b) inventa una «Junta Local de Seguridad de Cataluña», la c) una «Comisión de Seguridad de Cataluña» inexistente, y la d) confunde el Consejo de Seguridad de Cataluña, que es el órgano consultivo y de participación superior (art. 6.1), no el de coordinación con el Estado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 15, pàgina 5 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 3.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 5.6',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22075,14 +24067,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El dia de l\'examen (2019) regia la redacció original de l\'article 58.2: la llista d\'afectacions del text consolidat només recull una modificació d\'aquest apartat, la de l\'article 45 de la Llei 11/2026, de 9 de juliol, vigent des del 14 de juliol de 2026. La plantilla (un mes, a comptar de la data de la comissió de la falta) responia a aquell text anterior, que a més computava el termini des de la data de comissió i no des de l\'endemà, cosa que descartava les opcions a i c. Ara bé, la redacció vigent diu que les faltes lleus prescriuen «al cap de tres mesos, a comptar de la data de la comissió de la falta»: avui cap de les quatre opcions recull el termini correcte.',
+      es: 'El día del examen (2019) regía la redacción original del artículo 58.2: la lista de afectaciones del texto consolidado solo recoge una modificación de este apartado, la del artículo 45 de la Ley 11/2026, de 9 de julio, vigente desde el 14 de julio de 2026. La plantilla (un mes, a contar desde la fecha de comisión de la falta) respondía a aquel texto anterior, que además computaba el plazo desde la fecha de comisión y no desde el día siguiente, lo que descartaba las opciones a y c. Ahora bien, la redacción vigente dice que las faltas leves prescriben a los tres meses, a contar desde la fecha de comisión de la falta: hoy ninguna de las cuatro opciones recoge el plazo correcto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 18, pàgina 6 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.2 (redacció vigent)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'afectacions passives del text consolidat',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'capçalera del text consolidat',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22114,14 +24124,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 58.3 diu que les sancions imposades per faltes greus prescriuen al cap de dos anys, «a comptar de la data de notificació de les sancions». L\'opció c encerta les dues coses: el termini (dos anys, no un) i el dia inicial del còmput (la data de la notificació, no l\'endemà). Les opcions a i b fallen el termini, i la d falla el còmput, perquè la llei no parla de l\'endemà de la notificació. La llista d\'afectacions del text consolidat confirma que l\'única reforma de l\'article 58 (la de la Llei 11/2026) va afectar només l\'apartat 2, de manera que aquest apartat 3 segueix igual i la resposta continua sent correcta avui.',
+      es: 'El artículo 58.3 dice que las sanciones impuestas por faltas graves prescriben a los dos años, a contar desde la fecha de notificación de las sanciones. La opción c acierta las dos cosas: el plazo (dos años, no uno) y el día inicial del cómputo (la fecha de la notificación, no el día siguiente). Las opciones a y b fallan el plazo, y la d falla el cómputo, porque la ley no habla del día siguiente a la notificación. La lista de afectaciones del texto consolidado confirma que la única reforma del artículo 58 (la de la Ley 11/2026) afectó solo al apartado 2, de manera que este apartado 3 sigue igual y la respuesta continúa siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 19, pàgina 6 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22153,14 +24169,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 96 del Codi Penal classifica les mesures de seguretat en privatives i no privatives de llibertat. La llista de privatives (art. 96.2) només en té tres: internament en centre psiquiàtric, en centre de deshabituació i en centre educatiu especial. Aquesta tercera és exactament l\'opció d), la bona. Les altres tres opcions figuren totes, amb nom i cognoms, a la llista de mesures no privatives de llibertat de l\'article 96.3: la llibertat vigilada n\'és la 3a, l\'expulsió del territori nacional d\'estrangers no residents legalment a Espanya n\'és la 2a, i la privació del dret a la tinença i portament d\'armes n\'és la 6a. N\'hi ha prou de confrontar les dues llistes per resoldre la pregunta.',
+      es: 'El artículo 96 del Código Penal clasifica las medidas de seguridad en privativas y no privativas de libertad. La lista de privativas (art. 96.2) solo tiene tres: internamiento en centro psiquiátrico, en centro de deshabituación y en centro educativo especial. Esta tercera es exactamente la opción d), la correcta. Las otras tres opciones figuran todas, con nombre y apellidos, en la lista de medidas no privativas de libertad del artículo 96.3: la libertad vigilada es la 3.ª, la expulsión del territorio nacional de extranjeros no residentes legalmente en España es la 2.ª, y la privación del derecho a la tenencia y porte de armas es la 6.ª. Basta confrontar ambas listas para resolver la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 20, pàgina 7 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 96.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 96.3, 1a a 3a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 96.3, 6a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22192,14 +24226,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 139.1 del Codi Penal enumera taxativament les circumstàncies que converteixen la mort d\'una persona en assassinat: la traïdoria (alevosía), el preu, recompensa o promesa, l\'acarnissament augmentant deliberadament i inhumanament el dolor de l\'ofès, i matar per facilitar un altre delicte o evitar que es descobreixi. Les opcions a), b) i d) reprodueixen tres d\'aquestes circumstàncies, de manera que qui mata concorrent-hi sí que és reu d\'assassinat. La imprudència o accidentalitat de l\'opció c) no figura a la llista: l\'assassinat és necessàriament dolós, i qui causa la mort d\'un altre per imprudència greu respon com a reu d\'homicidi imprudent segons l\'article 142.1, mai com a assassí. Per això la resposta és la c).',
+      es: 'El artículo 139.1 del Código Penal enumera taxativamente las circunstancias que convierten la muerte de una persona en asesinato: la alevosía, el precio, recompensa o promesa, el ensañamiento aumentando deliberada e inhumanamente el dolor del ofendido, y matar para facilitar otro delito o evitar que se descubra. Las opciones a), b) y d) reproducen tres de esas circunstancias, de modo que quien mata concurriendo alguna de ellas sí es reo de asesinato. La imprudencia o accidentalidad de la opción c) no figura en la lista: el asesinato es necesariamente doloso, y quien causa la muerte de otro por imprudencia grave responde como reo de homicidio imprudente según el artículo 142.1, nunca como asesino. Por eso la respuesta es la c).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 21, pàgina 7 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 139.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 142.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22231,14 +24277,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La instrucció de les causes correspon, segons l\'art. 14.2 LECrim, a l\'òrgan d\'instrucció del partit on s\'ha comès el delicte: el jutjat d\'instrucció en la terminologia de 2019 (avui, secció d\'instrucció del tribunal d\'instància). D\'aquí la resposta d). El jutjat penal (a) fa el coneixement i decisió, no la instrucció (art. 14.3). El jutjat de violència sobre la dona (c) queda descartat dues vegades: l\'art. 14.5.g només li atribueix la instrucció del trencament de l\'art. 468 CP quan la persona ofesa és l\'esposa o dona amb relació anàloga, descendents o menors convivents —els pares de Federico no hi són—, i, fins i tot quan és competent, l\'art. 15 bis fixa la competència pel domicili de la víctima, mai pel lloc de la detenció. El descart del jutjat de menors (Federico té 25 anys) depèn de la LO 5/2000, absent de les fonts, i la redacció exacta de 2019 tampoc no s\'hi pot contrastar: per això el suport és parcial.',
+      es: 'La instrucción de las causas corresponde, según el art. 14.2 LECrim, al órgano de instrucción del partido donde se cometió el delito: el juzgado de instrucción en la terminología de 2019 (hoy, sección de instrucción del tribunal de instancia). De ahí la respuesta d). El juzgado de lo penal (a) hace el conocimiento y fallo, no la instrucción (art. 14.3). El juzgado de violencia sobre la mujer (c) queda descartado dos veces: el art. 14.5.g solo le atribuye la instrucción del quebrantamiento del art. 468 CP cuando la persona ofendida es la esposa o mujer con relación análoga, descendientes o menores convivientes —los padres de Federico no están—, y, aun cuando es competente, el art. 15 bis fija la competencia por el domicilio de la víctima, nunca por el lugar de la detención. El descarte del juzgado de menores (Federico tiene 25 años) depende de la LO 5/2000, ausente de las fuentes, y la redacción exacta de 2019 tampoco puede contrastarse: por eso el apoyo es parcial.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 22, pàgina 7 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 14.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 14.5.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 15 bis',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22309,14 +24373,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 16.1 de la LO 5/2000 atribueix al Ministeri Fiscal la instrucció dels procediments pels fets a què es refereix l\'article 1, que és precisament el que exigeix responsabilitat a les persones menors: per això l\'opció d) és la correcta. Les altres tres opcions atribueixen la instrucció a òrgans judicials que la llei no esmenta per a aquesta funció: ni el jutjat d\'instrucció (a), ni un inexistent «jutjat d\'instrucció de menors» (b), ni el jutjat de guàrdia (c). En el procés penal de menors la instrucció és fiscal, no judicial; el Jutge de Menors intervé després, per jutjar els fets i fer executar les sentències (article 2.1), i per a les garanties que la llei li reserva expressament.',
+      es: 'El artículo 16.1 de la LO 5/2000 atribuye al Ministerio Fiscal la instrucción de los procedimientos por los hechos a los que se refiere el artículo 1, que es precisamente el que exige responsabilidad a las personas menores: por eso la opción d) es la correcta. Las otras tres opciones atribuyen la instrucción a órganos judiciales que la ley no menciona para esta función: ni el juzgado de instrucción (a), ni un inexistente «juzgado de instrucción de menores» (b), ni el juzgado de guardia (c). En el proceso penal de menores la instrucción es fiscal, no judicial; el Juez de Menores interviene después, para enjuiciar los hechos y hacer ejecutar las sentencias (artículo 2.1), y para las garantías que la ley le reserva expresamente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 24, pàgina 8 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 16.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22348,14 +24424,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció a) reprodueix la primera part de l\'article 17.4 de la LO 5/2000: la detenció d\'un menor per funcionaris de policia no pot durar més temps de l\'estrictament necessari per fer les investigacions tendents a l\'aclariment dels fets. És l\'única opció que no contradiu el text, perquè el termini màxim que l\'article afegeix és de vint-i-quatre hores, dins del qual el menor ha de ser posat en llibertat o a disposició del Ministeri Fiscal. Les opcions b) i c) substitueixen aquest límit per un de 48 hores que la llei no aplica a la detenció policial: les 48 hores de l\'article 17.5 són el termini del Ministeri Fiscal per resoldre un cop té el detingut a disposició. La d) inventa un termini de 72 hores que no apareix a la llei del menor.',
+      es: 'La opción a) reproduce la primera parte del artículo 17.4 de la LO 5/2000: la detención de un menor por funcionarios de policía no podrá durar más tiempo del estrictamente necesario para la realización de las averiguaciones tendentes al esclarecimiento de los hechos. Es la única opción que no contradice el texto, porque el plazo máximo que el artículo añade es de veinticuatro horas, dentro del cual el menor debe ser puesto en libertad o a disposición del Ministerio Fiscal. Las opciones b) y c) sustituyen ese límite por uno de 48 horas que la ley no aplica a la detención policial: las 48 horas del artículo 17.5 son el plazo del Ministerio Fiscal para resolver una vez tiene al detenido a disposición. La d) inventa un plazo de 72 horas que no aparece en la ley del menor.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 25, pàgina 9 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.4',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 17.5',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22387,14 +24475,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'art. 520.1 LECrim —en els mateixos termes que l\'art. 17.2 CE— fixa una regla amb dos elements inseparables: la detenció preventiva no pot durar més del temps estrictament necessari per a les indagacions d\'esclariment dels fets i, en tot cas, té un màxim de setanta-dues hores. L\'opció c) reprodueix exactament aquesta doble regla. La a) es queda amb el màxim com si fos una durada fixa («durarà 72 hores»), quan el límit temporal general és el temps estrictament necessari; la b) afirma que pot allargar-se més enllà de les 72 hores si convé a la investigació, justament el contrari del «en tot cas» del precepte; i la d) inventa un màxim de 48 hores que no apareix ni a la LECrim ni a la Constitució.',
+      es: 'El art. 520.1 LECrim —en los mismos términos que el art. 17.2 CE— fija una regla con dos elementos inseparables: la detención preventiva no puede durar más del tiempo estrictamente necesario para las averiguaciones de esclarecimiento de los hechos y, en todo caso, tiene un máximo de setenta y dos horas. La opción c) reproduce exactamente esa doble regla. La a) se queda con el máximo como si fuera una duración fija («durará 72 horas»), cuando el límite general es el tiempo estrictamente necesario; la b) afirma que puede alargarse más allá de las 72 horas si conviene a la investigación, justo lo contrario del «en todo caso» del precepto; y la d) inventa un máximo de 48 horas que no aparece ni en la LECrim ni en la Constitución.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 26, pàgina 9 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.1, paràgraf segon',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22426,14 +24526,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Tres de les afirmacions surten literalment de l\'article 544 ter LECrim introduït per la Llei 27/2003: l\'ordre es pot fer valer davant qualsevol autoritat i administració pública (apartat 5, opció a), implica el deure d\'informar permanentment la víctima sobre la situació processal de l\'imputat (apartat 9, opció c) i es pot sol·licitar directament davant les forces i cossos de seguretat, entre altres instàncies (apartat 3, opció d). La falsa és la b): l\'apartat 7 fixa una vigència temporal de 30 dies per a les mesures civils, però no pas improrrogable, perquè si dins d\'aquest termini la víctima incoa un procés de família les mesures romanen en vigor durant els trenta dies següents a la presentació de la demanda, fins que el jutge civil les ratifiqui, modifiqui o deixi sense efecte.',
+      es: 'Tres de las afirmaciones salen literalmente del artículo 544 ter LECrim introducido por la Ley 27/2003: la orden puede hacerse valer ante cualquier autoridad y Administración pública (apartado 5, opción a), implica el deber de informar permanentemente a la víctima sobre la situación procesal del imputado (apartado 9, opción c) y puede solicitarse directamente ante las fuerzas y cuerpos de seguridad, entre otras instancias (apartado 3, opción d). La falsa es la b): el apartado 7 fija una vigencia temporal de 30 días para las medidas civiles, pero no improrrogable, porque si dentro de ese plazo la víctima incoa un proceso de familia las medidas permanecen en vigor durante los treinta días siguientes a la presentación de la demanda, hasta que el juez civil las ratifique, modifique o deje sin efecto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 27, pàgina 10 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 7',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 5',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 9',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22465,14 +24589,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La plantilla del tribunal va marcar la b), que situa la inscripció de l\'ordre de protecció en un «Registre Provincial per a la protecció de les víctimes de violència domèstica». Aquest registre no existeix en cap norma. L\'apartat 10 de l\'article 544 ter LECrim, tal com el va redactar la Llei 27/2003 —en vigor des del 2 d\'agost de 2003 i mai modificada, com consta al mateix text consolidat—, ordena inscriure l\'ordre al Registre Central per a la Protecció de les Víctimes de la Violència Domèstica, que és paraula per paraula l\'opció a). La redacció vigent de la LECrim ho confirma, amb la denominació ampliada «y de Género». Tampoc no aguanten la c) (el Registre Central de Penats és una altra institució, d\'antecedents penals) ni la d) (la inscripció de l\'ordre no espera cap sentència ferma: l\'ordre és una mesura cautelar). La resposta conforme al dret vigent el dia de l\'examen era la a).',
+      es: 'La plantilla del tribunal marcó la b), que sitúa la inscripción de la orden de protección en un «Registro Provincial para la protección de las víctimas de violencia doméstica». Ese registro no existe en norma alguna. El apartado 10 del artículo 544 ter LECrim, tal como lo redactó la Ley 27/2003 —en vigor desde el 2 de agosto de 2003 y nunca modificada, como consta en el propio texto consolidado—, ordena inscribir la orden en el Registro Central para la Protección de las Víctimas de la Violencia Doméstica, que es palabra por palabra la opción a). La redacción vigente de la LECrim lo confirma, con la denominación ampliada «y de Género». Tampoco se sostienen la c) (el Registro Central de Penados es otra institución, de antecedentes penales) ni la d) (la inscripción de la orden no espera a sentencia firme: la orden es una medida cautelar). La respuesta conforme al derecho vigente el día del examen era la a).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 28, pàgina 10 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 10',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'capçalera del text consolidat',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'capçalera BOE i disposició final única',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 544 ter.10 (redacció vigent)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22543,14 +24691,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 36.1 de la LO 4/2015, dins la classificació d\'infraccions greus, tipifica literalment «la pertorbació de la seguretat ciutadana en actes públics [...] a les quals assisteixin nombroses persones, quan no siguin constitutives d\'infracció penal». El text coincideix pràcticament paraula per paraula amb l\'enunciat de la pregunta, i l\'article que la conté és el 36 («Infracciones graves»), no el 35 (molt greus) ni el 37 (lleus). Això fa correcta l\'opció b) i descarta a), c) i d).',
+      es: 'El artículo 36.1 de la LO 4/2015, dentro de la clasificación de infracciones graves, tipifica literalmente «la perturbación de la seguridad ciudadana en actos públicos [...] a los que asistan numerosas personas, cuando no sean constitutivas de infracción penal». El texto coincide prácticamente palabra por palabra con el enunciado de la pregunta, y el artículo que lo contiene es el 36 («Infracciones graves»), no el 35 (muy graves) ni el 37 (leves). Esto hace correcta la opción b) y descarta a), c) y d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 30, pàgina 11 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 36.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22582,14 +24736,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció c) segueix l\'article 12.1.b): practicar, per iniciativa pròpia o a requeriment de l\'autoritat judicial, del ministeri fiscal o dels superiors jeràrquics, les primeres diligències de prevenció i de custòdia de detinguts. La a) retalla la llista de qui pot requerir aquestes diligències: hi afegeix un «únicament» que el text no conté i suprimeix el ministeri fiscal i els superiors jeràrquics. La b) inventa com a condició un «protocol d\'actuació» que el precepte no esmenta. I la d) («sempre i en tot cas») substitueix el règim del precepte —iniciativa pròpia o requeriment de subjectes concrets— per un automatisme que tampoc no hi és.',
+      es: 'La opción c) sigue el artículo 12.1.b): practicar, por iniciativa propia o a requerimiento de la autoridad judicial, del ministerio fiscal o de los superiores jerárquicos, las primeras diligencias de prevención y de custodia de detenidos. La a) recorta la lista de quién puede requerir esas diligencias: añade un «únicamente» que el texto no contiene y suprime al ministerio fiscal y a los superiores jerárquicos. La b) inventa como condición un «protocolo de actuación» que el precepto no menciona. Y la d) («siempre y en todo caso») sustituye el régimen del precepto —iniciativa propia o requerimiento de sujetos concretos— por un automatismo que tampoco está.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 31, pàgina 12 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 12.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22621,14 +24781,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'únic article de la Constitució que parla de la policia judicial és el 126: en fixa la dependència funcional dels jutges, dels tribunals i del ministeri fiscal i n\'enuncia les funcions genèriques —esbrinament del delicte i descobriment i assegurament del delinqüent—, remetent a la llei el desenvolupament. Per això la resposta correcta és la c). Les altres opcions s\'exclouen amb el mateix text constitucional: l\'article 69 obre la regulació del Senat («el Senado es la Cámara de representación territorial»), l\'article 169 prohibeix iniciar la reforma constitucional en temps de guerra o durant els estats de l\'article 116, i cap disposició addicional de la Constitució no tracta de la policia judicial.',
+      es: 'El único artículo de la Constitución que habla de la policía judicial es el 126: fija su dependencia funcional de los jueces, de los tribunales y del ministerio fiscal y enuncia sus funciones genéricas —averiguación del delito y descubrimiento y aseguramiento del delincuente—, remitiendo a la ley su desarrollo. Por eso la respuesta correcta es la c). Las demás opciones se excluyen con el propio texto constitucional: el artículo 69 abre la regulación del Senado («el Senado es la Cámara de representación territorial»), el artículo 169 prohíbe iniciar la reforma constitucional en tiempo de guerra o durante los estados del artículo 116, y ninguna disposición adicional de la Constitución trata de la policía judicial.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 32, pàgina 12 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 126',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22699,14 +24865,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 12.1 del Reglament general de conductors diu, per als permisos de les classes C1, C1+E, C, C+E, D1, D1+E, D i D+E, que el període de vigència és «de cinco años mientras su titular no cumpla los sesenta y cinco años y de tres años a partir de esa edad». La d) reprodueix exactament aquesta regla per al C1+E. La a) falla perquè els cinc anys no són «en tot cas»: a partir dels 65 la vigència baixa a tres anys (i l’art. 12.3 fins i tot permet reduir-la per malaltia). La b) i la c) inventen períodes (4/2 anys i 3/1 anys) que no apareixen enlloc de l’article: cap combinació del text vigent no els recolza. La redacció no ha canviat des de l’examen.',
+      es: 'El artículo 12.1 del Reglamento general de conductores dice, para los permisos de las clases C1, C1+E, C, C+E, D1, D1+E, D y D+E, que el período de vigencia es «de cinco años mientras su titular no cumpla los sesenta y cinco años y de tres años a partir de esa edad». La d) reproduce exactamente esa regla para el C1+E. La a) falla porque los cinco años no son «en todo caso»: a partir de los 65 la vigencia baja a tres años (y el art. 12.3 incluso permite reducirla por enfermedad). La b) y la c) inventan períodos (4/2 años y 3/1 años) que no aparecen en ningún lugar del artículo: ninguna combinación del texto vigente los respalda. La redacción no ha cambiado desde el examen.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 34, pàgina 13 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 12.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22777,14 +24949,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 5.2.d de la LOFCS reserva l\'ús de les armes de foc a les situacions on hi hagi «un riesgo racionalmente grave para su vida, su integridad física o las de terceras personas», frase que dona suport directe a l\'opció b) («defensa de la vida, pròpia o d\'altri»). Ara bé, el mateix apartat afegeix un segon supòsit: «aquellas circunstancias que puedan suponer un grave riesgo para la seguridad ciudadana», una formulació prou pròxima a «situacions de gran perill» (opció c) com per no poder-la descartar amb el mateix rigor literal amb què es descarta l\'opció a) («greu conflicte», expressió absent del text). Com que el tribunal va triar únicament la b) i no la d) (b i c), el text sol no permet reconstruir amb certesa per què c) quedaria fora.',
+      es: 'El artículo 5.2.d de la LOFCS reserva el uso de las armas de fuego a las situaciones en las que exista «un riesgo racionalmente grave para su vida, su integridad física o las de terceras personas», frase que respalda directamente la opción b) («defensa de la vida, propia o ajena»). Ahora bien, el mismo apartado añade un segundo supuesto: «aquellas circunstancias que puedan suponer un grave riesgo para la seguridad ciudadana», una formulación suficientemente próxima a «situaciones de gran peligro» (opción c) como para no poder descartarla con el mismo rigor literal con que se descarta la opción a) («grave conflicto», expresión ausente del texto). Como el tribunal eligió únicamente la b) y no la d) (b y c), el texto por sí solo no permite reconstruir con certeza por qué c) quedaría fuera.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 36, pàgina 13 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22816,14 +24994,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 41 de l’ordenança de circulació de Roses estableix que, llevat d’autorització especial, les operacions de càrrega i descàrrega no estan autoritzades «des de les 10 del vespre fins a les 8 del matí cada dia», és a dir, de les 22.00 a les 8.00 hores. L’opció b) és l’única que reprodueix aquesta franja. La a) i la d) avancen l’inici a les 20.00 hores, i la c) i la d) allarguen el final fins a les 9.00 hores, límits que no apareixen enlloc de l’article. La modificació de l’ordenança de 2021 només va afectar els articles 19, 46, 46 bis, 49 i l’annex 1, de manera que la resposta del tribunal continua sent correcta avui.',
+      es: 'El artículo 41 de la ordenanza de circulación de Roses establece que, salvo autorización especial, las operaciones de carga y descarga no están autorizadas «desde las 10 de la noche hasta las 8 de la mañana cada día», es decir, de las 22.00 a las 8.00 horas. La opción b) es la única que reproduce esa franja. La a) y la d) adelantan el inicio a las 20.00 horas, y la c) y la d) alargan el final hasta las 9.00 horas, límites que no aparecen en ningún punto del artículo. La modificación de la ordenanza de 2021 solo afectó a los artículos 19, 46, 46 bis, 49 y al anexo 1, de modo que la respuesta del tribunal sigue siendo correcta hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 37, pàgina 14 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 41',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22855,14 +25039,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 16.18 de l’ordenança de circulació prohibeix estacionar a les zones senyalitzades com a reserva de càrrega i descàrrega, llevat dels vehicles autoritzats per utilitzar-les o els autoritzats sense realitzar la tasca, i l’annex 1 (fila 16.18) qualifica aquest fet com a infracció lleu, amb un import de 100 euros (50 amb bonificació). Per això la resposta bona és la a). Ni l’article ni l’annex preveuen que la infracció sigui greu (b) ni molt greu (c), i tampoc no hi ha cap graduació en funció del temps que el vehicle romangui mal estacionat (d). La modificació de 2021 no va afectar ni l’article 16 ni aquesta fila de l’annex, de manera que la qualificació continua sent la mateixa avui.',
+      es: 'El artículo 16.18 de la ordenanza de circulación prohíbe estacionar en las zonas señalizadas como reserva de carga y descarga, salvo los vehículos autorizados para utilizarlas o los autorizados sin realizar la tarea, y el anexo 1 (fila 16.18) califica ese hecho como infracción leve, con un importe de 100 euros (50 con bonificación). Por eso la respuesta correcta es la a). Ni el artículo ni el anexo prevén que la infracción sea grave (b) ni muy grave (c), y tampoco existe graduación alguna en función del tiempo que el vehículo permanezca mal estacionado (d). La modificación de 2021 no afectó ni al artículo 16 ni a esta fila del anexo, de modo que la calificación sigue siendo la misma hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 38, pàgina 14 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 16.18',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'annex 1, fila 16.18',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -22972,14 +25168,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La lletra bona es demostra del tot: dictar bans i vetllar perquè es compleixin és una atribució de l’alcalde (art. 21.1.e de la Llei 7/1985), no del Ple, i per això la resposta és a). Les opcions b) i d) són literalment atribucions plenàries: el control i la fiscalització dels òrgans de govern (art. 22.2.a) i l’acceptació de la delegació de competències feta per altres administracions públiques (art. 22.2.g). Ara bé, «crear i regular òrgans complementaris» (opció c) no apareix com a lletra pròpia de l’article 22.2 en el text consolidat: es dedueix de combinar l’article 20.3 —els municipis poden establir i regular òrgans complementaris «en els reglaments orgànics»— amb l’article 22.2.d, que reserva al Ple l’aprovació del reglament orgànic. La cadena és sòlida, però no té el mateix rigor literal que la resta, i per això la decisió queda en «parcialment sostinguda».',
+      es: 'La letra buena se demuestra por completo: dictar bandos y velar por su cumplimiento es una atribución del alcalde (art. 21.1.e de la Ley 7/1985), no del Pleno, y por eso la respuesta es a). Las opciones b) y d) son literalmente atribuciones plenarias: el control y la fiscalización de los órganos de gobierno (art. 22.2.a) y la aceptación de la delegación de competencias hecha por otras administraciones públicas (art. 22.2.g). Ahora bien, «crear y regular órganos complementarios» (opción c) no aparece como letra propia del artículo 22.2 en el texto consolidado: se deduce de combinar el artículo 20.3 —los municipios pueden establecer y regular órganos complementarios «en los reglamentos orgánicos»— con el artículo 22.2.d, que reserva al Pleno la aprobación del reglamento orgánico. La cadena es sólida, pero no tiene el mismo rigor literal que el resto, y por eso la decisión queda en «parcialmente sostenida».',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 41, pàgina 15 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -23011,14 +25237,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Igual que en altres preguntes sobre el mateix tema, el preàmbul del Codi d\'ètica de la Policia de Catalunya identifica l\'instrument europeu de 2001 com la \'Recomanació REC (2001)10 del Comitè de Ministres del Consell d\'Europa... sobre el Codi europeu d\'ètica de la policia\'. El seu propi nom, amb l\'acrònim REC, indica que es tracta d\'una recomanació, cosa que confirma l\'opció b) com la correcta. El mateix text distingeix aquest instrument de la \'Instrucció\' catalana (Resolució INT/1828/2004) que el va incorporar internament, cosa que descarta l\'opció a). Els conceptes de \'directiva\' (c) i \'llei\' (d) no hi apareixen mai associats a aquest Codi europeu, que és sempre anomenat \'Recomanació\' al llarg del document. Per tant, el rang legal que el text confirma és el de recomanació del Consell d\'Europa, no un acte vinculant com una directiva o una llei.',
+      es: 'Igual que en otras preguntas sobre el mismo tema, el preámbulo del Código de ética de la Policía de Cataluña identifica el instrumento europeo de 2001 como la \'Recomanació REC (2001)10 del Comitè de Ministres del Consell d\'Europa... sobre el Codi europeu d\'ètica de la policia\'. Su propio nombre, con el acrónimo REC, indica que se trata de una recomendación, lo que confirma la opción b) como correcta. El mismo texto distingue este instrumento de la \'Instrucción\' catalana (Resolución INT/1828/2004) que lo incorporó internamente, lo que descarta la opción a). Los conceptos de \'directiva\' (c) y \'ley\' (d) no aparecen nunca asociados a este Código europeo, que es siempre denominado \'Recomendación\' a lo largo del documento. Por tanto, el rango legal que el texto confirma es el de recomendación del Consejo de Europa, no un acto vinculante como una directiva o una ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 42, pàgina 15 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-etic-policia-catalunya',
+        locator: 'exposició de motius',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -23947,14 +26179,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 66.1 ho diu amb una sola frase: les Corts Generals «estan formades pel Congrés dels Diputats i el Senat». Són, doncs, dues cambres, i cap més: l\'opció b). La a) les redueix a una cambra única i la d) a «50 diputats», cosa que no té cap suport al text. La c) és el parany fi: la Comissió Mixta existeix, però l\'article 74.2 la configura com un mecanisme eventual de conciliació —es constitueix només «si no hi ha acord entre Senat i Congrés» en certes decisions—, no com un òrgan que formi part de la composició de les Corts, que l\'article 66.1 tanca amb les dues cambres.',
+      es: 'El artículo 66.1 lo dice con una sola frase: las Cortes Generales «están formadas por el Congreso de los Diputados y el Senado». Son, pues, dos cámaras, y ninguna más: la opción b). La a) las reduce a una cámara única y la d) a «50 diputados», lo que no tiene soporte alguno en el texto. La c) es la trampa fina: la Comisión Mixta existe, pero el artículo 74.2 la configura como un mecanismo eventual de conciliación —se constituye solo «si no hubiera acuerdo entre Senado y Congreso» en ciertas decisiones—, no como un órgano que forme parte de la composición de las Cortes, que el artículo 66.1 cierra con las dos cámaras.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 66.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 74.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24025,14 +26269,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 137 conté la llista exacta: l\'Estat s\'organitza territorialment «en municipis, en províncies i en les comunitats autònomes que es constitueixin», que és l\'opció b). La a) hi afegeix les comarques i la c) les vegueries: cap de les dues figures no apareix enlloc del text constitucional —són divisions creades per la legislació catalana, no per la Constitució—. La d) substitueix les comunitats autònomes per unes «assemblees autònomes» que el precepte no esmenta. És una pregunta de memòria literal de l\'article 137, i només una opció hi coincideix terme a terme.',
+      es: 'El artículo 137 contiene la lista exacta: el Estado se organiza territorialmente «en municipios, en provincias y en las Comunidades Autónomas que se constituyan», que es la opción b). La a) añade las comarcas y la c) las veguerías: ninguna de las dos figuras aparece en lugar alguno del texto constitucional —son divisiones creadas por la legislación catalana, no por la Constitución—. La d) sustituye las comunidades autónomas por unas «asambleas autónomas» que el precepto no menciona. Es una pregunta de memoria literal del artículo 137, y solo una opción coincide con él término a término.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 137',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24064,14 +26314,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les opcions a), b) i c) tenen article dins la secció 1a del capítol II del títol I (articles 15 a 29): la llibertat i la seguretat són l\'article 17.1, l\'honor l\'article 18.1 i la lliure elecció de residència l\'article 19. El dret a la protecció de la salut, en canvi, és l\'article 43, que no és ni tan sols al capítol II: pertany al capítol III, «Dels principis rectors de la política social i econòmica», amb un règim de garanties molt més feble (art. 53.3: informa la legislació i només és al·legable segons les lleis que el despleguin). Per això el dret que «no es troba» a la secció primera és el de l\'opció d).',
+      es: 'Las opciones a), b) y c) tienen artículo dentro de la sección 1.ª del capítulo II del título I (artículos 15 a 29): la libertad y la seguridad son el artículo 17.1, el honor el artículo 18.1 y la libre elección de residencia el artículo 19. El derecho a la protección de la salud, en cambio, es el artículo 43, que no está ni siquiera en el capítulo II: pertenece al capítulo III, «De los principios rectores de la política social y económica», con un régimen de garantías mucho más débil (art. 53.3: informa la legislación y solo es alegable según las leyes que lo desarrollen). Por eso el derecho que «no se encuentra» en la sección primera es el de la opción d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 5, pàgina 1 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 43.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'títol I, rúbrica del capítol III',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 18.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 19',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24103,14 +26383,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Segons l\'article 6.2 de la Llei 4/2003, el Consell de Seguretat de Catalunya «és presidit pel conseller o consellera del departament amb competències en matèria de seguretat pública», i l\'article 4.3.e) confirma que presidir-lo és funció d\'aquest conseller. Aquest departament és el d\'Interior, per la qual cosa l\'opció c) és la correcta. La a) confon aquest òrgan amb la Comissió del Govern per a la Seguretat, que sí que és presidida pel president o presidenta de la Generalitat (art. 7.1). La b) i la d) no tenen cap suport al text: ni el president del Consell General del Poder Judicial ni cap òrgan d\'alcaldes presidit pel president del Parlament apareixen a la regulació del Consell de Seguretat de Catalunya.',
+      es: 'Según el artículo 6.2 de la Ley 4/2003, el Consejo de Seguridad de Cataluña «es presidido por el consejero o consejera del departamento con competencias en materia de seguridad pública», y el artículo 4.3.e) confirma que presidirlo es función de ese consejero. Ese departamento es el de Interior, por lo que la opción c) es la correcta. La a) confunde este órgano con la Comisión del Gobierno para la Seguridad, que sí es presidida por el presidente o presidenta de la Generalitat (art. 7.1). La b) y la d) no tienen ningún apoyo en el texto: ni el presidente del Consejo General del Poder Judicial ni ningún órgano de alcaldes presidido por el presidente del Parlamento aparecen en la regulación del Consejo de Seguridad de Cataluña.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 6.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.3.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 7.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24142,14 +26440,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 5.3.b de la LOFCS diu que els membres de les forces i cossos de seguretat «velarán por la vida e integridad física de las personas a quienes detuvieren», exactament el contingut de l\'opció b). L\'opció a) parafraseja l\'article 5.2.b, però hi introdueix un canvi rellevant: el text diu que el tracte correcte s\'ha d\'observar «en todo momento» (sempre), mentre que l\'opció el condiciona a «segons les circumstàncies», una matisació que la llei no fa per a aquest deure concret. L\'opció c) parafraseja l\'article 5.2.d, però rebaixa el llindar: el text exigeix un «riesgo racionalmente grave» per a la vida, mentre que l\'opció parla d\'un «mínim risc», un estàndard molt més baix i, per tant, fals. Com que a) i c) contradiuen el text, la d) («totes») també ho és.',
+      es: 'El artículo 5.3.b de la LOFCS dice que los miembros de las fuerzas y cuerpos de seguridad «velarán por la vida e integridad física de las personas a quienes detuvieren», exactamente el contenido de la opción b). La opción a) parafrasea el artículo 5.2.b, pero introduce un cambio relevante: el texto dice que el trato correcto debe observarse «en todo momento» (siempre), mientras que la opción lo condiciona a «según las circunstancias», un matiz que la ley no hace para este deber concreto. La opción c) parafrasea el artículo 5.2.d, pero rebaja el umbral: el texto exige un «riesgo racionalmente grave» para la vida, mientras que la opción habla de un «mínimo riesgo», un estándar mucho más bajo y, por tanto, falso. Como a) y c) contradicen el texto, la d) («todas») también lo es.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.3.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.2.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 5.2.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24181,14 +26497,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La disposició addicional quarta permet als ajuntaments que veuen augmentada l\'afluència de visitants durant l\'època turística convocar places de policia en règim de funcionari interí, per un màxim de sis mesos, i la seva lletra d) fixa la formació: els qui superin les proves selectives han de seguir un curs de formació a l\'Escola de Policia de Catalunya «d\'una duració de cent vint hores o de vint dies lectius». És exactament l\'opció b): 20 dies lectius o 120 hores. Les altres tres opcions donen xifres que no apareixen enlloc del text: ni 15 dies o 100 hores, ni 25 dies o 130 hores, ni 22 dies i 100 hores lectives.',
+      es: 'La disposición adicional cuarta permite a los ayuntamientos que ven aumentada la afluencia de visitantes durante la época turística convocar plazas de policía en régimen de funcionario interino, por un máximo de seis meses, y su letra d) fija la formación: quienes superen las pruebas selectivas deben seguir un curso de formación en la Escuela de Policía de Cataluña «de una duración de ciento veinte horas o de veinte días lectivos». Es exactamente la opción b): 20 días lectivos o 120 horas. Las otras tres opciones dan cifras que no aparecen en ningún punto del texto: ni 15 días o 100 horas, ni 25 días o 130 horas, ni 22 días y 100 horas lectivas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'disposició addicional quarta, apartat 1.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'disposició addicional quarta, apartat 1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24220,14 +26548,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 3.1 és la seu del llindar: «Hi pot haver policia local en els municipis de més de deu mil habitants». La bona és la b). Les xifres de 5.000 i de 15.000 habitants no apareixen al precepte. La d) barreja peces reals amb dades falses: l\'autorització amb informe previ de la Comissió de Coordinació de les Policies Locals existeix, però és a l\'apartat 2, per als municipis de menys de deu mil habitants; qui la dona és el conseller de Governació, no el d\'Interior; i el llindar de 150.000 habitants és inventat.',
+      es: 'El artículo 3.1 es la sede del umbral: «Puede haber policía local en los municipios de más de diez mil habitantes». La buena es la b). Las cifras de 5.000 y de 15.000 habitantes no aparecen en el precepto. La d) mezcla piezas reales con datos falsos: la autorización con informe previo de la Comisión de Coordinación de las Policías Locales existe, pero está en el apartado 2, para los municipios de menos de diez mil habitantes; quien la da es el consejero de Gobernación, no el de Interior; y el umbral de 150.000 habitantes es inventado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 9, pàgina 2 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 3.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 3.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24259,14 +26599,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20.1.a de la Llei 7/1985 ho diu literalment: «l’alcalde, els tinents d’alcalde i el Ple existeixen en tots els ajuntaments». L’opció a) reprodueix aquesta regla completa. La b) i la d) fallen perquè inclouen òrgans que no són universals: la Junta de Govern Local només existeix necessàriament als municipis amb població superior a 5.000 habitants (art. 20.1.b), i els òrgans d’estudi, informe o consulta —les comissions informatives— tampoc no són obligatoris a tot arreu, sinó als municipis de més de 5.000 habitants o quan ho disposi el reglament orgànic o ho acordi el Ple (art. 20.1.c). L’opció c) («el Ple») no és falsa, però és incompleta: la regla legal d’allò que existeix en tots els ajuntaments inclou també l’alcalde i els tinents d’alcalde, i per això la resposta més completa i correcta és la a).',
+      es: 'El artículo 20.1.a de la Ley 7/1985 lo dice literalmente: «el Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los ayuntamientos». La opción a) reproduce esta regla completa. La b) y la d) fallan porque incluyen órganos que no son universales: la Junta de Gobierno Local solo existe necesariamente en los municipios con población superior a 5.000 habitantes (art. 20.1.b), y los órganos de estudio, informe o consulta —las comisiones informativas— tampoco son obligatorios en todas partes, sino en los municipios de más de 5.000 habitantes o cuando lo disponga el reglamento orgánico o lo acuerde el Pleno (art. 20.1.c). La opción c) («el Pleno») no es falsa, pero es incompleta: la regla legal de lo que existe en todos los ayuntamientos incluye también al alcalde y a los tenientes de alcalde, y por eso la respuesta más completa y correcta es la a).',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24337,14 +26695,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.2 de la Llei 4/2003 estableix que la Junta Local de Seguretat «és integrada per l\'alcalde o alcaldessa, que la presideix, amb veu i vot», i l\'article 4.4.b) inclou entre les funcions dels alcaldes presidir la junta local de seguretat: la resposta b) és la correcta. El cap de la policia local del municipi n\'és vocal permanent, no president (art. 9.2.d), i ni el ministre de l\'Interior ni el conseller d\'Interior formen part d\'aquest òrgan municipal. Només cal recordar que la presidència de les sessions es pot delegar excepcionalment en el regidor de seguretat ciutadana (art. 9.6), cosa que no altera que la presidència correspongui a l\'alcalde.',
+      es: 'El artículo 9.2 de la Ley 4/2003 establece que la Junta Local de Seguridad «está integrada por el alcalde o alcaldesa, que la preside, con voz y voto», y el artículo 4.4.b) incluye entre las funciones de los alcaldes presidir la junta local de seguridad: la respuesta b) es la correcta. El jefe de la policía local del municipio es vocal permanente, no presidente (art. 9.2.d), y ni el ministro del Interior ni el consejero de Interior forman parte de este órgano municipal. Solo cabe recordar que la presidencia de las sesiones puede delegarse excepcionalmente en el concejal de seguridad ciudadana (art. 9.6), lo que no altera que la presidencia corresponda al alcalde.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 4.4.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24376,14 +26746,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 78.1 de l’Estatut d’Autonomia de Catalunya atribueix al Síndic de Greuges, amb caràcter exclusiu, la supervisió de l’Administració de la Generalitat i, expressament, «l’activitat de l’Administració local de Catalunya i la dels organismes públics o privats vinculats o que en depenen». Cap de les altres tres opcions té aquesta funció: el Defensor del Poble supervisa l’Administració de l’Estat, la Comissió Jurídica Assessora és un òrgan consultiu, i no existeix cap «Comissió de Garanties de cada municipi» amb aquesta funció. Aquesta pregunta no entra a cap dels 40 temes del temari.',
+      es: 'El artículo 78.1 del Estatuto de Autonomía de Cataluña atribuye al Síndic de Greuges, con carácter exclusivo, la supervisión de la Administración de la Generalitat y, expresamente, «la actividad de la Administración local de Cataluña y la de los organismos públicos o privados vinculados o que dependen de ella». Ninguna de las otras tres opciones tiene esta función: el Defensor del Pueblo supervisa la Administración del Estado, la Comisión Jurídica Asesora es un órgano consultivo, y no existe ninguna «Comisión de Garantías de cada municipio» con esta función. Esta pregunta no entra en ninguno de los 40 temas del temario.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 13, pàgina 3 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 78.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24415,14 +26791,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Al quadre de l’article 4.2 del Reglament general de conductors, el permís D autoritza a conduir «automóviles diseñados y construidos para el transporte de más de ocho pasajeros además del conductor»: comptant el conductor, això són els vehicles de més de nou places, o sigui els autocars de l’enunciat. La d) és la bona. L’A queda descartat perquè empara motocicletes i tricicles de motor, no automòbils de passatgers. El B es limita a automòbils de no més de vuit passatgers a més del conductor. I el C serveix per a vehicles de mercaderies: el mateix quadre el defineix com a automòbils «distintos de los que autoriza a conducir el permiso de las clases D1 o D» i també limitats a vuit passatgers com a màxim.',
+      es: 'En el cuadro del artículo 4.2 del Reglamento general de conductores, el permiso D autoriza a conducir «automóviles diseñados y construidos para el transporte de más de ocho pasajeros además del conductor»: contando al conductor, eso son los vehículos de más de nueve plazas, es decir, los autocares del enunciado. La d) es la buena. El A queda descartado porque ampara motocicletas y triciclos de motor, no automóviles de pasajeros. El B se limita a automóviles de no más de ocho pasajeros además del conductor. Y el C sirve para vehículos de mercancías: el mismo cuadro lo define como automóviles «distintos de los que autoriza a conducir el permiso de las clases D1 o D» y también limitados a ocho pasajeros como máximo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 14, pàgina 3 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe D)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-818-2009-rgcond',
+        locator: 'art. 4.2 (quadre, classe B)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24454,14 +26842,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 26.1.a de la Llei 7/1985 enumera els serveis obligatoris a tots els municipis, i hi figuren l’enllumenat públic, el cementiri i la pavimentació de les vies públiques: les opcions a), b) i d) són, doncs, serveis exigibles a qualsevol municipi, per petit que sigui. La biblioteca pública, en canvi, apareix a la lletra b) del mateix article: només és obligatòria, «a més», als municipis amb població superior a 5.000 habitants, juntament amb el parc públic i el tractament de residus. Per això la resposta correcta és la c): la biblioteca no és un servei obligatori en tots els municipis, sinó a partir del llindar de 5.000 habitants.',
+      es: 'El artículo 26.1.a de la Ley 7/1985 enumera los servicios obligatorios en todos los municipios, y en él figuran el alumbrado público, el cementerio y la pavimentación de las vías públicas: las opciones a), b) y d) son, pues, servicios exigibles a cualquier municipio, por pequeño que sea. La biblioteca pública, en cambio, aparece en la letra b) del mismo artículo: solo es obligatoria, «además», en los municipios con población superior a 5.000 habitantes, junto con el parque público y el tratamiento de residuos. Por eso la respuesta correcta es la c): la biblioteca no es un servicio obligatorio en todos los municipios, sino a partir del umbral de 5.000 habitantes.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 26.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 26.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24493,14 +26893,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres primeres opcions són tècniques d\'investigació criminal regulades a la mateixa LECrim: l\'agent encobert, que l\'art. 282 bis permet autoritzar en investigacions de delinqüència organitzada per actuar sota identitat suposada; l\'interrogatori, que l\'art. 385 preveu com a declaracions de l\'investigat «per a l\'esbrinament dels fets»; i les intervencions telefòniques, regulades com a interceptació de comunicacions telefòniques i telemàtiques als art. 588 ter i següents. La «recerca jurisprudencial» —buscar sentències— és una eina d\'estudi jurídic, no una diligència d\'investigació d\'un delicte, i per exclusió és la resposta bona. Aquest darrer pas, però, no surt de cap text literal: cap norma enumera tancadament què és i què no és una tècnica d\'investigació, i per això el suport és parcial.',
+      es: 'Las tres primeras opciones son técnicas de investigación criminal reguladas en la propia LECrim: el agente encubierto, que el art. 282 bis permite autorizar en investigaciones de delincuencia organizada para actuar bajo identidad supuesta; el interrogatorio, que el art. 385 prevé como declaraciones del investigado «para la averiguación de los hechos»; y las intervenciones telefónicas, reguladas como interceptación de comunicaciones telefónicas y telemáticas en los arts. 588 ter y siguientes. La «búsqueda jurisprudencial» —buscar sentencias— es una herramienta de estudio jurídico, no una diligencia de investigación de un delito, y por exclusión es la respuesta buena. Ese último paso, sin embargo, no sale de ningún texto literal: ninguna norma enumera de forma cerrada qué es y qué no es una técnica de investigación, y por eso el apoyo es parcial.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 282 bis.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 385',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 588 ter a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24610,14 +27028,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La manca d\'assistència sense causa justificada és falta greu segons l\'article 49.l: opció d. Les altres tres conductes són d\'una altra gravetat: la descurança en la presentació personal (opció a) és falta lleu de l\'article 50.c; les faltes repetides de puntualitat dins un mateix mes sense causa justificada (opció b) són falta lleu de l\'article 50.h; i l\'abandonament del servei (opció c) és falta molt greu de l\'article 48.1.g. El matís que examina la pregunta és l\'escala d\'absències: arribar tard repetidament és lleu, faltar sense justificació és greu i abandonar el servei és molt greu.',
+      es: 'La falta de asistencia sin causa justificada es falta grave según el artículo 49.l: opción d. Las otras tres conductas son de otra gravedad: el descuido en la presentación personal (opción a) es falta leve del artículo 50.c; las faltas repetidas de puntualidad dentro de un mismo mes sin causa justificada (opción b) son falta leve del artículo 50.h; y el abandono del servicio (opción c) es falta muy grave del artículo 48.1.g. El matiz que examina la pregunta es la escala de ausencias: llegar tarde repetidamente es leve, faltar sin justificación es grave y abandonar el servicio es muy grave.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 19, pàgina 4 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.l',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.h',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.g',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24649,14 +27091,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1.c) de la Llei 16/1991 defineix l\'escala intermèdia: «comprèn les categories de sots-inspector i de sergent». L\'opció a) les recull totes dues. La b) falla perquè el sergent no hi és sol: el sots-inspector també en forma part. La c) inclou l\'inspector, que pertany a l\'escala executiva segons la lletra b) del mateix apartat, no a la intermèdia. I la d) («cap és correcte») cau perquè la a) coincideix amb el text legal. La pregunta no cita l\'article, però la resposta només pot sortir de l\'estructura d\'escales i categories de l\'article 24, la redacció del qual no ha canviat en aquest punt.',
+      es: 'El artículo 24.1.c) de la Ley 16/1991 define la escala intermedia: «comprende las categorías de subinspector y de sargento». La opción a) recoge ambas. La b) falla porque el sargento no está solo: el subinspector también forma parte de ella. La c) incluye al inspector, que pertenece a la escala ejecutiva según la letra b) del mismo apartado, no a la intermedia. Y la d) («ninguna es correcta») cae porque la a) coincide con el texto legal. La pregunta no cita el artículo, pero la respuesta solo puede salir de la estructura de escalas y categorías del artículo 24, cuya redacción no ha cambiado en este punto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 20, pàgina 5 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24688,14 +27142,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 53 fixa els criteris per graduar les sancions d\'acord amb el principi de proporcionalitat: la intencionalitat, la pertorbació dels serveis, els danys i els perjudicis produïts a l\'Administració o als administrats, la reincidència en la comissió de faltes, el grau de participació en la comissió o l\'omissió i la transcendència per a la seguretat pública. Les opcions a, b i c reprodueixen literalment tres d\'aquests criteris (lletres a, b i d). La falta d\'assistència injustificada al centre de treball, en canvi, no és cap criteri de graduació: és una conducta tipificada com a falta (la manca d\'assistència sense causa justificada és falta greu, art. 49.l). Per això la resposta és la d.',
+      es: 'El artículo 53 fija los criterios para graduar las sanciones de acuerdo con el principio de proporcionalidad: la intencionalidad, la perturbación de los servicios, los daños y perjuicios producidos a la Administración o a los administrados, la reincidencia en la comisión de faltas, el grado de participación en la comisión u omisión y la trascendencia para la seguridad pública. Las opciones a, b y c reproducen literalmente tres de estos criterios (letras a, b y d). La falta de asistencia injustificada al centro de trabajo, en cambio, no es ningún criterio de graduación: es una conducta tipificada como falta (la falta de asistencia sin causa justificada es falta grave, art. 49.l). Por eso la respuesta es la d.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 21, pàgina 5 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24727,14 +27205,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 54 defineix el Defensor del Poble exactament amb la fórmula de l\'enunciat: «alt comissionat de les Corts Generals», designat per aquestes per a la defensa dels drets compresos al títol I, amb la facultat de supervisar l\'activitat de l\'Administració. La resposta és la c). El fiscal en cap del Tribunal Suprem (a) no existeix amb aquesta funció; el «Tribunal de Drets Humans» (b) no és cap òrgan de les Corts; i «Ombudsman» (d) és el nom genèric internacional de la institució, però no el que li dona la Constitució, que l\'anomena Defensor del Poble. L\'opció d), a més, porta enganxat un fragment de les bases de la convocatòria aliè a la pregunta.',
+      es: 'El artículo 54 define al Defensor del Pueblo exactamente con la fórmula del enunciado: «alto comisionado de las Cortes Generales», designado por estas para la defensa de los derechos comprendidos en el título I, con la facultad de supervisar la actividad de la Administración. La respuesta es la c). El fiscal jefe del Tribunal Supremo (a) no existe con esa función; el «Tribunal de Derechos Humanos» (b) no es órgano alguno de las Cortes; y «Ombudsman» (d) es el nombre genérico internacional de la institución, pero no el que le da la Constitución, que la llama Defensor del Pueblo. La opción d), además, lleva pegado un fragmento de las bases de la convocatoria ajeno a la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-interins-cp',
         locator: 'pregunta 22, pàgina 5 del PDF',
         validAt: '2019-05-20',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 54',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26404,14 +28888,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 28.2 reconeix el dret de vaga dels treballadors per a la defensa dels seus interessos i, en el mateix precepte, fixa el seu límit constitucional: la llei que en reguli l\'exercici ha d\'establir «les garanties necessàries per assegurar el manteniment dels serveis essencials de la comunitat». Això és l\'opció c). La b) és falsa perquè el mateix article demostra que el dret no està mancat de límits. La a) substitueix «serveis essencials» per «serveis mínims» i redueix el límit a tres sectors (educació, transport i sanitat) que el text no anomena. I la d) inventa una compatibilitat amb «els drets de l\'empresari» que el precepte no conté: el límit constitucional és la comunitat, no l\'empresari.',
+      es: 'El artículo 28.2 reconoce el derecho de huelga de los trabajadores para la defensa de sus intereses y, en el mismo precepto, fija su límite constitucional: la ley que regule su ejercicio debe establecer «las garantías precisas para asegurar el mantenimiento de los servicios esenciales de la comunidad». Eso es la opción c). La b) es falsa porque el propio artículo demuestra que el derecho no carece de límites. La a) sustituye «servicios esenciales» por «servicios mínimos» y reduce el límite a tres sectores (educación, transporte y sanidad) que el texto no nombra. Y la d) inventa una compatibilidad con «los derechos del empresario» que el precepto no contiene: el límite constitucional es la comunidad, no el empresario.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 28.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26482,14 +28972,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 84.1 de l’Estatut diu literalment que «Aquest Estatut garanteix als municipis un nucli de competències pròpies que han d’ésser exercides per aquestes entitats amb plena autonomia, subjecta només a control de constitucionalitat i de legalitat»: és l’opció a, gairebé paraula per paraula. L’opció marcada pel tribunal, la b), afirma que aquest nucli està reconegut «només en les lleis», cosa que el precepte desmenteix: la garantia és estatutària, i l’article 84.2 remet a les lleis només per als termes d’exercici de les competències que enumera. La c) (competències atorgades reglamentàriament) i la d) (competències legislatives municipals) no tenen cap base a l’Estatut. La redacció era la mateixa el dia de l’examen (2018): l’Estatut es va publicar el 20.07.2006 i la seva única modificació posterior, la Llei 16/2010, toca la cessió de tributs, no l’article 84.',
+      es: 'El artículo 84.1 del Estatuto dice literalmente que «este Estatuto garantiza a los municipios un núcleo de competencias propias que deben ser ejercidas por dichas entidades con plena autonomía, sujeta solo a control de constitucionalidad y de legalidad»: es la opción a, casi palabra por palabra. La opción marcada por el tribunal, la b), afirma que ese núcleo está reconocido «solo en las leyes», cosa que el precepto desmiente: la garantía es estatutaria, y el artículo 84.2 remite a las leyes solo para los términos de ejercicio de las competencias que enumera. La c) (competencias otorgadas reglamentariamente) y la d) (competencias legislativas municipales) no tienen base alguna en el Estatuto. La redacción era la misma el día del examen (2018): el Estatuto se publicó el 20.07.2006 y su única modificación posterior, la Ley 16/2010, toca la cesión de tributos, no el artículo 84.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 84.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'modificacions de l’Estatut (pàg. 6)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'tramitació (pàg. 5), publicació',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26521,14 +29029,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 110.1 de l’Estatut estableix que, en l’àmbit de les seves competències exclusives, corresponen a la Generalitat «de manera íntegra, la potestat legislativa, la potestat reglamentària i la funció executiva»: la tríada exacta de l’opció c. La a) hi barreja la potestat expropiatòria, una potestat administrativa concreta que l’article no fa servir per definir el tipus competencial. La b) hi introdueix una potestat «jurisdiccional» que la Generalitat no té: jutjar i fer executar allò jutjat correspon als jutges i tribunals, no a les administracions. I la d) es queda curta i desviada: parla de potestat reglamentària i funció inspectora i deixa fora la potestat legislativa, que és precisament el tret que distingeix la competència exclusiva (i la compartida) de la merament executiva.',
+      es: 'El artículo 110.1 del Estatuto establece que, en el ámbito de sus competencias exclusivas, corresponden a la Generalitat «de forma íntegra, la potestad legislativa, la potestad reglamentaria y la función ejecutiva»: la tríada exacta de la opción c. La a) mezcla la potestad expropiatoria, una potestad administrativa concreta que el artículo no usa para definir el tipo competencial. La b) introduce una potestad «jurisdiccional» que la Generalitat no tiene: juzgar y hacer ejecutar lo juzgado corresponde a los jueces y tribunales, no a las administraciones. Y la d) se queda corta y desviada: habla de potestad reglamentaria y función inspectora y deja fuera la potestad legislativa, que es precisamente el rasgo que distingue la competencia exclusiva (y la compartida) de la meramente ejecutiva.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 110.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26638,14 +29152,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’única opció que figura a la llista d’atribucions plenàries de l’article 22.2 de la Llei 7/1985 és la d): «l’aprovació de les formes de gestió dels serveis i dels expedients de municipalització» (lletra f). Les altres tres són atribucions de l’alcalde segons l’article 21.1: dirigir el govern i l’administració municipal és la lletra a); aprovar l’oferta d’ocupació pública —d’acord amb el pressupost i la plantilla aprovats pel Ple— és la lletra g); i l’exercici de les accions judicials i administratives i la defensa de l’ajuntament «en les matèries de la seva competència» és la lletra k), redacció que l’opció c) reprodueix gairebé literalment. El Ple té la seva pròpia versió d’aquesta darrera atribució, però limitada a les matèries de competència plenària (art. 22.2.j), que no és el que diu l’opció.',
+      es: 'La única opción que figura en la lista de atribuciones plenarias del artículo 22.2 de la Ley 7/1985 es la d): «la aprobación de las formas de gestión de los servicios y de los expedientes de municipalización» (letra f). Las otras tres son atribuciones del alcalde según el artículo 21.1: dirigir el gobierno y la administración municipal es la letra a); aprobar la oferta de empleo público —de acuerdo con el presupuesto y la plantilla aprobados por el Pleno— es la letra g); y el ejercicio de las acciones judiciales y administrativas y la defensa del ayuntamiento «en las materias de su competencia» es la letra k), redacción que la opción c) reproduce casi literalmente. El Pleno tiene su propia versión de esta última atribución, pero limitada a las materias de competencia plenaria (art. 22.2.j), que no es lo que dice la opción.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.2.f',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 21.1.k',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26677,14 +29215,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 15 de la Llei 7/1985 conté, frase per frase, les tres afirmacions certes: el conjunt de persones inscrites al Padró municipal constitueix la població del municipi (opció a), tota persona que visqui a Espanya està obligada a inscriure’s al Padró del municipi on resideixi habitualment (opció b), i qui visqui en diversos municipis s’ha d’inscriure únicament en aquell on habiti més temps a l’any (opció d). La falsa és la c): el mateix article diu que «la condició de veí s’adquireix en el mateix moment de la inscripció al Padró». La condició de veí no s’acredita amb cap contracte de lloguer: neix de l’empadronament, i són les certificacions de les dades padronals les que fan prova de la residència (art. 16.1).',
+      es: 'El artículo 15 de la Ley 7/1985 contiene, frase por frase, las tres afirmaciones ciertas: el conjunto de personas inscritas en el Padrón municipal constituye la población del municipio (opción a), toda persona que viva en España está obligada a inscribirse en el Padrón del municipio en el que resida habitualmente (opción b), y quien viva en varios municipios debe inscribirse únicamente en el que habite durante más tiempo al año (opción d). La falsa es la c): el mismo artículo dice que «la condición de vecino se adquiere en el mismo momento de su inscripción en el Padrón». La condición de vecino no se acredita con ningún contrato de alquiler: nace del empadronamiento, y son las certificaciones de los datos padronales las que hacen prueba de la residencia (art. 16.1).',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 15',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26716,14 +29260,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 19 de la Llei 53/1984 llista de manera tancada («quedan exceptuadas... las actividades siguientes») les activitats que no necessiten cap autorització de compatibilitat, i la lletra c) hi inclou literalment «la participación en Tribunales calificadores de pruebas selectivas para ingreso en las Administraciones Públicas», que coincideix amb l\'opció c). En canvi, l\'article 6 regula l\'activitat de l\'opció a) —investigació de caràcter no permanent o assessorament científic/tècnic en supòsits concrets— com una activitat que «podrá autorizarse», és a dir, que sí requereix autorització encara que sigui excepcional. Ni l\'exercici privat de l\'advocacia (b) ni el suport tècnic en estudis i projectes privats (d) apareixen a la llista tancada de l\'article 19, de manera que resten subjectes al règim general d\'autorització.',
+      es: 'El artículo 19 de la Ley 53/1984 lista de forma cerrada («quedan exceptuadas... las actividades siguientes») las actividades que no necesitan ninguna autorización de compatibilidad, y la letra c) incluye literalmente «la participación en Tribunales calificadores de pruebas selectivas para ingreso en las Administraciones Públicas», que coincide con la opción c). En cambio, el artículo 6 regula la actividad de la opción a) —investigación de carácter no permanente o asesoramiento científico/técnico en supuestos concretos— como una actividad que «podrá autorizarse», es decir, que sí requiere autorización aunque sea excepcional. Ni el ejercicio privado de la abogacía (b) ni el apoyo técnico en estudios y proyectos privados (d) aparecen en la lista cerrada del artículo 19, por lo que quedan sujetos al régimen general de autorización.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-53-1984-incompat',
+        locator: 'art. 19 (proemi)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-53-1984-incompat',
+        locator: 'art. 19.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-53-1984-incompat',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26755,14 +29317,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 87.1.f del TREBEP declara en situació de serveis especials els funcionaris de carrera «cuando se desempeñen cargos electivos retribuidos y de dedicación exclusiva... en las entidades locales», que és exactament el supòsit de l\'enunciat. L\'excedència forçosa (b) respon a altres causes, no a l\'accés a un càrrec electiu. La situació de serveis en altres administracions públiques (c) s\'aplica quan el funcionari passa a prestar serveis en una altra Administració, no quan accedeix a un càrrec electiu de dedicació exclusiva. L\'excedència voluntària per interès particular (d) és una situació sol·licitada lliurement pel funcionari sense relació amb cap càrrec públic. Només l\'opció a) coincideix amb el supòsit literal de l\'article 87.1.f.',
+      es: 'El artículo 87.1.f del TREBEP declara en situación de servicios especiales a los funcionarios de carrera «cuando se desempeñen cargos electivos retribuidos y de dedicación exclusiva... en las entidades locales», que es exactamente el supuesto del enunciado. La excedencia forzosa (b) responde a otras causas, no al acceso a un cargo electivo. La situación de servicios en otras administraciones públicas (c) se aplica cuando el funcionario pasa a prestar servicios en otra Administración, no cuando accede a un cargo electivo de dedicación exclusiva. La excedencia voluntaria por interés particular (d) es una situación solicitada libremente por el funcionario sin relación con ningún cargo público. Solo la opción a) coincide con el supuesto literal del artículo 87.1.f.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 10, pàgina 3 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 87.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-5-2015-trebep',
+        locator: 'art. 87.1.f',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26833,14 +29407,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 53.1.g de la LOFCS diu «efectuar diligencias de prevención y cuantas actuaciones tiendan a evitar la comisión de actos delictivos en el marco de colaboración establecido en las Juntas de Seguridad», frase que l\'opció c) reprodueix gairebé paraula per paraula. Les altres tres alteren el text real: l\'apartat c) limita instruir atestats al «casco urbano», mentre que l\'opció a) ho estén a «tot el terme municipal»; l\'apartat i) condiciona la cooperació en conflictes privats a «cuando sean requeridos», mentre que l\'opció b) diu «en tot cas», suprimint la condició; i l\'apartat h) parla de «grandes concentraciones humanas» i exigeix ser «requeridos», mentre que l\'opció d) parla de «concentracions urbanes» i afirma «sense necessitat que siguin requerits», invertint la condició legal. Només la c) manté el sentit i els termes exactes de l\'article.',
+      es: 'El artículo 53.1.g de la LOFCS dice «efectuar diligencias de prevención y cuantas actuaciones tiendan a evitar la comisión de actos delictivos en el marco de colaboración establecido en las Juntas de Seguridad», frase que la opción c) reproduce casi palabra por palabra. Las otras tres alteran el texto real: el apartado c) limita instruir atestados al «casco urbano», mientras que la opción a) lo extiende a «todo el término municipal»; el apartado i) condiciona la cooperación en conflictos privados a «cuando sean requeridos», mientras que la opción b) dice «en todo caso», suprimiendo la condición; y el apartado h) habla de «grandes concentraciones humanas» y exige ser «requeridos», mientras que la opción d) habla de «concentraciones urbanas» y afirma «sin necesidad de ser requeridos», invirtiendo la condición legal. Solo la c) mantiene el sentido y los términos exactos del artículo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.i',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.h',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26872,14 +29470,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les opcions a), b) i c) són literalment les lletres d), a) i f) de l\'article 10 de la Llei 4/2003, que enumera les funcions de les juntes locals de seguretat. En canvi, «assegurar la coordinació operativa de les actuacions dels diversos cossos i serveis de seguretat al municipi i la dels recursos en matèria de seguretat presents al municipi» és una funció de la Mesa de Coordinació Operativa, l\'òrgan permanent que les juntes locals han de crear al seu si, segons l\'article 11.3.c). Per això la d) és la que no és funció de la junta local, tal com va marcar el tribunal: la junta acorda i supervisa, i la coordinació operativa del dia a dia recau en la mesa.',
+      es: 'Las opciones a), b) y c) son literalmente las letras d), a) y f) del artículo 10 de la Ley 4/2003, que enumera las funciones de las juntas locales de seguridad. En cambio, «asegurar la coordinación operativa de las actuaciones de los diversos cuerpos y servicios de seguridad en el municipio y la de los recursos en materia de seguridad presentes en el municipio» es una función de la Mesa de Coordinación Operativa, el órgano permanente que las juntas locales deben crear en su seno, según el artículo 11.3.c). Por eso la d) es la que no es función de la junta local, tal como marcó el tribunal: la junta acuerda y supervisa, y la coordinación operativa del día a día recae en la mesa.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 10.f',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 11.3.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26911,14 +29533,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 15.3 de la Llei 4/2003, en la redacció donada per la Llei 3/2015 —anterior, doncs, a l\'examen de 2018—, diu literalment que el Pla de seguretat de Catalunya «té periodicitat quadriennal, sens perjudici que, per raons d\'urgència o de necessitat, s\'hagi de modificar abans d\'haver transcorregut l\'esmentat termini»: és l\'opció a) paraula per paraula. Les opcions b) i c) només canvien la periodicitat (biennal, anual) i queden descartades pel mateix text, i la d) no té cap base: la vigència del Pla no es lliga enlloc a la legislatura del Parlament; l\'article només preveu que el Pla s\'hi ha de presentar (apartat 5). La redacció es manté vigent avui.',
+      es: 'El artículo 15.3 de la Ley 4/2003, en la redacción dada por la Ley 3/2015 —anterior, por tanto, al examen de 2018—, dice literalmente que el Plan de seguridad de Cataluña «tiene periodicidad cuatrienal, sin perjuicio de que, por razones de urgencia o de necesidad, se haya de modificar antes de haber transcurrido dicho plazo»: es la opción a) palabra por palabra. Las opciones b) y c) solo cambian la periodicidad (bienal, anual) y quedan descartadas por el mismo texto, y la d) no tiene ninguna base: la vigencia del Plan no se liga en ningún precepto a la legislatura del Parlamento; el artículo solo prevé que el Plan se ha de presentar ante él (apartado 5). La redacción se mantiene vigente hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 14, pàgina 4 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 15.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -26950,14 +29578,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'enunciat reprodueix la definició literal de l\'article 205 del Codi Penal: «es calumnia la imputación de un delito hecha con conocimiento de su falsedad o temerario desprecio hacia la verdad». Per això la bona és la a). La b) no encaixa: la injúria, segons l\'article 208, és l\'acció o expressió que lesiona la dignitat d\'una altra persona menyscabant la seva fama o atemptant contra la seva pròpia estimació, no la imputació d\'un delicte fals. La c) i la d) cauen alhora amb la sistemàtica del Codi: la calúmnia és el capítol I del títol XI, que duu per rúbrica «Delitos contra el honor», de manera que sí que és un delicte contra l\'honor i no un delicte contra el patrimoni i l\'ordre socioeconòmic (títol XIII).',
+      es: 'El enunciado reproduce la definición literal del artículo 205 del Código Penal: «es calumnia la imputación de un delito hecha con conocimiento de su falsedad o temerario desprecio hacia la verdad». Por eso la correcta es la a). La b) no encaja: la injuria, según el artículo 208, es la acción o expresión que lesiona la dignidad de otra persona menoscabando su fama o atentando contra su propia estimación, no la imputación de un delito falso. La c) y la d) caen a la vez con la sistemática del Código: la calumnia es el capítulo I del título XI, cuya rúbrica es «Delitos contra el honor», de modo que sí es un delito contra el honor y no un delito contra el patrimonio y el orden socioeconómico (título XIII).',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'llibre II, títol XI, rúbrica i capítol I',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 205',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 208',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27028,14 +29674,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 52.2 preveu per a les faltes molt greus dues sancions possibles: la separació del servei o la suspensió de funcions «per més d\'un any i menys de sis, amb pèrdua de les retribucions». L\'opció d reprodueix aquesta segona sanció i és la correcta. La a) falla la durada: la suspensió per menys d\'un any correspon a les faltes greus (art. 52.3.a, per més de quinze dies i menys d\'un any). Les opcions b i c fallen perquè diuen «sense pèrdua de les retribucions», quan la llei imposa sempre la pèrdua, i la c a més escurça el màxim a tres anys quan la llei diu sis.',
+      es: 'El artículo 52.2 prevé para las faltas muy graves dos sanciones posibles: la separación del servicio o la suspensión de funciones «por más de un año y menos de seis, con pérdida de las retribuciones». La opción d reproduce esta segunda sanción y es la correcta. La a) falla la duración: la suspensión por menos de un año corresponde a las faltas graves (art. 52.3.a, por más de quince días y menos de un año). Las opciones b y c fallan porque dicen «sin pérdida de las retribuciones», cuando la ley impone siempre la pérdida, y la c además acorta el máximo a tres años cuando la ley dice seis.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 17, pàgina 5 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.2.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 52.3.a',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27067,14 +29731,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 3.2 conté tots els elements de l\'opció a): en els municipis de menys de deu mil habitants hi pot haver policia local si n\'acorda la creació la majoria absoluta del nombre legal de membres de la corporació local corresponent i ho autoritza el conseller de Governació, amb informe previ de la Comissió de Coordinació de les Policies Locals. La b) rebaixa la majoria exigida a simple, quan el text demana majoria absoluta. La c) atribueix l\'acord a una «mesa de contractació» en lloc de la corporació local, un òrgan que no hi té res a veure. I la d) nega frontalment una possibilitat que el precepte preveu de manera expressa.',
+      es: 'El artículo 3.2 contiene todos los elementos de la opción a): en los municipios de menos de diez mil habitantes puede haber policía local si acuerda su creación la mayoría absoluta del número legal de miembros de la corporación local correspondiente y lo autoriza el consejero de Gobernación, con informe previo de la Comisión de Coordinación de las Policías Locales. La b) rebaja la mayoría exigida a simple, cuando el texto pide mayoría absoluta. La c) atribuye el acuerdo a una «mesa de contratación» en lugar de la corporación local, un órgano que no tiene nada que ver. Y la d) niega frontalmente una posibilidad que el precepto prevé de manera expresa.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 18, pàgina 5 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 3.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27106,14 +29776,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La conducta de l\'enunciat és, paraula per paraula, l\'article 195.1 del Codi Penal, que pertany al títol IX del llibre II, la rúbrica del qual és «De la omisión del deber de socorro»: l\'omissió del deure de socors. L\'opció a) és l\'única que anomena aquesta figura, tot i que el quadernet diu «dret de socors» on la llei diu «deure de socors», un lapsus de redacció que no canvia quina opció volia assenyalar el tribunal. La b) no existeix com a rúbrica (la denegació d\'assistència sanitària per professional obligat és l\'article 196, una figura diferent). La c), «omissió impròpia», és una categoria dogmàtica de l\'article 11, no el nom d\'aquest delicte. I la d) queda directament desmentida pel text: la conducta sí que està tipificada.',
+      es: 'La conducta del enunciado es, palabra por palabra, el artículo 195.1 del Código Penal, que pertenece al título IX del libro II, cuya rúbrica es «De la omisión del deber de socorro»: la omisión del deber de socorro. La opción a) es la única que nombra esta figura, aunque el cuadernillo dice «derecho de socorro» donde la ley dice «deber de socorro», un lapsus de redacción que no cambia qué opción quería señalar el tribunal. La b) no existe como rúbrica (la denegación de asistencia sanitaria por profesional obligado es el artículo 196, una figura distinta). La c), «omisión impropia», es una categoría dogmática del artículo 11, no el nombre de este delito. Y la d) queda directamente desmentida por el texto: la conducta sí está tipificada.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 19, pàgina 5 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'llibre II, títol IX, rúbrica',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 195.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27184,14 +29866,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 292 LECrim descriu el contingut de l\'atestat amb tres elements encadenats: especificar amb la major exactitud els fets esbrinats, inserir-hi les declaracions i informes rebuts, i anotar totes les circumstàncies observades que puguin ser prova o indici del delicte. L\'opció a) reprodueix la seqüència completa. Les altres tres la manipulen cadascuna en un punt: la b) restringeix les declaracions a «només les testificals directes», limitació que el precepte no conté; la c) diu «sense incloure les declaracions i informes rebuts», exactament el contrari del text («insertando las declaraciones e informes recibidos»); i la d) talla la frase abans de l\'anotació de circumstàncies que puguin ser prova o indici, deixant el contingut de l\'atestat incomplet.',
+      es: 'El artículo 292 LECrim describe el contenido del atestado con tres elementos encadenados: especificar con la mayor exactitud los hechos averiguados, insertar las declaraciones e informes recibidos, y anotar todas las circunstancias observadas que puedan ser prueba o indicio del delito. La opción a) reproduce la secuencia completa. Las otras tres la manipulan cada una en un punto: la b) restringe las declaraciones a «solo las testificales directas», limitación que el precepto no contiene; la c) dice «sin incluir las declaraciones e informes recibidos», exactamente lo contrario del texto («insertando las declaraciones e informes recibidos»); y la d) corta la frase antes de la anotación de circunstancias que puedan ser prueba o indicio, dejando el contenido del atestado incompleto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 21, pàgina 6 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 292',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27262,14 +29950,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2.1 de la LO 5/2000 diu que els Jutges de Menors són competents per conèixer dels fets comesos per les persones esmentades a l\'article 1, i aquest article 1.1 concreta que la llei s\'aplica als majors de catorze anys i menors de divuit per la comissió de fets tipificats al Codi Penal o a les lleis penals especials. La combinació dels dos articles dona exactament l\'enunciat de la pregunta, i per això l\'opció a) és la correcta. Cap dels altres òrgans hi apareix amb aquesta competència: els jutjats de primera instància (b) són civils, els de violència domèstica (c) no existeixen amb aquest nom a la llei del menor, i el Tribunal Superior de Justícia (d) no hi té atribuïda cap competència de coneixement.',
+      es: 'El artículo 2.1 de la LO 5/2000 dice que los Jueces de Menores son competentes para conocer de los hechos cometidos por las personas mencionadas en el artículo 1, y ese artículo 1.1 concreta que la ley se aplica a los mayores de catorce años y menores de dieciocho por la comisión de hechos tipificados en el Código Penal o en las leyes penales especiales. La combinación de ambos artículos da exactamente el enunciado de la pregunta, y por eso la opción a) es la correcta. Ninguno de los otros órganos aparece con esa competencia: los juzgados de primera instancia (b) son civiles, los de violencia doméstica (c) no existen con ese nombre en la ley del menor, y el Tribunal Superior de Justicia (d) no tiene atribuida ninguna competencia de conocimiento.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 23, pàgina 7 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 2.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27301,14 +30001,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 15.1, regla 2a, de la LO 5/2000 estableix que els fets delictius comesos per menors prescriuen als cinc anys quan es tracti d\'un delicte greu sancionat al Codi Penal amb pena superior a deu anys: exactament el supòsit de l\'enunciat, de manera que l\'opció a) és la correcta. Les altres xifres de l\'article corresponen a supòsits diferents: els tres anys (opció c) són per a qualsevol altre delicte greu, i l\'any (opció d) per al delicte menys greu. El termini de set anys (opció b) no apareix enlloc de l\'article 15. La regla 1a, que remet al Codi Penal, només s\'aplica als delictes més greus que la mateixa regla enumera, no al supòsit de la pregunta.',
+      es: 'El artículo 15.1, regla 2.ª, de la LO 5/2000 establece que los hechos delictivos cometidos por menores prescriben a los cinco años cuando se trate de un delito grave sancionado en el Código Penal con pena superior a diez años: exactamente el supuesto del enunciado, de modo que la opción a) es la correcta. Las demás cifras del artículo corresponden a supuestos distintos: los tres años (opción c) son para cualquier otro delito grave, y el año (opción d) para el delito menos grave. El plazo de siete años (opción b) no aparece en ningún lugar del artículo 15. La regla 1.ª, que remite al Código Penal, solo se aplica a los delitos más graves que la propia regla enumera, no al supuesto de la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 24, pàgina 7 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 15.1.2.º',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 15.1.3.º',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-2000-menors',
+        locator: 'art. 15.1.4.º',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27340,14 +30058,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 553 LECrim autoritza els agents a detenir de pròpia autoritat en quatre supòsits: manament de presó (opció a), sorpresa en delicte flagrant (opció b), delinqüent que, immediatament perseguit pels agents, s\'oculta o es refugia en una casa, i, en casos de necessitat excepcional o urgent, presumptes responsables de les accions de l\'article 384 bis (opció d). L\'opció c) reprodueix el tercer supòsit amputant-ne el requisit essencial: que el delinqüent estigui sent «immediatament perseguit» pels agents. Que algú simplement s\'oculti o es refugiï en una casa, sense aquesta persecució immediata, no habilita per si sol la detenció immediata —caldria, si de cas, l\'autorització judicial d\'entrada—, i per això és el supòsit que la pregunta demana com a resposta.',
+      es: 'El artículo 553 LECrim autoriza a los agentes a detener de propia autoridad en cuatro supuestos: mandamiento de prisión (opción a), sorpresa en delito flagrante (opción b), delincuente que, inmediatamente perseguido por los agentes, se oculta o refugia en alguna casa, y, en casos de excepcional o urgente necesidad, presuntos responsables de las acciones del artículo 384 bis (opción d). La opción c) reproduce el tercer supuesto amputando su requisito esencial: que el delincuente esté siendo «inmediatamente perseguido» por los agentes. Que alguien simplemente se oculte o refugie en una casa, sin esa persecución inmediata, no habilita por sí solo la detención inmediata —haría falta, en su caso, autorización judicial de entrada—, y por eso es el supuesto que la pregunta pide como respuesta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 25, pàgina 7 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 553',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27379,14 +30103,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres primeres afirmacions són còpia de l\'article 520.1 LECrim: la detenció i la presó provisional s\'han de practicar de la manera que menys perjudiqui el detingut (a), la detenció preventiva no pot durar més del temps estrictament necessari per a les indagacions d\'esclariment dels fets (b) i a l\'atestat hi han de constar el lloc i l\'hora de la detenció i de la posada a disposició judicial o, si escau, de la posada en llibertat (c). La falsa és la d): segons l\'article 520.3, quan el detingut té dues o més nacionalitats no s\'informa «sempre» les autoritats consulars de la seva última residència, sinó que és ell qui pot triar a quines autoritats consulars s\'informa de la seva privació de llibertat i amb qui es vol comunicar.',
+      es: 'Las tres primeras afirmaciones son copia del artículo 520.1 LECrim: la detención y la prisión provisional deben practicarse de la forma que menos perjudique al detenido (a), la detención preventiva no puede durar más del tiempo estrictamente necesario para las averiguaciones de esclarecimiento de los hechos (b) y en el atestado deben constar el lugar y la hora de la detención y de la puesta a disposición judicial o, en su caso, de la puesta en libertad (c). La falsa es la d): según el artículo 520.3, cuando el detenido tiene dos o más nacionalidades no se informa «siempre» a las autoridades consulares de su última residencia, sino que es él quien puede elegir a qué autoridades consulares se informa de su privación de libertad y con quién desea comunicarse.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 26, pàgina 7 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.1, paràgraf primer',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.1, paràgraf segon',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.1, paràgraf tercer',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 520.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27418,14 +30166,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'apartat 5 de l\'article 544 ter LECrim, introduït per la Llei 27/2003 i amb la mateixa frase a la redacció vigent, estableix que l\'ordre de protecció confereix a la víctima un estatut integral de protecció i que «podrà fer-se valer davant qualsevol autoritat i Administració pública». L\'opció a) és, doncs, la reproducció literal del precepte. Les altres tres opcions fallen totes pel mateix motiu: introdueixen un «únicament» que el text no conté i que és contrari a la seva finalitat, perquè l\'estatut de protecció està pensat precisament perquè jutjats, forces i cossos de seguretat, serveis socials i qualsevol altra administració activin les seves mesures; limitar-lo als jutjats (b), a l\'administració pública en abstracte (c) o a la policia local (d) buidaria l\'ordre del seu efecte integral.',
+      es: 'El apartado 5 del artículo 544 ter LECrim, introducido por la Ley 27/2003 y con la misma frase en la redacción vigente, establece que la orden de protección confiere a la víctima un estatuto integral de protección y que «podrá hacerse valer ante cualquier autoridad y Administración pública». La opción a) es, pues, la reproducción literal del precepto. Las otras tres opciones fallan todas por el mismo motivo: introducen un «únicamente» que el texto no contiene y que es contrario a su finalidad, porque el estatuto de protección está pensado precisamente para que juzgados, fuerzas y cuerpos de seguridad, servicios sociales y cualquier otra administración activen sus medidas; limitarlo a los juzgados (b), a la Administración pública en abstracto (c) o a la policía local (d) vaciaría la orden de su efecto integral.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 27, pàgina 8 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-27-2003-ordre-proteccio',
+        locator: 'art. segon (art. 544 ter LECrim), apartat 5',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lecrim-1882',
+        locator: 'art. 544 ter.5 (redacció vigent)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27457,14 +30217,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 27.1 de la LO 4/2015 atribueix expressament a l\'Estat, i no a l\'alcalde/ssa ni al ple de l\'ajuntament, la potestat de dictar normes de seguretat pública per als edificis i instal·lacions on se celebrin espectacles i activitats recreatives. Per això l\'opció b) és la correcta i les opcions a) i c) atribueixen la potestat a un òrgan equivocat; la d) («totes són correctes») queda descartada perquè només una ho és.',
+      es: 'El artículo 27.1 de la LO 4/2015 atribuye expresamente al Estado, y no al alcalde/sa ni al pleno del ayuntamiento, la potestad de dictar normas de seguridad pública para los edificios e instalaciones donde se celebren espectáculos y actividades recreativas. Por eso la opción b) es la correcta y las opciones a) y c) atribuyen la potestad a un órgano equivocado; la d) («todas son correctas») queda descartada porque solo una lo es.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 28, pàgina 8 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 27.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27496,14 +30262,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 11.1 de la LO 4/2015 diu que el passaport és un document públic, personal, individual i intransferible, i acredita la identitat i nacionalitat dels espanyols fora d\'Espanya. L\'opció a) inverteix aquest darrer terme i diu «transferible», que és exactament el contrari del que diu la llei: aquesta és la frase falsa que demana la pregunta. L\'opció b) coincideix amb el mateix apartat 1. Les opcions c) i d) coincideixen literalment amb l\'apartat 4, que imposa l\'obligació d\'exhibir-lo i facilitar-lo als agents i de custodiar-lo amb diligència.',
+      es: 'El artículo 11.1 de la LO 4/2015 dice que el pasaporte es un documento público, personal, individual e intransferible, y acredita la identidad y nacionalidad de los españoles fuera de España. La opción a) invierte ese último término y dice «transferible», que es exactamente lo contrario de lo que dice la ley: esa es la frase falsa que pide la pregunta. La opción b) coincide con el mismo apartado 1. Las opciones c) y d) coinciden literalmente con el apartado 4, que impone la obligación de exhibirlo y facilitarlo a los agentes y de custodiarlo con diligencia.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 29, pàgina 8 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 11.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 11.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27535,14 +30313,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció d) coincideix literalment amb l\'article 36.18, dins la llista d\'infraccions GREUS: «l\'execució d\'actes de plantació i cultiu il·lícits de drogues tòxiques [...] en llocs visibles al públic, quan no siguin constitutius d\'infracció penal». Les opcions a), b) i c) també apareixen a la llei, però com a infraccions LLEUS de l\'article 37 (apartats 17, 12 i 8 respectivament): consum d\'alcohol amb pertorbació greu, negativa a entregar documentació retirada i omissió de mesures de custòdia d\'armes i explosius. Només d) és, doncs, una infracció greu.',
+      es: 'La opción d) coincide literalmente con el artículo 36.18, dentro de la lista de infracciones GRAVES: «la ejecución de actos de plantación y cultivo ilícitos de drogas tóxicas [...] en lugares visibles al público, cuando no sean constitutivos de infracción penal». Las opciones a), b) y c) también aparecen en la ley, pero como infracciones LEVES del artículo 37 (apartados 17, 12 y 8 respectivamente): consumo de alcohol con perturbación grave, negativa a entregar documentación retirada y omisión de medidas de custodia de armas y explosivos. Solo d) es, por tanto, una infracción grave.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 30, pàgina 9 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 36.18',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.17',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.12',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 37.8',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27574,14 +30376,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'enunciat reprodueix l\'article 9.7 de la Llei 4/2003: «La junta local de seguretat s\'ha de reunir en sessió ordinària, convocada pel president o presidenta, amb caràcter trimestral». La resposta b) és, doncs, la literal, i cap de les altres periodicitats (mensual, semestral, anual) apareix al precepte. El Decret 151/1998, anterior a la Llei, preveia sessions ordinàries «com a mínim un cop cada quatre mesos» (art. 6.1), però la Llei 4/2003, posterior i de rang superior, va fixar el caràcter trimestral, i és d\'aquesta redacció —vigent el dia de l\'examen i encara avui, sense modificacions— d\'on surt paraula per paraula la pregunta del tribunal.',
+      es: 'El enunciado reproduce el artículo 9.7 de la Ley 4/2003: «La junta local de seguridad se ha de reunir en sesión ordinaria, convocada por el presidente o presidenta, con carácter trimestral». La respuesta b) es, pues, la literal, y ninguna de las otras periodicidades (mensual, semestral, anual) aparece en el precepto. El Decreto 151/1998, anterior a la Ley, preveía sesiones ordinarias «como mínimo una vez cada cuatro meses» (art. 6.1), pero la Ley 4/2003, posterior y de rango superior, fijó el carácter trimestral, y de esa redacción —vigente el día del examen y todavía hoy, sin modificaciones— sale palabra por palabra la pregunta del tribunal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 31, pàgina 9 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.7',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-151-1998-juntes',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27652,14 +30466,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El text de la LOFCS confirma, a l\'article cinquanta-tres (art. 53), apartat 1, lletra c), que és una de les funcions dels Cossos de Policia Local «instruir atestados por accidentes de circulación dentro del casco urbano», exactament la competència que descriu l\'enunciat, atorgada per una llei orgànica de l\'Estat. Això coincideix exactament amb l\'opció a) (article 53.1.c de la LO 2/1986). Les opcions b) i c) remeten a una llei del Parlament de Catalunya, que per definició no és una «norma de caràcter estatal» com exigeix l\'enunciat, de manera que queden excloses per la pròpia formulació de la pregunta. L\'opció d) cita la Llei orgànica 10/1995, que en realitat és el Codi Penal, una norma sense relació amb les funcions de la policia local.',
+      es: 'El texto de la LOFCS confirma, en el artículo cincuenta y tres (art. 53), apartado 1, letra c), que es una de las funciones de los Cuerpos de Policía Local «instruir atestados por accidentes de circulación dentro del casco urbano», exactamente la competencia que describe el enunciado, otorgada por una ley orgánica del Estado. Esto coincide exactamente con la opción a) (artículo 53.1.c de la LO 2/1986). Las opciones b) y c) remiten a una ley del Parlamento de Cataluña, que por definición no es una «norma de carácter estatal» como exige el enunciado, por lo que quedan excluidas por la propia formulación de la pregunta. La opción d) cita la Ley Orgánica 10/1995, que en realidad es el Código Penal, una norma sin relación con las funciones de la policía local.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 33, pàgina 9 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53, encapçalament',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1986-fcs',
+        locator: 'art. 53.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27691,14 +30523,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 21 del Reglament general de circulació obliga a sotmetre’s a les proves de detecció alcohòlica tots els conductors de vehicles i de bicicletes i, «igualmente», els altres usuaris de la via «cuando se hallen implicados en algún accidente de circulación». Un vianant és un usuari de la via però no un conductor: només queda obligat, doncs, si està implicat en un accident, que és exactament el cas de la b). Les altres tres opcions descriuen vianants que no han tingut cap accident —un que camina per la vorera, un d’aturat en un control o un que intenta obrir la porta d’un vehicle sense arribar a conduir-lo— i cap dels supòsits de l’article (ni el paràgraf primer ni les lletres a a d, pensades per a conductors o implicats en accidents) no els converteix en obligats.',
+      es: 'El artículo 21 del Reglamento general de circulación obliga a someterse a las pruebas de detección alcohólica a todos los conductores de vehículos y de bicicletas y, «igualmente», a los demás usuarios de la vía «cuando se hallen implicados en algún accidente de circulación». Un peatón es un usuario de la vía pero no un conductor: solo queda obligado, pues, si está implicado en un accidente, que es exactamente el caso de la b). Las otras tres opciones describen peatones que no han tenido ningún accidente —uno que camina por la acera, uno parado en un control o uno que intenta abrir la puerta de un vehículo sin llegar a conducirlo— y ninguno de los supuestos del artículo (ni el párrafo primero ni las letras a a d, pensadas para conductores o implicados en accidentes) los convierte en obligados.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 34, pàgina 10 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 21, paràgraf primer',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 21, lletres a) a c)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27730,14 +30574,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El mateix Codi d\'ètica de la Policia de Catalunya, aprovat per l\'Acord GOV/25/2015 que cita l\'enunciat, diu literalment que \'els valors, les actituds i les competències s\'agrupen en cinc àrees: la funció pública, la professió, l\'orientació a les persones, les relacions institucionals i l\'entorn\'. Els quatre primers elements coincideixen exactament amb els que ja apareixen a l\'enunciat de la pregunta, i el cinquè, el que cal completar, és \'l\'entorn\', que coincideix amb l\'opció b). Cap de les altres opcions (l\'àmbit geogràfic, la normativa o el coneixement) apareix a l\'enumeració de les cinc àrees: el \'coneixement\' (opció d) sí que existeix al Codi, però com un valor concret dins l\'àrea de la professió, no com el nom d\'una de les cinc àrees. Per això l\'opció b) és l\'única que reprodueix literalment el text de la norma.',
+      es: 'El propio Código de ética de la Policía de Cataluña, aprobado por el Acuerdo GOV/25/2015 que cita el enunciado, dice literalmente que \'los valores, las actitudes y las competencias se agrupan en cinco áreas: la función pública, la profesión, la orientación a las personas, las relaciones institucionales y el entorno\'. Los cuatro primeros elementos coinciden exactamente con los que ya aparecen en el enunciado de la pregunta, y el quinto, el que hay que completar, es \'el entorno\', que coincide con la opción b). Ninguna de las demás opciones (el ámbito geográfico, la normativa o el conocimiento) aparece en la enumeración de las cinco áreas: el \'conocimiento\' (opción d) sí existe en el Código, pero como un valor concreto dentro del área de la profesión, no como el nombre de una de las cinco áreas. Por eso la opción b) es la única que reproduce literalmente el texto de la norma.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 35, pàgina 10 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-etic-policia-catalunya',
+        locator: 'Annex, I. Principis, valors i competències',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27769,14 +30619,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El punt primer de l\'article 10.1 agrupa els principis d\'adequació a l\'ordenament jurídic, i la seva lletra c) és exactament l\'opció a): actuar amb integritat i dignitat i, en particular, abstenir-se de participar en qualsevol acte de corrupció i oposar-s\'hi amb fermesa. La b) deforma la lletra d): el text imposa atenir-se als principis de jerarquia i de subordinació, però afegeix que l\'obediència deguda mai no pot emparar ordres manifestament delictives o contràries a la Constitució, a l\'Estatut o a les lleis. La c) contradiu la lletra a), que exigeix respecte absolut a la Constitució, a l\'Estatut i a la resta de l\'ordenament, no un únic referent. I la d) xoca amb la lletra b): cap discriminació, sense l\'afegit dels «antecedents».',
+      es: 'El punto primero del artículo 10.1 agrupa los principios de adecuación al ordenamiento jurídico, y su letra c) es exactamente la opción a): actuar con integridad y dignidad y, en particular, abstenerse de participar en cualquier acto de corrupción y oponerse a él con firmeza. La b) deforma la letra d): el texto impone atenerse a los principios de jerarquía y de subordinación, pero añade que la obediencia debida nunca puede amparar órdenes manifiestamente delictivas o contrarias a la Constitución, al Estatuto o a las leyes. La c) contradice la letra a), que exige respeto absoluto a la Constitución, al Estatuto y al resto del ordenamiento, no un único referente. Y la d) choca con la letra b): ninguna discriminación, sin el añadido de los «antecedentes».',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 36, pàgina 10 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, c)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, d)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, a)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, b)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27808,14 +30682,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 13.1 de l’ordenança de circulació prohibeix la parada, entre altres llocs, «als revolts, ponts i canvis de rasant de visibilitat reduïda» (lletra a), «als passos senyalitzats o adaptats per a vianants, minusvàlids o ciclistes» (lletra b) i «als carrils bici» (lletra d). Per tant, els ponts, els passos de vianants i els carrils bici sempre queden vetats, i les opcions a), b) i d) descriuen parades prohibides. En canvi, la prohibició sobre els canvis de rasant només opera quan són «de visibilitat reduïda»: un canvi de rasant amb bona visibilitat no encaixa en cap lletra de l’article, i per això la c) és l’única parada que l’ordenança no prohibeix. La modificació de 2021 no va tocar l’article 13.',
+      es: 'El artículo 13.1 de la ordenanza de circulación prohíbe la parada, entre otros lugares, «en las curvas, puentes y cambios de rasante de visibilidad reducida» (letra a), «en los pasos señalizados o adaptados para peatones, minusválidos o ciclistas» (letra b) y «en los carriles bici» (letra d). Por tanto, los puentes, los pasos de peatones y los carriles bici siempre quedan vetados, y las opciones a), b) y d) describen paradas prohibidas. En cambio, la prohibición sobre los cambios de rasante solo opera cuando son «de visibilidad reducida»: un cambio de rasante con buena visibilidad no encaja en ninguna letra del artículo, y por eso la c) es la única parada que la ordenanza no prohíbe. La modificación de 2021 no tocó el artículo 13.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 37, pàgina 10 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 13.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 13.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 13.1.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -27847,14 +30739,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 37.1 de l’ordenança de circulació, dins del capítol dedicat a la càrrega i descàrrega de mercaderies, atribueix la competència amb tota claredat: «L’alcaldia podrà determinar zones reservades per a càrrega i descàrrega» perquè els vehicles de transport de mercaderies puguin operar quan les condicions dels locals comercials o industrials no permetin fer-ho a l’interior. Cap altre òrgan apareix en aquest precepte: ni el Ple, ni la Junta de Govern Local, ni cap regidor. Per això l’opció c), l’Alcaldia, és la correcta i les altres tres s’han de descartar. La modificació de 2021 de l’ordenança no va tocar l’article 37, de manera que l’atribució competencial continua sent la mateixa avui.',
+      es: 'El artículo 37.1 de la ordenanza de circulación, dentro del capítulo dedicado a la carga y descarga de mercancías, atribuye la competencia con toda claridad: «La alcaldía podrá determinar zonas reservadas para carga y descarga» para que los vehículos de transporte de mercancías puedan operar cuando las condiciones de los locales comerciales o industriales no permitan hacerlo en su interior. Ningún otro órgano aparece en ese precepto: ni el Pleno, ni la Junta de Gobierno Local, ni ningún concejal. Por eso la opción c), la Alcaldía, es la correcta y las otras tres deben descartarse. La modificación de 2021 de la ordenanza no tocó el artículo 37, de modo que la atribución competencial sigue siendo la misma hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 38, pàgina 11 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'roses-ordenanca-circulacio',
+        locator: 'art. 37.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -28900,14 +31798,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El dret a la llibertat i a la seguretat obre l\'article 17: «tota persona té dret a la llibertat i a la seguretat», i els apartats següents en despleguen les garanties (durada màxima de la detenció preventiva, informació de drets, assistència d\'advocat i habeas corpus). La resposta és la b). Els altres articles proposats tenen contingut ben diferent: el 13 regula els drets dels estrangers a Espanya i l\'extradició, el 35 el deure i el dret al treball, i el 46 —al capítol de principis rectors— la conservació del patrimoni històric, cultural i artístic. Cap d\'ells no esmenta la llibertat i la seguretat personals.',
+      es: 'El derecho a la libertad y a la seguridad abre el artículo 17: «toda persona tiene derecho a la libertad y a la seguridad», y los apartados siguientes despliegan sus garantías (duración máxima de la detención preventiva, información de derechos, asistencia de abogado y habeas corpus). La respuesta es la b). Los otros artículos propuestos tienen contenido bien distinto: el 13 regula los derechos de los extranjeros en España y la extradición, el 35 el deber y el derecho al trabajo, y el 46 —en el capítulo de principios rectores— la conservación del patrimonio histórico, cultural y artístico. Ninguno de ellos menciona la libertad y la seguridad personales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 17.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -28939,14 +31843,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 8.1 de l’Estatut estableix que Catalunya «té com a símbols nacionals la bandera, la festa i l’himne»: l’opció a n’és la còpia exacta. Les opcions b) i d) hi posen «l’estelada», que no apareix enlloc de l’Estatut: l’article 8.2 descriu la bandera de Catalunya com «la tradicional de quatre barres vermelles en fons groc», que ha d’ésser present als edificis públics i als actes oficials. La c) substitueix l’himne per la verge de Montserrat, que tampoc no figura a l’article 8: els apartats següents del mateix article concreten que la festa és la Diada de l’Onze de Setembre i que l’himne és Els segadors. I la d) hi afegeix encara la barretina, sense cap base estatutària.',
+      es: 'El artículo 8.1 del Estatuto establece que Cataluña «tiene como símbolos nacionales la bandera, la fiesta y el himno»: la opción a es su copia exacta. Las opciones b) y d) ponen «la estelada», que no aparece en ninguna parte del Estatuto: el artículo 8.2 describe la bandera de Cataluña como «la tradicional de cuatro barras rojas sobre fondo amarillo», que debe estar presente en los edificios públicos y en los actos oficiales. La c) sustituye el himno por la virgen de Montserrat, que tampoco figura en el artículo 8: los apartados siguientes del mismo artículo concretan que la fiesta es la Diada del Once de Septiembre y que el himno es Els segadors. Y la d) añade además la barretina, sin base estatutaria alguna.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 8.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 8.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -28978,14 +31894,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 164.1.c de l’Estatut atribueix a la Generalitat, en matèria de seguretat pública, «El control i la vigilància del trànsit»: l’opció a. Les opcions b) i d) descriuen competències reals de la Generalitat, però situades a l’article 163 (seguretat privada), on figuren com a execució de la legislació de l’Estat: l’autorització dels centres de formació del personal de seguretat privada n’és la lletra c i la inspecció i la sanció de les activitats de seguretat privada n’és la lletra b; com que la pregunta demana l’article 164, totes dues queden fora. I la c) és falsa perquè l’article 164.1.a parla de «l’ordenació de les policies locals» sense esmentar mai la Guàrdia Civil, un cos de seguretat de l’Estat sobre el qual la Generalitat no té cap potestat d’ordenació.',
+      es: 'El artículo 164.1.c del Estatuto atribuye a la Generalitat, en materia de seguridad pública, «el control y la vigilancia del tráfico»: la opción a. Las opciones b) y d) describen competencias reales de la Generalitat, pero situadas en el artículo 163 (seguridad privada), donde figuran como ejecución de la legislación del Estado: la autorización de los centros de formación del personal de seguridad privada es su letra c y la inspección y la sanción de las actividades de seguridad privada es su letra b; como la pregunta pide el artículo 164, ambas quedan fuera. Y la c) es falsa porque el artículo 164.1.a habla de «la ordenación de las policías locales» sin mencionar nunca a la Guardia Civil, un cuerpo de seguridad del Estado sobre el que la Generalitat no tiene potestad alguna de ordenación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 163',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29017,14 +31951,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 141.4 diu que «als arxipèlags, les illes tindran a més la seva administració pròpia en forma de Cabildos o Consells»: els cabildos a les Canàries i els consells (insulars) a les Balears. L\'opció a) reprodueix la parella exacta del precepte. Les altres tres mantenen el terme «cabildos» però hi aparellen paraules que no són al text ni tenen cap sentit institucional: «muntanyes» (b), «territoris» (c) i «parcel·les» (d). És una pregunta de literalitat: només cal recordar el segon terme de la fórmula constitucional, «Consejos».',
+      es: 'El artículo 141.4 dice que «en los archipiélagos, las islas tendrán además su administración propia en forma de Cabildos o Consejos»: los cabildos en Canarias y los consejos (insulares) en Baleares. La opción a) reproduce la pareja exacta del precepto. Las otras tres mantienen el término «cabildos» pero lo emparejan con palabras que no están en el texto ni tienen sentido institucional alguno: «montañas» (b), «territorios» (c) y «parcelas» (d). Es una pregunta de literalidad: solo hay que recordar el segundo término de la fórmula constitucional, «Consejos».',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 141.4',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29056,14 +31996,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Llei 16/1991 configura la policia local com una potestat, no com un deure: l\'article 3.1 diu que «hi pot haver» policia local en els municipis de més de deu mil habitants, i el preàmbul remarca que l\'existència de la policia local no es determina com a obligatòria per a cap municipi. El llindar de la potestat general és, doncs, 10.000 habitants, l\'opció d). Les xifres de 5.000, 8.000 i 9.000 habitants no apareixen enlloc del text. Per sota dels 10.000 habitants la creació també és possible, però ja no com a potestat directa: cal el procediment reforçat de l\'article 3.2, amb majoria absoluta de la corporació i autorització del conseller de Governació.',
+      es: 'La Ley 16/1991 configura la policía local como una potestad, no como un deber: el artículo 3.1 dice que «puede haber» policía local en los municipios de más de diez mil habitantes, y el preámbulo remarca que la existencia de la policía local no se determina como obligatoria para ningún municipio. El umbral de la potestad general es, pues, 10.000 habitantes, la opción d). Las cifras de 5.000, 8.000 y 9.000 habitantes no aparecen en ningún punto del texto. Por debajo de los 10.000 habitantes la creación también es posible, pero ya no como potestad directa: hace falta el procedimiento reforzado del artículo 3.2, con mayoría absoluta de la corporación y autorización del consejero de Gobernación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 5, pàgina 1 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 3.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'preàmbul, apartat III',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29134,14 +32086,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres funcions llistades figuren, amb aquestes mateixes paraules, al catàleg de l\'article 11 de la Llei 16/1991: la lletra e) diu «exercir de policia judicial, d\'acord amb l\'article 12 i amb la normativa vigent»; la lletra h), «cooperar en la resolució dels conflictes privats, quan siguin requerides a fer-ho»; i la lletra k), «vetllar pel compliment de la normativa vigent en matèria de medi ambient i de protecció de l\'entorn». Com que les opcions a), b) i c) reprodueixen tres lletres del mateix catàleg de funcions de les policies locals, la resposta correcta és la d), «totes les respostes són correctes».',
+      es: 'Las tres funciones listadas figuran, con estas mismas palabras, en el catálogo del artículo 11 de la Ley 16/1991: la letra e) dice «ejercer de policía judicial, de acuerdo con el artículo 12 y con la normativa vigente»; la letra h), «cooperar en la resolución de los conflictos privados, cuando sean requeridas para ello»; y la letra k), «velar por el cumplimiento de la normativa vigente en materia de medio ambiente y de protección del entorno». Como las opciones a), b) y c) reproducen tres letras del mismo catálogo de funciones de las policías locales, la respuesta correcta es la d), «todas las respuestas son correctas».',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11.h',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11.k',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29173,14 +32143,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La pregunta combina dos apartats de l\'article 9 de la Llei 4/2003. L\'apartat 7 confirma la premissa de l\'enunciat: la junta local de seguretat s\'ha de reunir en sessió ordinària amb caràcter trimestral. I l\'apartat 2 respon la incògnita: la junta «és integrada per l\'alcalde o alcaldessa, que la presideix». Per això la b) és la correcta. El cap de la policia local i el cap de la comissaria dels mossos d\'esquadra en són vocals permanents, no presidents (art. 9.2.c i d), i el regidor de seguretat ciutadana només pot presidir les sessions per delegació excepcional de l\'alcalde (art. 9.6), no amb caràcter ordinari. La redacció d\'aquests apartats no consta modificada i continua vigent.',
+      es: 'La pregunta combina dos apartados del artículo 9 de la Ley 4/2003. El apartado 7 confirma la premisa del enunciado: la junta local de seguridad se ha de reunir en sesión ordinaria con carácter trimestral. Y el apartado 2 responde la incógnita: la junta «está integrada por el alcalde o alcaldesa, que la preside». Por eso la b) es la correcta. El jefe de la policía local y el jefe de la comisaría de los mossos d\'esquadra son vocales permanentes, no presidentes (art. 9.2.c y d), y el concejal de seguridad ciudadana solo puede presidir las sesiones por delegación excepcional del alcalde (art. 9.6), no con carácter ordinario. La redacción de estos apartados no consta modificada y sigue vigente.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.7',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29251,14 +32233,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'abandonament del servei és falta molt greu segons l\'article 48.1.g: opció d. La deixadesa en la presentació personal (opció a) és falta lleu (art. 50.c, «la descurança en la presentació personal»); l\'incompliment de la jornada de treball sense causa justificada (opció b) també és falta lleu (art. 50.e); i la pèrdua de les armes permetent-ne la sostracció per negligència simple (opció c) és falta greu (art. 49.n): només és molt greu quan la negligència és inexcusable (art. 48.1.j). Aquest darrer matís —negligència simple contra negligència inexcusable— és el parany clàssic de la pregunta.',
+      es: 'El abandono del servicio es falta muy grave según el artículo 48.1.g: opción d. La dejadez en la presentación personal (opción a) es falta leve (art. 50.c, el descuido en la presentación personal); el incumplimiento de la jornada de trabajo sin causa justificada (opción b) también es falta leve (art. 50.e); y la pérdida de las armas permitiendo su sustracción por negligencia simple (opción c) es falta grave (art. 49.n): solo es muy grave cuando la negligencia es inexcusable (art. 48.1.j). Este último matiz —negligencia simple frente a negligencia inexcusable— es la trampa clásica de la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 10, pàgina 2 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.n',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29290,14 +32296,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 46.1 de la Llei 7/1985 estableix que els òrgans col·legiats de les entitats locals funcionen en règim de sessions ordinàries, de periodicitat preestablerta, i extraordinàries, «que poden ser, a més, urgents». D’aquí surten els tres tipus clàssics de sessió del Ple: ordinària, extraordinària i extraordinària de caràcter urgent, que és exactament l’opció c). Les categories de les altres opcions —sessions «nocturnes», «setmanals», «transitòries», «anuals» o «nocturnes de caràcter simple»— no existeixen a la llei: la periodicitat mínima de les ordinàries (mensual, bimestral o trimestral segons la població, art. 46.2.a) no és un tipus de sessió, i la urgència és un caràcter que només poden tenir les extraordinàries, amb ratificació de la convocatòria pel mateix Ple (art. 46.2.b).',
+      es: 'El artículo 46.1 de la Ley 7/1985 establece que los órganos colegiados de las entidades locales funcionan en régimen de sesiones ordinarias, de periodicidad preestablecida, y extraordinarias, «que pueden ser, además, urgentes». De ahí salen los tres tipos clásicos de sesión del Pleno: ordinaria, extraordinaria y extraordinaria de carácter urgente, que es exactamente la opción c). Las categorías de las otras opciones —sesiones «nocturnas», «semanales», «transitorias», «anuales» o «nocturnas de carácter simple»— no existen en la ley: la periodicidad mínima de las ordinarias (mensual, bimestral o trimestral según la población, art. 46.2.a) no es un tipo de sesión, y la urgencia es un carácter que solo pueden tener las extraordinarias, con ratificación de la convocatoria por el propio Pleno (art. 46.2.b).',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 46.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29329,14 +32341,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 19.1 de la Llei 7/1985 diu que el govern i l’administració municipal, llevat dels municipis que funcionin en règim de consell obert, corresponen a l’ajuntament, «integrat per l’alcalde i els regidors». La resposta correcta és, doncs, la a). Les altres opcions barregen figures alienes al govern municipal: els consellers comarcals (b) pertanyen al consell comarcal, un ens local diferent; els tècnics (c) i el secretari i l’interventor (d) són personal al servei de la corporació que la gestiona professionalment o n’exerceix funcions de fe pública i control intern, però no en tenen el govern, que la llei reserva als membres electes: l’alcalde i els regidors, elegits en els termes de la legislació electoral general (art. 19.2).',
+      es: 'El artículo 19.1 de la Ley 7/1985 dice que el gobierno y la administración municipal, salvo en los municipios que funcionen en régimen de concejo abierto, corresponden al ayuntamiento, «integrado por el Alcalde y los Concejales». La respuesta correcta es, pues, la a). Las otras opciones mezclan figuras ajenas al gobierno municipal: los consejeros comarcales (b) pertenecen al consejo comarcal, un ente local distinto; los técnicos (c) y el secretario y el interventor (d) son personal al servicio de la corporación que la gestiona profesionalmente o ejerce funciones de fe pública y control interno, pero no ostentan su gobierno, que la ley reserva a los miembros electos: el alcalde y los concejales, elegidos en los términos de la legislación electoral general (art. 19.2).',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 19.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29368,14 +32386,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 17.1 de la Llei 7/1985 respon la pregunta amb les mateixes paraules de l’enunciat: «la formació, el manteniment, la revisió i la custòdia del Padró municipal corresponen a l’Ajuntament, d’acord amb el que estableixi la legislació de l’Estat». La resposta correcta és, doncs, la a). L’Institut Nacional d’Estadística (opció c) hi té un paper diferent: rep les dades dels padrons, en fa les comprovacions per esmenar errors i evitar duplicitats i coordina els padrons de tots els municipis (art. 17.3), però no n’és el responsable. El Registre Civil (b) inscriu naixements, matrimonis i defuncions, no residències, i la Policia Municipal (d) no té cap funció padronal atribuïda per la llei.',
+      es: 'El artículo 17.1 de la Ley 7/1985 responde la pregunta con las mismas palabras del enunciado: «la formación, mantenimiento, revisión y custodia del Padrón municipal corresponde al Ayuntamiento, de acuerdo con lo que establezca la legislación del Estado». La respuesta correcta es, pues, la a). El Instituto Nacional de Estadística (opción c) tiene un papel distinto: recibe los datos de los padrones, realiza las comprobaciones para subsanar errores y evitar duplicidades y coordina los padrones de todos los municipios (art. 17.3), pero no es su responsable. El Registro Civil (b) inscribe nacimientos, matrimonios y defunciones, no residencias, y la Policía Municipal (d) no tiene ninguna función padronal atribuida por la ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 13, pàgina 3 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 17.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29407,14 +32431,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1 assigna cada categoria a una única escala, i la lletra b) és inequívoca: «Escala executiva, que comprèn la categoria d\'inspector». Per això la bona és la c). Les altres tres escales tenen categories pròpies i cap no inclou l\'inspector: la intermèdia comprèn el sots-inspector i el sergent; la superior, el superintendent, l\'intendent major i l\'intendent; i la bàsica, el caporal i l\'agent. La pregunta es respon comparant les quatre lletres de l\'apartat 1 de l\'article 24, que no ha estat modificat en aquest punt: les reformes posteriors només han tocat els grups de classificació de l\'apartat 2.',
+      es: 'El artículo 24.1 asigna cada categoría a una única escala, y la letra b) es inequívoca: «Escala ejecutiva, que comprende la categoría de inspector». Por eso la buena es la c). Las otras tres escalas tienen categorías propias y ninguna incluye al inspector: la intermedia comprende al subinspector y al sargento; la superior, al superintendente, al intendente mayor y al intendente; y la básica, al cabo y al agente. La pregunta se responde comparando las cuatro letras del apartado 1 del artículo 24, que no ha sido modificado en este punto: las reformas posteriores solo han tocado los grupos de clasificación del apartado 2.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 14, pàgina 3 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29446,14 +32494,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 154 crea la figura exacta que demana l\'enunciat: «un Delegat nomenat pel Govern dirigirà l\'Administració de l\'Estat al territori de la Comunitat Autònoma», i Catalunya n\'és una; la resposta és la c), el Delegat del Govern. El subdelegat (a) és una figura d\'àmbit provincial creada per la legislació administrativa, subordinada al delegat, i no la que «dirigeix» l\'Administració de l\'Estat a la comunitat. El president de la Generalitat (b) encapçala l\'administració pròpia de Catalunya, precisament la que l\'article distingeix de l\'estatal, i a més no és nomenat pel Govern. I cap ministre (d) no té atribuïda per la Constitució la direcció territorial de l\'Administració de l\'Estat a una comunitat autònoma.',
+      es: 'El artículo 154 crea la figura exacta que pide el enunciado: «un Delegado nombrado por el Gobierno dirigirá la Administración del Estado en el territorio de la Comunidad Autónoma», y Cataluña es una de ellas; la respuesta es la c), el Delegado del Gobierno. El subdelegado (a) es una figura de ámbito provincial creada por la legislación administrativa, subordinada al delegado, y no la que «dirige» la Administración del Estado en la comunidad. El presidente de la Generalitat (b) encabeza la administración propia de Cataluña, precisamente la que el artículo distingue de la estatal, y además no es nombrado por el Gobierno. Y ningún ministro (d) tiene atribuida por la Constitución la dirección territorial de la Administración del Estado en una comunidad autónoma.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 15, pàgina 3 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 154',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29485,14 +32539,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Tres de les opcions reprodueixen principis reals de l\'article 10.1: el respecte absolut a la Constitució, a l\'Estatut i a la resta de l\'ordenament jurídic (punt primer, lletra a), la integritat i dignitat amb el rebuig ferm de la corrupció (punt primer, lletra c) i la col·laboració amb l\'Administració de Justícia (punt primer, lletra e). La d) és la falsa: el punt segon, lletra b), obliga a tenir «en tot moment» un tracte correcte i acurat amb els ciutadans, no «en determinades ocasions». Aquesta restricció temporal, que el text no admet, és exactament el que converteix la d) en la resposta de la pregunta.',
+      es: 'Tres de las opciones reproducen principios reales del artículo 10.1: el respeto absoluto a la Constitución, al Estatuto y al resto del ordenamiento jurídico (punto primero, letra a), la integridad y dignidad con el rechazo firme de la corrupción (punto primero, letra c) y la colaboración con la Administración de Justicia (punto primero, letra e). La d) es la falsa: el punto segundo, letra b), obliga a tener «en todo momento» un trato correcto y esmerado con los ciudadanos, no «en determinadas ocasiones». Esta restricción temporal, que el texto no admite, es exactamente lo que convierte la d) en la respuesta de la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, segon, b)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, a)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, c)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, e)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29524,14 +32602,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 25.2 de la Llei 7/1985 enumera les matèries en què el municipi exerceix «en tot cas» competències pròpies, i prestar serveis públics de caràcter supracomarcal no hi apareix per enlloc: els serveis supramunicipals són terreny de comarques i diputacions, no del municipi. Això sosté la lletra d) del tribunal. Les opcions b) i c) sí que figuren a la llista vigent: la protecció civil i la prevenció i extinció d’incendis són a la lletra f), juntament amb la policia local, i la protecció del medi correspon a la lletra b), «medi ambient urbà». Ara bé, «la seguretat en llocs públics» (opció a) era la redacció de l’article 25.2.a anterior a la reforma de la Llei 27/2013 i ja no apareix literalment al text consolidat —la matèria equivalent avui és «policia local»—, de manera que aquesta opció no es pot descartar amb cita literal i la decisió queda en «parcialment sostinguda».',
+      es: 'El artículo 25.2 de la Ley 7/1985 enumera las materias en las que el municipio ejerce «en todo caso» competencias propias, y prestar servicios públicos de carácter supracomarcal no aparece por ningún lado: los servicios supramunicipales son terreno de comarcas y diputaciones, no del municipio. Eso sostiene la letra d) del tribunal. Las opciones b) y c) sí figuran en la lista vigente: la protección civil y la prevención y extinción de incendios están en la letra f), junto con la policía local, y la protección del medio corresponde a la letra b), «medio ambiente urbano». Ahora bien, «la seguridad en lugares públicos» (opción a) era la redacción del artículo 25.2.a anterior a la reforma de la Ley 27/2013 y ya no aparece literalmente en el texto consolidado —la materia equivalente hoy es «policía local»—, de modo que esa opción no puede descartarse con cita literal y la decisión queda en «parcialmente sostenida».',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 17, pàgina 4 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 25.2 (encapçalament)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 25.2.f',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 25.2.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29563,14 +32659,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 53 fixa els criteris per graduar les sancions d\'acord amb el principi de proporcionalitat: la intencionalitat, la pertorbació dels serveis, els danys i els perjudicis produïts a l\'Administració o als administrats, la reincidència en la comissió de faltes, el grau de participació en la comissió o l\'omissió i la transcendència per a la seguretat pública. Les opcions a, b i c reprodueixen literalment tres d\'aquests criteris (lletres a, b i d). La falta d\'assistència injustificada al centre de treball, en canvi, no és cap criteri de graduació: és una conducta tipificada com a falta (la manca d\'assistència sense causa justificada és falta greu, art. 49.l). Per això la resposta és la d.',
+      es: 'El artículo 53 fija los criterios para graduar las sanciones de acuerdo con el principio de proporcionalidad: la intencionalidad, la perturbación de los servicios, los daños y perjuicios producidos a la Administración o a los administrados, la reincidencia en la comisión de faltas, el grado de participación en la comisión u omisión y la trascendencia para la seguridad pública. Las opciones a, b y c reproducen literalmente tres de estos criterios (letras a, b y d). La falta de asistencia injustificada al centro de trabajo, en cambio, no es ningún criterio de graduación: es una conducta tipificada como falta (la falta de asistencia sin causa justificada es falta grave, art. 49.l). Por eso la respuesta es la d.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 18, pàgina 4 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 53.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29602,14 +32722,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La pregunta reprodueix gairebé literalment l\'article 54: el Defensor del Poble és la institució configurada com a «alt comissionat de les Corts Generals», designat per aquestes per a la defensa dels drets compresos al títol I, i amb la facultat de supervisar l\'activitat de l\'Administració donant-ne compte a les Corts. La resposta és la c). Cap de les altres opcions no correspon a aquesta definició: el fiscal en cap del Tribunal Suprem no és un òrgan de les Corts, el «Tribunal de Drets Humans» no apareix a la Constitució, i «Ombudsman» és la denominació genèrica escandinava de la figura, no el nom que li dona el text constitucional espanyol.',
+      es: 'La pregunta reproduce casi literalmente el artículo 54: el Defensor del Pueblo es la institución configurada como «alto comisionado de las Cortes Generales», designado por estas para la defensa de los derechos comprendidos en el título I, y con la facultad de supervisar la actividad de la Administración dando cuenta a las Cortes. La respuesta es la c). Ninguna de las otras opciones corresponde a esa definición: el fiscal jefe del Tribunal Supremo no es un órgano de las Cortes, el «Tribunal de Derechos Humanos» no aparece en la Constitución, y «Ombudsman» es la denominación genérica escandinava de la figura, no el nombre que le da el texto constitucional español.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 19, pàgina 4 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 54',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29641,14 +32767,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 1.2 de la LO 4/2015 defineix el seu propi objecte amb la mateixa frase que reprodueix l\'enunciat: regular un conjunt plural i diversificat d\'actuacions orientades a la tutela de la seguretat ciutadana, mitjançant la protecció de persones i béns i el manteniment de la tranquil·litat dels ciutadans. Per això l\'opció c) és la correcta. Les altres tres normes tenen, pel seu propi títol i objecte reconegut, una matèria diferent: la Llei 16/1991 regula les policies locals de Catalunya, la LO 2/1986 les Forces i Cossos de Seguretat, i el Decret legislatiu 1/1997 la funció pública catalana; cap d\'elles té per objecte, en aquests termes, la seguretat ciutadana.',
+      es: 'El artículo 1.2 de la LO 4/2015 define su propio objeto con la misma frase que reproduce el enunciado: regular un conjunto plural y diversificado de actuaciones orientadas a la tutela de la seguridad ciudadana, mediante la protección de personas y bienes y el mantenimiento de la tranquilidad de los ciudadanos. Por eso la opción c) es la correcta. Las otras tres normas tienen, por su propio título y objeto reconocido, una materia distinta: la Ley 16/1991 regula las policías locales de Cataluña, la LO 2/1986 las Fuerzas y Cuerpos de Seguridad, y el Decreto legislativo 1/1997 la función pública catalana; ninguna de ellas tiene por objeto, en estos términos, la seguridad ciudadana.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 20, pàgina 4 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-4-2015-psc',
+        locator: 'art. 1.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29680,14 +32812,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 132.1 de l’Estatut atribueix a la Generalitat «la competència exclusiva en matèria de protecció civil», que inclou, en tot cas, la regulació, la planificació i l’execució de mesures relatives a les emergències i la seguretat civil, i la direcció i coordinació dels serveis de protecció civil: la resposta és la c). La a) descriu el model contrari al que fixa l’Estatut: la competència no és de l’Estat amb delegació a les comunitats autònomes, sens perjudici que la Generalitat l’hagi d’exercir respectant el que estableixi l’Estat en exercici de les seves competències en seguretat pública. La b) confon el paper dels municipis: el mateix article preserva les facultats dels governs locals en la matèria, però no els atribueix cap competència exclusiva. I la d) és insostenible: la matèria té atribució competencial expressa a l’Estatut.',
+      es: 'El artículo 132.1 del Estatuto atribuye a la Generalitat «la competencia exclusiva en materia de protección civil», que incluye, en todo caso, la regulación, la planificación y la ejecución de medidas relativas a las emergencias y la seguridad civil, y la dirección y coordinación de los servicios de protección civil: la respuesta es la c). La a) describe el modelo contrario al que fija el Estatuto: la competencia no es del Estado con delegación a las comunidades autónomas, sin perjuicio de que la Generalitat deba ejercerla respetando lo que establezca el Estado en ejercicio de sus competencias en seguridad pública. La b) confunde el papel de los municipios: el mismo artículo preserva las facultades de los gobiernos locales en la materia, pero no les atribuye ninguna competencia exclusiva. Y la d) es insostenible: la materia tiene atribución competencial expresa en el Estatuto.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 1, pàgina 5 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 132.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29719,14 +32857,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20.1.b de la Llei 7/1985 diu que la Junta de Govern Local «existeix en tots els municipis amb població superior a 5.000 habitants i en els de menys, quan així ho disposi el seu reglament orgànic o així ho acordi el Ple del seu ajuntament». És exactament el que afirma l’opció b): per sobre de 5.000 habitants és sempre obligatòria. L’opció a) falla perquè no és obligatòria «sempre»: als municipis de 5.000 habitants o menys és voluntària. La c) falla pel motiu invers: sí que és obligatòria a partir del llindar legal. I la d) és senzillament falsa: la Junta de Govern Local existeix i està regulada als articles 20 i 23 de la llei vigent (és la denominació que la Llei 57/2003 va donar a l’antiga Comissió de Govern).',
+      es: 'El artículo 20.1.b de la Ley 7/1985 dice que la Junta de Gobierno Local «existe en todos los municipios con población superior a 5.000 habitantes y en los de menos, cuando así lo disponga su reglamento orgánico o así lo acuerde el Pleno de su ayuntamiento». Es exactamente lo que afirma la opción b): por encima de 5.000 habitantes es siempre obligatoria. La opción a) falla porque no es obligatoria «siempre»: en los municipios de 5.000 habitantes o menos es voluntaria. La c) falla por el motivo inverso: sí es obligatoria a partir del umbral legal. Y la d) es sencillamente falsa: la Junta de Gobierno Local existe y está regulada en los artículos 20 y 23 de la ley vigente (es la denominación que la Ley 57/2003 dio a la antigua Comisión de Gobierno).',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-interins-cp',
         locator: 'pregunta 2, pàgina 5 del PDF',
         validAt: '2018-05-09',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30616,14 +33760,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El mateix document respon la pregunta: la capçalera diu que la Constitució es va publicar al «BOE» núm. 311, de 29 de desembre de 1978, i la fórmula final de sanció està datada al Palau de les Corts el 27 de desembre de 1978. Tots els fets de l\'aprovació —aprovació per les Corts, ratificació pel poble, sanció i publicació— pertanyen a l\'any 1978, que és l\'opció b). Les altres tres dates són distractors sense cap relació amb el text: el 1891 i el 1992 no hi apareixen enlloc, i el 2014 és posterior fins i tot a les reformes constitucionals de 1992 i 2011.',
+      es: 'El propio documento responde la pregunta: la cabecera dice que la Constitución se publicó en el «BOE» núm. 311, de 29 de diciembre de 1978, y la fórmula final de sanción está fechada en el Palacio de las Cortes el 27 de diciembre de 1978. Todos los hechos de la aprobación —aprobación por las Cortes, ratificación por el pueblo, sanción y publicación— pertenecen al año 1978, que es la opción b). Las otras tres fechas son distractores sin relación alguna con el texto: 1891 y 1992 no aparecen en él, y 2014 es posterior incluso a las reformas constitucionales de 1992 y 2011.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 1, pàgina 1 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'capçalera (BOE)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'fórmula de sanció final',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30655,14 +33811,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La tramitació recollida a l’edició oficial identifica l’Estatut vigent: «Llei orgànica 6/2006, de reforma de l’Estatut d’autonomia de Catalunya», sancionada el 19 de juliol de 2006 i publicada al DOGC i al BOE. L’opció c és la correcta. La a) es refereix a l’estatut d’una altra comunitat autònoma, el del País Basc; l’Estatut català del 1979 era la Llei orgànica 4/1979, que la disposició derogatòria de l’Estatut vigent deroga expressament. La b) és la llei del procediment administratiu comú, que no té res a veure amb la norma institucional bàsica de Catalunya. I la d), l’Estatut dels treballadors, és la norma capçalera del dret laboral: comparteix la paraula «estatut», però no la naturalesa ni la matèria.',
+      es: 'La tramitación recogida en la edición oficial identifica el Estatuto vigente: «Ley Orgánica 6/2006, de reforma del Estatuto de autonomía de Cataluña», sancionada el 19 de julio de 2006 y publicada en el DOGC y en el BOE. La opción c es la correcta. La a) se refiere al estatuto de otra comunidad autónoma, el del País Vasco; el Estatuto catalán de 1979 era la Ley Orgánica 4/1979, que la disposición derogatoria del Estatuto vigente deroga expresamente. La b) es la ley del procedimiento administrativo común, que no tiene nada que ver con la norma institucional básica de Cataluña. Y la d), el Estatuto de los trabajadores, es la norma de cabecera del derecho laboral: comparte la palabra «estatuto», pero no la naturaleza ni la materia.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'portada i tramitació (pàg. 5)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'tramitació (pàg. 5), publicació',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'disposició derogatòria',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30694,14 +33868,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres primeres opcions reprodueixen, gairebé literalment, les tres lletres de l’apartat 1 de l’article 164 de l’Estatut: la a) és la lletra c («El control i la vigilància del trànsit»), la b) és la lletra b («La creació i l’organització de la Policia de la Generalitat - Mossos d’Esquadra») i la c) és part de la lletra a («l’ordenació de les policies locals», que la lletra completa acompanya de la planificació i la regulació del sistema de seguretat pública de Catalunya). Totes tres corresponen a la Generalitat en matèria de seguretat pública, d’acord amb el que disposa la legislació estatal. Per això la resposta correcta és la d): totes les respostes anteriors són correctes, i cap de les tres no es pot marcar sola sense deixar-ne fora dues d’igualment certes.',
+      es: 'Las tres primeras opciones reproducen, casi literalmente, las tres letras del apartado 1 del artículo 164 del Estatuto: la a) es la letra c («el control y la vigilancia del tráfico»), la b) es la letra b («la creación y la organización de la Policía de la Generalitat - Mossos d’Esquadra») y la c) es parte de la letra a («la ordenación de las policías locales», que la letra completa acompaña de la planificación y la regulación del sistema de seguridad pública de Cataluña). Las tres corresponden a la Generalitat en materia de seguridad pública, de acuerdo con lo que dispone la legislación estatal. Por eso la respuesta correcta es la d): todas las respuestas anteriores son correctas, y ninguna de las tres puede marcarse sola sin dejar fuera dos igualmente ciertas.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 164.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30733,14 +33925,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les tres institucions de les opcions a), b) i d) són a la Constitució amb nom propi: l\'article 137 anomena els municipis, les províncies i les comunitats autònomes com a peces de l\'organització territorial, l\'article 140 garanteix l\'autonomia municipal i l\'article 141 defineix la província. En canvi, la paraula «vegueria» no apareix en cap article del text constitucional: és una divisió territorial pròpia de Catalunya, prevista a l\'Estatut d\'autonomia i desplegada per llei catalana, no per la Constitució. Com a molt, l\'article 141.3 permet crear «agrupacions de municipis diferents de la província», però sense donar-los aquest nom. La resposta és, doncs, la c).',
+      es: 'Las tres instituciones de las opciones a), b) y d) están en la Constitución con nombre propio: el artículo 137 nombra los municipios, las provincias y las comunidades autónomas como piezas de la organización territorial, el artículo 140 garantiza la autonomía municipal y el artículo 141 define la provincia. En cambio, la palabra «veguería» no aparece en ningún artículo del texto constitucional: es una división territorial propia de Cataluña, prevista en el Estatuto de autonomía y desplegada por ley catalana, no por la Constitución. A lo sumo, el artículo 141.3 permite crear «agrupaciones de municipios diferentes de la provincia», pero sin darles ese nombre. La respuesta es, pues, la c).',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 137',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 140',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 141.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30772,14 +33982,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les opcions a) i b) són literals de l\'article 10.1, punt primer: la lletra c) recull actuar amb integritat i dignitat i abstenir-se de participar en qualsevol acte de corrupció, oposant-s\'hi amb fermesa, i la lletra e), col·laborar amb l\'Administració de Justícia i auxiliar-la en els termes establerts per la llei. Per això la bona és la c), que les dona per bones totes dues. La d) deforma la lletra d) del mateix punt: el deure d\'atenir-se als principis de jerarquia i de subordinació no val «sempre i en tot cas», perquè el precepte mateix afegeix que l\'obediència deguda en cap cas no pot emparar ordres manifestament delictives o contràries a la Constitució, a l\'Estatut o a les lleis.',
+      es: 'Las opciones a) y b) son literales del artículo 10.1, punto primero: la letra c) recoge actuar con integridad y dignidad y abstenerse de participar en cualquier acto de corrupción, oponiéndose a él con firmeza, y la letra e), colaborar con la Administración de Justicia y auxiliarla en los términos establecidos por la ley. Por eso la buena es la c), que da por buenas ambas. La d) deforma la letra d) del mismo punto: el deber de atenerse a los principios de jerarquía y de subordinación no vale «siempre y en todo caso», porque el propio precepto añade que la obediencia debida en ningún caso puede amparar órdenes manifiestamente delictivas o contrarias a la Constitución, al Estatuto o a las leyes.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 5, pàgina 1 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, c)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, e)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, d)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30850,14 +34078,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'única figura que la Constitució configura com a «alt comissionat de les Corts Generals» és el Defensor del Poble (article 54), i per això la a) és la millor resposta de les quatre: el Síndic de Greuges és la institució anàloga de la Generalitat, no de les Corts Generals, i les opcions c) i d) barregen noms que no existeixen a la Constitució. Ara bé, l\'enunciat conté un error de premissa: l\'article 54 encomana al Defensor la defensa dels drets «compresos en aquest títol», és a dir el títol I (drets i deures fonamentals), on l\'article mateix se situa; el títol IV que cita l\'enunciat és el del Govern i l\'Administració i no conté cap catàleg de drets. La font demostra la resposta, però no tota la lògica de la pregunta.',
+      es: 'La única figura que la Constitución configura como «alto comisionado de las Cortes Generales» es el Defensor del Pueblo (artículo 54), y por eso la a) es la mejor respuesta de las cuatro: el Síndic de Greuges es la institución análoga de la Generalitat, no de las Cortes Generales, y las opciones c) y d) mezclan nombres que no existen en la Constitución. Ahora bien, el enunciado contiene un error de premisa: el artículo 54 encomienda al Defensor la defensa de los derechos «comprendidos en este Título», es decir el título I (derechos y deberes fundamentales), donde el propio artículo se sitúa; el título IV que cita el enunciado es el del Gobierno y la Administración y no contiene catálogo alguno de derechos. La fuente demuestra la respuesta, pero no toda la lógica de la pregunta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 54',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30889,14 +34123,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.7 de la Llei 4/2003 diu literalment que «la junta local de seguretat s\'ha de reunir en sessió ordinària, convocada pel president o presidenta, amb caràcter trimestral»: la resposta b) reprodueix la norma, de la qual l\'enunciat pren la seva mateixa redacció. Les altres opcions són absurdes contra el text: ni una reunió diària, ni la inexistència de reunions, ni una periodicitat de cinc anys tenen cap suport legal. Val a dir que el Decret 151/1998 preveia sessions ordinàries com a mínim un cop cada quatre mesos (art. 6.1), però la Llei 4/2003, posterior i de rang superior, va establir el caràcter trimestral, que era la regla vigent el dia de l\'examen i ho continua sent avui.',
+      es: 'El artículo 9.7 de la Ley 4/2003 dice literalmente que «la junta local de seguridad se ha de reunir en sesión ordinaria, convocada por el presidente o presidenta, con carácter trimestral»: la respuesta b) reproduce la norma, de la que el enunciado toma su misma redacción. Las demás opciones son absurdas contra el texto: ni una reunión diaria, ni la inexistencia de reuniones, ni una periodicidad de cinco años tienen apoyo legal alguno. Cabe señalar que el Decreto 151/1998 preveía sesiones ordinarias como mínimo una vez cada cuatro meses (art. 6.1), pero la Ley 4/2003, posterior y de rango superior, estableció el carácter trimestral, que era la regla vigente el día del examen y lo sigue siendo hoy.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.7',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-151-1998-juntes',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30967,14 +34213,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El fet d\'originar enfrontaments en el servei o en el lloc de treball i el fet de prendre-hi part és falta greu segons l\'article 49.e: opció b. L\'abandonament del servei (opció a) és falta molt greu (art. 48.1.g). La incorrecció envers els superiors, els companys, els subordinats o els ciutadans (opció c) és falta lleu (art. 50.a), i la negligència en el compliment de les funcions (opció d) encaixa amb la falta lleu de l\'article 50.b, «el retard, la negligència i el descuit en el compliment de les funcions o de les ordres rebudes»; només l\'incompliment per negligència greu dels deures de la funció pujaria a falta greu.',
+      es: 'Originar enfrentamientos en el servicio o en el lugar de trabajo y tomar parte en ellos es falta grave según el artículo 49.e: opción b. El abandono del servicio (opción a) es falta muy grave (art. 48.1.g). La incorrección hacia los superiores, los compañeros, los subordinados o los ciudadanos (opción c) es falta leve (art. 50.a), y la negligencia en el cumplimiento de sus funciones (opción d) encaja con la falta leve del artículo 50.b, «el retraso, la negligencia y el descuido en el cumplimiento de las funciones o de las órdenes recibidas»; solo el incumplimiento por negligencia grave de los deberes de la función subiría a falta grave.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 10, pàgina 2 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.e',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.g',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31006,14 +34276,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 22.1 de la Llei 7/1985 diu que «el Ple, integrat per tots els regidors, és presidit per l’alcalde»: el componen, doncs, l’alcalde —que a més n’és membre electe i president— i els regidors, que és l’opció a). Les altres tres opcions confonen el Ple municipal amb altres realitats: els membres de la Diputació (b) i del Consell Comarcal (d) integren els òrgans d’ens locals diferents —la província i la comarca—, no el Ple de l’ajuntament, i els funcionaris (c) són personal al servei de la corporació, sense condició de membres del Ple; el secretari hi assisteix per exercir la fe pública, però no en forma part com a integrant.',
+      es: 'El artículo 22.1 de la Ley 7/1985 dice que «el Pleno, integrado por todos los Concejales, es presidido por el Alcalde»: lo componen, pues, el alcalde —que además es miembro electo y su presidente— y los concejales, que es la opción a). Las otras tres opciones confunden el Pleno municipal con otras realidades: los miembros de la Diputación (b) y del Consejo Comarcal (d) integran los órganos de entes locales distintos —la provincia y la comarca—, no el Pleno del ayuntamiento, y los funcionarios (c) son personal al servicio de la corporación, sin condición de miembros del Pleno; el secretario asiste a él para ejercer la fe pública, pero no forma parte de él como integrante.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 11, pàgina 3 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 22.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31045,14 +34321,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 6.1 de l’Estatut estableix que «La llengua pròpia de Catalunya és el català» i que, com a tal, és la llengua d’ús normal de les administracions públiques de Catalunya, entre les quals hi ha l’Administració local: l’article 2.3 integra els municipis en el sistema institucional de la Generalitat. Per això la resposta és la b). El castellà (opció c) és llengua oficial a Catalunya juntament amb el català, com recull l’article 6.2, però l’Estatut no li dona la condició de llengua pròpia, que reserva al català: oficialitat i condició de llengua pròpia són dues coses diferents, i la pregunta demana la segona. El francès i l’anglès (opcions a i d) no tenen cap estatus a l’article 6: ni oficialitat ni condició de llengua pròpia.',
+      es: 'El artículo 6.1 del Estatuto establece que «la lengua propia de Cataluña es el catalán» y que, como tal, es la lengua de uso normal de las administraciones públicas de Cataluña, entre las que está la Administración local: el artículo 2.3 integra los municipios en el sistema institucional de la Generalitat. Por eso la respuesta es la b). El castellano (opción c) es lengua oficial en Cataluña junto con el catalán, como recoge el artículo 6.2, pero el Estatuto no le da la condición de lengua propia, que reserva al catalán: oficialidad y condición de lengua propia son dos cosas distintas, y la pregunta pide la segunda. El francés y el inglés (opciones a y d) no tienen ningún estatus en el artículo 6: ni oficialidad ni condición de lengua propia.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 12, pàgina 3 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 6.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-eac',
+        locator: 'art. 6.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31084,14 +34372,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 15 de la Llei 7/1985, reguladora de les bases del règim local, defineix el Padró municipal com «el registro administrativo donde constan los vecinos de un municipio». L’article 15 bis reforça que tota persona que visqui a Espanya està obligada a inscriure-s’hi al municipi on resideix habitualment. Cap de les altres tres opcions —Tresoreria de la Seguretat Social, Jutjat de guàrdia, INEM— és un registre de residència: totes tres porten funcions diferents (cotitzacions, justícia, ocupació). Aquesta pregunta no entra a cap dels 40 temes del temari, que no cobreixen la gestió administrativa del padró.',
+      es: 'El artículo 15 de la Ley 7/1985, reguladora de las bases del régimen local, define el Padrón municipal como «el registro administrativo donde constan los vecinos de un municipio». El artículo 15 bis refuerza que toda persona que viva en España está obligada a inscribirse en el municipio donde reside habitualmente. Ninguna de las otras tres opciones —Tesorería de la Seguridad Social, Juzgado de guardia, INEM— es un registro de residencia: las tres cumplen funciones distintas (cotizaciones, justicia, empleo). Esta pregunta no entra en ninguno de los 40 temas del temario, que no cubren la gestión administrativa del padrón.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 13, pàgina 3 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 15',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31123,14 +34417,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1.a) situa l\'intendent a l\'escala superior, al costat del superintendent i de l\'intendent major. Per això la bona és la b). L\'escala intermèdia comprèn el sots-inspector i el sergent, i l\'executiva, únicament l\'inspector: cap de les dues no inclou l\'intendent. I una «escala directiva» no existeix a la Llei 16/1991: l\'apartat 1 de l\'article 24 només reconeix quatre escales —superior, executiva, intermèdia i bàsica—. La qüestió es resol amb la simple lectura de les quatre lletres de l\'apartat, que assignen cada categoria a una única escala i no han estat alterades per les reformes posteriors, que només han tocat els grups de classificació de l\'apartat 2.',
+      es: 'El artículo 24.1.a) sitúa al intendente en la escala superior, junto al superintendente y al intendente mayor. Por eso la buena es la b). La escala intermedia comprende al subinspector y al sargento, y la ejecutiva, únicamente al inspector: ninguna de las dos incluye al intendente. Y una «escala directiva» no existe en la Ley 16/1991: el apartado 1 del artículo 24 solo reconoce cuatro escalas —superior, ejecutiva, intermedia y básica—. La cuestión se resuelve con la simple lectura de las cuatro letras del apartado, que asignan cada categoría a una única escala y no han sido alteradas por las reformas posteriores, que solo han tocado los grupos de clasificación del apartado 2.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 14, pàgina 3 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31201,14 +34513,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 15.2 tanca la llista de funcions de coordinació de l\'activitat de les policies locals amb una salvaguarda expressa: aquestes funcions «s\'han de complir respectant en tot cas l\'autonomia local i les competències dels municipis en matèria de policia local». L\'opció a) la reprodueix. La b) diu exactament el contrari del que mana el precepte, i la c) rebaixa el «en tot cas» a un «quan convingui» que el text no admet: el respecte a l\'autonomia local no és discrecional. La d) cau perquè la a) coincideix amb el text legal. La clàusula és coherent amb l\'esperit de tota la Llei, que insisteix des del preàmbul en el respecte rigorós al principi d\'autonomia municipal.',
+      es: 'El artículo 15.2 cierra la lista de funciones de coordinación de la actividad de las policías locales con una salvaguarda expresa: esas funciones «deben cumplirse respetando en todo caso la autonomía local y las competencias de los municipios en materia de policía local». La opción a) la reproduce. La b) dice exactamente lo contrario de lo que manda el precepto, y la c) rebaja el «en todo caso» a un «cuando convenga» que el texto no admite: el respeto a la autonomía local no es discrecional. La d) cae porque la a) coincide con el texto legal. La cláusula es coherente con el espíritu de toda la Ley, que insiste desde el preámbulo en el respeto riguroso al principio de autonomía municipal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 16, pàgina 4 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 15.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31240,14 +34558,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 58.1 diu literalment que la responsabilitat disciplinària s\'extingeix «pel compliment de la sanció, per mort, per indult, per amnistia i per la prescripció de la falta o de la sanció». L\'opció a reprodueix la llista completa amb les cinc causes i és la correcta. La b omet l\'amnistia i la c omet tant l\'indult com l\'amnistia, per tant són llistes incompletes; i com que la a és correcta, la d («cap de les respostes anteriors és correcta») queda automàticament descartada. És una pregunta de memòria literal: convé retenir les cinc causes en bloc, en l\'ordre de la llei.',
+      es: 'El artículo 58.1 dice literalmente que la responsabilidad disciplinaria se extingue por el cumplimiento de la sanción, por muerte, por indulto, por amnistía y por la prescripción de la falta o de la sanción. La opción a reproduce la lista completa con las cinco causas y es la correcta. La b omite la amnistía y la c omite tanto el indulto como la amnistía, por tanto son listas incompletas; y como la a es correcta, la d («ninguna de las respuestas anteriores es correcta») queda automáticamente descartada. Es una pregunta de memoria literal: conviene retener las cinco causas en bloque, en el orden de la ley.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 17, pàgina 4 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 58.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31279,14 +34603,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1.d) diu que l\'escala bàsica «comprèn les categories de caporal i d\'agent»: l\'agent pertany, doncs, a l\'escala bàsica, i la bona és la b). Les altres tres escales tenen categories pròpies i cap no inclou l\'agent: la intermèdia comprèn el sots-inspector i el sergent; la superior, el superintendent, l\'intendent major i l\'intendent; i l\'executiva, només l\'inspector. La resposta surt de la lectura directa de l\'apartat 1 de l\'article 24 de la Llei 16/1991, que estructura tots els cossos de policia local de Catalunya en aquestes quatre escales i assigna cada categoria a una de sola, sense excepcions ni solapaments.',
+      es: 'El artículo 24.1.d) dice que la escala básica «comprende las categorías de cabo y de agente»: el agente pertenece, pues, a la escala básica, y la buena es la b). Las otras tres escalas tienen categorías propias y ninguna incluye al agente: la intermedia comprende al subinspector y al sargento; la superior, al superintendente, al intendente mayor y al intendente; y la ejecutiva, solo al inspector. La respuesta sale de la lectura directa del apartado 1 del artículo 24 de la Ley 16/1991, que estructura todos los cuerpos de policía local de Cataluña en estas cuatro escalas y asigna cada categoría a una sola, sin excepciones ni solapamientos.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 18, pàgina 4 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.d',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.a',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31357,14 +34705,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La norma que regula les policies locals de Catalunya és exactament la que serveix de font a aquesta matèria: la Llei 16/1991, de 10 de juliol, de les policies locals, tal com consta al seu encapçalament oficial, publicada al DOGC núm. 1469, de 19 de juliol de 1991. El seu article 1.1 en confirma l\'objecte: s\'aplica a tots els cossos de policia que depenen dels municipis de Catalunya, denominats genèricament «policies locals». Cap de les altres tres referències no correspon a aquesta llei: ni la Llei 25/1994, d\'11 de juliol, ni la Llei 3/1987, de 13 de març, ni la Llei 5/2016, de 30 de març. El número i la data correctes són els de l\'opció d).',
+      es: 'La norma que regula las policías locales de Cataluña es exactamente la que sirve de fuente a esta materia: la Ley 16/1991, de 10 de julio, de las policías locales, tal como consta en su encabezamiento oficial, publicada en el DOGC núm. 1469, de 19 de julio de 1991. Su artículo 1.1 confirma el objeto: se aplica a todos los cuerpos de policía que dependen de los municipios de Cataluña, denominados genéricamente «policías locales». Ninguna de las otras tres referencias corresponde a esta ley: ni la Ley 25/1994, de 11 de julio, ni la Ley 3/1987, de 13 de marzo, ni la Ley 5/2016, de 30 de marzo. El número y la fecha correctos son los de la opción d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 20, pàgina 4 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'títol de la norma',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31396,14 +34756,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Les opcions a), b) i c) reprodueixen principis reals de l\'article 10.1: identificar-se degudament com a agents en el moment d\'efectuar una detenció (punt tercer, lletra a), actuar amb integritat i dignitat abstenint-se de qualsevol acte de corrupció (punt primer, lletra c) i complir amb la diligència deguda els tràmits, els terminis i els requisits exigits per l\'ordenament jurídic en la detenció d\'una persona (punt tercer, lletra c). La d) altera el final del principi de col·laboració: la Llei mana auxiliar l\'Administració de Justícia «en els termes establerts per la llei», no «a les ordenances». Aquest canvi de la font normativa és el que la converteix en la resposta.',
+      es: 'Las opciones a), b) y c) reproducen principios reales del artículo 10.1: identificarse debidamente como agentes en el momento de efectuar una detención (punto tercero, letra a), actuar con integridad y dignidad absteniéndose de cualquier acto de corrupción (punto primero, letra c) y cumplir con la diligencia debida los trámites, los plazos y los requisitos exigidos por el ordenamiento jurídico en la detención de una persona (punto tercero, letra c). La d) altera el final del principio de colaboración: la Ley manda auxiliar a la Administración de Justicia «en los términos establecidos por la ley», no «en las ordenanzas». Ese cambio de la fuente normativa es lo que la convierte en la respuesta.',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 1, pàgina 5 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, e)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, tercer, a)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, primer, c)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 10.1, tercer, c)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -31435,14 +34819,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 20.1.b de la Llei 7/1985 diu que la Junta de Govern Local «existeix en tots els municipis amb població superior a 5.000 habitants i en els de menys, quan així ho disposi el seu reglament orgànic o així ho acordi el Ple del seu ajuntament». És exactament el que afirma l’opció b): per sobre de 5.000 habitants és sempre obligatòria. L’opció a) falla perquè no és obligatòria «sempre»: als municipis de 5.000 habitants o menys és voluntària. La c) falla pel motiu invers: sí que és obligatòria a partir del llindar legal. I la d) és senzillament falsa: la Junta de Govern Local existeix i està regulada als articles 20 i 23 de la llei vigent (és la denominació que la Llei 57/2003 va donar a l’antiga Comissió de Govern).',
+      es: 'El artículo 20.1.b de la Ley 7/1985 dice que la Junta de Gobierno Local «existe en todos los municipios con población superior a 5.000 habitantes y en los de menos, cuando así lo disponga su reglamento orgánico o así lo acuerde el Pleno de su ayuntamiento». Es exactamente lo que afirma la opción b): por encima de 5.000 habitantes es siempre obligatoria. La opción a) falla porque no es obligatoria «siempre»: en los municipios de 5.000 habitantes o menos es voluntaria. La c) falla por el motivo inverso: sí es obligatoria a partir del umbral legal. Y la d) es sencillamente falsa: la Junta de Gobierno Local existe y está regulada en los artículos 20 y 23 de la ley vigente (es la denominación que la Ley 57/2003 dio a la antigua Comisión de Gobierno).',
     },
     references: [
       {
         sourceId: 'roses-examen-2017-interins-cp',
         locator: 'pregunta 2, pàgina 5 del PDF',
         validAt: '2017-05-22',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-7-1985-lrbrl',
+        locator: 'art. 20.1.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32410,14 +35800,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La disposició addicional quarta, apartat 3, delimita què poden fer els policies en règim de funcionari interí: exerceixen les funcions de les lletres a), b), d), f), g), h), i), j) i k) de l\'article 11, «llevat de la protecció de les autoritats i de l\'ordenació i la senyalització del trànsit». Prestar auxili en accidents, catàstrofes i calamitats públiques (lletra j), vigilar els espais públics (lletra i) i exercir de policia administrativa (lletra d) entren dins del que sí que poden fer, perquè les tres lletres figuren a la llista. L\'ordenació i la senyalització del trànsit, en canvi, és una de les dues exclusions expresses del precepte: per això la resposta és la d).',
+      es: 'La disposición adicional cuarta, apartado 3, delimita qué pueden hacer los policías en régimen de funcionario interino: ejercen las funciones de las letras a), b), d), f), g), h), i), j) y k) del artículo 11, «salvo la protección de las autoridades y la ordenación y la señalización del tráfico». Prestar auxilio en accidentes, catástrofes y calamidades públicas (letra j), vigilar los espacios públicos (letra i) y ejercer de policía administrativa (letra d) entran dentro de lo que sí pueden hacer, porque las tres letras figuran en la lista. La ordenación y la señalización del tráfico, en cambio, es una de las dos exclusiones expresas del precepto: por eso la respuesta es la d).',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 3, pàgina 1 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'disposició addicional quarta, apartat 3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11.j',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11.i',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 11.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32449,14 +35863,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 24.1.c) respon la pregunta de manera literal: l\'escala intermèdia «comprèn les categories de sots-inspector i de sergent», que és exactament l\'opció c). La a) barreja el sergent amb el caporal, però el caporal pertany a l\'escala bàsica, juntament amb l\'agent. La b) inclou l\'inspector, que és la categoria única de l\'escala executiva segons la lletra b) del mateix apartat. I la d) reprodueix sencera l\'escala bàsica (caporal i agent), no la intermèdia. Amb el mateix apartat de l\'article 24 es confirma la resposta bona i es descarten les tres alternatives, perquè cada categoria està assignada a una única escala.',
+      es: 'El artículo 24.1.c) responde la pregunta de manera literal: la escala intermedia «comprende las categorías de subinspector y de sargento», que es exactamente la opción c). La a) mezcla al sargento con el cabo, pero el cabo pertenece a la escala básica, junto con el agente. La b) incluye al inspector, que es la categoría única de la escala ejecutiva según la letra b) del mismo apartado. Y la d) reproduce entera la escala básica (cabo y agente), no la intermedia. Con el mismo apartado del artículo 24 se confirma la respuesta buena y se descartan las tres alternativas, porque cada categoría está asignada a una única escala.',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.c',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.b',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 24.1.d',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32488,14 +35920,44 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'incompliment de les normes sobre incompatibilitats figura a la llista de faltes molt greus de l\'article 48.1, lletra n: opció a. Les altres tres conductes són de gravetat inferior: la impuntualitat (opció b) encaixa amb les faltes repetides de puntualitat dins un mateix mes sense causa justificada, falta lleu de l\'article 50.h; la pèrdua de credencials (opció c) és falta greu segons l\'article 49.k, «la pèrdua de les credencials i el fet de permetre\'n la sostracció per negligència inexcusable»; i la incorrecció en el vestir (opció d) es correspon amb la descurança en la presentació personal, falta lleu de l\'article 50.c.',
+      es: 'El incumplimiento de las normas sobre incompatibilidades figura en la lista de faltas muy graves del artículo 48.1, letra n: opción a. Las otras tres conductas son de gravedad inferior: la impuntualidad (opción b) encaja con las faltas repetidas de puntualidad dentro de un mismo mes sin causa justificada, falta leve del artículo 50.h; la pérdida de credenciales (opción c) es falta grave según el artículo 49.k, «la pérdida de las credenciales y permitir su sustracción por negligencia inexcusable»; y la incorrección en el vestir (opción d) se corresponde con el descuido en la presentación personal, falta leve del artículo 50.c.',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 5, pàgina 2 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 48.1.n',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 49.k',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.h',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-16-1991-policies-locals',
+        locator: 'art. 50.c',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32566,14 +36028,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.1 de la Llei 4/2003 imposa l\'obligació: «Als municipis que tinguin policia local hi ha d\'haver una junta local de seguretat». La condició és, doncs, tenir cos de policia propi —la policia local—, que és exactament el que diu l\'opció c). La a) és falsa perquè l\'obligació no abasta tots els municipis, sinó només els que tenen policia local; la b) lliga la junta a la presència de cossos de seguretat de l\'Estat, criteri que el precepte no fa servir; i la d) (municipis de menys de 100 habitants) no té cap base. El Decret 151/1998 ja preveia la constitució de juntes «als municipis dotats de policia local» (art. 1.2), i la Llei 4/2003 la va convertir en obligatòria.',
+      es: 'El artículo 9.1 de la Ley 4/2003 impone la obligación: «En los municipios que tengan policía local ha de haber una junta local de seguridad». La condición es, pues, tener cuerpo de policía propio —la policía local—, que es exactamente lo que dice la opción c). La a) es falsa porque la obligación no alcanza a todos los municipios, sino solo a los que tienen policía local; la b) liga la junta a la presencia de cuerpos de seguridad del Estado, criterio que el precepto no utiliza; y la d) (municipios de menos de 100 habitantes) no tiene ninguna base. El Decreto 151/1998 ya preveía la constitución de juntas «en los municipios dotados de policía local» (art. 1.2), y la Ley 4/2003 la convirtió en obligatoria.',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 7, pàgina 2 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-4-2003-seguretat-publica',
+        locator: 'art. 9.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'decret-151-1998-juntes',
+        locator: 'art. 1.2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32605,14 +36079,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L’article 112.1 del text refós de la Llei sobre trànsit, circulació de vehicles a motor i seguretat viària fixa dos terminis de prescripció: tres mesos per a les infraccions lleus, i sis mesos per a les greus i les molt greus. L’opció c) —6 mesos— és la que correspon a una infracció GREU. Les altres tres xifres no apareixen enlloc de l’article. Aquesta pregunta no entra a cap dels 40 temes del temari, que no cobreixen el règim sancionador general de trànsit.',
+      es: 'El artículo 112.1 del texto refundido de la Ley sobre tráfico, circulación de vehículos a motor y seguridad vial fija dos plazos de prescripción: tres meses para las infracciones leves, y seis meses para las graves y las muy graves. La opción c) —6 meses— es la que corresponde a una infracción GRAVE. Las otras tres cifras no aparecen en ningún punto del artículo. Esta pregunta no entra en ninguno de los 40 temas del temario, que no cubren el régimen sancionador general de tráfico.',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rdleg-6-2015-ltsv',
+        locator: 'art. 112.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32644,14 +36124,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El tercer paràgraf de l’article 20 del Reglament general de circulació estableix que «los conductores de cualquier vehículo no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia que les habilita para conducir». Per a un conductor novell, la infracció administrativa comença en superar els 0,15 mg/l d’aire expirat: la b) és la bona. Els 0,25 mg/l de la c) són el límit general (conductors amb més de dos anys de permís), el 0,26 de la d) no apareix a cap norma i el 0,50 de la a) confon el límit general en sang (0,5 g/l) amb una taxa en aire. La regla era la mateixa el 2016 i no ha canviat.',
+      es: 'El tercer párrafo del artículo 20 del Reglamento general de circulación establece que «los conductores de cualquier vehículo no podrán superar la tasa de alcohol en sangre de 0,3 gramos por litro ni de alcohol en aire espirado de 0,15 miligramos por litro durante los dos años siguientes a la obtención del permiso o licencia que les habilita para conducir». Para un conductor novel, la infracción administrativa empieza al superar los 0,15 mg/l de aire espirado: la b) es la buena. Los 0,25 mg/l de la c) son el límite general (conductores con más de dos años de permiso), el 0,26 de la d) no aparece en ninguna norma y el 0,50 de la a) confunde el límite general en sangre (0,5 g/l) con una tasa en aire. La regla era la misma en 2016 y no ha cambiado.',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 9, pàgina 3 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-1428-2003-rgc',
+        locator: 'art. 20, paràgraf tercer',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -32761,14 +36247,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La resposta d) afirma que la competència de policia judicial és regulada alhora per la Constitució, per la LO 2/1986 de forces i cossos de seguretat i per la Llei 16/1991 de les policies locals de Catalunya. El primer pilar sí que es pot demostrar: l\'article 126 CE fa dependre la policia judicial dels jutges, dels tribunals i del ministeri fiscal en les funcions d\'esbrinament del delicte i descobriment i assegurament del delinqüent. Els altres dos pilars són certs en dret —la LO 2/1986 hi dedica els articles 29 i següents i la Llei 16/1991 recull la col·laboració de les policies locals amb la policia judicial—, però cap d\'aquestes dues lleis no és entre els fitxers font d\'aquest lot, de manera que les opcions b) i c), i amb elles la d) completa, no es poden acreditar amb cita literal.',
+      es: 'La respuesta d) afirma que la competencia de policía judicial está regulada a la vez por la Constitución, por la LO 2/1986 de fuerzas y cuerpos de seguridad y por la Ley 16/1991 de las policías locales de Cataluña. El primer pilar sí puede demostrarse: el artículo 126 CE hace depender a la policía judicial de los jueces, de los tribunales y del ministerio fiscal en las funciones de averiguación del delito y descubrimiento y aseguramiento del delincuente. Los otros dos pilares son ciertos en derecho —la LO 2/1986 les dedica los artículos 29 y siguientes y la Ley 16/1991 recoge la colaboración de las policías locales con la policía judicial—, pero ninguna de esas dos leyes está entre los ficheros fuente de este lote, de modo que las opciones b) y c), y con ellas la d) completa, no pueden acreditarse con cita literal.',
     },
     references: [
       {
         sourceId: 'roses-examen-2016-interins-cp',
         locator: 'pregunta 2, pàgina 3 del PDF',
         validAt: '2016-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 126',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
