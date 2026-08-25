@@ -20,6 +20,7 @@
     "sources:download": "tsx scripts/download-sources.ts",
     "sources:adopt": "tsx scripts/adopt-sources.ts",
     "sources:extract": "tsx scripts/extract-sources.ts",
+    "sources:rescue": "node scripts/rescue-dynamic-sources.mjs",
     "exams:import": "tsx scripts/import-roses-exams.ts",
     "check": "npm run typecheck && npm run content:validate && npm run test && npm run build"
   },
