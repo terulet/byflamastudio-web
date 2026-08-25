@@ -11,6 +11,7 @@ dist-ssr/
 sources/cache/*
 !sources/cache/.gitkeep
 !sources/cache/*.txt
+!sources/cache/*.md
 sources/extracted/
 
 # Sortides de test i captures de treball.

@@ -160,23 +160,34 @@ verificats pel seu SHA-256, document a document.
   s'importen igualment en `draft`, mai s'omplen amb una resposta plausible.
   **Les 630 tenen ara la seva pròpia matriu probatòria**, amb el mateix
   mètode i el mateix rigor que les 189 vigents: 344 amb tema real es van
-  contrastar contra les fonts normatives ja adoptades (257 `supported-current`
-  amb citació literal i explicació ca/es, 13 `partially-supported`, 3
-  `official-key-conflicts-with-law-at-exam` —incloent-hi una discrepància
-  nova entre la plantilla i l'ordenança de convivència de Roses, del mateix
-  tipus que la ja documentada per als vigents—, 1 `supported-at-exam-now-superseded`
-  i 80 `pending-evidence` amb el que hi falta escrit —deu més d'aquestes es
-  van poder resoldre en una segona passada, cercant amb més cura dins de
-  fonts que ja teníem (CE, LO 2/1986, LO 6/1984), sense necessitar cap
-  descàrrega nova—; les 286 sense tema
-  real es van classificar pel mateix criteri editorial que el mapa de temes
-  (193 `general-knowledge`, 90 entre `historical-current-affairs` i
-  `pending-evidence`, 3 `out-of-syllabus`). En total, **259 preguntes
-  professionals dels quadernets històrics ja compten per al domini i
-  surten a l'entrenament i als simulacres normals** —el dret que demostren
-  no ha caducat pel fet que l'examen fos de fa anys—; les de cultura general
-  i actualitat es queden fora perquè porten `reviewBy` a la data del seu
-  examen, com ja passava. La feina va trobar que `scripts/report-coverage.ts`
+  contrastar contra les fonts normatives ja adoptades, i les 286 sense tema
+  real es van classificar pel mateix criteri editorial que el mapa de temes.
+  Deu pendents es van resoldre en una segona passada sense cap font nova
+  (CE, LO 2/1986, LO 6/1984), i el 25-08-2026 se'n van resoldre 23 més amb
+  una via nova documentada a `artifacts/adopcio-mirall-2026-08-25.md`:
+  l'entorn no arriba a boe.es però sí a github.com, i el mirall públic
+  legalize-es (la legislació consolidada de l'API de dades obertes del BOE,
+  una norma = un fitxer, una reforma = un commit datat) permet adoptar bytes
+  exactes de les normes que faltaven —LOPJ, LOREG, LOTC, RD 920/2017,
+  Estatut, Codi civil, Llei 10/1994, Llei 24/2009, Ordre HAC/283/2021,
+  RD 176/2022— i també **versions històriques**: la CE i el CP tal com
+  regien el 2018, que van permetre decidir dues preguntes temporals que cap
+  text vigent podia decidir. El repartiment sencer del mapa (819 decisions)
+  és ara: 378 `supported-current`, 226 `general-knowledge`, 109
+  `historical-current-affairs`, 65 `pending-evidence` amb el que hi falta
+  escrit, 26 `partially-supported`, 7 `official-key-conflicts-with-law-at-exam`
+  —les dues noves: l'art. 9 CE de 2018, on la plantilla afirma una subjecció
+  parcial dels poders públics que el text no diu, i el Codi de conducta de
+  l'ONU, que la plantilla data el 1978 quan la Resolució 34/169 és del
+  17-12-1979—, 5 `out-of-syllabus` i 3 `supported-at-exam-now-superseded`
+  —les dues noves: agressió/abús sexual d'abans de la LO 10/2022 i l'art. 26
+  LOPJ d'abans dels tribunals d'instància de la LO 1/2025—. En total, **298
+  preguntes professionals dels quadernets històrics es poden servir avui com
+  a material vigent** (262 supported-current, 22 partially-supported, 11
+  general-knowledge i 3 out-of-syllabus, comptades amb `officialVerdict` a
+  25-08-2026) —el dret que demostren no ha caducat pel fet que l'examen fos
+  de fa anys—; les de cultura general i actualitat es queden fora perquè
+  porten `reviewBy` a la data del seu examen, com ja passava. La feina va trobar que `scripts/report-coverage.ts`
   i la pantalla de Simulacres comptaven «vigents al banc» sense passar pel
   judici probatori (`examAvailability` només mirava `isCurrent`, no
   `officialVerdict`): es va corregir movent `isCurrent` a un mòdul propi
@@ -185,11 +196,18 @@ verificats pel seu SHA-256, document a document.
 - **Els temes 35 i 36** estan escrits sobre l'articulat real de les ordenances
   de circulació i de convivència, amb la modificació de 2021 consolidada i
   referències amb article i pàgina del PDF.
-- **Les 98 fonts del manifest tenen còpia local.** Les 43 normes generals que
+- **Les 111 fonts del manifest tenen còpia local.** Les 43 normes generals que
   faltaven —BOE, Portal Jurídic, DOUE, Nacions Unides— es van adoptar el 24
   d'agost de 2026 des d'un tercer paquet portat a mà, amb el SHA-256 comprovat
   43/43 contra el `SHA256SUMS.txt` del paquet, contra el manifest i contra el
-  fitxer que ha quedat a `sources/cache/`.
+  fitxer que ha quedat a `sources/cache/`. Tretze més (10 normes vigents i 3
+  versions històriques de 2018) es van adoptar el 25-08-2026 des del mirall
+  Git de la legislació consolidada del BOE, amb la procedència —repositori,
+  commit i camí— escrita al `fetchNote` de cada una i el mètode sencer a
+  `artifacts/adopcio-mirall-2026-08-25.md`; les còpies `.md` queden
+  versionades dins `sources/cache/`. Regla d'estat: una decisió que descansa
+  en una còpia mirall es queda en `partially-supported` fins que la còpia
+  oficial de boe.es la substitueixi i algú la contrasti.
 - **Les 313 referències que en depenien s'han revisat una a una**, llegint el
   document i buscant-hi la proposició que cada localitzador afirma. 287 han
   passat a `verified` i **26 es queden pendents amb el motiu escrit**. El
@@ -273,7 +291,7 @@ verificats pel seu SHA-256, document a document.
   repassar-los, el filtre «D'examen oficial» entrena el banc oficial (abans no
   podia servir mai res), i el «per què» de les 189 preguntes oficials diu la
   veritat en lloc de vestir la procedència d'explicació. (Aquell «per què» ara
-  només es queda a les 69 que no es poden demostrar: vegeu el punt de la matriu
+  només es queda a les 65 que no es poden demostrar: vegeu el punt de la matriu
   més avall.)
 - **La constància es diu pel seu nom i no amaga cap dia.** La ratxa continua
   exigint l'objectiu diari sencer, però ara es diu «Ratxa d'objectius», i al
@@ -283,18 +301,20 @@ verificats pel seu SHA-256, document a document.
   assoliments no canvien. La distinció viu a `src/engines/activity.ts` i té
   test unitari i d'extrem a extrem.
 
-- **Les 189 oficials tenen matriu probatòria i 120 tenen explicació de debò.**
+- **Les 189 oficials tenen matriu probatòria i 124 tenen explicació de debò.**
   `content/.../questions/official-evidence-map.json` diu, pregunta a pregunta,
   què se'n sap i amb quina cita literal de la còpia local: 116 amb la plantilla
   demostrada i vigent, 33 de cultura general, 28 d'actualitat del dia de
-  l'examen, 8 pendents amb el motiu escrit, 2 fora de temari i **2 on la
-  plantilla del tribunal i la norma no coincideixen**. Cent vint porten
-  explicació escrita contra l'article, en català i castellà, i arrosseguen la
-  norma citada com a referència pròpia: 136 citacions a 117 localitzadors de 26
-  normes. Les altres 69 conserven el text de procedència, perquè escriure'ls un
-  fonament seria inventar-lo. `npm run content:matrix` uneix mapa i banc i
-  falla si algú els separa; `tests/unit/matriu-oficials.test.ts` ho torna a
-  comprovar amb 26 proves, l'empremta dels textos oficials inclosa.
+  l'examen, 4 de demostrades sobre còpia mirall (`partially-supported`: LOPJ,
+  RD 920/2017 i l'Ordre HAC/283/2021), 4 pendents amb el motiu escrit, 2 fora
+  de temari i **2 on la plantilla del tribunal i la norma no coincideixen**.
+  Cent vint-i-quatre porten explicació escrita contra l'article, en català i
+  castellà, i arrosseguen la norma citada com a referència pròpia: 141
+  citacions a 122 localitzadors de 29 normes. Les altres 65 conserven el text
+  de procedència, perquè escriure'ls un fonament seria inventar-lo.
+  `npm run content:matrix` uneix mapa i banc i falla si algú els separa;
+  `tests/unit/matriu-oficials.test.ts` ho torna a comprovar amb 26 proves,
+  l'empremta dels textos oficials inclosa.
 - **La plantilla del tribunal i el dret vigent són dues veritats i l'app diu les
   dues.** `src/engines/official-evidence.ts` és l'únic lloc que ho decideix, amb
   el dia com a paràmetre: si la pregunta es pot servir com a material vigent, si
@@ -326,29 +346,32 @@ La feina que queda, en aquest ordre:
    —instantànies amb hash— és el que ja s'ha fet servir dues vegades. No
    s'allarga cap `reviewBy` per guanyar temps: una data allargada és una
    afirmació que ningú ha comprovat.
-2. Tancar les 26 referències pendents i, amb elles, les 8 preguntes oficials
-   que encara no es poden explicar. Cadascuna diu què li falta: dues
+2. Tancar les 26 referències pendents del banc de contingut. La LO 6/1985 i
+   el RD 920/2017, que en bloquejaven unes quantes, **ja són al paquet** (via
+   mirall, 25-08-2026): es poden contrastar ara mateix obrint el document i
+   buscant-hi la proposició concreta. La resta segueix esperant: dues
    instantànies de pàgines que es munten amb JavaScript —per a això hi ha
    `npm run sources:rescue`—, la Llei 10/2007 de l'Institut de Seguretat
-   Pública, el Decret legislatiu 2/2008 de protecció dels animals, la LO 6/1985
-   del poder judicial, el RD 920/2017 d'inspecció tècnica de vehicles i tres
-   dades de cultura general que cap norma enumera. La taula de què falta per a
-   cada una és a la secció 7 d'
+   Pública, el Decret legislatiu 2/2008 de protecció dels animals i tres
+   dades de cultura general que cap norma enumera. La taula de què falta per
+   a cada una és a la secció 7 d'
    `artifacts/adopcio-fonts-normatives-2026-08-24.md` i a la secció 7 d'
    `artifacts/matriu-i-explicacions-2026-08-25.md`. Cap es dona per verificada
    fins que algú obri el document i hi busqui la proposició concreta.
-3. Tancar les 80 preguntes històriques que han quedat `pending-evidence`,
-   quan hi hagi font. La majoria (45) esperen la mateixa instantània de
-   roses.cat renderitzat que ja bloqueja les 8 vigents —carrers, monuments,
-   adreces de departaments municipals—, 2 la mateixa d'Agència de
-   Ciberseguretat de Catalunya, i la resta necessita una norma concreta que
-   no és al paquet (la Llei 10/1994 de la Policia de la Generalitat, el RD
-   920/2017 d'ITV per als ciclomotors, la LOPJ, el Codi de conducta de l'ONU
-   per a funcionaris encarregats de fer complir la llei, la Carta de
-   Rotterdam). Deu preguntes que semblaven necessitar font nova es van
-   resoldre en una segona revisió sense sortir de les fonts ja adoptades
-   —la composició del Tribunal Constitucional i del CGPJ són a la pròpia
-   Constitució, la competència de l'«Habeas Corpus» a la seva llei
-   orgànica—: val la pena tornar-hi abans de donar per fet que cal una
-   font nova. Cada una
-   diu, al seu propi `missing`, què li falta exactament.
+3. Tancar les 65 preguntes que queden `pending-evidence` (61 d'històriques i
+   4 de vigents), quan hi hagi font. El gruix (46) espera la instantània de
+   roses.cat renderitzat —carrers, monuments, platges, adreces de
+   departaments municipals— i 4 més la de l'Agència de Ciberseguretat de
+   Catalunya: per a totes dues hi ha `npm run sources:rescue`, a executar en
+   una màquina amb xarxa. De la resta: 3 esperen l'Ordenança municipal de
+   tinença d'animals de Roses, 3 la Carta de Rotterdam (sense mirall Git
+   conegut), 1 el text articulat del Codi de conducta de l'ONU (la data
+   d'adopció sí que va quedar resolta via RD 176/2022), i les altres són
+   casos solts amb el `missing` escrit (TEDH, data del referèndum de 1978,
+   ABP Alt Empordà, classificació doctrinal dels reglaments, comarques
+   limítrofes; 2 més són irresolubles perquè el propi quadernet anul·la o
+   fa ambigua la pregunta). Dues lliçons apreses valen per al futur: abans
+   de donar per fet que cal una font nova, torneu a mirar les ja adoptades
+   (deu es van resoldre així a la segona passada, i sis més a la tercera);
+   i qualsevol norma publicada al BOE es pot adoptar amb bytes exactes pel
+   camí del mirall documentat a `artifacts/adopcio-mirall-2026-08-25.md`.

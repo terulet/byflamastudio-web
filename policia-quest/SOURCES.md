@@ -4,7 +4,7 @@
 > mitjançant `npm run content:report`. Per afegir o corregir una font, editeu el
 > manifest.
 
-Generat el 2026-08-25 · 98 fonts registrades.
+Generat el 2026-08-25 · 111 fonts registrades.
 
 ## Roses
 
@@ -711,6 +711,39 @@ Generat el 2026-08-25 · 98 fonts registrades.
 - **Còpia local**: downloaded (SHA-256 `2a1fdbebd6ca7af9b7670f857b3c5f229fd0fa453e72f032a14b9a6b718af99a`)
 - **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
 
+### `lo-6-2006-estatut`
+
+- **Títol**: Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei-organica
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087
+- **Publicació**: 2006-07-20
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `bc78b63f15e5499361edb8f72a7a95e55562a0b6ce8ffffb58be353665fe575b`)
+
+### `llei-10-1994-mossos`
+
+- **Títol**: Ley 10/1994, de 11 de julio, de la Policía de la Generalidad-«Mossos d'Esquadra» (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1994-18777
+- **Publicació**: 1994-08-12
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `113aa00a5263dab8c36b5a23f8b4d5d3802d5ea708e99fbc913ebfb168ffd014`)
+
+### `llei-24-2009-sindic`
+
+- **Títol**: Ley 24/2009, de 23 de diciembre, del Síndic de Greuges (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-2010-735
+- **Publicació**: 2010-01-18
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `d831d7ef2d5f71d11116026c47614d31aa924338df30c296907a073b3d8869fc`)
+
 ## Estat
 
 ### `ce-1978`
@@ -1071,6 +1104,116 @@ Generat el 2026-08-25 · 98 fonts registrades.
 - **Vigència**: vigent
 - **Còpia local**: downloaded (SHA-256 `1e711912ea7a08d8892b1721235ccb867af63ce6b4e900d9318401f6070bd5b1`)
 - **Notes**: Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page indexed through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva.
+
+### `lo-6-1985-lopj`
+
+- **Títol**: Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei-organica
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666
+- **Publicació**: 1985-07-02
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `daa7f58ada8954d8d78b994be7a5ca1dae1dc54334b254ef050ef40384ecd99a`)
+
+### `lo-5-1985-loreg`
+
+- **Títol**: Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei-organica
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672
+- **Publicació**: 1985-06-20
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `236b65c5908edbd2247223f88a29dba88a331554ec5a1867f0792c01dc9922b4`)
+
+### `lo-2-1979-tc`
+
+- **Títol**: Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei-organica
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1979-23709
+- **Publicació**: 1979-10-05
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `4b4638ff4e29b2ae85fead54dc46f43a821181c8da64baec127da768ef734402`)
+
+### `rd-920-2017-itv`
+
+- **Títol**: Real Decreto 920/2017, de 23 de octubre, por el que se regula la inspección técnica de vehículos (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: reial-decret
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-2017-12841
+- **Publicació**: 2017-11-08
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `a29f4c41f45b1e07be261866b8369a91c501d12b2119b9c40e294e6ea4475bb9`)
+
+### `codi-civil-1889`
+
+- **Títol**: Real Decreto de 24 de julio de 1889 por el que se publica el Código Civil (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: llei
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763
+- **Publicació**: 1889-07-25
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `77f0d17fe837bfa84ed3598867805d86b7135d362c9be6b6bb2cdfa38e6ba407`)
+
+### `orden-hac-283-2021`
+
+- **Títol**: Orden HAC/283/2021, de 25 de marzo, por la que se concretan los aspectos necesarios para la distribución definitiva, entre las Comunidades Autónomas y Ciudades de Ceuta y Melilla, de los recursos de la Línea COVID de ayudas directas a autónomos y empresas prevista en el Título I del Real Decreto-ley 5/2021, de 12 de marzo, de medidas extraordinarias de apoyo a la solvencia empresarial en respuesta a la pandemia de la COVID-19 (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: altre
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-2021-4727
+- **Publicació**: 2021-03-26
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `a1993ba734ff6f14573c19398e7ceda9a128824193661f4193f0f82ecb1c60fc`)
+
+### `rd-176-2022-codi-conducta-gc`
+
+- **Títol**: Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del personal de la Guardia Civil (text consolidat)
+- **Organisme**: BOE
+- **Tipus**: reial-decret
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-2022-3477
+- **Publicació**: 2022-03-05
+- **Consulta**: 2026-08-25
+- **Vigència**: vigent
+- **Còpia local**: downloaded (SHA-256 `0c0b575f82ccc7875afd65dd3d74089f659c88a548dd098834ab3e868875eead`)
+
+### `ce-1978-vigent-2018`
+
+- **Títol**: Constitución Española (text vigent el 2018)
+- **Organisme**: BOE
+- **Tipus**: constitucio
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229
+- **Publicació**: 1978-12-29
+- **Consulta**: 2026-08-25
+- **Vigència**: historica
+- **Còpia local**: downloaded (SHA-256 `5a0b548f752eefffb14ea5f98cc8cddd544512b81ab70142a4a2312daa98203d`)
+
+### `lo-10-1995-cp-vigent-2018`
+
+- **Títol**: Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal (text vigent el 2018)
+- **Organisme**: BOE
+- **Tipus**: llei-organica
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444
+- **Publicació**: 1995-11-24
+- **Consulta**: 2026-08-25
+- **Vigència**: historica
+- **Còpia local**: downloaded (SHA-256 `58e9ec227fd7747df71d77001d77b45faa9f2a25e8a6efe798d7ba9cf4f1abed`)
+
+### `lo-6-1985-lopj-vigent-2018`
+
+- **Títol**: Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial (text vigent el 2018)
+- **Organisme**: BOE
+- **Tipus**: llei-organica
+- **URL**: https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666
+- **Publicació**: 1985-07-02
+- **Consulta**: 2026-08-25
+- **Vigència**: historica
+- **Còpia local**: downloaded (SHA-256 `6ddc58d512cc0c5c4e1413eca13197d0cbfb6deaed20edfa94930a5ba1da2d92`)
 
 ## Unió Europea
 

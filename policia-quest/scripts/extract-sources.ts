@@ -85,6 +85,15 @@ for (const file of files) {
     continue
   }
 
+  // El Markdown ja és text pla: es copia tal qual, sense despullar res, perquè
+  // una cita literal ho sigui també respecte del fitxer de la cau.
+  if (ext === '.md') {
+    writeFileSync(output, readFileSync(input, 'utf8'))
+    console.log(`  ✓ ${file}`)
+    done++
+    continue
+  }
+
   console.log(`  · ${file} — omès: format no suportat`)
   skipped++
 }

@@ -16,7 +16,8 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `supported-current` — La plantilla quadra amb la norma i segueix bona avui | 116 | sí | sí | sí |
 | `general-knowledge` — Cultura general no jurídica | 33 | no | no | no |
 | `historical-current-affairs` — Actualitat del dia de l’examen | 28 | no | no | no |
-| `pending-evidence` — Sense evidència suficient | 8 | no | no | no |
+| `pending-evidence` — Sense evidència suficient | 4 | no | no | no |
+| `partially-supported` — La font en sosté una part | 4 | sí | sí | sí |
 | `official-key-conflicts-with-law-at-exam` — La plantilla no quadra amb la norma que ja regia aquell dia | 2 | no | no | no |
 | `out-of-syllabus` — Fora dels 40 temes | 2 | sí | sí | sí |
 
@@ -44,7 +45,7 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 - **`roses-ordenanca-convivencia-mod-2021` · modificació cinquena, punt 2:** «Ha de dir: … 11.2 Col·laborar en l’espai públic amb els venedors ambulants no autoritzats amb accions com ara facilitar el gènere o el seu transport, o vigilar i alertar sobre la presència dels agents de l'autoritat. LL 500»
 - **`roses-ordenanca-convivencia-mod-2021` · edicte d’aprovació definitiva:** «es publica el text íntegre de la modificació de l’Ordenança i entrarà en vigor transcorreguts 15 dies hàbils, a comptar des de l’endemà de la publicació en el Butlletí Oficial de la Província de Girona»
 
-## Sense evidència suficient — 8
+## Sense evidència suficient — 4
 
 ### `q-of-roses-2025-interins-cp-020` · roses-2025-interins-cp · pregunta 20 · 2025-04-16
 
@@ -58,18 +59,6 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 - **Falta:** Instantània de text de les pàgines de www.roses.cat (equipaments i serveis municipals), capturada amb navegador renderitzat.
 - **Per què:** La còpia local de www.roses.cat és un esquelet de navegació sense el cos de la pàgina: cap font adoptada ho demostra.
 
-### `q-of-roses-2025-interins-cp-029` · roses-2025-interins-cp · pregunta 29 · 2025-04-16
-
-- **Plantilla del tribunal:** c)
-- **Falta:** Text consolidat de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (arts. 65 i 82 i següents).
-- **Per què:** La Llei orgànica 6/1985 del poder judicial no és entre les 98 fonts del manifest, i cap altra font adoptada organitza els òrgans jurisdiccionals.
-
-### `q-of-roses-2025-propietat-cg-005` · roses-2025-propietat-cg · pregunta 5 · 2025-12-03
-
-- **Plantilla del tribunal:** b)
-- **Falta:** Una font oficial que enumeri les 17 comunitats autònomes i les 2 ciutats autònomes (per exemple, els estatuts vigents o l’INE).
-- **Per què:** La Constitució fixa el marc del títol VIII però no enumera les comunitats ni les ciutats autònomes: cap font adoptada demostra la xifra.
-
 ### `q-of-roses-2025-propietat-cg-006` · roses-2025-propietat-cg · pregunta 6 · 2025-12-03
 
 - **Plantilla del tribunal:** a)
@@ -82,36 +71,23 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 - **Falta:** Una instantània de text de les pàgines de l’Agència de Ciberseguretat de Catalunya (funcions i objectius), capturada amb navegador renderitzat.
 - **Per què:** La còpia local de ciberseguretat.gencat.cat és un esquelet de navegació sense el cos de la pàgina: cap font adoptada demostra ni desmenteix aquesta resposta.
 
-### `q-of-roses-2026-interins-cp-029` · roses-2026-interins-cp · pregunta 29 · 2026-04-15
-
-- **Plantilla del tribunal:** a)
-- **Falta:** Text consolidat de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (arts. 65 i 82 i següents).
-- **Per què:** La Llei orgànica 6/1985 del poder judicial no és entre les 98 fonts del manifest, i cap altra font adoptada organitza els òrgans jurisdiccionals.
-
-### `q-of-roses-2026-interins-cp-031` · roses-2026-interins-cp · pregunta 31 · 2026-04-15
-
-- **Plantilla del tribunal:** a)
-- **Falta:** Reial decret 920/2017, de 23 d’octubre, pel qual es regula la inspecció tècnica de vehicles (annex I, periodicitat).
-- **Per què:** La periodicitat de la ITV no és al Reglament general de vehicles: l’art. 10.1 remet a «la reglamentación que se recoge en el anexo I», i la norma que fixa el calendari (RD 920/2017) no és entre les 98 fonts.
-- **`rd-2822-1998-rgv` · art. 10.1:** «Los vehículos matriculados o puestos en circulación deberán someterse a inspección técnica… en los casos y con la periodicidad, requisitos y excepciones que se establecen en la reglamentación que se recoge en el anexo I.»
-
 ## Per convocatòria
 
 | Convocatòria | Data | Preguntes | Vigents | Fora de l’aprenentatge actual |
 | --- | --- | --- | --- | --- |
 | `roses-2025-interins-cg` | 2025-04-16 | 21 | 0 | 21 |
-| `roses-2025-interins-cp` | 2025-04-16 | 42 | 37 | 5 |
+| `roses-2025-interins-cp` | 2025-04-16 | 42 | 38 | 4 |
 | `roses-2025-propietat-cg` | 2025-12-03 | 21 | 0 | 21 |
 | `roses-2025-propietat-cp` | 2025-12-03 | 42 | 41 | 1 |
 | `roses-2026-interins-cg` | 2026-04-15 | 21 | 0 | 21 |
-| `roses-2026-interins-cp` | 2026-04-15 | 42 | 40 | 2 |
+| `roses-2026-interins-cp` | 2026-04-15 | 42 | 42 | 0 |
 
 ## Per tema
 
 | Tema | Preguntes | Estats |
 | --- | --- | --- |
 | `roses-examen-oficial` | 57 | 33 general-knowledge, 22 historical-current-affairs, 2 out-of-syllabus |
-| `roses-t01` | 3 | 2 supported-current, 1 pending-evidence |
+| `roses-t01` | 3 | 2 supported-current, 1 partially-supported |
 | `roses-t02` | 5 | 5 supported-current |
 | `roses-t03` | 5 | 5 supported-current |
 | `roses-t04` | 4 | 3 historical-current-affairs, 1 supported-current |
@@ -137,10 +113,10 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `roses-t24` | 5 | 5 supported-current |
 | `roses-t26` | 5 | 5 supported-current |
 | `roses-t27` | 2 | 2 supported-current |
-| `roses-t28` | 3 | 2 pending-evidence, 1 supported-current |
+| `roses-t28` | 3 | 2 partially-supported, 1 supported-current |
 | `roses-t29` | 6 | 6 supported-current |
 | `roses-t31` | 5 | 3 historical-current-affairs, 2 pending-evidence |
-| `roses-t32` | 3 | 2 supported-current, 1 pending-evidence |
+| `roses-t32` | 3 | 2 supported-current, 1 partially-supported |
 | `roses-t33` | 5 | 5 supported-current |
 | `roses-t34` | 2 | 2 supported-current |
 | `roses-t35` | 3 | 3 supported-current |
@@ -167,6 +143,7 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `rdleg-2-2004-trlrhl` | 3 |
 | `llei-19-2013-transp` | 3 |
 | `roses-ordenanca-convivencia` | 3 |
+| `lo-6-1985-lopj` | 2 |
 | `rd-818-2009-rgcond` | 2 |
 | `llei-10-1999-gossos-cat` | 2 |
 | `roses-ordenanca-convivencia-mod-2021` | 2 |
@@ -174,10 +151,11 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `rd-1428-2003-rgc` | 2 |
 | `roses-ordenanca-circulacio-mod-2021` | 1 |
 | `lo-6-1984-habeas` | 1 |
+| `orden-hac-283-2021` | 1 |
 | `llei-40-2015-rjsp` | 1 |
 | `lecrim-1882` | 1 |
 | `rgpd-2016-679` | 1 |
-| `rd-2822-1998-rgv` | 1 |
+| `rd-920-2017-itv` | 1 |
 | `rdleg-6-2015-ltsv` | 1 |
 
 ## Les 189, una a una
@@ -233,7 +211,7 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `q-of-roses-2025-interins-cp-026` | 2025-interins-cp | 26 | t24 | b | `supported-current` | ✓ | disponible |
 | `q-of-roses-2025-interins-cp-027` | 2025-interins-cp | 27 | t26 | c | `supported-current` | ✓ | disponible |
 | `q-of-roses-2025-interins-cp-028` | 2025-interins-cp | 28 | t27 | b | `supported-current` | ✓ | disponible |
-| `q-of-roses-2025-interins-cp-029` | 2025-interins-cp | 29 | t28 | c | `pending-evidence` | — | bloquejada |
+| `q-of-roses-2025-interins-cp-029` | 2025-interins-cp | 29 | t28 | c | `partially-supported` | ✓ | disponible |
 | `q-of-roses-2025-interins-cp-030` | 2025-interins-cp | 30 | t33 | a | `supported-current` | ✓ | disponible |
 | `q-of-roses-2025-interins-cp-031` | 2025-interins-cp | 31 | t29 | d | `supported-current` | ✓ | disponible |
 | `q-of-roses-2025-interins-cp-032` | 2025-interins-cp | 32 | t32 | c | `supported-current` | ✓ | disponible |
@@ -251,7 +229,7 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `q-of-roses-2025-propietat-cg-002` | 2025-propietat-cg | 2 | examen-oficial | c | `general-knowledge` | — | parcial |
 | `q-of-roses-2025-propietat-cg-003` | 2025-propietat-cg | 3 | examen-oficial | b | `general-knowledge` | — | parcial |
 | `q-of-roses-2025-propietat-cg-004` | 2025-propietat-cg | 4 | examen-oficial | c | `historical-current-affairs` | — | parcial |
-| `q-of-roses-2025-propietat-cg-005` | 2025-propietat-cg | 5 | t01 | b | `pending-evidence` | — | bloquejada |
+| `q-of-roses-2025-propietat-cg-005` | 2025-propietat-cg | 5 | t01 | b | `partially-supported` | — | disponible |
 | `q-of-roses-2025-propietat-cg-006` | 2025-propietat-cg | 6 | t31 | a | `pending-evidence` | — | bloquejada |
 | `q-of-roses-2025-propietat-cg-007` | 2025-propietat-cg | 7 | examen-oficial | a | `general-knowledge` | — | parcial |
 | `q-of-roses-2025-propietat-cg-008` | 2025-propietat-cg | 8 | examen-oficial | b | `general-knowledge` | — | parcial |
@@ -359,9 +337,9 @@ Empremta dels textos oficials (identificador, número, clau, enunciat i opcions)
 | `q-of-roses-2026-interins-cp-026` | 2026-interins-cp | 26 | t22 | b | `supported-current` | ✓ | disponible |
 | `q-of-roses-2026-interins-cp-027` | 2026-interins-cp | 27 | t23 | d | `supported-current` | ✓ | disponible |
 | `q-of-roses-2026-interins-cp-028` | 2026-interins-cp | 28 | t27 | c | `supported-current` | ✓ | disponible |
-| `q-of-roses-2026-interins-cp-029` | 2026-interins-cp | 29 | t28 | a | `pending-evidence` | — | bloquejada |
+| `q-of-roses-2026-interins-cp-029` | 2026-interins-cp | 29 | t28 | a | `partially-supported` | ✓ | disponible |
 | `q-of-roses-2026-interins-cp-030` | 2026-interins-cp | 30 | t33 | a | `supported-current` | ✓ | disponible |
-| `q-of-roses-2026-interins-cp-031` | 2026-interins-cp | 31 | t32 | a | `pending-evidence` | — | bloquejada |
+| `q-of-roses-2026-interins-cp-031` | 2026-interins-cp | 31 | t32 | a | `partially-supported` | ✓ | disponible |
 | `q-of-roses-2026-interins-cp-032` | 2026-interins-cp | 32 | t32 | c | `supported-current` | ✓ | disponible |
 | `q-of-roses-2026-interins-cp-033` | 2026-interins-cp | 33 | t33 | b | `supported-current` | ✓ | disponible |
 | `q-of-roses-2026-interins-cp-034` | 2026-interins-cp | 34 | t34 | c | `supported-current` | ✓ | disponible |

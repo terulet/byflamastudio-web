@@ -2128,14 +2128,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'opció a reprodueix gairebé literalment l\'article 65.1º.b de la LOPJ: la Sala Penal de l\'Audiència Nacional coneix de la falsificació de moneda i de la fabricació de targetes de crèdit i dèbit falses i xecs de viatger falsos, sempre que siguin comesos per organitzacions o grups criminals. Els recursos de cassació i revisió corresponen al Tribunal Suprem.',
+      es: 'La opción a reproduce casi literalmente el artículo 65.1º.b de la LOPJ: la Sala de lo Penal de la Audiencia Nacional conoce de la falsificación de moneda y de la fabricación de tarjetas de crédito y débito falsas y cheques de viajero falsos, siempre que sean cometidos por organizaciones o grupos criminales. Los recursos de casación y revisión corresponden al Tribunal Supremo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 29, pàgina 8 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'art. 65.1º.b',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2212,14 +2218,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'annex I del Reial decret 920/2017 posa les motocicletes dins la categoria «Resto L» (vehicles de motor de dues o tres rodes i quadricicles): exemptes d\'ITV fins als quatre anys d\'antiguitat i, a partir d\'aquí, inspecció cada dos anys.',
+      es: 'El anexo I del Real Decreto 920/2017 sitúa las motocicletas en la categoría «Resto L» (vehículos de motor de dos o tres ruedas y cuatriciclos): exentas de ITV hasta los cuatro años de antigüedad y, a partir de ahí, inspección cada dos años.',
     },
     references: [
       {
         sourceId: 'roses-examen-2026-interins-cp',
         locator: 'pregunta 31, pàgina 9 del PDF',
         validAt: '2026-04-15',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-920-2017-itv',
+        locator: 'annex I, freqüència de les inspeccions (categoria L, resta)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -2908,14 +2920,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Espanya s\'organitza en disset comunitats autònomes i dues ciutats autònomes (Ceuta i Melilla). Es pot comprovar comptant-les en qualsevol norma estatal que les enumeri totes: l\'Ordre HAC/283/2021, per exemple, en llista quinze més Ceuta i Melilla a la primera taula de repartiment i Canàries i les Illes Balears a la segona — 17 comunitats i 2 ciutats.',
+      es: 'España se organiza en diecisiete comunidades autónomas y dos ciudades autónomas (Ceuta y Melilla). Puede comprobarse contándolas en cualquier norma estatal que las enumere todas: la Orden HAC/283/2021, por ejemplo, lista quince más Ceuta y Melilla en la primera tabla de reparto y Canarias e Illes Balears en la segunda — 17 comunidades y 2 ciudades.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-propietat-cg',
         locator: 'pregunta 5, pàgina 1 del PDF',
         validAt: '2025-12-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'orden-hac-283-2021',
+        locator: 'apartat dos, taula del compartiment 1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'orden-hac-283-2021',
+        locator: 'apartat dos, taula del compartiment 2',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -7576,14 +7600,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Un òrgan és col·legiat quan decideixen diversos magistrats alhora. L\'Audiència Provincial es compon d\'un president i dos o més magistrats (art. 81.1 LOPJ); els jutjats de primera instància i instrucció, de violència sobre la dona i penals són òrgans unipersonals.',
+      es: 'Un órgano es colegiado cuando deciden varios magistrados a la vez. La Audiencia Provincial se compone de un presidente y dos o más magistrados (art. 81.1 LOPJ); los juzgados de primera instancia e instrucción, de violencia sobre la mujer y de lo penal son órganos unipersonales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2025-interins-cp',
         locator: 'pregunta 29, pàgina 10 del PDF',
         validAt: '2025-04-16',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'art. 81.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -10390,14 +10420,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Declaració Universal dels Drets Humans es va proclamar el 10 de desembre de 1948 a París, on aquell any es reunia l\'Assemblea General de les Nacions Unides (Resolució 217 A (III)). El 6 de desembre de 1978 és el referèndum de la Constitució espanyola: trenta anys després i a un altre país.',
+      es: 'La Declaración Universal de los Derechos Humanos se proclamó el 10 de diciembre de 1948 en París, donde aquel año se reunía la Asamblea General de las Naciones Unidas (Resolución 217 A (III)). El 6 de diciembre de 1978 es el referéndum de la Constitución española: treinta años después y en otro país.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-propietat-cp',
         locator: 'pregunta 28, pàgina 8 del PDF',
         validAt: '2024-06-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ddhh-1948',
+        locator: 'pàgina oficial de l’ONU en castellà, presentació de la Declaració',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -12211,14 +12247,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Ho diuen les dues normes que regulen la institució: l\'article 2.2 de la Llei 24/2009 («elegida por el Parlamento») i l\'article 79.1 de l\'Estatut, que hi afegeix la majoria necessària: tres cinquenes parts dels membres del Parlament de Catalunya.',
+      es: 'Lo dicen las dos normas que regulan la institución: el artículo 2.2 de la Ley 24/2009 («elegida por el Parlamento») y el artículo 79.1 del Estatuto, que añade la mayoría necesaria: tres quintas partes de los miembros del Parlamento de Cataluña.',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-24-2009-sindic',
+        locator: 'art. 2.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-estatut',
+        locator: 'art. 79.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -13168,14 +13216,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Declaració de 1948 proclama drets de «tots els éssers humans», i un agent de policia ho és: neix lliure i igual en dignitat i drets (art. 1), té dret a la protecció contra ingerències arbitràries en la seva vida privada (art. 12) i és igual davant la llei amb dret a igual protecció (art. 7). Les tres afirmacions són certes i per això la resposta és «totes les anteriors».',
+      es: 'La Declaración de 1948 proclama derechos de «todos los seres humanos», y un agente de policía lo es: nace libre e igual en dignidad y derechos (art. 1), tiene derecho a la protección contra injerencias arbitrarias en su vida privada (art. 12) y es igual ante la ley con derecho a igual protección (art. 7). Las tres afirmaciones son ciertas y por eso la respuesta es «todas las anteriores».',
     },
     references: [
       {
         sourceId: 'roses-examen-2024-interins-cp',
         locator: 'pregunta 26, pàgina 8 del PDF',
         validAt: '2024-04-03',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ddhh-1948',
+        locator: 'art. 1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ddhh-1948',
+        locator: 'art. 12',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ddhh-1948',
+        locator: 'art. 7',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -14983,14 +15049,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Constitució (art. 68.1) diu que el Congrés té entre 300 i 400 diputats; qui fixa el nombre exacte és la Llei orgànica del règim electoral general: «El Congreso está formado por trescientos cincuenta Diputados» (art. 162.1 LOREG).',
+      es: 'La Constitución (art. 68.1) dice que el Congreso tiene entre 300 y 400 diputados; quien fija el número exacto es la Ley orgánica del régimen electoral general: «El Congreso está formado por trescientos cincuenta Diputados» (art. 162.1 LOREG).',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-5-1985-loreg',
+        locator: 'art. 162.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -15526,14 +15598,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El CGPJ el formen el president del Tribunal Suprem i vint vocals (art. 566 LOPJ). Per elegir el president del Tribunal Suprem i del CGPJ, l\'article 586.3 exigeix votació nominal amb el suport de la majoria de tres cinquens dels membres del Ple.',
+      es: 'El CGPJ lo forman el presidente del Tribunal Supremo y veinte vocales (art. 566 LOPJ). Para elegir al presidente del Tribunal Supremo y del CGPJ, el artículo 586.3 exige votación nominal con el apoyo de la mayoría de tres quintos de los miembros del Pleno.',
     },
     references: [
       {
         sourceId: 'roses-examen-2023-interins-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2023-03-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'art. 566',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'art. 586.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -16843,14 +16927,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 122.3 de la Constitució fixa la composició del Consell General del Poder Judicial: el president del Tribunal Suprem, que el presideix, i vint membres nomenats pel rei per un període de cinc anys (dotze entre jutges i magistrats, quatre a proposta del Congrés i quatre del Senat). Ni dotze membres, ni nou anys: això són distractors.',
+      es: 'El artículo 122.3 de la Constitución fija la composición del Consejo General del Poder Judicial: el presidente del Tribunal Supremo, que lo preside, y veinte miembros nombrados por el rey por un período de cinco años (doce entre jueces y magistrados, cuatro a propuesta del Congreso y cuatro del Senado). Ni doce miembros, ni nueve años: eso son distractores.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 4, pàgina 1 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 122.3',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -17404,14 +17494,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La potestat jurisdiccional —jutjar i fer executar el jutjat— correspon exclusivament als jutjats i tribunals (art. 117.3 CE). El Ministeri Fiscal té una altra missió: promoure l\'acció de la justícia en defensa de la legalitat i dels drets dels ciutadans (art. 124.1 CE). Actua davant dels tribunals, però no en forma part: el Tribunal Suprem, les audiències provincials i els TSJ sí que són òrgans jurisdiccionals.',
+      es: 'La potestad jurisdiccional —juzgar y hacer ejecutar lo juzgado— corresponde exclusivamente a los juzgados y tribunales (art. 117.3 CE). El Ministerio Fiscal tiene otra misión: promover la acción de la justicia en defensa de la legalidad y de los derechos de los ciudadanos (art. 124.1 CE). Actúa ante los tribunales, pero no forma parte de ellos: el Tribunal Supremo, las audiencias provinciales y los TSJ sí son órganos jurisdiccionales.',
     },
     references: [
       {
         sourceId: 'roses-examen-2022-interins-cp',
         locator: 'pregunta 15, pàgina 4 del PDF',
         validAt: '2022-04-19',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 117.3',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 124.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -19087,14 +19189,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb ressaltat). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con resaltado). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Declaració Universal dels Drets Humans la va adoptar i proclamar l\'Assemblea General de les Nacions Unides el 10 de desembre de 1948 (Resolució 217 A (III)), a París. Ni el Consell d\'Europa, ni la Unió Europea, ni cap «Organització Internacional dels Drets Humans» amb seu a la Haia: aquests distractors descriuen coses que no van passar.',
+      es: 'La Declaración Universal de los Derechos Humanos la adoptó y proclamó la Asamblea General de las Naciones Unidas el 10 de diciembre de 1948 (Resolución 217 A (III)), en París. Ni el Consejo de Europa, ni la Unión Europea, ni ninguna «Organización Internacional de los Derechos Humanos» con sede en La Haya: esos distractores describen cosas que no ocurrieron.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-propietat-cp',
         locator: 'pregunta 8, pàgina 2 del PDF',
         validAt: '2021-04-13',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ddhh-1948',
+        locator: 'pàgina oficial de l’ONU en castellà, presentació de la Declaració',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21088,14 +21196,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La LO 6/2006, de reforma de l\'Estatut d\'autonomia de Catalunya, es va publicar al BOE núm. 172 el 20 de juliol de 2006 i no conté cap disposició pròpia d\'entrada en vigor. S\'aplica per tant la regla general de l\'article 2.1 del Codi civil —vint dies des de la publicació completa— i el vintè dia és el 9 d\'agost de 2006.',
+      es: 'La LO 6/2006, de reforma del Estatuto de autonomía de Cataluña, se publicó en el BOE núm. 172 el 20 de julio de 2006 y no contiene ninguna disposición propia de entrada en vigor. Se aplica por tanto la regla general del artículo 2.1 del Código civil —veinte días desde la publicación completa— y el vigésimo día es el 9 de agosto de 2006.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 8, pàgina 3 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'codi-civil-1889',
+        locator: 'art. 2.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-estatut',
+        locator: 'metadades del text consolidat (publicació al BOE)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-estatut',
+        locator: 'disposició final quarta (l’última del text)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21298,14 +21424,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Ho diuen les dues normes que regulen la institució: l\'article 2.2 de la Llei 24/2009 («elegida por el Parlamento») i l\'article 79.1 de l\'Estatut, que hi afegeix la majoria necessària: tres cinquenes parts dels membres del Parlament de Catalunya.',
+      es: 'Lo dicen las dos normas que regulan la institución: el artículo 2.2 de la Ley 24/2009 («elegida por el Parlamento») y el artículo 79.1 del Estatuto, que añade la mayoría necesaria: tres quintas partes de los miembros del Parlamento de Cataluña.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 12, pàgina 4 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-24-2009-sindic',
+        locator: 'art. 2.2',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-2006-estatut',
+        locator: 'art. 79.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -21337,14 +21475,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'El Codi de conducta per a funcionaris encarregats de fer complir la llei el va adoptar l\'Assemblea General de les Nacions Unides amb la Resolució 34/169, el 17 de desembre de 1979 —així ho recull, per exemple, el preàmbul del RD 176/2022, del Codi de conducta de la Guàrdia Civil—. La plantilla del tribunal (a) encerta l\'òrgan i el dia però diu 1978: cap de les quatre opcions dona l\'any real, així que la resposta que puntua és un fet de l\'examen, no un fet del calendari.',
+      es: 'El Código de conducta para funcionarios encargados de hacer cumplir la ley lo adoptó la Asamblea General de las Naciones Unidas con la Resolución 34/169, el 17 de diciembre de 1979 —así lo recoge, por ejemplo, el preámbulo del RD 176/2022, del Código de Conducta de la Guardia Civil—. La plantilla del tribunal (a) acierta el órgano y el día pero dice 1978: ninguna de las cuatro opciones da el año real, así que la respuesta que puntúa es un hecho del examen, no un hecho del calendario.',
     },
     references: [
       {
         sourceId: 'roses-examen-2021-interins-cp',
         locator: 'pregunta 13, pàgina 4 del PDF',
         validAt: '2021-04-27',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-176-2022-codi-conducta-gc',
+        locator: 'preàmbul',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -23497,14 +23641,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 2 de la Llei orgànica 2/1979 del Tribunal Constitucional enumera de què coneix el TC: recursos i qüestions d\'inconstitucionalitat, empara, conflictes de competència amb i entre comunitats autònomes, conflictes entre òrgans constitucionals i en defensa de l\'autonomia local, entre d\'altres. La responsabilitat penal del president del Govern no hi és: l\'article 102.1 de la Constitució l\'atribueix a la Sala Penal del Tribunal Suprem.',
+      es: 'El artículo 2 de la Ley Orgánica 2/1979 del Tribunal Constitucional enumera de qué conoce el TC: recursos y cuestiones de inconstitucionalidad, amparo, conflictos de competencia con y entre comunidades autónomas, conflictos entre órganos constitucionales y en defensa de la autonomía local, entre otros. La responsabilidad penal del presidente del Gobierno no está: el artículo 102.1 de la Constitución la atribuye a la Sala de lo Penal del Tribunal Supremo.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 6, pàgina 2 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-2-1979-tc',
+        locator: 'art. 2.u',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 102.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -23536,14 +23692,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 34 de la LOPJ ho diu amb una sola frase: «La Comunidad Autónoma será el ámbito territorial de los Tribunales Superiores de Justicia». Ni la província, ni un àmbit variable, ni cap decisió del president del CGPJ.',
+      es: 'El artículo 34 de la LOPJ lo dice con una sola frase: «La Comunidad Autónoma será el ámbito territorial de los Tribunales Superiores de Justicia». Ni la provincia, ni un ámbito variable, ni ninguna decisión del presidente del CGPJ.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 7, pàgina 3 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'art. 34',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24844,14 +25006,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'a',
     explanation: {
-      ca: 'El tribunal va marcar la a) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la a) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'annex I del Reial decret 920/2017, que regula la inspecció tècnica de vehicles, fixa la freqüència per als ciclomotors de dues rodes: exempts fins als tres anys d\'antiguitat i, a partir d\'aquí, inspecció cada dos anys.',
+      es: 'El anexo I del Real Decreto 920/2017, que regula la inspección técnica de vehículos, fija la frecuencia para los ciclomotores de dos ruedas: exentos hasta los tres años de antigüedad y, a partir de ahí, inspección cada dos años.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 33, pàgina 12 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'rd-920-2017-itv',
+        locator: 'annex I, freqüència de les inspeccions (categoria L, ciclomotors)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -24928,14 +25096,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb color). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con color). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Declaració Universal dels Drets Humans va ser adoptada i proclamada per l\'Assemblea General de les Nacions Unides el 10 de desembre de 1948, a París, mitjançant la Resolució 217 A (III). El Conveni signat a Roma el 4 de novembre de 1950 és el Conveni Europeu de Drets Humans, del Consell d\'Europa, no la Declaració.',
+      es: 'La Declaración Universal de los Derechos Humanos fue adoptada y proclamada por la Asamblea General de las Naciones Unidas el 10 de diciembre de 1948, en París, mediante la Resolución 217 A (III). El Convenio firmado en Roma el 4 de noviembre de 1950 es el Convenio Europeo de Derechos Humanos, del Consejo de Europa, no la Declaración.',
     },
     references: [
       {
         sourceId: 'roses-examen-2019-propietat-cp',
         locator: 'pregunta 35, pàgina 13 del PDF',
         validAt: '2019-06-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ddhh-1948',
+        locator: 'pàgina oficial de l’ONU en castellà, presentació de la Declaració',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -28963,14 +29137,26 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'b',
     explanation: {
-      ca: 'El tribunal va marcar la b) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la b) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'L\'article 9.1 de la Constitució diu, sense matisos: «Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico». La redacció era exactament la mateixa el 2018 —les tres úniques reformes de la Constitució afecten els articles 13.2 (1992), 135 (2011) i 49 (2024)—. La plantilla del tribunal (b) afirma que els poders públics només hi estan subjectes en part, cosa que el text no diu: l\'opció que sosté la norma és la a.',
+      es: 'El artículo 9.1 de la Constitución dice, sin matices: «Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico». La redacción era exactamente la misma en 2018 —las tres únicas reformas de la Constitución afectan a los artículos 13.2 (1992), 135 (2011) y 49 (2024)—. La plantilla del tribunal (b) afirma que los poderes públicos solo están sujetos en parte, cosa que el texto no dice: la opción que sostiene la norma es la a.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 2, pàgina 1 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978',
+        locator: 'art. 9.1',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'ce-1978-vigent-2018',
+        locator: 'art. 9.1 (redacció vigent el 2018, idèntica)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29875,14 +30061,32 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'c',
     explanation: {
-      ca: 'El tribunal va marcar la c) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la c) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Aquesta pregunta és un retrat del dret de 2018. Llavors, l\'article 178 del Codi penal definia l\'agressió sexual per la violència o la intimidació, i els actes sense violència ni intimidació eren abús sexual (art. 181): per això la conducta de l\'opció c no era una agressió. La Llei orgànica 10/2022 va suprimir l\'abús com a figura separada i avui l\'article 178.1 considera agressió sexual qualsevol acte contra la llibertat sexual sense consentiment, amb violència o sense: sota el dret vigent, cap de les quatre opcions descriu una conducta que no sigui agressió.',
+      es: 'Esta pregunta es un retrato del derecho de 2018. Entonces, el artículo 178 del Código penal definía la agresión sexual por la violencia o la intimidación, y los actos sin violencia ni intimidación eran abuso sexual (art. 181): por eso la conducta de la opción c no era una agresión. La Ley orgánica 10/2022 suprimió el abuso como figura separada y hoy el artículo 178.1 considera agresión sexual cualquier acto contra la libertad sexual sin consentimiento, con violencia o sin ella: bajo el derecho vigente, ninguna de las cuatro opciones describe una conducta que no sea agresión.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 20, pàgina 6 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp-vigent-2018',
+        locator: 'art. 178 (redacció vigent el 2018)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp-vigent-2018',
+        locator: 'art. 181.1 (redacció vigent el 2018)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-10-1995-cp',
+        locator: 'art. 178.1 (redacció vigent)',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -29959,14 +30163,38 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'Aquesta pregunta té dues capes. El 2018, l\'article 26 de la LOPJ enumerava com a òrgans jurisdiccionals els jutjats de Menors i de Vigilància Penitenciària, i l\'article 83 preveia el Tribunal del Jurat: les tres opcions eren certes i «totes les anteriors» era la resposta correcta. La LO 1/2025 va reorganitzar la primera instància en tribunals d\'instància (amb seccions de Menors i de Vigilància Penitenciària), i l\'article 26 vigent ja no enumera aquells jutjats com a òrgans propis. De les tres afirmacions, avui només el Tribunal del Jurat es manté com a òrgan amb la mateixa denominació.',
+      es: 'Esta pregunta tiene dos capas. En 2018, el artículo 26 de la LOPJ enumeraba como órganos jurisdiccionales los juzgados de Menores y de Vigilancia Penitenciaria, y el artículo 83 preveía el Tribunal del Jurado: las tres opciones eran ciertas y «todas las anteriores» era la respuesta correcta. La LO 1/2025 reorganizó la primera instancia en tribunales de instancia (con secciones de Menores y de Vigilancia Penitenciaria), y el artículo 26 vigente ya no enumera aquellos juzgados como órganos propios. De las tres afirmaciones, hoy solo el Tribunal del Jurado se mantiene como órgano con la misma denominación.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 22, pàgina 6 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj-vigent-2018',
+        locator: 'art. 26 (redacció vigent el 2018)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj-vigent-2018',
+        locator: 'art. 83 (redacció vigent el 2018)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'art. 26 (redacció vigent)',
+        validAt: '2026-08-25',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'lo-6-1985-lopj',
+        locator: 'nota de modificació de l’art. 26',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],
@@ -30910,14 +31138,20 @@ export const OFFICIAL_EXAM_QUESTIONS: Question[] = [
     ],
     correct: 'd',
     explanation: {
-      ca: 'El tribunal va marcar la d) com a bona (al quadernet, amb asterisc). No en va publicar el fonament i aquesta app no l’inventa: si el perquè no et surt, busca’l al tema corresponent del temari i contrasta’l amb el quadernet enllaçat a la font.',
-      es: 'El tribunal marcó la d) como buena (en el cuadernillo, con asterisco). No publicó el fundamento y esta app no lo inventa: si el porqué no te sale, búscalo en el tema correspondiente del temario y contrástalo con el cuadernillo enlazado en la fuente.',
+      ca: 'La Llei 10/1994, d\'11 de juliol, ho diu al seu article 1: el seu objecte és perfeccionar el procés de creació, l\'estructuració i la regulació funcional i estatutària de la Policia de la Generalitat – Mossos d\'Esquadra. La Llei 16/1991 regula les policies locals, la LO 2/1986 les forces i cossos de seguretat en general, i la LO 4/2015 la protecció de la seguretat ciutadana.',
+      es: 'La Ley 10/1994, de 11 de julio, lo dice en su artículo 1: su objeto es perfeccionar el proceso de creación, la estructuración y la regulación funcional y estatutaria de la Policía de la Generalitat – Mossos d\'Esquadra. La Ley 16/1991 regula las policías locales, la LO 2/1986 las fuerzas y cuerpos de seguridad en general, y la LO 4/2015 la protección de la seguridad ciudadana.',
     },
     references: [
       {
         sourceId: 'roses-examen-2018-propietat-cp',
         locator: 'pregunta 1, pàgina 11 del PDF',
         validAt: '2018-07-31',
+        reviewStatus: 'verified',
+      },
+      {
+        sourceId: 'llei-10-1994-mossos',
+        locator: 'art. 1.1',
+        validAt: '2026-08-25',
         reviewStatus: 'verified',
       },
     ],

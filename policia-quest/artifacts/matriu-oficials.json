@@ -9,7 +9,8 @@
     "supported-current": 116,
     "general-knowledge": 33,
     "historical-current-affairs": 28,
-    "pending-evidence": 8,
+    "pending-evidence": 4,
+    "partially-supported": 4,
     "official-key-conflicts-with-law-at-exam": 2,
     "out-of-syllabus": 2
   },
@@ -1376,19 +1377,25 @@
       "reserve": false,
       "topicId": "roses-t28",
       "officialAnswer": "c",
-      "status": "pending-evidence",
-      "usableForCurrentLearning": false,
-      "countsForMastery": false,
-      "canGenerateReview": false,
-      "notice": "pending",
+      "status": "partially-supported",
+      "usableForCurrentLearning": true,
+      "countsForMastery": true,
+      "canGenerateReview": true,
+      "notice": "none",
       "currentLawAnswer": null,
       "lawAtExam": null,
       "lawToday": null,
       "changedOn": null,
-      "why": "La Llei orgànica 6/1985 del poder judicial no és entre les 98 fonts del manifest, i cap altra font adoptada organitza els òrgans jurisdiccionals.",
-      "citations": [],
-      "missing": "Text consolidat de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (arts. 65 i 82 i següents).",
-      "explanationAvailable": "bloquejada"
+      "why": "L'art. 81.1 LOPJ diu que les audiències provincials es componen d'un president i dos o més magistrats: òrgan col·legiat. Els jutjats de les altres tres opcions són unipersonals. Plantilla c. La cita surt de la còpia mirall de la legislació consolidada del BOE (legalize-es; vegeu la nota de la font al manifest). Fins que una còpia oficial no la substitueixi, la decisió es queda en partially-supported.",
+      "citations": [
+        {
+          "sourceId": "lo-6-1985-lopj",
+          "locator": "art. 81.1",
+          "quote": "Las Audiencias Provinciales se compondrán de un Presidente y dos o más magistrados."
+        }
+      ],
+      "missing": null,
+      "explanationAvailable": "disponible"
     },
     {
       "questionId": "q-of-roses-2025-interins-cp-030",
@@ -1911,19 +1918,30 @@
       "reserve": false,
       "topicId": "roses-t01",
       "officialAnswer": "b",
-      "status": "pending-evidence",
+      "status": "partially-supported",
       "usableForCurrentLearning": false,
       "countsForMastery": false,
       "canGenerateReview": false,
-      "notice": "pending",
+      "notice": "none",
       "currentLawAnswer": null,
       "lawAtExam": null,
       "lawToday": null,
       "changedOn": null,
-      "why": "La Constitució fixa el marc del títol VIII però no enumera les comunitats ni les ciutats autònomes: cap font adoptada demostra la xifra.",
-      "citations": [],
-      "missing": "Una font oficial que enumeri les 17 comunitats autònomes i les 2 ciutats autònomes (per exemple, els estatuts vigents o l’INE).",
-      "explanationAvailable": "bloquejada"
+      "why": "L'Ordre HAC/283/2021 reparteix fons «entre las Comunidades Autónomas y Ciudades de Ceuta y Melilla» i les enumera amb nom: quinze comunitats a la primera taula (més Ceuta i Melilla com a ciutats) i Canàries i Illes Balears a la segona — disset comunitats autònomes i dues ciutats autònomes. Plantilla b. La cita surt de la còpia mirall de la legislació consolidada del BOE (legalize-es; vegeu la nota de la font al manifest). Fins que una còpia oficial no la substitueixi, la decisió es queda en partially-supported.",
+      "citations": [
+        {
+          "sourceId": "orden-hac-283-2021",
+          "locator": "apartat dos, taula del compartiment 1",
+          "quote": "| Comunidades Autónomas y Ceuta y Melilla | Reparto compartimento 1 (miles de euros) | | --- | --- | | Cataluña. | 993.282,41 | | Galicia. | 234.470,88 | | Andalucía. | 1.109.244,34 | | Principado de Asturias. | 107.765,40 | | Cantabria. | 55.363,82 | | La Rioja. | 32.511,75 | | Región de Murcia. | 142.522,91 | | C. Valenciana. | 647.081,98 | | Aragón. | 141.348,90 | | Castilla-La Mancha. | 206.342,55 | | Extremadura. | 106.466,13 | | Madrid. | 679.287,79 | | Castilla y León. | 232.560,23 | | País Vasco. | 217.997,30 | | Navarra. | 67.620,09 | | Ceuta. | 13.862,52 | | Melilla. | 12.271,00 |"
+        },
+        {
+          "sourceId": "orden-hac-283-2021",
+          "locator": "apartat dos, taula del compartiment 2",
+          "quote": "| Comunidades Autónomas | Reparto compartimento 2 (miles de euros) | | --- | --- | | Canarias. | 1.144.262,08 | | Illes Balears. | 855.737,92 |"
+        }
+      ],
+      "missing": null,
+      "explanationAvailable": "disponible"
     },
     {
       "questionId": "q-of-roses-2025-propietat-cg-006",
@@ -4947,19 +4965,25 @@
       "reserve": false,
       "topicId": "roses-t28",
       "officialAnswer": "a",
-      "status": "pending-evidence",
-      "usableForCurrentLearning": false,
-      "countsForMastery": false,
-      "canGenerateReview": false,
-      "notice": "pending",
+      "status": "partially-supported",
+      "usableForCurrentLearning": true,
+      "countsForMastery": true,
+      "canGenerateReview": true,
+      "notice": "none",
       "currentLawAnswer": null,
       "lawAtExam": null,
       "lawToday": null,
       "changedOn": null,
-      "why": "La Llei orgànica 6/1985 del poder judicial no és entre les 98 fonts del manifest, i cap altra font adoptada organitza els òrgans jurisdiccionals.",
-      "citations": [],
-      "missing": "Text consolidat de la Llei orgànica 6/1985, d’1 de juliol, del poder judicial (arts. 65 i 82 i següents).",
-      "explanationAvailable": "bloquejada"
+      "why": "L'art. 65.1º.b LOPJ atribueix a la Sala Penal de l'Audiència Nacional la falsificació de moneda i la fabricació de targetes i xecs de viatger falsos comesos per organitzacions o grups criminals: plantilla a, gairebé literal. La cassació és del Tribunal Suprem i la instrucció contra magistrats d'AN i TSJ, de la Sala Penal del TS. La cita surt de la còpia mirall de la legislació consolidada del BOE (legalize-es; vegeu la nota de la font al manifest). Fins que una còpia oficial no la substitueixi, la decisió es queda en partially-supported.",
+      "citations": [
+        {
+          "sourceId": "lo-6-1985-lopj",
+          "locator": "art. 65.1º.b",
+          "quote": "La Sala de lo Penal de la Audiencia Nacional conocerá: 1.º Del enjuiciamiento, salvo que corresponda en primera instancia a la Sección de lo Penal del Tribunal Central de Instancia, de las causas por los siguientes delitos: a) Delitos contra el titular de la Corona, su Consorte, su Sucesor o Sucesora, altos organismos de la Nación y forma de Gobierno. b) Falsificación de moneda y fabricación de tarjetas de crédito y débito falsas y cheques de viajero falsos o cualquier otro instrumento de pago distinto del efectivo, siempre que sean cometidos por organizaciones o grupos criminales."
+        }
+      ],
+      "missing": null,
+      "explanationAvailable": "disponible"
     },
     {
       "questionId": "q-of-roses-2026-interins-cp-030",
@@ -5001,25 +5025,25 @@
       "reserve": false,
       "topicId": "roses-t32",
       "officialAnswer": "a",
-      "status": "pending-evidence",
-      "usableForCurrentLearning": false,
-      "countsForMastery": false,
-      "canGenerateReview": false,
-      "notice": "pending",
+      "status": "partially-supported",
+      "usableForCurrentLearning": true,
+      "countsForMastery": true,
+      "canGenerateReview": true,
+      "notice": "none",
       "currentLawAnswer": null,
       "lawAtExam": null,
       "lawToday": null,
       "changedOn": null,
-      "why": "La periodicitat de la ITV no és al Reglament general de vehicles: l’art. 10.1 remet a «la reglamentación que se recoge en el anexo I», i la norma que fixa el calendari (RD 920/2017) no és entre les 98 fonts.",
+      "why": "A l'annex I del RD 920/2017, les motocicletes van dins de «Resto L»: exemptes fins als 4 anys i després inspecció biennal — plantilla a. La cita surt de la còpia mirall de la legislació consolidada del BOE (legalize-es; vegeu la nota de la font al manifest). Fins que una còpia oficial no la substitueixi, la decisió es queda en partially-supported.",
       "citations": [
         {
-          "sourceId": "rd-2822-1998-rgv",
-          "locator": "art. 10.1",
-          "quote": "Los vehículos matriculados o puestos en circulación deberán someterse a inspección técnica… en los casos y con la periodicidad, requisitos y excepciones que se establecen en la reglamentación que se recoge en el anexo I."
+          "sourceId": "rd-920-2017-itv",
+          "locator": "annex I, freqüència de les inspeccions (categoria L, resta)",
+          "quote": "Resto L: Vehículos de motor de dos o tres ruedas, gemelas o no, y cuadriciclos, destinados a circular por carretera, así como sus componentes o unidades técnicas. | Hasta 4 años: Exento. | De más de 4 años: Bienal."
         }
       ],
-      "missing": "Reial decret 920/2017, de 23 d’octubre, pel qual es regula la inspecció tècnica de vehicles (annex I, periodicitat).",
-      "explanationAvailable": "bloquejada"
+      "missing": null,
+      "explanationAvailable": "disponible"
     },
     {
       "questionId": "q-of-roses-2026-interins-cp-032",

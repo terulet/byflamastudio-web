@@ -94,7 +94,8 @@ describe('les 189 preguntes oficials i la matriu no es poden separar', () => {
       'supported-current': 116,
       'general-knowledge': 33,
       'historical-current-affairs': 28,
-      'pending-evidence': 8,
+      'pending-evidence': 4,
+      'partially-supported': 4,
       'official-key-conflicts-with-law-at-exam': 2,
       'out-of-syllabus': 2,
     })
@@ -148,9 +149,9 @@ describe('afirmar costa una cita; no saber-ho costa dir què falta', () => {
     expect(dolentes).toEqual([])
   })
 
-  it('les vuit pendents diuen què els falta i segueixen pendents', () => {
+  it('les quatre pendents diuen què els falta i segueixen pendents', () => {
     const pendents = Object.entries(DECISIONS).filter(([, d]) => d.status === 'pending-evidence')
-    expect(pendents).toHaveLength(8)
+    expect(pendents).toHaveLength(4)
     for (const [id, d] of pendents) {
       expect(d.missing, id).toBeTruthy()
       expect(d.missing!.length, id).toBeGreaterThan(9)
@@ -239,9 +240,9 @@ describe('el rellotge decideix, i sempre entra com a paràmetre', () => {
     }
   })
 
-  it('el fons vigent són 118 preguntes, ni una més', () => {
+  it('el fons vigent són 121 preguntes, ni una més', () => {
     const pool = currentLearningPool(OFFICIAL, AVUI)
-    expect(pool).toHaveLength(118)
+    expect(pool).toHaveLength(121)
     for (const q of pool) {
       const status = DECISIONS[q.questionId]!.status
       expect(
@@ -335,11 +336,11 @@ describe('una pregunta amb discrepància no es cola a l’estudi vigent', () => 
 describe('les explicacions ensenyen i porten on comprovar-ho', () => {
   const ambExplicacio = Object.entries(DECISIONS).filter(([, d]) => d.explain)
 
-  it('n’hi ha 120 i totes són d’una pregunta demostrable', () => {
-    expect(ambExplicacio).toHaveLength(120)
+  it('n’hi ha 124 i totes són d’una pregunta demostrable', () => {
+    expect(ambExplicacio).toHaveLength(124)
     for (const [id, d] of ambExplicacio) {
       expect(
-        ['supported-current', 'out-of-syllabus', 'official-key-conflicts-with-law-at-exam'].includes(
+        ['supported-current', 'partially-supported', 'out-of-syllabus', 'official-key-conflicts-with-law-at-exam'].includes(
           d.status,
         ),
         `${id} (${d.status})`,
@@ -376,9 +377,9 @@ describe('les explicacions ensenyen i porten on comprovar-ho', () => {
     }
   })
 
-  it('les 69 sense explicació conserven el text que diu què se’n sap', () => {
+  it('les 65 sense explicació conserven el text que diu què se’n sap', () => {
     const sense = OFFICIAL.filter((q) => !DECISIONS[q.questionId]?.explain)
-    expect(sense).toHaveLength(69)
+    expect(sense).toHaveLength(65)
     for (const q of sense) {
       expect(q.explanation.ca, q.questionId).toContain('El tribunal va marcar')
     }

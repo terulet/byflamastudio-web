@@ -13,7 +13,7 @@ Generat el 2026-08-25 · versió de contingut 1
 | — de coneixements professionals | 658 |
 | — de cultura general | 408 |
 | Preguntes d’examen oficial importades | 819 |
-| Fonts registrades | 98 |
+| Fonts registrades | 111 |
 | Exàmens registrats | 30 |
 
 ## Cobertura per tema
@@ -63,7 +63,7 @@ Generat el 2026-08-25 · versió de contingut 1
 
 ## Estat de les fonts
 
-- Descarregades i verificades per SHA-256: **98**
+- Descarregades i verificades per SHA-256: **111**
 - Pendents de descàrrega: **0**
 
 ## Estat de verificació de les referències
@@ -71,7 +71,7 @@ Generat el 2026-08-25 · versió de contingut 1
 | Estat | Referències |
 | --- | --- |
 | pending-source-verification | 28 |
-| verified | 1882 |
+| verified | 1921 |
 
 `verified` vol dir que algú ha obert la còpia local del document i hi ha trobat la proposició al lloc que diu el localitzador. Tenir el fitxer no verifica res per si sol.
 
@@ -137,7 +137,7 @@ Un simulacre no és vàlid perquè el banc tingui prou preguntes, sinó perquè 
 | Simulacre de cultura general | Cultura general | 10 | 21 | ✓ |
 | Simulacre de cultura general | Actualitat social, cultural i política | 10 | 25 | ✓ |
 | Simulacre de cultura general | Reserva | 1 | 1 | ✓ |
-| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 604 | ✓ |
+| Simulacre de coneixements professionals | (sense composició fixada) | 40 | 622 | ✓ |
 | Simulacre de coneixements professionals | Reserva | 2 | 2 | ✓ |
 
 ## Què necessita revisió humana

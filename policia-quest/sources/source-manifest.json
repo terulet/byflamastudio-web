@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "generatedAt": "2026-08-24",
+  "generatedAt": "2026-08-25",
   "environmentNotes": [
     "Construït el 2026-08-23 en un entorn amb eixida de xarxa restringida.",
     "La política d’eixida només permet registres de paquets (npm, PyPI, crates, Go) i github.com.",
@@ -50,9 +50,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Índex on es publiquen els quadernets i les respostes oficials de cada convocatòria.",
       "sha256": "172d18d0c26051e4d6d77af8054b414b8bcce91f5a506678684bff73b3938395",
-      "cacheFile": "roses-arxiu-examens.html"
+      "cacheFile": "roses-arxiu-examens.html",
+      "notes": "Índex on es publiquen els quadernets i les respostes oficials de cada convocatòria."
     },
     {
       "sourceId": "roses-examen-2025-propietat-cg",
@@ -161,10 +161,10 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Font per al tema 31 (coneixements generals de Roses). Contingut canviant: revisar periòdicament.",
       "sha256": "12ab22566302116885c013cf23dc561c02bc118baeb11b810d72d8dec2990777",
       "cacheFile": "roses-web-municipi.html",
-      "fetchNote": "La còpia del 2026-08-24 (133 kB) és només l’esquelet de navegació de www.roses.cat: 6 kB de text net, tot menús. El contingut del portal es carrega per JavaScript i no hi és; cerques de «Ciutadella», «Rhode», «Cap de Creus», «dolmen», «Santa Margarida» i «pesca» donen zero resultats. Cal una instantània de text de les pàgines concretes del municipi, com es va fer amb el paquet d’actualitat, no la portada."
+      "fetchNote": "La còpia del 2026-08-24 (133 kB) és només l’esquelet de navegació de www.roses.cat: 6 kB de text net, tot menús. El contingut del portal es carrega per JavaScript i no hi és; cerques de «Ciutadella», «Rhode», «Cap de Creus», «dolmen», «Santa Margarida» i «pesca» donen zero resultats. Cal una instantània de text de les pàgines concretes del municipi, com es va fer amb el paquet d’actualitat, no la portada.",
+      "notes": "Font per al tema 31 (coneixements generals de Roses). Contingut canviant: revisar periòdicament."
     },
     {
       "sourceId": "ce-1978",
@@ -527,9 +527,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Modificada, entre altres, per la Llei 3/2023. Cal treballar sempre sobre el text consolidat.",
       "sha256": "47d7b396ebba617de2d39c672e8397e1ded6b20cfa0a549e4a0068101e37d077",
-      "cacheFile": "llei-16-1991-policies-locals.pdf"
+      "cacheFile": "llei-16-1991-policies-locals.pdf",
+      "notes": "Modificada, entre altres, per la Llei 3/2023. Cal treballar sempre sobre el text consolidat."
     },
     {
       "sourceId": "llei-4-2003-seguretat-publica",
@@ -611,9 +611,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Recull consolidat de tota la normativa de seguretat pública catalana. Punt d’entrada recomanat.",
       "sha256": "a094c26598b3684393a45149d4100676064e2241042955139e56bf6782a97087",
-      "cacheFile": "codi-seguretat-catalunya.html"
+      "cacheFile": "codi-seguretat-catalunya.html",
+      "notes": "Recull consolidat de tota la normativa de seguretat pública catalana. Punt d’entrada recomanat."
     },
     {
       "sourceId": "agencia-ciberseguretat-catalunya",
@@ -682,9 +682,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Transposa la Directiva (UE) 2016/680. És el règim aplicable als tractaments amb finalitats policials.",
       "sha256": "dc57f09b46811ddfed2403969502a9e910db946ec64d249d5a3b8fd6511ef154",
-      "cacheFile": "lo-7-2021-dades-policials.pdf"
+      "cacheFile": "lo-7-2021-dades-policials.pdf",
+      "notes": "Transposa la Directiva (UE) 2016/680. És el règim aplicable als tractaments amb finalitats policials."
     },
     {
       "sourceId": "llei-10-1999-gossos-cat",
@@ -697,9 +697,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "La llista catalana de races difereix de l'estatal: cal comparar-les.",
       "sha256": "8ca5fa907a3accde07ad244c73cabf96867ab49d16fb16216919d3f6dafd74de",
-      "cacheFile": "llei-10-1999-gossos-cat.pdf"
+      "cacheFile": "llei-10-1999-gossos-cat.pdf",
+      "notes": "La llista catalana de races difereix de l'estatal: cal comparar-les."
     },
     {
       "sourceId": "llei-7-2023-benestar-animal",
@@ -712,9 +712,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Norma estatal posterior que afecta el règim de tinença d'animals de companyia. Cal contrastar-la amb la Llei 50/1999 i amb la normativa catalana.",
       "sha256": "23147891ce17c77f65f681b4b30d0ade82fae985dd4b0e82a747cc83d2353776",
-      "cacheFile": "llei-7-2023-benestar-animal.pdf"
+      "cacheFile": "llei-7-2023-benestar-animal.pdf",
+      "notes": "Norma estatal posterior que afecta el règim de tinença d'animals de companyia. Cal contrastar-la amb la Llei 50/1999 i amb la normativa catalana."
     },
     {
       "sourceId": "roses-tramits-animals",
@@ -726,9 +726,9 @@
       "consultedAt": "2026-08-24",
       "status": "vigent",
       "fetchStatus": "downloaded",
-      "notes": "Requisits municipals concrets de la llicència a Roses.",
       "sha256": "5b2e0e3514826364cc61ab8afe72c164cf6fa73d55ce66b2ecae3cf543e13570",
-      "cacheFile": "roses-tramits-animals.html"
+      "cacheFile": "roses-tramits-animals.html",
+      "notes": "Requisits municipals concrets de la llicència a Roses."
     },
     {
       "sourceId": "roses-ordenanca-circulacio-mod-2021",
@@ -1432,6 +1432,188 @@
       "sha256": "d665501fa29951e0569f7954ef6e939721be8e1057452bb60d14c3af9ae82c17",
       "cacheFile": "roses-top-manta-2026-07-31.txt",
       "notes": "Instantània textual de la pàgina oficial, adoptada del paquet d’actualitat. Captura: 2026-08-24 Europe/Madrid · official page opened through OpenAI web retrieval; relevant page text preserved below. El SHA-256 és el del fitxer segellat al paquet, no el de la pàgina viva."
+    },
+    {
+      "sourceId": "lo-6-1985-lopj",
+      "title": "Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666",
+      "kind": "llei-organica",
+      "scope": "estatal",
+      "publishedAt": "1985-07-02",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "daa7f58ada8954d8d78b994be7a5ca1dae1dc54334b254ef050ef40384ecd99a",
+      "cacheFile": "lo-6-1985-lopj.md"
+    },
+    {
+      "sourceId": "lo-5-1985-loreg",
+      "title": "Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+      "kind": "llei-organica",
+      "scope": "estatal",
+      "publishedAt": "1985-06-20",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "236b65c5908edbd2247223f88a29dba88a331554ec5a1867f0792c01dc9922b4",
+      "cacheFile": "lo-5-1985-loreg.md"
+    },
+    {
+      "sourceId": "lo-2-1979-tc",
+      "title": "Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-23709",
+      "kind": "llei-organica",
+      "scope": "estatal",
+      "publishedAt": "1979-10-05",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "4b4638ff4e29b2ae85fead54dc46f43a821181c8da64baec127da768ef734402",
+      "cacheFile": "lo-2-1979-tc.md"
+    },
+    {
+      "sourceId": "rd-920-2017-itv",
+      "title": "Real Decreto 920/2017, de 23 de octubre, por el que se regula la inspección técnica de vehículos (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12841",
+      "kind": "reial-decret",
+      "scope": "estatal",
+      "publishedAt": "2017-11-08",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "a29f4c41f45b1e07be261866b8369a91c501d12b2119b9c40e294e6ea4475bb9",
+      "cacheFile": "rd-920-2017-itv.md"
+    },
+    {
+      "sourceId": "lo-6-2006-estatut",
+      "title": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087",
+      "kind": "llei-organica",
+      "scope": "catalunya",
+      "publishedAt": "2006-07-20",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "bc78b63f15e5499361edb8f72a7a95e55562a0b6ce8ffffb58be353665fe575b",
+      "cacheFile": "lo-6-2006-estatut.md"
+    },
+    {
+      "sourceId": "codi-civil-1889",
+      "title": "Real Decreto de 24 de julio de 1889 por el que se publica el Código Civil (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+      "kind": "llei",
+      "scope": "estatal",
+      "publishedAt": "1889-07-25",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "77f0d17fe837bfa84ed3598867805d86b7135d362c9be6b6bb2cdfa38e6ba407",
+      "cacheFile": "codi-civil-1889.md"
+    },
+    {
+      "sourceId": "llei-10-1994-mossos",
+      "title": "Ley 10/1994, de 11 de julio, de la Policía de la Generalidad-«Mossos d'Esquadra» (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-18777",
+      "kind": "llei",
+      "scope": "catalunya",
+      "publishedAt": "1994-08-12",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "113aa00a5263dab8c36b5a23f8b4d5d3802d5ea708e99fbc913ebfb168ffd014",
+      "cacheFile": "llei-10-1994-mossos.md"
+    },
+    {
+      "sourceId": "llei-24-2009-sindic",
+      "title": "Ley 24/2009, de 23 de diciembre, del Síndic de Greuges (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-735",
+      "kind": "llei",
+      "scope": "catalunya",
+      "publishedAt": "2010-01-18",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "d831d7ef2d5f71d11116026c47614d31aa924338df30c296907a073b3d8869fc",
+      "cacheFile": "llei-24-2009-sindic.md"
+    },
+    {
+      "sourceId": "orden-hac-283-2021",
+      "title": "Orden HAC/283/2021, de 25 de marzo, por la que se concretan los aspectos necesarios para la distribución definitiva, entre las Comunidades Autónomas y Ciudades de Ceuta y Melilla, de los recursos de la Línea COVID de ayudas directas a autónomos y empresas prevista en el Título I del Real Decreto-ley 5/2021, de 12 de marzo, de medidas extraordinarias de apoyo a la solvencia empresarial en respuesta a la pandemia de la COVID-19 (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-4727",
+      "kind": "altre",
+      "scope": "estatal",
+      "publishedAt": "2021-03-26",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "a1993ba734ff6f14573c19398e7ceda9a128824193661f4193f0f82ecb1c60fc",
+      "cacheFile": "orden-hac-283-2021.md"
+    },
+    {
+      "sourceId": "rd-176-2022-codi-conducta-gc",
+      "title": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del personal de la Guardia Civil (text consolidat)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-3477",
+      "kind": "reial-decret",
+      "scope": "estatal",
+      "publishedAt": "2022-03-05",
+      "consultedAt": "2026-08-25",
+      "status": "vigent",
+      "fetchStatus": "downloaded",
+      "sha256": "0c0b575f82ccc7875afd65dd3d74089f659c88a548dd098834ab3e868875eead",
+      "cacheFile": "rd-176-2022-codi-conducta-gc.md"
+    },
+    {
+      "sourceId": "ce-1978-vigent-2018",
+      "title": "Constitución Española (text vigent el 2018)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "kind": "constitucio",
+      "scope": "estatal",
+      "publishedAt": "1978-12-29",
+      "consultedAt": "2026-08-25",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "sha256": "5a0b548f752eefffb14ea5f98cc8cddd544512b81ab70142a4a2312daa98203d",
+      "cacheFile": "ce-1978-vigent-2018.md"
+    },
+    {
+      "sourceId": "lo-10-1995-cp-vigent-2018",
+      "title": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal (text vigent el 2018)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "kind": "llei-organica",
+      "scope": "estatal",
+      "publishedAt": "1995-11-24",
+      "consultedAt": "2026-08-25",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "sha256": "58e9ec227fd7747df71d77001d77b45faa9f2a25e8a6efe798d7ba9cf4f1abed",
+      "cacheFile": "lo-10-1995-cp-vigent-2018.md"
+    },
+    {
+      "sourceId": "lo-6-1985-lopj-vigent-2018",
+      "title": "Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial (text vigent el 2018)",
+      "issuer": "BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666",
+      "kind": "llei-organica",
+      "scope": "estatal",
+      "publishedAt": "1985-07-02",
+      "consultedAt": "2026-08-25",
+      "status": "historica",
+      "fetchStatus": "downloaded",
+      "sha256": "6ddc58d512cc0c5c4e1413eca13197d0cbfb6deaed20edfa94930a5ba1da2d92",
+      "cacheFile": "lo-6-1985-lopj-vigent-2018.md"
     }
   ]
 }
